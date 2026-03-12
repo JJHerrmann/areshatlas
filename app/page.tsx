@@ -3,40 +3,17 @@ import CompassRose from "@/components/codex/CompassRose";
 import CoordinateRule from "@/components/codex/CoordinateRule";
 import CornerOrnament from "@/components/codex/CornerOrnament";
 import PlateLabel from "@/components/codex/PlateLabel";
+import { getSectionEntries, sections } from "@/lib/codexContent";
 
 export default function HomePage() {
-  const sections = [
-    {
-      title: "Pantheon",
-      label: "Catalog of Divine Aspects",
-      summary: "Survey of gods, rites, symbols, and divine domains recorded across Aresh.",
-    },
-    {
-      title: "Regions",
-      label: "Geographic Surveys",
-      summary: "Mapped territories, settlements, routes, hazards, and ecological observations.",
-    },
-    {
-      title: "Cultures",
-      label: "Ethnographic Records",
-      summary: "Peoples, languages, lineages, customs, and social memory of the known world.",
-    },
-    {
-      title: "Relics and Magic",
-      label: "Artifacts and Arcana",
-      summary: "Catalog of relics, magical traditions, rites, and notable materials.",
-    },
-    {
-      title: "Creatures and Powers",
-      label: "Natural Observations",
-      summary: "Bestiary entries, supernatural entities, and expedition-derived accounts.",
-    },
-    {
-      title: "Chronicles",
-      label: "Recorded Histories",
-      summary: "Events, conflicts, dynasties, migrations, and remembered cataclysms.",
-    },
-  ];
+  const sectionCards = sections.map((section) => {
+    const count = getSectionEntries(section).length;
+    return {
+      ...section,
+      href: `/${section.slug}`,
+      countLabel: count ? `${count} entries` : "No entries",
+    };
+  });
 
   return (
     <main className="min-h-screen text-stone-900">
@@ -73,12 +50,14 @@ export default function HomePage() {
         </div>
 
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {sections.map((section) => (
+          {sectionCards.map((section) => (
             <SectionCard
               key={section.title}
               title={section.title}
               label={section.label}
               summary={section.summary}
+              href={section.href}
+              countLabel={section.countLabel}
             />
           ))}
         </div>
