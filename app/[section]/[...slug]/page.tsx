@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import CoordinateRule from "@/components/codex/CoordinateRule";
 import CornerOrnament from "@/components/codex/CornerOrnament";
 import EntryCard from "@/components/codex/EntryCard";
+import NationInfobox from "@/components/codex/NationInfobox";
 import PlateLabel from "@/components/codex/PlateLabel";
 import { getRenderedDocument, getSectionBySlug, getSectionView } from "@/lib/codexContent";
 
@@ -20,6 +21,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
 
   const document = await getRenderedDocument(section, slug);
   if (document) {
+    const isNation = document.frontmatter?.type === "nation";
     return (
       <main className="min-h-screen px-6 py-12 text-stone-900 lg:px-8">
         <div className="mx-auto max-w-5xl">
@@ -54,9 +56,9 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             <CoordinateRule />
           </div>
 
-          {Object.keys(document.metadata).length ? (
+          {Object.keys(document.frontmatter).length && !isNation ? (
             <dl className="mt-8 grid gap-3 border border-amber-300/80 bg-amber-50/75 p-5 md:grid-cols-2">
-              {Object.entries(document.metadata).map(([key, value]) => (
+              {Object.entries(document.frontmatter).map(([key, value]) => (
                 <div key={key}>
                   <dt className="text-[10px] uppercase tracking-[0.22em] text-amber-800">{key}</dt>
                   <dd className="mt-1 text-sm text-stone-800">
@@ -67,10 +69,13 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             </dl>
           ) : null}
 
-          <article
-            className="codex-prose mt-10"
-            dangerouslySetInnerHTML={{ __html: document.html }}
-          />
+          <div className={`codex-entry-layout mt-10${isNation ? " with-sidebar" : ""}`}>
+            <article
+              className="codex-entry-body codex-prose"
+              dangerouslySetInnerHTML={{ __html: document.html }}
+            />
+            {isNation ? <NationInfobox data={{ ...document.frontmatter, title: document.title }} /> : null}
+          </div>
         </div>
 
         <CornerOrnament position="bottom-right" />

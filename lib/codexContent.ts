@@ -37,7 +37,7 @@ export type RenderedDocument = {
   html: string;
   sourcePath: string;
   breadcrumb: Array<{ title: string; href: string }>;
-  metadata: Record<string, unknown>;
+  frontmatter: Record<string, unknown>;
 };
 
 const CONTENT_ROOT = path.join(process.cwd(), "content");
@@ -325,6 +325,6 @@ export async function getRenderedDocument(section: SectionConfig, slugParts: str
     html,
     sourcePath: `content/${section.folder}/${relativePath}`,
     breadcrumb: buildBreadcrumb(section, slugParts),
-    metadata: parsed.data as Record<string, unknown>,
+    frontmatter: parsed.data as Record<string, unknown>,
   };
 }
