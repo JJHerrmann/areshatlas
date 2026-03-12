@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sync:codex": "powershell -ExecutionPolicy Bypass -File .\\scripts\\sync_codex_content.ps1"
   },
   "dependencies": {
     "next": "^15.5.12",
@@ -25,4 +26,3 @@
     "typescript": "^5.7.2"
   }
 }
-
