@@ -1,9 +1,17 @@
 param(
-  [string]$Source = "R:\RookVault\01_Active\Mindpalace\Authorship\roleplaying\worlds\aresh\codex-content",
+  [string]$Source = "",
   [string]$Destination = ""
 )
 
 $ErrorActionPreference = "Stop"
+
+if ([string]::IsNullOrWhiteSpace($Source)) {
+  $Source = $env:ARESH_CODEX_SOURCE
+}
+
+if ([string]::IsNullOrWhiteSpace($Source)) {
+  $Source = "R:\RookVault\01_Active\Mindpalace\Authorship\roleplaying\worlds\aresh\codex-content"
+}
 
 if ([string]::IsNullOrWhiteSpace($Destination)) {
   $repoRoot = Split-Path -Parent $PSScriptRoot

@@ -18,9 +18,9 @@ tags:
 
 ## Climate and Winds
 
-- Prevailing winds: [description]
-- Northern climate: [description]
-- Central climate: [description]
+- Prevailing winds: The northern winds come from the North East, blowing down towards the seamire and across 
+- Northern climate: Drakharpan's northern climate is dominated by thick rocky plains and scrubgrass, dotted with deserts and a small western forest and wetlands.
+- Central climate: The western coast has areas of hot desert, that retreats to savannah and forests as it moves eastward to 
 - Southern climate: [description]
 
 ## Major Landforms
@@ -42,13 +42,11 @@ tags:
 
 ## Surrounding Waters
 
-- North: [Ocean/Sea]
-- South: [Ocean/Sea]
-- East: [Ocean/Sea]
-- West: [Ocean/Sea]
+- East: [[The Unending Tide]]
+- West: [[The Western Shelf]]
 
 Other notable waterways:
-- [Sea/Bay]
+- [[The Seamire]]
 - [Sea/Bay]
 - [Sea/Bay]
 
@@ -62,15 +60,20 @@ Other notable waterways:
 - [Realm Name]: beneath [region], [description]
 - [Realm Name]: beneath [region], [description]
 
-## Nations and Realms
+```dataviewjs
 
-- [[Authorship/roleplaying/worlds/aresh/codex-content/regions/Drakharpan/nations/Kanchapia]]
-- [[Bradilla]]
-- [[Estave]]
-- [[Pherareradost]]
-- [[Arteza]]
-- [[Petrello]]
+const folder = "Authorship/roleplaying/worlds/aresh/codex-content/regions/Drakharpan/nations";
 
+dv.header(2, "Nations and Realms");
+
+const pages = dv.pages(`"${folder}"`)
+  .where(p => p.file.folder === folder)
+  .sort(p => p.file.name, "asc");
+
+dv.list(
+  pages.map(p => p.file.link)
+);
+```
 ## Geographic Regions
 
 ### Forests
