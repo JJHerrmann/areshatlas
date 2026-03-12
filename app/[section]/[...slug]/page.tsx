@@ -50,9 +50,6 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
               {document.title}
             </h1>
             <p className="mt-4 text-base leading-7 text-stone-700">{document.summary}</p>
-            <p className="mt-3 text-xs uppercase tracking-[0.24em] text-amber-700">
-              Mirrored Source File: {document.sourcePath}
-            </p>
             <CoordinateRule />
           </div>
 

@@ -1,34 +1,35 @@
 ---
-title: Raamkoda  
-type: nation  
-endonym: Raamkoda  
-exonym: Hall of Raam  
-english_gloss: The Hall of Raam  
-state_form: Hall-Realm  
-capital: Raamkoda  
-ruler: Makbar Raamskord  
-people: Raamrahvas  
-language: Karakeel  
-range: Brightfire Mountains  
-sacred_peak: Raami Kroonitipp  
-religion:  
-- Forge Oaths  
-- Ancestor Veneration  
-exports:  
-- ironwork  
-- arms  
-- worked stone  
-tags:  
-- nation  
-- dwarven  
-- drakharpan  
+title: Raamkoda
+type: nation
+endonym: Raamkoda
+exonym: Hall of Raam
+english_gloss: The Hall of Raam
+state_form: Hall-Realm
+capital: Raamkoda
+ruler: Makbar Raamskord
+people: Raamrahvas
+language: Karakeel
+range: Brightfire Mountains
+sacred_peak: Raami Kroonitipp
+religion:
+  - Forge Oaths
+  - Ancestor Veneration
+exports:
+  - ironwork
+  - arms
+  - worked stone
+tags:
+  - nation
+  - dwarven
+  - drakharpan
+image_heraldry: obsidian://open?vault=Mindpalace&file=Pasted%20image%2020260312183735.png
+image_heraldry_alt: hammer sable gorgen crown argent, lightning bolt or
 ---
 # Raamskoda
 
 ## Overview
 
 The Raamskoda is a larger Hall (Kingdom) by Dwarvish standards under the peaks of the [[Brightfire Mountains]] in Northern [[Drakharpan]]. 
-
 ## State Identity
 
 - Endonym: Raamskoda

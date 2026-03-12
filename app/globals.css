@@ -143,6 +143,46 @@ body {
   color: #4a2c0c;
 }
 
+.codex-infobox-media-stack {
+  display: grid;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.codex-infobox-media {
+  margin: 0;
+}
+
+.codex-infobox-media-heraldry {
+  max-width: 220px;
+}
+
+.codex-infobox-image {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(139, 108, 41, 0.32);
+  background: rgba(255, 250, 235, 0.95);
+  object-fit: cover;
+}
+
+.codex-infobox-media-banner .codex-infobox-image,
+.codex-infobox-media-map .codex-infobox-image {
+  aspect-ratio: 16 / 10;
+}
+
+.codex-infobox-media-heraldry .codex-infobox-image {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  padding: 0.4rem;
+}
+
+.codex-infobox-caption {
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+  color: rgba(90, 58, 20, 0.78);
+  line-height: 1.45;
+}
+
 .codex-infobox-grid {
   display: grid;
   gap: 0.75rem;
