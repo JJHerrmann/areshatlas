@@ -3,11 +3,11 @@ import CompassRose from "@/components/codex/CompassRose";
 import CoordinateRule from "@/components/codex/CoordinateRule";
 import CornerOrnament from "@/components/codex/CornerOrnament";
 import PlateLabel from "@/components/codex/PlateLabel";
-import { getSectionEntries, sections } from "@/lib/codexContent";
+import { getSectionEntryCount, sections } from "@/lib/codexContent";
 
 export default function HomePage() {
   const sectionCards = sections.map((section) => {
-    const count = getSectionEntries(section).length;
+    const count = getSectionEntryCount(section);
     return {
       ...section,
       href: `/${section.slug}`,
