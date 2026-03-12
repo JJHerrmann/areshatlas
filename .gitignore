@@ -12,3 +12,23 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+
+# Local Python/cache artifacts
+.venv/
+__pycache__/
+*.pyc
+
+# Workspace-only world data and generated exports
+archive_exports/
+aresh_rebuild/
+biome_outputs_v2/
+gebco_tif_files_subice/
+region_exports/
+rookworld_source_data/
+world_editor_backend/
+world_editor_data/
+
+# Local tooling and generated map assets not part of the site app
+tools/
+*.kml
+*.png
