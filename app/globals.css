@@ -22,3 +22,95 @@ body {
   color: var(--ink);
   font-family: Palatino, "Times New Roman", serif;
 }
+
+.codex-prose {
+  line-height: 1.75;
+  color: rgba(41, 31, 20, 0.96);
+}
+
+.codex-prose h1,
+.codex-prose h2,
+.codex-prose h3,
+.codex-prose h4 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+  color: #3f240a;
+  line-height: 1.2;
+}
+
+.codex-prose h1 {
+  font-size: 2rem;
+}
+
+.codex-prose h2 {
+  font-size: 1.5rem;
+}
+
+.codex-prose h3 {
+  font-size: 1.2rem;
+}
+
+.codex-prose p,
+.codex-prose ul,
+.codex-prose ol,
+.codex-prose table,
+.codex-prose blockquote {
+  margin-top: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.codex-prose ul,
+.codex-prose ol {
+  padding-left: 1.5rem;
+}
+
+.codex-prose li + li {
+  margin-top: 0.3rem;
+}
+
+.codex-prose code {
+  border: 1px solid rgba(139, 108, 41, 0.25);
+  background: rgba(255, 250, 235, 0.95);
+  padding: 0.1rem 0.3rem;
+  font-size: 0.9em;
+}
+
+.codex-prose pre {
+  overflow-x: auto;
+  border: 1px solid rgba(139, 108, 41, 0.3);
+  background: rgba(250, 243, 223, 0.92);
+  padding: 0.9rem 1rem;
+}
+
+.codex-prose pre code {
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.codex-prose table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.codex-prose th,
+.codex-prose td {
+  border: 1px solid rgba(139, 108, 41, 0.28);
+  padding: 0.55rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.codex-prose th {
+  background: rgba(222, 204, 157, 0.26);
+}
+
+.codex-prose a {
+  color: #7b4a10;
+  text-decoration: underline;
+  text-decoration-color: rgba(123, 74, 16, 0.45);
+}
+
+.codex-inline-link {
+  font-style: italic;
+}
