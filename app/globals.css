@@ -23,6 +23,26 @@ body {
   font-family: Palatino, "Times New Roman", serif;
 }
 
+.aresh-hero-logo {
+  margin: 0;
+}
+
+.aresh-hero-logo-image {
+  display: block;
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(139, 108, 41, 0.28);
+  background: rgba(255, 250, 235, 0.92);
+  padding: 0.4rem;
+}
+
+.aresh-hero-logo-caption {
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  color: rgba(90, 58, 20, 0.78);
+}
+
 .codex-prose {
   line-height: 1.75;
   color: rgba(41, 31, 20, 0.96);
