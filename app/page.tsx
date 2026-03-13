@@ -51,15 +51,6 @@ export default async function HomePage() {
                 </nav>
               </section>
 
-              <section className="wiki-box">
-                <h2 className="wiki-box-title">Archive Notes</h2>
-                <ul className="wiki-meta-list">
-                  {hero.plaqueLabels.map((label) => (
-                    <li key={label}>{label}</li>
-                  ))}
-                </ul>
-              </section>
-
               {hero.bannerPath ? (
                 <section className="wiki-box wiki-banner-box">
                   <img src={hero.bannerPath} alt={hero.bannerAlt} className="wiki-banner-image" />

@@ -44,7 +44,7 @@ export async function getFrontpageHero(): Promise<FrontpageHero> {
       systemLine: "A Campaign Setting for | Dungeons and Dragons 5e | Dungeons and Dragons 5.5e | GURPS",
       bodyHtml:
         "<p>A codex of lands, peoples, creatures, relics, and divine influences, presented in the manner of a pre-industrial cartographic archive.</p>",
-      plaqueLabels: ["Herodetus Darwin", "Line of Ashen", "Halls of Shekelarmesh"],
+      plaqueLabels: [],
       logoPath: "/branding/wiki-logo.png",
       logoAlt: "Areshnaat wiki logo",
       logoCaption: null,
@@ -70,7 +70,7 @@ export async function getFrontpageHero(): Promise<FrontpageHero> {
     bodyHtml: await renderMarkdown(parsed.content || ""),
     plaqueLabels: Array.isArray(parsed.data.plaque_labels)
       ? parsed.data.plaque_labels.map((item: unknown) => String(item))
-      : ["Herodetus Darwin", "Line of Ashen", "Halls of Shekelarmesh"],
+      : [],
     logoPath: parsed.data.logo_path ? String(parsed.data.logo_path) : "/branding/wiki-logo.png",
     logoAlt: String(parsed.data.logo_alt || "Areshnaat wiki logo"),
     logoCaption: parsed.data.logo_caption ? String(parsed.data.logo_caption) : null,
