@@ -23,6 +23,28 @@ body {
   font-family: Palatino, "Times New Roman", serif;
 }
 
+.aresh-hero-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: start;
+}
+
+.aresh-hero-main {
+  min-width: 0;
+}
+
+.aresh-hero-copy {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.aresh-hero-text {
+  min-width: 0;
+}
+
 .aresh-hero-logo {
   margin: 0;
 }
@@ -37,9 +59,35 @@ body {
   padding: 0.4rem;
 }
 
+.aresh-hero-logo-placeholder {
+  width: 100%;
+  min-height: 180px;
+  border: 1px dashed rgba(139, 108, 41, 0.3);
+  background: rgba(255, 250, 235, 0.4);
+}
+
 .aresh-hero-logo-caption {
   margin-top: 0.35rem;
   font-size: 0.75rem;
+  color: rgba(90, 58, 20, 0.78);
+}
+
+.aresh-hero-banner {
+  margin: 2rem 0 0;
+}
+
+.aresh-hero-banner-image {
+  display: block;
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border: 1px solid rgba(139, 108, 41, 0.28);
+  background: rgba(255, 250, 235, 0.92);
+}
+
+.aresh-hero-banner-caption {
+  margin-top: 0.45rem;
+  font-size: 0.8rem;
   color: rgba(90, 58, 20, 0.78);
 }
 
@@ -257,6 +305,19 @@ body {
 }
 
 @media (max-width: 980px) {
+  .aresh-hero-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .aresh-hero-copy {
+    grid-template-columns: 1fr;
+  }
+
+  .aresh-hero-logo,
+  .aresh-hero-logo-placeholder {
+    max-width: 180px;
+  }
+
   .codex-entry-layout.with-sidebar {
     grid-template-columns: 1fr;
   }

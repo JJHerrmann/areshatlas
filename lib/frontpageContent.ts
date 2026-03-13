@@ -16,6 +16,9 @@ export type FrontpageHero = {
   logoPath: string | null;
   logoAlt: string;
   logoCaption: string | null;
+  bannerPath: string | null;
+  bannerAlt: string;
+  bannerCaption: string | null;
 };
 
 const HERO_PATH = path.join(process.cwd(), "content", "frontpage", "hero.md");
@@ -42,6 +45,9 @@ export async function getFrontpageHero(): Promise<FrontpageHero> {
       logoPath: null,
       logoAlt: "Aresh Atlas logo",
       logoCaption: null,
+      bannerPath: null,
+      bannerAlt: "Aresh Atlas hero banner",
+      bannerCaption: null,
     };
   }
 
@@ -61,5 +67,8 @@ export async function getFrontpageHero(): Promise<FrontpageHero> {
     logoPath: parsed.data.logo_path ? String(parsed.data.logo_path) : null,
     logoAlt: String(parsed.data.logo_alt || "Aresh Atlas logo"),
     logoCaption: parsed.data.logo_caption ? String(parsed.data.logo_caption) : null,
+    bannerPath: parsed.data.banner_path ? String(parsed.data.banner_path) : null,
+    bannerAlt: String(parsed.data.banner_alt || "Aresh Atlas hero banner"),
+    bannerCaption: parsed.data.banner_caption ? String(parsed.data.banner_caption) : null,
   };
 }

@@ -21,37 +21,47 @@ export default async function HomePage() {
     <main className="min-h-screen text-stone-900">
       <section className="border-b border-amber-300/80 bg-amber-100/80">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="flex items-start justify-between gap-8">
-            <div className="max-w-4xl">
-              <PlateLabel>{hero.eyebrow}</PlateLabel>
-              {hero.logoPath ? (
-                <div className="mt-5 flex items-start gap-4">
+          <div className="aresh-hero-shell">
+            <div className="aresh-hero-main">
+              <div className="aresh-hero-copy">
+                {hero.logoPath ? (
                   <figure className="aresh-hero-logo">
                     <img src={hero.logoPath} alt={hero.logoAlt} className="aresh-hero-logo-image" />
                     {hero.logoCaption ? <figcaption className="aresh-hero-logo-caption">{hero.logoCaption}</figcaption> : null}
                   </figure>
+                ) : (
+                  <div className="aresh-hero-logo aresh-hero-logo-placeholder" aria-hidden="true" />
+                )}
+                <div className="aresh-hero-text">
+                  <PlateLabel>{hero.eyebrow}</PlateLabel>
+                  <h1 className="mt-4 font-display text-4xl tracking-tight lg:text-6xl">
+                    {hero.title}
+                  </h1>
+                  <p className="mt-4 max-w-3xl text-base leading-7 text-stone-700">
+                    {hero.subtitle}
+                  </p>
+                  <div
+                    className="codex-prose mt-4 max-w-3xl text-stone-700"
+                    dangerouslySetInnerHTML={{ __html: hero.bodyHtml }}
+                  />
+                  <div className="mt-6 flex flex-wrap gap-3 text-[11px] uppercase tracking-[0.22em] text-amber-800">
+                    {hero.plaqueLabels.map((label) => (
+                      <span key={label} className="border border-amber-400/70 px-3 py-1">{label}</span>
+                    ))}
+                  </div>
                 </div>
-              ) : null}
-              <h1 className="mt-4 font-display text-4xl tracking-tight lg:text-6xl">
-                {hero.title}
-              </h1>
-              <p className="mt-4 max-w-3xl text-base leading-7 text-stone-700">
-                {hero.subtitle}
-              </p>
-              <div
-                className="codex-prose mt-4 max-w-3xl text-stone-700"
-                dangerouslySetInnerHTML={{ __html: hero.bodyHtml }}
-              />
-              <div className="mt-6 flex flex-wrap gap-3 text-[11px] uppercase tracking-[0.22em] text-amber-800">
-                {hero.plaqueLabels.map((label) => (
-                  <span key={label} className="border border-amber-400/70 px-3 py-1">{label}</span>
-                ))}
               </div>
             </div>
             <div className="hidden lg:block">
               <CompassRose />
             </div>
           </div>
+          {hero.bannerPath ? (
+            <figure className="aresh-hero-banner">
+              <img src={hero.bannerPath} alt={hero.bannerAlt} className="aresh-hero-banner-image" />
+              {hero.bannerCaption ? <figcaption className="aresh-hero-banner-caption">{hero.bannerCaption}</figcaption> : null}
+            </figure>
+          ) : null}
         </div>
       </section>
 
