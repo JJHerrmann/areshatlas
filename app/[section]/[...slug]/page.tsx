@@ -21,7 +21,11 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
 
   const document = await getRenderedDocument(section, slug);
   if (document) {
-    const isNation = document.frontmatter?.type === "nation";
+    const nationData =
+      document.frontmatter && typeof document.frontmatter.nation === "object" && document.frontmatter.nation
+        ? (document.frontmatter.nation as Record<string, unknown>)
+        : null;
+    const isNation = document.frontmatter?.type === "nation" || Boolean(nationData);
     return (
       <main className="min-h-screen px-6 py-12 text-stone-900 lg:px-8">
         <div className="mx-auto max-w-5xl">
@@ -71,7 +75,11 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
               className="codex-entry-body codex-prose"
               dangerouslySetInnerHTML={{ __html: document.html }}
             />
-            {isNation ? <NationInfobox data={{ ...document.frontmatter, title: document.title }} /> : null}
+            {isNation ? (
+              <NationInfobox
+                data={nationData ? { ...nationData, title: document.title } : { ...document.frontmatter, title: document.title }}
+              />
+            ) : null}
           </div>
         </div>
 

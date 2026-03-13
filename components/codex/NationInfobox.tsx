@@ -10,6 +10,17 @@ type ImageField = {
 };
 
 function renderValue(value: unknown) {
+  if (value && typeof value === "object" && !Array.isArray(value)) {
+    return (
+      <ul>
+        {Object.entries(value as Record<string, unknown>).map(([key, item]) => (
+          <li key={key}>
+            {key}: {String(item)}
+          </li>
+        ))}
+      </ul>
+    );
+  }
   if (Array.isArray(value)) {
     return (
       <ul>
@@ -50,6 +61,13 @@ function renderImageBlock(image: ImageField) {
 }
 
 export default function NationInfobox({ data }: NationInfoboxProps) {
+  const geographic = (data.geographic_info as Record<string, unknown> | undefined) || {};
+  const government = (data.government as Record<string, unknown> | undefined) || {};
+  const economy = (data.economy as Record<string, unknown> | undefined) || {};
+  const society = (data.society as Record<string, unknown> | undefined) || {};
+  const religion = (data.religion as Record<string, unknown> | undefined) || {};
+  const gameInfo = (data.game_info as Record<string, unknown> | undefined) || {};
+
   const images = [
     getImageField(data, "image_banner", "banner"),
     getImageField(data, "image_heraldry", "heraldry"),
@@ -57,18 +75,27 @@ export default function NationInfobox({ data }: NationInfoboxProps) {
   ].filter(Boolean) as ImageField[];
 
   const candidateRows: Array<[string, unknown]> = [
-    ["Endonym", data.endonym] as [string, unknown],
-    ["Exonym", data.exonym] as [string, unknown],
-    ["English Gloss", data.english_gloss] as [string, unknown],
-    ["State Form", data.state_form] as [string, unknown],
-    ["Capital", data.capital] as [string, unknown],
-    ["Ruler", data.ruler] as [string, unknown],
-    ["People", data.people] as [string, unknown],
-    ["Language", data.language] as [string, unknown],
-    ["Mountain Range", data.range] as [string, unknown],
-    ["Sacred Peak", data.sacred_peak] as [string, unknown],
-    ["Religion", data.religion] as [string, unknown],
-    ["Exports", data.exports] as [string, unknown],
+    ["Formal Name", data.formal_name] as [string, unknown],
+    ["Arms", data.arms] as [string, unknown],
+    ["Continent", geographic.continent] as [string, unknown],
+    ["Location", geographic.location] as [string, unknown],
+    ["Government Type", government.government_type] as [string, unknown],
+    ["Hierarchy", government.hierarchy] as [string, unknown],
+    ["Ruler", government.ruler] as [string, unknown],
+    ["Capital", government.capital] as [string, unknown],
+    ["Capital Population", government.capital_population] as [string, unknown],
+    ["Alliances", government.alliances] as [string, unknown],
+    ["Hostilities", government.hostilities] as [string, unknown],
+    ["Coinage", economy.coinage] as [string, unknown],
+    ["Mythus Standard", economy.mythus_standard] as [string, unknown],
+    ["Population", society.population] as [string, unknown],
+    ["Ancestry Breakdown", society.ancestry_breakdown] as [string, unknown],
+    ["Languages", society.languages] as [string, unknown],
+    ["Important Persons", society.important_persons] as [string, unknown],
+    ["Pantheon", religion.pantheon] as [string, unknown],
+    ["Patron", religion.patron] as [string, unknown],
+    ["Cultural Templates", gameInfo.cultural_templates] as [string, unknown],
+    ["Map", gameInfo.map] as [string, unknown],
   ];
   const rows = candidateRows.filter(([, value]) => Boolean(value));
 
@@ -77,7 +104,7 @@ export default function NationInfobox({ data }: NationInfoboxProps) {
   return (
     <aside className="codex-infobox">
       {images.length ? <div className="codex-infobox-media-stack">{images.map(renderImageBlock)}</div> : null}
-      <div className="codex-infobox-title">{String(data.title || data.endonym || "Nation")}</div>
+      <div className="codex-infobox-title">{String(data.title || data.name || "Nation")}</div>
       <dl className="codex-infobox-grid">
         {rows.map(([label, value]) => (
           <div key={label} className="codex-infobox-row">

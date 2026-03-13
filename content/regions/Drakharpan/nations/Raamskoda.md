@@ -24,11 +24,11 @@ nation:
   society:
     population: 995776
     ancestry_breakdown:
-      human: 90
-      dwarven: 2
-      hobbit: 6
+      dwarven: 90
+      human: 6
+      hobbit: 2
       other: 2
-    languages: [Dracian]
+    languages: [[Karakeel (Dwarven)]], [[Xibanal (Elvish)]]
     important_persons:
       - The Vtalasav family
       - Various nobles of import
