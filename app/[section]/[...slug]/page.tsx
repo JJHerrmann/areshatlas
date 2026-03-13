@@ -5,7 +5,7 @@ import CornerOrnament from "@/components/codex/CornerOrnament";
 import EntryCard from "@/components/codex/EntryCard";
 import NationInfobox from "@/components/codex/NationInfobox";
 import PlateLabel from "@/components/codex/PlateLabel";
-import { getRenderedDocument, getSectionBySlug, getSectionView } from "@/lib/codexContent";
+import { getNationSidebar, getRenderedDocument, getSectionBySlug, getSectionView } from "@/lib/codexContent";
 
 type NestedSectionPageProps = {
   params: Promise<{
@@ -21,11 +21,8 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
 
   const document = await getRenderedDocument(section, slug);
   if (document) {
-    const nationData =
-      document.frontmatter && typeof document.frontmatter.nation === "object" && document.frontmatter.nation
-        ? (document.frontmatter.nation as Record<string, unknown>)
-        : null;
-    const isNation = document.frontmatter?.type === "nation" || Boolean(nationData);
+    const nationSidebar = getNationSidebar(document.sourcePath);
+    const isNation = Boolean(nationSidebar) || document.frontmatter?.type === "nation";
     return (
       <main className="min-h-screen px-6 py-12 text-stone-900 lg:px-8">
         <div className="mx-auto max-w-5xl">
@@ -75,11 +72,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
               className="codex-entry-body codex-prose"
               dangerouslySetInnerHTML={{ __html: document.html }}
             />
-            {isNation ? (
-              <NationInfobox
-                data={nationData ? { ...nationData, title: document.title } : { ...document.frontmatter, title: document.title }}
-              />
-            ) : null}
+            {nationSidebar ? <NationInfobox data={nationSidebar} /> : null}
           </div>
         </div>
 

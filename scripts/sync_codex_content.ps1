@@ -43,3 +43,7 @@ if ($exitCode -ge 8) {
 }
 
 Write-Host "[codex-sync] completed with robocopy exit code $exitCode"
+
+$repoRoot = Split-Path -Parent $PSScriptRoot
+Write-Host "[codex-sync] generating derived sidebar json..."
+node (Join-Path $repoRoot "scripts\generate_codex_derived.mjs")

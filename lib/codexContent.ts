@@ -40,7 +40,28 @@ export type RenderedDocument = {
   frontmatter: Record<string, unknown>;
 };
 
+export type SidebarSectionRow = [string, unknown];
+
+export type SidebarSection = {
+  title: string;
+  rows: SidebarSectionRow[];
+};
+
+export type NationSidebar = {
+  type: "nation";
+  title: string;
+  subtitle: string | null;
+  source_relative_path: string;
+  images: {
+    banner: { src: string; alt: string; caption: string | null } | null;
+    heraldry: { src: string; alt: string; caption: string | null } | null;
+    map: { src: string; alt: string; caption: string | null } | null;
+  };
+  sections: SidebarSection[];
+};
+
 const CONTENT_ROOT = path.join(process.cwd(), "content");
+const DERIVED_ROOT = path.join(CONTENT_ROOT, "_derived", "sidebar");
 const ALLOWED_ENTRY_EXTENSIONS = new Set([".md", ".markdown", ".csv"]);
 const MARKDOWN_EXTENSIONS = new Set([".md", ".markdown"]);
 
@@ -102,6 +123,21 @@ function readFirstNonEmptyLine(markdown: string) {
 
 function titleFromFileName(fileName: string) {
   return fileName.replace(/\.[^.]+$/, "");
+}
+
+function buildEntrySlug(relativePath: string) {
+  return relativePath
+    .replace(/\\/g, "/")
+    .replace(/\.(md|markdown)$/i, "")
+    .split("/")
+    .filter(Boolean)
+    .map((part) =>
+      String(part)
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, ""),
+    )
+    .join("__");
 }
 
 function toTitle(value: string) {
@@ -327,4 +363,11 @@ export async function getRenderedDocument(section: SectionConfig, slugParts: str
     breadcrumb: buildBreadcrumb(section, slugParts),
     frontmatter: parsed.data as Record<string, unknown>,
   };
+}
+
+export function getNationSidebar(sourcePath: string): NationSidebar | null {
+  const relativePath = sourcePath.replace(/^content[\\/]/, "");
+  const derivedPath = path.join(DERIVED_ROOT, "nations", `${buildEntrySlug(relativePath)}.json`);
+  if (!fs.existsSync(derivedPath) || !fs.statSync(derivedPath).isFile()) return null;
+  return JSON.parse(fs.readFileSync(derivedPath, "utf8")) as NationSidebar;
 }

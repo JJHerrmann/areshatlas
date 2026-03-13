@@ -1,46 +1,56 @@
 ---
-nation:
-  name: Rammskoda
-  formal_name: 
-  arms: "Vert, a hammer sable palewise transfixing a crown argent, surmounted by a barbed thunderbolt Or bendwise"
+type: nation
 
-  geographic_info:
-    continent: [[Drakharpan]]
-    location: "Eastern Aurea, in a wide valley between the Challieann Mountains and the Antasian Mountains"
+name: Rammskoda
+formal_name:
+arms: "Vert, a hammer sable palewise transfixing a crown argent, surmounted by a barbed thunderbolt Or bendwise"
 
-  government:
-    government_type: Monarchy
-    hierarchy: [King, Duke, Count, Baron, Knight, Burgher]
-    ruler: Thrane Makbar Raamskord
-    capital: Kzerna
-    capital_population: 18896
-    alliances: [[Nekosdamkoda]]
-    hostilities: [[Riagan]], [[Kanchasuyu]]
+continent: Drakharpan
+location: "Eastern Aurea, in a wide valley between the Challieann Mountains and the Antasian Mountains"
 
-  economy:
-    coinage: "Vask, Puul, Kolm, Kuld, Kummekuld"
-    mythus_standard: "1 Kuld = 1 GP (Vask 1/100, Pull 1/10, Kolm 1/5, Kummekold 10/1)"
+government_type: Monarchy
+hierarchy:
+  - King
+  - Duke
+  - Count
+  - Baron
+  - Knight
+  - Burgher
+ruler: Thrane Makbar Raamskord
+capital: Kzerna
+capital_population: 18896
+alliances:
+  - Nekosdamkoda
+hostilities:
+  - Riagan
+  - Kanchasuyu
 
-  society:
-    population: 995776
-    ancestry_breakdown:
-      dwarven: 90
-      human: 6
-      hobbit: 2
-      other: 2
-    languages: [[Karakeel (Dwarven)]], [[Xibanal (Elvish)]]
-    important_persons:
-      - The Vtalasav family
-      - Various nobles of import
+coinage: "Vask, Puul, Kolm, Kuld, Kummekuld"
+mythus_standard: "1 Kuld = 1 GP (Vask 1/100, Pull 1/10, Kolm 1/5, Kummekold 10/1)"
 
-  religion:
-    pantheon: Imperial
-    patron: null
+population: 995776
+population_dwarven: 90
+population_human: 6
+population_hobbit: 2
+population_other: 2
 
-  game_info:
-    cultural_templates: [Dracian]
-    map: Rammskoda
+languages:
+  - Karakeel (Dwarven)
+  - Xibanal (Elvish)
+important_persons:
+  - The Vtalasav family
+  - Various nobles of import
+
+pantheon: Imperial
+patron:
+
+cultural_templates:
+  - Dracian
+map: Rammskoda
 ---
+
+
+
 # Raamskoda
 
 ## Overview

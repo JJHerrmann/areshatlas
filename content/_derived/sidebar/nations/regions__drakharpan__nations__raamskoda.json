@@ -1,0 +1,153 @@
+{
+  "type": "nation",
+  "title": "Rammskoda",
+  "subtitle": null,
+  "source_relative_path": "regions/Drakharpan/nations/Raamskoda.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "map": null
+  },
+  "sections": [
+    {
+      "title": "Identity",
+      "rows": [
+        [
+          "Name",
+          "Rammskoda"
+        ],
+        [
+          "Arms",
+          "Vert, a hammer sable palewise transfixing a crown argent, surmounted by a barbed thunderbolt Or bendwise"
+        ]
+      ]
+    },
+    {
+      "title": "Geographic Info",
+      "rows": [
+        [
+          "Continent",
+          "Drakharpan"
+        ],
+        [
+          "Location",
+          "Eastern Aurea, in a wide valley between the Challieann Mountains and the Antasian Mountains"
+        ]
+      ]
+    },
+    {
+      "title": "Government",
+      "rows": [
+        [
+          "Government Type",
+          "Monarchy"
+        ],
+        [
+          "Hierarchy",
+          [
+            "King",
+            "Duke",
+            "Count",
+            "Baron",
+            "Knight",
+            "Burgher"
+          ]
+        ],
+        [
+          "Ruler",
+          "Thrane Makbar Raamskord"
+        ],
+        [
+          "Capital",
+          "Kzerna"
+        ],
+        [
+          "Capital Population",
+          18896
+        ],
+        [
+          "Alliances",
+          [
+            "Nekosdamkoda"
+          ]
+        ],
+        [
+          "Hostilities",
+          [
+            "Riagan",
+            "Kanchasuyu"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Economy",
+      "rows": [
+        [
+          "Coinage",
+          "Vask, Puul, Kolm, Kuld, Kummekuld"
+        ],
+        [
+          "Mythus Standard",
+          "1 Kuld = 1 GP (Vask 1/100, Pull 1/10, Kolm 1/5, Kummekold 10/1)"
+        ]
+      ]
+    },
+    {
+      "title": "Society",
+      "rows": [
+        [
+          "Population",
+          995776
+        ],
+        [
+          "Ancestry Breakdown",
+          {
+            "dwarven": 90,
+            "human": 6,
+            "hobbit": 2,
+            "other": 2
+          }
+        ],
+        [
+          "Languages",
+          [
+            "Karakeel (Dwarven)",
+            "Xibanal (Elvish)"
+          ]
+        ],
+        [
+          "Important Persons",
+          [
+            "The Vtalasav family",
+            "Various nobles of import"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Religious Info",
+      "rows": [
+        [
+          "Pantheon",
+          "Imperial"
+        ]
+      ]
+    },
+    {
+      "title": "Game Info",
+      "rows": [
+        [
+          "Cultural Templates",
+          [
+            "Dracian"
+          ]
+        ],
+        [
+          "Map",
+          "Rammskoda"
+        ]
+      ]
+    }
+  ]
+}

@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "derive:codex": "node .\\scripts\\generate_codex_derived.mjs",
     "sync:codex": "powershell -ExecutionPolicy Bypass -File .\\scripts\\sync_codex_content.ps1",
     "watch:codex": "node .\\scripts\\watch_codex_content.mjs"
   },
