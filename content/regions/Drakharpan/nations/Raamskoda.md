@@ -1,50 +1,52 @@
 ---
-title: Raamkoda
-type: nation
-endonym: Raamkoda
-exonym: Hall of Raam
-english_gloss: The Hall of Raam
-state_form: Hall-Realm
-capital: Raamkoda
-ruler: Makbar Raamskord
-people: Raamrahvas
-language: Karakeel
-range: Brightfire Mountains
-sacred_peak: Raami Kroonitipp
-religion:
-  - Forge Oaths
-  - Ancestor Veneration
-exports:
-  - ironwork
-  - arms
-  - worked stone
-tags:
-  - nation
-  - dwarven
-  - drakharpan
-image_heraldry: obsidian://open?vault=Mindpalace&file=Pasted%20image%2020260312183735.png
-image_heraldry_alt: hammer sable gorgen crown argent, lightning bolt or
+nation:
+  name: Rammskoda
+  formal_name: 
+  arms: "Vert, a hammer sable palewise transfixing a crown argent, surmounted by a barbed thunderbolt Or bendwise"
+
+  geographic_info:
+    continent: [[Drakharpan]]
+    location: "Eastern Aurea, in a wide valley between the Challieann Mountains and the Antasian Mountains"
+
+  government:
+    government_type: Monarchy
+    hierarchy: [King, Duke, Count, Baron, Knight, Burgher]
+    ruler: Thrane Makbar Raamskord
+    capital: Kzerna
+    capital_population: 18896
+    alliances: [[Nekosdamkoda]]
+    hostilities: [[Riagan]], [[Kanchasuyu]]
+
+  economy:
+    coinage: "Vask, Puul, Kolm, Kuld, Kummekuld"
+    mythus_standard: "1 Kuld = 1 GP (Vask 1/100, Pull 1/10, Kolm 1/5, Kummekold 10/1)"
+
+  society:
+    population: 995776
+    ancestry_breakdown:
+      human: 90
+      dwarven: 2
+      hobbit: 6
+      other: 2
+    languages: [Dracian]
+    important_persons:
+      - The Vtalasav family
+      - Various nobles of import
+
+  religion:
+    pantheon: Imperial
+    patron: null
+
+  game_info:
+    cultural_templates: [Dracian]
+    map: Rammskoda
 ---
 # Raamskoda
 
 ## Overview
 
 The Raamskoda is a larger Hall (Kingdom) by Dwarvish standards under the peaks of the [[Brightfire Mountains]] in Northern [[Drakharpan]]. 
-## State Identity
 
-- Endonym: Raamskoda
-- Exonym: The Halls of Lord Raam
-- State Form: Dwarven Hall
-- Capital:
-- Ruler: [[Makabar Raamskord]] 
-- Seat of Power:
-- People: [[Raamrahvas]]
-- Language: [[Authorship/roleplaying/worlds/aresh/codex-content/cultures/language/Karakeel (Dwarven)|Karakeel (Dwarven)]]
-- Major Faiths:
-- Symbol / Arms:
-- Allies:
-- Rivals:
-- Notable Exports:
 
 ## Geography
 
