@@ -24,14 +24,22 @@ export default async function HomePage() {
           <div className="aresh-hero-shell">
             <div className="aresh-hero-main">
               <div className="aresh-hero-copy">
-                {hero.logoPath ? (
-                  <figure className="aresh-hero-logo">
-                    <img src={hero.logoPath} alt={hero.logoAlt} className="aresh-hero-logo-image" />
-                    {hero.logoCaption ? <figcaption className="aresh-hero-logo-caption">{hero.logoCaption}</figcaption> : null}
-                  </figure>
-                ) : (
-                  <div className="aresh-hero-logo aresh-hero-logo-placeholder" aria-hidden="true" />
-                )}
+                <div className="aresh-hero-rail">
+                  {hero.logoPath ? (
+                    <figure className="aresh-hero-logo">
+                      <img src={hero.logoPath} alt={hero.logoAlt} className="aresh-hero-logo-image" />
+                      {hero.logoCaption ? <figcaption className="aresh-hero-logo-caption">{hero.logoCaption}</figcaption> : null}
+                    </figure>
+                  ) : (
+                    <div className="aresh-hero-logo aresh-hero-logo-placeholder" aria-hidden="true" />
+                  )}
+                  {hero.bannerPath ? (
+                    <figure className="aresh-hero-banner">
+                      <img src={hero.bannerPath} alt={hero.bannerAlt} className="aresh-hero-banner-image" />
+                      {hero.bannerCaption ? <figcaption className="aresh-hero-banner-caption">{hero.bannerCaption}</figcaption> : null}
+                    </figure>
+                  ) : null}
+                </div>
                 <div className="aresh-hero-text">
                   <PlateLabel>{hero.eyebrow}</PlateLabel>
                   <h1 className="mt-4 font-display text-4xl tracking-tight lg:text-6xl">
@@ -56,12 +64,6 @@ export default async function HomePage() {
               <CompassRose />
             </div>
           </div>
-          {hero.bannerPath ? (
-            <figure className="aresh-hero-banner">
-              <img src={hero.bannerPath} alt={hero.bannerAlt} className="aresh-hero-banner-image" />
-              {hero.bannerCaption ? <figcaption className="aresh-hero-banner-caption">{hero.bannerCaption}</figcaption> : null}
-            </figure>
-          ) : null}
         </div>
       </section>
 
