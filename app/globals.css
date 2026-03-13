@@ -23,140 +23,216 @@ body {
   font-family: Palatino, "Times New Roman", serif;
 }
 
-.aresh-masthead {
-  display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
-  gap: 1.5rem;
-  align-items: start;
+.wiki-page-shell {
+  padding: 1rem 0 2rem;
 }
 
-.aresh-masthead-sidebar,
-.aresh-masthead-main {
-  min-width: 0;
+.wiki-page-frame {
+  width: min(1280px, calc(100% - 2rem));
+  margin: 0 auto;
+  border: 1px solid rgba(80, 62, 31, 0.2);
+  background: rgba(253, 249, 239, 0.92);
+  box-shadow: 0 12px 28px rgba(49, 34, 12, 0.08);
 }
 
-.aresh-sidebar-card,
-.aresh-dossier-panel {
-  border: 1px solid rgba(139, 108, 41, 0.28);
-  background:
-    linear-gradient(180deg, rgba(255, 250, 238, 0.95), rgba(241, 228, 193, 0.86)),
-    rgba(255, 255, 255, 0.04);
-  box-shadow: 0 12px 26px rgba(63, 40, 12, 0.08);
-}
-
-.aresh-sidebar-card {
-  position: relative;
-  overflow: hidden;
-  display: grid;
+.wiki-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0.9rem 1.2rem;
+  border-bottom: 1px solid rgba(80, 62, 31, 0.16);
+  background: rgba(247, 241, 223, 0.95);
 }
 
-.aresh-sidebar-logo {
-  position: relative;
-  z-index: 2;
+.wiki-site-name {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #4e3010;
+}
+
+.wiki-site-tagline {
+  margin-top: 0.18rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(88, 61, 22, 0.8);
+}
+
+.wiki-topbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  font-size: 0.92rem;
+}
+
+.wiki-topbar-links a {
+  color: #6b4614;
+  text-decoration: none;
+}
+
+.wiki-layout {
+  display: grid;
+  grid-template-columns: 270px minmax(0, 1fr);
+  gap: 0;
+}
+
+.wiki-sidebar {
+  padding: 1rem;
+  border-right: 1px solid rgba(80, 62, 31, 0.14);
+  background: rgba(245, 237, 215, 0.62);
+}
+
+.wiki-content {
+  padding: 1.25rem;
+}
+
+.wiki-box {
+  border: 1px solid rgba(104, 77, 30, 0.22);
+  background: rgba(255, 252, 244, 0.9);
+  padding: 0.9rem;
+}
+
+.wiki-box + .wiki-box {
+  margin-top: 0.9rem;
+}
+
+.wiki-brand-box {
+  position: sticky;
+  top: 1rem;
+}
+
+.wiki-logo {
   margin: 0;
 }
 
-.aresh-sidebar-logo-image {
+.wiki-logo-image {
   display: block;
   width: 100%;
   height: auto;
-  border: 1px solid rgba(139, 108, 41, 0.24);
   background: rgba(255, 249, 233, 0.96);
-  padding: 0.45rem;
 }
 
-.aresh-sidebar-logo-placeholder {
+.wiki-logo-placeholder {
   min-height: 220px;
   border: 1px dashed rgba(139, 108, 41, 0.3);
   background: rgba(255, 250, 235, 0.45);
 }
 
-.aresh-sidebar-logo-caption {
+.wiki-logo-caption {
   margin-top: 0.35rem;
   font-size: 0.75rem;
   color: rgba(90, 58, 20, 0.78);
 }
 
-.aresh-sidebar-systemline {
-  position: relative;
-  z-index: 2;
-  border-left: 3px solid rgba(139, 108, 41, 0.55);
-  background: rgba(247, 237, 211, 0.9);
-  padding: 0.8rem 0.85rem;
+.wiki-systemline {
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(80, 62, 31, 0.16);
   font-size: 0.72rem;
-  line-height: 1.6;
+  line-height: 1.55;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: rgba(74, 45, 12, 0.92);
+  letter-spacing: 0.08em;
+  color: rgba(74, 45, 12, 0.9);
 }
 
-.aresh-sidebar-labels {
-  position: relative;
-  z-index: 2;
+.wiki-nav-list {
+  display: grid;
+  margin-top: 0.9rem;
+  border-top: 1px solid rgba(80, 62, 31, 0.16);
+}
+
+.wiki-nav-link {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(80, 62, 31, 0.12);
+  color: #5b3a10;
+  text-decoration: none;
+  font-size: 0.9rem;
 }
 
-.aresh-sidebar-label {
-  border: 1px solid rgba(139, 108, 41, 0.3);
-  background: rgba(255, 249, 233, 0.84);
-  padding: 0.3rem 0.5rem;
-  font-size: 0.68rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: rgba(90, 58, 20, 0.88);
-}
-
-.aresh-sidebar-banner {
-  position: absolute;
-  right: -1rem;
-  bottom: -4rem;
-  width: 72%;
+.wiki-meta-list {
   margin: 0;
-  opacity: 0.33;
-  z-index: 1;
-  pointer-events: none;
+  padding-left: 1.1rem;
+  color: rgba(58, 43, 19, 0.88);
 }
 
-.aresh-sidebar-banner-image {
+.wiki-box-title {
+  margin: 0 0 0.7rem;
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(103, 71, 26, 0.92);
+}
+
+.wiki-banner-box {
+  padding: 0.4rem;
+}
+
+.wiki-banner-image {
   display: block;
   width: 100%;
   height: auto;
   transform: rotate(180deg);
-  filter: saturate(0.95);
+  opacity: 0.72;
 }
 
-.aresh-masthead-header {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 1.5rem;
-  align-items: start;
+.wiki-article {
+  border-bottom: 1px solid rgba(80, 62, 31, 0.16);
+  padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
 
-.aresh-dossier-grid {
+.wiki-article-header {
+  margin-bottom: 1rem;
+}
+
+.wiki-kicker {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(103, 71, 26, 0.84);
+}
+
+.wiki-title {
+  margin: 0.2rem 0 0;
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  line-height: 1.08;
+  color: #3e250a;
+}
+
+.wiki-subtitle {
+  margin: 0.55rem 0 0;
+  max-width: 54rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(58, 43, 19, 0.86);
+}
+
+.wiki-prose {
+  max-width: 60rem;
+}
+
+.wiki-module-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(240px, 0.8fr);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.38fr);
   gap: 1rem;
 }
 
-.aresh-dossier-panel {
-  padding: 1.1rem 1.2rem;
+.wiki-module-wide {
+  grid-row: span 2;
 }
 
-.aresh-panel-title {
-  margin: 0;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: rgba(103, 71, 26, 0.9);
+.wiki-section-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.aresh-panel-copy {
-  margin: 0.85rem 0 0;
+.wiki-copy {
+  margin: 0.75rem 0 0;
   line-height: 1.7;
   color: rgba(55, 40, 18, 0.86);
 }
@@ -375,20 +451,25 @@ body {
 }
 
 @media (max-width: 980px) {
-  .aresh-masthead,
-  .aresh-dossier-grid,
-  .aresh-masthead-header {
+  .wiki-topbar,
+  .wiki-layout,
+  .wiki-module-grid,
+  .wiki-section-grid {
     grid-template-columns: 1fr;
   }
 
-  .aresh-masthead-sidebar {
-    max-width: 420px;
+  .wiki-topbar {
+    display: grid;
+    align-items: start;
   }
 
-  .aresh-sidebar-banner {
-    width: 50%;
-    right: -0.5rem;
-    bottom: -3rem;
+  .wiki-sidebar {
+    border-right: 0;
+    border-bottom: 1px solid rgba(80, 62, 31, 0.14);
+  }
+
+  .wiki-brand-box {
+    position: static;
   }
 
   .codex-entry-layout.with-sidebar {
