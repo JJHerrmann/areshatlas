@@ -88,6 +88,13 @@ export const sections: SectionConfig[] = [
     folder: "cultures",
   },
   {
+    slug: "languages",
+    title: "Languages",
+    label: "Linguistic Records",
+    summary: "Tongues, scripts, speech families, and language notes gathered across Areshnaat.",
+    folder: "cultures/language",
+  },
+  {
     slug: "relics",
     title: "Relics and Magic",
     label: "Artifacts and Arcana",
