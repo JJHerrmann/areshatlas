@@ -32,3 +32,4 @@ world_editor_data/
 tools/
 *.kml
 *.png
+!public/**/*.png

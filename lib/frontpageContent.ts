@@ -11,6 +11,7 @@ export type FrontpageHero = {
   eyebrow: string;
   title: string;
   subtitle: string;
+  systemLine: string;
   bodyHtml: string;
   plaqueLabels: string[];
   logoPath: string | null;
@@ -36,17 +37,19 @@ async function renderMarkdown(markdown: string) {
 export async function getFrontpageHero(): Promise<FrontpageHero> {
   if (!fs.existsSync(HERO_PATH)) {
     return {
-      eyebrow: "Survey Archive of Aresh",
-      title: "The Natural and Geographic Survey of Aresh",
+      eyebrow: "Survey Archive of Areshnaat",
+      title: "The Natural and Geographic Survey of Areshnaat",
       subtitle:
-        "A codex of lands, peoples, creatures, relics, and divine influences, presented in the manner of a pre-industrial cartographic archive.",
-      bodyHtml: "<p>Aresh awaits its first formal frontpage folio.</p>",
+        "Atlas, archive, and field record of the world of Areshnaat.",
+      systemLine: "A Campaign Setting for | Dungeons and Dragons 5e | Dungeons and Dragons 5.5e | GURPS",
+      bodyHtml:
+        "<p>A codex of lands, peoples, creatures, relics, and divine influences, presented in the manner of a pre-industrial cartographic archive.</p>",
       plaqueLabels: ["Herodetus Darwin", "Line of Ashen", "Halls of Shekelarmesh"],
-      logoPath: null,
-      logoAlt: "Aresh Atlas logo",
+      logoPath: "/branding/wiki-logo.png",
+      logoAlt: "Areshnaat wiki logo",
       logoCaption: null,
-      bannerPath: null,
-      bannerAlt: "Aresh Atlas hero banner",
+      bannerPath: "/branding/hero-banner.svg",
+      bannerAlt: "Banner view of Areshnaat",
       bannerCaption: null,
     };
   }
@@ -54,21 +57,25 @@ export async function getFrontpageHero(): Promise<FrontpageHero> {
   const raw = fs.readFileSync(HERO_PATH, "utf8");
   const parsed = matter(raw);
   return {
-    eyebrow: String(parsed.data.eyebrow || "Survey Archive of Aresh"),
-    title: String(parsed.data.title || "The Natural and Geographic Survey of Aresh"),
+    eyebrow: String(parsed.data.eyebrow || "Survey Archive of Areshnaat"),
+    title: String(parsed.data.title || "The Natural and Geographic Survey of Areshnaat"),
     subtitle: String(
       parsed.data.subtitle ||
-        "A codex of lands, peoples, creatures, relics, and divine influences, presented in the manner of a pre-industrial cartographic archive.",
+        "Atlas, archive, and field record of the world of Areshnaat.",
+    ),
+    systemLine: String(
+      parsed.data.system_line ||
+        "A Campaign Setting for | Dungeons and Dragons 5e | Dungeons and Dragons 5.5e | GURPS",
     ),
     bodyHtml: await renderMarkdown(parsed.content || ""),
     plaqueLabels: Array.isArray(parsed.data.plaque_labels)
       ? parsed.data.plaque_labels.map((item: unknown) => String(item))
       : ["Herodetus Darwin", "Line of Ashen", "Halls of Shekelarmesh"],
-    logoPath: parsed.data.logo_path ? String(parsed.data.logo_path) : null,
-    logoAlt: String(parsed.data.logo_alt || "Aresh Atlas logo"),
+    logoPath: parsed.data.logo_path ? String(parsed.data.logo_path) : "/branding/wiki-logo.png",
+    logoAlt: String(parsed.data.logo_alt || "Areshnaat wiki logo"),
     logoCaption: parsed.data.logo_caption ? String(parsed.data.logo_caption) : null,
-    bannerPath: parsed.data.banner_path ? String(parsed.data.banner_path) : null,
-    bannerAlt: String(parsed.data.banner_alt || "Aresh Atlas hero banner"),
+    bannerPath: parsed.data.banner_path ? String(parsed.data.banner_path) : "/branding/hero-banner.svg",
+    bannerAlt: String(parsed.data.banner_alt || "Banner view of Areshnaat"),
     bannerCaption: parsed.data.banner_caption ? String(parsed.data.banner_caption) : null,
   };
 }

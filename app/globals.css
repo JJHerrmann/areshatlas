@@ -47,6 +47,18 @@ body {
   align-content: start;
 }
 
+.aresh-hero-systemline {
+  border-top: 1px solid rgba(139, 108, 41, 0.22);
+  border-bottom: 1px solid rgba(139, 108, 41, 0.22);
+  padding: 0.7rem 0.25rem;
+  font-size: 0.68rem;
+  line-height: 1.55;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(90, 58, 20, 0.86);
+}
+
 .aresh-hero-text {
   min-width: 0;
 }
@@ -85,7 +97,7 @@ body {
 .aresh-hero-banner-image {
   display: block;
   width: 100%;
-  min-height: 320px;
+  min-height: 420px;
   height: 100%;
   object-fit: cover;
   border: 1px solid rgba(139, 108, 41, 0.28);
@@ -327,6 +339,10 @@ body {
   .aresh-hero-logo,
   .aresh-hero-logo-placeholder {
     max-width: 180px;
+  }
+
+  .aresh-hero-banner-image {
+    min-height: 280px;
   }
 
   .codex-entry-layout.with-sidebar {

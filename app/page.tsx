@@ -33,6 +33,7 @@ export default async function HomePage() {
                   ) : (
                     <div className="aresh-hero-logo aresh-hero-logo-placeholder" aria-hidden="true" />
                   )}
+                  <div className="aresh-hero-systemline">{hero.systemLine}</div>
                   {hero.bannerPath ? (
                     <figure className="aresh-hero-banner">
                       <img src={hero.bannerPath} alt={hero.bannerAlt} className="aresh-hero-banner-image" />
