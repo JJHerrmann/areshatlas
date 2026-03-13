@@ -33,3 +33,5 @@ tools/
 *.kml
 *.png
 !public/**/*.png
+*.ai
+*.psd
