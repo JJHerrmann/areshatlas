@@ -19,31 +19,40 @@ export default async function HomePage() {
 
   return (
     <main className="min-h-screen text-stone-900">
-      <section className="border-b border-amber-300/80 bg-amber-100/80">
-        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="aresh-hero-shell">
-            <div className="aresh-hero-main">
-              <div className="aresh-hero-copy">
-                <div className="aresh-hero-rail">
-                  {hero.logoPath ? (
-                    <figure className="aresh-hero-logo">
-                      <img src={hero.logoPath} alt={hero.logoAlt} className="aresh-hero-logo-image" />
-                      {hero.logoCaption ? <figcaption className="aresh-hero-logo-caption">{hero.logoCaption}</figcaption> : null}
-                    </figure>
-                  ) : (
-                    <div className="aresh-hero-logo aresh-hero-logo-placeholder" aria-hidden="true" />
-                  )}
-                  <div className="aresh-hero-banner-stack">
-                    {hero.bannerPath ? (
-                      <figure className="aresh-hero-banner" aria-hidden="true">
-                        <img src={hero.bannerPath} alt={hero.bannerAlt} className="aresh-hero-banner-image" />
-                        {hero.bannerCaption ? <figcaption className="aresh-hero-banner-caption">{hero.bannerCaption}</figcaption> : null}
-                      </figure>
-                    ) : null}
-                    <div className="aresh-hero-systemline">{hero.systemLine}</div>
-                  </div>
+      <section className="border-b border-amber-300/80 bg-amber-100/70">
+        <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+          <div className="aresh-masthead">
+            <aside className="aresh-masthead-sidebar">
+              <div className="aresh-sidebar-card">
+                {hero.logoPath ? (
+                  <figure className="aresh-sidebar-logo">
+                    <img src={hero.logoPath} alt={hero.logoAlt} className="aresh-sidebar-logo-image" />
+                    {hero.logoCaption ? <figcaption className="aresh-sidebar-logo-caption">{hero.logoCaption}</figcaption> : null}
+                  </figure>
+                ) : (
+                  <div className="aresh-sidebar-logo aresh-sidebar-logo-placeholder" aria-hidden="true" />
+                )}
+                <div className="aresh-sidebar-systemline">
+                  <span>{hero.systemLine}</span>
                 </div>
-                <div className="aresh-hero-text">
+                <div className="aresh-sidebar-labels">
+                  {hero.plaqueLabels.map((label) => (
+                    <span key={label} className="aresh-sidebar-label">
+                      {label}
+                    </span>
+                  ))}
+                </div>
+                {hero.bannerPath ? (
+                  <figure className="aresh-sidebar-banner" aria-hidden="true">
+                    <img src={hero.bannerPath} alt={hero.bannerAlt} className="aresh-sidebar-banner-image" />
+                  </figure>
+                ) : null}
+              </div>
+            </aside>
+
+            <div className="aresh-masthead-main">
+              <div className="aresh-masthead-header">
+                <div>
                   <PlateLabel>{hero.eyebrow}</PlateLabel>
                   <h1 className="mt-4 font-display text-4xl tracking-tight lg:text-6xl">
                     {hero.title}
@@ -51,20 +60,33 @@ export default async function HomePage() {
                   <p className="mt-4 max-w-3xl text-base leading-7 text-stone-700">
                     {hero.subtitle}
                   </p>
-                  <div
-                    className="codex-prose mt-4 max-w-3xl text-stone-700"
-                    dangerouslySetInnerHTML={{ __html: hero.bodyHtml }}
-                  />
-                  <div className="mt-6 flex flex-wrap gap-3 text-[11px] uppercase tracking-[0.22em] text-amber-800">
-                    {hero.plaqueLabels.map((label) => (
-                      <span key={label} className="border border-amber-400/70 px-3 py-1">{label}</span>
-                    ))}
-                  </div>
+                </div>
+                <div className="hidden xl:block">
+                  <CompassRose />
                 </div>
               </div>
-            </div>
-            <div className="hidden lg:block">
-              <CompassRose />
+
+              <div className="aresh-dossier-grid">
+                <article className="aresh-dossier-panel">
+                  <h2 className="aresh-panel-title">Survey Introduction</h2>
+                  <div
+                    className="codex-prose mt-4 text-stone-700"
+                    dangerouslySetInnerHTML={{ __html: hero.bodyHtml }}
+                  />
+                </article>
+
+                <aside className="aresh-dossier-panel aresh-dossier-notes">
+                  <h2 className="aresh-panel-title">Archive Notes</h2>
+                  <p className="aresh-panel-copy">
+                    The codex is arranged as a browsable field archive: major divisions
+                    lead to regions, peoples, divine records, and language material.
+                  </p>
+                  <p className="aresh-panel-copy">
+                    Section indexes behave like survey ledgers; individual notes render
+                    as readable dossier pages with metadata and crosslinks.
+                  </p>
+                </aside>
+              </div>
             </div>
           </div>
         </div>

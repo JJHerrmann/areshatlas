@@ -23,109 +23,142 @@ body {
   font-family: Palatino, "Times New Roman", serif;
 }
 
-.aresh-hero-shell {
+.aresh-masthead {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 2rem;
-  align-items: start;
-}
-
-.aresh-hero-main {
-  min-width: 0;
-}
-
-.aresh-hero-copy {
-  display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
+  grid-template-columns: 260px minmax(0, 1fr);
   gap: 1.5rem;
   align-items: start;
 }
 
-.aresh-hero-rail {
-  display: grid;
-  gap: 0.75rem;
-  align-content: start;
-}
-
-.aresh-hero-banner-stack {
-  position: relative;
-  min-height: 24rem;
-  margin-top: -1rem;
-  padding: 7.5rem 0.85rem 1rem;
-  display: grid;
-  align-items: start;
-}
-
-.aresh-hero-systemline {
-  position: relative;
-  z-index: 1;
-  border: 1px solid rgba(139, 108, 41, 0.3);
-  background: linear-gradient(180deg, rgba(248, 239, 214, 0.92), rgba(236, 220, 181, 0.88));
-  box-shadow: 0 10px 22px rgba(60, 39, 13, 0.14);
-  padding: 0.8rem 0.6rem;
-  font-size: 0.68rem;
-  line-height: 1.55;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: rgba(74, 45, 12, 0.92);
-  text-wrap: balance;
-}
-
-.aresh-hero-text {
+.aresh-masthead-sidebar,
+.aresh-masthead-main {
   min-width: 0;
 }
 
-.aresh-hero-logo {
+.aresh-sidebar-card,
+.aresh-dossier-panel {
+  border: 1px solid rgba(139, 108, 41, 0.28);
+  background:
+    linear-gradient(180deg, rgba(255, 250, 238, 0.95), rgba(241, 228, 193, 0.86)),
+    rgba(255, 255, 255, 0.04);
+  box-shadow: 0 12px 26px rgba(63, 40, 12, 0.08);
+}
+
+.aresh-sidebar-card {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.aresh-sidebar-logo {
+  position: relative;
+  z-index: 2;
   margin: 0;
 }
 
-.aresh-hero-logo-image {
+.aresh-sidebar-logo-image {
   display: block;
-  max-width: 180px;
   width: 100%;
   height: auto;
-  border: 1px solid rgba(139, 108, 41, 0.28);
-  background: rgba(255, 250, 235, 0.92);
-  padding: 0.4rem;
+  border: 1px solid rgba(139, 108, 41, 0.24);
+  background: rgba(255, 249, 233, 0.96);
+  padding: 0.45rem;
 }
 
-.aresh-hero-logo-placeholder {
-  width: 100%;
-  min-height: 180px;
+.aresh-sidebar-logo-placeholder {
+  min-height: 220px;
   border: 1px dashed rgba(139, 108, 41, 0.3);
-  background: rgba(255, 250, 235, 0.4);
+  background: rgba(255, 250, 235, 0.45);
 }
 
-.aresh-hero-logo-caption {
+.aresh-sidebar-logo-caption {
   margin-top: 0.35rem;
   font-size: 0.75rem;
   color: rgba(90, 58, 20, 0.78);
 }
 
-.aresh-hero-banner {
-  position: absolute;
-  inset: 0 0 auto;
-  margin: 0;
-  z-index: 0;
+.aresh-sidebar-systemline {
+  position: relative;
+  z-index: 2;
+  border-left: 3px solid rgba(139, 108, 41, 0.55);
+  background: rgba(247, 237, 211, 0.9);
+  padding: 0.8rem 0.85rem;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(74, 45, 12, 0.92);
 }
 
-.aresh-hero-banner-image {
+.aresh-sidebar-labels {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.aresh-sidebar-label {
+  border: 1px solid rgba(139, 108, 41, 0.3);
+  background: rgba(255, 249, 233, 0.84);
+  padding: 0.3rem 0.5rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(90, 58, 20, 0.88);
+}
+
+.aresh-sidebar-banner {
+  position: absolute;
+  right: -1rem;
+  bottom: -4rem;
+  width: 72%;
+  margin: 0;
+  opacity: 0.33;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.aresh-sidebar-banner-image {
   display: block;
   width: 100%;
-  min-height: 440px;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
   transform: rotate(180deg);
-  opacity: 0.92;
-  filter: drop-shadow(0 14px 18px rgba(49, 31, 8, 0.18));
+  filter: saturate(0.95);
 }
 
-.aresh-hero-banner-caption {
-  margin-top: 0.45rem;
-  font-size: 0.8rem;
-  color: rgba(90, 58, 20, 0.78);
+.aresh-masthead-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.aresh-dossier-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(240px, 0.8fr);
+  gap: 1rem;
+}
+
+.aresh-dossier-panel {
+  padding: 1.1rem 1.2rem;
+}
+
+.aresh-panel-title {
+  margin: 0;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: rgba(103, 71, 26, 0.9);
+}
+
+.aresh-panel-copy {
+  margin: 0.85rem 0 0;
+  line-height: 1.7;
+  color: rgba(55, 40, 18, 0.86);
 }
 
 .codex-prose {
@@ -342,31 +375,20 @@ body {
 }
 
 @media (max-width: 980px) {
-  .aresh-hero-shell {
+  .aresh-masthead,
+  .aresh-dossier-grid,
+  .aresh-masthead-header {
     grid-template-columns: 1fr;
   }
 
-  .aresh-hero-copy {
-    grid-template-columns: 1fr;
+  .aresh-masthead-sidebar {
+    max-width: 420px;
   }
 
-  .aresh-hero-rail {
-    max-width: 220px;
-  }
-
-  .aresh-hero-banner-stack {
-    min-height: 18rem;
-    margin-top: -0.75rem;
-    padding-top: 5.5rem;
-  }
-
-  .aresh-hero-logo,
-  .aresh-hero-logo-placeholder {
-    max-width: 180px;
-  }
-
-  .aresh-hero-banner-image {
-    min-height: 280px;
+  .aresh-sidebar-banner {
+    width: 50%;
+    right: -0.5rem;
+    bottom: -3rem;
   }
 
   .codex-entry-layout.with-sidebar {
