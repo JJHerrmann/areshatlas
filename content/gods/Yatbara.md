@@ -1,8 +1,8 @@
 ---
-name: ""
-epithet: ""
-title: ""
-pantheon: ""
+name: Yatbara
+epithet: The God of Creation
+honorific_title: The Formless One
+pantheon: Areshnaati
 divine_rank: ""
 gender: ""
 nature: ""

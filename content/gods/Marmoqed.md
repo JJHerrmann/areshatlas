@@ -1,6 +1,6 @@
 ---
-name: ""
-epithet: ""
+name: Marmoqed
+epithet: The God of Hearth and Medicine
 title: ""
 pantheon: ""
 divine_rank: ""

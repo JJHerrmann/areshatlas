@@ -1,6 +1,6 @@
 ---
-name: ""
-epithet: ""
+name: Raavvah
+epithet: The God of Famines and Calamity
 title: ""
 pantheon: ""
 divine_rank: ""

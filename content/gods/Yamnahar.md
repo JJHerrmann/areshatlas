@@ -1,7 +1,7 @@
 ---
 type: deity
-name: ""
-epithet: ""
+name: Yamnahar
+epithet: The God of Seas and Rivers
 title: ""
 pantheon: ""
 divine_rank: ""

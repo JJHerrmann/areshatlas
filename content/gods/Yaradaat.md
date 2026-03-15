@@ -1,7 +1,7 @@
 ---
 type: deity
-name: ""
-epithet: ""
+name: Yaradaat
+epithet: The God of Knowledge and Law
 title: ""
 pantheon: ""
 divine_rank: ""

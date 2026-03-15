@@ -1,7 +1,7 @@
 ---
 type: deity
-name: ""
-epithet: ""
+name: Lotan
+epithet: The Sky Serpent
 title: ""
 pantheon: ""
 divine_rank: ""
@@ -43,7 +43,7 @@ tags:
   - deity
   - religion
 ---
-# {{name}}
+	# {{name}}
 *{{epithet}}*
 
 {{short_overview}}
@@ -208,4 +208,6 @@ tags:
 
 ## Notes
 
-{{notes}}
+{{notes}}In the skies of Areshnaat, there lives a serpent, who is doomed to eat it's own tail. It's coil can be seen in the night sky floating above Areshnaat.
+
+![[Milky-Way-Tracker.webp]]

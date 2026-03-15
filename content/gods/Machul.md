@@ -1,6 +1,6 @@
 ---
-name: ""
-epithet: ""
+name: Machul
+epithet: The God of Dances and Storms
 title: ""
 pantheon: ""
 divine_rank: ""

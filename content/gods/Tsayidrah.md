@@ -1,7 +1,7 @@
 ---
 type: deity
-name: ""
-epithet: ""
+name: Tsayidrah
+epithet: The God of Hunting and Fertility
 title: ""
 pantheon: ""
 divine_rank: ""

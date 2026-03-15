@@ -1,7 +1,7 @@
 ---
 type: deity
-name: ""
-epithet: ""
+name: Sheol
+epithet: The God of the Underworld
 title: ""
 pantheon: ""
 divine_rank: ""
@@ -208,6 +208,4 @@ tags:
 
 ## Notes
 
-{{notes}}In the skies of Areshnaat, there lives a serpent, who is doomed to eat it's own tail. It's coil can be seen in the night sky floating above Areshnaat.
-
-![[Milky-Way-Tracker.webp]]
+{{notes}}

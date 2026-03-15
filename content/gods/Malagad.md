@@ -1,7 +1,7 @@
 ---
 type: deity
-name: ""
-epithet: ""
+name: Malagad
+epithet: The God of Messages and Fortunes
 title: ""
 pantheon: ""
 divine_rank: ""

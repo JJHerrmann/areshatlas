@@ -1,7 +1,7 @@
 ---
 type: deity
-name: ""
-epithet: ""
+name: Harbaal
+epithet: The God of Mountains
 title: ""
 pantheon: ""
 divine_rank: ""

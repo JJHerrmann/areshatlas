@@ -1,0 +1,22 @@
+{
+  "type": "deity",
+  "title": "Yatbara",
+  "subtitle": "The God of Creation",
+  "source_relative_path": "gods/Yatbara.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          "Areshnaati"
+        ]
+      ]
+    }
+  ]
+}

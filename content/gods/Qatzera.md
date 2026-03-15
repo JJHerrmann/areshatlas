@@ -1,6 +1,6 @@
 ---
-name: ""
-epithet: ""
+name: Qatzera
+epithet: The God of Harvest and Crops
 title: ""
 pantheon: ""
 divine_rank: ""
