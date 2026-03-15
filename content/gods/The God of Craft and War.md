@@ -5,7 +5,7 @@ title: "The Wailing Hammer"
 pantheon: "Areshnaati"
 divine_rank: "Major"
 gender: "Male"
-nature: ""
+nature: "chaotic, gen"
 ethos: ""
 major_influence: ""
 minor_influences: []
@@ -51,7 +51,7 @@ tags:
 
 **Title:** {{title}}  
 **Pantheon:** `= this.pantheon`
-**Rank:** {{divine_rank}}  
+**Rank:** `= this.divine_rank`  
 **Gender:** {{gender}}  
 **Nature:** {{nature}}  
 **Ethos:** {{ethos}}  
