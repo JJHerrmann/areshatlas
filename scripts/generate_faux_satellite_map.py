@@ -88,6 +88,16 @@ def main() -> None:
 
     land_rgb = biome.copy()
 
+    # Reinterpret a few stylized biome source colors into more satellite-like surface tones.
+    rainforest_mask = landmask & (biome[..., 0] > 0.78) & (biome[..., 1] < 0.56) & (biome[..., 2] < 0.46)
+    grassland_mask = landmask & (biome[..., 0] > 0.84) & (biome[..., 1] > 0.72) & (biome[..., 2] < 0.46)
+
+    rainforest_color = np.array([0.12, 0.34, 0.16], dtype=np.float32)
+    grassland_color = np.array([0.70, 0.74, 0.24], dtype=np.float32)
+
+    land_rgb[rainforest_mask] = land_rgb[rainforest_mask] * 0.18 + rainforest_color * 0.82
+    land_rgb[grassland_mask] = land_rgb[grassland_mask] * 0.28 + grassland_color * 0.72
+
     vegetation_boost = np.stack(
         (
             0.04 + 0.10 * moisture,
