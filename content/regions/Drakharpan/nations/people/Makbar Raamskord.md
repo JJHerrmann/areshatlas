@@ -1,4 +1,5 @@
 ---
+type: person
 image: "![[makab.png]]"
 name: "Makbar Raamskord"
 honorific_title: "[[Akahel of Kharmahal]]"
