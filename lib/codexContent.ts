@@ -355,7 +355,6 @@ export function getSectionEntries(section: SectionConfig, slugParts: string[] = 
 }
 
 export function getSectionOverview(section: SectionConfig, slugParts: string[] = []) {
-  if (!slugParts.length) return null;
   const dirPath = resolveDirectoryPath(section, slugParts);
   if (!dirPath || !fs.existsSync(dirPath) || !fs.statSync(dirPath).isDirectory()) {
     return null;
@@ -366,14 +365,17 @@ export function getSectionOverview(section: SectionConfig, slugParts: string[] =
     .readdirSync(dirPath, { withFileTypes: true })
     .filter((item) => item.isFile())
     .map((item) => path.join(dirPath, item.name))
-    .find((candidate) => MARKDOWN_EXTENSIONS.has(path.extname(candidate).toLowerCase()) && titleFromFileName(path.basename(candidate)) === folderName);
+    .find(
+      (candidate) =>
+        MARKDOWN_EXTENSIONS.has(path.extname(candidate).toLowerCase()) &&
+        slugifySegment(titleFromFileName(path.basename(candidate))) === slugifySegment(folderName),
+    );
   if (!indexFile) return null;
 
   return createFileEntry(section, slugParts.slice(0, -1), indexFile, slugParts.join(" / "));
 }
 
 function findOverviewMarkdownFile(section: SectionConfig, slugParts: string[]) {
-  if (!slugParts.length) return null;
   const dirPath = resolveDirectoryPath(section, slugParts);
   if (!dirPath || !fs.existsSync(dirPath) || !fs.statSync(dirPath).isDirectory()) {
     return null;
@@ -385,7 +387,11 @@ function findOverviewMarkdownFile(section: SectionConfig, slugParts: string[]) {
       .readdirSync(dirPath, { withFileTypes: true })
       .filter((item) => item.isFile())
       .map((item) => path.join(dirPath, item.name))
-      .find((candidate) => MARKDOWN_EXTENSIONS.has(path.extname(candidate).toLowerCase()) && titleFromFileName(path.basename(candidate)) === folderName) || null
+      .find(
+        (candidate) =>
+          MARKDOWN_EXTENSIONS.has(path.extname(candidate).toLowerCase()) &&
+          slugifySegment(titleFromFileName(path.basename(candidate))) === slugifySegment(folderName),
+      ) || null
   );
 }
 
