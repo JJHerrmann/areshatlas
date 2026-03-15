@@ -23,6 +23,12 @@
         [
           "Gender",
           "Male"
+        ],
+        [
+          "Consort(s)",
+          [
+            "None"
+          ]
         ]
       ]
     },
@@ -40,6 +46,13 @@
         [
           "Ethos",
           "lawful"
+        ],
+        [
+          "Spheres",
+          [
+            "Forge",
+            "War"
+          ]
         ]
       ]
     }

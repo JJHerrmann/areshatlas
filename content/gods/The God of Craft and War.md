@@ -10,12 +10,12 @@ nature: "chaotic, generative"
 ethos: "lawful"
 major_influence: ""
 minor_influences: []
-spheres: []
+spheres: [Forge, War]
 avatars: []
 parents: []
 siblings: []
 offspring: []
-consorts: []
+consorts: [None]
 allies: []
 foes: []
 dwelling_place: ""
