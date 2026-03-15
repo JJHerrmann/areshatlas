@@ -1,1 +1,1 @@
-![[makar.png]]
+![[makab.png]]

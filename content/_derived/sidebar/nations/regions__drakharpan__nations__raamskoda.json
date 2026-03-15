@@ -55,11 +55,11 @@
         ],
         [
           "Ruler",
-          "Thrane Makbar Raamskord"
+          "Akahel Makbar Raamskord"
         ],
         [
           "Capital",
-          "Kzerna"
+          "Kharmahal"
         ],
         [
           "Capital Population",
@@ -68,7 +68,8 @@
         [
           "Alliances",
           [
-            "Nekosdamkoda"
+            "Nekosdamkoda",
+            "Xihautl"
           ]
         ],
         [
@@ -130,7 +131,7 @@
       "rows": [
         [
           "Pantheon",
-          "Imperial"
+          "Xihautl"
         ]
       ]
     },

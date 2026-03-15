@@ -1,13 +1,10 @@
 ---
 type: nation
-
 name: Rammskoda
 formal_name:
-arms: "Vert, a hammer sable palewise transfixing a crown argent, surmounted by a barbed thunderbolt Or bendwise"
-
+arms: Vert, a hammer sable palewise transfixing a crown argent, surmounted by a barbed thunderbolt Or bendwise
 continent: Drakharpan
-location: "Eastern Aurea, in a wide valley between the Challieann Mountains and the Antasian Mountains"
-
+location: Eastern Aurea, in a wide valley between the Challieann Mountains and the Antasian Mountains
 government_type: Monarchy
 hierarchy:
   - King
@@ -16,34 +13,30 @@ hierarchy:
   - Baron
   - Knight
   - Burgher
-ruler: Thrane Makbar Raamskord
-capital: Kzerna
+ruler: Akahel Makbar Raamskord
+capital: Kharmahal
 capital_population: 18896
 alliances:
   - Nekosdamkoda
+  - Xihautl
 hostilities:
   - Riagan
   - Kanchasuyu
-
-coinage: "Vask, Puul, Kolm, Kuld, Kummekuld"
-mythus_standard: "1 Kuld = 1 GP (Vask 1/100, Pull 1/10, Kolm 1/5, Kummekold 10/1)"
-
+coinage: Vask, Puul, Kolm, Kuld, Kummekuld
+mythus_standard: 1 Kuld = 1 GP (Vask 1/100, Pull 1/10, Kolm 1/5, Kummekold 10/1)
 population: 995776
 population_dwarven: 90
 population_human: 6
 population_hobbit: 2
 population_other: 2
-
 languages:
   - Karakeel (Dwarven)
   - Xibanal (Elvish)
 important_persons:
   - The Vtalasav family
   - Various nobles of import
-
-pantheon: Imperial
+pantheon: Xihautl
 patron:
-
 cultural_templates:
   - Dracian
 map: Rammskoda
@@ -55,7 +48,7 @@ map: Rammskoda
 
 ## Overview
 
-The Raamskoda is a larger Hall (Kingdom) by Dwarvish standards under the peaks of the [[Brightfire Mountains]] in Northern [[Drakharpan]]. 
+The Raamskoda is a larger Hall (Kingdom) by Dwarvish standards under the peaks of the [[Brightfire Mountains]] in Northern [[Drakharpan]]. Founded around the sacred forge fires said to have been brought down from the top of Brightfire mountain
 
 
 ## Geography
