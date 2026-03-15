@@ -43,7 +43,7 @@ tags:
   - religion
 ---
 # `= this.name`
-*{{epithet}}*
+*`= this.epithet`*
 
 {{short_overview}}
 
