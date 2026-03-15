@@ -481,7 +481,7 @@ body {
     --paper: #11161b;
     --paper-deep: #1a2128;
     --ink: #eadfca;
-    --accent-brass: #b5964f;
+    --accent-brass: #c2a35f;
   }
 
   html {
@@ -527,15 +527,15 @@ body {
   .wiki-meta-list,
   .codex-infobox-caption,
   .codex-infobox-subtitle,
-  .codex-infobox-row dt,
-  .codex-infobox-section-title {
-    color: rgba(229, 216, 188, 0.74);
+  .codex-infobox-row dt {
+    color: rgba(224, 212, 190, 0.76);
   }
 
   .wiki-systemline,
   .wiki-kicker,
-  .wiki-box-title {
-    color: rgba(216, 185, 116, 0.92);
+  .wiki-box-title,
+  .codex-infobox-section-title {
+    color: #d7b56e;
   }
 
   .wiki-nav-list,
@@ -553,7 +553,22 @@ body {
   .codex-prose h4,
   .codex-infobox-title,
   .codex-infobox-row dd {
-    color: #f0e4c8;
+    color: #f3ead4;
+  }
+
+  .wiki-title,
+  .codex-prose h1 {
+    color: #f5ebd0;
+  }
+
+  .codex-prose h2 {
+    color: #e3cc95;
+  }
+
+  .codex-prose h3,
+  .codex-prose h4,
+  .wiki-nav-link:hover {
+    color: #dcb872;
   }
 
   .wiki-world-map-image {
@@ -562,7 +577,7 @@ body {
   }
 
   .codex-prose {
-    color: rgba(237, 228, 206, 0.95);
+    color: rgba(238, 229, 208, 0.94);
   }
 
   .codex-prose code {
