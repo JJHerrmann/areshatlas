@@ -237,6 +237,76 @@ body {
   color: rgba(55, 40, 18, 0.86);
 }
 
+.codex-backlink {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.26em;
+  color: rgba(133, 75, 14, 0.94);
+  transition: color 160ms ease;
+}
+
+.codex-backlink:hover {
+  color: #4b2b0b;
+}
+
+.codex-breadcrumb-pill {
+  border: 1px solid rgba(194, 151, 72, 0.58);
+  padding: 0.3rem 0.75rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: rgba(114, 69, 16, 0.96);
+  transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.codex-breadcrumb-pill:hover {
+  background: rgba(236, 204, 126, 0.24);
+  color: #4b2b0b;
+}
+
+.codex-page-title {
+  font-family: var(--font-display), Palatino, "Times New Roman", serif;
+  font-size: 2.25rem;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: #5a2f08;
+}
+
+.codex-page-summary {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(70, 54, 31, 0.88);
+}
+
+.codex-source-note {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: rgba(149, 96, 28, 0.9);
+}
+
+.codex-frontmatter-panel {
+  border: 1px solid rgba(181, 149, 93, 0.58);
+  background: rgba(244, 236, 219, 0.82);
+}
+
+.codex-frontmatter-key {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: rgba(132, 84, 20, 0.94);
+}
+
+.codex-frontmatter-value {
+  color: rgba(46, 33, 18, 0.94);
+}
+
+.codex-empty-state {
+  border: 1px solid rgba(181, 149, 93, 0.78);
+  background: rgba(244, 236, 219, 0.86);
+  color: rgba(70, 54, 31, 0.9);
+}
+
 .codex-prose {
   line-height: 1.75;
   color: rgba(41, 31, 20, 0.96);
@@ -556,6 +626,25 @@ body {
     color: #f3ead4;
   }
 
+  .codex-backlink {
+    color: #ddb35f;
+  }
+
+  .codex-backlink:hover {
+    color: #f4dfb0;
+  }
+
+  .codex-breadcrumb-pill {
+    border-color: rgba(215, 181, 110, 0.76);
+    background: rgba(22, 31, 38, 0.76);
+    color: #efddb4;
+  }
+
+  .codex-breadcrumb-pill:hover {
+    background: rgba(80, 64, 32, 0.34);
+    color: #fff1cf;
+  }
+
   .wiki-title,
   .codex-prose h1 {
     color: #f5ebd0;
@@ -578,6 +667,30 @@ body {
 
   .codex-prose {
     color: rgba(238, 229, 208, 0.94);
+  }
+
+  .codex-page-title {
+    color: #f6e8c2;
+  }
+
+  .codex-page-summary {
+    color: rgba(233, 223, 202, 0.8);
+  }
+
+  .codex-source-note,
+  .codex-frontmatter-key {
+    color: #d8b46e;
+  }
+
+  .codex-frontmatter-panel,
+  .codex-empty-state {
+    border-color: rgba(181, 150, 79, 0.28);
+    background: rgba(198, 190, 174, 0.9);
+  }
+
+  .codex-frontmatter-value,
+  .codex-empty-state {
+    color: #201812;
   }
 
   .codex-prose code {
