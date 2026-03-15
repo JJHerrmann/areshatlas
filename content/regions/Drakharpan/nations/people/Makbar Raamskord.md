@@ -27,8 +27,8 @@ affiliations: []
 allegiance: ""
 realm: ""
 seat: ""
-predecessor: ""
-successor: ""
+predecessor: "Dirk Raamskord"
+successor: "Presumptive: [[Ioan Raamskord]]"
 notable_for: []
 artifacts: []
 mounts: []
