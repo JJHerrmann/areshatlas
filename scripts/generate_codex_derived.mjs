@@ -159,7 +159,7 @@ function buildDeitySidebar(frontmatter, relativePath) {
   return {
     type: "deity",
     title,
-    subtitle: frontmatter.epithet || frontmatter.subtitle || null,
+    subtitle: frontmatter.epithet || frontmatter.title || frontmatter.subtitle || null,
     source_relative_path: relativePath.replace(/\\/g, "/"),
     images: {
       banner: optionalImage(frontmatter, "image_banner", title),
@@ -170,8 +170,10 @@ function buildDeitySidebar(frontmatter, relativePath) {
       {
         title: "Descriptive Info",
         rows: [
+          ["Pantheon", frontmatter.pantheon],
+          ["Title", frontmatter.title],
           ["Gender", frontmatter.gender],
-          ["Avatar", frontmatter.avatar],
+          ["Avatar", optionalArray(frontmatter.avatars || frontmatter.avatar)],
           ["Consort(s)", optionalArray(frontmatter.consorts || frontmatter.consort)],
           ["Allies", optionalArray(frontmatter.allies)],
           ["Foes", optionalArray(frontmatter.foes)],
@@ -180,7 +182,7 @@ function buildDeitySidebar(frontmatter, relativePath) {
       {
         title: "Spiritual Info",
         rows: [
-          ["Rank", frontmatter.rank],
+          ["Rank", frontmatter.divine_rank || frontmatter.rank],
           ["Nature", frontmatter.nature],
           ["Ethos", frontmatter.ethos],
           ["Major Influence", frontmatter.major_influence],
@@ -189,12 +191,47 @@ function buildDeitySidebar(frontmatter, relativePath) {
         ],
       },
       {
+        title: "Divine Relations",
+        rows: [
+          ["Parents", optionalArray(frontmatter.parents)],
+          ["Siblings", optionalArray(frontmatter.siblings)],
+          ["Offspring", optionalArray(frontmatter.offspring)],
+          ["Dwelling Place", frontmatter.dwelling_place],
+        ],
+      },
+      {
+        title: "Symbols and Regalia",
+        rows: [
+          ["Primary Symbol", frontmatter.primary_symbol],
+          ["Secondary Symbols", optionalArray(frontmatter.secondary_symbols)],
+          ["Sacred Number", frontmatter.sacred_number],
+          ["Sacred Colors", optionalArray(frontmatter.sacred_colors)],
+          ["Forbidden Colors", optionalArray(frontmatter.forbidden_colors)],
+          ["Sacred Stones", optionalArray(frontmatter.sacred_stones)],
+          ["Sacred Objects", optionalArray(frontmatter.sacred_objects)],
+          ["Sacred Weapons", optionalArray(frontmatter.sacred_weapons)],
+        ],
+      },
+      {
         title: "Worship Info",
         rows: [
-          ["Worshipers", optionalArray(frontmatter.worshipers)],
-          ["Clergy", optionalArray(frontmatter.clergy)],
-          ["Symbols", optionalArray(frontmatter.symbols)],
+          ["Church Name", frontmatter.church_name],
+          ["Central Authority", frontmatter.central_authority],
+          ["Regional Titles", optionalArray(frontmatter.regional_titles)],
+          ["Temple Titles", optionalArray(frontmatter.temple_titles)],
+          ["Clergy Titles", optionalArray(frontmatter.clergy_titles)],
+          ["Religious Orders", optionalArray(frontmatter.religious_orders)],
+          ["Holy Texts", optionalArray(frontmatter.holy_texts)],
+          ["Apocrypha", optionalArray(frontmatter.apocrypha)],
           ["Holy Days", optionalArray(frontmatter.holy_days)],
+          ["Taboos", optionalArray(frontmatter.taboos)],
+        ],
+      },
+      {
+        title: "Moral and Ritual Life",
+        rows: [
+          ["Virtues", optionalArray(frontmatter.virtues)],
+          ["Vices", optionalArray(frontmatter.vices)],
         ],
       },
     ].map((section) => ({
