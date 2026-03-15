@@ -336,6 +336,7 @@ export function getSectionEntries(section: SectionConfig, slugParts: string[] = 
 
   const items = fs.readdirSync(dirPath, { withFileTypes: true });
   const domain = slugParts.length ? slugParts.join(" / ") : section.folder;
+  const currentFolderName = path.basename(dirPath);
   const folderNames = new Set(items.filter((item) => item.isDirectory()).map((item) => item.name));
 
   const entries: ContentEntry[] = [];
@@ -350,7 +351,7 @@ export function getSectionEntries(section: SectionConfig, slugParts: string[] = 
     if (!ALLOWED_ENTRY_EXTENSIONS.has(ext)) continue;
     const title = titleFromFileName(item.name);
     if (folderNames.has(title)) continue;
-    if (slugParts.length && slugParts[slugParts.length - 1] === title) continue;
+    if (slugifySegment(title) === slugifySegment(currentFolderName)) continue;
     entries.push(createFileEntry(section, slugParts, itemPath, domain));
   }
 
