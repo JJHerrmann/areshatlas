@@ -13,6 +13,14 @@
       "title": "Descriptive Info",
       "rows": [
         [
+          "Pantheon",
+          "Areshnaati"
+        ],
+        [
+          "Title",
+          "The Wailing Hammer"
+        ],
+        [
           "Gender",
           "Male"
         ]
@@ -21,6 +29,10 @@
     {
       "title": "Spiritual Info",
       "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
         [
           "Nature",
           "chaotic, generative"
