@@ -225,10 +225,28 @@ body {
   grid-row: span 2;
 }
 
+.wiki-module-full {
+  grid-column: 1 / -1;
+}
+
 .wiki-section-grid {
   display: grid;
   gap: 0.75rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.wiki-map-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.wiki-world-map-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(104, 77, 30, 0.18);
+  background: #0e2232;
 }
 
 .wiki-copy {

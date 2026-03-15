@@ -4,6 +4,7 @@ import { getFrontpageHero } from "@/lib/frontpageContent";
 
 export default async function HomePage() {
   const hero = await getFrontpageHero();
+  const worldMapSrc = "/maps/areshnaat-faux-satellite.webp";
   const sectionCards = sections.map((section) => {
     const count = getSectionEntryCount(section);
     return {
@@ -73,6 +74,21 @@ export default async function HomePage() {
               </article>
 
               <section className="wiki-module-grid">
+                <div className="wiki-box wiki-module wiki-module-full">
+                  <h2 className="wiki-box-title">World Survey Map</h2>
+                  <a href={worldMapSrc} className="wiki-map-link" target="_blank" rel="noreferrer">
+                    <img
+                      src={worldMapSrc}
+                      alt="Faux-satellite survey map of Areshnaat"
+                      className="wiki-world-map-image"
+                    />
+                  </a>
+                  <p className="wiki-copy">
+                    A faux-satellite render of the world surface derived from the rotated
+                    terrain model, landmask, biome projection, and relief shading.
+                  </p>
+                </div>
+
                 <div className="wiki-box wiki-module wiki-module-wide">
                   <h2 className="wiki-box-title">Featured Divisions</h2>
                   <div className="wiki-section-grid">
