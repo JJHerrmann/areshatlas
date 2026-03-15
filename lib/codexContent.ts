@@ -202,6 +202,12 @@ function readSummary(filePath: string, fallback: string) {
   if (ext === ".csv") return fallback;
   const raw = fs.readFileSync(filePath, "utf8");
   const parsed = matter(raw);
+  const cardSummary = typeof parsed.data.card_summary === "string" ? parsed.data.card_summary.trim() : "";
+  if (cardSummary) return cardSummary;
+
+  const summary = typeof parsed.data.summary === "string" ? parsed.data.summary.trim() : "";
+  if (summary) return summary;
+
   return readFirstNonEmptyLine(parsed.content) || String(parsed.data.title || fallback);
 }
 
@@ -424,7 +430,10 @@ export async function getRenderedDocument(section: SectionConfig, slugParts: str
     String(parsed.data.title || "").trim() ||
     readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") ||
     titleFromFileName(path.basename(filePath));
-  const summary = readFirstNonEmptyLine(parsed.content) || section.summary;
+  const summary =
+    (typeof parsed.data.summary === "string" && parsed.data.summary.trim()) ||
+    readFirstNonEmptyLine(parsed.content) ||
+    section.summary;
   const html = await renderMarkdown(parsed.content);
   const relativePath = path.relative(getSectionRoot(section), filePath).replace(/\\/g, "/");
 
@@ -448,7 +457,10 @@ export async function getRenderedOverviewDocument(section: SectionConfig, slugPa
     String(parsed.data.title || "").trim() ||
     readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") ||
     titleFromFileName(path.basename(filePath));
-  const summary = readFirstNonEmptyLine(parsed.content) || section.summary;
+  const summary =
+    (typeof parsed.data.summary === "string" && parsed.data.summary.trim()) ||
+    readFirstNonEmptyLine(parsed.content) ||
+    section.summary;
   const html = await renderMarkdown(parsed.content);
   const relativePath = path.relative(getSectionRoot(section), filePath).replace(/\\/g, "/");
 
