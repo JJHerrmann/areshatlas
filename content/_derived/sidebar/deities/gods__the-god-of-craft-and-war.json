@@ -1,0 +1,35 @@
+{
+  "type": "deity",
+  "title": "Kathorharab",
+  "subtitle": "The God of Craft and War",
+  "source_relative_path": "gods/The God of Craft and War.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Gender",
+          "Male"
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Nature",
+          "chaotic, generative"
+        ],
+        [
+          "Ethos",
+          "lawful"
+        ]
+      ]
+    }
+  ]
+}

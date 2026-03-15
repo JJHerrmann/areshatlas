@@ -1,5 +1,5 @@
 ---
-type
+type: deity
 name: "Kathorharab"
 epithet: "The God of Craft and War"
 title: "The Wailing Hammer"
@@ -44,7 +44,7 @@ tags:
   - religion
 ---
 # Kathorharab
-*The Wailing Hammer*
+*The Wailing Hammer* - The God of Craft and War
 
 {{short_overview}}
 
