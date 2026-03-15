@@ -1,7 +1,7 @@
 ---
 image: "![[makab.png]]"
 name: "Makbar Raamskord"
-title: "[[Akahel of Kharmahal]]"
+honorific_title: "[[Akahel of Kharmahal]]"
 epithet: "King-Thrane of the Dwarves of Raamskoda in the Brightfire Mountains"
 type: person
 status: "Alive"
