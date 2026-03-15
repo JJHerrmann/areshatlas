@@ -17,11 +17,11 @@ died: ""
 death_place: ""
 house: "Raamskord"
 lineage: "Raam"
-father: "Dirk Raamskord"
-mother: "Drusilla Brighthar"
-siblings: [[[Leof Brighthar]],[[Brunhilde Brighthar]]]
-consorts: [[[Rehoam Thaneswhisker]]]
-children: [Ioan Raamskord]
+father: "Uku Raamskord"
+mother: "Salme Brighthar"
+siblings: [[[Lennuk Brighthar]],[[Eha Brighthar]]]
+consorts: [[[Ilmatar Thaneswhisker]]]
+children: [Alev Raamskord]
 occupation: [Monarch]
 roles: [Monarch]
 affiliations: []
