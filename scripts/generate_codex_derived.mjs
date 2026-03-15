@@ -154,6 +154,62 @@ function buildNationSidebar(frontmatter, relativePath) {
   };
 }
 
+function buildDeitySidebar(frontmatter, relativePath) {
+  const title = String(frontmatter.name || frontmatter.title || path.basename(relativePath, path.extname(relativePath)));
+  return {
+    type: "deity",
+    title,
+    subtitle: frontmatter.epithet || frontmatter.subtitle || null,
+    source_relative_path: relativePath.replace(/\\/g, "/"),
+    images: {
+      banner: optionalImage(frontmatter, "image_banner", title),
+      heraldry: optionalImage(frontmatter, "image_heraldry", title),
+      avatar: optionalImage(frontmatter, "image_avatar", title),
+    },
+    sections: [
+      {
+        title: "Descriptive Info",
+        rows: [
+          ["Gender", frontmatter.gender],
+          ["Avatar", frontmatter.avatar],
+          ["Consort(s)", optionalArray(frontmatter.consorts || frontmatter.consort)],
+          ["Allies", optionalArray(frontmatter.allies)],
+          ["Foes", optionalArray(frontmatter.foes)],
+        ],
+      },
+      {
+        title: "Spiritual Info",
+        rows: [
+          ["Rank", frontmatter.rank],
+          ["Nature", frontmatter.nature],
+          ["Ethos", frontmatter.ethos],
+          ["Major Influence", frontmatter.major_influence],
+          ["Minor Influence(s)", optionalArray(frontmatter.minor_influences || frontmatter.minor_influence)],
+          ["Spheres", optionalArray(frontmatter.spheres)],
+        ],
+      },
+      {
+        title: "Worship Info",
+        rows: [
+          ["Worshipers", optionalArray(frontmatter.worshipers)],
+          ["Clergy", optionalArray(frontmatter.clergy)],
+          ["Symbols", optionalArray(frontmatter.symbols)],
+          ["Holy Days", optionalArray(frontmatter.holy_days)],
+        ],
+      },
+    ].map((section) => ({
+      ...section,
+      rows: section.rows.filter(([, value]) => {
+        if (Array.isArray(value)) return value.length > 0;
+        if (value && typeof value === "object") {
+          return Object.values(value).some((item) => item != null && item !== "");
+        }
+        return value != null && value !== "";
+      }),
+    })).filter((section) => section.rows.length > 0),
+  };
+}
+
 function main() {
   ensureDir(derivedRoot);
   const markdownFiles = listMarkdownFiles(contentRoot);
@@ -165,22 +221,33 @@ function main() {
     const frontmatter = parsed.data || {};
     const relativePath = path.relative(contentRoot, filePath);
 
-    if (frontmatter.type !== "nation") continue;
+    let sidebarDir = null;
+    let payload = null;
 
-    const sidebarDir = path.join(derivedRoot, "nations");
+    if (frontmatter.type === "nation") {
+      sidebarDir = path.join(derivedRoot, "nations");
+      payload = buildNationSidebar(frontmatter, relativePath);
+    } else if (frontmatter.type === "deity") {
+      sidebarDir = path.join(derivedRoot, "deities");
+      payload = buildDeitySidebar(frontmatter, relativePath);
+    }
+
+    if (!sidebarDir || !payload) continue;
+
     ensureDir(sidebarDir);
     const outPath = path.join(sidebarDir, `${buildEntrySlug(relativePath)}.json`);
-    const payload = buildNationSidebar(frontmatter, relativePath);
     fs.writeFileSync(outPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
     writtenFiles.add(outPath);
   }
 
-  const nationDir = path.join(derivedRoot, "nations");
-  if (fs.existsSync(nationDir)) {
-    for (const item of fs.readdirSync(nationDir, { withFileTypes: true })) {
-      if (!item.isFile() || path.extname(item.name).toLowerCase() !== ".json") continue;
-      const candidate = path.join(nationDir, item.name);
-      if (!writtenFiles.has(candidate)) fs.rmSync(candidate);
+  for (const folderName of ["nations", "deities"]) {
+    const sidebarDir = path.join(derivedRoot, folderName);
+    if (fs.existsSync(sidebarDir)) {
+      for (const item of fs.readdirSync(sidebarDir, { withFileTypes: true })) {
+        if (!item.isFile() || path.extname(item.name).toLowerCase() !== ".json") continue;
+        const candidate = path.join(sidebarDir, item.name);
+        if (!writtenFiles.has(candidate)) fs.rmSync(candidate);
+      }
     }
   }
 

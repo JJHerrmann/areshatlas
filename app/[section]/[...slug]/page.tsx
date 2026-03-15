@@ -2,10 +2,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import CoordinateRule from "@/components/codex/CoordinateRule";
 import CornerOrnament from "@/components/codex/CornerOrnament";
+import DeityInfobox from "@/components/codex/DeityInfobox";
 import EntryCard from "@/components/codex/EntryCard";
 import NationInfobox from "@/components/codex/NationInfobox";
 import PlateLabel from "@/components/codex/PlateLabel";
-import { getNationSidebar, getRenderedDocument, getRenderedOverviewDocument, getSectionBySlug, getSectionView } from "@/lib/codexContent";
+import { getDeitySidebar, getNationSidebar, getRenderedDocument, getRenderedOverviewDocument, getSectionBySlug, getSectionView } from "@/lib/codexContent";
 
 type NestedSectionPageProps = {
   params: Promise<{
@@ -101,6 +102,8 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
   const document = await getRenderedDocument(section, slug);
   if (document) {
     const nationSidebar = getNationSidebar(document.sourcePath);
+    const deitySidebar = getDeitySidebar(document.sourcePath);
+    const hasSidebar = Boolean(nationSidebar) || Boolean(deitySidebar);
     const isNation = Boolean(nationSidebar) || document.frontmatter?.type === "nation";
     return (
       <main className="min-h-screen px-6 py-12 text-stone-900 lg:px-8">
@@ -133,7 +136,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             <CoordinateRule />
           </div>
 
-          {Object.keys(document.frontmatter).length && !isNation ? (
+          {Object.keys(document.frontmatter).length && !hasSidebar ? (
             <dl className="mt-8 grid gap-3 border border-amber-300/80 bg-amber-50/75 p-5 md:grid-cols-2">
               {Object.entries(document.frontmatter).map(([key, value]) => (
                 <div key={key}>
@@ -146,12 +149,13 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             </dl>
           ) : null}
 
-          <div className={`codex-entry-layout mt-10${isNation ? " with-sidebar" : ""}`}>
+          <div className={`codex-entry-layout mt-10${hasSidebar ? " with-sidebar" : ""}`}>
             <article
               className="codex-entry-body codex-prose"
               dangerouslySetInnerHTML={{ __html: document.html }}
             />
             {nationSidebar ? <NationInfobox data={nationSidebar} /> : null}
+            {deitySidebar ? <DeityInfobox data={deitySidebar} /> : null}
           </div>
         </div>
 
