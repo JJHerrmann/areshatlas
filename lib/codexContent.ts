@@ -77,6 +77,7 @@ const CONTENT_ROOT = path.join(process.cwd(), "content");
 const DERIVED_ROOT = path.join(CONTENT_ROOT, "_derived", "sidebar");
 const ALLOWED_ENTRY_EXTENSIONS = new Set([".md", ".markdown", ".csv"]);
 const MARKDOWN_EXTENSIONS = new Set([".md", ".markdown"]);
+let markdownPathIndex: Array<{ relativePath: string; title: string; slugTitle: string }> | null = null;
 
 export const sections: SectionConfig[] = [
   {
@@ -177,6 +178,37 @@ function toTitle(value: string) {
 
 function getSectionRoot(section: SectionConfig) {
   return path.join(CONTENT_ROOT, section.folder);
+}
+
+function listMarkdownFiles(rootDir: string) {
+  const out: string[] = [];
+  function visit(dirPath: string) {
+    for (const item of fs.readdirSync(dirPath, { withFileTypes: true })) {
+      if (item.name === "_derived" || item.name === ".gitkeep") continue;
+      const nextPath = path.join(dirPath, item.name);
+      if (item.isDirectory()) {
+        visit(nextPath);
+        continue;
+      }
+      if (MARKDOWN_EXTENSIONS.has(path.extname(item.name).toLowerCase())) out.push(nextPath);
+    }
+  }
+  if (fs.existsSync(rootDir)) visit(rootDir);
+  return out;
+}
+
+function getMarkdownPathIndex() {
+  if (markdownPathIndex) return markdownPathIndex;
+  markdownPathIndex = listMarkdownFiles(CONTENT_ROOT).map((filePath) => {
+    const relativePath = path.relative(CONTENT_ROOT, filePath).replace(/\\/g, "/");
+    const title = titleFromFileName(path.basename(filePath));
+    return {
+      relativePath,
+      title,
+      slugTitle: slugifySegment(title),
+    };
+  });
+  return markdownPathIndex;
 }
 
 function getSafeSectionPath(section: SectionConfig, slugParts: string[] = []) {
@@ -311,12 +343,63 @@ function findMarkdownFile(section: SectionConfig, slugParts: string[]) {
   return match ? path.join(dirPath, match.name) : null;
 }
 
-function preprocessMarkdown(markdown: string) {
+function contentRelativePathToHref(relativePath: string) {
+  const normalized = relativePath.replace(/\\/g, "/").replace(/\.(md|markdown)$/i, "");
+  const section = [...sections]
+    .sort((a, b) => b.folder.length - a.folder.length)
+    .find((candidate) => normalized === candidate.folder || normalized.startsWith(`${candidate.folder}/`));
+  if (!section) return null;
+
+  let tail = normalized === section.folder ? "" : normalized.slice(section.folder.length + 1);
+  const segments = tail ? tail.split("/").filter(Boolean) : [];
+  if (segments.length === 1 && slugifySegment(segments[0]) === slugifySegment(path.basename(section.folder))) {
+    return `/${section.slug}`;
+  }
+  if (segments.length >= 2 && slugifySegment(segments[segments.length - 1]) === slugifySegment(segments[segments.length - 2])) {
+    segments.pop();
+  }
+  const routeTail = segments.map(slugifySegment).map(encodeURIComponent).join("/");
+  return routeTail ? `/${section.slug}/${routeTail}` : `/${section.slug}`;
+}
+
+function resolveObsidianHref(target: string, sourceRelativePath?: string) {
+  const normalizedTarget = target.trim().replace(/\\/g, "/");
+  if (!normalizedTarget) return null;
+
+  const withoutVaultPrefix = normalizedTarget.includes("codex-content/")
+    ? normalizedTarget.split("codex-content/").pop() || normalizedTarget
+    : normalizedTarget.startsWith("content/")
+      ? normalizedTarget.slice("content/".length)
+      : normalizedTarget;
+
+  const pathLikeTarget = withoutVaultPrefix.replace(/\.(md|markdown)$/i, "");
+  if (pathLikeTarget.includes("/")) {
+    return contentRelativePathToHref(pathLikeTarget);
+  }
+
+  const slugTarget = slugifySegment(pathLikeTarget);
+  if (sourceRelativePath) {
+    const siblingDir = path.posix.dirname(sourceRelativePath.replace(/\\/g, "/"));
+    const siblingMatch = getMarkdownPathIndex().find(
+      (entry) => path.posix.dirname(entry.relativePath) === siblingDir && entry.slugTitle === slugTarget,
+    );
+    if (siblingMatch) return contentRelativePathToHref(siblingMatch.relativePath);
+  }
+
+  const globalMatch = getMarkdownPathIndex().find((entry) => entry.slugTitle === slugTarget);
+  if (globalMatch) return contentRelativePathToHref(globalMatch.relativePath);
+  return null;
+}
+
+function preprocessMarkdown(markdown: string, sourceRelativePath?: string) {
   return markdown
     .replace(/```dataviewjs[\s\S]*?```/g, "")
-    .replace(/\[\[([^[\]]+)\]\]/g, (_match, target: string) => {
-      const clean = String(target).split("|")[0].trim();
-      return `[${clean}](#)`;
+    .replace(/(?<!!)\[\[([^[\]]+)\]\]/g, (_match, target: string) => {
+      const [rawTarget, rawAlias] = String(target).split("|");
+      const cleanTarget = rawTarget.trim();
+      const cleanAlias = rawAlias?.trim() || cleanTarget.split("/").pop()?.replace(/\.(md|markdown)$/i, "") || cleanTarget;
+      const href = resolveObsidianHref(cleanTarget, sourceRelativePath);
+      return href ? `[${cleanAlias}](${href})` : `[${cleanAlias}](#)`;
     });
 }
 
@@ -330,14 +413,14 @@ function remarkCodexLinks() {
   };
 }
 
-async function renderMarkdown(markdown: string) {
+async function renderMarkdown(markdown: string, sourceRelativePath?: string) {
   const processed = await unified()
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkCodexLinks)
     .use(remarkRehype)
     .use(rehypeStringify)
-    .process(preprocessMarkdown(markdown));
+    .process(preprocessMarkdown(markdown, sourceRelativePath));
   return String(processed);
 }
 
@@ -448,8 +531,8 @@ export async function getRenderedDocument(section: SectionConfig, slugParts: str
     (typeof parsed.data.summary === "string" && parsed.data.summary.trim()) ||
     readFirstNonEmptyLine(parsed.content) ||
     section.summary;
-  const html = await renderMarkdown(parsed.content);
   const relativePath = path.relative(getSectionRoot(section), filePath).replace(/\\/g, "/");
+  const html = await renderMarkdown(parsed.content, `${section.folder}/${relativePath}`);
 
   return {
     title,
@@ -475,8 +558,8 @@ export async function getRenderedOverviewDocument(section: SectionConfig, slugPa
     (typeof parsed.data.summary === "string" && parsed.data.summary.trim()) ||
     readFirstNonEmptyLine(parsed.content) ||
     section.summary;
-  const html = await renderMarkdown(parsed.content);
   const relativePath = path.relative(getSectionRoot(section), filePath).replace(/\\/g, "/");
+  const html = await renderMarkdown(parsed.content, `${section.folder}/${relativePath}`);
 
   return {
     title,
