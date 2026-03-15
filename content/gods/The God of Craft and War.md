@@ -1,4 +1,5 @@
 ---
+type
 name: "Kathorharab"
 epithet: "The God of Craft and War"
 title: "The Wailing Hammer"
