@@ -9,7 +9,7 @@ Pantheon
 [[The God of Seas and Rivers]]
 [[The God of Mountains]]
 [[The God of Dances and Storms]]
-[[The God of Craft and War]]
+[[Kathorharab]]
 [[The God of the Underworld]]
 [[The God of Messages and Fortunes]]
 [[The God of Creation]]
