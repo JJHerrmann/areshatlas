@@ -132,6 +132,13 @@ function titleFromFileName(fileName: string) {
   return fileName.replace(/\.[^.]+$/, "");
 }
 
+function slugifySegment(value: string) {
+  return String(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 function buildEntrySlug(relativePath: string) {
   return relativePath
     .replace(/\\/g, "/")
@@ -170,9 +177,23 @@ function getSafeSectionPath(section: SectionConfig, slugParts: string[] = []) {
   return resolvedTarget;
 }
 
+function resolveDirectoryPath(section: SectionConfig, slugParts: string[] = []) {
+  let currentPath = getSectionRoot(section);
+  if (!fs.existsSync(currentPath) || !fs.statSync(currentPath).isDirectory()) return null;
+
+  for (const slugPart of slugParts) {
+    const items = fs.readdirSync(currentPath, { withFileTypes: true });
+    const nextDir = items.find((item) => item.isDirectory() && slugifySegment(item.name) === slugPart);
+    if (!nextDir) return null;
+    currentPath = path.join(currentPath, nextDir.name);
+  }
+
+  return currentPath;
+}
+
 function getFileRoute(section: SectionConfig, slugParts: string[], filePath: string) {
   const title = titleFromFileName(path.basename(filePath));
-  return `/${section.slug}/${[...slugParts, title].map(encodeURIComponent).join("/")}`;
+  return `/${section.slug}/${[...slugParts, slugifySegment(title)].map(encodeURIComponent).join("/")}`;
 }
 
 function readSummary(filePath: string, fallback: string) {
@@ -215,7 +236,7 @@ function createFolderEntry(
     .find((candidate) => fs.existsSync(candidate));
   return {
     title: folderName,
-    href: `/${section.slug}/${childParts.map(encodeURIComponent).join("/")}`,
+    href: `/${section.slug}/${childParts.map(slugifySegment).map(encodeURIComponent).join("/")}`,
     domain,
     summary: indexFile
       ? readSummary(indexFile, `Folder in ${domain} containing mirrored codex material.`)
@@ -225,10 +246,29 @@ function createFolderEntry(
 }
 
 function buildBreadcrumb(section: SectionConfig, slugParts: string[]) {
+  const resolvedTitles = slugParts.reduce<string[]>((titles, slugPart, index) => {
+    const resolvedDir = resolveDirectoryPath(section, slugParts.slice(0, index + 1));
+    if (resolvedDir) {
+      titles.push(path.basename(resolvedDir));
+      return titles;
+    }
+
+    if (index === slugParts.length - 1) {
+      const filePath = findMarkdownFile(section, slugParts);
+      if (filePath) {
+        titles.push(titleFromFileName(path.basename(filePath)));
+        return titles;
+      }
+    }
+
+    titles.push(toTitle(slugPart));
+    return titles;
+  }, []);
+
   return [
     { title: section.title, href: `/${section.slug}` },
     ...slugParts.map((part, index) => ({
-      title: toTitle(part),
+      title: resolvedTitles[index] ?? toTitle(part),
       href: `/${section.slug}/${slugParts.slice(0, index + 1).map(encodeURIComponent).join("/")}`,
     })),
   ];
@@ -238,17 +278,18 @@ function findMarkdownFile(section: SectionConfig, slugParts: string[]) {
   if (!slugParts.length) return null;
   const dirParts = slugParts.slice(0, -1);
   const fileStem = slugParts[slugParts.length - 1];
-  const dirPath = getSafeSectionPath(section, dirParts);
+  const dirPath = resolveDirectoryPath(section, dirParts);
   if (!dirPath || !fs.existsSync(dirPath) || !fs.statSync(dirPath).isDirectory()) {
     return null;
   }
-  for (const ext of MARKDOWN_EXTENSIONS) {
-    const candidate = path.join(dirPath, `${fileStem}${ext}`);
-    if (fs.existsSync(candidate) && fs.statSync(candidate).isFile()) {
-      return candidate;
-    }
-  }
-  return null;
+  const items = fs.readdirSync(dirPath, { withFileTypes: true });
+  const match = items.find((item) => {
+    if (!item.isFile()) return false;
+    const ext = path.extname(item.name).toLowerCase();
+    if (!MARKDOWN_EXTENSIONS.has(ext)) return false;
+    return slugifySegment(titleFromFileName(item.name)) === fileStem;
+  });
+  return match ? path.join(dirPath, match.name) : null;
 }
 
 function preprocessMarkdown(markdown: string) {
@@ -282,7 +323,7 @@ async function renderMarkdown(markdown: string) {
 }
 
 export function getSectionEntries(section: SectionConfig, slugParts: string[] = []): ContentEntry[] {
-  const dirPath = getSafeSectionPath(section, slugParts);
+  const dirPath = resolveDirectoryPath(section, slugParts);
   if (!dirPath || !fs.existsSync(dirPath) || !fs.statSync(dirPath).isDirectory()) {
     return [];
   }
@@ -315,16 +356,17 @@ export function getSectionEntries(section: SectionConfig, slugParts: string[] = 
 
 export function getSectionOverview(section: SectionConfig, slugParts: string[] = []) {
   if (!slugParts.length) return null;
-  const dirPath = getSafeSectionPath(section, slugParts);
+  const dirPath = resolveDirectoryPath(section, slugParts);
   if (!dirPath || !fs.existsSync(dirPath) || !fs.statSync(dirPath).isDirectory()) {
     return null;
   }
 
-  const folderName = slugParts[slugParts.length - 1];
-  const indexCandidates = [`${folderName}.md`, `${folderName}.markdown`];
-  const indexFile = indexCandidates
-    .map((candidate) => path.join(dirPath, candidate))
-    .find((candidate) => fs.existsSync(candidate));
+  const folderName = path.basename(dirPath);
+  const indexFile = fs
+    .readdirSync(dirPath, { withFileTypes: true })
+    .filter((item) => item.isFile())
+    .map((item) => path.join(dirPath, item.name))
+    .find((candidate) => MARKDOWN_EXTENSIONS.has(path.extname(candidate).toLowerCase()) && titleFromFileName(path.basename(candidate)) === folderName);
   if (!indexFile) return null;
 
   return createFileEntry(section, slugParts.slice(0, -1), indexFile, slugParts.join(" / "));
@@ -335,13 +377,14 @@ export function getSectionEntryCount(section: SectionConfig) {
 }
 
 export function getSectionView(section: SectionConfig, slugParts: string[] = []): SectionView | null {
-  const dirPath = getSafeSectionPath(section, slugParts);
+  const dirPath = resolveDirectoryPath(section, slugParts);
   if (!dirPath || !fs.existsSync(dirPath) || !fs.statSync(dirPath).isDirectory()) {
     return null;
   }
 
+  const resolvedRelative = path.relative(getSectionRoot(section), dirPath).replace(/\\/g, "/");
   return {
-    sourcePath: `content/${section.folder}${slugParts.length ? `/${slugParts.join("/")}` : ""}`,
+    sourcePath: `content/${section.folder}${resolvedRelative ? `/${resolvedRelative}` : ""}`,
     breadcrumb: buildBreadcrumb(section, slugParts),
     overview: getSectionOverview(section, slugParts),
     entries: getSectionEntries(section, slugParts),
