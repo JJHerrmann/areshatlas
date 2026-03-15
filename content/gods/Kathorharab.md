@@ -48,26 +48,6 @@ tags:
 
 {{short_overview}}
 
-## Divine Profile
-
-**Title:** The Wailing Hammer
-**Pantheon:** [[Areshnaati]]
-**Rank:** Major
-**Gender:** {{gender}}  
-**Nature:** {{nature}}  
-**Ethos:** {{ethos}}  
-**Major Influence:** {{major_influence}}  
-**Minor Influences:** {{minor_influences}}  
-**Spheres:** {{spheres}}  
-
-**Avatar(s):** {{avatar_names}}  
-**Consort(s):** {{consorts}}  
-**Parents:** {{parents}}  
-**Siblings:** {{siblings}}  
-**Offspring:** {{offspring}}  
-**Allies:** {{allies}}  
-**Foes:** {{foes}}  
-
 ## Depictions
 
 {{physical_description}}
