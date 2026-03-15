@@ -372,6 +372,23 @@ export function getSectionOverview(section: SectionConfig, slugParts: string[] =
   return createFileEntry(section, slugParts.slice(0, -1), indexFile, slugParts.join(" / "));
 }
 
+function findOverviewMarkdownFile(section: SectionConfig, slugParts: string[]) {
+  if (!slugParts.length) return null;
+  const dirPath = resolveDirectoryPath(section, slugParts);
+  if (!dirPath || !fs.existsSync(dirPath) || !fs.statSync(dirPath).isDirectory()) {
+    return null;
+  }
+
+  const folderName = path.basename(dirPath);
+  return (
+    fs
+      .readdirSync(dirPath, { withFileTypes: true })
+      .filter((item) => item.isFile())
+      .map((item) => path.join(dirPath, item.name))
+      .find((candidate) => MARKDOWN_EXTENSIONS.has(path.extname(candidate).toLowerCase()) && titleFromFileName(path.basename(candidate)) === folderName) || null
+  );
+}
+
 export function getSectionEntryCount(section: SectionConfig) {
   return getSectionEntries(section).length;
 }
@@ -393,6 +410,30 @@ export function getSectionView(section: SectionConfig, slugParts: string[] = [])
 
 export async function getRenderedDocument(section: SectionConfig, slugParts: string[]): Promise<RenderedDocument | null> {
   const filePath = findMarkdownFile(section, slugParts);
+  if (!filePath) return null;
+
+  const raw = fs.readFileSync(filePath, "utf8");
+  const parsed = matter(raw);
+  const title =
+    String(parsed.data.title || "").trim() ||
+    readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") ||
+    titleFromFileName(path.basename(filePath));
+  const summary = readFirstNonEmptyLine(parsed.content) || section.summary;
+  const html = await renderMarkdown(parsed.content);
+  const relativePath = path.relative(getSectionRoot(section), filePath).replace(/\\/g, "/");
+
+  return {
+    title,
+    summary,
+    html,
+    sourcePath: `content/${section.folder}/${relativePath}`,
+    breadcrumb: buildBreadcrumb(section, slugParts),
+    frontmatter: parsed.data as Record<string, unknown>,
+  };
+}
+
+export async function getRenderedOverviewDocument(section: SectionConfig, slugParts: string[]): Promise<RenderedDocument | null> {
+  const filePath = findOverviewMarkdownFile(section, slugParts);
   if (!filePath) return null;
 
   const raw = fs.readFileSync(filePath, "utf8");

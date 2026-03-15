@@ -5,7 +5,7 @@ import CornerOrnament from "@/components/codex/CornerOrnament";
 import EntryCard from "@/components/codex/EntryCard";
 import NationInfobox from "@/components/codex/NationInfobox";
 import PlateLabel from "@/components/codex/PlateLabel";
-import { getNationSidebar, getRenderedDocument, getSectionBySlug, getSectionView } from "@/lib/codexContent";
+import { getNationSidebar, getRenderedDocument, getRenderedOverviewDocument, getSectionBySlug, getSectionView } from "@/lib/codexContent";
 
 type NestedSectionPageProps = {
   params: Promise<{
@@ -18,6 +18,85 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
   const { section: sectionSlug, slug } = await params;
   const section = getSectionBySlug(sectionSlug);
   if (!section) notFound();
+
+  const view = getSectionView(section, slug);
+  const overviewDocument = view ? await getRenderedOverviewDocument(section, slug) : null;
+  if (view && overviewDocument) {
+    return (
+      <main className="min-h-screen px-6 py-12 text-stone-900 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <Link
+            href="/"
+            className="text-xs uppercase tracking-[0.26em] text-amber-800 transition hover:text-amber-950"
+          >
+            Return to Survey Archive
+          </Link>
+
+          <nav className="mt-6 flex flex-wrap gap-2 text-xs uppercase tracking-[0.22em] text-amber-800">
+            {overviewDocument.breadcrumb.map((crumb) => (
+              <Link
+                key={crumb.href}
+                href={crumb.href}
+                className="border border-amber-400/60 px-3 py-1 transition hover:bg-amber-100/70"
+              >
+                {crumb.title}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="mt-6 max-w-3xl">
+            <PlateLabel>{section.label}</PlateLabel>
+            <h1 className="mt-4 font-display text-4xl tracking-tight text-amber-950">
+              {overviewDocument.title}
+            </h1>
+            <p className="mt-4 text-base leading-7 text-stone-700">{overviewDocument.summary}</p>
+            <CoordinateRule />
+          </div>
+
+          {Object.keys(overviewDocument.frontmatter).length ? (
+            <dl className="mt-8 grid gap-3 border border-amber-300/80 bg-amber-50/75 p-5 md:grid-cols-2">
+              {Object.entries(overviewDocument.frontmatter).map(([key, value]) => (
+                <div key={key}>
+                  <dt className="text-[10px] uppercase tracking-[0.22em] text-amber-800">{key}</dt>
+                  <dd className="mt-1 text-sm text-stone-800">
+                    {Array.isArray(value) ? value.join(", ") : String(value)}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          ) : null}
+
+          <article
+            className="codex-entry-body codex-prose mt-10"
+            dangerouslySetInnerHTML={{ __html: overviewDocument.html }}
+          />
+
+          <section className="mt-10">
+            {view.entries.length ? (
+              <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                {view.entries.map((entry) => (
+                  <EntryCard
+                    key={`${entry.domain}:${entry.title}`}
+                    title={entry.title}
+                    domain={entry.domain}
+                    summary={entry.summary}
+                    href={entry.href}
+                    kind={entry.kind}
+                  />
+                ))}
+              </div>
+            ) : (
+              <article className="border border-amber-300 bg-amber-50/80 p-6 text-sm leading-6 text-stone-700">
+                No immediate entries are present at this level of the codex tree yet.
+              </article>
+            )}
+          </section>
+        </div>
+
+        <CornerOrnament position="bottom-right" />
+      </main>
+    );
+  }
 
   const document = await getRenderedDocument(section, slug);
   if (document) {
@@ -81,7 +160,6 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
     );
   }
 
-  const view = getSectionView(section, slug);
   if (!view) notFound();
 
   return (
