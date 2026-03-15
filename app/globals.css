@@ -14,6 +14,10 @@ body {
   min-height: 100%;
 }
 
+html {
+  color-scheme: light;
+}
+
 body {
   background:
     radial-gradient(circle at 20% 0%, rgba(255, 255, 255, 0.45), transparent 50%),
@@ -469,5 +473,131 @@ body {
   .codex-infobox {
     position: static;
     order: -1;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #11161b;
+    --paper-deep: #1a2128;
+    --ink: #eadfca;
+    --accent-brass: #b5964f;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background:
+      radial-gradient(circle at 18% 0%, rgba(157, 123, 55, 0.1), transparent 42%),
+      radial-gradient(circle at 88% 8%, rgba(36, 67, 86, 0.2), transparent 40%),
+      linear-gradient(180deg, #0d1216, #131a20 58%, #171f26);
+  }
+
+  .wiki-page-frame {
+    border-color: rgba(181, 150, 79, 0.28);
+    background: rgba(18, 24, 30, 0.94);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.34);
+  }
+
+  .wiki-sidebar {
+    border-right-color: rgba(181, 150, 79, 0.18);
+    background:
+      linear-gradient(180deg, rgba(24, 34, 42, 0.92), rgba(17, 24, 30, 0.88));
+  }
+
+  .wiki-box {
+    border-color: rgba(181, 150, 79, 0.22);
+    background: rgba(22, 31, 38, 0.9);
+  }
+
+  .wiki-logo-image {
+    background: rgba(246, 237, 214, 0.96);
+  }
+
+  .wiki-logo-placeholder {
+    border-color: rgba(181, 150, 79, 0.32);
+    background: rgba(45, 55, 64, 0.28);
+  }
+
+  .wiki-logo-caption,
+  .wiki-subtitle,
+  .wiki-copy,
+  .wiki-meta-list,
+  .codex-infobox-caption,
+  .codex-infobox-subtitle,
+  .codex-infobox-row dt,
+  .codex-infobox-section-title {
+    color: rgba(229, 216, 188, 0.74);
+  }
+
+  .wiki-systemline,
+  .wiki-kicker,
+  .wiki-box-title {
+    color: rgba(216, 185, 116, 0.92);
+  }
+
+  .wiki-nav-list,
+  .wiki-nav-link,
+  .wiki-article,
+  .codex-infobox-section {
+    border-color: rgba(181, 150, 79, 0.16);
+  }
+
+  .wiki-nav-link,
+  .wiki-title,
+  .codex-prose h1,
+  .codex-prose h2,
+  .codex-prose h3,
+  .codex-prose h4,
+  .codex-infobox-title,
+  .codex-infobox-row dd {
+    color: #f0e4c8;
+  }
+
+  .wiki-world-map-image {
+    border-color: rgba(181, 150, 79, 0.24);
+    background: #08131b;
+  }
+
+  .codex-prose {
+    color: rgba(237, 228, 206, 0.95);
+  }
+
+  .codex-prose code {
+    border-color: rgba(181, 150, 79, 0.28);
+    background: rgba(37, 48, 58, 0.88);
+  }
+
+  .codex-prose pre {
+    border-color: rgba(181, 150, 79, 0.24);
+    background: rgba(18, 28, 36, 0.94);
+  }
+
+  .codex-prose th,
+  .codex-prose td {
+    border-color: rgba(181, 150, 79, 0.24);
+  }
+
+  .codex-prose th {
+    background: rgba(110, 92, 48, 0.24);
+  }
+
+  .codex-prose a {
+    color: #d6b36c;
+    text-decoration-color: rgba(214, 179, 108, 0.5);
+  }
+
+  .codex-infobox {
+    border-color: rgba(181, 150, 79, 0.26);
+    background:
+      linear-gradient(180deg, rgba(30, 40, 48, 0.96), rgba(19, 27, 34, 0.92)),
+      rgba(255, 255, 255, 0.04);
+  }
+
+  .codex-infobox-image {
+    border-color: rgba(181, 150, 79, 0.28);
+    background: rgba(31, 42, 50, 0.95);
   }
 }
