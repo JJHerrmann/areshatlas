@@ -49,7 +49,7 @@ tags:
 
 ## Divine Profile
 
-**Title:** `= this.title`
+**Title:** The
 **Pantheon:** `= this.pantheon`
 **Rank:** `= this.divine_rank`  
 **Gender:** {{gender}}  
