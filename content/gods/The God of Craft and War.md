@@ -5,8 +5,8 @@ title: "The Wailing Hammer"
 pantheon: "Areshnaati"
 divine_rank: "Major"
 gender: "Male"
-nature: "chaotic, gen"
-ethos: ""
+nature: "chaotic, generative"
+ethos: "lawful"
 major_influence: ""
 minor_influences: []
 spheres: []
@@ -42,14 +42,14 @@ tags:
   - deity
   - religion
 ---
-# `= this.name`
-*`= this.epithet`*
+# Kathorharab
+*The Wailing Hammer*
 
 {{short_overview}}
 
 ## Divine Profile
 
-**Title:** {{title}}  
+**Title:** `= this.title`
 **Pantheon:** `= this.pantheon`
 **Rank:** `= this.divine_rank`  
 **Gender:** {{gender}}  
