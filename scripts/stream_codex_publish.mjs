@@ -37,12 +37,19 @@ function execFileAsync(command, args, options = {}) {
 
 async function isObsRunning() {
   try {
-    const { stdout } = await execFileAsync("tasklist", ["/FI", "IMAGENAME eq obs64.exe", "/FO", "CSV", "/NH"]);
-    return stdout.toLowerCase().includes("obs64.exe");
+    const { stdout } = await execFileAsync(
+      "powershell",
+      ["-NoProfile", "-Command", "(Get-Process -Name obs64 -ErrorAction SilentlyContinue | Select-Object -First 1 -ExpandProperty ProcessName)"],
+    );
+    return stdout.toLowerCase().includes("obs64");
   } catch (error) {
     log(`obs check failed: ${error.stderr || error.message}`);
     return false;
   }
+}
+
+function normalizeGitPath(rawPath) {
+  return rawPath.replace(/^"/, "").replace(/"$/, "").replace(/\\/g, "/");
 }
 
 async function getTrackedContentStatus() {
@@ -56,7 +63,7 @@ async function getTrackedContentStatus() {
 async function hasPublishableChanges() {
   const lines = await getTrackedContentStatus();
   return lines.some((line) => {
-    const pathPart = line.slice(3).replace(/^"/, "").replace(/"$/, "");
+    const pathPart = normalizeGitPath(line.slice(3));
     return pathPart.startsWith("content/");
   });
 }
@@ -65,7 +72,7 @@ async function ensureContentOnlyWorkspace() {
   const { stdout } = await execFileAsync("git", ["status", "--porcelain"]);
   const lines = stdout.split(/\r?\n/).filter(Boolean);
   const nonContent = lines.filter((line) => {
-    const pathPart = line.slice(3).replace(/^"/, "").replace(/"$/, "");
+    const pathPart = normalizeGitPath(line.slice(3));
     return !pathPart.startsWith("content/");
   });
   return nonContent.length === 0;
