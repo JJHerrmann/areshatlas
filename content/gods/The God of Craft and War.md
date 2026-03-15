@@ -49,9 +49,9 @@ tags:
 
 ## Divine Profile
 
-**Title:** The
-**Pantheon:** `= this.pantheon`
-**Rank:** `= this.divine_rank`  
+**Title:** The Wailing Hammer
+**Pantheon:** [[Areshnaati]]
+**Rank:** Major
 **Gender:** {{gender}}  
 **Nature:** {{nature}}  
 **Ethos:** {{ethos}}  
