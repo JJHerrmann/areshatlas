@@ -33,5 +33,10 @@ tools/
 *.kml
 *.png
 !public/**/*.png
+!content/**/*.png
+!content/**/*.jpg
+!content/**/*.jpeg
+!content/**/*.webp
+!content/**/*.svg
 *.ai
 *.psd
