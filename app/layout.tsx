@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import fs from "node:fs";
 import path from "node:path";
+import WikiSidebar from "@/components/codex/WikiSidebar";
 import "./globals.css";
 
 const publicRoot = path.join(process.cwd(), "public");
@@ -19,7 +20,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="wiki-page-shell">
+          <div className="wiki-page-frame wiki-shell-frame">
+            <div className="wiki-shell-layout">
+              <aside className="wiki-sidebar">
+                <WikiSidebar />
+              </aside>
+              <div className="wiki-main">{children}</div>
+            </div>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
