@@ -16,13 +16,13 @@ died: ""
 death_place: ""
 house: "Raamskord"
 lineage: "Raam"
-father: ""
-mother: ""
-siblings: []
-consorts: []
-children: []
-occupation: []
-roles: []
+father: "Dirk Raamskord"
+mother: "Drusilla Brighthar"
+siblings: [[[Leof Brighthar]],[[Brunhilde Brighthar]]]
+consorts: [[[Rehoam Thaneswhisker]]]
+children: [Ioan Raamskord]
+occupation: [Monarch]
+roles: [Monarch]
 affiliations: []
 allegiance: ""
 realm: ""
