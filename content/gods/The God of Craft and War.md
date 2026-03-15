@@ -1,5 +1,5 @@
 ---
-name: ""
+name: "Kathorharab"
 epithet: "The God of Craft and War"
 title: "The Wailing Hammer"
 pantheon: "Areshnaati"
@@ -42,7 +42,7 @@ tags:
   - deity
   - religion
 ---
-# {{name}}
+# `= this.name`
 *{{epithet}}*
 
 {{short_overview}}
@@ -50,7 +50,7 @@ tags:
 ## Divine Profile
 
 **Title:** {{title}}  
-**Pantheon:** {{pantheon}}  
+**Pantheon:** `= this.pantheon`
 **Rank:** {{divine_rank}}  
 **Gender:** {{gender}}  
 **Nature:** {{nature}}  
