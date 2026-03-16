@@ -44,19 +44,6 @@ export default async function SectionPage({ params }: SectionPageProps) {
 
         {overviewDocument ? (
           <>
-            {Object.keys(overviewDocument.frontmatter).length ? (
-              <dl className="codex-frontmatter-panel mt-8 grid gap-3 p-5 md:grid-cols-2">
-                {Object.entries(overviewDocument.frontmatter).map(([key, value]) => (
-                  <div key={key}>
-                    <dt className="codex-frontmatter-key">{key}</dt>
-                    <dd className="codex-frontmatter-value mt-1 text-sm">
-                      {Array.isArray(value) ? value.join(", ") : String(value)}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            ) : null}
-
             <article
               className="codex-entry-body codex-prose mt-10"
               dangerouslySetInnerHTML={{ __html: overviewDocument.html }}
