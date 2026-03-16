@@ -5,6 +5,7 @@ import matter from "gray-matter";
 const repoRoot = process.cwd();
 const contentRoot = path.join(repoRoot, "content");
 const derivedRoot = path.join(contentRoot, "_derived", "sidebar");
+const IMAGE_EXTENSIONS = new Set([".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif", ".avif"]);
 
 function toSlugPart(value) {
   return String(value)
@@ -44,25 +45,79 @@ function listMarkdownFiles(rootDir) {
   return out;
 }
 
+function listAssetFiles(rootDir) {
+  const out = [];
+  function visit(dirPath) {
+    for (const item of fs.readdirSync(dirPath, { withFileTypes: true })) {
+      if (item.name === "_derived" || item.name === ".gitkeep") continue;
+      const nextPath = path.join(dirPath, item.name);
+      if (item.isDirectory()) {
+        visit(nextPath);
+        continue;
+      }
+      if (IMAGE_EXTENSIONS.has(path.extname(item.name).toLowerCase())) out.push(nextPath);
+    }
+  }
+  if (fs.existsSync(rootDir)) visit(rootDir);
+  return out;
+}
+
 function optionalArray(value) {
   if (value == null || value === "") return [];
   return Array.isArray(value) ? value : [value];
 }
 
-function optionalImage(frontmatter, field, title) {
-  const src = frontmatter[field];
-  if (!src || typeof src !== "string") return null;
+function buildContentAssetHref(relativePath) {
+  return `/content-assets/${relativePath.replace(/\\/g, "/").split("/").map(encodeURIComponent).join("/")}`;
+}
+
+function parseObsidianEmbed(value) {
+  const match = String(value).trim().match(/^!\[\[([^|\]]+)(?:\|([^\]]+))?\]\]$/);
+  if (!match) return null;
+  return {
+    target: match[1].trim(),
+    caption: match[2]?.trim() || null,
+  };
+}
+
+function resolveImageSource(rawValue, sourceRelativePath, assetIndex) {
+  if (!rawValue || typeof rawValue !== "string") return null;
+  const trimmed = rawValue.trim();
+  if (!trimmed) return null;
+  if (trimmed.startsWith("/")) return { src: trimmed, caption: null };
+
+  const embed = parseObsidianEmbed(trimmed);
+  if (embed) {
+    const targetName = embed.target.replace(/\\/g, "/").split("/").pop();
+    const sourceDir = path.posix.dirname(sourceRelativePath.replace(/\\/g, "/"));
+    const siblingMatch = assetIndex.find(
+      (entry) => path.posix.dirname(entry.relativePath) === sourceDir && path.posix.basename(entry.relativePath) === targetName,
+    );
+    const globalMatch = siblingMatch || assetIndex.find((entry) => path.posix.basename(entry.relativePath) === targetName);
+    if (!globalMatch) return null;
+    return {
+      src: buildContentAssetHref(globalMatch.relativePath),
+      caption: embed.caption,
+    };
+  }
+
+  return { src: trimmed, caption: null };
+}
+
+function optionalImage(frontmatter, field, title, sourceRelativePath, assetIndex) {
+  const resolved = resolveImageSource(frontmatter[field], sourceRelativePath, assetIndex);
+  if (!resolved) return null;
   const suffix = field.replace("image_", "");
   const alt = frontmatter[`image_${suffix}_alt`];
   const caption = frontmatter[`image_${suffix}_caption`];
   return {
-    src,
+    src: resolved.src,
     alt: typeof alt === "string" && alt.trim() ? alt : title,
-    caption: typeof caption === "string" && caption.trim() ? caption : null,
+    caption: typeof caption === "string" && caption.trim() ? caption : resolved.caption,
   };
 }
 
-function buildNationSidebar(frontmatter, relativePath) {
+function buildNationSidebar(frontmatter, relativePath, assetIndex) {
   const title = String(frontmatter.name || frontmatter.title || path.basename(relativePath, path.extname(relativePath)));
   return {
     type: "nation",
@@ -70,9 +125,11 @@ function buildNationSidebar(frontmatter, relativePath) {
     subtitle: frontmatter.formal_name || null,
     source_relative_path: relativePath.replace(/\\/g, "/"),
     images: {
-      banner: optionalImage(frontmatter, "image_banner", title),
-      heraldry: optionalImage(frontmatter, "image_heraldry", title),
-      map: optionalImage(frontmatter, "image_map", title),
+      banner: optionalImage(frontmatter, "image_banner", title, relativePath, assetIndex),
+      heraldry:
+        optionalImage(frontmatter, "image_heraldry", title, relativePath, assetIndex) ||
+        optionalImage(frontmatter, "arms_image", title, relativePath, assetIndex),
+      map: optionalImage(frontmatter, "image_map", title, relativePath, assetIndex),
     },
     sections: [
       {
@@ -154,7 +211,7 @@ function buildNationSidebar(frontmatter, relativePath) {
   };
 }
 
-function buildDeitySidebar(frontmatter, relativePath) {
+function buildDeitySidebar(frontmatter, relativePath, assetIndex) {
   const title = String(frontmatter.name || frontmatter.title || path.basename(relativePath, path.extname(relativePath)));
   return {
     type: "deity",
@@ -162,9 +219,9 @@ function buildDeitySidebar(frontmatter, relativePath) {
     subtitle: frontmatter.epithet || frontmatter.title || frontmatter.subtitle || null,
     source_relative_path: relativePath.replace(/\\/g, "/"),
     images: {
-      banner: optionalImage(frontmatter, "image_banner", title),
-      heraldry: optionalImage(frontmatter, "image_heraldry", title),
-      avatar: optionalImage(frontmatter, "image_avatar", title),
+      banner: optionalImage(frontmatter, "image_banner", title, relativePath, assetIndex),
+      heraldry: optionalImage(frontmatter, "image_heraldry", title, relativePath, assetIndex),
+      avatar: optionalImage(frontmatter, "image_avatar", title, relativePath, assetIndex),
     },
     sections: [
       {
@@ -250,11 +307,25 @@ function buildDeitySidebar(frontmatter, relativePath) {
 function main() {
   ensureDir(derivedRoot);
   const markdownFiles = listMarkdownFiles(contentRoot);
+  const assetIndex = listAssetFiles(contentRoot).map((filePath) => ({
+    absolutePath: filePath,
+    relativePath: path.relative(contentRoot, filePath).replace(/\\/g, "/"),
+  }));
   const writtenFiles = new Set();
+  const skippedFiles = [];
 
   for (const filePath of markdownFiles) {
     const raw = fs.readFileSync(filePath, "utf8");
-    const parsed = matter(raw);
+    let parsed;
+    try {
+      parsed = matter(raw);
+    } catch (error) {
+      skippedFiles.push({
+        relativePath: path.relative(contentRoot, filePath).replace(/\\/g, "/"),
+        reason: error instanceof Error ? error.message : String(error),
+      });
+      continue;
+    }
     const frontmatter = parsed.data || {};
     const relativePath = path.relative(contentRoot, filePath);
 
@@ -263,10 +334,10 @@ function main() {
 
     if (frontmatter.type === "nation") {
       sidebarDir = path.join(derivedRoot, "nations");
-      payload = buildNationSidebar(frontmatter, relativePath);
+      payload = buildNationSidebar(frontmatter, relativePath, assetIndex);
     } else if (frontmatter.type === "deity") {
       sidebarDir = path.join(derivedRoot, "deities");
-      payload = buildDeitySidebar(frontmatter, relativePath);
+      payload = buildDeitySidebar(frontmatter, relativePath, assetIndex);
     }
 
     if (!sidebarDir || !payload) continue;
@@ -289,6 +360,11 @@ function main() {
   }
 
   process.stdout.write(`[codex-derived] generated ${writtenFiles.size} sidebar json file(s)\n`);
+  if (skippedFiles.length) {
+    for (const skipped of skippedFiles) {
+      process.stdout.write(`[codex-derived] skipped ${skipped.relativePath}: ${skipped.reason}\n`);
+    }
+  }
 }
 
 main();

@@ -53,7 +53,9 @@ arms_image: "![[Rammskoda_Sigil.png]]"
 
 ## Overview
 
-The Raamskoda is a larger Hall by Dwarvish standards under the peaks of the [[Brightfire Mountains]] in Northern [[Drakharpan]]. Founded around the sacred forge fires said to have been brought down from the top of [[Brightfire Mountain]]
+The Raamskoda is a larger Hall by Dwarvish standards under the peaks of the [[Brightfire Mountains]] in Northern [[Drakharpan]]. Founded around the sacred forge fires said to have been brought down from the top of [[Brightfire Mountain]].
+
+
 
 
 ## Geography
