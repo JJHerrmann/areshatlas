@@ -135,15 +135,55 @@ export function getSectionBySlug(slug: string) {
   return sections.find((section) => section.slug === slug);
 }
 
-function normalizeObsidianText(value: string) {
-  return String(value)
-    .replace(/!\[\[([^[\]]+)\]\]/g, "")
-    .replace(/\[\[([^[\]]+)\]\]/g, (_match, target: string) => {
-      const [rawTarget, rawAlias] = String(target).split("|");
-      if (rawAlias?.trim()) return rawAlias.trim();
-      const cleanTarget = rawTarget.trim().replace(/\\/g, "/");
-      return cleanTarget.split("/").pop()?.replace(/\.(md|markdown)$/i, "") || cleanTarget;
-    })
+function getObsidianDisplayText(target: string, alias?: string) {
+  if (alias?.trim()) return alias.trim();
+  const cleanTarget = target.trim().replace(/\\/g, "/");
+  return cleanTarget.split("/").pop()?.replace(/\.(md|markdown)$/i, "") || cleanTarget;
+}
+
+export type ObsidianInlinePart =
+  | { type: "text"; text: string }
+  | { type: "link"; text: string; href: string | null };
+
+export function resolveObsidianInlineParts(value: string, sourceRelativePath?: string): ObsidianInlinePart[] {
+  const parts: ObsidianInlinePart[] = [];
+  const source = String(value);
+  const pattern = /!\[\[([^[\]]+)\]\]|\[\[([^[\]]+)\]\]/g;
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = pattern.exec(source)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push({ type: "text", text: source.slice(lastIndex, match.index) });
+    }
+
+    if (match[1]) {
+      lastIndex = pattern.lastIndex;
+      continue;
+    }
+
+    const [rawTarget, rawAlias] = String(match[2]).split("|");
+    const cleanTarget = rawTarget.trim();
+    const text = getObsidianDisplayText(cleanTarget, rawAlias);
+    parts.push({
+      type: "link",
+      text,
+      href: resolveObsidianHref(cleanTarget, sourceRelativePath),
+    });
+    lastIndex = pattern.lastIndex;
+  }
+
+  if (lastIndex < source.length) {
+    parts.push({ type: "text", text: source.slice(lastIndex) });
+  }
+
+  return parts;
+}
+
+export function normalizeObsidianText(value: string) {
+  return resolveObsidianInlineParts(String(value))
+    .map((part) => part.text)
+    .join("")
     .replace(/\s{2,}/g, " ")
     .trim();
 }

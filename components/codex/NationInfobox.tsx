@@ -1,34 +1,7 @@
 import type { NationSidebar } from "@/lib/codexContent";
+import SidebarValue from "@/components/codex/SidebarValue";
 
-type NationInfoboxProps = {
-  data: NationSidebar;
-};
-
-function renderValue(value: unknown) {
-  if (value && typeof value === "object" && !Array.isArray(value)) {
-    return (
-      <ul>
-        {Object.entries(value as Record<string, unknown>)
-          .filter(([, item]) => item != null && item !== "")
-          .map(([key, item]) => (
-            <li key={key}>
-              {key}: {String(item)}
-            </li>
-          ))}
-      </ul>
-    );
-  }
-  if (Array.isArray(value)) {
-    return (
-      <ul>
-        {value.map((item, index) => (
-          <li key={`${String(item)}-${index}`}>{String(item)}</li>
-        ))}
-      </ul>
-    );
-  }
-  return value ? String(value) : null;
-}
+type NationInfoboxProps = { data: NationSidebar };
 
 function renderImageBlock(
   image: { src: string; alt: string; caption: string | null },
@@ -64,7 +37,9 @@ export default function NationInfobox({ data }: NationInfoboxProps) {
               {section.rows.map(([label, value]) => (
                 <div key={label} className="codex-infobox-row">
                   <dt>{label}</dt>
-                  <dd>{renderValue(value)}</dd>
+                  <dd>
+                    <SidebarValue value={value} sourceRelativePath={data.source_relative_path} />
+                  </dd>
                 </div>
               ))}
             </dl>
