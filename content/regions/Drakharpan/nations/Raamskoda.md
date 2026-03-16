@@ -7,12 +7,16 @@ continent: Drakharpan
 location: Eastern Aurea, in a wide valley between the Challieann Mountains and the Antasian Mountains
 government_type: Monarchy
 hierarchy:
-  - King
-  - Duke
-  - Count
-  - Baron
-  - Knight
-  - Burgher
+  - Akahel
+  - Akehali
+  - Negad
+  - Nagedi
+  - Gadol
+  - Godali
+  - Mishtar
+  - Mashtiri
+  - Rashim
+  - Rashi
 ruler: Akahel Makbar Raamskord
 capital: Kharmahal
 capital_population: 18896
@@ -40,6 +44,7 @@ patron:
 cultural_templates:
   - Dracian
 map: Rammskoda
+arms_image: "![[Rammskoda_Sigil.png]]"
 ---
 
 
@@ -48,7 +53,7 @@ map: Rammskoda
 
 ## Overview
 
-The Raamskoda is a larger Hall (Kingdom) by Dwarvish standards under the peaks of the [[Brightfire Mountains]] in Northern [[Drakharpan]]. Founded around the sacred forge fires said to have been brought down from the top of Brightfire mountain
+The Raamskoda is a larger Hall by Dwarvish standards under the peaks of the [[Brightfire Mountains]] in Northern [[Drakharpan]]. Founded around the sacred forge fires said to have been brought down from the top of [[Brightfire Mountain]]
 
 
 ## Geography
