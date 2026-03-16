@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import fs from "node:fs";
 import path from "node:path";
+import { Suspense } from "react";
+import StreamRefreshController from "@/components/codex/StreamRefreshController";
 import WikiSidebar from "@/components/codex/WikiSidebar";
 import "./globals.css";
 
@@ -21,6 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Suspense fallback={null}>
+          <StreamRefreshController />
+        </Suspense>
         <div className="wiki-page-shell">
           <div className="wiki-page-frame wiki-shell-frame">
             <div className="wiki-shell-layout">
