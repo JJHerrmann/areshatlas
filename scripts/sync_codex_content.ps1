@@ -34,8 +34,9 @@ Write-Host "[codex-sync] destination: $destinationResolved"
 
 $sourceArg = "$sourceResolved\"
 $destinationArg = "$destinationResolved\"
+$derivedArg = Join-Path $destinationResolved "_derived"
 
-robocopy $sourceArg $destinationArg /MIR /R:1 /W:1 /NFL /NDL /NJH /NJS /NP | Out-Host
+robocopy $sourceArg $destinationArg /MIR /XD $derivedArg /R:1 /W:1 /NFL /NDL /NJH /NJS /NP | Out-Host
 $exitCode = $LASTEXITCODE
 
 if ($exitCode -ge 8) {
