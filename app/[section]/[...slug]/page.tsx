@@ -41,7 +41,6 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
           <div className="mt-6 max-w-3xl">
             <PlateLabel>{section.label}</PlateLabel>
             <h1 className="codex-page-title mt-4">{overviewDocument.title}</h1>
-            <p className="codex-page-summary mt-4">{overviewDocument.summary}</p>
             <CoordinateRule />
           </div>
 
@@ -101,7 +100,6 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
           <div className="mt-6 max-w-3xl">
             <PlateLabel>{section.label}</PlateLabel>
             <h1 className="codex-page-title mt-4">{document.title}</h1>
-            <p className="codex-page-summary mt-4">{document.summary}</p>
             <CoordinateRule />
           </div>
 
@@ -140,9 +138,6 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
         <div className="mt-6 max-w-3xl">
           <PlateLabel>{section.label}</PlateLabel>
           <h1 className="codex-page-title mt-4">{view.breadcrumb[view.breadcrumb.length - 1]?.title ?? section.title}</h1>
-          <p className="codex-page-summary mt-4">
-            {view.overview?.summary ?? section.summary}
-          </p>
           <p className="codex-source-note mt-3">
             Mirrored Source Folder: {view.sourcePath}
           </p>

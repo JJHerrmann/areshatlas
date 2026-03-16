@@ -35,7 +35,6 @@ export default async function SectionPage({ params }: SectionPageProps) {
         <div className="mt-6 max-w-3xl">
           <PlateLabel>{section.label}</PlateLabel>
           <h1 className="codex-page-title mt-4">{overviewDocument?.title ?? section.title}</h1>
-          <p className="codex-page-summary mt-4">{overviewDocument?.summary ?? section.summary}</p>
           <p className="codex-source-note mt-3">
             Mirrored Source Folder: {view.sourcePath}
           </p>
