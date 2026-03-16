@@ -135,11 +135,25 @@ export function getSectionBySlug(slug: string) {
   return sections.find((section) => section.slug === slug);
 }
 
+function normalizeObsidianText(value: string) {
+  return String(value)
+    .replace(/!\[\[([^[\]]+)\]\]/g, "")
+    .replace(/\[\[([^[\]]+)\]\]/g, (_match, target: string) => {
+      const [rawTarget, rawAlias] = String(target).split("|");
+      if (rawAlias?.trim()) return rawAlias.trim();
+      const cleanTarget = rawTarget.trim().replace(/\\/g, "/");
+      return cleanTarget.split("/").pop()?.replace(/\.(md|markdown)$/i, "") || cleanTarget;
+    })
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
 function readFirstNonEmptyLine(markdown: string) {
-  return markdown
+  const line = markdown
     .split(/\r?\n/)
     .map((line) => line.trim())
     .find((line) => Boolean(line) && !line.startsWith("---") && !line.startsWith("#"));
+  return line ? normalizeObsidianText(line) : undefined;
 }
 
 function titleFromFileName(fileName: string) {
@@ -247,13 +261,13 @@ function readSummary(filePath: string, fallback: string) {
   if (ext === ".csv") return fallback;
   const raw = fs.readFileSync(filePath, "utf8");
   const parsed = matter(raw);
-  const cardSummary = typeof parsed.data.card_summary === "string" ? parsed.data.card_summary.trim() : "";
+  const cardSummary = typeof parsed.data.card_summary === "string" ? normalizeObsidianText(parsed.data.card_summary) : "";
   if (cardSummary) return cardSummary;
 
-  const summary = typeof parsed.data.summary === "string" ? parsed.data.summary.trim() : "";
+  const summary = typeof parsed.data.summary === "string" ? normalizeObsidianText(parsed.data.summary) : "";
   if (summary) return summary;
 
-  return readFirstNonEmptyLine(parsed.content) || String(parsed.data.title || fallback);
+  return readFirstNonEmptyLine(parsed.content) || normalizeObsidianText(String(parsed.data.title || fallback));
 }
 
 function createFileEntry(
@@ -524,11 +538,11 @@ export async function getRenderedDocument(section: SectionConfig, slugParts: str
   const raw = fs.readFileSync(filePath, "utf8");
   const parsed = matter(raw);
   const title =
-    String(parsed.data.title || "").trim() ||
-    readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") ||
+    normalizeObsidianText(String(parsed.data.title || "")) ||
+    normalizeObsidianText(readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") || "") ||
     titleFromFileName(path.basename(filePath));
   const summary =
-    (typeof parsed.data.summary === "string" && parsed.data.summary.trim()) ||
+    (typeof parsed.data.summary === "string" && normalizeObsidianText(parsed.data.summary)) ||
     readFirstNonEmptyLine(parsed.content) ||
     section.summary;
   const relativePath = path.relative(getSectionRoot(section), filePath).replace(/\\/g, "/");
@@ -551,11 +565,11 @@ export async function getRenderedOverviewDocument(section: SectionConfig, slugPa
   const raw = fs.readFileSync(filePath, "utf8");
   const parsed = matter(raw);
   const title =
-    String(parsed.data.title || "").trim() ||
-    readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") ||
+    normalizeObsidianText(String(parsed.data.title || "")) ||
+    normalizeObsidianText(readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") || "") ||
     titleFromFileName(path.basename(filePath));
   const summary =
-    (typeof parsed.data.summary === "string" && parsed.data.summary.trim()) ||
+    (typeof parsed.data.summary === "string" && normalizeObsidianText(parsed.data.summary)) ||
     readFirstNonEmptyLine(parsed.content) ||
     section.summary;
   const relativePath = path.relative(getSectionRoot(section), filePath).replace(/\\/g, "/");
