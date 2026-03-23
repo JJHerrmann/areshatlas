@@ -1,7 +1,7 @@
 ---
 name: Marmoqed
 epithet: The God of Hearth and Medicine
-title: ""
+title: Marmoqed
 pantheon: ""
 divine_rank: ""
 gender: ""
@@ -43,9 +43,9 @@ tags:
   - religion
 type: deity
 primary_topic: Dieties of Areshnaat
-navboxes:  
-- ramtilim  
-- dieties-of-areshnaat
+navboxes:
+  - ramtilim
+  - dieties-of-areshnaat
 slug: marmoqed
 ---
 # Marmoqed

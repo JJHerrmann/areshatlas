@@ -1,7 +1,7 @@
 ---
 name: Machul
 epithet: The God of Dances and Storms
-title: ""
+title: Machul
 pantheon: ""
 divine_rank: ""
 gender: ""
@@ -43,9 +43,9 @@ tags:
   - religion
 type: deity
 primary_topic: Dieties of Areshnaat
-navboxes:  
-- ramtilim  
-- dieties-of-areshnaat
+navboxes:
+  - ramtilim
+  - dieties-of-areshnaat
 slug: machul
 ---
 # Machul

@@ -43,10 +43,11 @@ tags:
   - religion
 type: deity
 primary_topic: Dieties of Areshnaat
-navboxes:  
-- ramtilim  
-- dieties-of-areshnaat
+navboxes:
+  - ramtilim
+  - dieties-of-areshnaat
 slug: yatbara
+title: Yatbara
 ---
 # Yatbara
 *The God of Creation*

@@ -2,7 +2,7 @@
 type: deity
 name: Ba'al Sheol
 epithet: The God of the Underworld
-title: The Destined Knot
+title: Ba'al Sheol
 pantheon: Areshnaati
 divine_rank: Major
 gender: Male
@@ -43,9 +43,9 @@ tags:
   - deity
   - religion
 primary_topic: Dieties of Areshnaat
-navboxes:  
-- ramtilim  
-- dieties-of-areshnaat
+navboxes:
+  - ramtilim
+  - dieties-of-areshnaat
 slug: ba-al-sheol
 ---
 

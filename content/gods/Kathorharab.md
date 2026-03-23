@@ -1,8 +1,8 @@
 ---
 type: deity
 name: Kathorharab
-epithet: The God of Craft and War
-title: The Wailing Hammer
+epithet: The God of Craft and War, The Wailing Hammer
+title: Kathorharab
 pantheon: Areshnaati
 divine_rank: Major
 gender: Male
@@ -46,9 +46,9 @@ tags:
   - deity
   - religion
 primary_topic: Dieties of Areshnaat
-navboxes:  
-- ramtilim  
-- dieties-of-areshnaat
+navboxes:
+  - ramtilim
+  - dieties-of-areshnaat
 slug: kathorharab
 ---
 # Kathorharab
