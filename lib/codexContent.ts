@@ -40,6 +40,29 @@ export type RenderedDocument = {
   frontmatter: Record<string, unknown>;
 };
 
+export type DerivedArticle = {
+  slug: string;
+  title: string;
+  section: string;
+  href: string | null;
+  source_relative_path: string;
+  aliases: string[];
+  navboxes: string[];
+};
+
+export type DerivedNavboxItem = {
+  slug: string;
+  title: string;
+  href: string;
+};
+
+export type DerivedNavbox = {
+  id: string;
+  title: string;
+  mode: string;
+  items: DerivedNavboxItem[];
+};
+
 export type SidebarSectionRow = [string, unknown];
 
 export type SidebarSection = {
@@ -75,9 +98,12 @@ export type DeitySidebar = {
 
 const CONTENT_ROOT = path.join(process.cwd(), "content");
 const DERIVED_ROOT = path.join(CONTENT_ROOT, "_derived", "sidebar");
+const NAVBOX_DERIVED_ROOT = path.join(CONTENT_ROOT, "_derived", "navboxes");
 const ALLOWED_ENTRY_EXTENSIONS = new Set([".md", ".markdown", ".csv"]);
 const MARKDOWN_EXTENSIONS = new Set([".md", ".markdown"]);
 let markdownPathIndex: Array<{ relativePath: string; title: string; slugTitle: string }> | null = null;
+let derivedArticleIndex: DerivedArticle[] | null = null;
+let derivedNavboxIndex: DerivedNavbox[] | null = null;
 
 export const sections: SectionConfig[] = [
   {
@@ -238,7 +264,7 @@ function listMarkdownFiles(rootDir: string) {
   const out: string[] = [];
   function visit(dirPath: string) {
     for (const item of fs.readdirSync(dirPath, { withFileTypes: true })) {
-      if (item.name === "_derived" || item.name === ".gitkeep") continue;
+      if (item.name === "_derived" || item.name === "_registry" || item.name === ".gitkeep") continue;
       const nextPath = path.join(dirPath, item.name);
       if (item.isDirectory()) {
         visit(nextPath);
@@ -263,6 +289,24 @@ function getMarkdownPathIndex() {
     };
   });
   return markdownPathIndex;
+}
+
+function readDerivedJson<T>(fileName: string): T[] {
+  const filePath = path.join(NAVBOX_DERIVED_ROOT, fileName);
+  if (!fs.existsSync(filePath) || !fs.statSync(filePath).isFile()) return [];
+  return JSON.parse(fs.readFileSync(filePath, "utf8")) as T[];
+}
+
+function getDerivedArticleIndex() {
+  if (derivedArticleIndex) return derivedArticleIndex;
+  derivedArticleIndex = readDerivedJson<DerivedArticle>("articles.json");
+  return derivedArticleIndex;
+}
+
+function getDerivedNavboxIndex() {
+  if (derivedNavboxIndex) return derivedNavboxIndex;
+  derivedNavboxIndex = readDerivedJson<DerivedNavbox>("navboxes.json");
+  return derivedNavboxIndex;
 }
 
 function getSafeSectionPath(section: SectionConfig, slugParts: string[] = []) {
@@ -637,4 +681,16 @@ export function getDeitySidebar(sourcePath: string): DeitySidebar | null {
   const derivedPath = path.join(DERIVED_ROOT, "deities", `${buildEntrySlug(relativePath)}.json`);
   if (!fs.existsSync(derivedPath) || !fs.statSync(derivedPath).isFile()) return null;
   return JSON.parse(fs.readFileSync(derivedPath, "utf8")) as DeitySidebar;
+}
+
+export function getDerivedArticle(sourcePath: string): DerivedArticle | null {
+  const relativePath = sourcePath.replace(/^content[\\/]/, "").replace(/\\/g, "/");
+  return getDerivedArticleIndex().find((article) => article.source_relative_path === relativePath) || null;
+}
+
+export function getNavboxesForSourcePath(sourcePath: string): DerivedNavbox[] {
+  const article = getDerivedArticle(sourcePath);
+  if (!article || !article.navboxes.length) return [];
+  const navboxIndex = new Map(getDerivedNavboxIndex().map((navbox) => [navbox.id, navbox]));
+  return article.navboxes.map((id) => navboxIndex.get(id)).filter(Boolean) as DerivedNavbox[];
 }

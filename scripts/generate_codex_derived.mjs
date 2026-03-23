@@ -5,7 +5,18 @@ import matter from "gray-matter";
 const repoRoot = process.cwd();
 const contentRoot = path.join(repoRoot, "content");
 const derivedRoot = path.join(contentRoot, "_derived", "sidebar");
+const navboxRegistryRoot = path.join(contentRoot, "_registry", "navboxes");
+const navboxDerivedRoot = path.join(contentRoot, "_derived", "navboxes");
 const IMAGE_EXTENSIONS = new Set([".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif", ".avif"]);
+const sections = [
+  { slug: "pantheon", folder: "gods" },
+  { slug: "regions", folder: "regions" },
+  { slug: "cultures", folder: "cultures" },
+  { slug: "languages", folder: "cultures/language" },
+  { slug: "relics", folder: "relics" },
+  { slug: "creatures", folder: "creatures" },
+  { slug: "chronicles", folder: "chronicles" },
+];
 
 function toSlugPart(value) {
   return String(value)
@@ -32,7 +43,7 @@ function listMarkdownFiles(rootDir) {
   const out = [];
   function visit(dirPath) {
     for (const item of fs.readdirSync(dirPath, { withFileTypes: true })) {
-      if (item.name === "_derived" || item.name === ".gitkeep") continue;
+      if (item.name === "_derived" || item.name === "_registry" || item.name === ".gitkeep") continue;
       const nextPath = path.join(dirPath, item.name);
       if (item.isDirectory()) {
         visit(nextPath);
@@ -49,7 +60,7 @@ function listAssetFiles(rootDir) {
   const out = [];
   function visit(dirPath) {
     for (const item of fs.readdirSync(dirPath, { withFileTypes: true })) {
-      if (item.name === "_derived" || item.name === ".gitkeep") continue;
+      if (item.name === "_derived" || item.name === "_registry" || item.name === ".gitkeep") continue;
       const nextPath = path.join(dirPath, item.name);
       if (item.isDirectory()) {
         visit(nextPath);
@@ -65,6 +76,159 @@ function listAssetFiles(rootDir) {
 function optionalArray(value) {
   if (value == null || value === "") return [];
   return Array.isArray(value) ? value : [value];
+}
+
+function normalizeStringArray(value) {
+  return optionalArray(value).map((item) => String(item).trim()).filter(Boolean);
+}
+
+function titleFromFileName(fileName) {
+  return fileName.replace(/\.[^.]+$/, "");
+}
+
+function getSectionForRelativePath(relativePath) {
+  const normalized = relativePath.replace(/\\/g, "/");
+  return [...sections]
+    .sort((a, b) => b.folder.length - a.folder.length)
+    .find((section) => normalized === section.folder || normalized.startsWith(`${section.folder}/`)) || null;
+}
+
+function contentRelativePathToHref(relativePath) {
+  const normalized = relativePath.replace(/\\/g, "/").replace(/\.(md|markdown)$/i, "");
+  const section = getSectionForRelativePath(normalized);
+  if (!section) return null;
+
+  const tail = normalized === section.folder ? "" : normalized.slice(section.folder.length + 1);
+  const segments = tail ? tail.split("/").filter(Boolean) : [];
+  if (segments.length === 1 && toSlugPart(segments[0]) === toSlugPart(path.basename(section.folder))) {
+    return `/${section.slug}`;
+  }
+  if (segments.length >= 2 && toSlugPart(segments[segments.length - 1]) === toSlugPart(segments[segments.length - 2])) {
+    segments.pop();
+  }
+  const routeTail = segments.map(toSlugPart).map(encodeURIComponent).join("/");
+  return routeTail ? `/${section.slug}/${routeTail}` : `/${section.slug}`;
+}
+
+function buildArticleRecord(frontmatter, relativePath) {
+  const normalizedRelativePath = relativePath.replace(/\\/g, "/");
+  const section = getSectionForRelativePath(normalizedRelativePath);
+  if (!section) return null;
+
+  const fileName = path.basename(normalizedRelativePath);
+  const title = String(frontmatter.title || frontmatter.name || titleFromFileName(fileName)).trim();
+  const slug = String(frontmatter.slug || toSlugPart(titleFromFileName(fileName))).trim();
+  const aliases = normalizeStringArray(frontmatter.aliases).map(toSlugPart);
+  const navboxes = normalizeStringArray(frontmatter.navboxes).map(toSlugPart);
+  const href = contentRelativePathToHref(normalizedRelativePath);
+
+  return {
+    slug: toSlugPart(slug),
+    title,
+    section: String(frontmatter.section || section.slug).trim(),
+    href,
+    source_relative_path: normalizedRelativePath,
+    aliases,
+    navboxes,
+  };
+}
+
+function listJsonFiles(rootDir) {
+  const out = [];
+  function visit(dirPath) {
+    for (const item of fs.readdirSync(dirPath, { withFileTypes: true })) {
+      if (item.name === ".gitkeep") continue;
+      const nextPath = path.join(dirPath, item.name);
+      if (item.isDirectory()) {
+        visit(nextPath);
+        continue;
+      }
+      if (path.extname(item.name).toLowerCase() === ".json") out.push(nextPath);
+    }
+  }
+  if (fs.existsSync(rootDir)) visit(rootDir);
+  return out;
+}
+
+function buildNavboxData(markdownFiles) {
+  const articles = [];
+  const articleBySlug = new Map();
+  const articleKeyToSlug = new Map();
+
+  for (const filePath of markdownFiles) {
+    const raw = fs.readFileSync(filePath, "utf8");
+    const parsed = matter(raw);
+    const relativePath = path.relative(contentRoot, filePath);
+    const article = buildArticleRecord(parsed.data || {}, relativePath);
+    if (!article) continue;
+
+    if (articleBySlug.has(article.slug)) {
+      throw new Error(`Duplicate article slug "${article.slug}" found in ${article.source_relative_path}`);
+    }
+
+    for (const key of [article.slug, ...article.aliases]) {
+      if (articleKeyToSlug.has(key)) {
+        throw new Error(`Duplicate article slug/alias "${key}" found in ${article.source_relative_path}`);
+      }
+      articleKeyToSlug.set(key, article.slug);
+    }
+
+    articleBySlug.set(article.slug, article);
+    articles.push(article);
+  }
+
+  const navboxRegistryFiles = listJsonFiles(navboxRegistryRoot);
+  const navboxRegistry = navboxRegistryFiles.map((filePath) => {
+    const parsed = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    const id = toSlugPart(parsed.id || "");
+    if (!id) {
+      throw new Error(`Navbox registry file ${path.relative(repoRoot, filePath)} is missing a valid id`);
+    }
+    const title = String(parsed.title || id).trim();
+    const mode = String(parsed.mode || "footer").trim();
+    const rawItems = normalizeStringArray(parsed.items).map(toSlugPart);
+    const items = rawItems.map((key) => {
+      const resolvedSlug = articleKeyToSlug.get(key);
+      if (!resolvedSlug) {
+        throw new Error(`Navbox "${id}" references unknown article slug/alias "${key}"`);
+      }
+      const article = articleBySlug.get(resolvedSlug);
+      if (!article || !article.href) {
+        throw new Error(`Navbox "${id}" references article "${resolvedSlug}" that cannot be routed`);
+      }
+      return {
+        slug: article.slug,
+        title: article.title,
+        href: article.href,
+      };
+    });
+
+    return {
+      id,
+      title,
+      mode,
+      items,
+    };
+  });
+
+  const navboxById = new Map(navboxRegistry.map((navbox) => [navbox.id, navbox]));
+
+  for (const article of articles) {
+    for (const navboxId of article.navboxes) {
+      const navbox = navboxById.get(navboxId);
+      if (!navbox) {
+        throw new Error(`Article "${article.source_relative_path}" references unknown navbox "${navboxId}"`);
+      }
+      if (!navbox.items.some((item) => item.slug === article.slug)) {
+        throw new Error(`Article "${article.source_relative_path}" declares navbox "${navboxId}" but is not listed in that navbox registry`);
+      }
+    }
+  }
+
+  return {
+    articles: articles.sort((a, b) => a.slug.localeCompare(b.slug)),
+    navboxes: navboxRegistry.sort((a, b) => a.id.localeCompare(b.id)),
+  };
 }
 
 function buildContentAssetHref(relativePath) {
@@ -306,6 +470,7 @@ function buildDeitySidebar(frontmatter, relativePath, assetIndex) {
 
 function main() {
   ensureDir(derivedRoot);
+  ensureDir(navboxDerivedRoot);
   const markdownFiles = listMarkdownFiles(contentRoot);
   const assetIndex = listAssetFiles(contentRoot).map((filePath) => ({
     absolutePath: filePath,
@@ -359,7 +524,11 @@ function main() {
     }
   }
 
-  process.stdout.write(`[codex-derived] generated ${writtenFiles.size} sidebar json file(s)\n`);
+  const navboxData = buildNavboxData(markdownFiles);
+  fs.writeFileSync(path.join(navboxDerivedRoot, "articles.json"), `${JSON.stringify(navboxData.articles, null, 2)}\n`, "utf8");
+  fs.writeFileSync(path.join(navboxDerivedRoot, "navboxes.json"), `${JSON.stringify(navboxData.navboxes, null, 2)}\n`, "utf8");
+
+  process.stdout.write(`[codex-derived] generated ${writtenFiles.size} sidebar json file(s) and ${navboxData.navboxes.length} navbox definition(s)\n`);
   if (skippedFiles.length) {
     for (const skipped of skippedFiles) {
       process.stdout.write(`[codex-derived] skipped ${skipped.relativePath}: ${skipped.reason}\n`);

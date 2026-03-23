@@ -2,13 +2,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import CoordinateRule from "@/components/codex/CoordinateRule";
 import CornerOrnament from "@/components/codex/CornerOrnament";
-import ArticleTopicFooter from "@/components/codex/ArticleTopicFooter";
 import DeityInfobox from "@/components/codex/DeityInfobox";
 import DeityProfile from "@/components/codex/DeityProfile";
 import EntryCard from "@/components/codex/EntryCard";
+import NavboxFooter from "@/components/codex/NavboxFooter";
 import NationInfobox from "@/components/codex/NationInfobox";
 import PlateLabel from "@/components/codex/PlateLabel";
-import { getDeitySidebar, getNationSidebar, getRenderedDocument, getRenderedOverviewDocument, getSectionBySlug, getSectionView } from "@/lib/codexContent";
+import { getDeitySidebar, getDerivedArticle, getNavboxesForSourcePath, getNationSidebar, getRenderedDocument, getRenderedOverviewDocument, getSectionBySlug, getSectionView } from "@/lib/codexContent";
 
 type NestedSectionPageProps = {
   params: Promise<{
@@ -25,6 +25,8 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
   const view = getSectionView(section, slug);
   const overviewDocument = view ? await getRenderedOverviewDocument(section, slug) : null;
   if (view && overviewDocument) {
+    const overviewArticle = getDerivedArticle(overviewDocument.sourcePath);
+    const overviewNavboxes = getNavboxesForSourcePath(overviewDocument.sourcePath);
     return (
       <main className="min-h-screen px-6 py-12 text-stone-900 lg:px-8">
         <div className="mx-auto max-w-6xl">
@@ -72,13 +74,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             )}
           </section>
 
-          <ArticleTopicFooter
-            frontmatter={overviewDocument.frontmatter}
-            sectionTitle={section.title}
-            sourceRelativePath={overviewDocument.sourcePath}
-            pageTitle={overviewDocument.title}
-            pageHref={overviewDocument.breadcrumb[overviewDocument.breadcrumb.length - 1]?.href ?? `/${section.slug}`}
-          />
+          {overviewArticle ? <NavboxFooter navboxes={overviewNavboxes} currentSlug={overviewArticle.slug} /> : null}
         </div>
 
         <CornerOrnament position="bottom-right" />
@@ -90,6 +86,8 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
   if (document) {
     const nationSidebar = getNationSidebar(document.sourcePath);
     const deitySidebar = getDeitySidebar(document.sourcePath);
+    const article = getDerivedArticle(document.sourcePath);
+    const navboxes = getNavboxesForSourcePath(document.sourcePath);
     const hasSidebar = Boolean(nationSidebar) || Boolean(deitySidebar);
     const isDeity = Boolean(deitySidebar) || document.frontmatter?.type === "deity";
     return (
@@ -126,13 +124,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             {deitySidebar ? <DeityInfobox data={deitySidebar} /> : null}
           </div>
 
-          <ArticleTopicFooter
-            frontmatter={document.frontmatter}
-            sectionTitle={section.title}
-            sourceRelativePath={document.sourcePath}
-            pageTitle={document.title}
-            pageHref={document.breadcrumb[document.breadcrumb.length - 1]?.href ?? `/${section.slug}`}
-          />
+          {article ? <NavboxFooter navboxes={navboxes} currentSlug={article.slug} /> : null}
         </div>
 
         <CornerOrnament position="bottom-right" />

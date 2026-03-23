@@ -1,8 +1,10 @@
 ---
 type: deity
 name: ""
-epithet: ""
 title: ""
+slug: ""
+section: pantheon
+epithet: ""
 honorific_title: ""
 pantheon: ""
 divine_rank: ""
@@ -42,11 +44,10 @@ holy_days: []
 taboos: []
 summary: ""
 card_summary: ""
+navboxes: []
 tags:
   - deity
   - religion
-primary_topic: ""
-topics: []
 ---
 
 <!--
@@ -211,4 +212,4 @@ Keep the summary short and archival in tone so it can serve as the page preview.
 
 ## Topic Indexing
 
-Set `primary_topic` to the main wiki topic for the article and `topics` to any additional topic boxes you want shown in the footer. Use plain text or wiki links. If a topic link resolves to the current page, the footer will render it as plain text instead of a clickable self-link.
+Use flat frontmatter only. Declare `navboxes` as a list of shared navbox ids, for example `navboxes: [twelve-olympians, olympian-deities]`. Shared navbox definitions live in the central registry, not in the article note.
