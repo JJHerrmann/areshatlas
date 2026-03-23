@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import CoordinateRule from "@/components/codex/CoordinateRule";
 import CornerOrnament from "@/components/codex/CornerOrnament";
+import ArticleTopicFooter from "@/components/codex/ArticleTopicFooter";
 import DeityInfobox from "@/components/codex/DeityInfobox";
 import DeityProfile from "@/components/codex/DeityProfile";
 import EntryCard from "@/components/codex/EntryCard";
@@ -70,6 +71,12 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
               </article>
             )}
           </section>
+
+          <ArticleTopicFooter
+            frontmatter={overviewDocument.frontmatter}
+            sectionTitle={section.title}
+            sourceRelativePath={overviewDocument.sourcePath}
+          />
         </div>
 
         <CornerOrnament position="bottom-right" />
@@ -116,6 +123,12 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             {nationSidebar ? <NationInfobox data={nationSidebar} /> : null}
             {deitySidebar ? <DeityInfobox data={deitySidebar} /> : null}
           </div>
+
+          <ArticleTopicFooter
+            frontmatter={document.frontmatter}
+            sectionTitle={section.title}
+            sourceRelativePath={document.sourcePath}
+          />
         </div>
 
         <CornerOrnament position="bottom-right" />

@@ -45,6 +45,8 @@ card_summary: ""
 tags:
   - deity
   - religion
+primary_topic: ""
+topics: []
 ---
 
 <!--
@@ -206,3 +208,7 @@ Keep the summary short and archival in tone so it can serve as the page preview.
 - [[{{related_deity_1}}]]
 - [[{{related_deity_2}}]]
 - [[{{related_deity_3}}]]
+
+## Topic Indexing
+
+Set `primary_topic` to the main wiki topic for the article and `topics` to any additional topic boxes you want shown in the footer. Use plain text or wiki links.
