@@ -1,7 +1,10 @@
 ---
+type: deity
 name: Machul
 epithet: The God of Dances and Storms
-title: ""
+title: Machul
+slug: machul
+section: pantheon
 pantheon: ""
 divine_rank: ""
 gender: ""
@@ -38,10 +41,12 @@ virtues: []
 vices: []
 holy_days: []
 taboos: []
+navboxes:
+  - ramtilim
+  - dieties-of-areshnaat
 tags:
   - deity
   - religion
-type: deity
 ---
 # {{name}}
 *{{epithet}}*

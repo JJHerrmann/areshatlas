@@ -2,7 +2,9 @@
 type: deity
 name: Yamnahar
 epithet: The God of Seas and Rivers
-title: ""
+title: Yamnahar
+slug: yamnahar
+section: pantheon
 pantheon: ""
 divine_rank: ""
 gender: ""
@@ -39,6 +41,9 @@ virtues: []
 vices: []
 holy_days: []
 taboos: []
+navboxes:
+  - ramtilim
+  - dieties-of-areshnaat
 tags:
   - deity
   - religion

@@ -1,7 +1,10 @@
 ---
+type: deity
 name: Qatzera
 epithet: The God of Harvest and Crops
-title: ""
+title: Qatzera
+slug: qatzera
+section: pantheon
 pantheon: ""
 divine_rank: ""
 gender: ""
@@ -38,10 +41,12 @@ virtues: []
 vices: []
 holy_days: []
 taboos: []
+navboxes:
+  - ramtilim
+  - dieties-of-areshnaat
 tags:
   - deity
   - religion
-type: deity
 ---
 # {{name}}
 *{{epithet}}*

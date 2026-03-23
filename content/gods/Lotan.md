@@ -2,7 +2,9 @@
 type: deity
 name: Lotan
 epithet: The Sky Serpent
-title: ""
+title: Lotan
+slug: lotan
+section: pantheon
 pantheon: ""
 divine_rank: ""
 gender: ""
@@ -39,6 +41,9 @@ virtues: []
 vices: []
 holy_days: []
 taboos: []
+navboxes:
+  - ramtilim
+  - dieties-of-areshnaat
 tags:
   - deity
   - religion

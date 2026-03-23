@@ -2,7 +2,9 @@
 type: deity
 name: Harbaal
 epithet: The God of Mountains
-title: ""
+title: Harbaal
+slug: harbaal
+section: pantheon
 pantheon: ""
 divine_rank: ""
 gender: ""
@@ -39,6 +41,9 @@ virtues: []
 vices: []
 holy_days: []
 taboos: []
+navboxes:
+  - ramtilim
+  - dieties-of-areshnaat
 tags:
   - deity
   - religion

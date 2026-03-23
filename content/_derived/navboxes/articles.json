@@ -19,12 +19,15 @@
   },
   {
     "slug": "ba-al-sheol",
-    "title": "Sheol",
+    "title": "Ba'al Sheol",
     "section": "pantheon",
     "href": "/pantheon/ba-al-sheol",
     "source_relative_path": "gods/Ba'al Sheol.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "ramtilim",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "biviai",
@@ -87,7 +90,10 @@
     "href": "/pantheon/harbaal",
     "source_relative_path": "gods/Harbaal.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "ramtilim",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "kanchasuyu",
@@ -118,12 +124,15 @@
   },
   {
     "slug": "kathorharab",
-    "title": "The Wailing Hammer",
+    "title": "Kathorharab",
     "section": "pantheon",
     "href": "/pantheon/kathorharab",
     "source_relative_path": "gods/Kathorharab.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "ramtilim",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "kutnylev-gnomish",
@@ -159,7 +168,10 @@
     "href": "/pantheon/lotan",
     "source_relative_path": "gods/Lotan.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "ramtilim",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "machul",
@@ -168,7 +180,10 @@
     "href": "/pantheon/machul",
     "source_relative_path": "gods/Machul.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "ramtilim",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "makbar-raamskord",
@@ -186,7 +201,10 @@
     "href": "/pantheon/malagad",
     "source_relative_path": "gods/Malagad.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "ramtilim",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "marmoqed",
@@ -195,7 +213,10 @@
     "href": "/pantheon/marmoqed",
     "source_relative_path": "gods/Marmoqed.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "ramtilim",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "nekosdamkoda",
@@ -231,7 +252,10 @@
     "href": "/pantheon/qatzera",
     "source_relative_path": "gods/Qatzera.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "ramtilim",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "raamskoda",
@@ -249,7 +273,10 @@
     "href": "/pantheon/raavvah",
     "source_relative_path": "gods/Raavvah.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "ramtilim",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "riagan",
@@ -303,7 +330,10 @@
     "href": "/pantheon/tsayidrah",
     "source_relative_path": "gods/Tsayidrah.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "ramtilim",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "vardic-central-human",
@@ -348,7 +378,10 @@
     "href": "/pantheon/yamnahar",
     "source_relative_path": "gods/Yamnahar.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "ramtilim",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "yaradaat",
@@ -357,7 +390,10 @@
     "href": "/pantheon/yaradaat",
     "source_relative_path": "gods/Yaradaat.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "ramtilim",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "yatbara",

@@ -2,7 +2,9 @@
 type: deity
 name: Yaradaat
 epithet: The God of Knowledge and Law
-title: ""
+title: Yaradaat
+slug: yaradaat
+section: pantheon
 pantheon: ""
 divine_rank: ""
 gender: ""
@@ -39,6 +41,9 @@ virtues: []
 vices: []
 holy_days: []
 taboos: []
+navboxes:
+  - ramtilim
+  - dieties-of-areshnaat
 tags:
   - deity
   - religion

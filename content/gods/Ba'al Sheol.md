@@ -2,7 +2,9 @@
 type: deity
 name: Sheol
 epithet: The God of the Underworld
-title: ""
+title: "Ba'al Sheol"
+slug: ba-al-sheol
+section: pantheon
 pantheon: ""
 divine_rank: ""
 gender: ""
@@ -39,6 +41,9 @@ virtues: []
 vices: []
 holy_days: []
 taboos: []
+navboxes:
+  - ramtilim
+  - dieties-of-areshnaat
 tags:
   - deity
   - religion

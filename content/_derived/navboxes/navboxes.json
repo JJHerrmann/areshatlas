@@ -6,7 +6,7 @@
     "items": [
       {
         "slug": "ba-al-sheol",
-        "title": "Sheol",
+        "title": "Ba'al Sheol",
         "href": "/pantheon/ba-al-sheol"
       },
       {
@@ -16,7 +16,7 @@
       },
       {
         "slug": "kathorharab",
-        "title": "The Wailing Hammer",
+        "title": "Kathorharab",
         "href": "/pantheon/kathorharab"
       },
       {
@@ -78,7 +78,7 @@
     "items": [
       {
         "slug": "ba-al-sheol",
-        "title": "Sheol",
+        "title": "Ba'al Sheol",
         "href": "/pantheon/ba-al-sheol"
       },
       {
@@ -88,7 +88,7 @@
       },
       {
         "slug": "kathorharab",
-        "title": "The Wailing Hammer",
+        "title": "Kathorharab",
         "href": "/pantheon/kathorharab"
       },
       {
@@ -148,6 +148,66 @@
     "title": "Ramtilim",
     "mode": "footer",
     "items": [
+      {
+        "slug": "ba-al-sheol",
+        "title": "Ba'al Sheol",
+        "href": "/pantheon/ba-al-sheol"
+      },
+      {
+        "slug": "harbaal",
+        "title": "Harbaal",
+        "href": "/pantheon/harbaal"
+      },
+      {
+        "slug": "kathorharab",
+        "title": "Kathorharab",
+        "href": "/pantheon/kathorharab"
+      },
+      {
+        "slug": "lotan",
+        "title": "Lotan",
+        "href": "/pantheon/lotan"
+      },
+      {
+        "slug": "machul",
+        "title": "Machul",
+        "href": "/pantheon/machul"
+      },
+      {
+        "slug": "malagad",
+        "title": "Malagad",
+        "href": "/pantheon/malagad"
+      },
+      {
+        "slug": "marmoqed",
+        "title": "Marmoqed",
+        "href": "/pantheon/marmoqed"
+      },
+      {
+        "slug": "qatzera",
+        "title": "Qatzera",
+        "href": "/pantheon/qatzera"
+      },
+      {
+        "slug": "raavvah",
+        "title": "Raavvah",
+        "href": "/pantheon/raavvah"
+      },
+      {
+        "slug": "tsayidrah",
+        "title": "Tsayidrah",
+        "href": "/pantheon/tsayidrah"
+      },
+      {
+        "slug": "yamnahar",
+        "title": "Yamnahar",
+        "href": "/pantheon/yamnahar"
+      },
+      {
+        "slug": "yaradaat",
+        "title": "Yaradaat",
+        "href": "/pantheon/yaradaat"
+      },
       {
         "slug": "yatbara",
         "title": "Yatbara",

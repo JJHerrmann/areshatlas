@@ -8,5 +8,15 @@
     "heraldry": null,
     "avatar": null
   },
-  "sections": []
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Title",
+          "Harbaal"
+        ]
+      ]
+    }
+  ]
 }
