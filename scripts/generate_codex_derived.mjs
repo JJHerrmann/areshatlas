@@ -377,10 +377,12 @@ function buildNationSidebar(frontmatter, relativePath, assetIndex) {
 
 function buildDeitySidebar(frontmatter, relativePath, assetIndex) {
   const title = String(frontmatter.name || frontmatter.title || path.basename(relativePath, path.extname(relativePath)));
+  const displayTitle = frontmatter.title && String(frontmatter.title).trim() !== title ? frontmatter.title : null;
+  const honorificTitle = frontmatter.honorific_title || null;
   return {
     type: "deity",
     title,
-    subtitle: frontmatter.epithet || frontmatter.title || frontmatter.subtitle || null,
+    subtitle: frontmatter.epithet || honorificTitle || displayTitle || frontmatter.subtitle || null,
     source_relative_path: relativePath.replace(/\\/g, "/"),
     images: {
       banner: optionalImage(frontmatter, "image_banner", title, relativePath, assetIndex),
@@ -392,7 +394,8 @@ function buildDeitySidebar(frontmatter, relativePath, assetIndex) {
         title: "Descriptive Info",
         rows: [
           ["Pantheon", frontmatter.pantheon],
-          ["Title", frontmatter.title],
+          ["Title", displayTitle],
+          ["Honorific Title", honorificTitle],
           ["Gender", frontmatter.gender],
           ["Avatar", optionalArray(frontmatter.avatars || frontmatter.avatar)],
           ["Consort(s)", optionalArray(frontmatter.consorts || frontmatter.consort)],

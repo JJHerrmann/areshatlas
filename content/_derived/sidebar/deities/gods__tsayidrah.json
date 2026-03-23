@@ -8,15 +8,5 @@
     "heraldry": null,
     "avatar": null
   },
-  "sections": [
-    {
-      "title": "Descriptive Info",
-      "rows": [
-        [
-          "Title",
-          "Tsayidrah"
-        ]
-      ]
-    }
-  ]
+  "sections": []
 }

@@ -23,7 +23,9 @@
     "section": "pantheon",
     "href": "/pantheon/ba-al-sheol",
     "source_relative_path": "gods/Ba'al Sheol.md",
-    "aliases": [],
+    "aliases": [
+      "sheol"
+    ],
     "navboxes": [
       "ramtilim",
       "dieties-of-areshnaat"

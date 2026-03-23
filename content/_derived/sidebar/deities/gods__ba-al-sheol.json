@@ -1,6 +1,6 @@
 {
   "type": "deity",
-  "title": "Sheol",
+  "title": "Ba'al Sheol",
   "subtitle": "The God of the Underworld",
   "source_relative_path": "gods/Ba'al Sheol.md",
   "images": {
@@ -8,15 +8,5 @@
     "heraldry": null,
     "avatar": null
   },
-  "sections": [
-    {
-      "title": "Descriptive Info",
-      "rows": [
-        [
-          "Title",
-          "Ba'al Sheol"
-        ]
-      ]
-    }
-  ]
+  "sections": []
 }

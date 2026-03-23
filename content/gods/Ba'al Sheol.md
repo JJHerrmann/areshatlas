@@ -1,9 +1,11 @@
 ---
 type: deity
-name: Sheol
+name: "Ba'al Sheol"
 epithet: The God of the Underworld
 title: "Ba'al Sheol"
 slug: ba-al-sheol
+aliases:
+  - Sheol
 section: pantheon
 pantheon: ""
 divine_rank: ""
