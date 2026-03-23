@@ -1,0 +1,17 @@
+Fresh normalized Aresh Arctic crop from current world DEM
+========================================================
+
+Source DEM NPZ: rookworld_source_data\v2.5\rookworld_rotated_dem_0p025deg.npz
+Source landmask NPZ: rookworld_source_data\v2.5\rookworld_landmask_m62_0p025deg.npz
+Crop bounds (Aresh): north=24.684884, south=-18.058754, west=44.834297, east=120.822985
+Render size: 4800 x 2700
+
+Projected cities
+----------------
+Anchorage: Earth (+61.2181, -149.9003) -> Aresh (+17.7842, +74.0314) -> px (1844.3, 435.9) [in bounds]
+Nome: Earth (+64.5011, -165.4064) -> Aresh (+10.0311, +74.5877) -> px (1879.4, 925.6) [in bounds]
+Anadyr: Earth (+64.7333, +177.5167) -> Aresh (+2.8926, +76.1338) -> px (1977.1, 1376.6) [in bounds]
+Yakutat: Earth (+59.5469, -139.7272) -> Aresh (+22.6849, +71.9032) -> px (1709.9, 126.3) [in bounds]
+Okha: Earth (+53.5892, +142.9497) -> Aresh (-16.0588, +84.1495) -> px (2483.4, 2573.7) [in bounds]
+Magadan: Earth (+59.5600, +150.8000) -> Aresh (-9.9431, +79.9410) -> px (2217.6, 2187.4) [in bounds]
+Petropavlovsk-Kamchatsky: Earth (+53.0370, +158.6550) -> Aresh (-7.2243, +87.3718) -> px (2687.0, 2015.6) [in bounds]

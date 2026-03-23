@@ -1,0 +1,44 @@
+Areshnaat Orientation / Climate Note
+========================================
+
+The DEM-facing map stack has been vertically flipped so the topo, coastline, faux-satellite, and globe outputs now share the same north/south orientation.
+
+Pole analogs
+-----------
+New North Pole: Arctic Ocean / Greenland-Svalbard style: a mostly oceanic polar cap (top 5% belt land coverage: 1.9%).
+New South Pole: Arctic Ocean / Greenland-Svalbard style: a mostly oceanic polar cap (bottom 5% belt land coverage: 0.1%).
+
+Cities closest to the new equator
+-----------------------------
+Balacanver (Xilhuan Altepetl): +0.02°, est. annual mean 27.0 C
+Seabantlan (Latocail Naharcan): -0.10°, est. annual mean 27.0 C
+Castregulle (Xilhuan Altepetl): -0.14°, est. annual mean 27.0 C
+Rakan (City-state of Saheranahvaria): -0.14°, est. annual mean 27.0 C
+Pearyan (Latocail Naharcan): -0.38°, est. annual mean 27.0 C
+Silunum (Xilhuan Altepetl): +0.76°, est. annual mean 26.9 C
+Killallan (Sultanate of Kanchasuyu): -0.83°, est. annual mean 26.9 C
+Pachakunayuqta (Sultanate of Kanchasuyu): -0.84°, est. annual mean 26.9 C
+Acan (Latocail Naharcan): +1.30°, est. annual mean 26.9 C
+Bretarpan (Latocail Naharcan): +1.55°, est. annual mean 26.8 C
+Arasco (Xilhuan Altepetl): -1.60°, est. annual mean 26.8 C
+Kutfold (City-state of Saheranahvaria): -1.61°, est. annual mean 26.8 C
+
+Capital city latitude / temperature comparison
+------------------------------------------
+Because this was a pole swap rather than an obliquity change, absolute latitude is unchanged. First-order solar temperature estimates therefore stay effectively the same; only hemisphere labels invert.
+
+Kutvaladosva (City-state of Saheranahvaria): old +7.06° -> 26.3 C, new -7.06° -> 26.3 C
+Caidistlan (Latocail Naharcan): old -20.18° -> 23.9 C, new +20.18° -> 23.9 C
+Ruyurein (Sultanate of Kanchasuyu): old +24.42° -> 22.2 C, new -24.42° -> 22.2 C
+Magnakan (Nekosdamkoda): old -27.96° -> 20.8 C, new +27.96° -> 20.8 C
+Archco (Xilhuan Altepetl): old +32.39° -> 18.6 C, new -32.39° -> 18.6 C
+Quenolistes (Duchy of Quenolistes): old -33.09° -> 18.1 C, new +33.09° -> 18.1 C
+Accanovo (Marches of Petrello): old -35.39° -> 16.8 C, new +35.39° -> 16.8 C
+Theixus (Herviorum City-state): old -35.52° -> 16.7 C, new +35.52° -> 16.7 C
+Sirnorum (Duchy of Witfordburia): old -42.48° -> 12.8 C, new +42.48° -> 12.8 C
+Florum (Beylik of Lugrancanta): old +53.20° -> 7.1 C, new -53.20° -> 7.1 C
+Viingavanach (Duchy of Eleral): old -58.27° -> 4.0 C, new +58.27° -> 4.0 C
+Zaharkoda (Raamkoda): old +68.93° -> -5.0 C, new -68.93° -> -5.0 C
+Tihuatlacoal (Duchy of Temalimco): old -69.30° -> -5.4 C, new +69.30° -> -5.4 C
+Seacantlan (Duchy of Petlancia): old -76.98° -> -13.0 C, new +76.98° -> -13.0 C
+Dodanma (Emirate of Riagan): old +78.38° -> -14.4 C, new -78.38° -> -14.4 C

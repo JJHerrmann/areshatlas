@@ -1,0 +1,26 @@
+Earth62 to Aresh reference report
+================================
+
+Earth62 source basis
+--------------------
+Render image: R:\Rookworks\Copilot\aresh_rebuild\GEBCO_BATHY_TOPO_EARTH62\GEBCO_BATHY_TOPO_EARTH62_render.png
+Sea level adjustment in metadata: -62.0 m
+Render size: 4096 x 2048
+
+Earth->Aresh affine
+-------------------
+aresh_lon = 0.0157525938 * earth_lon + -1.2146822204 * earth_lat + 148.1090017670
+aresh_lat = -0.1256462088 * earth_lon + 0.2933334560 * earth_lat + -16.7860820144
+
+City projections
+----------------
+Nome: Earth (+64.5011, -165.4064) -> Earth px (166.0, 290.1) -> Aresh (+22.9169, +67.1551) -> Aresh px (1409.9, 111.7) [in bounds]
+St. Lawrence / Gambell: Earth (+63.7797, -171.7328) -> Earth px (94.1, 298.3) -> Aresh (+23.5002, +67.9317) -> Aresh px (1459.0, 74.8) [in bounds]
+Hooper Bay: Earth (+61.5314, -166.0967) -> Earth px (158.2, 323.9) -> Aresh (+22.1326, +70.7515) -> Aresh px (1637.1, 161.2) [in bounds]
+Anchorage: Earth (+61.2181, -149.9003) -> Earth px (342.5, 327.5) -> Aresh (+20.0056, +71.3871) -> Aresh px (1677.3, 295.6) [in bounds]
+Yakutat: Earth (+59.5469, -139.7272) -> Earth px (458.2, 346.5) -> Aresh (+18.2372, +73.5773) -> Aresh px (1815.6, 407.3) [in bounds]
+Ambler: Earth (+67.0872, -157.8575) -> Earth px (251.9, 260.7) -> Aresh (+22.7270, +64.1327) -> Aresh px (1219.0, 123.7) [in bounds]
+Dutch Harbor: Earth (+53.8897, -166.5419) -> Earth px (153.1, 410.9) -> Aresh (+19.9469, +80.0267) -> Aresh px (2223.0, 299.3) [in bounds]
+Anadyr: Earth (+64.7333, +177.5167) -> Earth px (4067.7, 287.5) -> Aresh (-20.1019, +72.2750) -> Aresh px (1733.4, 2829.1) [out of bounds]
+Okha: Earth (+53.5892, +142.9497) -> Earth px (3674.4, 414.3) -> Aresh (-19.0277, +85.2670) -> Aresh px (2554.0, 2761.2) [out of bounds]
+Magadan: Earth (+59.5600, +150.8000) -> Earth px (3763.8, 346.3) -> Aresh (-18.2626, +78.1380) -> Aresh px (2103.7, 2712.9) [out of bounds]

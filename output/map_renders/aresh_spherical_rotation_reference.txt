@@ -1,0 +1,20 @@
+Aresh spherical rotation reference
+=================================
+
+Method: explicit spherical basis remap
+Anchor that becomes Aresh 0,0: lat=38.977580555556, lon=-9.273263888889
+
+Basis vectors in Earth xyz
+--------------------------
+aresh_x_equator_prime = [0.7672324271892097, -0.1252715396019202, 0.6290162510103523]
+aresh_y_east_at_anchor = [-0.6207956493664172, 0.10136175690489457, 0.7773921506967262]
+aresh_z_north_pole = [-0.16114330391636633, -0.9869310186648901, -0.0]
+
+Sample conversions
+------------------
+Anchor (should map to Aresh 0,0): Earth (+38.977581, -9.273264) -> Aresh (-0.000000, +0.000000) -> round trip error lat=+0.000000000000, lon=+0.000000000000
+Nome: Earth (+64.501100, -165.406400) -> Aresh (+10.031133, +74.587656) -> round trip error lat=+0.000000000000, lon=-0.000000000000
+Hooper Bay: Earth (+61.531400, -166.096700) -> Aresh (+10.812980, +77.517990) -> round trip error lat=-0.000000000000, lon=+0.000000000000
+Anchorage: Earth (+61.218100, -149.900300) -> Aresh (+17.784182, +74.031435) -> round trip error lat=+0.000000000000, lon=+0.000000000000
+Yakutat: Earth (+59.546944, -139.727222) -> Aresh (+22.684884, +71.903190) -> round trip error lat=+0.000000000000, lon=+0.000000000000
+Dutch Harbor: Earth (+53.889700, -166.541900) -> Aresh (+13.163350, +84.956119) -> round trip error lat=+0.000000000000, lon=+0.000000000000

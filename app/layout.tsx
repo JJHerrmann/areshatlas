@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { Suspense } from "react";
 import StreamRefreshController from "@/components/codex/StreamRefreshController";
+import PersistentFooter from "@/components/codex/PersistentFooter";
 import WikiSidebar from "@/components/codex/WikiSidebar";
 import "./globals.css";
 
@@ -34,6 +35,7 @@ export default function RootLayout({
               </aside>
               <div className="wiki-main">{children}</div>
             </div>
+            <PersistentFooter />
           </div>
         </div>
       </body>

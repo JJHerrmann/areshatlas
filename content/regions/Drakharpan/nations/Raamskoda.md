@@ -17,7 +17,7 @@ hierarchy:
   - Mashtiri
   - Rashim
   - Rashi
-ruler: Akahel Makbar Raamskord
+ruler: Akahel [[Makbar Raamskord]]
 capital: Kharmahal
 capital_population: 18896
 alliances:
@@ -64,14 +64,12 @@ The Raamskoda is a larger Hall by Dwarvish standards under the peaks of the [[Br
 
 ## Regions
 
-### [Region 1]
-[short description]
-
-### [Region 2]
-[short description]
-
-### [Region 3]
-[short description]
+## [[Kiviraud Istekoda]]
+[[Kiviraud Istekoda]] is the northern-most of the chair-halls of [[Raamskoda]]. The populous there specializes in raw materials, pulling coals, gemstones, gold, and other specious metals from the ground, and shifting it to other Istekoda for processing into fine crafts.
+## [[Tammekaar Istekoda]]
+[[Tammekaar Istekoda]] is the western-most of the chair-halls of Raamskoda, it's where the most of the soldiers of the armies come from and are stationed, bordering the Riagan Emirates. Tammekaar is the most contested Istekoda, as Riagan forces have pushed into the valleys of the territory, and set up villages, while the dwarves still control the undercities and commerce lanes.
+## [[Vaskmurd Istekoda]]
+## [[Kaljurik Istekoda]]
 
 ## History
 

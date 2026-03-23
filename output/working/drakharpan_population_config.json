@@ -1,0 +1,11 @@
+{
+  "total_population_target": 420000,
+  "urbanization_rate": 0.18,
+  "min_burg_spacing_cells": 10,
+  "burg_count_target": 24,
+  "coast_bonus": 1.35,
+  "slope_penalty": 1.55,
+  "elevation_penalty": 0.95,
+  "desirability_power": 1.28,
+  "water_access_bonus": 0.9
+}

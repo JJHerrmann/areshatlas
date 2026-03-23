@@ -1,0 +1,37 @@
+Estimated Drakharpan Placement On Archived Azgaar Import Plate
+==============================================================
+
+Inputs
+------
+Plate image: R:\Rookworks\Copilot\region_exports\aresh_arctic_azgaar_crop\aresh_arctic_16x9_topobathy.png
+Crop metadata: R:\Rookworks\Copilot\region_exports\aresh_arctic_azgaar_crop\aresh_arctic_16x9_metadata.json
+Azgaar state source: R:\Rookworks\Copilot\public\azgaar\areshnaat-map-data.json
+
+Transform used
+--------------
+Azgaar -> world DEM calibration: translate(62.60%, 36.40%) scale(0.209, 0.209)
+This is the user-calibrated full-world alignment from /prototype_map.
+
+Selected Drakharpan states
+--------------------------
+Kanchasuyu, Naharcan, Nekosdamkoda, Petrello, Raamkoda, Riagan, Xilhuan
+
+Plate-local projected box
+-------------------------
+Raw extents: x[40.30, 2331.47] y[-399.98, 1560.89]
+Clipped extents: x[40.30, 2331.47] y[0.00, 1560.89]
+
+Interpretation
+--------------
+The estimate lands coherently on the left/central side of the old import plate.
+Several northern member states project above the plate's top edge, which implies this old plate was a southernly clipped macroregion rather than a perfectly tight Drakharpan-only crop.
+
+Per-state projected boxes
+-------------------------
+Kanchasuyu: bbox x[40.30, 731.80] y[-394.42, 665.48], pole (295.93, -167.98)
+Xilhuan: bbox x[1327.26, 1975.24] y[-333.05, 825.14], pole (1704.58, 303.33)
+Naharcan: bbox x[891.33, 1580.08] y[543.08, 1125.89], pole (1297.96, 827.45)
+Raamkoda: bbox x[1106.30, 1545.90] y[-173.42, 145.20], pole (1231.95, -236.63)
+Petrello: bbox x[1679.00, 2331.47] y[790.78, 1255.96], pole (1902.61, 1063.77)
+Riagan: bbox x[566.33, 1105.66] y[-399.98, 150.45], pole (781.76, -206.26)
+Nekosdamkoda: bbox x[1183.64, 1741.88] y[792.94, 1560.89], pole (1540.87, 1397.78)

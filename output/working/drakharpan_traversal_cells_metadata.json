@@ -1,0 +1,33 @@
+{
+  "source_csv": "output\\working\\areshnaat_land_traversal_cells.csv",
+  "crop_metadata": "output\\working\\aresh_arctic_16x9_normalized_metadata.json",
+  "crop_image": "public\\maps\\aresh_arctic_16x9_normalized_topobathy_current_coast_reference_cities.png",
+  "cell_count": 1221,
+  "crop_bounds_aresh": {
+    "north": 24.684883555720265,
+    "south": -18.058753638818747,
+    "west": 44.8342968784441,
+    "east": 120.82298522429122
+  },
+  "render_size": {
+    "width": 4800,
+    "height": 2700
+  },
+  "profile_counts": {
+    "rough": 525,
+    "moderate": 199,
+    "severe": 340,
+    "easy": 148,
+    "open": 9
+  },
+  "outputs": {
+    "csv": "output\\working\\drakharpan_traversal_cells.csv",
+    "preview": "output\\working\\drakharpan_traversal_cells_preview.png"
+  },
+  "notes": [
+    "Subset is filtered by traversal-cell centroid lat/lon falling inside the archived Drakharpan crop bounds.",
+    "Preview uses centroid markers only. Exact cell polygons are not preserved in the CSV and would require label-space reconstruction.",
+    "Preview image uses the current fresh crop orientation directly.",
+    "Original world traversal cell count: 20472"
+  ]
+}

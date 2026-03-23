@@ -1,0 +1,11 @@
+Areshnaat FMG heightmap
+========================
+Source DEM: rookworld_source_data\v2.5\rookworld_rotated_dem_0p025deg.npz
+Source size: 14400 x 7200
+DEM min: -10846.152 m
+DEM max: 7778.711 m
+Sea level mapped to ~20% brightness for FMG import semantics.
+Target break uses -62 m relative to current Earth sea level.
+Land uses a lowland-biased curve with a 10% shoreline brightness boost.
+Working output: output\working\areshnaat_fmg_heightmap.png
+FMG output: Fantasy-Map-Generator-master\Fantasy-Map-Generator-master\public\heightmaps\areshnaat-world.png

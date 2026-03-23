@@ -1,0 +1,523 @@
+{
+  "input": "R:\\RookVault\\00_Inbox\\Areshnaahht 2026-03-15-21-47.map",
+  "data": "R:\\Rookworks\\Copilot\\public\\azgaar\\areshnaat-map-data.json",
+  "exporter": "R:\\Rookworks\\Copilot\\scripts\\export_azgaar_state_svg.mjs",
+  "outputDir": "R:\\Rookworks\\Copilot\\output\\azgaar\\states",
+  "totalStates": 15,
+  "ok": 15,
+  "errors": 0,
+  "results": [
+    {
+      "stateId": 22,
+      "stateName": "Kanchasuyu",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\kanchasuyu.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\kanchasuyu.svg",
+        "state": {
+          "id": 22,
+          "name": "Kanchasuyu",
+          "fullName": "Sultanate of Kanchasuyu",
+          "cells": 660,
+          "burgs": 129,
+          "provinces": [
+            "Ruyurein County",
+            "Laqtia County",
+            "Maria Barony",
+            "Ornanlpansu County",
+            "Markia Margrave",
+            "Borcunumia County",
+            "Fionlaqtia County",
+            "Tuarkalanco County",
+            "Qochruyu County",
+            "Saium County",
+            "Qocha County",
+            "Beranlaqia County",
+            "Sirgodulum County",
+            "Sumior Landgrave",
+            "Fionkancha County",
+            "Melia Margrave",
+            "Asisumarru County",
+            "Fioncorin County",
+            "Ausuyumi County",
+            "Binovium County",
+            "Marsu County",
+            "Ruyuyuionia County",
+            "Apaor County",
+            "Kancha County",
+            "Lorkaia County",
+            "Sornumia County",
+            "Orcan Territory",
+            "Fionsuyu Territory",
+            "Killatheonku Territory",
+            "Sasumiyuqtia Tribe",
+            "Tiernanpun Territory"
+          ]
+        },
+        "bbox": {
+          "minX": 0,
+          "minY": 0,
+          "maxX": 670,
+          "maxY": 952
+        },
+        "routesIncluded": 138
+      }
+    },
+    {
+      "stateId": 23,
+      "stateName": "Xilhuan",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\xilhuan.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\xilhuan.svg",
+        "state": {
+          "id": 23,
+          "name": "Xilhuan",
+          "fullName": "Xilhuan Altepetl",
+          "cells": 774,
+          "burgs": 131,
+          "provinces": [
+            "Archco County",
+            "Nototitlanco County",
+            "Fomaraunium County",
+            "Temoac County",
+            "Oveliava Earldom",
+            "Huatlacanco Earldom",
+            "Ariateranno Earldom",
+            "Napanverte County",
+            "Corathionia Earldom",
+            "Maia County",
+            "Mosyan Earldom",
+            "Madaspan County",
+            "Pullum County",
+            "Wesvariontia County",
+            "Auiatlan County",
+            "Preme Earldom",
+            "Drupiba County",
+            "Alcocateco County",
+            "Confleba County",
+            "Buratesa County",
+            "Hueca County",
+            "Texcoaxaxaco County",
+            "Tlamaco Earldom",
+            "Aurpan County",
+            "Iztaco Earldom",
+            "Cannarixus Territory",
+            "Xelaqocaqoria Territory",
+            "Brecaoirt Region",
+            "Velarionia Land",
+            "Zeltharioria Islands",
+            "Kiviraud Province"
+          ]
+        },
+        "bbox": {
+          "minX": 840,
+          "minY": 0,
+          "maxX": 1612,
+          "maxY": 1073
+        },
+        "routesIncluded": 153
+      }
+    },
+    {
+      "stateId": 24,
+      "stateName": "Saheranahvaria",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\saheranahvaria.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\saheranahvaria.svg",
+        "state": {
+          "id": 24,
+          "name": "Saheranahvaria",
+          "fullName": "City-state of Saheranahvaria",
+          "cells": 73,
+          "burgs": 7,
+          "provinces": [
+            "Kutvaladosva Governorate",
+            "Magnarionia Province",
+            "Makorkosionia Island"
+          ]
+        },
+        "bbox": {
+          "minX": 681,
+          "minY": 452,
+          "maxX": 1037,
+          "maxY": 920
+        },
+        "routesIncluded": 18
+      }
+    },
+    {
+      "stateId": 25,
+      "stateName": "Naharcan",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\naharcan.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\naharcan.svg",
+        "state": {
+          "id": 25,
+          "name": "Naharcan",
+          "fullName": "Latocail Naharcan",
+          "cells": 311,
+          "burgs": 39,
+          "provinces": [
+            "Caidistlan County",
+            "Leabania County",
+            "Bretarpan County",
+            "Sarahacan Earldom",
+            "Cesontiana County",
+            "Breharcan County",
+            "Necarastlan Earldom",
+            "Florum Earldom",
+            "Balactlania Land"
+          ]
+        },
+        "bbox": {
+          "minX": 510,
+          "minY": 578,
+          "maxX": 1312,
+          "maxY": 1301
+        },
+        "routesIncluded": 101
+      }
+    },
+    {
+      "stateId": 26,
+      "stateName": "Raamkoda",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\raamkoda.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\raamkoda.svg",
+        "state": {
+          "id": 26,
+          "name": "Raamkoda",
+          "fullName": "Raamkoda",
+          "cells": 242,
+          "burgs": 8,
+          "provinces": [
+            "Rammskord Istekoda",
+            "Kalijurik Istekoda",
+            "Vaskmurd Istekoda",
+            "Kiiraud Istekoda",
+            "Tammekaar Istekoda"
+          ]
+        },
+        "bbox": {
+          "minX": 672,
+          "minY": 0,
+          "maxX": 1286,
+          "maxY": 558
+        },
+        "routesIncluded": 48
+      }
+    },
+    {
+      "stateId": 27,
+      "stateName": "Petrello",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\petrello.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\petrello.svg",
+        "state": {
+          "id": 27,
+          "name": "Petrello",
+          "fullName": "Marches of Petrello",
+          "cells": 252,
+          "burgs": 71,
+          "provinces": [
+            "Colanolonia Earldom",
+            "Sezania Captaincy",
+            "Armiabicia Captaincy",
+            "Tonazahualco County",
+            "Fivania Captaincy",
+            "Spervalom Earldom",
+            "Geria Earldom",
+            "Spersia Earldom",
+            "Chiapan Earldom",
+            "Seglia County",
+            "Leadaspanco Earldom",
+            "Vallanolaqui Earldom",
+            "Ponteleo Earldom",
+            "Peaigania Earldom",
+            "Casadupia Earldom",
+            "Campi Territory",
+            "Trerolico Territory",
+            "Sarbakorlalia Territory",
+            "Namäekarisza Dependency"
+          ]
+        },
+        "bbox": {
+          "minX": 1106,
+          "minY": 766,
+          "maxX": 1881,
+          "maxY": 1399
+        },
+        "routesIncluded": 113
+      }
+    },
+    {
+      "stateId": 28,
+      "stateName": "Riagan",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\riagan.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\riagan.svg",
+        "state": {
+          "id": 28,
+          "name": "Riagan",
+          "fullName": "Emirate of Riagan",
+          "cells": 267,
+          "burgs": 63,
+          "provinces": [
+            "Dodanma County",
+            "Sonanmayu County",
+            "Dorinsia County",
+            "Bevanconania County",
+            "Kievan County",
+            "Melaqta County",
+            "Rorinmia County",
+            "Brenpunia County",
+            "Orinlaqta County",
+            "Levelinium County",
+            "Nialaqtia County",
+            "Nialpania County",
+            "Melaqtia County",
+            "Bren Territory",
+            "Orin Territory",
+            "Veliaguria Land",
+            "Victrum County"
+          ]
+        },
+        "bbox": {
+          "minX": 263,
+          "minY": 0,
+          "maxX": 953,
+          "maxY": 562
+        },
+        "routesIncluded": 108
+      }
+    },
+    {
+      "stateId": 29,
+      "stateName": "Lugrancanta",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\lugrancanta.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\lugrancanta.svg",
+        "state": {
+          "id": 29,
+          "name": "Lugrancanta",
+          "fullName": "Beylik of Lugrancanta",
+          "cells": 145,
+          "burgs": 19,
+          "provinces": [
+            "Glen County",
+            "Florum County",
+            "Orpanmalan County",
+            "Nialmayu Earldom",
+            "Tralinia Territory",
+            "Magnarionia Zone"
+          ]
+        },
+        "bbox": {
+          "minX": 413,
+          "minY": 169,
+          "maxX": 1202,
+          "maxY": 862
+        },
+        "routesIncluded": 91
+      }
+    },
+    {
+      "stateId": 30,
+      "stateName": "Herviorum",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\herviorum.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\herviorum.svg",
+        "state": {
+          "id": 30,
+          "name": "Herviorum",
+          "fullName": "Herviorum City-state",
+          "cells": 57,
+          "burgs": 6,
+          "provinces": [
+            "Theixus District",
+            "Vinium District"
+          ]
+        },
+        "bbox": {
+          "minX": 467,
+          "minY": 912,
+          "maxX": 810,
+          "maxY": 1372
+        },
+        "routesIncluded": 34
+      }
+    },
+    {
+      "stateId": 31,
+      "stateName": "Witfordburia",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\witfordburia.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\witfordburia.svg",
+        "state": {
+          "id": 31,
+          "name": "Witfordburia",
+          "fullName": "Duchy of Witfordburia",
+          "cells": 262,
+          "burgs": 111,
+          "provinces": [
+            "Sirnorum County",
+            "Castra County",
+            "Cuapantema County",
+            "Gerara County"
+          ]
+        },
+        "bbox": {
+          "minX": 0,
+          "minY": 976,
+          "maxX": 595,
+          "maxY": 1562
+        },
+        "routesIncluded": 129
+      }
+    },
+    {
+      "stateId": 32,
+      "stateName": "Nekosdamkoda",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\nekosdamkoda.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\nekosdamkoda.svg",
+        "state": {
+          "id": 32,
+          "name": "Nekosdamkoda",
+          "fullName": "Nekosdamkoda",
+          "cells": 277,
+          "burgs": 21,
+          "provinces": [
+            "Magnakan County",
+            "Alaklalia County",
+            "Conflegul Landgrave",
+            "Baoirtlan County",
+            "Salagpan Land",
+            "Ferrvetarjõere Region",
+            "Mailinsarkia Clan",
+            "Mea Area",
+            "Breharcan Province"
+          ]
+        },
+        "bbox": {
+          "minX": 731,
+          "minY": 767,
+          "maxX": 1435,
+          "maxY": 1562
+        },
+        "routesIncluded": 108
+      }
+    },
+    {
+      "stateId": 33,
+      "stateName": "Temalimco",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\temalimco.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\temalimco.svg",
+        "state": {
+          "id": 33,
+          "name": "Temalimco",
+          "fullName": "Duchy of Temalimco",
+          "cells": 238,
+          "burgs": 75,
+          "provinces": []
+        },
+        "bbox": {
+          "minX": 159,
+          "minY": 1171,
+          "maxX": 1136,
+          "maxY": 1562
+        },
+        "routesIncluded": 130
+      }
+    },
+    {
+      "stateId": 34,
+      "stateName": "Petlancia",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\petlancia.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\petlancia.svg",
+        "state": {
+          "id": 34,
+          "name": "Petlancia",
+          "fullName": "Duchy of Petlancia",
+          "cells": 316,
+          "burgs": 54,
+          "provinces": [
+            "Morromarvi Earldom"
+          ]
+        },
+        "bbox": {
+          "minX": 899,
+          "minY": 1084,
+          "maxX": 1940,
+          "maxY": 1562
+        },
+        "routesIncluded": 83
+      }
+    },
+    {
+      "stateId": 35,
+      "stateName": "Quenolistes",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\quenolistes.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\quenolistes.svg",
+        "state": {
+          "id": 35,
+          "name": "Quenolistes",
+          "fullName": "Duchy of Quenolistes",
+          "cells": 119,
+          "burgs": 3,
+          "provinces": [
+            "Caidistlan Area",
+            "Breharcan Area"
+          ]
+        },
+        "bbox": {
+          "minX": 600,
+          "minY": 927,
+          "maxX": 966,
+          "maxY": 1327
+        },
+        "routesIncluded": 25
+      }
+    },
+    {
+      "stateId": 36,
+      "stateName": "Eleral",
+      "status": "ok",
+      "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\eleral.svg",
+      "report": {
+        "output": "R:\\Rookworks\\Copilot\\output\\azgaar\\states\\eleral.svg",
+        "state": {
+          "id": 36,
+          "name": "Eleral",
+          "fullName": "Duchy of Eleral",
+          "cells": 167,
+          "burgs": 26,
+          "provinces": []
+        },
+        "bbox": {
+          "minX": 279,
+          "minY": 1107,
+          "maxX": 1201,
+          "maxY": 1538
+        },
+        "routesIncluded": 92
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+Areshnaat Beringia-Analog Bounding Box
+=====================================
+
+Requested construction
+- North/South bounds from Tuktoyaktuk and Okha
+- East/West bounds from Nordvik and Mys Vasil'yeva
+
+Math
+----
+Map size used: 3600 x 1800
+Displayed map is the vertically flipped DEM orientation.
+Longitude to x: x = ((lon + 180) / 360) * width
+Earth-analog latitude to display y after the new flip: y = ((90 + lat) / 180) * height
+Equivalent legacy DEM sampling latitude: sampling_lat = -earth_lat
+
+Tuktoyaktuk: Earth (+69.44472, -133.03422) -> Areshnaat display (+69.44472, -133.03422), legacy DEM sample lat -69.44472, pixel (469.66, 1594.45)
+  Source: GeoDatos | https://www.geodatos.net/en/coordinates/canada/tuktoyaktuk
+Okha: Earth (+53.58665, +142.93725) -> Areshnaat display (+53.58665, +142.93725), legacy DEM sample lat -53.58665, pixel (3229.37, 1435.87)
+  Source: Mapcarta / OSM | https://mapcarta.com/W84723116
+Nordvik: Earth (+73.99750, +111.46333) -> Areshnaat display (+73.99750, +111.46333), legacy DEM sample lat -73.99750, pixel (2914.63, 1639.97)
+  Source: Wikimapia | https://wikimapia.org/7139461/Nordvik
+Mys Vasil'yeva: Earth (+50.03460, +155.39800) -> Areshnaat display (+50.03460, +155.39800), legacy DEM sample lat -50.03460, pixel (3353.98, 1400.35)
+  Source: 1952 Kamchatka tsunami deposit table snippet | https://www.scribd.com/document/563333344/51140589
+
+Resulting bounding box
+----------------------
+North = Tuktoyaktuk latitude = +69.44472
+South = Okha latitude = +53.58665
+West = Nordvik longitude = +111.46333
+East = Mys Vasil'yeva longitude = +155.39800
+Pixel box = x[2914.63, 3353.98] y[1435.87, 1594.45] (w=439.35, h=158.58)
+Raw flipped y positions: north=1594.45, south=1435.87
+
+Interpretation note
+-------------------
+This construction uses the named Earth places only as analog anchors. Because Tuktoyaktuk and Okha define only latitude while Nordvik and Mys Vasil'yeva define only longitude, the final box is a synthetic analog region, not a direct four-corner polygon through those towns.

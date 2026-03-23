@@ -1,0 +1,35 @@
+{
+  "source_dem": "output\\working\\aresh_arctic_16x9_normalized_dem.tif",
+  "source_crop_metadata": "output\\working\\aresh_arctic_16x9_normalized_metadata.json",
+  "sea_level_m": -62.0,
+  "spacing": 32,
+  "jitter": 9,
+  "cell_count": 4454,
+  "render_size": {
+    "width": 4800,
+    "height": 2700
+  },
+  "crop_bounds_aresh": {
+    "north": 24.684883555720265,
+    "south": -18.058753638818747,
+    "west": 44.8342968784441,
+    "east": 120.82298522429122
+  },
+  "profile_counts": {
+    "moderate": 444,
+    "rough": 1918,
+    "easy": 653,
+    "severe": 821,
+    "extreme": 66,
+    "open": 552
+  },
+  "notes": [
+    "Drakharpan-local refined Voronoi mesh generated directly from the normalized crop DEM.",
+    "Cells are land-only against the -62 m shoreline baseline.",
+    "This is the deeper local mesh and should be preferred over the centroid subset when editing regional traversal or later province/settlement assignments."
+  ],
+  "outputs": {
+    "csv": "output\\working\\drakharpan_deep_traversal_cells.csv",
+    "overlay": "public\\maps\\drakharpan-deep-traversal-cells-overlay.webp"
+  }
+}

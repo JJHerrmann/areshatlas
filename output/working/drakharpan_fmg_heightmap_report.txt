@@ -1,0 +1,11 @@
+Drakharpan FMG heightmap
+=========================
+Source DEM: output\working\aresh_arctic_16x9_normalized_dem.tif
+Source size: 4800 x 2700
+DEM min: -9486.804 m
+DEM max: 4388.520 m
+Sea level mapped to ~20% brightness for FMG import semantics.
+Target break uses -62 m relative to current Earth sea level.
+Land uses a lowland-biased curve with a 10% shoreline brightness boost.
+Working output: output\working\drakharpan_fmg_heightmap.png
+FMG output: Fantasy-Map-Generator-master\Fantasy-Map-Generator-master\public\heightmaps\drakharpan.png

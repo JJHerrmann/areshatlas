@@ -1,0 +1,20 @@
+{
+  "source_dem": "rookworld_source_data\\v2.5\\rookworld_rotated_dem_0p025deg.npz",
+  "source_landmask": "rookworld_source_data\\v2.5\\rookworld_landmask_m62_0p025deg.npz",
+  "crop_bounds_aresh": {
+    "north": 24.684883555720265,
+    "south": -18.058753638818747,
+    "west": 44.8342968784441,
+    "east": 120.82298522429122
+  },
+  "render_size": {
+    "width": 4800,
+    "height": 2700
+  },
+  "orientation_note": "Normalized crop generated to match the current world mental map (Eurasia south).",
+  "outputs": {
+    "dem": "output\\working\\aresh_arctic_16x9_normalized_dem.tif",
+    "topobathy_png": "public\\maps\\aresh_arctic_16x9_normalized_topobathy.png",
+    "topobathy_current_coast_reference_cities_png": "public\\maps\\aresh_arctic_16x9_normalized_topobathy_current_coast_reference_cities.png"
+  }
+}

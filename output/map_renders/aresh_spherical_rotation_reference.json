@@ -1,0 +1,158 @@
+{
+  "method": "explicit spherical basis remap",
+  "anchor_that_becomes_aresh_0_0": {
+    "latitude": 38.977580555555555,
+    "longitude": -9.27326388888889
+  },
+  "basis_vectors_earth_xyz": {
+    "aresh_x_equator_prime": [
+      0.7672324271892097,
+      -0.1252715396019202,
+      0.6290162510103523
+    ],
+    "aresh_y_east_at_anchor": [
+      -0.6207956493664172,
+      0.10136175690489457,
+      0.7773921506967262
+    ],
+    "aresh_z_north_pole": [
+      -0.16114330391636633,
+      -0.9869310186648901,
+      -0.0
+    ]
+  },
+  "matrices": {
+    "earth_from_aresh": [
+      [
+        0.7672324271892097,
+        -0.6207956493664172,
+        -0.16114330391636633
+      ],
+      [
+        -0.1252715396019202,
+        0.10136175690489457,
+        -0.9869310186648901
+      ],
+      [
+        0.6290162510103523,
+        0.7773921506967262,
+        -0.0
+      ]
+    ],
+    "aresh_from_earth": [
+      [
+        0.7672324271892097,
+        -0.1252715396019202,
+        0.6290162510103523
+      ],
+      [
+        -0.6207956493664172,
+        0.10136175690489457,
+        0.7773921506967262
+      ],
+      [
+        -0.16114330391636633,
+        -0.9869310186648901,
+        -0.0
+      ]
+    ]
+  },
+  "samples": {
+    "Anchor (should map to Aresh 0,0)": {
+      "earth_lat": 38.977580555555555,
+      "earth_lon": -9.27326388888889,
+      "aresh_lat": -2.0041174296779707e-16,
+      "aresh_lon": 2.4687950569130625e-15,
+      "round_trip": {
+        "input_lat": 38.977580555555555,
+        "input_lon": -9.27326388888889,
+        "aresh_lat": -2.0041174296779707e-16,
+        "aresh_lon": 0.0,
+        "round_trip_lat": 38.977580555555555,
+        "round_trip_lon": -9.273263888888891,
+        "lat_error_deg": 0.0,
+        "lon_error_deg": 0.0
+      }
+    },
+    "Nome": {
+      "earth_lat": 64.5011,
+      "earth_lon": -165.4064,
+      "aresh_lat": 10.031133453454391,
+      "aresh_lon": 74.58765595144494,
+      "round_trip": {
+        "input_lat": 64.5011,
+        "input_lon": -165.4064,
+        "aresh_lat": 10.031133453454391,
+        "aresh_lon": 74.58765595144496,
+        "round_trip_lat": 64.5011,
+        "round_trip_lon": -165.40640000000002,
+        "lat_error_deg": 0.0,
+        "lon_error_deg": -2.842170943040401e-14
+      }
+    },
+    "Hooper Bay": {
+      "earth_lat": 61.5314,
+      "earth_lon": -166.0967,
+      "aresh_lat": 10.812980344986327,
+      "aresh_lon": 77.51799002462545,
+      "round_trip": {
+        "input_lat": 61.5314,
+        "input_lon": -166.0967,
+        "aresh_lat": 10.812980344986327,
+        "aresh_lon": 77.51799002462542,
+        "round_trip_lat": 61.53139999999999,
+        "round_trip_lon": -166.0967,
+        "lat_error_deg": -7.105427357601002e-15,
+        "lon_error_deg": 0.0
+      }
+    },
+    "Anchorage": {
+      "earth_lat": 61.2181,
+      "earth_lon": -149.9003,
+      "aresh_lat": 17.78418211861401,
+      "aresh_lon": 74.03143499673646,
+      "round_trip": {
+        "input_lat": 61.2181,
+        "input_lon": -149.9003,
+        "aresh_lat": 17.78418211861401,
+        "aresh_lon": 74.03143499673646,
+        "round_trip_lat": 61.2181,
+        "round_trip_lon": -149.9003,
+        "lat_error_deg": 0.0,
+        "lon_error_deg": 0.0
+      }
+    },
+    "Yakutat": {
+      "earth_lat": 59.5469444,
+      "earth_lon": -139.7272222,
+      "aresh_lat": 22.684883555720265,
+      "aresh_lon": 71.90318967764968,
+      "round_trip": {
+        "input_lat": 59.5469444,
+        "input_lon": -139.7272222,
+        "aresh_lat": 22.684883555720265,
+        "aresh_lon": 71.90318967764966,
+        "round_trip_lat": 59.54694440000001,
+        "round_trip_lon": -139.7272222,
+        "lat_error_deg": 7.105427357601002e-15,
+        "lon_error_deg": 0.0
+      }
+    },
+    "Dutch Harbor": {
+      "earth_lat": 53.8897,
+      "earth_lon": -166.5419,
+      "aresh_lat": 13.163350403051005,
+      "aresh_lon": 84.95611914111828,
+      "round_trip": {
+        "input_lat": 53.8897,
+        "input_lon": -166.5419,
+        "aresh_lat": 13.163350403051005,
+        "aresh_lon": 84.95611914111828,
+        "round_trip_lat": 53.889700000000005,
+        "round_trip_lon": -166.5419,
+        "lat_error_deg": 7.105427357601002e-15,
+        "lon_error_deg": 0.0
+      }
+    }
+  }
+}

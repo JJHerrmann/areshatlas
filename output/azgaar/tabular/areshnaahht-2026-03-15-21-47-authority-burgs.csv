@@ -1,0 +1,775 @@
+id,name,slug,state_id,state_name,province_id,province_name,culture_id,feature_id,cell,x,y,capital,port,population,type,group,walls,citadel,temple
+1,Cerlumivigna,cerlumivigna,27,Marches of Petrello,77,Ponteleo Earldom,23,1,3822,1465.3,1195.2,FALSE,FALSE,4.464,River,town,TRUE,TRUE,FALSE
+2,Nertisa,nertisa,30,Herviorum City-state,0,,19,1,3978,607.18,1231.66,FALSE,TRUE,4.439,Naval,town,TRUE,TRUE,FALSE
+3,Sornodurica,sornodurica,31,Duchy of Witfordburia,0,,19,1,3859,271.93,1198.34,FALSE,TRUE,16.106,Naval,city,TRUE,TRUE,FALSE
+4,Yakun,yakun,22,Sultanate of Kanchasuyu,17,Asisumarru County,19,1,2169,216.28,604.71,FALSE,TRUE,4.098,Naval,town,TRUE,TRUE,FALSE
+5,Pullum,pullum,23,Xilhuan Altepetl,40,Pullum County,0,1,2614,1386.66,733.91,FALSE,TRUE,7.298,Naval,town,TRUE,TRUE,FALSE
+6,Sumior,sumior,22,Sultanate of Kanchasuyu,14,Sumior Landgrave,19,1,1680,299.37,465.82,FALSE,TRUE,9.245,Naval,town,TRUE,TRUE,FALSE
+7,Cavadokarok,cavadokarok,24,City-state of Saheranahvaria,54,Magnarionia Province,18,1,2178,836.83,592.45,FALSE,TRUE,14.427,Naval,city,TRUE,TRUE,FALSE
+8,Orpanmalan,orpanmalan,29,Beylik of Lugrancanta,94,Orpanmalan County,20,1,939,593.26,313.6,FALSE,TRUE,38.056,Naval,city,TRUE,TRUE,TRUE
+9,Relorum,relorum,33,Duchy of Temalimco,0,,0,1,4807,580.87,1413.6,FALSE,FALSE,3.242,River,town,TRUE,TRUE,FALSE
+10,Aharcan,aharcan,29,Beylik of Lugrancanta,0,,22,1,2255,993.29,617.02,FALSE,FALSE,19.216,River,city,TRUE,TRUE,FALSE
+11,Pullum,pullum,31,Duchy of Witfordburia,0,,19,1,4561,193.49,1368.8,FALSE,FALSE,15.025,River,city,TRUE,TRUE,FALSE
+12,Bevanconan,bevanconan,22,Sultanate of Kanchasuyu,4,Ornanlpansu County,20,1,1096,324.47,330.95,FALSE,TRUE,4.221,Naval,town,TRUE,TRUE,FALSE
+13,Gerara,gerara,31,Duchy of Witfordburia,101,Gerara County,21,1,3754,71.5,1190.98,FALSE,FALSE,11.626,Lake,city,TRUE,TRUE,FALSE
+14,Matregullum,matregullum,31,Duchy of Witfordburia,0,,19,1,4393,334.07,1313.67,FALSE,FALSE,4.968,River,town,TRUE,TRUE,FALSE
+15,Egiorum,egiorum,23,Xilhuan Altepetl,31,Temoac County,0,1,2813,1254.53,817.84,FALSE,FALSE,17.244,River,city,TRUE,TRUE,FALSE
+16,Ventechiasec,ventechiasec,27,Marches of Petrello,79,Casadupia Earldom,23,1,3442,1406.23,1066.93,FALSE,FALSE,8.183,River,town,TRUE,TRUE,FALSE
+17,Naxaco,naxaco,23,Xilhuan Altepetl,36,Corathionia Earldom,16,1,2136,1352.31,566.53,FALSE,FALSE,2.291,River,town,TRUE,TRUE,FALSE
+18,Riagpunpan,riagpunpan,28,Emirate of Riagan,81,Sonanmayu County,20,1,1106,433.7,343.34,FALSE,TRUE,24.928,Naval,city,TRUE,TRUE,FALSE
+19,Markapa,markapa,22,Sultanate of Kanchasuyu,2,Laqtia County,19,1,1472,128.09,414.82,FALSE,FALSE,17.648,Lake,city,TRUE,TRUE,FALSE
+20,Makumi,makumi,22,Sultanate of Kanchasuyu,3,Maria Barony,19,1,2568,80.81,735.27,FALSE,TRUE,23.557,Naval,city,TRUE,TRUE,FALSE
+21,Frascori,frascori,34,Duchy of Petlancia,0,,23,1,4539,1534.07,1346.82,FALSE,TRUE,3.074,Naval,town,TRUE,TRUE,FALSE
+22,Ariateranno,ariateranno,23,Xilhuan Altepetl,34,Ariateranno Earldom,0,1,2535,1311.93,707.47,FALSE,FALSE,10.058,River,city,FALSE,FALSE,FALSE
+23,Kutqavion,kutqavion,24,City-state of Saheranahvaria,54,Magnarionia Province,18,1,2250,887.29,613.35,FALSE,FALSE,25.012,River,city,TRUE,FALSE,FALSE
+24,Antiatua,antiatua,33,Duchy of Temalimco,0,,19,1,4495,582.08,1333.89,FALSE,FALSE,1.854,River,village,FALSE,FALSE,FALSE
+25,Skanvese,skanvese,26,Raamkoda,64,Kalijurik Istekoda,17,1,1227,812.83,362,FALSE,FALSE,6.011,Highland,town,FALSE,TRUE,FALSE
+26,Bacentiata,bacentiata,23,Xilhuan Altepetl,40,Pullum County,0,1,2676,1363.79,742.92,FALSE,FALSE,3.196,River,town,FALSE,FALSE,FALSE
+27,Chaskaku,chaskaku,22,Sultanate of Kanchasuyu,109,Sasumiyuqtia Tribe,19,1,2224,81.66,627.86,FALSE,FALSE,3.156,Highland,town,FALSE,FALSE,FALSE
+28,Menzamelo,menzamelo,27,Marches of Petrello,66,Sezania Captaincy,23,1,3645,1433.8,1136.2,FALSE,FALSE,23.197,Lake,city,TRUE,FALSE,FALSE
+29,Vallanolaqui,vallanolaqui,27,Marches of Petrello,76,Vallanolaqui Earldom,23,1,3925,1583.25,1197.79,FALSE,FALSE,6.478,Generic,town,FALSE,FALSE,FALSE
+30,Ferrvetarjõere,ferrvetarj-ere,32,Nekosdamkoda,128,Ferrvetarjõere Region,17,1,3265,1240.65,1019.53,FALSE,FALSE,7.662,Highland,town,FALSE,FALSE,FALSE
+31,Aligoce,aligoce,33,Duchy of Temalimco,0,,0,1,4654,577.51,1374.85,FALSE,FALSE,1.992,River,village,FALSE,TRUE,FALSE
+32,Orinlaqta,orinlaqta,28,Emirate of Riagan,88,Orinlaqta County,20,1,82,655.47,40.35,FALSE,FALSE,7.554,Generic,town,FALSE,FALSE,FALSE
+33,Magnadarado,magnadarado,23,Xilhuan Altepetl,41,Wesvariontia County,16,1,1915,1372.4,510.34,FALSE,FALSE,7.792,River,town,FALSE,FALSE,FALSE
+34,Burnum,burnum,31,Duchy of Witfordburia,0,,19,1,4068,265.1,1249.75,FALSE,FALSE,2.486,River,town,FALSE,FALSE,FALSE
+35,Auiatlan,auiatlan,23,Xilhuan Altepetl,42,Auiatlan County,16,1,803,1273.62,254.17,FALSE,FALSE,9.76,River,town,FALSE,FALSE,FALSE
+36,Cegovium,cegovium,33,Duchy of Temalimco,0,,26,1,5302,961.63,1533.01,FALSE,FALSE,7.168,Generic,town,FALSE,FALSE,FALSE
+37,Marviarora,marviarora,33,Duchy of Temalimco,0,,25,1,5183,551.39,1506.22,FALSE,FALSE,7.544,Generic,town,FALSE,FALSE,FALSE
+38,Luriede,luriede,27,Marches of Petrello,68,Tonazahualco County,0,1,3438,1311.81,1076.74,FALSE,FALSE,1.758,Generic,village,FALSE,FALSE,FALSE
+39,Tierinlpun,tierinlpun,28,Emirate of Riagan,90,Nialaqtia County,20,1,607,573.29,201.04,FALSE,FALSE,7.216,Highland,town,FALSE,FALSE,FALSE
+40,Flonis,flonis,36,Duchy of Eleral,0,,19,1,4200,527.95,1270.02,FALSE,FALSE,6.718,River,town,TRUE,TRUE,FALSE
+41,Corirodunum,corirodunum,23,Xilhuan Altepetl,42,Auiatlan County,0,1,800,1200.31,249.86,FALSE,FALSE,3.233,River,town,FALSE,FALSE,FALSE
+42,Kievanku,kievanku,28,Emirate of Riagan,84,Kievan County,20,1,262,713.02,88.94,FALSE,FALSE,4.647,River,town,FALSE,FALSE,FALSE
+43,Angari,angari,27,Marches of Petrello,66,Sezania Captaincy,23,1,3729,1430.42,1164.8,FALSE,FALSE,3.348,Lake,town,TRUE,TRUE,FALSE
+44,Durocorsa,durocorsa,36,Duchy of Eleral,0,,19,1,4403,557.95,1305.94,FALSE,FALSE,29.817,River,city,TRUE,FALSE,TRUE
+45,Veruvacum,veruvacum,33,Duchy of Temalimco,0,,25,1,4886,480.37,1438.75,FALSE,FALSE,6.903,Generic,town,FALSE,FALSE,FALSE
+46,Sarahacan,sarahacan,25,Latocail Naharcan,58,Sarahacan Earldom,22,1,2892,895.57,851.62,FALSE,FALSE,8.241,River,town,FALSE,FALSE,FALSE
+47,Thesarivium,thesarivium,31,Duchy of Witfordburia,0,,19,1,4709,143.64,1405.95,FALSE,FALSE,9.42,River,town,FALSE,FALSE,FALSE
+48,Sirgodulum,sirgodulum,22,Sultanate of Kanchasuyu,13,Sirgodulum County,21,1,1389,394.02,404.14,FALSE,FALSE,9.876,Generic,city,FALSE,FALSE,FALSE
+49,Covernoco,covernoco,31,Duchy of Witfordburia,0,,0,1,4785,91.48,1430.72,FALSE,FALSE,3.601,Generic,town,FALSE,FALSE,FALSE
+50,Brinum,brinum,34,Duchy of Petlancia,0,,26,1,5137,1648.62,1497.04,FALSE,FALSE,1.013,Generic,village,TRUE,FALSE,FALSE
+51,Cetoriovi,cetoriovi,36,Duchy of Eleral,0,,26,1,4740,816.69,1394.89,FALSE,FALSE,7.124,Generic,town,FALSE,FALSE,FALSE
+52,Riagpansu,riagpansu,22,Sultanate of Kanchasuyu,25,Lorkaia County,20,1,6,150.84,9.25,FALSE,FALSE,6.396,Generic,town,FALSE,FALSE,FALSE
+53,Orka,orka,22,Sultanate of Kanchasuyu,12,Beranlaqia County,20,1,1193,401.96,357.6,FALSE,FALSE,6.56,Lake,town,FALSE,FALSE,FALSE
+54,Dunagan,dunagan,25,Latocail Naharcan,55,Caidistlan County,22,1,3003,971.42,897.25,FALSE,FALSE,0.931,River,village,FALSE,FALSE,FALSE
+55,Hadnicto,hadnicto,33,Duchy of Temalimco,0,,25,1,5074,313.07,1490,FALSE,FALSE,3.205,Generic,town,FALSE,FALSE,FALSE
+56,Cantum,cantum,31,Duchy of Witfordburia,0,,19,1,4389,247.43,1311.6,FALSE,FALSE,11.106,Generic,city,FALSE,FALSE,FALSE
+57,Lactum,lactum,36,Duchy of Eleral,0,,19,1,4313,610.57,1300.99,FALSE,FALSE,1.259,River,village,FALSE,FALSE,FALSE
+58,Vigacendatu,vigacendatu,31,Duchy of Witfordburia,0,,21,1,4057,128.87,1253.52,FALSE,TRUE,8.405,Naval,town,TRUE,FALSE,FALSE
+59,Cavarmium,cavarmium,34,Duchy of Petlancia,0,,26,1,5226,1493.68,1511.37,FALSE,FALSE,1.183,River,village,TRUE,FALSE,FALSE
+60,Sorbeboli,sorbeboli,0,Neutrals,0,,0,1,4173,83.59,1264.17,FALSE,FALSE,3.318,Generic,town,FALSE,FALSE,FALSE
+61,Celqacoco,celqacoco,23,Xilhuan Altepetl,112,Xelaqocaqoria Territory,16,1,1247,1251.54,368.07,FALSE,FALSE,1.034,Highland,village,FALSE,FALSE,FALSE
+62,Cailyan,cailyan,25,Latocail Naharcan,117,Balactlania Land,22,1,2807,1121.25,822.41,FALSE,FALSE,3.048,Highland,town,FALSE,FALSE,FALSE
+63,Labro,labro,27,Marches of Petrello,65,Colanolonia Earldom,23,1,3450,1564.64,1064.22,FALSE,TRUE,5.712,Naval,town,FALSE,FALSE,FALSE
+64,Dususa,dususa,23,Xilhuan Altepetl,43,Preme Earldom,0,1,2609,1275.55,735.94,FALSE,FALSE,6.411,River,town,FALSE,FALSE,FALSE
+65,Caidispan,caidispan,32,Nekosdamkoda,105,Baoirtlan County,22,1,3013,1180.79,907.86,FALSE,FALSE,5.438,Highland,town,FALSE,FALSE,FALSE
+66,Rierila,rierila,31,Duchy of Witfordburia,0,,19,1,4074,403.36,1241.16,FALSE,TRUE,2.53,Naval,town,FALSE,TRUE,FALSE
+67,Doranpunku,doranpunku,28,Emirate of Riagan,85,Melaqta County,20,1,771,565.2,266.1,FALSE,FALSE,7.575,Lake,town,FALSE,FALSE,FALSE
+68,Nigrovervia,nigrovervia,33,Duchy of Temalimco,0,,25,1,5075,334.59,1493.34,FALSE,FALSE,11.464,Generic,city,FALSE,FALSE,FALSE
+69,Claurinila,claurinila,23,Xilhuan Altepetl,33,Huatlacanco Earldom,0,1,2466,1415.5,689.8,FALSE,FALSE,12.198,River,city,FALSE,FALSE,FALSE
+70,Adfluentia,adfluentia,31,Duchy of Witfordburia,0,,19,1,4294,198.01,1295.68,FALSE,TRUE,1.601,Naval,village,FALSE,FALSE,FALSE
+71,Povioma,povioma,0,Neutrals,0,,0,1,4466,50.74,1345.86,FALSE,FALSE,6.185,Generic,town,FALSE,FALSE,FALSE
+72,Vieliusta,vieliusta,33,Duchy of Temalimco,0,,19,1,4722,420.07,1405.32,FALSE,FALSE,1.05,Generic,village,FALSE,FALSE,FALSE
+73,Gorzoricovo,gorzoricovo,27,Marches of Petrello,79,Casadupia Earldom,23,1,3569,1343.44,1118.18,FALSE,FALSE,0.994,Generic,village,FALSE,FALSE,FALSE
+74,Ramium,ramium,22,Sultanate of Kanchasuyu,13,Sirgodulum County,21,1,1390,430.29,401.39,FALSE,FALSE,1.004,Generic,village,FALSE,FALSE,FALSE
+75,Napanverte,napanverte,23,Xilhuan Altepetl,35,Napanverte County,22,1,2819,1380.11,806.11,FALSE,TRUE,9.269,Naval,town,FALSE,FALSE,FALSE
+76,Nigrorum,nigrorum,0,Neutrals,0,,0,1,5063,77.47,1494.55,FALSE,FALSE,0.913,Generic,village,TRUE,FALSE,FALSE
+77,Fomaraunium,fomaraunium,23,Xilhuan Altepetl,29,Fomaraunium County,0,1,2541,1422.52,697.24,FALSE,FALSE,16.967,River,city,FALSE,FALSE,FALSE
+78,Urka,urka,22,Sultanate of Kanchasuyu,5,Markia Margrave,19,1,1480,287.15,448.41,FALSE,TRUE,4.807,Naval,town,FALSE,FALSE,FALSE
+79,Fovirimini,fovirimini,31,Duchy of Witfordburia,0,,19,1,4187,299.61,1268.91,FALSE,FALSE,4.293,Generic,town,FALSE,FALSE,FALSE
+80,Tiercankanch,tiercankanch,28,Emirate of Riagan,80,Dodanma County,20,1,316,517.89,117.56,FALSE,FALSE,1.164,Generic,village,FALSE,FALSE,FALSE
+81,Nodunium,nodunium,33,Duchy of Temalimco,0,,25,1,5089,638.1,1485.17,FALSE,FALSE,4.685,Generic,town,FALSE,FALSE,FALSE
+82,Roranmarma,roranmarma,22,Sultanate of Kanchasuyu,7,Fionlaqtia County,20,1,56,106.18,31.87,FALSE,FALSE,9.764,Generic,city,FALSE,TRUE,FALSE
+83,Martis,martis,31,Duchy of Witfordburia,0,,19,1,4298,284.11,1282.67,FALSE,FALSE,4.648,River,town,TRUE,FALSE,FALSE
+84,Legioneno,legioneno,27,Marches of Petrello,79,Casadupia Earldom,17,1,3640,1330.51,1136.54,FALSE,FALSE,6.735,Generic,town,FALSE,FALSE,FALSE
+85,Raquencum,raquencum,31,Duchy of Witfordburia,0,,25,1,5069,200.69,1490.29,FALSE,FALSE,8.071,Generic,town,TRUE,FALSE,FALSE
+86,Baloduvo,baloduvo,31,Duchy of Witfordburia,98,Sirnorum County,21,1,3671,101.86,1170.97,FALSE,FALSE,6.491,Lake,town,FALSE,FALSE,FALSE
+87,Capra,capra,34,Duchy of Petlancia,0,,23,1,4355,1523,1290.6,FALSE,FALSE,1.462,Generic,village,FALSE,FALSE,FALSE
+88,Legorie,legorie,33,Duchy of Temalimco,0,,19,1,4579,567.73,1366.28,FALSE,FALSE,12.333,River,city,TRUE,FALSE,FALSE
+89,Lintium,lintium,33,Duchy of Temalimco,0,,25,1,5277,419.43,1528.39,FALSE,FALSE,1.167,River,village,FALSE,FALSE,FALSE
+90,Oveliava,oveliava,23,Xilhuan Altepetl,32,Oveliava Earldom,0,1,2538,1395.05,712.29,FALSE,TRUE,13.122,Naval,city,TRUE,FALSE,FALSE
+91,Lugrum,lugrum,31,Duchy of Witfordburia,101,Gerara County,21,1,3947,95.7,1227.42,FALSE,FALSE,4.201,Generic,town,FALSE,FALSE,FALSE
+92,Reliaquen,reliaquen,31,Duchy of Witfordburia,0,,25,1,4796,336.95,1429.89,FALSE,FALSE,0.986,Generic,village,FALSE,FALSE,FALSE
+93,Sondano,sondano,27,Marches of Petrello,66,Sezania Captaincy,23,1,3817,1399.23,1192.83,FALSE,FALSE,1.176,River,village,FALSE,FALSE,FALSE
+94,Labro,labro,27,Marches of Petrello,77,Ponteleo Earldom,23,1,3827,1495.16,1197.21,FALSE,TRUE,4.048,Naval,town,FALSE,FALSE,FALSE
+95,Eiran,eiran,22,Sultanate of Kanchasuyu,12,Beranlaqia County,20,1,1194,415.77,361.31,FALSE,TRUE,6.269,Naval,town,FALSE,FALSE,FALSE
+96,Clausendie,clausendie,33,Duchy of Temalimco,0,,25,1,5281,509.7,1528.61,FALSE,FALSE,5.401,Generic,town,TRUE,FALSE,FALSE
+97,Brenku,brenku,28,Emirate of Riagan,80,Dodanma County,20,1,317,530.29,127.46,FALSE,FALSE,2.351,Generic,town,TRUE,FALSE,FALSE
+98,Accuto,accuto,34,Duchy of Petlancia,0,,17,1,4439,1336.25,1311.18,FALSE,FALSE,2.161,Generic,town,FALSE,FALSE,FALSE
+99,Lorcanpan,lorcanpan,28,Emirate of Riagan,86,Rorinmia County,20,1,29,633.84,4.27,FALSE,FALSE,7.641,Generic,town,FALSE,FALSE,FALSE
+100,Nimarkamar,nimarkamar,22,Sultanate of Kanchasuyu,19,Ausuyumi County,19,1,2487,28.3,704.03,FALSE,FALSE,5.792,Generic,town,FALSE,FALSE,FALSE
+101,Mazo,mazo,27,Marches of Petrello,77,Ponteleo Earldom,23,1,4015,1418.97,1219.78,FALSE,FALSE,0.836,Generic,village,FALSE,FALSE,FALSE
+102,Aureryaralan,aureryaralan,23,Xilhuan Altepetl,42,Auiatlan County,16,1,1061,1341.63,308.58,FALSE,FALSE,0.541,River,village,FALSE,FALSE,FALSE
+103,Reburinera,reburinera,31,Duchy of Witfordburia,0,,19,1,4302,370.79,1295.59,FALSE,FALSE,3.489,Generic,town,FALSE,FALSE,FALSE
+104,Killatheon,killatheon,22,Sultanate of Kanchasuyu,14,Sumior Landgrave,19,1,1875,357.28,501.26,FALSE,FALSE,3.045,Generic,town,TRUE,FALSE,FALSE
+105,Pampawasina,pampawasina,22,Sultanate of Kanchasuyu,17,Asisumarru County,19,1,2030,232.91,564.99,FALSE,TRUE,1.025,Naval,village,FALSE,FALSE,FALSE
+106,Covium,covium,33,Duchy of Temalimco,0,,25,1,4725,498.32,1406.41,FALSE,FALSE,8.288,Generic,town,FALSE,FALSE,FALSE
+107,Rovilacum,rovilacum,31,Duchy of Witfordburia,0,,19,1,4564,254.85,1360.48,FALSE,FALSE,0.943,Generic,village,FALSE,FALSE,FALSE
+108,Villavarau,villavarau,0,Neutrals,0,,0,1,5160,54.05,1503.19,FALSE,FALSE,4.171,Generic,town,FALSE,FALSE,FALSE
+109,Ullebalen,ullebalen,33,Duchy of Temalimco,0,,0,1,4729,569.31,1391.35,FALSE,FALSE,8.123,River,town,FALSE,FALSE,FALSE
+110,Lesata,lesata,33,Duchy of Temalimco,0,,25,1,4726,503.67,1401.68,FALSE,FALSE,7.914,Generic,town,TRUE,FALSE,FALSE
+111,Tauliobrie,tauliobrie,34,Duchy of Petlancia,0,,26,1,5329,1547.97,1522.32,FALSE,FALSE,9.796,Generic,city,FALSE,FALSE,FALSE
+112,Nertis,nertis,31,Duchy of Witfordburia,101,Gerara County,21,1,3758,109.1,1198.8,FALSE,FALSE,2.661,Lake,town,FALSE,FALSE,FALSE
+113,Lorkalankuyu,lorkalankuyu,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,20,1,1002,296.7,308.37,FALSE,FALSE,1.331,River,village,FALSE,FALSE,FALSE
+114,Burtususto,burtususto,34,Duchy of Petlancia,0,,26,1,5143,1720.35,1497.48,FALSE,FALSE,7.785,Generic,town,FALSE,FALSE,FALSE
+115,Kieranma,kieranma,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,20,1,1008,390.5,320.3,FALSE,FALSE,0.807,Lake,village,FALSE,FALSE,FALSE
+116,Ponteleo,ponteleo,27,Marches of Petrello,77,Ponteleo Earldom,23,1,3732,1469.57,1164.46,FALSE,FALSE,7.427,Lake,town,FALSE,FALSE,FALSE
+117,Victia,victia,31,Duchy of Witfordburia,0,,19,1,4790,213.1,1423.76,FALSE,FALSE,0.877,Generic,village,FALSE,FALSE,FALSE
+118,Marnonaco,marnonaco,33,Duchy of Temalimco,0,,19,1,4651,516.94,1382.97,FALSE,FALSE,1.067,Generic,village,FALSE,FALSE,FALSE
+119,Victum,victum,31,Duchy of Witfordburia,0,,21,1,4174,102.95,1265.21,FALSE,FALSE,3.543,Generic,town,FALSE,FALSE,FALSE
+120,Ariature,ariature,31,Duchy of Witfordburia,0,,19,1,4488,420.54,1331.38,FALSE,FALSE,1.472,Generic,village,FALSE,FALSE,FALSE
+121,Preme,preme,23,Xilhuan Altepetl,43,Preme Earldom,0,1,2725,1241.51,765.4,FALSE,FALSE,8.981,River,town,FALSE,FALSE,FALSE
+122,Rilacentum,rilacentum,33,Duchy of Temalimco,0,,26,1,5200,926.93,1508.59,FALSE,FALSE,1.022,Generic,village,FALSE,FALSE,FALSE
+123,Ariviviverva,ariviviverva,34,Duchy of Petlancia,0,,23,1,4352,1466.21,1295.96,FALSE,FALSE,6.851,Generic,town,FALSE,FALSE,FALSE
+124,Dugunum,dugunum,31,Duchy of Witfordburia,0,,19,1,4565,266.65,1359.19,FALSE,FALSE,10.35,Generic,city,TRUE,TRUE,FALSE
+125,Bapanvert,bapanvert,27,Marches of Petrello,70,Spervalom Earldom,22,1,3163,1246.63,963.1,FALSE,FALSE,4.91,Generic,town,FALSE,FALSE,FALSE
+126,Llaqtasu,llaqtasu,22,Sultanate of Kanchasuyu,21,Marsu County,19,1,1859,158.02,519.45,FALSE,FALSE,1.067,Generic,village,FALSE,FALSE,FALSE
+127,Ascridigen,ascridigen,31,Duchy of Witfordburia,0,,19,1,4787,141.56,1420.79,FALSE,FALSE,1.04,Generic,village,FALSE,FALSE,FALSE
+128,Antalema,antalema,27,Marches of Petrello,67,Armiabicia Captaincy,23,1,3507,1426.27,1092.84,FALSE,FALSE,12.298,River,city,TRUE,FALSE,FALSE
+129,Ausuyumi,ausuyumi,22,Sultanate of Kanchasuyu,19,Ausuyumi County,19,1,2565,38.1,744.8,FALSE,FALSE,7.389,Hunting,town,FALSE,FALSE,FALSE
+130,Aoranlaqta,aoranlaqta,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,20,1,1004,332.88,316.01,FALSE,TRUE,4.366,Naval,town,FALSE,FALSE,FALSE
+131,Hiemecoqelat,hiemecoqelat,23,Xilhuan Altepetl,42,Auiatlan County,16,1,1149,1250.25,344.75,FALSE,FALSE,2.953,Generic,town,FALSE,TRUE,FALSE
+132,Cordugustel,cordugustel,31,Duchy of Witfordburia,0,,19,1,4720,372.71,1399.14,FALSE,FALSE,6.386,Generic,town,FALSE,FALSE,FALSE
+133,Dacola,dacola,28,Emirate of Riagan,92,Melaqtia County,20,1,388,725.67,133.99,FALSE,FALSE,1.145,River,village,FALSE,FALSE,FALSE
+134,Nigripita,nigripita,34,Duchy of Petlancia,0,,26,1,5241,1792.9,1509.62,FALSE,FALSE,14.179,Generic,city,FALSE,FALSE,FALSE
+135,Sedeitorum,sedeitorum,36,Duchy of Eleral,0,,19,1,4311,582.41,1289.91,FALSE,FALSE,3.006,Generic,town,FALSE,FALSE,FALSE
+136,Adfluenno,adfluenno,33,Duchy of Temalimco,0,,25,1,4894,653.78,1448.2,FALSE,FALSE,3.177,River,town,FALSE,FALSE,FALSE
+137,Conorisio,conorisio,31,Duchy of Witfordburia,101,Gerara County,21,1,3845,101.88,1210.22,FALSE,FALSE,1.292,Generic,village,FALSE,FALSE,FALSE
+138,Tuarinku,tuarinku,22,Sultanate of Kanchasuyu,4,Ornanlpansu County,20,1,1190,357.45,358,FALSE,FALSE,0.908,Lake,village,FALSE,FALSE,FALSE
+139,Mentalompo,mentalompo,27,Marches of Petrello,69,Fivania Captaincy,23,1,3651,1512.32,1139.22,FALSE,FALSE,9.231,Generic,town,FALSE,FALSE,FALSE
+140,Nialkancha,nialkancha,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,20,1,1010,421.34,324.51,FALSE,TRUE,1.03,Naval,village,FALSE,FALSE,FALSE
+141,Luliobrila,luliobrila,22,Sultanate of Kanchasuyu,26,Sornumia County,21,1,1294,425.5,389.1,FALSE,FALSE,6.503,Generic,town,FALSE,FALSE,FALSE
+142,Trerolico,trerolico,27,Marches of Petrello,120,Trerolico Territory,23,1,3445,1472.49,1067.22,FALSE,FALSE,3.546,Highland,town,FALSE,FALSE,FALSE
+143,Fatercurie,fatercurie,33,Duchy of Temalimco,0,,25,1,5177,427.45,1504.61,FALSE,FALSE,4.586,River,town,TRUE,FALSE,FALSE
+144,Belle,belle,34,Duchy of Petlancia,0,,23,1,4534,1425.72,1343.76,FALSE,FALSE,8.478,Generic,town,FALSE,FALSE,FALSE
+145,Xalcoto,xalcoto,23,Xilhuan Altepetl,27,Archco County,16,1,1825,1320.15,492.14,FALSE,FALSE,3.655,Generic,town,FALSE,FALSE,FALSE
+146,Tungrum,tungrum,34,Duchy of Petlancia,0,,26,1,5032,1581.95,1474.89,FALSE,FALSE,3.496,Generic,town,FALSE,FALSE,FALSE
+147,Augunum,augunum,34,Duchy of Petlancia,0,,26,1,5134,1610.3,1492.9,FALSE,FALSE,3.681,Generic,town,FALSE,TRUE,FALSE
+148,Ferrlinn,ferrlinn,23,Xilhuan Altepetl,113,Brecaoirt Region,17,1,3075,1380.23,932.25,FALSE,FALSE,0.982,Highland,village,TRUE,FALSE,FALSE
+149,Conflegul,conflegul,32,Nekosdamkoda,104,Conflegul Landgrave,0,1,3382,1287.06,1062.53,FALSE,FALSE,9.641,Highland,town,FALSE,FALSE,FALSE
+150,Ararausus,ararausus,31,Duchy of Witfordburia,0,,19,1,4397,425.97,1321.04,FALSE,FALSE,5.907,Generic,town,FALSE,FALSE,FALSE
+151,Vetri,vetri,34,Duchy of Petlancia,0,,23,1,4452,1578.84,1308.37,FALSE,FALSE,12.024,Generic,city,TRUE,FALSE,FALSE
+152,Aulanum,aulanum,31,Duchy of Witfordburia,0,,19,1,4396,399.83,1306.13,FALSE,FALSE,6.684,Generic,town,FALSE,FALSE,FALSE
+153,Akium,akium,23,Xilhuan Altepetl,51,Aurpan County,16,1,2273,1373.98,620.44,FALSE,FALSE,1.475,River,village,FALSE,FALSE,FALSE
+154,Verantium,verantium,31,Duchy of Witfordburia,0,,19,1,4871,171,1445.71,FALSE,FALSE,1.133,River,village,FALSE,TRUE,FALSE
+155,Tuarkalanco,tuarkalanco,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,20,1,592,246.84,205.09,FALSE,FALSE,8.78,River,town,FALSE,FALSE,FALSE
+156,Aegiolinum,aegiolinum,36,Duchy of Eleral,0,,19,1,4206,619.19,1266.76,FALSE,FALSE,5.006,River,town,FALSE,FALSE,FALSE
+157,Nigripoma,nigripoma,31,Duchy of Witfordburia,0,,19,1,3864,305.74,1204.64,FALSE,TRUE,9.062,Naval,town,FALSE,FALSE,FALSE
+158,Suroli,suroli,31,Duchy of Witfordburia,0,,19,1,4965,203.16,1460.24,FALSE,FALSE,4.216,Generic,town,FALSE,FALSE,FALSE
+159,Andauvanea,andauvanea,33,Duchy of Temalimco,0,,25,1,5288,655.9,1526.32,FALSE,FALSE,13.272,Generic,city,FALSE,FALSE,FALSE
+160,Vintiagus,vintiagus,31,Duchy of Witfordburia,0,,25,1,4879,327.7,1437.04,FALSE,FALSE,0.981,Generic,village,FALSE,FALSE,FALSE
+161,Cannarixus,cannarixus,23,Xilhuan Altepetl,111,Cannarixus Territory,0,1,1145,1160.85,330.76,FALSE,FALSE,3.66,Generic,town,FALSE,FALSE,FALSE
+162,Luliobristu,luliobristu,31,Duchy of Witfordburia,100,Cuapantema County,21,1,3524,7.81,1116.6,FALSE,FALSE,3.633,Generic,town,TRUE,FALSE,FALSE
+163,Lugduliobri,lugduliobri,32,Nekosdamkoda,0,,26,1,5101,892.55,1489.55,FALSE,FALSE,2.995,Generic,town,FALSE,FALSE,FALSE
+164,Cetorum,cetorum,31,Duchy of Witfordburia,0,,19,1,4386,192.76,1304.2,FALSE,TRUE,10.716,Naval,city,TRUE,FALSE,FALSE
+165,Kutmakium,kutmakium,24,City-state of Saheranahvaria,54,Magnarionia Province,18,1,2251,896.42,612.61,FALSE,FALSE,10.309,River,city,TRUE,FALSE,FALSE
+166,Theosa,theosa,32,Nekosdamkoda,102,Magnakan County,17,1,3262,1177.13,1019.98,FALSE,FALSE,3.276,Generic,town,FALSE,FALSE,FALSE
+167,Qochasu,qochasu,22,Sultanate of Kanchasuyu,17,Asisumarru County,19,1,2233,219.2,624.6,FALSE,FALSE,5.566,Generic,town,FALSE,FALSE,FALSE
+168,Cantia,cantia,31,Duchy of Witfordburia,0,,19,1,4299,309.86,1297.41,FALSE,FALSE,11.242,Generic,city,TRUE,FALSE,FALSE
+169,Petheon,petheon,32,Nekosdamkoda,102,Magnakan County,17,1,3264,1220,1005.2,FALSE,FALSE,3.086,Highland,town,FALSE,TRUE,FALSE
+170,Lactorisip,lactorisip,22,Sultanate of Kanchasuyu,20,Binovium County,21,1,1596,492.38,436.03,FALSE,FALSE,5.77,Hunting,town,FALSE,TRUE,FALSE
+171,Ciarka,ciarka,28,Emirate of Riagan,84,Kievan County,20,1,26,576.38,9.86,FALSE,FALSE,4.532,Generic,town,FALSE,FALSE,FALSE
+172,Montecorci,montecorci,27,Marches of Petrello,69,Fivania Captaincy,23,1,3734,1504.66,1160.5,FALSE,FALSE,6.771,Generic,town,FALSE,TRUE,FALSE
+173,Claurori,claurori,26,Raamkoda,118,Vaskmurd Istekoda,0,1,880,1122.17,264.91,FALSE,FALSE,6.439,Generic,town,FALSE,FALSE,FALSE
+174,Confluentia,confluentia,31,Duchy of Witfordburia,0,,19,1,4640,276.84,1378.64,FALSE,FALSE,1.264,Generic,village,FALSE,TRUE,FALSE
+175,Tretolitapi,tretolitapi,33,Duchy of Temalimco,0,,25,1,5188,653.75,1506.46,FALSE,FALSE,6.09,Generic,town,FALSE,FALSE,FALSE
+176,Vinnanum,vinnanum,31,Duchy of Witfordburia,100,Cuapantema County,0,1,3945,50.99,1228.66,FALSE,FALSE,1.031,Generic,village,FALSE,FALSE,FALSE
+177,Lorinlcorin,lorinlcorin,22,Sultanate of Kanchasuyu,16,Melia Margrave,20,1,67,339.17,39.25,FALSE,FALSE,2.315,Generic,town,FALSE,FALSE,FALSE
+178,Arorum,arorum,33,Duchy of Temalimco,0,,25,1,5178,451.86,1512.52,FALSE,FALSE,10.585,Generic,city,FALSE,FALSE,FALSE
+179,Chaska,chaska,22,Sultanate of Kanchasuyu,109,Sasumiyuqtia Tribe,19,1,2166,156.6,612.9,FALSE,FALSE,1.985,Highland,village,FALSE,FALSE,FALSE
+180,Villum,villum,34,Duchy of Petlancia,0,,26,1,5028,1526.1,1462.7,FALSE,FALSE,12.458,Hunting,city,TRUE,TRUE,FALSE
+181,Canaleno,canaleno,27,Marches of Petrello,65,Colanolonia Earldom,23,1,3449,1554.98,1062.42,FALSE,TRUE,5.868,Naval,town,FALSE,FALSE,FALSE
+182,Pacha,pacha,22,Sultanate of Kanchasuyu,23,Apaor County,19,1,1864,247.53,501.34,FALSE,FALSE,1.798,Hunting,village,FALSE,FALSE,FALSE
+183,Killaq,killaq,22,Sultanate of Kanchasuyu,109,Sasumiyuqtia Tribe,19,1,2351,14.65,662.66,FALSE,FALSE,1.703,Highland,village,FALSE,FALSE,FALSE
+184,Qhaionkuyuyuyun,qhaionkuyuyuyun,22,Sultanate of Kanchasuyu,6,Borcunumia County,19,1,1489,379.91,439.83,FALSE,TRUE,2.088,Naval,town,FALSE,FALSE,FALSE
+185,Neaigpan,neaigpan,25,Latocail Naharcan,60,Breharcan County,22,1,3315,1133,1027.18,FALSE,FALSE,2.978,Generic,town,FALSE,FALSE,FALSE
+186,Torboglio,torboglio,27,Marches of Petrello,69,Fivania Captaincy,23,1,3650,1490.01,1133.87,FALSE,FALSE,1.269,Generic,village,FALSE,FALSE,FALSE
+187,Blestuvono,blestuvono,34,Duchy of Petlancia,0,,26,1,5331,1589.39,1524.05,FALSE,FALSE,6.147,Generic,town,FALSE,TRUE,FALSE
+188,Lalatrolico,lalatrolico,34,Duchy of Petlancia,0,,23,1,4245,1471.36,1273.34,FALSE,FALSE,3.387,River,town,FALSE,TRUE,FALSE
+189,Dimivis,dimivis,31,Duchy of Witfordburia,0,,19,1,5262,107.5,1523.81,FALSE,FALSE,8.31,Generic,town,FALSE,FALSE,FALSE
+190,Etagus,etagus,0,Neutrals,0,,0,1,4375,11.65,1318.37,FALSE,FALSE,10.976,Generic,city,TRUE,FALSE,FALSE
+191,Punturka,punturka,22,Sultanate of Kanchasuyu,5,Markia Margrave,19,1,1484,313.36,437.84,FALSE,TRUE,15.367,Naval,city,TRUE,TRUE,FALSE
+192,Akorpalahasu,akorpalahasu,32,Nekosdamkoda,128,Ferrvetarjõere Region,17,1,3320,1245.88,1029.09,FALSE,FALSE,6.105,Highland,town,FALSE,FALSE,FALSE
+193,Marmodo,marmodo,34,Duchy of Petlancia,0,,23,1,4360,1561.88,1289.49,FALSE,TRUE,1.593,Naval,village,TRUE,FALSE,FALSE
+194,Apinis,apinis,31,Duchy of Witfordburia,0,,19,1,5263,110.51,1525.31,FALSE,FALSE,1.021,Generic,village,FALSE,FALSE,FALSE
+195,Eiran,eiran,28,Emirate of Riagan,123,Bren Territory,20,1,25,556.79,14.31,FALSE,FALSE,2.816,Generic,town,TRUE,FALSE,FALSE
+196,Adrianis,adrianis,28,Emirate of Riagan,89,Levelinium County,20,1,613,698.42,201.87,FALSE,FALSE,0.963,River,village,TRUE,FALSE,FALSE
+197,Astorielpia,astorielpia,33,Duchy of Temalimco,0,,19,1,4652,530.95,1388.06,FALSE,FALSE,1.966,Generic,village,FALSE,FALSE,FALSE
+198,Brenku,brenku,28,Emirate of Riagan,80,Dodanma County,20,1,376,470.37,132.83,FALSE,FALSE,5.716,Generic,town,FALSE,FALSE,FALSE
+199,Dubris,dubris,34,Duchy of Petlancia,0,,26,1,5307,1069.64,1529.11,FALSE,FALSE,2.302,River,town,FALSE,TRUE,FALSE
+200,Vintia,vintia,28,Emirate of Riagan,83,Bevanconania County,20,1,777,714.91,249.99,FALSE,FALSE,0.858,River,village,FALSE,FALSE,FALSE
+201,Bretarcan,bretarcan,23,Xilhuan Altepetl,49,Texcoaxaxaco County,22,1,2860,1345.46,837.94,FALSE,FALSE,4.319,Highland,town,FALSE,FALSE,FALSE
+202,Pecagan,pecagan,23,Xilhuan Altepetl,113,Brecaoirt Region,22,1,2968,1407.18,883.62,FALSE,TRUE,0.909,Naval,village,FALSE,FALSE,FALSE
+203,Zakiumpan,zakiumpan,23,Xilhuan Altepetl,48,Hueca County,16,1,1532,1223.97,425,FALSE,FALSE,1.997,Generic,village,TRUE,FALSE,FALSE
+204,Nareasteca,nareasteca,27,Marches of Petrello,73,Chiapan Earldom,22,1,3214,1256.14,997.51,FALSE,FALSE,0.925,Highland,village,FALSE,FALSE,FALSE
+205,Pesca,pesca,27,Marches of Petrello,76,Vallanolaqui Earldom,23,1,3828,1526.08,1193.69,FALSE,FALSE,3.185,Generic,town,FALSE,FALSE,FALSE
+206,Salacpan,salacpan,27,Marches of Petrello,78,Peaigania Earldom,22,1,3215,1269.22,997.25,FALSE,FALSE,7.878,Generic,town,FALSE,FALSE,FALSE
+207,Morte,morte,34,Duchy of Petlancia,0,,23,1,4247,1501.6,1279.7,FALSE,FALSE,1.669,Generic,village,TRUE,FALSE,FALSE
+208,Yashatlan,yashatlan,23,Xilhuan Altepetl,42,Auiatlan County,16,1,646,1366.49,204.51,FALSE,FALSE,1.554,River,village,FALSE,FALSE,FALSE
+209,Belforviamig,belforviamig,34,Duchy of Petlancia,0,,23,1,4349,1402.54,1299.26,FALSE,FALSE,9.67,Generic,town,FALSE,TRUE,FALSE
+210,Marvia,marvia,23,Xilhuan Altepetl,44,Drupiba County,0,1,1814,1066.82,498.02,FALSE,FALSE,5.464,River,town,FALSE,FALSE,FALSE
+211,Riagmarinku,riagmarinku,28,Emirate of Riagan,86,Rorinmia County,20,1,30,660.77,11.48,FALSE,FALSE,4.486,Generic,town,FALSE,FALSE,FALSE
+212,Archmakan,archmakan,32,Nekosdamkoda,103,Alaklalia County,17,1,3160,1181.41,973.8,FALSE,FALSE,8.217,Highland,town,FALSE,FALSE,FALSE
+213,Ciarka,ciarka,29,Beylik of Lugrancanta,95,Nialmayu Earldom,20,1,1306,553.6,392,FALSE,FALSE,1.312,Hunting,village,FALSE,FALSE,FALSE
+214,Duvarinate,duvarinate,22,Sultanate of Kanchasuyu,13,Sirgodulum County,21,1,1490,408.02,432.5,FALSE,FALSE,2.94,Generic,town,FALSE,FALSE,FALSE
+215,Maradasco,maradasco,27,Marches of Petrello,70,Spervalom Earldom,22,1,3019,1307.99,906.22,FALSE,FALSE,5.646,Generic,town,FALSE,FALSE,FALSE
+216,Cacodugunum,cacodugunum,30,Herviorum City-state,0,,21,1,3879,612.8,1216.8,FALSE,FALSE,13.04,Generic,city,TRUE,FALSE,FALSE
+217,Requm,requm,33,Duchy of Temalimco,0,,19,1,4650,494.62,1377.04,FALSE,FALSE,4.022,Generic,town,FALSE,FALSE,FALSE
+218,Salan,salan,23,Xilhuan Altepetl,42,Auiatlan County,16,1,1250,1306.8,356.41,FALSE,FALSE,6.06,Generic,town,FALSE,FALSE,FALSE
+219,Airdco,airdco,25,Latocail Naharcan,58,Sarahacan Earldom,22,1,2947,964.5,884.81,FALSE,FALSE,3.035,River,town,FALSE,FALSE,FALSE
+220,Cegipon,cegipon,33,Duchy of Temalimco,0,,25,1,5278,453.01,1534.58,FALSE,FALSE,3.885,Generic,town,FALSE,FALSE,FALSE
+221,Confluenni,confluenni,23,Xilhuan Altepetl,46,Confleba County,0,1,2267,1241.27,613.46,FALSE,FALSE,0.999,Generic,village,FALSE,FALSE,FALSE
+222,Pullendila,pullendila,33,Duchy of Temalimco,0,,25,1,5289,682.81,1523.06,FALSE,FALSE,3.457,Generic,town,FALSE,FALSE,FALSE
+223,Plamusenna,plamusenna,31,Duchy of Witfordburia,0,,19,1,4468,99.12,1328.03,FALSE,FALSE,1.005,Generic,village,FALSE,FALSE,FALSE
+224,Tayuyu,tayuyu,28,Emirate of Riagan,91,Nialpania County,20,1,772,592.74,249.84,FALSE,FALSE,4.97,Lake,town,FALSE,FALSE,FALSE
+225,Ruyurein,ruyurein,22,Sultanate of Kanchasuyu,1,Ruyurein County,19,1,2096,165.06,568.69,TRUE,FALSE,7.392,Lake,capital,FALSE,FALSE,FALSE
+226,Rolinapura,rolinapura,33,Duchy of Temalimco,0,,0,1,4728,563.4,1409.56,FALSE,FALSE,3.864,Generic,town,FALSE,FALSE,FALSE
+227,Sarialoma,sarialoma,28,Emirate of Riagan,80,Dodanma County,20,1,254,539.19,92.2,FALSE,FALSE,3.677,Generic,town,FALSE,FALSE,FALSE
+228,Tusono,tusono,27,Marches of Petrello,70,Spervalom Earldom,23,1,3166,1304.53,966.34,FALSE,FALSE,1.203,River,village,FALSE,FALSE,FALSE
+229,Aeliaciba,aeliaciba,28,Emirate of Riagan,84,Kievan County,20,1,255,552.17,98.95,FALSE,FALSE,1.295,Highland,village,TRUE,FALSE,FALSE
+230,Portiustodu,portiustodu,28,Emirate of Riagan,84,Kievan County,20,1,138,655.15,56.76,FALSE,FALSE,1.092,Generic,village,FALSE,FALSE,FALSE
+231,Mosyan,mosyan,23,Xilhuan Altepetl,38,Mosyan Earldom,16,1,638,1240.1,214.04,FALSE,FALSE,7.945,River,town,FALSE,FALSE,FALSE
+232,Nerano,nerano,27,Marches of Petrello,70,Spervalom Earldom,23,1,3165,1300.15,959.54,FALSE,FALSE,9.706,Generic,town,FALSE,FALSE,FALSE
+233,Tuarcodanku,tuarcodanku,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,20,1,925,367.32,302.23,FALSE,FALSE,5.284,Generic,town,FALSE,FALSE,FALSE
+234,Lesiumbiaqu,lesiumbiaqu,31,Duchy of Witfordburia,0,,19,1,4712,214.39,1411.98,FALSE,FALSE,10.975,River,city,TRUE,FALSE,FALSE
+235,Ayatzarezlan,ayatzarezlan,23,Xilhuan Altepetl,36,Corathionia Earldom,16,1,1995,1380.01,534.26,FALSE,FALSE,7.776,River,town,FALSE,FALSE,FALSE
+236,Conale,conale,31,Duchy of Witfordburia,0,,19,1,4711,189.26,1393.91,FALSE,FALSE,1.765,River,village,FALSE,FALSE,FALSE
+237,Saium,saium,22,Sultanate of Kanchasuyu,10,Saium County,19,1,1279,103.9,387.7,FALSE,FALSE,7.166,Lake,town,FALSE,FALSE,FALSE
+238,Roranmarka,roranmarka,28,Emirate of Riagan,82,Dorinsia County,20,1,374,433.16,141.8,FALSE,FALSE,14.004,Generic,city,TRUE,FALSE,FALSE
+239,Medionori,medionori,22,Sultanate of Kanchasuyu,20,Binovium County,21,1,1497,475.52,438.28,FALSE,FALSE,2.793,Generic,town,FALSE,FALSE,FALSE
+240,Fontanodutta,fontanodutta,27,Marches of Petrello,66,Sezania Captaincy,23,1,3726,1355.03,1159.32,FALSE,FALSE,1.004,Generic,village,FALSE,FALSE,FALSE
+241,Movioniala,movioniala,31,Duchy of Witfordburia,0,,25,1,5073,285,1484.43,FALSE,FALSE,0.918,Generic,village,FALSE,FALSE,FALSE
+242,Rinatalete,rinatalete,25,Latocail Naharcan,62,Florum Earldom,21,1,3136,689.62,959.52,FALSE,FALSE,0.556,Generic,village,FALSE,FALSE,FALSE
+243,Norumbiale,norumbiale,31,Duchy of Witfordburia,0,,21,1,4058,124.43,1256.91,FALSE,TRUE,10.765,Naval,city,FALSE,FALSE,FALSE
+244,Loulati,loulati,36,Duchy of Eleral,0,,19,1,4078,457.61,1255.2,FALSE,TRUE,1.752,Naval,village,FALSE,FALSE,FALSE
+245,Castrum,castrum,31,Duchy of Witfordburia,101,Gerara County,21,1,3593,75.5,1155.1,FALSE,FALSE,4.302,Hunting,town,FALSE,FALSE,FALSE
+246,Petlan,petlan,29,Beylik of Lugrancanta,30,Glen County,22,1,2597,1019.08,721.25,FALSE,FALSE,2.923,Highland,town,FALSE,FALSE,FALSE
+247,Marazlakiumma,marazlakiumma,27,Marches of Petrello,121,Sarbakorlalia Territory,17,1,3741,1671.51,1165.24,FALSE,FALSE,0.996,Generic,village,FALSE,FALSE,FALSE
+248,Markaku,markaku,22,Sultanate of Kanchasuyu,14,Sumior Landgrave,19,1,1785,361.48,495.84,FALSE,FALSE,4.945,Generic,town,TRUE,FALSE,FALSE
+249,Fontali,fontali,27,Marches of Petrello,76,Vallanolaqui Earldom,23,1,4028,1560.28,1236.92,FALSE,FALSE,0.971,Generic,village,FALSE,FALSE,FALSE
+250,Madaspan,madaspan,23,Xilhuan Altepetl,39,Madaspan County,22,1,2911,1309.45,864.05,FALSE,FALSE,7.384,Generic,town,FALSE,FALSE,FALSE
+251,Cannsa,cannsa,30,Herviorum City-state,97,Vinium District,21,1,3352,629.34,1052.92,FALSE,TRUE,6.439,Naval,town,FALSE,TRUE,FALSE
+252,Ciarpunconan,ciarpunconan,28,Emirate of Riagan,90,Nialaqtia County,20,1,527,517.21,179.69,FALSE,FALSE,2.13,Generic,town,FALSE,FALSE,FALSE
+253,Breharcan,breharcan,25,Latocail Naharcan,60,Breharcan County,22,1,3492,1099.82,1104.19,FALSE,FALSE,6.017,River,town,FALSE,FALSE,FALSE
+254,Dubridulum,dubridulum,36,Duchy of Eleral,0,,19,1,4196,475.7,1274.9,FALSE,FALSE,9.782,Generic,city,FALSE,FALSE,FALSE
+255,Rorianonio,rorianonio,28,Emirate of Riagan,83,Bevanconania County,20,1,861,710.16,274.94,FALSE,FALSE,11.654,River,city,TRUE,FALSE,FALSE
+256,Morium,morium,22,Sultanate of Kanchasuyu,6,Borcunumia County,21,1,1388,384.97,405.96,FALSE,FALSE,10.33,Generic,city,FALSE,FALSE,FALSE
+257,Venzarino,venzarino,27,Marches of Petrello,69,Fivania Captaincy,23,1,3652,1529.62,1146.43,FALSE,FALSE,1.163,Generic,village,FALSE,FALSE,FALSE
+258,Morinove,morinove,23,Xilhuan Altepetl,52,Iztaco Earldom,0,1,2857,1265.4,837.02,FALSE,FALSE,6.588,Generic,town,FALSE,TRUE,FALSE
+259,Borsavarso,borsavarso,31,Duchy of Witfordburia,0,,21,1,4056,110.4,1243.53,FALSE,FALSE,10.737,Generic,city,TRUE,FALSE,FALSE
+260,Borduva,borduva,33,Duchy of Temalimco,0,,25,1,4804,515.82,1425.76,FALSE,FALSE,7.131,Generic,town,FALSE,FALSE,FALSE
+261,Bretarpan,bretarpan,25,Latocail Naharcan,57,Bretarpan County,22,1,2764,1093.75,793.98,FALSE,FALSE,5.141,Highland,town,FALSE,FALSE,FALSE
+262,Pearyan,pearyan,25,Latocail Naharcan,57,Bretarpan County,22,1,2719,1113.45,777.23,FALSE,FALSE,4.671,Generic,town,FALSE,FALSE,FALSE
+263,Lorka,lorka,28,Emirate of Riagan,82,Dorinsia County,20,1,373,403.82,132.23,FALSE,FALSE,3.132,Generic,town,FALSE,TRUE,FALSE
+264,Ischianiaio,ischianiaio,27,Marches of Petrello,77,Ponteleo Earldom,23,1,3649,1466.5,1147.9,FALSE,FALSE,1.055,Lake,village,FALSE,FALSE,FALSE
+265,Bellata,bellata,34,Duchy of Petlancia,0,,23,1,4533,1394.38,1335.54,FALSE,FALSE,2.487,Generic,town,FALSE,FALSE,FALSE
+266,Cantinona,cantinona,27,Marches of Petrello,76,Vallanolaqui Earldom,23,1,4027,1546.05,1228.95,FALSE,FALSE,2.095,Generic,town,FALSE,FALSE,FALSE
+267,Cobunsium,cobunsium,33,Duchy of Temalimco,0,,25,1,4973,374.13,1460.93,FALSE,FALSE,0.894,Generic,village,FALSE,FALSE,FALSE
+268,Gebonia,gebonia,33,Duchy of Temalimco,0,,25,1,5078,408.09,1494.46,FALSE,FALSE,10.17,Generic,city,TRUE,FALSE,FALSE
+269,Acan,acan,25,Latocail Naharcan,117,Balactlania Land,22,1,2765,1128.26,791.74,FALSE,FALSE,0.954,Highland,village,TRUE,FALSE,FALSE
+270,Durimie,durimie,28,Emirate of Riagan,0,,20,1,949,793.53,297.76,FALSE,FALSE,2.879,Generic,town,FALSE,FALSE,FALSE
+271,Nernorivis,nernorivis,28,Emirate of Riagan,84,Kievan County,20,1,136,613.39,61.17,FALSE,FALSE,1.891,Generic,village,FALSE,FALSE,FALSE
+272,Flapurum,flapurum,31,Duchy of Witfordburia,0,,19,1,4963,161.42,1469.47,FALSE,FALSE,4.059,Generic,town,FALSE,FALSE,FALSE
+273,Vegium,vegium,29,Beylik of Lugrancanta,93,Florum County,21,1,1124,726.18,338.03,FALSE,TRUE,1.174,Naval,village,FALSE,TRUE,FALSE
+274,Balacan,balacan,27,Marches of Petrello,70,Spervalom Earldom,22,1,3070,1269.43,918.14,FALSE,FALSE,0.504,Generic,fort,FALSE,TRUE,FALSE
+275,Cesontiana,cesontiana,25,Latocail Naharcan,59,Cesontiana County,21,1,3189,703.83,991.82,FALSE,FALSE,6.164,Generic,town,FALSE,FALSE,FALSE
+276,Fiucino,fiucino,27,Marches of Petrello,76,Vallanolaqui Earldom,23,1,4035,1658.45,1250.1,FALSE,TRUE,2.491,Naval,town,FALSE,FALSE,FALSE
+277,Loriorum,loriorum,23,Xilhuan Altepetl,48,Hueca County,0,1,2061,1300.14,556.34,FALSE,FALSE,7.932,River,town,TRUE,FALSE,FALSE
+278,Veliala,veliala,34,Duchy of Petlancia,0,,26,1,5325,1467.78,1531.9,FALSE,FALSE,4.756,Generic,town,FALSE,FALSE,FALSE
+279,Concuroma,concuroma,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,19,1,753,220.26,258.69,FALSE,FALSE,2,Lake,village,FALSE,FALSE,FALSE
+280,Rebumesosc,rebumesosc,23,Xilhuan Altepetl,52,Iztaco Earldom,0,1,3015,1236.82,899.24,FALSE,FALSE,6.709,Generic,town,FALSE,TRUE,FALSE
+281,Sukukuyu,sukukuyu,22,Sultanate of Kanchasuyu,14,Sumior Landgrave,19,1,1687,364.7,462.8,FALSE,FALSE,1.034,Lake,village,FALSE,TRUE,FALSE
+282,Sorinmarcan,sorinmarcan,22,Sultanate of Kanchasuyu,4,Ornanlpansu County,20,1,1192,383.47,352.26,FALSE,TRUE,3.467,Naval,town,TRUE,FALSE,FALSE
+283,Bagantlan,bagantlan,25,Latocail Naharcan,55,Caidistlan County,22,1,3366,949.79,1060.2,FALSE,FALSE,2.36,River,town,FALSE,FALSE,FALSE
+284,Subialulia,subialulia,27,Marches of Petrello,68,Tonazahualco County,23,1,3325,1354.96,1039.2,FALSE,FALSE,1.814,River,village,FALSE,FALSE,FALSE
+285,Iuteliania,iuteliania,31,Duchy of Witfordburia,98,Sirnorum County,21,1,3599,119.56,1138.07,FALSE,FALSE,8.619,Generic,town,FALSE,FALSE,FALSE
+286,Conimbrita,conimbrita,31,Duchy of Witfordburia,0,,19,1,3955,207.59,1218.64,FALSE,FALSE,0.976,Generic,village,FALSE,FALSE,FALSE
+287,Lencum,lencum,33,Duchy of Temalimco,0,,19,1,4494,563.41,1342.88,FALSE,FALSE,13.343,Generic,city,FALSE,FALSE,FALSE
+288,Ciarcanmar,ciarcanmar,28,Emirate of Riagan,85,Melaqta County,20,1,850,547.4,271.7,FALSE,FALSE,2.829,Lake,town,FALSE,FALSE,FALSE
+289,Murbelocono,murbelocono,31,Duchy of Witfordburia,0,,19,1,4301,353.11,1286.62,FALSE,FALSE,3.051,Generic,town,TRUE,FALSE,FALSE
+290,Inpan,inpan,25,Latocail Naharcan,61,Necarastlan Earldom,22,1,2601,1094.76,728.11,FALSE,FALSE,0.689,Hunting,trading_post,FALSE,FALSE,FALSE
+291,Rerupivisca,rerupivisca,28,Emirate of Riagan,84,Kievan County,20,1,139,694.78,61.55,FALSE,FALSE,2.131,River,town,FALSE,FALSE,FALSE
+292,Alalentium,alalentium,23,Xilhuan Altepetl,52,Iztaco Earldom,0,1,2909,1274.81,864.56,FALSE,FALSE,1.183,Generic,village,FALSE,FALSE,FALSE
+293,Vemevesarau,vemevesarau,36,Duchy of Eleral,0,,19,1,4075,419.03,1247.47,FALSE,FALSE,2.98,Generic,town,TRUE,TRUE,FALSE
+294,Xemapan,xemapan,23,Xilhuan Altepetl,42,Auiatlan County,16,1,890,1335.75,279.49,FALSE,FALSE,2.351,Generic,town,FALSE,FALSE,FALSE
+295,Asuwa,asuwa,22,Sultanate of Kanchasuyu,11,Qocha County,19,1,1483,319.59,427.29,FALSE,FALSE,7.423,Lake,town,TRUE,FALSE,FALSE
+296,Surinum,surinum,31,Duchy of Witfordburia,0,,25,1,5269,249.12,1529.33,FALSE,FALSE,5.364,Generic,town,FALSE,FALSE,FALSE
+297,Vilbium,vilbium,28,Emirate of Riagan,84,Kievan County,20,1,198,632.4,72.04,FALSE,FALSE,11.057,Generic,city,FALSE,FALSE,FALSE
+298,Poviacoma,poviacoma,33,Duchy of Temalimco,0,,25,1,4880,351.79,1443.77,FALSE,FALSE,1.127,Generic,village,FALSE,FALSE,FALSE
+299,Srathpan,srathpan,23,Xilhuan Altepetl,37,Maia County,22,1,2258,1051.21,622.38,FALSE,FALSE,7.79,River,town,FALSE,FALSE,FALSE
+300,Contene,contene,27,Marches of Petrello,76,Vallanolaqui Earldom,23,1,3929,1654.48,1208.42,FALSE,FALSE,6.055,Highland,town,FALSE,FALSE,FALSE
+301,Duraputorum,duraputorum,34,Duchy of Petlancia,0,,17,1,4126,1389.45,1242.11,FALSE,FALSE,2.485,Highland,town,FALSE,FALSE,FALSE
+302,Cogontanis,cogontanis,36,Duchy of Eleral,0,,26,1,4501,714.87,1337.22,FALSE,FALSE,1.248,River,village,FALSE,FALSE,FALSE
+303,Cecquaroli,cecquaroli,27,Marches of Petrello,74,Seglia County,23,1,3217,1308.42,979.16,FALSE,FALSE,8.939,Generic,town,FALSE,FALSE,FALSE
+304,Arasco,arasco,23,Xilhuan Altepetl,43,Preme Earldom,22,1,2721,1153.04,766.59,FALSE,FALSE,1.218,Generic,village,FALSE,FALSE,FALSE
+305,Celpan,celpan,28,Emirate of Riagan,85,Melaqta County,20,1,856,583.1,282.8,FALSE,FALSE,0.996,Lake,village,FALSE,FALSE,FALSE
+306,Tarsaquenta,tarsaquenta,31,Duchy of Witfordburia,100,Cuapantema County,0,1,3944,28.64,1223.7,FALSE,FALSE,1.392,River,village,TRUE,FALSE,FALSE
+307,Sirmium,sirmium,31,Duchy of Witfordburia,0,,19,1,4716,301.35,1405.09,FALSE,FALSE,5.97,Generic,town,FALSE,FALSE,FALSE
+308,Eusontia,eusontia,31,Duchy of Witfordburia,0,,25,1,5166,193.66,1519.09,FALSE,FALSE,2.095,Generic,town,FALSE,FALSE,FALSE
+309,Astella,astella,34,Duchy of Petlancia,0,,26,1,5029,1528.4,1468,FALSE,FALSE,10.85,Generic,city,TRUE,FALSE,FALSE
+310,Pecalaryan,pecalaryan,25,Latocail Naharcan,58,Sarahacan Earldom,22,1,2838,858.17,833.53,FALSE,FALSE,3.277,River,town,FALSE,FALSE,FALSE
+311,Llaq,llaq,22,Sultanate of Kanchasuyu,22,Ruyuyuionia County,19,1,992,89.33,324.14,FALSE,TRUE,5.954,Naval,town,FALSE,FALSE,FALSE
+312,Marnum,marnum,23,Xilhuan Altepetl,34,Ariateranno Earldom,0,1,2461,1327.98,675.6,FALSE,FALSE,1.763,Hunting,village,FALSE,FALSE,FALSE
+313,Pachasuminasi,pachasuminasi,22,Sultanate of Kanchasuyu,23,Apaor County,19,1,1677,280.99,469.83,FALSE,TRUE,4.928,Naval,town,TRUE,FALSE,FALSE
+314,Adfletoma,adfletoma,31,Duchy of Witfordburia,0,,19,1,3863,343.54,1210.17,FALSE,TRUE,3.158,Naval,town,TRUE,FALSE,FALSE
+315,Polbaraugus,polbaraugus,23,Xilhuan Altepetl,46,Confleba County,0,1,2197,1240.61,589.02,FALSE,FALSE,1.455,Generic,village,FALSE,FALSE,FALSE
+316,Airdtlan,airdtlan,23,Xilhuan Altepetl,46,Confleba County,22,1,2528,1167.92,706.03,FALSE,FALSE,3.58,Generic,town,FALSE,FALSE,FALSE
+317,Porium,porium,23,Xilhuan Altepetl,43,Preme Earldom,0,1,2668,1180.39,756.25,FALSE,FALSE,3.786,Generic,town,FALSE,FALSE,FALSE
+318,Agripisip,agripisip,36,Duchy of Eleral,0,,19,1,4305,453.47,1288.44,FALSE,FALSE,5.936,Generic,town,TRUE,FALSE,FALSE
+319,Ullana,ullana,31,Duchy of Witfordburia,0,,19,1,4573,446.81,1349.51,FALSE,FALSE,6.884,Generic,town,FALSE,FALSE,FALSE
+320,Mentelo,mentelo,34,Duchy of Petlancia,0,,23,1,4444,1448.08,1320.47,FALSE,FALSE,6.068,Generic,town,FALSE,FALSE,FALSE
+321,Colforvano,colforvano,34,Duchy of Petlancia,0,,23,1,4453,1566.4,1318.7,FALSE,FALSE,2.941,Generic,town,FALSE,FALSE,FALSE
+322,Victrum,victrum,28,Emirate of Riagan,138,Victrum County,0,1,950,812.34,301.39,FALSE,FALSE,1.072,Generic,village,FALSE,FALSE,FALSE
+323,Drumegium,drumegium,22,Sultanate of Kanchasuyu,20,Binovium County,21,1,1503,523.4,440.8,FALSE,FALSE,1.294,Hunting,village,FALSE,FALSE,FALSE
+324,Sacicum,sacicum,33,Duchy of Temalimco,0,,25,1,4990,749.13,1474.52,FALSE,FALSE,8.443,Generic,town,FALSE,FALSE,FALSE
+325,Plalarialen,plalarialen,33,Duchy of Temalimco,0,,25,1,5094,746.22,1491,FALSE,FALSE,1.086,Generic,village,FALSE,FALSE,FALSE
+326,Borigencum,borigencum,29,Beylik of Lugrancanta,126,Tralinia Territory,21,1,1410,806.08,394.6,FALSE,FALSE,1.659,Hunting,village,TRUE,FALSE,FALSE
+327,Nertistanea,nertistanea,22,Sultanate of Kanchasuyu,5,Markia Margrave,19,1,1383,274.06,404.22,FALSE,FALSE,0.756,Generic,village,TRUE,FALSE,FALSE
+328,Confluenta,confluenta,33,Duchy of Temalimco,0,,19,1,4402,539.2,1311.41,FALSE,FALSE,6.366,Generic,town,TRUE,FALSE,FALSE
+329,Flocobris,flocobris,31,Duchy of Witfordburia,0,,19,1,4072,366.3,1256.88,FALSE,FALSE,6.524,Generic,town,FALSE,FALSE,FALSE
+330,Killaqtakuyuna,killaqtakuyuna,22,Sultanate of Kanchasuyu,23,Apaor County,19,1,1779,282.5,505.7,FALSE,FALSE,0.971,Hunting,village,FALSE,FALSE,FALSE
+331,Arviovinium,arviovinium,33,Duchy of Temalimco,0,,25,1,4984,613.33,1467.22,FALSE,FALSE,1.281,Generic,village,FALSE,FALSE,FALSE
+332,Brenku,brenku,28,Emirate of Riagan,87,Brenpunia County,20,1,1303,519.92,385.76,FALSE,TRUE,8.803,Naval,town,FALSE,FALSE,FALSE
+333,Hadria,hadria,36,Duchy of Eleral,0,,19,1,4199,514.11,1267.89,FALSE,FALSE,1.625,Generic,village,TRUE,FALSE,FALSE
+334,Glen,glen,32,Nekosdamkoda,102,Magnakan County,22,1,3316,1159.48,1028.5,FALSE,FALSE,2.245,Generic,town,FALSE,FALSE,FALSE
+335,Qhapa,qhapa,22,Sultanate of Kanchasuyu,9,Qochruyu County,19,1,1941,29.7,541.44,FALSE,FALSE,2.239,Generic,town,FALSE,FALSE,FALSE
+336,Pognano,pognano,27,Marches of Petrello,66,Sezania Captaincy,23,1,3728,1393.68,1165.96,FALSE,FALSE,1.722,River,village,FALSE,FALSE,FALSE
+337,Victra,victra,33,Duchy of Temalimco,0,,25,1,5080,442.43,1497.72,FALSE,FALSE,8.316,Generic,town,TRUE,FALSE,FALSE
+338,Murnabis,murnabis,31,Duchy of Witfordburia,0,,25,1,5072,269.15,1479.41,FALSE,FALSE,11.706,Generic,city,TRUE,FALSE,FALSE
+339,Dinivium,dinivium,32,Nekosdamkoda,129,Mailinsarkia Clan,17,1,3437,1294.26,1080.26,FALSE,FALSE,8.515,Highland,town,FALSE,FALSE,FALSE
+340,Alciciglio,alciciglio,27,Marches of Petrello,72,Spersia Earldom,23,1,3574,1442.39,1115.34,FALSE,FALSE,6.25,Generic,town,FALSE,FALSE,FALSE
+341,Sirsolile,sirsolile,22,Sultanate of Kanchasuyu,13,Sirgodulum County,21,1,1491,423.3,424.4,FALSE,FALSE,0.741,Hunting,trading_post,FALSE,FALSE,FALSE
+342,Srathcan,srathcan,27,Marches of Petrello,74,Seglia County,22,1,3216,1302.23,997.36,FALSE,FALSE,5.615,Highland,town,FALSE,FALSE,FALSE
+343,Lentia,lentia,23,Xilhuan Altepetl,47,Buratesa County,0,1,1333,1071.64,372,FALSE,FALSE,0.615,Generic,fort,FALSE,TRUE,FALSE
+344,Vaquinnila,vaquinnila,23,Xilhuan Altepetl,45,Alcocateco County,0,1,2263,1154.62,609.63,FALSE,FALSE,1.368,Hunting,village,FALSE,FALSE,FALSE
+345,Ascrembiala,ascrembiala,22,Sultanate of Kanchasuyu,5,Markia Margrave,19,1,1286,272.53,377.34,FALSE,FALSE,2.534,Generic,town,FALSE,FALSE,FALSE
+346,Fionkancha,fionkancha,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,20,1,671,274.57,234.43,FALSE,FALSE,3.81,River,town,FALSE,FALSE,FALSE
+347,Hadrianum,hadrianum,23,Xilhuan Altepetl,0,,0,1,408,1149.49,142.03,FALSE,FALSE,3.121,River,town,FALSE,FALSE,FALSE
+348,Petheondalinn,petheondalinn,32,Nekosdamkoda,104,Conflegul Landgrave,17,1,3321,1263.8,1027.31,FALSE,FALSE,0.877,Highland,village,FALSE,FALSE,FALSE
+349,Tiercanlpan,tiercanlpan,22,Sultanate of Kanchasuyu,16,Melia Margrave,20,1,243,294.51,105.88,FALSE,FALSE,3.078,River,town,FALSE,FALSE,FALSE
+350,Tuarin,tuarin,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,20,1,438,242.63,169.48,FALSE,FALSE,6.406,River,town,TRUE,FALSE,FALSE
+351,Isiovilo,isiovilo,25,Latocail Naharcan,59,Cesontiana County,21,1,3187,650,1006.3,FALSE,FALSE,3.998,Generic,town,FALSE,FALSE,FALSE
+352,Adfletorum,adfletorum,27,Marches of Petrello,68,Tonazahualco County,17,1,3502,1318.08,1100.99,FALSE,FALSE,4.121,Highland,town,FALSE,FALSE,FALSE
+353,Hierahcosion,hierahcosion,23,Xilhuan Altepetl,48,Hueca County,16,1,2272,1364.58,611.75,FALSE,FALSE,0.89,Generic,village,FALSE,FALSE,FALSE
+354,Plania,plania,31,Duchy of Witfordburia,0,,19,1,4387,186.6,1320.4,FALSE,FALSE,1.122,Generic,village,FALSE,FALSE,FALSE
+355,Vicricum,vicricum,33,Duchy of Temalimco,0,,25,1,5283,549.27,1522.65,FALSE,FALSE,0.872,Generic,village,FALSE,FALSE,FALSE
+356,Xalxexaltlan,xalxexaltlan,23,Xilhuan Altepetl,42,Auiatlan County,16,1,1248,1263.5,368.3,FALSE,FALSE,1.338,Generic,village,FALSE,FALSE,FALSE
+357,Egullenteri,egullenteri,23,Xilhuan Altepetl,43,Preme Earldom,0,1,2673,1285.42,758.54,FALSE,FALSE,2.411,Generic,town,FALSE,FALSE,FALSE
+358,Vigente,vigente,31,Duchy of Witfordburia,0,,19,1,3958,241.18,1236.37,FALSE,FALSE,7.121,Generic,town,FALSE,FALSE,FALSE
+359,Preticanum,preticanum,28,Emirate of Riagan,91,Nialpania County,20,1,857,624.35,270.14,FALSE,FALSE,0.787,River,fort,FALSE,TRUE,FALSE
+360,Auyunayuyu,auyunayuyu,22,Sultanate of Kanchasuyu,14,Sumior Landgrave,19,1,1688,356.7,478.2,FALSE,FALSE,2.249,Hunting,town,FALSE,FALSE,FALSE
+361,Confletum,confletum,34,Duchy of Petlancia,0,,26,1,4851,1493.87,1418.83,FALSE,FALSE,1.702,Nomadic,village,TRUE,FALSE,FALSE
+362,Cocexum,cocexum,36,Duchy of Eleral,0,,19,1,4314,646.91,1289.7,FALSE,FALSE,0.521,River,village,FALSE,FALSE,FALSE
+363,Nigripo,nigripo,31,Duchy of Witfordburia,0,,19,1,4645,387.97,1388.18,FALSE,FALSE,6.763,Generic,town,FALSE,FALSE,FALSE
+364,Vinnavenna,vinnavenna,23,Xilhuan Altepetl,0,,0,1,1522,1004.55,426.27,FALSE,FALSE,8.729,Generic,town,FALSE,FALSE,FALSE
+365,Leriaricento,leriaricento,34,Duchy of Petlancia,0,,23,1,4242,1395.98,1276.1,FALSE,FALSE,1.073,River,village,FALSE,FALSE,FALSE
+366,Lagentove,lagentove,33,Duchy of Temalimco,0,,25,1,4887,518.56,1441.38,FALSE,FALSE,10.073,Generic,city,FALSE,FALSE,FALSE
+367,Qochruyu,qochruyu,22,Sultanate of Kanchasuyu,9,Qochruyu County,19,1,2163,132.23,590.07,FALSE,FALSE,6.555,Highland,town,TRUE,FALSE,FALSE
+368,Linsium,linsium,31,Duchy of Witfordburia,99,Castra County,21,1,3677,122.2,1175.2,FALSE,FALSE,0.926,Hunting,village,FALSE,FALSE,FALSE
+369,Vartelek,vartelek,24,City-state of Saheranahvaria,53,Kutvaladosva Governorate,18,1,2439,850.81,683.2,FALSE,FALSE,1.204,Generic,village,FALSE,FALSE,FALSE
+370,Sasu,sasu,22,Sultanate of Kanchasuyu,3,Maria Barony,19,1,2745,25.79,811.31,FALSE,FALSE,2.61,River,town,FALSE,FALSE,FALSE
+371,Lamium,lamium,31,Duchy of Witfordburia,0,,19,1,4710,170.82,1406.1,FALSE,FALSE,12.785,Generic,city,TRUE,FALSE,FALSE
+372,Thetorum,thetorum,23,Xilhuan Altepetl,43,Preme Earldom,0,1,2607,1238.1,729.53,FALSE,FALSE,4.154,River,town,FALSE,FALSE,FALSE
+373,Thevaria,thevaria,33,Duchy of Temalimco,0,,25,1,5174,355.49,1505.65,FALSE,FALSE,5.089,Generic,town,FALSE,FALSE,FALSE
+374,Conflelona,conflelona,33,Duchy of Temalimco,0,,19,1,4575,483.25,1351.16,FALSE,FALSE,7.283,Generic,town,FALSE,FALSE,FALSE
+375,Marduroma,marduroma,34,Duchy of Petlancia,0,,26,1,5228,1523.06,1509.79,FALSE,FALSE,1.047,Generic,village,FALSE,TRUE,FALSE
+376,Srathcan,srathcan,25,Latocail Naharcan,60,Breharcan County,22,1,3559,1117.82,1122.26,FALSE,FALSE,0.677,River,village,FALSE,FALSE,FALSE
+377,Cesonnoma,cesonnoma,31,Duchy of Witfordburia,0,,19,1,3857,249.57,1205.33,FALSE,FALSE,3.672,Generic,town,FALSE,FALSE,FALSE
+378,Geronia,geronia,23,Xilhuan Altepetl,42,Auiatlan County,0,1,885,1224.2,265.16,FALSE,FALSE,0.593,River,village,FALSE,FALSE,FALSE
+379,Presaterna,presaterna,23,Xilhuan Altepetl,46,Confleba County,0,1,2264,1179.36,610.56,FALSE,FALSE,4.24,Generic,town,FALSE,FALSE,FALSE
+380,Vimita,vimita,23,Xilhuan Altepetl,43,Preme Earldom,0,1,2728,1313.95,765.87,FALSE,FALSE,4.463,Generic,town,FALSE,FALSE,FALSE
+381,Plariro,plariro,29,Beylik of Lugrancanta,93,Florum County,21,1,1116,621.19,329.12,FALSE,FALSE,1.934,Hunting,village,FALSE,FALSE,FALSE
+382,Prodakium,prodakium,27,Marches of Petrello,65,Colanolonia Earldom,17,1,3579,1550.12,1113.3,FALSE,FALSE,0.881,Highland,village,FALSE,FALSE,FALSE
+383,Bomula,bomula,31,Duchy of Witfordburia,0,,19,1,4476,171.69,1324.44,FALSE,TRUE,20.103,Naval,city,FALSE,TRUE,TRUE
+384,Labrolavio,labrolavio,34,Duchy of Petlancia,0,,23,1,4445,1459.09,1321.7,FALSE,FALSE,2.45,Generic,town,FALSE,FALSE,FALSE
+385,Burculocob,burculocob,23,Xilhuan Altepetl,0,,0,1,1719,1004.69,466.46,FALSE,FALSE,10.154,Highland,city,FALSE,FALSE,FALSE
+386,Iuturum,iuturum,33,Duchy of Temalimco,0,,25,1,4975,433.5,1466.94,FALSE,FALSE,8.207,Generic,town,TRUE,FALSE,FALSE
+387,Nigrum,nigrum,34,Duchy of Petlancia,0,,26,1,5231,1597.35,1501.32,FALSE,FALSE,6.356,Generic,town,FALSE,FALSE,FALSE
+388,Agripovio,agripovio,33,Duchy of Temalimco,0,,25,1,4800,432.63,1432.44,FALSE,FALSE,4.693,Generic,town,FALSE,FALSE,FALSE
+389,Hernum,hernum,31,Duchy of Witfordburia,0,,19,1,4483,311.33,1329.15,FALSE,FALSE,7.498,Generic,town,FALSE,FALSE,FALSE
+390,Aurpan,aurpan,23,Xilhuan Altepetl,51,Aurpan County,16,1,2275,1414.39,623.86,FALSE,FALSE,5.572,Generic,town,FALSE,FALSE,FALSE
+391,Xakantlan,xakantlan,23,Xilhuan Altepetl,48,Hueca County,16,1,1432,1242.42,399.76,FALSE,FALSE,0.659,River,village,FALSE,FALSE,FALSE
+392,Camutunum,camutunum,23,Xilhuan Altepetl,50,Tlamaco Earldom,0,1,2336,1350.08,650.18,FALSE,FALSE,1.117,Generic,village,FALSE,FALSE,FALSE
+393,Savaltlan,savaltlan,23,Xilhuan Altepetl,41,Wesvariontia County,16,1,1630,1341.42,452.7,FALSE,FALSE,2.54,Hunting,town,FALSE,FALSE,FALSE
+394,Pachamarkasuna,pachamarkasuna,22,Sultanate of Kanchasuyu,23,Apaor County,19,1,1676,250.06,463.52,FALSE,FALSE,5.198,Hunting,town,FALSE,FALSE,FALSE
+395,Castra,castra,31,Duchy of Witfordburia,99,Castra County,21,1,3676,142.38,1174.54,FALSE,TRUE,12.278,Naval,city,FALSE,TRUE,FALSE
+396,Povium,povium,31,Duchy of Witfordburia,0,,19,1,4572,423.28,1351.21,FALSE,FALSE,6.777,Generic,town,FALSE,FALSE,FALSE
+397,Camatra,camatra,27,Marches of Petrello,66,Sezania Captaincy,23,1,3727,1375.35,1157.31,FALSE,FALSE,4.291,Generic,town,FALSE,FALSE,FALSE
+398,Solxelaqure,solxelaqure,23,Xilhuan Altepetl,41,Wesvariontia County,16,1,1436,1339.77,393.07,FALSE,FALSE,1.012,Generic,village,FALSE,FALSE,FALSE
+399,Emetovia,emetovia,23,Xilhuan Altepetl,49,Texcoaxaxaco County,0,1,2859,1309.95,827.87,FALSE,FALSE,7.211,Generic,town,FALSE,FALSE,FALSE
+400,Bodurivium,bodurivium,31,Duchy of Witfordburia,0,,19,1,4070,316.1,1258.71,FALSE,FALSE,5.81,Generic,town,FALSE,FALSE,FALSE
+401,Urka,urka,22,Sultanate of Kanchasuyu,24,Kancha County,19,1,1858,147.39,518.77,FALSE,FALSE,0.743,Generic,village,TRUE,FALSE,FALSE
+402,Avion,avion,23,Xilhuan Altepetl,47,Buratesa County,16,1,1429,1190.44,400.13,FALSE,FALSE,0.473,Generic,village,FALSE,FALSE,FALSE
+403,Bren,bren,28,Emirate of Riagan,85,Melaqta County,20,1,847,491.88,269.64,FALSE,FALSE,1.135,Generic,village,FALSE,FALSE,FALSE
+404,Pullum,pullum,22,Sultanate of Kanchasuyu,11,Qocha County,19,1,1288,317.45,374.99,FALSE,FALSE,2.366,Generic,town,FALSE,FALSE,FALSE
+405,Lincantogon,lincantogon,31,Duchy of Witfordburia,0,,19,1,4297,279.97,1294.45,FALSE,FALSE,12.099,River,city,FALSE,FALSE,FALSE
+406,Hierainkukancha,hierainkukancha,22,Sultanate of Kanchasuyu,17,Asisumarru County,19,1,1955,272.3,546.36,FALSE,TRUE,1.981,Naval,village,FALSE,FALSE,FALSE
+407,Lurorum,lurorum,33,Duchy of Temalimco,0,,25,1,4985,632.13,1469.84,FALSE,FALSE,1.92,Generic,village,FALSE,FALSE,FALSE
+408,Accanori,accanori,34,Duchy of Petlancia,0,,23,1,4353,1492.99,1294.28,FALSE,FALSE,0.905,Generic,village,FALSE,FALSE,FALSE
+409,Forso,forso,27,Marches of Petrello,66,Sezania Captaincy,23,1,3915,1398.01,1204.15,FALSE,FALSE,1.094,Generic,village,FALSE,FALSE,FALSE
+410,Linonona,linonona,36,Duchy of Eleral,0,,19,1,4310,556.28,1295.78,FALSE,FALSE,5.102,Generic,town,FALSE,FALSE,FALSE
+411,Tierka,tierka,29,Beylik of Lugrancanta,94,Orpanmalan County,20,1,1111,562.59,339.53,FALSE,FALSE,1.638,Generic,village,TRUE,FALSE,FALSE
+412,Kievan,kievan,28,Emirate of Riagan,87,Brenpunia County,20,1,1302,504.5,380.5,FALSE,FALSE,0.615,Generic,village,FALSE,FALSE,FALSE
+413,Saban,saban,27,Marches of Petrello,79,Casadupia Earldom,22,1,3123,1437.09,944.88,FALSE,TRUE,4.64,Naval,town,FALSE,FALSE,FALSE
+414,Apurovio,apurovio,30,Herviorum City-state,96,Theixus District,21,1,3407,638.96,1070.02,FALSE,FALSE,1.382,Hunting,village,FALSE,FALSE,FALSE
+415,Codunium,codunium,23,Xilhuan Altepetl,45,Alcocateco County,0,1,2124,1094.45,571.99,FALSE,FALSE,2.654,Hunting,town,FALSE,FALSE,FALSE
+416,Abanpan,abanpan,25,Latocail Naharcan,60,Breharcan County,22,1,3312,1074.39,1031.28,FALSE,FALSE,0.658,River,village,FALSE,FALSE,FALSE
+417,Merannavum,merannavum,34,Duchy of Petlancia,0,,26,1,5408,1176.9,1547.74,FALSE,FALSE,1.167,Nomadic,village,FALSE,FALSE,FALSE
+418,Aninora,aninora,33,Duchy of Temalimco,0,,25,1,5272,320.23,1537.31,FALSE,FALSE,5.97,Generic,town,FALSE,FALSE,FALSE
+419,Levelinium,levelinium,28,Emirate of Riagan,89,Levelinium County,20,1,536,709.42,176.64,FALSE,FALSE,5.724,River,town,FALSE,FALSE,FALSE
+420,Mapan,mapan,23,Xilhuan Altepetl,51,Aurpan County,16,1,2341,1471.02,634.85,FALSE,TRUE,2.866,Naval,town,FALSE,FALSE,FALSE
+421,Burgoniano,burgoniano,36,Duchy of Eleral,0,,19,1,4076,432.4,1248,FALSE,FALSE,3.208,Generic,town,FALSE,FALSE,FALSE
+422,Marmarka,marmarka,22,Sultanate of Kanchasuyu,21,Marsu County,19,1,1774,215.8,493.6,FALSE,FALSE,3.393,Lake,town,FALSE,FALSE,FALSE
+423,Burnum,burnum,22,Sultanate of Kanchasuyu,20,Binovium County,21,1,1502,529.16,428.25,FALSE,FALSE,1.304,Generic,village,FALSE,FALSE,FALSE
+424,Acciana,acciana,27,Marches of Petrello,66,Sezania Captaincy,23,1,3642,1382.02,1147.02,FALSE,FALSE,4.18,River,town,FALSE,FALSE,FALSE
+425,Getixuscia,getixuscia,31,Duchy of Witfordburia,0,,25,1,5167,200.95,1501.14,FALSE,FALSE,7.162,Generic,town,FALSE,FALSE,FALSE
+426,Beranmarcanl,beranmarcanl,28,Emirate of Riagan,85,Melaqta County,20,1,848,502.62,276.76,FALSE,FALSE,2.333,Generic,town,FALSE,FALSE,FALSE
+427,Seabantlan,seabantlan,25,Latocail Naharcan,57,Bretarpan County,22,1,2720,1132.76,779.59,FALSE,FALSE,1.112,Highland,village,FALSE,FALSE,FALSE
+428,Melaqtayu,melaqtayu,28,Emirate of Riagan,87,Brenpunia County,20,1,931,491.7,295.24,FALSE,FALSE,2.867,Generic,town,TRUE,FALSE,FALSE
+429,Vilbagen,vilbagen,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,19,1,668,224.37,227.5,FALSE,FALSE,3.258,Lake,town,FALSE,FALSE,FALSE
+430,Glen,glen,23,Xilhuan Altepetl,44,Drupiba County,22,1,1980,1063.63,522.77,FALSE,FALSE,1.679,Generic,village,FALSE,FALSE,FALSE
+431,Lonania,lonania,28,Emirate of Riagan,83,Bevanconania County,20,1,779,752.78,253.27,FALSE,FALSE,0.502,Generic,fort,FALSE,TRUE,FALSE
+432,Lorsu,lorsu,28,Emirate of Riagan,90,Nialaqtia County,20,1,606,551.56,197.02,FALSE,FALSE,0.576,Generic,village,FALSE,FALSE,FALSE
+433,Caidispan,caidispan,25,Latocail Naharcan,60,Breharcan County,22,1,3313,1103.29,1033.58,FALSE,FALSE,1.605,River,village,FALSE,FALSE,FALSE
+434,Pecan,pecan,29,Beylik of Lugrancanta,0,,22,1,2254,973.03,614.61,FALSE,FALSE,14.733,River,city,FALSE,FALSE,FALSE
+435,Aconialonia,aconialonia,31,Duchy of Witfordburia,0,,19,1,4398,436.16,1314.69,FALSE,FALSE,1.237,Generic,village,FALSE,FALSE,FALSE
+436,Comuloria,comuloria,31,Duchy of Witfordburia,0,,25,1,5164,147.29,1519.91,FALSE,FALSE,2.481,Generic,town,FALSE,FALSE,FALSE
+437,Arascanver,arascanver,29,Beylik of Lugrancanta,30,Glen County,22,1,2448,1061.25,685.3,FALSE,FALSE,1.224,Highland,village,FALSE,FALSE,FALSE
+438,Burtius,burtius,33,Duchy of Temalimco,0,,25,1,4802,471.65,1425.22,FALSE,FALSE,1.036,Generic,village,FALSE,FALSE,FALSE
+439,Laurine,laurine,33,Duchy of Temalimco,0,,26,1,5399,995.81,1562.36,FALSE,FALSE,0.89,Generic,fort,FALSE,TRUE,FALSE
+440,Pachan,pachan,22,Sultanate of Kanchasuyu,6,Borcunumia County,19,1,1486,348.2,417.6,FALSE,FALSE,4.012,Lake,town,FALSE,FALSE,FALSE
+441,Canium,canium,23,Xilhuan Altepetl,46,Confleba County,0,1,2388,1176.82,665.93,FALSE,FALSE,2.477,Generic,town,FALSE,FALSE,FALSE
+442,Adflesoscto,adflesoscto,23,Xilhuan Altepetl,46,Confleba County,0,1,2266,1230.46,629.29,FALSE,FALSE,0.746,River,village,FALSE,FALSE,FALSE
+443,Asodususa,asodususa,23,Xilhuan Altepetl,33,Huatlacanco Earldom,0,1,2338,1405.42,637.59,FALSE,FALSE,6.967,Generic,town,FALSE,FALSE,FALSE
+444,Pachakunayuqta,pachakunayuqta,22,Sultanate of Kanchasuyu,3,Maria Barony,19,1,2691,48.76,773.18,FALSE,FALSE,0.626,River,village,FALSE,FALSE,FALSE
+445,Kutfold,kutfold,24,City-state of Saheranahvaria,53,Kutvaladosva Governorate,18,1,2705,821.88,766.54,FALSE,TRUE,3.23,Naval,town,FALSE,FALSE,FALSE
+446,Geliapuro,geliapuro,23,Xilhuan Altepetl,46,Confleba County,0,1,2265,1202.81,623.27,FALSE,FALSE,3.712,River,town,FALSE,FALSE,FALSE
+447,Orinis,orinis,0,Neutrals,0,,0,1,4865,30.36,1453.16,FALSE,FALSE,9.564,River,town,FALSE,FALSE,FALSE
+448,Marsu,marsu,22,Sultanate of Kanchasuyu,21,Marsu County,19,1,1861,208.63,502.68,FALSE,FALSE,6.796,Lake,town,TRUE,TRUE,FALSE
+449,Vieloloma,vieloloma,33,Duchy of Temalimco,0,,25,1,5081,465.78,1485.33,FALSE,FALSE,5.084,Generic,town,TRUE,FALSE,FALSE
+450,Leadaspanco,leadaspanco,27,Marches of Petrello,75,Leadaspanco Earldom,22,1,3268,1311.1,1002.23,FALSE,FALSE,8.783,Generic,town,FALSE,FALSE,FALSE
+451,Madarco,madarco,23,Xilhuan Altepetl,37,Maia County,22,1,2189,1079.8,606.31,FALSE,FALSE,6.078,River,town,TRUE,FALSE,FALSE
+452,Donanku,donanku,28,Emirate of Riagan,80,Dodanma County,20,1,379,534.78,131.85,FALSE,FALSE,0.578,Generic,fort,FALSE,TRUE,FALSE
+453,Legoripon,legoripon,31,Duchy of Witfordburia,0,,25,1,5070,228.54,1488.04,FALSE,FALSE,3.586,Generic,town,FALSE,FALSE,FALSE
+454,Victocentum,victocentum,36,Duchy of Eleral,0,,19,1,4309,537.17,1297.28,FALSE,FALSE,15.202,River,city,TRUE,TRUE,FALSE
+455,Drunum,drunum,31,Duchy of Witfordburia,0,,19,1,4186,268.61,1264.19,FALSE,FALSE,12.19,River,city,TRUE,FALSE,FALSE
+456,Montino,montino,34,Duchy of Petlancia,0,,23,1,4442,1407.26,1322.62,FALSE,FALSE,10.357,Generic,city,FALSE,FALSE,FALSE
+457,Nomula,nomula,23,Xilhuan Altepetl,47,Buratesa County,0,1,1617,1052.35,446.8,FALSE,FALSE,2.228,Generic,town,FALSE,FALSE,FALSE
+458,Valcino,valcino,27,Marches of Petrello,76,Vallanolaqui Earldom,23,1,3922,1520.7,1213.4,FALSE,FALSE,1.086,Generic,village,FALSE,FALSE,FALSE
+459,Binovium,binovium,22,Sultanate of Kanchasuyu,20,Binovium County,21,1,1697,471.16,465.56,FALSE,FALSE,4.824,Generic,town,FALSE,FALSE,FALSE
+460,Lalentignico,lalentignico,34,Duchy of Petlancia,0,,23,1,4536,1460.91,1330.44,FALSE,FALSE,0.924,Generic,village,FALSE,FALSE,FALSE
+461,Nertus,nertus,34,Duchy of Petlancia,0,,0,1,5420,1450.99,1547.06,FALSE,FALSE,1.041,Generic,village,FALSE,FALSE,FALSE
+462,Poviomugu,poviomugu,33,Duchy of Temalimco,0,,0,1,5388,758.39,1551.06,FALSE,FALSE,5.54,Generic,town,FALSE,FALSE,FALSE
+463,Aorco,aorco,23,Xilhuan Altepetl,42,Auiatlan County,16,1,1152,1314.02,343.51,FALSE,FALSE,4.301,Generic,town,FALSE,FALSE,FALSE
+464,Tauroria,tauroria,23,Xilhuan Altepetl,44,Drupiba County,0,1,1905,1164.15,508.4,FALSE,FALSE,1.313,Generic,village,FALSE,FALSE,FALSE
+465,Bitovium,bitovium,23,Xilhuan Altepetl,46,Confleba County,0,1,2387,1162.62,664.92,FALSE,FALSE,2.484,Generic,town,FALSE,FALSE,FALSE
+466,Cargagoscara,cargagoscara,27,Marches of Petrello,67,Armiabicia Captaincy,23,1,3571,1376.59,1120.11,FALSE,FALSE,5.355,River,town,FALSE,FALSE,FALSE
+467,Verunnimiro,verunnimiro,23,Xilhuan Altepetl,44,Drupiba County,0,1,1906,1180.78,514.6,FALSE,FALSE,2.473,Generic,town,FALSE,FALSE,FALSE
+468,Bretarcan,bretarcan,25,Latocail Naharcan,60,Breharcan County,22,1,3311,1048.99,1023.41,FALSE,FALSE,0.457,River,village,FALSE,FALSE,FALSE
+469,Fionma,fionma,22,Sultanate of Kanchasuyu,16,Melia Margrave,20,1,120,265.96,64.07,FALSE,FALSE,1.487,Nomadic,village,FALSE,FALSE,FALSE
+470,Kancha,kancha,22,Sultanate of Kanchasuyu,24,Kancha County,19,1,2019,123.78,556.95,FALSE,FALSE,6.375,Generic,town,FALSE,FALSE,FALSE
+471,Gecakion,gecakion,23,Xilhuan Altepetl,42,Auiatlan County,16,1,888,1285.71,279.85,FALSE,FALSE,5.285,Generic,town,FALSE,FALSE,FALSE
+472,Bonaniavi,bonaniavi,23,Xilhuan Altepetl,0,,0,1,1811,1012.83,484.88,FALSE,FALSE,10.291,Generic,city,FALSE,FALSE,FALSE
+473,Dupicanea,dupicanea,31,Duchy of Witfordburia,0,,19,1,4489,454.2,1341.46,FALSE,FALSE,4.605,Generic,town,FALSE,FALSE,FALSE
+474,Adfluendebu,adfluendebu,31,Duchy of Witfordburia,0,,25,1,4969,301.75,1474.65,FALSE,FALSE,7.948,Generic,town,FALSE,FALSE,FALSE
+475,Nonium,nonium,32,Nekosdamkoda,0,,26,1,5100,871.41,1480.57,FALSE,FALSE,5.831,Generic,town,FALSE,FALSE,FALSE
+476,Donankancha,donankancha,28,Emirate of Riagan,86,Rorinmia County,20,1,28,621.27,6.83,FALSE,FALSE,1.703,Generic,village,FALSE,FALSE,FALSE
+477,Cacisiorum,cacisiorum,23,Xilhuan Altepetl,28,Nototitlanco County,0,1,2334,1323.41,649.1,FALSE,FALSE,3.087,River,town,FALSE,FALSE,FALSE
+478,Ruliobrigu,ruliobrigu,0,Neutrals,0,,0,1,4171,38.05,1270.28,FALSE,FALSE,0.282,Nomadic,village,TRUE,FALSE,FALSE
+479,Sasiwa,sasiwa,22,Sultanate of Kanchasuyu,22,Ruyuyuionia County,19,1,1086,102.02,336.89,FALSE,TRUE,6.957,Naval,town,FALSE,FALSE,FALSE
+480,Sezaro,sezaro,34,Duchy of Petlancia,0,,23,1,4451,1549.1,1318.3,FALSE,FALSE,9.763,Hunting,town,FALSE,FALSE,FALSE
+481,Baoirtlan,baoirtlan,32,Nekosdamkoda,105,Baoirtlan County,22,1,3012,1154.23,910.93,FALSE,FALSE,5.843,Highland,town,FALSE,FALSE,FALSE
+482,Armia,armia,27,Marches of Petrello,70,Spervalom Earldom,23,1,3072,1310.12,924.96,FALSE,FALSE,1.21,Generic,village,FALSE,FALSE,FALSE
+483,Mastelpia,mastelpia,23,Xilhuan Altepetl,50,Tlamaco Earldom,0,1,2463,1376,688.43,FALSE,FALSE,7.972,Generic,town,FALSE,FALSE,FALSE
+484,Gerica,gerica,31,Duchy of Witfordburia,0,,19,1,4381,116.7,1322.9,FALSE,FALSE,7.564,River,town,FALSE,FALSE,FALSE
+485,Nazagnano,nazagnano,27,Marches of Petrello,65,Colanolonia Earldom,23,1,3511,1515.7,1090.92,FALSE,FALSE,4.532,Highland,town,FALSE,FALSE,FALSE
+486,Sirtius,sirtius,31,Duchy of Witfordburia,0,,19,1,4718,334.43,1393.86,FALSE,FALSE,3.353,Generic,town,FALSE,TRUE,FALSE
+487,Cetianium,cetianium,33,Duchy of Temalimco,0,,25,1,5293,766.16,1532.36,FALSE,FALSE,5.59,Generic,town,TRUE,FALSE,FALSE
+488,Qochapaorka,qochapaorka,22,Sultanate of Kanchasuyu,9,Qochruyu County,19,1,2225,107.39,622.39,FALSE,FALSE,6.472,Highland,town,FALSE,FALSE,FALSE
+489,Araispanco,araispanco,27,Marches of Petrello,73,Chiapan Earldom,22,1,3267,1297.16,1011.12,FALSE,FALSE,0.957,Highland,fort,FALSE,TRUE,FALSE
+490,Londaulia,londaulia,23,Xilhuan Altepetl,52,Iztaco Earldom,0,1,2908,1257.05,868.16,FALSE,FALSE,4.309,River,town,FALSE,FALSE,FALSE
+491,Nercurum,nercurum,33,Duchy of Temalimco,0,,19,1,4491,492.9,1345.76,FALSE,FALSE,1,Generic,village,FALSE,FALSE,FALSE
+492,Glen,glen,29,Beylik of Lugrancanta,30,Glen County,22,1,2256,1015.12,617.17,FALSE,FALSE,12.973,River,city,TRUE,FALSE,FALSE
+493,Presa,presa,31,Duchy of Witfordburia,100,Cuapantema County,0,1,3943,8.21,1228.25,FALSE,FALSE,1.05,Generic,village,FALSE,FALSE,FALSE
+494,Polletorum,polletorum,33,Duchy of Temalimco,0,,25,1,4881,379.61,1440.78,FALSE,FALSE,9.046,Generic,town,FALSE,FALSE,FALSE
+495,Jammere,jammere,32,Nekosdamkoda,103,Alaklalia County,17,1,3111,1161.4,937.76,FALSE,FALSE,11.063,Highland,city,FALSE,FALSE,FALSE
+496,Naisus,naisus,22,Sultanate of Kanchasuyu,5,Markia Margrave,19,1,1094,262.57,332.4,FALSE,FALSE,0.552,Generic,village,FALSE,FALSE,FALSE
+497,Hertius,hertius,29,Beylik of Lugrancanta,126,Tralinia Territory,21,1,1226,799.9,354.04,FALSE,FALSE,2.049,Generic,town,FALSE,FALSE,FALSE
+498,Arnorum,arnorum,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,19,1,833,199.7,275.3,FALSE,FALSE,3.941,Lake,town,FALSE,FALSE,FALSE
+499,Matrum,matrum,27,Marches of Petrello,66,Sezania Captaincy,17,1,3914,1387.53,1209.36,FALSE,FALSE,5.256,Generic,town,FALSE,FALSE,FALSE
+500,Vicialorum,vicialorum,31,Duchy of Witfordburia,0,,21,1,4055,101.77,1257.98,FALSE,FALSE,9.475,Generic,town,FALSE,FALSE,FALSE
+501,Killa,killa,22,Sultanate of Kanchasuyu,9,Qochruyu County,19,1,2017,76.51,560.84,FALSE,FALSE,0.834,Highland,village,FALSE,FALSE,FALSE
+502,Nadaspan,nadaspan,25,Latocail Naharcan,56,Leabania County,22,1,2902,1118,849.72,FALSE,FALSE,9.168,Generic,town,FALSE,TRUE,FALSE
+503,Prebavorum,prebavorum,31,Duchy of Witfordburia,0,,25,1,5168,219.96,1506.36,FALSE,FALSE,4.611,Generic,town,FALSE,FALSE,FALSE
+504,Platum,platum,23,Xilhuan Altepetl,0,,0,1,1420,993.75,407.11,FALSE,FALSE,1.029,Generic,village,TRUE,FALSE,FALSE
+505,Nigdutero,nigdutero,33,Duchy of Temalimco,0,,25,1,4972,358.36,1472.4,FALSE,FALSE,5.841,Generic,town,TRUE,FALSE,FALSE
+506,Colivium,colivium,23,Xilhuan Altepetl,46,Confleba County,0,1,2326,1142.86,638.81,FALSE,FALSE,1.452,Generic,village,FALSE,FALSE,FALSE
+507,Solchasina,solchasina,22,Sultanate of Kanchasuyu,14,Sumior Landgrave,19,1,1782,332.38,483.21,FALSE,FALSE,1.649,Hunting,village,FALSE,FALSE,FALSE
+508,Lesontia,lesontia,34,Duchy of Petlancia,0,,26,1,5026,1498.24,1457.65,FALSE,TRUE,7.914,Naval,town,FALSE,FALSE,FALSE
+509,Pullum,pullum,35,Duchy of Quenolistes,0,,24,1,3787,740.17,1186.86,FALSE,FALSE,2.581,Nomadic,town,FALSE,FALSE,FALSE
+510,Matrix,matrix,31,Duchy of Witfordburia,0,,19,1,4285,122.5,1297.6,FALSE,FALSE,0.285,Nomadic,caravanserai,FALSE,FALSE,FALSE
+511,Camupicodu,camupicodu,31,Duchy of Witfordburia,98,Sirnorum County,21,1,3669,89.4,1171.6,FALSE,FALSE,10.729,Lake,city,TRUE,FALSE,FALSE
+512,Ciarinl,ciarinl,28,Emirate of Riagan,86,Rorinmia County,20,1,27,590.31,4.63,FALSE,FALSE,0.835,Highland,village,FALSE,FALSE,FALSE
+513,Hiepachaorkasi,hiepachaorkasi,22,Sultanate of Kanchasuyu,14,Sumior Landgrave,19,1,1683,337.76,471.88,FALSE,FALSE,2.584,Lake,town,TRUE,FALSE,FALSE
+514,Rodanmayu,rodanmayu,22,Sultanate of Kanchasuyu,16,Melia Margrave,20,1,307,307.67,117.12,FALSE,FALSE,9.59,River,town,FALSE,TRUE,FALSE
+515,Noporum,noporum,36,Duchy of Eleral,0,,19,1,4205,598.69,1272.63,FALSE,FALSE,11.425,Generic,city,TRUE,FALSE,FALSE
+516,Luricia,luricia,33,Duchy of Temalimco,0,,25,1,4882,400.94,1453.9,FALSE,FALSE,0.934,Generic,village,FALSE,FALSE,FALSE
+517,Fomanum,fomanum,23,Xilhuan Altepetl,48,Hueca County,0,1,1988,1222.94,541.83,FALSE,FALSE,2.607,River,town,FALSE,FALSE,FALSE
+518,Flovia,flovia,25,Latocail Naharcan,58,Sarahacan Earldom,24,1,3196,853.22,993.47,FALSE,FALSE,0.674,River,village,FALSE,FALSE,FALSE
+519,Celcoco,celcoco,23,Xilhuan Altepetl,42,Auiatlan County,16,1,973,1309.31,298.69,FALSE,FALSE,0.883,Generic,village,FALSE,FALSE,FALSE
+520,Luregixus,luregixus,23,Xilhuan Altepetl,48,Hueca County,0,1,1992,1307.76,533.63,FALSE,FALSE,0.716,Generic,village,FALSE,FALSE,FALSE
+521,Contia,contia,23,Xilhuan Altepetl,49,Texcoaxaxaco County,0,1,2858,1294.02,841.73,FALSE,FALSE,1.504,Generic,village,FALSE,FALSE,FALSE
+522,Runium,runium,33,Duchy of Temalimco,0,,25,1,4977,466.34,1458.55,FALSE,FALSE,10.719,Generic,city,FALSE,FALSE,FALSE
+523,Ponfigliari,ponfigliari,27,Marches of Petrello,69,Fivania Captaincy,23,1,3576,1494.36,1117.5,FALSE,FALSE,0.937,Generic,village,FALSE,FALSE,FALSE
+524,Tungrum,tungrum,31,Duchy of Witfordburia,0,,19,1,4786,110.89,1428.24,FALSE,FALSE,12.944,River,city,TRUE,FALSE,FALSE
+525,Plagentesca,plagentesca,33,Duchy of Temalimco,0,,25,1,5187,649.38,1501.59,FALSE,FALSE,2.99,Generic,town,TRUE,FALSE,FALSE
+526,Acciano,acciano,27,Marches of Petrello,71,Geria Earldom,23,1,3657,1652.76,1122.5,FALSE,TRUE,1.335,Naval,village,FALSE,FALSE,FALSE
+527,Fionsuyu,fionsuyu,22,Sultanate of Kanchasuyu,107,Fionsuyu Territory,20,1,1012,432.47,329.05,FALSE,TRUE,0.815,Naval,village,FALSE,FALSE,FALSE
+528,Iuratercusi,iuratercusi,27,Marches of Petrello,68,Tonazahualco County,0,1,3383,1314.62,1049.85,FALSE,FALSE,11.423,Generic,city,FALSE,FALSE,FALSE
+529,Aumetorico,aumetorico,36,Duchy of Eleral,0,,26,1,4586,719.26,1365.96,FALSE,FALSE,1.802,River,village,FALSE,FALSE,FALSE
+530,Nadarcancan,nadarcancan,25,Latocail Naharcan,55,Caidistlan County,22,1,3202,991,984.49,FALSE,FALSE,3.101,River,town,FALSE,FALSE,FALSE
+531,Verurivium,verurivium,25,Latocail Naharcan,60,Breharcan County,24,1,3423,992.95,1068.26,FALSE,FALSE,0.458,River,village,FALSE,FALSE,FALSE
+532,Apan,apan,25,Latocail Naharcan,56,Leabania County,22,1,2955,1134.27,889.24,FALSE,FALSE,0.252,Highland,fort,FALSE,TRUE,FALSE
+533,Covetelia,covetelia,31,Duchy of Witfordburia,0,,19,1,4478,215.5,1326.74,FALSE,FALSE,1.11,Generic,village,FALSE,FALSE,FALSE
+534,Tierka,tierka,22,Sultanate of Kanchasuyu,106,Orcan Territory,20,1,16,357.95,8.48,FALSE,FALSE,3.401,Generic,town,FALSE,FALSE,FALSE
+535,Aeraqubaqui,aeraqubaqui,31,Duchy of Witfordburia,0,,21,1,3949,143.86,1224.6,FALSE,FALSE,4.7,Generic,town,FALSE,FALSE,FALSE
+536,Tungripila,tungripila,23,Xilhuan Altepetl,48,Hueca County,0,1,1989,1250.15,541.08,FALSE,FALSE,3.079,River,town,FALSE,FALSE,FALSE
+537,Sollaqsu,sollaqsu,22,Sultanate of Kanchasuyu,23,Apaor County,19,1,1777,285.66,492.64,FALSE,FALSE,7.018,Hunting,town,FALSE,FALSE,FALSE
+538,Eirancodan,eirancodan,28,Emirate of Riagan,85,Melaqta County,20,1,935,574.86,295.81,FALSE,FALSE,1.022,Hunting,village,TRUE,FALSE,FALSE
+539,Beretlan,beretlan,23,Xilhuan Altepetl,42,Auiatlan County,16,1,1344,1318.7,371.16,FALSE,FALSE,1.528,Generic,village,FALSE,FALSE,FALSE
+540,Castrix,castrix,25,Latocail Naharcan,62,Florum Earldom,21,1,3139,723.04,961.79,FALSE,FALSE,0.751,Hunting,trading_post,FALSE,FALSE,FALSE
+541,Srathtlan,srathtlan,25,Latocail Naharcan,60,Breharcan County,22,1,3490,1054.39,1088.04,FALSE,FALSE,4.241,River,town,FALSE,FALSE,FALSE
+542,Vilorum,vilorum,34,Duchy of Petlancia,0,,26,1,5436,1799.34,1548.13,FALSE,FALSE,4.474,River,town,FALSE,FALSE,FALSE
+543,Conopocen,conopocen,23,Xilhuan Altepetl,31,Temoac County,0,1,2855,1222.89,828.78,FALSE,FALSE,0.947,Generic,fort,FALSE,TRUE,FALSE
+544,Murnovergo,murnovergo,23,Xilhuan Altepetl,0,,0,1,479,1146.95,168.59,FALSE,FALSE,1.331,River,village,FALSE,FALSE,FALSE
+545,Cornorum,cornorum,22,Sultanate of Kanchasuyu,22,Ruyuyuionia County,0,1,995,145.91,321.58,FALSE,FALSE,1.156,River,village,FALSE,FALSE,FALSE
+546,Duvanum,duvanum,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,0,1,585,133.87,210.96,FALSE,FALSE,2.629,River,town,FALSE,FALSE,FALSE
+547,Taureme,taureme,23,Xilhuan Altepetl,47,Buratesa County,0,1,1239,1079.17,359.34,FALSE,FALSE,6.077,Generic,town,FALSE,FALSE,FALSE
+548,Regilorum,regilorum,23,Xilhuan Altepetl,46,Confleba County,0,1,2129,1203.99,574.46,FALSE,FALSE,0.569,Generic,village,FALSE,FALSE,FALSE
+549,Contia,contia,23,Xilhuan Altepetl,32,Oveliava Earldom,0,1,2540,1402.81,697.46,FALSE,FALSE,0.83,Generic,village,FALSE,FALSE,FALSE
+550,Eiranmarka,eiranmarka,28,Emirate of Riagan,124,Orin Territory,20,1,142,746.75,56.87,FALSE,FALSE,1.335,Highland,village,FALSE,TRUE,FALSE
+551,Morrabi,morrabi,34,Duchy of Petlancia,0,,23,1,4531,1350.49,1335.2,FALSE,FALSE,1.344,Nomadic,village,FALSE,FALSE,FALSE
+552,Pamatro,pamatro,27,Marches of Petrello,65,Colanolonia Earldom,23,1,3332,1495,1034.56,FALSE,FALSE,0.986,Generic,village,TRUE,FALSE,FALSE
+553,Conimbrica,conimbrica,28,Emirate of Riagan,84,Kievan County,20,1,382,589.08,133.9,FALSE,FALSE,0.246,Nomadic,village,FALSE,FALSE,FALSE
+554,Nialmayu,nialmayu,29,Beylik of Lugrancanta,95,Nialmayu Earldom,20,1,1208,568.2,381.16,FALSE,TRUE,11.987,Naval,city,TRUE,FALSE,FALSE
+555,Partus,partus,31,Duchy of Witfordburia,100,Cuapantema County,0,1,3751,29.48,1173.04,FALSE,TRUE,10.756,Naval,city,FALSE,FALSE,FALSE
+556,Murvionium,murvionium,31,Duchy of Witfordburia,0,,19,1,3963,364.82,1225.45,FALSE,FALSE,1.139,Generic,village,TRUE,FALSE,FALSE
+557,Ornanlpansu,ornanlpansu,22,Sultanate of Kanchasuyu,4,Ornanlpansu County,20,1,1191,370.2,362.4,FALSE,FALSE,16.606,Lake,city,TRUE,TRUE,FALSE
+558,Poliebugus,poliebugus,31,Duchy of Witfordburia,0,,19,1,4638,222.51,1383.68,FALSE,FALSE,8.66,Generic,town,FALSE,FALSE,FALSE
+559,Campi,campi,27,Marches of Petrello,119,Campi Territory,23,1,3073,1331.25,927.5,FALSE,FALSE,1.209,Highland,village,FALSE,FALSE,FALSE
+560,Chaskasurepach,chaskasurepach,22,Sultanate of Kanchasuyu,24,Kancha County,19,1,2018,99.72,546.2,FALSE,FALSE,2.073,Highland,town,FALSE,FALSE,FALSE
+561,Wapapunturka,wapapunturka,22,Sultanate of Kanchasuyu,21,Marsu County,19,1,1769,181.48,495.38,FALSE,FALSE,0.792,Lake,village,FALSE,FALSE,FALSE
+562,Antodunum,antodunum,23,Xilhuan Altepetl,45,Alcocateco County,0,1,2052,1096.48,559.37,FALSE,FALSE,7.732,River,town,FALSE,FALSE,FALSE
+563,Scaiecricia,scaiecricia,0,Neutrals,0,,0,1,5358,103.85,1553.89,FALSE,FALSE,2.24,Generic,town,FALSE,FALSE,FALSE
+564,Riagpunkanch,riagpunkanch,28,Emirate of Riagan,87,Brenpunia County,20,1,1301,490.64,389.28,FALSE,FALSE,2.269,Hunting,town,FALSE,FALSE,FALSE
+565,Necarastlan,necarastlan,25,Latocail Naharcan,61,Necarastlan Earldom,22,1,2600,1083.33,718.6,FALSE,FALSE,4.373,Generic,town,FALSE,FALSE,FALSE
+566,Melpunkanch,melpunkanch,28,Emirate of Riagan,87,Brenpunia County,20,1,932,503.38,295.82,FALSE,FALSE,4.169,Generic,town,TRUE,FALSE,FALSE
+567,Coriatanum,coriatanum,23,Xilhuan Altepetl,52,Iztaco Earldom,0,1,2959,1218.71,880.34,FALSE,FALSE,1.999,Generic,village,FALSE,TRUE,FALSE
+568,Saquri,saquri,36,Duchy of Eleral,0,,26,1,4502,732.93,1340.42,FALSE,FALSE,2.008,Generic,town,FALSE,FALSE,FALSE
+569,Lugripila,lugripila,0,Neutrals,0,,0,1,4172,46.47,1272.63,FALSE,FALSE,1.006,Nomadic,village,FALSE,FALSE,FALSE
+570,Aetumpepi,aetumpepi,33,Duchy of Temalimco,0,,25,1,4803,492.17,1419.63,FALSE,FALSE,3.679,Generic,town,FALSE,FALSE,FALSE
+571,Fionkancha,fionkancha,22,Sultanate of Kanchasuyu,15,Fionkancha County,20,1,112,98.18,47.98,FALSE,FALSE,7.882,Generic,town,FALSE,FALSE,FALSE
+572,Brecteaig,brecteaig,23,Xilhuan Altepetl,113,Brecaoirt Region,22,1,3022,1383.95,897.44,FALSE,FALSE,4.742,Highland,town,FALSE,TRUE,FALSE
+573,Balacanver,balacanver,23,Xilhuan Altepetl,43,Preme Earldom,22,1,2722,1181.78,780.71,FALSE,FALSE,1.286,Generic,village,FALSE,FALSE,FALSE
+574,Naharpan,naharpan,25,Latocail Naharcan,58,Sarahacan Earldom,22,1,2896,993.59,848.97,FALSE,FALSE,0.628,River,village,FALSE,FALSE,FALSE
+575,Ferrkokakan,ferrkokakan,26,Raamkoda,118,Vaskmurd Istekoda,17,1,797,1145.81,252.13,FALSE,FALSE,1.277,River,village,FALSE,TRUE,FALSE
+576,Rapisiori,rapisiori,28,Emirate of Riagan,84,Kievan County,20,1,384,645.64,142.2,FALSE,FALSE,0.377,Nomadic,village,FALSE,FALSE,FALSE
+577,Ventium,ventium,31,Duchy of Witfordburia,0,,19,1,4562,215.89,1353.43,FALSE,FALSE,4.754,Generic,town,FALSE,FALSE,FALSE
+578,Aqurodula,aqurodula,31,Duchy of Witfordburia,0,,19,1,4064,205.84,1241.96,FALSE,FALSE,7.026,Generic,town,FALSE,FALSE,FALSE
+579,Nodutum,nodutum,34,Duchy of Petlancia,0,,26,1,5131,1559.56,1468.31,FALSE,TRUE,10.363,Naval,city,FALSE,FALSE,FALSE
+580,Gemiba,gemiba,34,Duchy of Petlancia,0,,26,1,5030,1539.42,1461.58,FALSE,FALSE,8.284,Hunting,town,FALSE,FALSE,FALSE
+581,Cebugusa,cebugusa,33,Duchy of Temalimco,0,,25,1,5176,398.2,1514.63,FALSE,FALSE,1.005,Generic,village,FALSE,TRUE,FALSE
+582,Ridupiponde,ridupiponde,33,Duchy of Temalimco,0,,25,1,5290,708.09,1524.27,FALSE,FALSE,15.849,Generic,city,TRUE,TRUE,FALSE
+583,Vinium,vinium,23,Xilhuan Altepetl,28,Nototitlanco County,0,1,2397,1383.3,669.65,FALSE,FALSE,12.743,Generic,city,TRUE,FALSE,FALSE
+584,Rorinconan,rorinconan,28,Emirate of Riagan,84,Kievan County,20,1,134,581.24,44.59,FALSE,FALSE,1.448,Generic,village,FALSE,FALSE,FALSE
+585,Chaska,chaska,22,Sultanate of Kanchasuyu,23,Apaor County,19,1,1776,269.74,488.84,FALSE,FALSE,5.174,Generic,town,FALSE,FALSE,FALSE
+586,Pulbium,pulbium,34,Duchy of Petlancia,0,,26,1,4540,1529.33,1350.98,FALSE,TRUE,4.67,Naval,town,FALSE,FALSE,FALSE
+587,Sirdum,sirdum,33,Duchy of Temalimco,0,,25,1,5172,314.11,1502.85,FALSE,FALSE,2.971,Generic,town,FALSE,FALSE,FALSE
+588,Seracorum,seracorum,23,Xilhuan Altepetl,46,Confleba County,0,1,2327,1171.39,633.04,FALSE,FALSE,3.936,Generic,town,FALSE,FALSE,FALSE
+589,Confleba,confleba,23,Xilhuan Altepetl,46,Confleba County,0,1,2389,1211.15,655.49,FALSE,FALSE,8.082,Generic,town,TRUE,FALSE,FALSE
+590,Desium,desium,23,Xilhuan Altepetl,46,Confleba County,0,1,2193,1168.6,605.77,FALSE,FALSE,3.242,Hunting,town,FALSE,FALSE,FALSE
+591,Boboviavum,boboviavum,36,Duchy of Eleral,0,,26,1,4499,659.13,1345.57,FALSE,FALSE,0.322,Nomadic,village,TRUE,FALSE,FALSE
+592,Bren,bren,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,20,1,238,190.48,102.5,FALSE,FALSE,0.855,Nomadic,village,FALSE,FALSE,FALSE
+593,Borgovioma,borgovioma,33,Duchy of Temalimco,0,,19,1,4578,560.19,1360.93,FALSE,FALSE,1.921,Nomadic,village,FALSE,FALSE,FALSE
+594,Erantium,erantium,31,Duchy of Witfordburia,0,,19,1,4069,292.1,1246.12,FALSE,FALSE,8.437,Generic,town,FALSE,FALSE,FALSE
+595,Contarilebu,contarilebu,31,Duchy of Witfordburia,0,,19,1,4480,251.82,1344.24,FALSE,FALSE,1.531,Generic,village,FALSE,FALSE,FALSE
+596,Ponerentiver,ponerentiver,34,Duchy of Petlancia,0,,23,1,4448,1526.58,1310.65,FALSE,FALSE,1.413,Generic,village,FALSE,FALSE,FALSE
+597,Fonapigoria,fonapigoria,33,Duchy of Temalimco,0,,26,1,4819,836.34,1432.09,FALSE,FALSE,3.924,Generic,town,FALSE,FALSE,FALSE
+598,Markayukuna,markayukuna,22,Sultanate of Kanchasuyu,109,Sasumiyuqtia Tribe,19,1,2227,136.11,612.88,FALSE,FALSE,1.971,Highland,village,FALSE,FALSE,FALSE
+599,Orkancha,orkancha,22,Sultanate of Kanchasuyu,7,Fionlaqtia County,20,1,3,84.35,8.86,FALSE,FALSE,0.951,Generic,fort,FALSE,TRUE,FALSE
+600,Dianova,dianova,34,Duchy of Petlancia,0,,26,1,5401,1039.85,1545.35,FALSE,FALSE,0.999,Generic,village,FALSE,FALSE,FALSE
+601,Parviorum,parviorum,31,Duchy of Witfordburia,0,,19,1,4964,189.52,1475.36,FALSE,FALSE,10.422,River,city,TRUE,FALSE,FALSE
+602,Killatheonku,killatheonku,22,Sultanate of Kanchasuyu,108,Killatheonku Territory,19,1,2014,10.36,548.87,FALSE,FALSE,6.676,Generic,town,FALSE,FALSE,FALSE
+603,Hieremaviumme,hieremaviumme,32,Nekosdamkoda,127,Salagpan Land,17,1,3112,1188.39,944.8,FALSE,FALSE,1.036,Highland,village,FALSE,FALSE,FALSE
+604,Hernorum,hernorum,23,Xilhuan Altepetl,34,Ariateranno Earldom,0,1,2395,1327.32,670.06,FALSE,FALSE,0.409,Hunting,village,FALSE,FALSE,FALSE
+605,Brigurum,brigurum,25,Latocail Naharcan,59,Cesontiana County,21,1,3295,696.6,1032.45,FALSE,FALSE,3.375,Hunting,town,FALSE,FALSE,FALSE
+606,Lesala,lesala,22,Sultanate of Kanchasuyu,12,Beranlaqia County,21,1,1292,403.18,379.82,FALSE,FALSE,0.863,Generic,village,FALSE,FALSE,FALSE
+607,Yampan,yampan,23,Xilhuan Altepetl,48,Hueca County,16,1,1993,1344.17,523.99,FALSE,FALSE,0.464,Generic,village,FALSE,FALSE,FALSE
+608,Breaigpan,breaigpan,23,Xilhuan Altepetl,37,Maia County,22,1,2188,1062.82,595.33,FALSE,FALSE,4.45,Generic,town,FALSE,FALSE,FALSE
+609,Marnorum,marnorum,31,Duchy of Witfordburia,0,,19,1,4557,136.72,1368.3,FALSE,TRUE,2.776,Naval,town,TRUE,FALSE,FALSE
+610,Agdusium,agdusium,28,Emirate of Riagan,84,Kievan County,20,1,194,553.47,72.82,FALSE,FALSE,1.811,Generic,village,FALSE,TRUE,FALSE
+611,Relicara,relicara,23,Xilhuan Altepetl,0,,0,1,1810,980.2,485.02,FALSE,FALSE,0.594,Highland,village,FALSE,FALSE,FALSE
+612,Flalequm,flalequm,31,Duchy of Witfordburia,0,,25,1,5361,166.72,1551.92,FALSE,FALSE,1.392,River,village,FALSE,FALSE,FALSE
+613,Piecorraro,piecorraro,27,Marches of Petrello,76,Vallanolaqui Earldom,23,1,4030,1584.31,1227.29,FALSE,FALSE,1.303,Generic,village,FALSE,FALSE,FALSE
+614,Vicrem,vicrem,34,Duchy of Petlancia,0,,26,1,5306,1059.63,1532.32,FALSE,FALSE,1.158,River,village,FALSE,FALSE,FALSE
+615,Bevanma,bevanma,28,Emirate of Riagan,82,Dorinsia County,20,1,524,444.44,190.03,FALSE,FALSE,1.386,Generic,village,FALSE,FALSE,FALSE
+616,Dunium,dunium,32,Nekosdamkoda,0,,26,1,4122,1289.16,1258.38,FALSE,FALSE,1.107,Generic,village,FALSE,FALSE,FALSE
+617,Fioncorin,fioncorin,22,Sultanate of Kanchasuyu,18,Fioncorin County,20,1,372,381.2,132.59,FALSE,FALSE,6.786,River,town,FALSE,FALSE,FALSE
+618,Seqanaqatlan,seqanaqatlan,23,Xilhuan Altepetl,27,Archco County,16,1,1536,1317.46,414.43,FALSE,FALSE,1.855,Generic,village,FALSE,FALSE,FALSE
+619,Letinis,letinis,23,Xilhuan Altepetl,46,Confleba County,0,1,2128,1179.13,582.42,FALSE,FALSE,1.809,Generic,village,FALSE,FALSE,FALSE
+620,Lodulagume,lodulagume,27,Marches of Petrello,73,Chiapan Earldom,0,1,3266,1276.14,1018.08,FALSE,FALSE,7.268,Highland,town,FALSE,FALSE,FALSE
+621,Aorinkancha,aorinkancha,28,Emirate of Riagan,81,Sonanmayu County,20,1,1104,436.78,335.77,FALSE,TRUE,3.535,Naval,town,FALSE,FALSE,FALSE
+622,Aurolieru,aurolieru,28,Emirate of Riagan,92,Melaqtia County,20,1,461,742.01,160.25,FALSE,FALSE,4.899,Hunting,town,FALSE,FALSE,FALSE
+623,Roccospolano,roccospolano,27,Marches of Petrello,76,Vallanolaqui Earldom,23,1,4154,1710.29,1258.58,FALSE,FALSE,1.468,River,village,FALSE,FALSE,FALSE
+624,Hersamium,hersamium,23,Xilhuan Altepetl,48,Hueca County,0,1,2198,1276.54,605.83,FALSE,FALSE,2.925,Generic,town,FALSE,FALSE,FALSE
+625,Collica,collica,27,Marches of Petrello,121,Sarbakorlalia Territory,23,1,3838,1740.85,1193.77,FALSE,FALSE,2.237,Generic,town,TRUE,FALSE,FALSE
+626,Cantoduca,cantoduca,33,Duchy of Temalimco,0,,25,1,5092,702.64,1487.8,FALSE,FALSE,1.509,Nomadic,village,FALSE,FALSE,FALSE
+627,Bapunum,bapunum,34,Duchy of Petlancia,0,,26,1,5115,1202.83,1491.59,FALSE,FALSE,0.391,Nomadic,fort,FALSE,TRUE,FALSE
+628,Riluromate,riluromate,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,0,1,433,142.58,163.69,FALSE,FALSE,1.034,Nomadic,village,TRUE,FALSE,FALSE
+629,Mearyanteca,mearyanteca,25,Latocail Naharcan,57,Bretarpan County,22,1,2802,1008.2,809.55,FALSE,FALSE,1.252,Nomadic,village,TRUE,FALSE,FALSE
+630,Ceruresa,ceruresa,31,Duchy of Witfordburia,0,,19,1,3961,322.02,1221.05,FALSE,FALSE,7.345,Generic,town,FALSE,FALSE,FALSE
+631,Margenda,margenda,23,Xilhuan Altepetl,47,Buratesa County,0,1,1899,1039.43,504.61,FALSE,FALSE,6.305,Generic,town,TRUE,FALSE,FALSE
+632,Fontatasalba,fontatasalba,27,Marches of Petrello,71,Geria Earldom,23,1,3518,1630.5,1096,FALSE,FALSE,9.313,Highland,town,FALSE,FALSE,FALSE
+633,Dubris,dubris,33,Duchy of Temalimco,0,,25,1,5374,444.99,1553.47,FALSE,FALSE,5.343,Generic,town,FALSE,FALSE,FALSE
+634,Lintiodura,lintiodura,23,Xilhuan Altepetl,0,,0,1,158,1096.27,54.96,FALSE,FALSE,0.97,River,village,TRUE,FALSE,FALSE
+635,Tierkayu,tierkayu,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,20,1,515,243.78,177.71,FALSE,FALSE,1.922,River,village,FALSE,FALSE,FALSE
+636,Antium,antium,23,Xilhuan Altepetl,47,Buratesa County,0,1,1812,1037.59,485.11,FALSE,FALSE,4.157,Generic,town,FALSE,FALSE,FALSE
+637,Ponstium,ponstium,31,Duchy of Witfordburia,0,,19,1,4874,220.1,1445.36,FALSE,FALSE,8.67,Generic,town,TRUE,FALSE,FALSE
+638,Sasuna,sasuna,22,Sultanate of Kanchasuyu,10,Saium County,19,1,1277,119.18,380.74,FALSE,FALSE,1.629,Lake,village,FALSE,FALSE,FALSE
+639,Brecaharcan,brecaharcan,25,Latocail Naharcan,55,Caidistlan County,22,1,3057,998.64,924.16,FALSE,FALSE,3.858,River,town,FALSE,FALSE,FALSE
+640,Yallaqta,yallaqta,22,Sultanate of Kanchasuyu,3,Maria Barony,19,1,2492,108.31,713.69,FALSE,FALSE,4.222,Generic,town,FALSE,FALSE,FALSE
+641,Flaleborum,flaleborum,34,Duchy of Petlancia,0,,26,1,5124,1401.86,1490.05,FALSE,FALSE,2.986,Generic,town,FALSE,FALSE,FALSE
+642,Celpunma,celpunma,22,Sultanate of Kanchasuyu,25,Lorkaia County,20,1,61,203.15,32.4,FALSE,FALSE,0.281,Nomadic,village,FALSE,FALSE,FALSE
+643,Marcuri,marcuri,35,Duchy of Quenolistes,0,,24,1,3414,798.91,1068.14,FALSE,FALSE,0.675,Nomadic,village,FALSE,FALSE,FALSE
+644,Turidunium,turidunium,26,Raamkoda,118,Vaskmurd Istekoda,0,1,879,1103.38,270.81,FALSE,FALSE,2.253,Generic,town,FALSE,FALSE,FALSE
+645,Polleino,polleino,22,Sultanate of Kanchasuyu,20,Binovium County,21,1,1792,454.06,488.33,FALSE,FALSE,3.215,Hunting,town,FALSE,FALSE,FALSE
+646,Aesondanida,aesondanida,31,Duchy of Witfordburia,0,,25,1,4797,358.52,1424.77,FALSE,FALSE,3.282,Generic,town,FALSE,FALSE,FALSE
+647,Pecaralag,pecaralag,32,Nekosdamkoda,127,Salagpan Land,22,1,3113,1214.88,950.37,FALSE,FALSE,0.984,Highland,village,FALSE,FALSE,FALSE
+648,Naistelbium,naistelbium,29,Beylik of Lugrancanta,93,Florum County,21,1,1125,743.25,346.38,FALSE,TRUE,9.72,Naval,town,FALSE,FALSE,FALSE
+649,Sinoria,sinoria,34,Duchy of Petlancia,0,,26,1,5227,1510.02,1505.33,FALSE,FALSE,3.974,Generic,town,FALSE,FALSE,FALSE
+650,Killallan,killallan,22,Sultanate of Kanchasuyu,19,Ausuyumi County,19,1,2688,5.37,773.34,FALSE,FALSE,0.727,Highland,village,FALSE,FALSE,FALSE
+651,Yara,yara,29,Beylik of Lugrancanta,126,Tralinia Territory,17,1,1321,819.88,379.37,FALSE,FALSE,1.215,Generic,village,FALSE,FALSE,FALSE
+652,Setalistuba,setalistuba,31,Duchy of Witfordburia,0,,19,1,4635,170.02,1379.91,FALSE,FALSE,5.659,River,town,FALSE,FALSE,FALSE
+653,Pecan,pecan,23,Xilhuan Altepetl,39,Madaspan County,22,1,2910,1299.51,856.07,FALSE,FALSE,3.497,Generic,town,FALSE,FALSE,FALSE
+654,Papurvia,papurvia,32,Nekosdamkoda,0,,26,1,4009,1292.33,1221.32,FALSE,FALSE,1.778,Generic,village,FALSE,FALSE,FALSE
+655,Corsaquencu,corsaquencu,36,Duchy of Eleral,0,,26,1,4737,754.88,1397.87,FALSE,FALSE,1.416,Nomadic,village,TRUE,FALSE,FALSE
+656,Armiumbia,armiumbia,0,Neutrals,0,,0,1,4051,17.2,1242.77,FALSE,FALSE,1.355,River,village,FALSE,FALSE,FALSE
+657,Ateba,ateba,34,Duchy of Petlancia,0,,0,1,5421,1468.22,1548.66,FALSE,FALSE,6.044,Generic,town,FALSE,FALSE,FALSE
+658,Punkuyuwapacha,punkuyuwapacha,22,Sultanate of Kanchasuyu,19,Ausuyumi County,19,1,2567,45.74,723.51,FALSE,FALSE,0.926,Generic,village,FALSE,FALSE,FALSE
+659,Chaska,chaska,22,Sultanate of Kanchasuyu,3,Maria Barony,19,1,2352,23.22,661.42,FALSE,FALSE,2.049,Highland,town,FALSE,FALSE,FALSE
+660,Llaq,llaq,22,Sultanate of Kanchasuyu,9,Qochruyu County,19,1,2162,119.17,607.12,FALSE,FALSE,3.613,Highland,town,FALSE,FALSE,FALSE
+661,Victum,victum,27,Marches of Petrello,65,Colanolonia Earldom,0,1,3333,1495.2,1043.69,FALSE,TRUE,3.988,Naval,town,FALSE,TRUE,FALSE
+662,Resoncum,resoncum,33,Duchy of Temalimco,0,,25,1,5192,749.17,1514.36,FALSE,FALSE,2.093,Generic,town,FALSE,FALSE,FALSE
+663,Solqalion,solqalion,23,Xilhuan Altepetl,41,Wesvariontia County,16,1,1734,1339.61,461.49,FALSE,FALSE,0.529,Generic,village,FALSE,FALSE,FALSE
+664,Killaqtasipun,killaqtasipun,22,Sultanate of Kanchasuyu,9,Qochruyu County,19,1,2158,27.01,591.33,FALSE,FALSE,0.971,Generic,fort,FALSE,TRUE,FALSE
+665,Florum,florum,25,Latocail Naharcan,62,Florum Earldom,21,1,3090,699.63,942.28,FALSE,FALSE,4.675,Generic,town,FALSE,TRUE,FALSE
+666,Betisiolodu,betisiolodu,31,Duchy of Witfordburia,98,Sirnorum County,21,1,3598,83.1,1156.4,FALSE,FALSE,3.617,Hunting,town,FALSE,FALSE,FALSE
+667,Ruyuku,ruyuku,22,Sultanate of Kanchasuyu,14,Sumior Landgrave,19,1,1686,351.89,460.5,FALSE,FALSE,2.867,Lake,town,FALSE,FALSE,FALSE
+668,Adnicrinium,adnicrinium,22,Sultanate of Kanchasuyu,22,Ruyuyuionia County,19,1,1092,229.47,329.57,FALSE,FALSE,3.868,Generic,town,FALSE,FALSE,FALSE
+669,Xebavaltetarza,xebavaltetarza,23,Xilhuan Altepetl,42,Auiatlan County,16,1,1246,1236.36,366.38,FALSE,FALSE,3.874,Generic,town,FALSE,TRUE,FALSE
+670,Castelca,castelca,27,Marches of Petrello,77,Ponteleo Earldom,23,1,3823,1479.42,1179.93,FALSE,FALSE,3.226,Hunting,town,TRUE,FALSE,FALSE
+671,Fionkancha,fionkancha,28,Emirate of Riagan,85,Melaqta County,20,1,852,567.4,287.8,FALSE,FALSE,0.669,Hunting,trading_post,FALSE,FALSE,FALSE
+672,Brecan,brecan,23,Xilhuan Altepetl,113,Brecaoirt Region,22,1,3023,1409.25,889.37,FALSE,TRUE,1.301,Naval,village,FALSE,FALSE,FALSE
+673,Launium,launium,22,Sultanate of Kanchasuyu,22,Ruyuyuionia County,0,1,663,143.7,225.72,FALSE,FALSE,0.41,River,village,FALSE,FALSE,FALSE
+674,Aurilinn,aurilinn,26,Raamkoda,118,Vaskmurd Istekoda,17,1,794,1082.12,242.86,FALSE,FALSE,0.23,Highland,village,FALSE,FALSE,FALSE
+675,Brecaoir,brecaoir,32,Nekosdamkoda,102,Magnakan County,22,1,3376,1167.7,1060.9,FALSE,FALSE,0.249,Nomadic,village,FALSE,FALSE,FALSE
+676,Dulalis,dulalis,28,Emirate of Riagan,90,Nialaqtia County,20,1,452,560.68,155.37,FALSE,FALSE,0.299,Highland,village,TRUE,FALSE,FALSE
+677,Caharpan,caharpan,29,Beylik of Lugrancanta,30,Glen County,22,1,2120,1010.41,582.72,FALSE,FALSE,1.796,Nomadic,village,FALSE,FALSE,FALSE
+678,Vitologon,vitologon,30,Herviorum City-state,0,,19,1,3881,669.24,1209.3,FALSE,FALSE,0.217,Nomadic,village,FALSE,FALSE,FALSE
+679,Victrix,victrix,34,Duchy of Petlancia,0,,26,1,5031,1553.98,1465.84,FALSE,TRUE,16.697,Naval,city,FALSE,FALSE,FALSE
+680,Wakuyuqmarka,wakuyuqmarka,22,Sultanate of Kanchasuyu,6,Borcunumia County,19,1,1487,366.39,417.61,FALSE,FALSE,5.23,Lake,town,FALSE,FALSE,FALSE
+681,Prenemiro,prenemiro,31,Duchy of Witfordburia,0,,19,1,4721,396.94,1397.65,FALSE,FALSE,4.082,Generic,town,FALSE,TRUE,FALSE
+682,Callo,callo,27,Marches of Petrello,68,Tonazahualco County,23,1,3440,1356.56,1067.55,FALSE,FALSE,2.88,Highland,town,FALSE,FALSE,FALSE
+683,Asisumarru,asisumarru,22,Sultanate of Kanchasuyu,17,Asisumarru County,19,1,1956,255.6,545.4,FALSE,FALSE,9.627,Generic,town,FALSE,FALSE,FALSE
+684,Orin,orin,28,Emirate of Riagan,124,Orin Territory,20,1,33,737.7,8.9,FALSE,FALSE,3.72,Generic,town,FALSE,FALSE,FALSE
+685,Norumpeson,norumpeson,28,Emirate of Riagan,125,Veliaguria Land,21,1,1501,515.9,421.2,FALSE,FALSE,2.276,Generic,town,FALSE,FALSE,FALSE
+686,Castiare,castiare,22,Sultanate of Kanchasuyu,20,Binovium County,21,1,1791,442.2,490.7,FALSE,FALSE,0.895,Generic,village,FALSE,FALSE,FALSE
+687,Pregi,pregi,23,Xilhuan Altepetl,45,Alcocateco County,0,1,2127,1155.21,584.93,FALSE,FALSE,0.61,Generic,village,FALSE,FALSE,FALSE
+688,Llaqtapu,llaqtapu,22,Sultanate of Kanchasuyu,9,Qochruyu County,19,1,2090,37.35,575.55,FALSE,FALSE,2.056,Generic,town,FALSE,FALSE,FALSE
+689,Llaqta,llaqta,22,Sultanate of Kanchasuyu,109,Sasumiyuqtia Tribe,19,1,2298,124.7,636.42,FALSE,FALSE,5.639,Highland,town,FALSE,FALSE,FALSE
+690,Rontino,rontino,27,Marches of Petrello,79,Casadupia Earldom,23,1,3326,1379.45,1037.38,FALSE,FALSE,4.412,River,town,FALSE,TRUE,FALSE
+691,Theixus,theixus,30,Herviorum City-state,96,Theixus District,21,1,3469,628.46,1088.57,TRUE,FALSE,2.822,Hunting,capital,FALSE,FALSE,FALSE
+692,Aurion,aurion,23,Xilhuan Altepetl,42,Auiatlan County,16,1,726,1395.84,238.66,FALSE,FALSE,0.516,River,village,FALSE,FALSE,FALSE
+693,Dulodunum,dulodunum,23,Xilhuan Altepetl,34,Ariateranno Earldom,0,1,2333,1300.27,640.12,FALSE,FALSE,2.201,Generic,town,TRUE,FALSE,FALSE
+694,Celnakion,celnakion,23,Xilhuan Altepetl,27,Archco County,16,1,1913,1330.67,511.83,FALSE,FALSE,1.453,Generic,village,FALSE,FALSE,FALSE
+695,Mallaqsu,mallaqsu,22,Sultanate of Kanchasuyu,9,Qochruyu County,19,1,2015,23.41,553.02,FALSE,FALSE,2.017,Hunting,town,FALSE,FALSE,FALSE
+696,Sanisciaca,sanisciaca,29,Beylik of Lugrancanta,93,Florum County,21,1,1031,714.22,309.21,FALSE,FALSE,0.615,Hunting,village,FALSE,FALSE,FALSE
+697,Qochapuyuna,qochapuyuna,22,Sultanate of Kanchasuyu,24,Kancha County,19,1,1857,116.18,515.1,FALSE,FALSE,4.998,Generic,town,FALSE,FALSE,FALSE
+698,Tierkayu,tierkayu,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,20,1,301,179.26,112.43,FALSE,FALSE,0.695,Nomadic,village,FALSE,FALSE,FALSE
+699,Cortus,cortus,28,Emirate of Riagan,90,Nialaqtia County,20,1,453,581.48,155.39,FALSE,FALSE,1.148,Highland,village,FALSE,FALSE,FALSE
+700,Aryanpan,aryanpan,25,Latocail Naharcan,58,Sarahacan Earldom,22,1,3097,858.5,946.2,FALSE,FALSE,1.969,Nomadic,village,FALSE,FALSE,FALSE
+701,Lodue,lodue,33,Duchy of Temalimco,0,,26,1,5392,830.87,1555.62,FALSE,FALSE,0.954,Nomadic,village,FALSE,FALSE,FALSE
+702,Bren,bren,28,Emirate of Riagan,123,Bren Territory,20,1,20,452.65,16.87,FALSE,FALSE,0.257,Nomadic,village,FALSE,FALSE,FALSE
+703,Ronanmarcan,ronanmarcan,22,Sultanate of Kanchasuyu,15,Fionkancha County,20,1,297,95.92,122,FALSE,FALSE,0.701,Nomadic,village,FALSE,FALSE,FALSE
+704,Contum,contum,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,0,1,750,163.23,243.49,FALSE,FALSE,1.544,Nomadic,village,FALSE,TRUE,FALSE
+705,Ventianis,ventianis,36,Duchy of Eleral,0,,0,1,4657,650.09,1375.22,FALSE,FALSE,0.427,Nomadic,fort,FALSE,TRUE,FALSE
+706,Breaidis,breaidis,25,Latocail Naharcan,55,Caidistlan County,22,1,3149,938.77,968.34,FALSE,FALSE,1.038,Nomadic,village,FALSE,FALSE,FALSE
+707,Peharcan,peharcan,25,Latocail Naharcan,55,Caidistlan County,22,1,3305,931.32,1035.16,FALSE,FALSE,1.314,Nomadic,village,TRUE,FALSE,FALSE
+708,Victodunium,victodunium,23,Xilhuan Altepetl,46,Confleba County,0,1,2531,1218.15,704.68,FALSE,FALSE,1.005,Highland,village,FALSE,FALSE,FALSE
+709,Marnum,marnum,31,Duchy of Witfordburia,0,,19,1,4473,153.25,1341.47,FALSE,FALSE,6.912,Generic,town,FALSE,FALSE,FALSE
+710,Pultaurum,pultaurum,23,Xilhuan Altepetl,48,Hueca County,0,1,2201,1333.46,598.99,FALSE,FALSE,1.581,River,village,FALSE,TRUE,FALSE
+711,Boralalas,boralalas,36,Duchy of Eleral,0,,19,1,4193,431.31,1272.76,FALSE,FALSE,3.374,Generic,town,FALSE,FALSE,FALSE
+712,Buratesa,buratesa,23,Xilhuan Altepetl,47,Buratesa County,0,1,1618,1070.23,454.41,FALSE,FALSE,7.757,River,town,FALSE,FALSE,FALSE
+713,Porigunum,porigunum,27,Marches of Petrello,68,Tonazahualco County,0,1,3323,1306.31,1031.73,FALSE,FALSE,1.035,Generic,village,FALSE,FALSE,FALSE
+714,Rausium,rausium,36,Duchy of Eleral,0,,19,1,4306,468.32,1295.62,FALSE,FALSE,9.245,Generic,town,FALSE,FALSE,FALSE
+715,Etocentia,etocentia,33,Duchy of Temalimco,0,,25,1,5171,299.97,1514.6,FALSE,FALSE,2.788,Generic,town,FALSE,FALSE,FALSE
+716,Apumarqurein,apumarqurein,22,Sultanate of Kanchasuyu,2,Laqtia County,19,1,1767,155.4,492.83,FALSE,FALSE,0.884,Highland,village,FALSE,FALSE,FALSE
+717,Rukanchapaqllaq,rukanchapaqllaq,22,Sultanate of Kanchasuyu,17,Asisumarru County,19,1,2028,218.8,568.7,FALSE,FALSE,0.709,River,trading_post,FALSE,FALSE,FALSE
+718,Rakan,rakan,24,City-state of Saheranahvaria,53,Kutvaladosva Governorate,18,1,2706,827.44,779.26,FALSE,FALSE,0.672,Nomadic,city,FALSE,FALSE,FALSE
+719,Ruyu,ruyu,22,Sultanate of Kanchasuyu,21,Marsu County,19,1,1580,249.52,453.3,FALSE,FALSE,0.909,Generic,village,FALSE,FALSE,FALSE
+720,Areascolac,areascolac,25,Latocail Naharcan,60,Breharcan County,22,1,3495,1171.7,1097.98,FALSE,FALSE,3.417,River,town,FALSE,FALSE,FALSE
+721,Peaoirtlan,peaoirtlan,25,Latocail Naharcan,60,Breharcan County,22,1,3715,1126.8,1160.06,FALSE,FALSE,0.306,River,village,FALSE,FALSE,FALSE
+722,Sarauromu,sarauromu,36,Duchy of Eleral,0,,24,1,4226,1060.97,1268.14,FALSE,FALSE,0.296,Nomadic,village,FALSE,FALSE,FALSE
+723,Cannscia,cannscia,0,Neutrals,0,,0,1,4279,9.43,1295.75,FALSE,FALSE,0.244,Generic,village,FALSE,FALSE,FALSE
+724,Agripila,agripila,33,Duchy of Temalimco,0,,0,1,4733,661.69,1411.08,FALSE,FALSE,0.429,Nomadic,village,FALSE,FALSE,FALSE
+725,Bipontia,bipontia,33,Duchy of Temalimco,0,,26,1,5397,938.74,1552.92,FALSE,FALSE,1.343,Nomadic,village,FALSE,FALSE,FALSE
+726,Covialentum,covialentum,31,Duchy of Witfordburia,0,,19,1,4391,286.69,1323.72,FALSE,FALSE,13.936,River,city,FALSE,FALSE,FALSE
+727,Ausenda,ausenda,31,Duchy of Witfordburia,0,,19,1,4390,273.35,1323.76,FALSE,FALSE,1.964,Generic,village,FALSE,FALSE,FALSE
+728,Ciarnanmarka,ciarnanmarka,28,Emirate of Riagan,82,Dorinsia County,20,1,249,416.84,98.2,FALSE,FALSE,0.979,Generic,village,FALSE,FALSE,FALSE
+729,Adfluentia,adfluentia,34,Duchy of Petlancia,0,,26,1,5422,1485.76,1547.34,FALSE,FALSE,7.557,Generic,town,TRUE,FALSE,FALSE
+730,Riag,riag,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,20,1,1005,344.4,310.5,FALSE,FALSE,2.477,Lake,town,FALSE,FALSE,FALSE
+731,Salagpan,salagpan,32,Nekosdamkoda,127,Salagpan Land,22,1,3067,1200.49,931.67,FALSE,FALSE,3.725,Generic,town,TRUE,FALSE,FALSE
+732,Villalium,villalium,33,Duchy of Temalimco,0,,19,1,4399,475.68,1318.55,FALSE,FALSE,1.337,Generic,village,FALSE,FALSE,FALSE
+733,Victorum,victorum,31,Duchy of Witfordburia,0,,25,1,5170,269.26,1504.45,FALSE,FALSE,0.953,Generic,village,FALSE,FALSE,FALSE
+734,Cepigendi,cepigendi,33,Duchy of Temalimco,0,,25,1,5077,375.21,1480,FALSE,FALSE,1.097,Generic,village,FALSE,FALSE,FALSE
+735,Etlan,etlan,23,Xilhuan Altepetl,36,Corathionia Earldom,16,1,2064,1351.74,554.77,FALSE,FALSE,2.231,Hunting,town,FALSE,FALSE,FALSE
+736,Aflacosepar,aflacosepar,27,Marches of Petrello,74,Seglia County,23,1,3218,1336.19,985.95,FALSE,FALSE,0.603,River,trading_post,FALSE,FALSE,FALSE
+737,Solqaqanahqa,solqaqanahqa,23,Xilhuan Altepetl,27,Archco County,16,1,1626,1256.91,443.88,FALSE,FALSE,5.646,Generic,town,FALSE,FALSE,FALSE
+738,Solcha,solcha,22,Sultanate of Kanchasuyu,23,Apaor County,19,1,1775,240.63,481.67,FALSE,FALSE,0.663,Generic,trading_post,FALSE,FALSE,FALSE
+739,Iuliacaria,iuliacaria,23,Xilhuan Altepetl,48,Hueca County,0,1,2132,1268.52,581.9,FALSE,FALSE,2.184,Generic,town,TRUE,FALSE,FALSE
+740,Chryslakium,chryslakium,26,Raamkoda,118,Vaskmurd Istekoda,17,1,549,993.89,175.88,FALSE,FALSE,0.241,Highland,village,TRUE,FALSE,FALSE
+741,Aupigende,aupigende,23,Xilhuan Altepetl,44,Drupiba County,0,1,1903,1120.54,517.74,FALSE,FALSE,1.688,Nomadic,village,FALSE,FALSE,FALSE
+742,Tiercansu,tiercansu,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,20,1,175,147.12,83.86,FALSE,FALSE,1.136,Nomadic,village,FALSE,FALSE,FALSE
+743,Aloviala,aloviala,26,Raamkoda,64,Kalijurik Istekoda,0,1,1520,975.04,417.22,FALSE,FALSE,1.354,Highland,village,FALSE,FALSE,FALSE
+744,Theliavarno,theliavarno,33,Duchy of Temalimco,0,,25,1,5370,356.86,1543.43,FALSE,FALSE,9.14,River,town,FALSE,TRUE,FALSE
+745,Tungrodurum,tungrodurum,33,Duchy of Temalimco,0,,25,1,5184,577.4,1503.41,FALSE,FALSE,9.821,Generic,city,FALSE,FALSE,FALSE
+746,Drupiba,drupiba,23,Xilhuan Altepetl,44,Drupiba County,0,1,1902,1100.76,514.65,FALSE,FALSE,11.098,River,city,FALSE,FALSE,FALSE
+747,Cavendum,cavendum,31,Duchy of Witfordburia,0,,19,1,4482,296.25,1345.33,FALSE,FALSE,1.23,River,village,FALSE,FALSE,FALSE
+748,Vintium,vintium,31,Duchy of Witfordburia,0,,25,1,4877,288.32,1448.91,FALSE,FALSE,3.625,Generic,town,FALSE,FALSE,FALSE
+749,Donanlaqta,donanlaqta,28,Emirate of Riagan,85,Melaqta County,20,1,769,568.49,254.55,FALSE,FALSE,2.166,Lake,town,FALSE,FALSE,FALSE
+750,Silunum,silunum,23,Xilhuan Altepetl,43,Preme Earldom,0,1,2771,1258.94,787.09,FALSE,FALSE,2.822,River,town,FALSE,FALSE,FALSE
+751,Fontefilac,fontefilac,27,Marches of Petrello,66,Sezania Captaincy,23,1,3816,1380.65,1187.55,FALSE,FALSE,5.793,Generic,town,FALSE,FALSE,FALSE
+752,Atapurtius,atapurtius,28,Emirate of Riagan,80,Dodanma County,20,1,318,560.23,119.06,FALSE,FALSE,1.134,Generic,village,FALSE,FALSE,FALSE
+753,Cokavcokaqion,cokavcokaqion,23,Xilhuan Altepetl,42,Auiatlan County,16,1,970,1258.2,302.78,FALSE,FALSE,4.748,Generic,town,FALSE,FALSE,FALSE
+754,Morromarvi,morromarvi,34,Duchy of Petlancia,133,Morromarvi Earldom,23,1,4017,1470.43,1224.82,FALSE,TRUE,2.254,Naval,town,FALSE,FALSE,FALSE
+755,Ratetonia,ratetonia,22,Sultanate of Kanchasuyu,11,Qocha County,19,1,1287,290.72,382.68,FALSE,FALSE,4.781,Hunting,town,TRUE,FALSE,FALSE
+756,Egorum,egorum,23,Xilhuan Altepetl,48,Hueca County,0,1,1821,1235.64,497.89,FALSE,FALSE,0.535,Generic,fort,FALSE,TRUE,FALSE
+757,Castregulle,castregulle,23,Xilhuan Altepetl,35,Napanverte County,0,1,2730,1366.85,779.32,FALSE,FALSE,5.235,River,town,TRUE,FALSE,FALSE
+758,Andarivovia,andarivovia,22,Sultanate of Kanchasuyu,8,Tuarkalanco County,19,1,751,189.57,251.66,FALSE,FALSE,3.988,Lake,town,FALSE,FALSE,FALSE
+759,Doriellum,doriellum,22,Sultanate of Kanchasuyu,11,Qocha County,19,1,1385,324.42,396.44,FALSE,FALSE,2.115,Generic,town,FALSE,TRUE,FALSE
+760,Lulacodunum,lulacodunum,22,Sultanate of Kanchasuyu,4,Ornanlpansu County,19,1,1290,359.93,381.09,FALSE,FALSE,3.624,Generic,town,FALSE,FALSE,FALSE
+761,Elorirorum,elorirorum,29,Beylik of Lugrancanta,126,Tralinia Territory,21,1,1411,817.5,413.2,FALSE,FALSE,3.54,Generic,town,FALSE,FALSE,FALSE
+762,Archco,archco,23,Xilhuan Altepetl,27,Archco County,16,1,1912,1330.23779296875,499.5707702636719,TRUE,FALSE,2.62,Hunting,capital,FALSE,FALSE,FALSE
+763,Kutvaladosva,kutvaladosva,24,City-state of Saheranahvaria,53,Kutvaladosva Governorate,18,1,2590,862.7451171875,719.3019409179688,TRUE,FALSE,0.033,Nomadic,capital,TRUE,FALSE,FALSE
+764,Caidistlan,caidistlan,25,Latocail Naharcan,55,Caidistlan County,22,1,3103,996.4349365234375,955.4873657226562,TRUE,FALSE,0.421,Nomadic,capital,FALSE,FALSE,FALSE
+765,Zaharkoda,zaharkoda,26,Raamkoda,63,Rammskord Istekoda,17,1,547,949.1978759765625,182.76007080078125,TRUE,FALSE,0.073,Highland,capital,FALSE,FALSE,FALSE
+766,Accanovo,accanovo,27,Marches of Petrello,65,Colanolonia Earldom,23,1,3446,1483.0660400390625,1087.3946533203125,TRUE,FALSE,1.168,Generic,capital,FALSE,FALSE,FALSE
+767,Dodanma,dodanma,28,Emirate of Riagan,80,Dodanma County,20,1,251,459.89306640625,100.76362609863281,TRUE,FALSE,0.966,Generic,capital,FALSE,FALSE,FALSE
+768,Florum,florum,29,Beylik of Lugrancanta,93,Florum County,21,1,1022,631.0160522460938,319.12371826171875,TRUE,FALSE,1.648,Nomadic,capital,TRUE,FALSE,FALSE
+769,Sirnorum,sirnorum,31,Duchy of Witfordburia,98,Sirnorum County,21,1,3601,112.29946899414062,1148.8919677734375,TRUE,FALSE,11.908,Hunting,capital,FALSE,FALSE,FALSE
+770,Magnakan,magnakan,32,Nekosdamkoda,102,Magnakan County,17,1,3317,1187,1023,TRUE,FALSE,1.43,Highland,capital,FALSE,FALSE,FALSE
+771,Tihuatlacoal,tihuatlacoal,33,Duchy of Temalimco,0,,0,1,4658,663.7012329101562,1381.4647216796875,TRUE,FALSE,2.977,Nomadic,capital,TRUE,TRUE,FALSE
+772,Seacantlan,seacantlan,34,Duchy of Petlancia,0,,26,1,4929,1419.779296875,1448.099853515625,TRUE,FALSE,2.487,Hunting,capital,FALSE,FALSE,FALSE
+773,Quenolistes,quenolistes,35,Duchy of Quenolistes,0,,24,1,3415,818.743408203125,1067.4217529296875,TRUE,FALSE,0.108,Nomadic,capital,FALSE,FALSE,FALSE
+774,Viingavanach,viingavanach,36,Duchy of Eleral,0,,24,1,4324,858.9884033203125,1285.80029296875,TRUE,FALSE,0.229,Nomadic,capital,TRUE,TRUE,FALSE

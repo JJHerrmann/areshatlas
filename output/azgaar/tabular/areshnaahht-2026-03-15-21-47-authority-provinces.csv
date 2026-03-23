@@ -1,0 +1,140 @@
+id,name,slug,full_name,state_id,state_name,burg_id,center,pole,color,form_name
+1,Ruyurein,ruyurein-county,Ruyurein County,22,Sultanate of Kanchasuyu,225,,"154, 573",#59b7ce,County
+2,Laqtia,laqtia-county,Laqtia County,22,Sultanate of Kanchasuyu,19,,"134, 451",#5aabd7,County
+3,Maria,maria-barony,Maria Barony,22,Sultanate of Kanchasuyu,20,,"89, 693",#3dcdd6,Barony
+4,Ornanlpansu,ornanlpansu-county,Ornanlpansu County,22,Sultanate of Kanchasuyu,557,,"371, 367",#5aadd6,County
+5,Markia,markia-margrave,Markia Margrave,22,Sultanate of Kanchasuyu,191,,"275, 417",#27bef0,Margrave
+6,Borcunumia,borcunumia-county,Borcunumia County,22,Sultanate of Kanchasuyu,256,,"370, 417",#28c7e5,County
+7,Fionlaqtia,fionlaqtia-county,Fionlaqtia County,22,Sultanate of Kanchasuyu,82,,"24, 30",#29c9e2,County
+8,Tuarkalanco,tuarkalanco-county,Tuarkalanco County,22,Sultanate of Kanchasuyu,155,,"253, 225",#39a6eb,County
+9,Qochruyu,qochruyu-county,Qochruyu County,22,Sultanate of Kanchasuyu,367,,"23, 578",#32aef3,County
+10,Saium,saium-county,Saium County,22,Sultanate of Kanchasuyu,237,,"73, 402",#5ab3d0,County
+11,Qocha,qocha-county,Qocha County,22,Sultanate of Kanchasuyu,295,,"323, 401",#4cc7d1,County
+12,Beranlaqia,beranlaqia-county,Beranlaqia County,22,Sultanate of Kanchasuyu,53,,"405, 369",#5ab3cf,County
+13,Sirgodulum,sirgodulum-county,Sirgodulum County,22,Sultanate of Kanchasuyu,48,,"415, 416",#39a5e9,County
+14,Sumior,sumior-landgrave,Sumior Landgrave,22,Sultanate of Kanchasuyu,6,,"343, 480",#2fccdb,Landgrave
+15,Fionkancha,fionkancha-county,Fionkancha County,22,Sultanate of Kanchasuyu,571,,"84, 112",#43a4ea,County
+16,Melia,melia-margrave,Melia Margrave,22,Sultanate of Kanchasuyu,514,,"297, 69",#5aafd3,Margrave
+17,Asisumarru,asisumarru-county,Asisumarru County,22,Sultanate of Kanchasuyu,683,,"244, 542",#58b8cd,County
+18,Fioncorin,fioncorin-county,Fioncorin County,22,Sultanate of Kanchasuyu,617,,"403, 218",#5aaad8,County
+19,Ausuyumi,ausuyumi-county,Ausuyumi County,22,Sultanate of Kanchasuyu,129,,"31, 738",#27c2ee,County
+20,Binovium,binovium-county,Binovium County,22,Sultanate of Kanchasuyu,459,,"459, 455",#27c3ec,County
+21,Marsu,marsu-county,Marsu County,22,Sultanate of Kanchasuyu,448,,"178, 504",#45a4ea,County
+22,Ruyuyuionia,ruyuyuionia-county,Ruyuyuionia County,22,Sultanate of Kanchasuyu,479,,"130, 296",#39cdd7,County
+23,Apaor,apaor-county,Apaor County,22,Sultanate of Kanchasuyu,537,,"270, 485",#3fa4ea,County
+24,Kancha,kancha-county,Kancha County,22,Sultanate of Kanchasuyu,470,,"94, 520",#5aa9d9,County
+25,Lorkaia,lorkaia-county,Lorkaia County,22,Sultanate of Kanchasuyu,52,,"165, 30",#2db4f4,County
+26,Sornumia,sornumia-county,Sornumia County,22,Sultanate of Kanchasuyu,141,,"423, 379",#3ea4ea,County
+27,Archco,archco-county,Archco County,23,Xilhuan Altepetl,762,,"1295, 462",#a579fd,County
+28,Nototitlanco,nototitlanco-county,Nototitlanco County,23,Xilhuan Altepetl,583,,"1335, 634",#b25aff,County
+29,Fomaraunium,fomaraunium-county,Fomaraunium County,23,Xilhuan Altepetl,77,,"1411, 690",#a66cff,County
+30,Glen,glen-county,Glen County,29,Beylik of Lugrancanta,492,,"1018, 598",#c153ff,County
+31,Temoac,temoac-county,Temoac County,23,Xilhuan Altepetl,15,,"1230, 825",#c853ff,County
+32,Oveliava,oveliava-earldom,Oveliava Earldom,23,Xilhuan Altepetl,90,,"1396, 685",#ab63ff,Earldom
+33,Huatlacanco,huatlacanco-earldom,Huatlacanco Earldom,23,Xilhuan Altepetl,69,,"1432, 663",#d657f8,Earldom
+34,Ariateranno,ariateranno-earldom,Ariateranno Earldom,23,Xilhuan Altepetl,22,,"1303, 692",#af5fff,Earldom
+35,Napanverte,napanverte-county,Napanverte County,23,Xilhuan Altepetl,75,,"1363, 813",#a474ff,County
+36,Corathionia,corathionia-earldom,Corathionia Earldom,23,Xilhuan Altepetl,235,,"1405, 541",#ce72e6,Earldom
+37,Maia,maia-county,Maia County,23,Xilhuan Altepetl,299,,"1072, 637",#d764e9,County
+38,Mosyan,mosyan-earldom,Mosyan Earldom,23,Xilhuan Altepetl,231,,"1223, 195",#a477ff,Earldom
+39,Madaspan,madaspan-county,Madaspan County,23,Xilhuan Altepetl,250,,"1318, 867",#d055fe,County
+40,Pullum,pullum-county,Pullum County,23,Xilhuan Altepetl,5,,"1370, 745",#c17dee,County
+41,Wesvariontia,wesvariontia-county,Wesvariontia County,23,Xilhuan Altepetl,33,,"1439, 419",#a97cf7,County
+42,Auiatlan,auiatlan-county,Auiatlan County,23,Xilhuan Altepetl,35,,"1334, 272",#a477ff,County
+43,Preme,preme-earldom,Preme Earldom,23,Xilhuan Altepetl,121,,"1218, 766",#b358ff,Earldom
+44,Drupiba,drupiba-county,Drupiba County,23,Xilhuan Altepetl,746,,"1095, 510",#d766e7,County
+45,Alcocateco,alcocateco-county,Alcocateco County,23,Xilhuan Altepetl,562,,"1124, 576",#ae7df4,County
+46,Confleba,confleba-county,Confleba County,23,Xilhuan Altepetl,589,,"1215, 625",#b755ff,County
+47,Buratesa,buratesa-county,Buratesa County,23,Xilhuan Altepetl,712,,"1133, 415",#ae61ff,County
+48,Hueca,hueca-county,Hueca County,23,Xilhuan Altepetl,277,,"1300, 566",#d75bf0,County
+49,Texcoaxaxaco,texcoaxaxaco-county,Texcoaxaxaco County,23,Xilhuan Altepetl,399,,"1306, 826",#bd7dee,County
+50,Tlamaco,tlamaco-earldom,Tlamaco Earldom,23,Xilhuan Altepetl,483,,"1359, 670",#b855ff,Earldom
+51,Aurpan,aurpan-county,Aurpan County,23,Xilhuan Altepetl,390,,"1449, 602",#a472ff,County
+52,Iztaco,iztaco-earldom,Iztaco Earldom,23,Xilhuan Altepetl,258,,"1228, 883",#c57cef,Earldom
+53,Kutvaladosva,kutvaladosva-governorate,Kutvaladosva Governorate,24,City-state of Saheranahvaria,763,,"870, 733",#4b8def,Governorate
+54,Magnarionia,magnarionia-province,Magnarionia Province,24,City-state of Saheranahvaria,23,,"891, 643",#51b5db,Province
+55,Caidistlan,caidistlan-county,Caidistlan County,25,Latocail Naharcan,764,,"988, 976",#607ed0,County
+56,Leabania,leabania-county,Leabania County,25,Latocail Naharcan,502,,"1119, 884",#9060c5,County
+57,Bretarpan,bretarpan-county,Bretarpan County,25,Latocail Naharcan,261,,"1049, 813",#7958d8,County
+58,Sarahacan,sarahacan-earldom,Sarahacan Earldom,25,Latocail Naharcan,46,,"866, 882",#5d76db,Earldom
+59,Cesontiana,cesontiana-county,Cesontiana County,25,Latocail Naharcan,275,,"772, 996",#8379be,County
+60,Breharcan,breharcan-county,Breharcan County,25,Latocail Naharcan,253,,"1085, 1084",#7980c4,County
+61,Necarastlan,necarastlan-earldom,Necarastlan Earldom,25,Latocail Naharcan,565,,"1033, 750",#6566e2,Earldom
+62,Florum,florum-earldom,Florum Earldom,25,Latocail Naharcan,665,,"748, 935",#6c5ddd,Earldom
+63,Rammskord,rammskord-istekoda,Rammskord Istekoda,26,Raamkoda,765,,"931, 153",#a49660,
+64,Kalijurik,kalijurik-istekoda,Kalijurik Istekoda,26,Raamkoda,25,,"851, 330",#c7504d,County
+65,Colanolonia,colanolonia-earldom,Colanolonia Earldom,27,Marches of Petrello,766,,"1562, 1088",#55f68b,Earldom
+66,Sezania,sezania-captaincy,Sezania Captaincy,27,Marches of Petrello,28,,"1392, 1167",#5aeb90,Captaincy
+67,Armiabicia,armiabicia-captaincy,Armiabicia Captaincy,27,Marches of Petrello,128,,"1403, 1103",#28ffa8,Captaincy
+68,Tonazahualco,tonazahualco-county,Tonazahualco County,27,Marches of Petrello,528,,"1334, 1050",#42ff94,County
+69,Fivania,fivania-captaincy,Fivania Captaincy,27,Marches of Petrello,139,,"1516, 1140",#28f9af,Captaincy
+70,Spervalom,spervalom-earldom,Spervalom Earldom,27,Marches of Petrello,232,,"1277, 946",#55f78b,Earldom
+71,Geria,geria-earldom,Geria Earldom,27,Marches of Petrello,632,,"1627, 1108",#4fdca7,Earldom
+72,Spersia,spersia-earldom,Spersia Earldom,27,Marches of Petrello,340,,"1453, 1122",#44dca9,Earldom
+73,Chiapan,chiapan-earldom,Chiapan Earldom,27,Marches of Petrello,620,,"1289, 1031",#2eff9d,Earldom
+74,Seglia,seglia-county,Seglia County,27,Marches of Petrello,303,,"1348, 960",#32e7b2,County
+75,Leadaspanco,leadaspanco-earldom,Leadaspanco Earldom,27,Marches of Petrello,450,,"1303, 989",#2bf3b2,Earldom
+76,Vallanolaqui,vallanolaqui-earldom,Vallanolaqui Earldom,27,Marches of Petrello,29,,"1578, 1187",#28ffa5,Earldom
+77,Ponteleo,ponteleo-earldom,Ponteleo Earldom,27,Marches of Petrello,116,,"1458, 1191",#51fa8c,Earldom
+78,Peaigania,peaigania-earldom,Peaigania Earldom,27,Marches of Petrello,206,,"1273, 996",#5ae09d,Earldom
+79,Casadupia,casadupia-earldom,Casadupia Earldom,27,Marches of Petrello,16,,"1422, 1023",#4cff91,Earldom
+80,Dodanma,dodanma-county,Dodanma County,28,Emirate of Riagan,767,,"494, 100",#42e3b9,County
+81,Sonanmayu,sonanmayu-county,Sonanmayu County,28,Emirate of Riagan,18,,"457, 350",#3ac1d2,County
+82,Dorinsia,dorinsia-county,Dorinsia County,28,Emirate of Riagan,238,,"454, 170",#3ee7be,County
+83,Bevanconania,bevanconania-county,Bevanconania County,28,Emirate of Riagan,255,,"735, 276",#4fc6c5,County
+84,Kievan,kievan-county,Kievan County,28,Emirate of Riagan,297,,"617, 99",#35c1d2,County
+85,Melaqta,melaqta-county,Melaqta County,28,Emirate of Riagan,67,,"530, 255",#4fcfba,County
+86,Rorinmia,rorinmia-county,Rorinmia County,28,Emirate of Riagan,99,,"629, 11",#42e4b9,County
+87,Brenpunia,brenpunia-county,Brenpunia County,28,Emirate of Riagan,332,,"506, 348",#1dddd8,County
+88,Orinlaqta,orinlaqta-county,Orinlaqta County,28,Emirate of Riagan,32,,"688, 24",#1ce3d1,County
+89,Levelinium,levelinium-county,Levelinium County,28,Emirate of Riagan,419,,"698, 177",#1de4cf,County
+90,Nialaqtia,nialaqtia-county,Nialaqtia County,28,Emirate of Riagan,39,,"576, 202",#1edada,County
+91,Nialpania,nialpania-county,Nialpania County,28,Emirate of Riagan,224,,"615, 254",#3ec1d2,County
+92,Melaqtia,melaqtia-county,Melaqtia County,28,Emirate of Riagan,622,,"761, 197",#1fe7cb,County
+93,Florum,florum-county,Florum County,29,Beylik of Lugrancanta,768,,"667, 305",#eeb84c,County
+94,Orpanmalan,orpanmalan-county,Orpanmalan County,29,Beylik of Lugrancanta,8,,"578, 316",#ff924e,County
+95,Nialmayu,nialmayu-earldom,Nialmayu Earldom,29,Beylik of Lugrancanta,554,,"562, 366",#eab550,Earldom
+96,Theixus,theixus-district,Theixus District,30,Herviorum City-state,691,,"656, 1093",#aa6bb2,District
+97,Vinium,vinium-district,Vinium District,30,Herviorum City-state,251,,"652, 1035",#a044c7,District
+98,Sirnorum,sirnorum-county,Sirnorum County,31,Duchy of Witfordburia,769,,"104, 1152",#b9f655,County
+99,Castra,castra-county,Castra County,31,Duchy of Witfordburia,395,,"131, 1185",#c5f84c,County
+100,Cuapantema,cuapantema-county,Cuapantema County,31,Duchy of Witfordburia,555,,"14, 1200",#d9cf5f,County
+101,Gerara,gerara-county,Gerara County,31,Duchy of Witfordburia,13,,"96, 1208",#b9e369,County
+102,Magnakan,magnakan-county,Magnakan County,32,Nekosdamkoda,770,,"1191, 1043",#629ae1,County
+103,Alaklalia,alaklalia-county,Alaklalia County,32,Nekosdamkoda,495,,"1145, 968",#5c96e9,County
+104,Conflegul,conflegul-landgrave,Conflegul Landgrave,32,Nekosdamkoda,149,,"1268, 1052",#62a1d7,Landgrave
+105,Baoirtlan,baoirtlan-county,Baoirtlan County,32,Nekosdamkoda,481,,"1171, 916",#3f98f0,County
+106,Orcan,orcan-territory,Orcan Territory,22,Sultanate of Kanchasuyu,534,,"388, 18",#4fa4e7,Territory
+107,Fionsuyu,fionsuyu-territory,Fionsuyu Territory,22,Sultanate of Kanchasuyu,527,,"439, 322",#44a4ea,Territory
+108,Killatheonku,killatheonku-territory,Killatheonku Territory,22,Sultanate of Kanchasuyu,602,,"4, 549",#47a2ea,Territory
+109,Sasumiyuqtia,sasumiyuqtia-tribe,Sasumiyuqtia Tribe,22,Sultanate of Kanchasuyu,179,,"148, 622",#35a9ef,Tribe
+110,Tiernanpun,tiernanpun-territory,Tiernanpun Territory,22,Sultanate of Kanchasuyu,,,"16, 199",#5ab2d0,Territory
+111,Cannarixus,cannarixus-territory,Cannarixus Territory,23,Xilhuan Altepetl,161,,"1189, 329",#a478ff,Territory
+112,Xelaqocaqoria,xelaqocaqoria-territory,Xelaqocaqoria Territory,23,Xilhuan Altepetl,61,,"1243, 356",#c253ff,Territory
+113,Brecaoirt,brecaoirt-region,Brecaoirt Region,23,Xilhuan Altepetl,202,,"1743, 714",#ba7dee,Region
+114,Velarionia,velarionia-land,Velarionia Land,23,Xilhuan Altepetl,,,"1602, 419",#b25aff,Land
+115,Zeltharioria,zeltharioria-islands,Zeltharioria Islands,23,Xilhuan Altepetl,,,"1746, 631",#bb55ff,Islands
+116,Makorkosionia,makorkosionia-island,Makorkosionia Island,24,City-state of Saheranahvaria,,,"681, 704",#3c9cfa,Island
+117,Balactlania,balactlania-land,Balactlania Land,25,Latocail Naharcan,269,,"1112, 816",#8858d5,Land
+118,Vaskmurd,vaskmurd-istekoda,Vaskmurd Istekoda,26,Raamkoda,740,,"1068, 223",#52a98e,Territory
+119,Campi,campi-territory,Campi Territory,27,Marches of Petrello,559,,"1334, 923",#32e7b2,Territory
+120,Trerolico,trerolico-territory,Trerolico Territory,27,Marches of Petrello,142,,"1460, 1058",#2af5b1,Territory
+121,Sarbakorlalia,sarbakorlalia-territory,Sarbakorlalia Territory,27,Marches of Petrello,247,,"1676, 1175",#48dca9,Territory
+122,Namäekarisza,nam-ekarisza-dependency,Namäekarisza Dependency,27,Marches of Petrello,,,"1335, 1177",#28faad,Dependency
+123,Bren,bren-territory,Bren Territory,28,Emirate of Riagan,702,,"467, 21",#23d1dd,Territory
+124,Orin,orin-territory,Orin Territory,28,Emirate of Riagan,684,,"748, 41",#48dbb5,Territory
+125,Veliaguria,veliaguria-land,Veliaguria Land,28,Emirate of Riagan,685,,"510, 419",#37eabe,Land
+126,Tralinia,tralinia-territory,Tralinia Territory,29,Beylik of Lugrancanta,497,,"878, 546",#e9b355,Territory
+127,Salagpan,salagpan-land,Salagpan Land,32,Nekosdamkoda,731,,"1204, 949",#6097e6,Land
+128,Ferrvetarjõere,ferrvetarj-ere-region,Ferrvetarjõere Region,32,Nekosdamkoda,30,,"1240, 1017",#3cbedd,Region
+129,Mailinsarkia,mailinsarkia-clan,Mailinsarkia Clan,32,Nekosdamkoda,339,,"1257, 1120",#5bb0d1,Clan
+130,Mea,mea-area,Mea Area,32,Nekosdamkoda,,,"1153, 893",#31bbe7,Area
+131,Kiviraud,kiiraud-istekoda,Kiiraud Istekoda,26,Raamkoda,,,"919, 34",#b05baf,Territory
+132,Tammekaar,tammekaar-istekoda,Tammekaar Istekoda,26,Raamkoda,,,"821, 114",#72ad3e,Territory
+133,Morromarvi,morromarvi-earldom,Morromarvi Earldom,34,Duchy of Petlancia,754,,,#b753ad,Earldom
+134,Caidistlan,caidistlan-area,Caidistlan Area,35,Duchy of Quenolistes,,,,#cc48d9,Area
+135,Breharcan,breharcan-province,Breharcan Province,32,Nekosdamkoda,,,,#43beda,Province
+136,Breharcan,breharcan-area,Breharcan Area,35,Duchy of Quenolistes,,,,#c94fd5,Area
+137,Magnarionia,magnarionia-zone,Magnarionia Zone,29,Beylik of Lugrancanta,,,,#ff9c3f,Zone
+138,Victrum,victrum-county,Victrum County,28,Emirate of Riagan,322,,,#45c1d0,County
+139,Kiviraud,kiviraud-province,Kiviraud Province,23,Xilhuan Altepetl,,,,#ae60ff,Province

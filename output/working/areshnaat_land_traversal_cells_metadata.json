@@ -1,0 +1,29 @@
+{
+  "source_dem": "rookworld_source_data\\v2.5\\rookworld_rotated_dem_0p025deg.npz",
+  "source_landmask": "rookworld_source_data\\v2.5\\rookworld_landmask_m62_0p025deg.npz",
+  "downsample": 4,
+  "spacing": 10,
+  "jitter": 3,
+  "cell_count": 20472,
+  "world_shape": {
+    "width": 3600,
+    "height": 1800
+  },
+  "notes": [
+    "Land-only Voronoi cells against the -62 m coastline-derived landmask.",
+    "Traversal score favors low slope, low ruggedness, low elevation, and nearer-coast lowlands.",
+    "Pixel coordinates are in the rotated Aresh world raster space used by the current DEM stack."
+  ],
+  "profile_counts": {
+    "severe": 6413,
+    "rough": 8342,
+    "moderate": 3405,
+    "extreme": 1132,
+    "easy": 1126,
+    "open": 54
+  },
+  "outputs": {
+    "csv": "output\\working\\areshnaat_land_traversal_cells.csv",
+    "overlay": "public\\maps\\areshnaat-land-traversal-cells-overlay.webp"
+  }
+}
