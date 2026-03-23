@@ -366,7 +366,9 @@
     "href": "/pantheon/yatbara",
     "source_relative_path": "gods/Yatbara.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "areshnaati-deities"
+    ]
   },
   {
     "slug": "yolca-halfling",
