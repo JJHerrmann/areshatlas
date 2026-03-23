@@ -43,10 +43,10 @@ tags:
   - deity
   - religion
 primary_topic: Dieties of Areshnaat
-navboxes:  
-- ramtilim  
-- dieties-of-areshnaat
-slug: tsyidrah
+navboxes:
+  - ramtilim
+  - dieties-of-areshnaat
+slug: tsayidrah
 ---
 # Tsayidrah
 *The God of Hunting and Fertility*

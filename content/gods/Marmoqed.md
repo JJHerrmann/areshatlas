@@ -46,7 +46,7 @@ primary_topic: Dieties of Areshnaat
 navboxes:  
 - ramtilim  
 - dieties-of-areshnaat
-- slug: marmoqed
+slug: marmoqed
 ---
 # Marmoqed
 *The God of Hearth and Medicine*
