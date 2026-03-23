@@ -211,4 +211,4 @@ Keep the summary short and archival in tone so it can serve as the page preview.
 
 ## Topic Indexing
 
-Set `primary_topic` to the main wiki topic for the article and `topics` to any additional topic boxes you want shown in the footer. Use plain text or wiki links.
+Set `primary_topic` to the main wiki topic for the article and `topics` to any additional topic boxes you want shown in the footer. Use plain text or wiki links. Use the quoted sentinel `"!thisfile"` to suppress a field entry in a shared template.

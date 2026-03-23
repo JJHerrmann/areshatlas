@@ -76,6 +76,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             frontmatter={overviewDocument.frontmatter}
             sectionTitle={section.title}
             sourceRelativePath={overviewDocument.sourcePath}
+            pageTitle={overviewDocument.title}
           />
         </div>
 
@@ -128,6 +129,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             frontmatter={document.frontmatter}
             sectionTitle={section.title}
             sourceRelativePath={document.sourcePath}
+            pageTitle={document.title}
           />
         </div>
 

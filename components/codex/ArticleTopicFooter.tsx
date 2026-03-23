@@ -5,6 +5,7 @@ type ArticleTopicFooterProps = {
   frontmatter: Record<string, unknown>;
   sectionTitle: string;
   sourceRelativePath: string;
+  pageTitle: string;
 };
 
 function text(value: unknown) {
@@ -18,6 +19,10 @@ function asStringArray(value: unknown) {
 
   const single = text(value);
   return single ? [single] : [];
+}
+
+function isThisFile(value: string) {
+  return value === "!thisfile";
 }
 
 function renderInline(value: string, sourceRelativePath: string) {
@@ -46,19 +51,17 @@ export default function ArticleTopicFooter({
   frontmatter,
   sectionTitle,
   sourceRelativePath,
+  pageTitle,
 }: ArticleTopicFooterProps) {
-  const primaryTopic =
-    text(frontmatter.primary_topic) ||
-    text(frontmatter.topic) ||
-    sectionTitle ||
-    "the Aresh Codex";
+  const primaryTopicRaw = text(frontmatter.primary_topic) || text(frontmatter.topic) || sectionTitle || "the Aresh Codex";
+  const primaryTopic = isThisFile(primaryTopicRaw) ? "" : primaryTopicRaw;
   const topicList = Array.from(
     new Set([
       primaryTopic,
-      ...asStringArray(frontmatter.topics),
-      ...asStringArray(frontmatter.categories),
+      ...asStringArray(frontmatter.topics).filter((value) => !isThisFile(value)),
+      ...asStringArray(frontmatter.categories).filter((value) => !isThisFile(value)),
     ]),
-  );
+  ).filter(Boolean);
 
   if (!topicList.length) return null;
 
@@ -68,7 +71,7 @@ export default function ArticleTopicFooter({
     <footer className="wiki-box" style={{ marginTop: "1.6rem" }} aria-label="Article topic footer">
       <div className="wiki-box-title">Article Topics</div>
       <div className="wiki-copy" style={{ marginTop: 0 }}>
-        This article is part of the {renderInline(primaryTopic, sourceRelativePath)}
+        This article is part of {renderInline(primaryTopic || sectionTitle || pageTitle, sourceRelativePath)}
       </div>
       {secondaryTopics.length ? (
         <div
