@@ -6,6 +6,7 @@ type ArticleTopicFooterProps = {
   sectionTitle: string;
   sourceRelativePath: string;
   pageTitle: string;
+  pageHref: string;
 };
 
 function text(value: unknown) {
@@ -25,13 +26,17 @@ function isThisFile(value: string) {
   return value === "!thisfile";
 }
 
-function renderInline(value: string, sourceRelativePath: string) {
+function renderInline(value: string, sourceRelativePath: string, pageHref: string) {
   return resolveObsidianInlineParts(value, sourceRelativePath).map((part, index) => {
     if (part.type === "text") {
       return <span key={`text-${index}`}>{part.text}</span>;
     }
 
     if (part.href) {
+      if (part.href === pageHref) {
+        return <span key={`self-${index}`}>{part.text}</span>;
+      }
+
       return (
         <Link
           key={`link-${index}`}
@@ -52,26 +57,27 @@ export default function ArticleTopicFooter({
   sectionTitle,
   sourceRelativePath,
   pageTitle,
+  pageHref,
 }: ArticleTopicFooterProps) {
-  const primaryTopicRaw = text(frontmatter.primary_topic) || text(frontmatter.topic) || sectionTitle || "the Aresh Codex";
-  const primaryTopic = isThisFile(primaryTopicRaw) ? "" : primaryTopicRaw;
+  const primaryTopic = text(frontmatter.primary_topic) || text(frontmatter.topic) || sectionTitle || "the Aresh Codex";
   const topicList = Array.from(
     new Set([
       primaryTopic,
-      ...asStringArray(frontmatter.topics).filter((value) => !isThisFile(value)),
-      ...asStringArray(frontmatter.categories).filter((value) => !isThisFile(value)),
+      ...asStringArray(frontmatter.topics),
+      ...asStringArray(frontmatter.categories),
     ]),
   ).filter(Boolean);
 
   if (!topicList.length) return null;
 
-  const secondaryTopics = topicList.filter((topic) => topic !== primaryTopic);
+  const secondaryTopics = topicList.filter((topic) => topic !== primaryTopic && !isThisFile(topic));
+  const primaryDisplay = isThisFile(primaryTopic) ? pageTitle : primaryTopic;
 
   return (
     <footer className="wiki-box" style={{ marginTop: "1.6rem" }} aria-label="Article topic footer">
       <div className="wiki-box-title">Article Topics</div>
       <div className="wiki-copy" style={{ marginTop: 0 }}>
-        This article is part of {renderInline(primaryTopic || sectionTitle || pageTitle, sourceRelativePath)}
+        This article is part of {renderInline(primaryDisplay || sectionTitle || pageTitle, sourceRelativePath, pageHref)}
       </div>
       {secondaryTopics.length ? (
         <div
@@ -88,7 +94,7 @@ export default function ArticleTopicFooter({
                 Indexed under
               </div>
               <div className="wiki-copy" style={{ margin: 0 }}>
-                {renderInline(topic, sourceRelativePath)}
+                {renderInline(topic, sourceRelativePath, pageHref)}
               </div>
             </div>
           ))}

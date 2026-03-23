@@ -77,6 +77,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             sectionTitle={section.title}
             sourceRelativePath={overviewDocument.sourcePath}
             pageTitle={overviewDocument.title}
+            pageHref={overviewDocument.breadcrumb[overviewDocument.breadcrumb.length - 1]?.href ?? `/${section.slug}`}
           />
         </div>
 
@@ -130,6 +131,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             sectionTitle={section.title}
             sourceRelativePath={document.sourcePath}
             pageTitle={document.title}
+            pageHref={document.breadcrumb[document.breadcrumb.length - 1]?.href ?? `/${section.slug}`}
           />
         </div>
 
