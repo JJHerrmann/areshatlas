@@ -44,7 +44,8 @@ holy_days: []
 taboos: []
 summary: Yatbara is remembered in Areshnaati tradition as the divine force of creation, invoked as the first shaping power and honored under the title Formless One.
 navboxes:
-  - areshnaati-deities
+  - ramtilim
+  - dieties-of-areshnaat
 tags:
   - deity
   - religion
