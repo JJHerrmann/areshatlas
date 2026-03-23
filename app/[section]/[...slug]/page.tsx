@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import CoordinateRule from "@/components/codex/CoordinateRule";
 import CornerOrnament from "@/components/codex/CornerOrnament";
 import DeityInfobox from "@/components/codex/DeityInfobox";
+import DeityProfile from "@/components/codex/DeityProfile";
 import EntryCard from "@/components/codex/EntryCard";
 import NationInfobox from "@/components/codex/NationInfobox";
 import PlateLabel from "@/components/codex/PlateLabel";
@@ -81,7 +82,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
     const nationSidebar = getNationSidebar(document.sourcePath);
     const deitySidebar = getDeitySidebar(document.sourcePath);
     const hasSidebar = Boolean(nationSidebar) || Boolean(deitySidebar);
-    const isNation = Boolean(nationSidebar) || document.frontmatter?.type === "nation";
+    const isDeity = Boolean(deitySidebar) || document.frontmatter?.type === "deity";
     return (
       <main className="min-h-screen px-6 py-12 text-stone-900 lg:px-8">
         <div className="mx-auto max-w-5xl">
@@ -104,10 +105,14 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
           </div>
 
           <div className={`codex-entry-layout mt-10${hasSidebar ? " with-sidebar" : ""}`}>
-            <article
-              className="codex-entry-body codex-prose"
-              dangerouslySetInnerHTML={{ __html: document.html }}
-            />
+            {isDeity ? (
+              <DeityProfile frontmatter={document.frontmatter} sourceRelativePath={document.sourcePath} />
+            ) : (
+              <article
+                className="codex-entry-body codex-prose"
+                dangerouslySetInnerHTML={{ __html: document.html }}
+              />
+            )}
             {nationSidebar ? <NationInfobox data={nationSidebar} /> : null}
             {deitySidebar ? <DeityInfobox data={deitySidebar} /> : null}
           </div>
