@@ -1,7 +1,3 @@
----
-navboxes: []
----
-
 # Orcish Naming Canon
 # Apusimi
 

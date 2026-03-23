@@ -5,7 +5,7 @@ import matter from "gray-matter";
 const repoRoot = process.cwd();
 const contentRoot = path.join(repoRoot, "content");
 const derivedRoot = path.join(contentRoot, "_derived", "sidebar");
-const navboxRegistryRoot = path.join(contentRoot, "_registry", "navboxes");
+const navboxRegistryRoot = path.join(repoRoot, "codex_registry", "navboxes");
 const navboxDerivedRoot = path.join(contentRoot, "_derived", "navboxes");
 const IMAGE_EXTENSIONS = new Set([".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif", ".avif"]);
 const sections = [
@@ -79,7 +79,14 @@ function optionalArray(value) {
 }
 
 function normalizeStringArray(value) {
-  return optionalArray(value).map((item) => String(item).trim()).filter(Boolean);
+  return optionalArray(value)
+    .flatMap((item) => {
+      if (typeof item === "string" || typeof item === "number") {
+        const normalized = String(item).trim();
+        return normalized ? [normalized] : [];
+      }
+      return [];
+    });
 }
 
 function titleFromFileName(fileName) {

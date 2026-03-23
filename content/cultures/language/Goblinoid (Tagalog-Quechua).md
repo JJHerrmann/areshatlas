@@ -1,7 +1,3 @@
----
-navboxes: []
----
-
 # Goblinoid Naming Canon
 # Lungbayin
 

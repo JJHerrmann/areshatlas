@@ -2,9 +2,7 @@
 type: deity
 name: Tsayidrah
 epithet: The God of Hunting and Fertility
-title: Tsayidrah
-slug: tsayidrah
-section: pantheon
+title: ""
 pantheon: ""
 divine_rank: ""
 gender: ""
@@ -41,15 +39,17 @@ virtues: []
 vices: []
 holy_days: []
 taboos: []
-navboxes:
-  - ramtilim
-  - dieties-of-areshnaat
 tags:
   - deity
   - religion
+primary_topic: Dieties of Areshnaat
+navboxes:  
+- ramtilim  
+- dieties-of-areshnaat
+slug: tsyidrah
 ---
-# {{name}}
-*{{epithet}}*
+# Tsayidrah
+*The God of Hunting and Fertility*
 
 {{short_overview}}
 

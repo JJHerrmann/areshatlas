@@ -45,7 +45,6 @@ cultural_templates:
   - Dracian
 map: Rammskoda
 arms_image: "![[Rammskoda_Sigil.png]]"
-navboxes: []
 ---
 
 

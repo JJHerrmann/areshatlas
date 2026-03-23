@@ -8,5 +8,36 @@
     "heraldry": null,
     "avatar": null
   },
-  "sections": []
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          "Areshnaati"
+        ],
+        [
+          "Title",
+          "The Destined Knot"
+        ],
+        [
+          "Gender",
+          "Male"
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Ethos",
+          "lawful"
+        ]
+      ]
+    }
+  ]
 }

@@ -19,13 +19,11 @@
   },
   {
     "slug": "ba-al-sheol",
-    "title": "Ba'al Sheol",
+    "title": "The Destined Knot",
     "section": "pantheon",
     "href": "/pantheon/ba-al-sheol",
     "source_relative_path": "gods/Ba'al Sheol.md",
-    "aliases": [
-      "sheol"
-    ],
+    "aliases": [],
     "navboxes": [
       "ramtilim",
       "dieties-of-areshnaat"
@@ -126,7 +124,7 @@
   },
   {
     "slug": "kathorharab",
-    "title": "Kathorharab",
+    "title": "The Wailing Hammer",
     "section": "pantheon",
     "href": "/pantheon/kathorharab",
     "source_relative_path": "gods/Kathorharab.md",
@@ -326,7 +324,7 @@
     "navboxes": []
   },
   {
-    "slug": "tsayidrah",
+    "slug": "tsyidrah",
     "title": "Tsayidrah",
     "section": "pantheon",
     "href": "/pantheon/tsayidrah",

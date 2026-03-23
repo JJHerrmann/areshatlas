@@ -1,7 +1,3 @@
----
-navboxes: []
----
-
 # Gnomish Naming Canon
 # Kutnyelv
 

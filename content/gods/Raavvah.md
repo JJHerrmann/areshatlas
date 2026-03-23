@@ -1,10 +1,7 @@
 ---
-type: deity
 name: Raavvah
 epithet: The God of Famines and Calamity
-title: Raavvah
-slug: raavvah
-section: pantheon
+title: ""
 pantheon: ""
 divine_rank: ""
 gender: ""
@@ -41,15 +38,18 @@ virtues: []
 vices: []
 holy_days: []
 taboos: []
-navboxes:
-  - ramtilim
-  - dieties-of-areshnaat
 tags:
   - deity
   - religion
+type: deity
+primary_topic: Dieties of Areshnaat
+navboxes:  
+- ramtilim  
+- dieties-of-areshnaat
+slug: raavvah
 ---
-# {{name}}
-*{{epithet}}*
+# Raavvah
+*The God of Famines and Calamities*
 
 {{short_overview}}
 

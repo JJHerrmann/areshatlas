@@ -8,7 +8,6 @@ tags:
   - geography
   - continent
   - worldbuilding
-navboxes: []
 ---
 
 # Geography of Drakharpan

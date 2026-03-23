@@ -1,7 +1,3 @@
----
-navboxes: []
----
-
 # High Elven Naming Canon
 
 A compact naming framework for elven place names using:
