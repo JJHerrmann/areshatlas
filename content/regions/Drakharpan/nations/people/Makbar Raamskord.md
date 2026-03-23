@@ -45,6 +45,7 @@ rivals: []
 enemies: []
 tags:
   - person
+navboxes: []
 ---
 
 

@@ -1,3 +1,7 @@
+---
+navboxes: []
+---
+
 # Orcish Sultanate Naming Canon
 # Apusimi
 

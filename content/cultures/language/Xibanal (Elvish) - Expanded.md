@@ -1,3 +1,7 @@
+---
+navboxes: []
+---
+
 # High Elven Naming Canon
 # Xibanal
 

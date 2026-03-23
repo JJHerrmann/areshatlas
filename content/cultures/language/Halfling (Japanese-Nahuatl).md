@@ -1,3 +1,7 @@
+---
+navboxes: []
+---
+
 # Halfling Naming Canon
 # Marukotan
 

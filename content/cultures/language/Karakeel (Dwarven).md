@@ -1,3 +1,7 @@
+---
+navboxes: []
+---
+
 # Dwarven Naming Canon
 # Karakeel
 
