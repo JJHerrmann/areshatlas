@@ -172,28 +172,60 @@ function parseCsv(text: string, beringiaMeta: any): BurgRecord[] {
 }
 
 export default async function PrototypeBurgsPage() {
-  const csvText = await fs.readFile(BURGS_CSV_PATH, "utf8");
-  const beringiaMeta = JSON.parse(await fs.readFile(BERINGIA_META_PATH, "utf8"));
-  const burgs = parseCsv(csvText, beringiaMeta);
+  try {
+    const csvText = await fs.readFile(BURGS_CSV_PATH, "utf8");
+    const beringiaMeta = JSON.parse(await fs.readFile(BERINGIA_META_PATH, "utf8"));
+    const burgs = parseCsv(csvText, beringiaMeta);
 
-  return (
-    <main className="wiki-main-page prototype-map-page">
-      <div className="wiki-content prototype-map-content">
-        <article className="wiki-article prototype-map-article">
-          <div className="wiki-article-header">
-            <div className="wiki-kicker">Prototype Burgs</div>
-            <h1 className="wiki-title">Azgaar Burg Coordinate Audit</h1>
-            <p className="wiki-subtitle">
-              Beringia-section inspection window for the authority burg CSV. Use this to check where
-              spherical-remapped Azgaar burgs land against the locked `-62 m` regional DEM in the
-              rotated audit orientation before we start validating provinces and settlement placement
-              against the terrain.
-            </p>
-          </div>
+    return (
+      <main className="wiki-main-page prototype-map-page">
+        <div className="wiki-content prototype-map-content">
+          <article className="wiki-article prototype-map-article">
+            <div className="wiki-article-header">
+              <div className="wiki-kicker">Prototype Burgs</div>
+              <h1 className="wiki-title">Azgaar Burg Coordinate Audit</h1>
+              <p className="wiki-subtitle">
+                Beringia-section inspection window for the authority burg CSV. Use this to check where
+                spherical-remapped Azgaar burgs land against the locked `-62 m` regional DEM in the
+                rotated audit orientation before we start validating provinces and settlement placement
+                against the terrain.
+              </p>
+            </div>
 
-          <BurgPinWorkbench burgs={burgs} />
-        </article>
-      </div>
-    </main>
-  );
+            <BurgPinWorkbench burgs={burgs} />
+          </article>
+        </div>
+      </main>
+    );
+  } catch (error) {
+    const missingPrototypeAsset =
+      !!error &&
+      typeof error === "object" &&
+      "code" in error &&
+      error.code === "ENOENT";
+
+    if (!missingPrototypeAsset) throw error;
+
+    return (
+      <main className="wiki-main-page prototype-map-page">
+        <div className="wiki-content prototype-map-content">
+          <article className="wiki-article prototype-map-article">
+            <div className="wiki-article-header">
+              <div className="wiki-kicker">Prototype Burgs</div>
+              <h1 className="wiki-title">Azgaar Burg Coordinate Audit</h1>
+              <p className="wiki-subtitle">
+                This prototype depends on local export artifacts that are not present in the production
+                deployment environment.
+              </p>
+            </div>
+
+            <div className="codex-empty-state p-6 text-sm leading-6">
+              Required regional export files were not found. This prototype remains available in local
+              development where `region_exports/` is present.
+            </div>
+          </article>
+        </div>
+      </main>
+    );
+  }
 }
