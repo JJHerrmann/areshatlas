@@ -8,7 +8,7 @@ divine_rank: ""
 gender: ""
 nature: ""
 ethos: ""
-major_influence: ""
+major_influence: Chaos
 minor_influences: []
 spheres: []
 avatars: []
@@ -47,8 +47,8 @@ navboxes:
   - dieties-of-areshnaat
 slug: tahiwaco
 ---
-# {{name}}
-*{{epithet}}*
+# Tahiwaco
+*The High-Lord of Chaos*
 
 {{short_overview}}
 

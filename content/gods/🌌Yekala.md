@@ -8,7 +8,7 @@ divine_rank: ""
 gender: ""
 nature: ""
 ethos: ""
-major_influence: ""
+major_influence: Possibility
 minor_influences: []
 spheres: []
 avatars: []

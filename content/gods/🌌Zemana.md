@@ -1,7 +1,7 @@
 ---
 type: deity
-name: ""
-epithet: ""
+name: Zemana
+epithet: The Matron of Time
 title: ""
 pantheon: ""
 divine_rank: ""

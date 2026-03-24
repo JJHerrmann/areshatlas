@@ -3,18 +3,20 @@ type: deity
 name: Bolohua
 epithet: The Primordial Deep
 title: Bolohua
-pantheon: ""
-divine_rank: ""
-gender: ""
+pantheon: Yekatlan
+divine_rank: Major
+gender: Fluid
 nature: ""
 ethos: ""
-major_influence: ""
+major_influence: Abyss
 minor_influences: []
 spheres: []
 avatars: []
 parents: []
-siblings: []
-offspring: []
+siblings:
+  - "[[🌌Moxilaxaya]]"
+offspring:
+  - "[[🌌Lotan]]"
 consorts: []
 allies: []
 foes: []

@@ -8,5 +8,49 @@
     "heraldry": null,
     "avatar": null
   },
-  "sections": []
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          "Yekatlan"
+        ],
+        [
+          "Gender",
+          "Fluid"
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Major Influence",
+          "Abyss"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Siblings",
+          [
+            "[[🌌Moxilaxaya]]"
+          ]
+        ],
+        [
+          "Offspring",
+          [
+            "[[🌌Lotan]]"
+          ]
+        ]
+      ]
+    }
+  ]
 }

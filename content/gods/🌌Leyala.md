@@ -1,14 +1,14 @@
 ---
 type: Moons
-name: "Leyala"
-epithet: "The Mistress of Moons"
-title: "Leyala"
+name: Leyala
+epithet: The Mistress of Moons
+title: Leyala
 pantheon: ""
 divine_rank: ""
 gender: ""
 nature: ""
 ethos: ""
-major_influence: ""
+major_influence: Night
 minor_influences: []
 spheres: []
 avatars: []

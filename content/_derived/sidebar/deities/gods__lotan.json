@@ -8,5 +8,15 @@
     "heraldry": null,
     "avatar": null
   },
-  "sections": []
+  "sections": [
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Major Influence",
+          "Night"
+        ]
+      ]
+    }
+  ]
 }
