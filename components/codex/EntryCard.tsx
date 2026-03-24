@@ -8,6 +8,19 @@ type EntryCardProps = {
   kind?: "folder" | "file";
 };
 
+function renderInlineSummary(summary: string) {
+  const parts = summary.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g).filter(Boolean);
+  return parts.map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**") && part.length > 4) {
+      return <strong key={`strong-${index}`}>{part.slice(2, -2)}</strong>;
+    }
+    if (part.startsWith("*") && part.endsWith("*") && part.length > 2) {
+      return <em key={`em-${index}`}>{part.slice(1, -1)}</em>;
+    }
+    return <span key={`text-${index}`}>{part}</span>;
+  });
+}
+
 export default function EntryCard({ title, domain, summary, href, kind = "file" }: EntryCardProps) {
   const body = (
     <article className="border border-stone-300 bg-amber-50/70 p-4">
@@ -15,7 +28,7 @@ export default function EntryCard({ title, domain, summary, href, kind = "file" 
         {kind === "folder" ? "Survey Division" : "Recorded Entry"} | {domain}
       </p>
       <h4 className="mt-2 font-display text-lg text-stone-900">{title}</h4>
-      <p className="mt-2 text-sm leading-6 text-stone-800/85">{summary}</p>
+      <p className="mt-2 text-sm leading-6 text-stone-800/85">{renderInlineSummary(summary)}</p>
     </article>
   );
 

@@ -56,11 +56,17 @@ export type DerivedNavboxItem = {
   href: string;
 };
 
+export type DerivedNavboxGroup = {
+  label: string;
+  items: DerivedNavboxItem[];
+};
+
 export type DerivedNavbox = {
   id: string;
   title: string;
   mode: string;
   items: DerivedNavboxItem[];
+  groups?: DerivedNavboxGroup[];
 };
 
 export type SidebarSectionRow = [string, unknown];
@@ -365,6 +371,18 @@ function readSummary(filePath: string, fallback: string) {
   return readFirstNonEmptyLine(parsed.content) || normalizeObsidianText(String(parsed.data.title || fallback));
 }
 
+function readEntryTitle(filePath: string, fallback: string) {
+  const ext = path.extname(filePath).toLowerCase();
+  if (!MARKDOWN_EXTENSIONS.has(ext)) return fallback;
+  const raw = fs.readFileSync(filePath, "utf8");
+  const parsed = parseMatterSafe(raw);
+  const name = typeof parsed.data.name === "string" ? normalizeObsidianText(parsed.data.name) : "";
+  if (name) return name;
+  const title = typeof parsed.data.title === "string" ? normalizeObsidianText(parsed.data.title) : "";
+  if (title) return title;
+  return fallback;
+}
+
 function createFileEntry(
   section: SectionConfig,
   slugParts: string[],
@@ -373,8 +391,9 @@ function createFileEntry(
 ): ContentEntry {
   const fileName = path.basename(filePath);
   const ext = path.extname(fileName).toLowerCase();
+  const fallbackTitle = titleFromFileName(fileName);
   return {
-    title: titleFromFileName(fileName),
+    title: readEntryTitle(filePath, fallbackTitle),
     href: ext === ".csv" ? undefined : getFileRoute(section, slugParts, filePath),
     domain,
     summary: readSummary(filePath, `Mirrored source entry in ${domain}.`),

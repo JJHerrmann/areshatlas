@@ -193,8 +193,7 @@ function buildNavboxData(markdownFiles) {
     }
     const title = String(parsed.title || id).trim();
     const mode = String(parsed.mode || "footer").trim();
-    const rawItems = normalizeStringArray(parsed.items).map(toSlugPart);
-    const items = rawItems.map((key) => {
+    const resolveNavboxItems = (rawValues) => normalizeStringArray(rawValues).map(toSlugPart).map((key) => {
       const resolvedSlug = articleKeyToSlug.get(key);
       if (!resolvedSlug) {
         throw new Error(`Navbox "${id}" references unknown article slug/alias "${key}"`);
@@ -209,12 +208,23 @@ function buildNavboxData(markdownFiles) {
         href: article.href,
       };
     });
+    const items = resolveNavboxItems(parsed.items);
+    const groups = Array.isArray(parsed.groups)
+      ? parsed.groups.map((group, index) => {
+          const label = String(group?.label || group?.title || `Group ${index + 1}`).trim();
+          return {
+            label,
+            items: resolveNavboxItems(group?.items),
+          };
+        }).filter((group) => group.items.length > 0)
+      : [];
 
     return {
       id,
       title,
       mode,
       items,
+      groups,
     };
   });
 
