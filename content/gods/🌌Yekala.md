@@ -47,8 +47,8 @@ navboxes:
   - dieties-of-areshnaat
 slug: yekala
 ---
-# {{name}}
-*{{epithet}}*
+# Yekela
+*The Matroness of Possibility*
 
 {{short_overview}}
 
