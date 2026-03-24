@@ -22,7 +22,7 @@
     "title": "Ba'al Sheol",
     "section": "pantheon",
     "href": "/pantheon/ba-al-sheol",
-    "source_relative_path": "gods/Ba'al Sheol.md",
+    "source_relative_path": "gods/🕳️Ba'al Sheol.md",
     "aliases": [],
     "navboxes": [
       "ramtilim",
@@ -35,6 +35,15 @@
     "section": "cultures",
     "href": "/cultures/biviai",
     "source_relative_path": "cultures/Biviai.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "bolohua",
+    "title": "Bolohua",
+    "section": "pantheon",
+    "href": "/pantheon/bolohua",
+    "source_relative_path": "gods/🌌Bolohua.md",
     "aliases": [],
     "navboxes": []
   },
@@ -75,6 +84,15 @@
     "navboxes": []
   },
   {
+    "slug": "gozara",
+    "title": "🌌Gozara",
+    "section": "pantheon",
+    "href": "/pantheon/gozara",
+    "source_relative_path": "gods/🌌Gozara.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "halfling-japanese-nahuatl",
     "title": "Halfling (Japanese-Nahuatl)",
     "section": "languages",
@@ -88,7 +106,7 @@
     "title": "Harbal",
     "section": "pantheon",
     "href": "/pantheon/harbaal",
-    "source_relative_path": "gods/Harbaal.md",
+    "source_relative_path": "gods/🕳️Harbaal.md",
     "aliases": [],
     "navboxes": [
       "ramtilim",
@@ -166,7 +184,7 @@
     "title": "Lotan",
     "section": "pantheon",
     "href": "/pantheon/lotan",
-    "source_relative_path": "gods/Lotan.md",
+    "source_relative_path": "gods/🌌Lotan.md",
     "aliases": [],
     "navboxes": [
       "ramtilim",
@@ -219,11 +237,38 @@
     ]
   },
   {
+    "slug": "moxilaxaya",
+    "title": "🌌Moxilaxaya",
+    "section": "pantheon",
+    "href": "/pantheon/moxilaxaya",
+    "source_relative_path": "gods/🌌Moxilaxaya.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "nekosdamkoda",
     "title": "Nekosdamkoda",
     "section": "regions",
     "href": "/regions/drakharpan/nations/nekosdamkoda",
     "source_relative_path": "regions/Drakharpan/nations/Nekosdamkoda.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "night",
+    "title": "🌌Night",
+    "section": "pantheon",
+    "href": "/pantheon/night",
+    "source_relative_path": "gods/🌌Night.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "niwara",
+    "title": "🌌Niwara",
+    "section": "pantheon",
+    "href": "/pantheon/niwara",
+    "source_relative_path": "gods/🌌Niwara.md",
     "aliases": [],
     "navboxes": []
   },
@@ -293,6 +338,15 @@
     "section": "languages",
     "href": "/languages/runakay-northwestern-human",
     "source_relative_path": "cultures/language/Runakay (Northwestern Human).md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "tahiwaco",
+    "title": "🌌Tahiwaco",
+    "section": "pantheon",
+    "href": "/pantheon/tahiwaco",
+    "source_relative_path": "gods/🌌Tahiwaco.md",
     "aliases": [],
     "navboxes": []
   },
@@ -400,7 +454,7 @@
     "title": "Yatbara",
     "section": "pantheon",
     "href": "/pantheon/yatbara",
-    "source_relative_path": "gods/Yatbara.md",
+    "source_relative_path": "gods/🌌Yatbara.md",
     "aliases": [],
     "navboxes": [
       "ramtilim",
@@ -408,11 +462,29 @@
     ]
   },
   {
+    "slug": "yekala",
+    "title": "🌌Yekala",
+    "section": "pantheon",
+    "href": "/pantheon/yekala",
+    "source_relative_path": "gods/🌌Yekala.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "yolca-halfling",
     "title": "Yolca (Halfling)",
     "section": "languages",
     "href": "/languages/yolca-halfling",
     "source_relative_path": "cultures/language/Yolca (Halfling).md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "zemana",
+    "title": "🌌Zemana",
+    "section": "pantheon",
+    "href": "/pantheon/zemana",
+    "source_relative_path": "gods/🌌Zemana.md",
     "aliases": [],
     "navboxes": []
   }

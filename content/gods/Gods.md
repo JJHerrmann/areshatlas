@@ -5,14 +5,14 @@ It's said that to the East, there is [[Ereslim]], and it is there where the gods
 
 Pantheon
 
-[[Lotan]]
+[[🌌Lotan]]
 [[Yamnahar]]
-[[Harbaal]]
+[[🕳️Harbaal]]
 [[Machul]]
 [[Kathorharab]]
-[[Ba'al Sheol]]
+[[🕳️Ba'al Sheol]]
 [[Malagad]]
-[[Yatbara]]
+[[🌌Yatbara]]
 [[Qatzera]]
 [[Marmoqed]]
 [[Yaradaat]]
@@ -22,7 +22,7 @@ Pantheon
 ```dataviewjs
 dv.table(
   ["God", "Epithet"],
-  dv.pages('"your/folder/path"')
+  dv.pages('"Authorship/roleplaying/worlds/aresh/codex-content/gods"')
     .where(p => p.epithet && String(p.epithet).trim() !== "")
     .sort(p => p.file.name, 'asc')
     .map(p => [p.file.link, p.epithet])
