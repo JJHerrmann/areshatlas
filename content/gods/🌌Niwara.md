@@ -8,8 +8,10 @@ divine_rank: ""
 gender: ""
 nature: ""
 ethos: ""
-major_influence: ""
-minor_influences: []
+major_influence: Sun
+minor_influences:
+  - Light
+  - Day
 spheres: []
 avatars: []
 parents: []

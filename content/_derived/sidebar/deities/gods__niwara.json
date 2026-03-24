@@ -8,5 +8,22 @@
     "heraldry": null,
     "avatar": null
   },
-  "sections": []
+  "sections": [
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Major Influence",
+          "Sun"
+        ],
+        [
+          "Minor Influence(s)",
+          [
+            "Light",
+            "Day"
+          ]
+        ]
+      ]
+    }
+  ]
 }
