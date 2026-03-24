@@ -15,6 +15,44 @@
         [
           "Pantheon",
           "Yekatlan"
+        ],
+        [
+          "Gender",
+          "Female"
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Major Influence",
+          "Fate"
+        ],
+        [
+          "Minor Influence(s)",
+          [
+            "allotments",
+            "omens",
+            "fairness",
+            "lifespans"
+          ]
+        ],
+        [
+          "Spheres",
+          [
+            "fate",
+            "days",
+            "measure",
+            "allotment",
+            "lifespan",
+            "portion",
+            "decree"
+          ]
         ]
       ]
     }

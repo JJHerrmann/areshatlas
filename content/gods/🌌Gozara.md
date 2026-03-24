@@ -4,13 +4,24 @@ name: Gozara
 epithet: The Mensor of Days
 title: Gozara
 pantheon: Yekatlan
-divine_rank: ""
-gender: ""
+divine_rank: Major
+gender: Female
 nature: ""
 ethos: ""
-major_influence: ""
-minor_influences: []
-spheres: []
+major_influence: Fate
+minor_influences:
+  - allotments
+  - omens
+  - fairness
+  - lifespans
+spheres:
+  - fate
+  - days
+  - measure
+  - allotment
+  - lifespan
+  - portion
+  - decree
 avatars: []
 parents: []
 siblings: []
