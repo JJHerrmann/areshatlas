@@ -1,14 +1,14 @@
 ---
 type: deity
 name: ""
-epithet: "The Matron of Order"
-title: "Moxilaxaya"
-pantheon: ""
-divine_rank: ""
+epithet: The Matron of Order
+title: Moxilaxaya
+pantheon: Yekatlan
+divine_rank: Major
 gender: Female
-nature: ""
+nature: lawful
 ethos: ""
-major_influence: ""
+major_influence: order
 minor_influences: []
 spheres: []
 avatars: []
@@ -46,6 +46,7 @@ navboxes:
   - yekatlan
   - dieties-of-areshnaat
 slug: Moxilaxaya
+img_avatar: "![[Pasted image 20260324085654.png]]"
 ---
 # Moxilaxaya
 *The Matron of Order*

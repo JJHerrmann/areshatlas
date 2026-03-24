@@ -13,8 +13,29 @@
       "title": "Descriptive Info",
       "rows": [
         [
+          "Pantheon",
+          "Yekatlan"
+        ],
+        [
           "Gender",
           "Female"
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Nature",
+          "lawful"
+        ],
+        [
+          "Major Influence",
+          "order"
         ]
       ]
     }
