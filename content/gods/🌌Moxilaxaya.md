@@ -1,15 +1,16 @@
 ---
 type: deity
-name: ""
+name: Moxilaxaya
 epithet: The Matron of Order
 title: Moxilaxaya
 pantheon: Yekatlan
 divine_rank: Major
 gender: Female
-nature: lawful
+nature: Lawful
 ethos: ""
-major_influence: order
-minor_influences: []
+major_influence: Order
+minor_influences:
+  - Processions, Ethos, Civilization, Leadership
 spheres: []
 avatars: []
 parents: []
