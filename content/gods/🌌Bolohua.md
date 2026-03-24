@@ -15,6 +15,8 @@ avatars: []
 parents: []
 siblings:
   - "[[🌌Moxilaxaya]]"
+  - "[[🌌Yekala]]"
+  - "[[🌌Tahiwaco]]"
 offspring:
   - "[[🌌Lotan]]"
 consorts: []
