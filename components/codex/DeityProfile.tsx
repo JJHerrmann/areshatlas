@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import InlineCodexText from "@/components/codex/InlineCodexText";
 import SidebarValue from "@/components/codex/SidebarValue";
 
 type DeityProfileProps = {
@@ -193,11 +194,21 @@ export default function DeityProfile({ frontmatter, sourceRelativePath }: DeityP
     <article className="codex-entry-body codex-prose">
       <div className="mb-6">
         <div className="codex-kicker">Deity Profile</div>
-        <h2 className="codex-page-title mt-2">{title}</h2>
-        {subtitle ? <p className="codex-page-summary mt-3">{subtitle}</p> : null}
+        <h2 className="codex-page-title mt-2">
+          <InlineCodexText text={title} sourceRelativePath={sourceRelativePath} />
+        </h2>
+        {subtitle ? (
+          <p className="codex-page-summary mt-3">
+            <InlineCodexText text={subtitle} sourceRelativePath={sourceRelativePath} />
+          </p>
+        ) : null}
       </div>
 
-      {summary ? <p className="codex-page-summary">{summary}</p> : null}
+      {summary ? (
+        <p className="codex-page-summary">
+          <InlineCodexText text={summary} sourceRelativePath={sourceRelativePath} />
+        </p>
+      ) : null}
 
       {tabs.length ? (
         tabs

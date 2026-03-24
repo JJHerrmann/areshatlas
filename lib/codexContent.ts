@@ -236,6 +236,14 @@ export function normalizeObsidianText(value: string) {
     .trim();
 }
 
+export function normalizeObsidianDisplayText(value: string) {
+  return resolveObsidianInlineParts(String(value))
+    .map((part) => part.text)
+    .join("")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
 function readFirstNonEmptyLine(markdown: string) {
   const line = markdown
     .split(/\r?\n/)
@@ -381,9 +389,9 @@ function readEntryTitle(filePath: string, fallback: string) {
   if (!MARKDOWN_EXTENSIONS.has(ext)) return fallback;
   const raw = fs.readFileSync(filePath, "utf8");
   const parsed = parseMatterSafe(raw);
-  const name = typeof parsed.data.name === "string" ? normalizeObsidianText(parsed.data.name) : "";
+  const name = typeof parsed.data.name === "string" ? normalizeObsidianDisplayText(parsed.data.name) : "";
   if (name) return name;
-  const title = typeof parsed.data.title === "string" ? normalizeObsidianText(parsed.data.title) : "";
+  const title = typeof parsed.data.title === "string" ? normalizeObsidianDisplayText(parsed.data.title) : "";
   if (title) return title;
   return fallback;
 }
@@ -657,8 +665,8 @@ export async function getRenderedDocument(section: SectionConfig, slugParts: str
   const raw = fs.readFileSync(filePath, "utf8");
   const parsed = parseMatterSafe(raw);
   const title =
-    normalizeObsidianText(String(parsed.data.title || "")) ||
-    normalizeObsidianText(readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") || "") ||
+    normalizeObsidianDisplayText(String(parsed.data.title || "")) ||
+    normalizeObsidianDisplayText(readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") || "") ||
     titleFromFileName(path.basename(filePath));
   const summary =
     (typeof parsed.data.summary === "string" && normalizeObsidianText(parsed.data.summary)) ||
@@ -684,8 +692,8 @@ export async function getRenderedOverviewDocument(section: SectionConfig, slugPa
   const raw = fs.readFileSync(filePath, "utf8");
   const parsed = parseMatterSafe(raw);
   const title =
-    normalizeObsidianText(String(parsed.data.title || "")) ||
-    normalizeObsidianText(readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") || "") ||
+    normalizeObsidianDisplayText(String(parsed.data.title || "")) ||
+    normalizeObsidianDisplayText(readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") || "") ||
     titleFromFileName(path.basename(filePath));
   const summary =
     (typeof parsed.data.summary === "string" && normalizeObsidianText(parsed.data.summary)) ||

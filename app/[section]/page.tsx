@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import CoordinateRule from "@/components/codex/CoordinateRule";
 import CornerOrnament from "@/components/codex/CornerOrnament";
 import EntryCard from "@/components/codex/EntryCard";
+import InlineCodexText from "@/components/codex/InlineCodexText";
 import PlateLabel from "@/components/codex/PlateLabel";
 import { getRenderedOverviewDocument, getSectionBySlug, getSectionView, sections } from "@/lib/codexContent";
 
@@ -34,7 +35,9 @@ export default async function SectionPage({ params }: SectionPageProps) {
         </Link>
         <div className="mt-6 max-w-3xl">
           <PlateLabel>{section.label}</PlateLabel>
-          <h1 className="codex-page-title mt-4">{overviewDocument?.title ?? section.title}</h1>
+          <h1 className="codex-page-title mt-4">
+            <InlineCodexText text={overviewDocument?.title ?? section.title} />
+          </h1>
           <p className="codex-source-note mt-3">
             Mirrored Source Folder: {view.sourcePath}
           </p>
