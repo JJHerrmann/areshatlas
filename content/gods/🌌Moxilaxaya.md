@@ -49,7 +49,7 @@ slug: Moxilaxaya
 ---
 # Moxilaxaya
 *The Matron of Order*
-
+![[Pasted image 20260324085654.png]]
 {{short_overview}}
 
 ## Divine Profile
