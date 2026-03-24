@@ -39,13 +39,13 @@ virtues: []
 vices: []
 holy_days: []
 taboos: []
+slug: leyala
 tags:
   - deity
   - religion
 navboxes:
   - yekatlan
   - dieties-of-areshnaat
-slug:leyala
 ---
 # Leyala
 *The Mistress of Moons*

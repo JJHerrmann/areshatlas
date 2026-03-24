@@ -1,0 +1,22 @@
+{
+  "type": "deity",
+  "title": "Gozara",
+  "subtitle": "The Mensor of Days",
+  "source_relative_path": "gods/🌌Gozara.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          "Yekatlan"
+        ]
+      ]
+    }
+  ]
+}

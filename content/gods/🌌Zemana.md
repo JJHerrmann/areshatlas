@@ -45,7 +45,7 @@ tags:
 navboxes:
   - yekatlan
   - dieties-of-areshnaat
-slug:zemana
+slug: zemana
 ---
 # {{name}}
 *{{epithet}}*

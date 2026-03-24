@@ -1,9 +1,9 @@
 ---
 type: deity
-name: ""
-epithet: ""
-title: ""
-pantheon: ""
+name: Gozara
+epithet: The Mensor of Days
+title: Gozara
+pantheon: Yekatlan
 divine_rank: ""
 gender: ""
 nature: ""
@@ -45,7 +45,7 @@ tags:
 navboxes:
   - yekatlan
   - dieties-of-areshnaat
-slug:gozara
+slug: gozara
 ---
 # Gozara
 *The Mensor of Days*

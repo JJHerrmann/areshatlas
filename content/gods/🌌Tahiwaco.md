@@ -45,7 +45,7 @@ tags:
 navboxes:
   - yekatlan
   - dieties-of-areshnaat
-slug:tahiwaco
+slug: tahiwaco
 ---
 # {{name}}
 *{{epithet}}*

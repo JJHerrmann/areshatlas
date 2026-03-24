@@ -5,20 +5,6 @@ It's said that to the East, there is [[Ereslim]], and it is there where the gods
 
 Pantheon
 
-[[🌌Lotan]]
-[[Yamnahar]]
-[[🕳️Harbaal]]
-[[Machul]]
-[[Kathorharab]]
-[[🕳️Ba'al Sheol]]
-[[Malagad]]
-[[🌌Yatbara]]
-[[Qatzera]]
-[[Marmoqed]]
-[[Yaradaat]]
-[[Tsayidrah]]
-[[Raavvah]]
-
 ```dataviewjs
 dv.table(
   ["God", "Epithet"],

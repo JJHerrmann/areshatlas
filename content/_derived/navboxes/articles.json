@@ -88,12 +88,15 @@
   },
   {
     "slug": "gozara",
-    "title": "🌌Gozara",
+    "title": "Gozara",
     "section": "pantheon",
     "href": "/pantheon/gozara",
     "source_relative_path": "gods/🌌Gozara.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "yekatlan",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "halfling-japanese-nahuatl",
@@ -184,21 +187,27 @@
   },
   {
     "slug": "leyala",
-    "title": "🌌Leyala",
+    "title": "Leyala",
     "section": "pantheon",
     "href": "/pantheon/leyala",
     "source_relative_path": "gods/🌌Leyala.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "yekatlan",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "lotan",
-    "title": "🌌Lotan",
+    "title": "Lotan",
     "section": "pantheon",
     "href": "/pantheon/lotan",
     "source_relative_path": "gods/🌌Lotan.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "yekatlan",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "machul",
@@ -273,7 +282,10 @@
     "href": "/pantheon/niwara",
     "source_relative_path": "gods/🌌Niwara.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "yekatlan",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "petrello",
@@ -351,7 +363,10 @@
     "href": "/pantheon/tahiwaco",
     "source_relative_path": "gods/🌌Tahiwaco.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "yekatlan",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "the-seamire",
@@ -471,7 +486,10 @@
     "href": "/pantheon/yekala",
     "source_relative_path": "gods/🌌Yekala.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "yekatlan",
+      "dieties-of-areshnaat"
+    ]
   },
   {
     "slug": "yolca-halfling",
@@ -489,6 +507,9 @@
     "href": "/pantheon/zemana",
     "source_relative_path": "gods/🌌Zemana.md",
     "aliases": [],
-    "navboxes": []
+    "navboxes": [
+      "yekatlan",
+      "dieties-of-areshnaat"
+    ]
   }
 ]

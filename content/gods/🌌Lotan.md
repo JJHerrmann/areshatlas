@@ -46,7 +46,7 @@ primary_topic: Dieties of Areshnaat
 navboxes:
   - yekatlan
   - dieties-of-areshnaat
-slug:Lotan
+slug: lotan
 ---
 # Lotan
 *The Sky Serpant*
