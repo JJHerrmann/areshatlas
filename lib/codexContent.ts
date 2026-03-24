@@ -105,6 +105,17 @@ let markdownPathIndex: Array<{ relativePath: string; title: string; slugTitle: s
 let derivedArticleIndex: DerivedArticle[] | null = null;
 let derivedNavboxIndex: DerivedNavbox[] | null = null;
 
+function parseMatterSafe(raw: string) {
+  try {
+    return matter(raw);
+  } catch {
+    return {
+      data: {} as Record<string, unknown>,
+      content: raw,
+    };
+  }
+}
+
 export const sections: SectionConfig[] = [
   {
     slug: "pantheon",
@@ -344,7 +355,7 @@ function readSummary(filePath: string, fallback: string) {
   if (!ALLOWED_ENTRY_EXTENSIONS.has(ext)) return fallback;
   if (ext === ".csv") return fallback;
   const raw = fs.readFileSync(filePath, "utf8");
-  const parsed = matter(raw);
+  const parsed = parseMatterSafe(raw);
   const cardSummary = typeof parsed.data.card_summary === "string" ? normalizeObsidianText(parsed.data.card_summary) : "";
   if (cardSummary) return cardSummary;
 
@@ -620,7 +631,7 @@ export async function getRenderedDocument(section: SectionConfig, slugParts: str
   if (!filePath) return null;
 
   const raw = fs.readFileSync(filePath, "utf8");
-  const parsed = matter(raw);
+  const parsed = parseMatterSafe(raw);
   const title =
     normalizeObsidianText(String(parsed.data.title || "")) ||
     normalizeObsidianText(readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") || "") ||
@@ -647,7 +658,7 @@ export async function getRenderedOverviewDocument(section: SectionConfig, slugPa
   if (!filePath) return null;
 
   const raw = fs.readFileSync(filePath, "utf8");
-  const parsed = matter(raw);
+  const parsed = parseMatterSafe(raw);
   const title =
     normalizeObsidianText(String(parsed.data.title || "")) ||
     normalizeObsidianText(readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") || "") ||

@@ -5,6 +5,56 @@
     "mode": "footer",
     "items": [
       {
+        "slug": "bolohua",
+        "title": "Bolohua",
+        "href": "/pantheon/bolohua"
+      },
+      {
+        "slug": "gozara",
+        "title": "🌌Gozara",
+        "href": "/pantheon/gozara"
+      },
+      {
+        "slug": "leyala",
+        "title": "🌌Leyala",
+        "href": "/pantheon/leyala"
+      },
+      {
+        "slug": "lotan",
+        "title": "🌌Lotan",
+        "href": "/pantheon/lotan"
+      },
+      {
+        "slug": "moxilaxaya",
+        "title": "Moxilaxaya",
+        "href": "/pantheon/moxilaxaya"
+      },
+      {
+        "slug": "niwara",
+        "title": "🌌Niwara",
+        "href": "/pantheon/niwara"
+      },
+      {
+        "slug": "tahiwaco",
+        "title": "🌌Tahiwaco",
+        "href": "/pantheon/tahiwaco"
+      },
+      {
+        "slug": "yatbara",
+        "title": "Yatbara",
+        "href": "/pantheon/yatbara"
+      },
+      {
+        "slug": "yekala",
+        "title": "🌌Yekala",
+        "href": "/pantheon/yekala"
+      },
+      {
+        "slug": "zemana",
+        "title": "🌌Zemana",
+        "href": "/pantheon/zemana"
+      },
+      {
         "slug": "ba-al-sheol",
         "title": "Ba'al Sheol",
         "href": "/pantheon/ba-al-sheol"
@@ -18,11 +68,6 @@
         "slug": "kathorharab",
         "title": "Kathorharab",
         "href": "/pantheon/kathorharab"
-      },
-      {
-        "slug": "lotan",
-        "title": "Lotan",
-        "href": "/pantheon/lotan"
       },
       {
         "slug": "machul",
@@ -63,11 +108,6 @@
         "slug": "yaradaat",
         "title": "Yaradaat",
         "href": "/pantheon/yaradaat"
-      },
-      {
-        "slug": "yatbara",
-        "title": "Yatbara",
-        "href": "/pantheon/yatbara"
       }
     ]
   },
@@ -77,6 +117,56 @@
     "mode": "footer",
     "items": [
       {
+        "slug": "bolohua",
+        "title": "Bolohua",
+        "href": "/pantheon/bolohua"
+      },
+      {
+        "slug": "gozara",
+        "title": "🌌Gozara",
+        "href": "/pantheon/gozara"
+      },
+      {
+        "slug": "leyala",
+        "title": "🌌Leyala",
+        "href": "/pantheon/leyala"
+      },
+      {
+        "slug": "lotan",
+        "title": "🌌Lotan",
+        "href": "/pantheon/lotan"
+      },
+      {
+        "slug": "moxilaxaya",
+        "title": "Moxilaxaya",
+        "href": "/pantheon/moxilaxaya"
+      },
+      {
+        "slug": "niwara",
+        "title": "🌌Niwara",
+        "href": "/pantheon/niwara"
+      },
+      {
+        "slug": "tahiwaco",
+        "title": "🌌Tahiwaco",
+        "href": "/pantheon/tahiwaco"
+      },
+      {
+        "slug": "yatbara",
+        "title": "Yatbara",
+        "href": "/pantheon/yatbara"
+      },
+      {
+        "slug": "yekala",
+        "title": "🌌Yekala",
+        "href": "/pantheon/yekala"
+      },
+      {
+        "slug": "zemana",
+        "title": "🌌Zemana",
+        "href": "/pantheon/zemana"
+      },
+      {
         "slug": "ba-al-sheol",
         "title": "Ba'al Sheol",
         "href": "/pantheon/ba-al-sheol"
@@ -90,11 +180,6 @@
         "slug": "kathorharab",
         "title": "Kathorharab",
         "href": "/pantheon/kathorharab"
-      },
-      {
-        "slug": "lotan",
-        "title": "Lotan",
-        "href": "/pantheon/lotan"
       },
       {
         "slug": "machul",
@@ -135,11 +220,6 @@
         "slug": "yaradaat",
         "title": "Yaradaat",
         "href": "/pantheon/yaradaat"
-      },
-      {
-        "slug": "yatbara",
-        "title": "Yatbara",
-        "href": "/pantheon/yatbara"
       }
     ]
   },
@@ -164,11 +244,6 @@
         "href": "/pantheon/kathorharab"
       },
       {
-        "slug": "lotan",
-        "title": "Lotan",
-        "href": "/pantheon/lotan"
-      },
-      {
         "slug": "machul",
         "title": "Machul",
         "href": "/pantheon/machul"
@@ -207,11 +282,63 @@
         "slug": "yaradaat",
         "title": "Yaradaat",
         "href": "/pantheon/yaradaat"
+      }
+    ]
+  },
+  {
+    "id": "yekatlan",
+    "title": "Yekatlan",
+    "mode": "footer",
+    "items": [
+      {
+        "slug": "bolohua",
+        "title": "Bolohua",
+        "href": "/pantheon/bolohua"
+      },
+      {
+        "slug": "gozara",
+        "title": "🌌Gozara",
+        "href": "/pantheon/gozara"
+      },
+      {
+        "slug": "leyala",
+        "title": "🌌Leyala",
+        "href": "/pantheon/leyala"
+      },
+      {
+        "slug": "lotan",
+        "title": "🌌Lotan",
+        "href": "/pantheon/lotan"
+      },
+      {
+        "slug": "moxilaxaya",
+        "title": "Moxilaxaya",
+        "href": "/pantheon/moxilaxaya"
+      },
+      {
+        "slug": "niwara",
+        "title": "🌌Niwara",
+        "href": "/pantheon/niwara"
+      },
+      {
+        "slug": "tahiwaco",
+        "title": "🌌Tahiwaco",
+        "href": "/pantheon/tahiwaco"
       },
       {
         "slug": "yatbara",
         "title": "Yatbara",
         "href": "/pantheon/yatbara"
+      },
+      {
+        "slug": "yekala",
+        "title": "🌌Yekala",
+        "href": "/pantheon/yekala"
+      },
+      {
+        "slug": "zemana",
+        "title": "🌌Zemana",
+        "href": "/pantheon/zemana"
       }
     ]
   }

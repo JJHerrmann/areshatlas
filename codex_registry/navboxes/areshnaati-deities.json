@@ -3,10 +3,19 @@
   "title": "Areshnaati Deities",
   "mode": "footer",
   "items": [
+    "bolohua",
+    "gozara",
+    "leyala",
+    "lotan",
+    "moxilaxaya",
+    "niwara",
+    "tahiwaco",
+    "yatbara",
+    "yekala",
+    "zemana",
     "ba-al-sheol",
     "harbaal",
     "kathorharab",
-    "lotan",
     "machul",
     "malagad",
     "marmoqed",
@@ -14,7 +23,6 @@
     "raavvah",
     "tsayidrah",
     "yamnahar",
-    "yaradaat",
-    "yatbara"
+    "yaradaat"
   ]
 }
