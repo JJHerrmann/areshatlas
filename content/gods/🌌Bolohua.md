@@ -48,7 +48,7 @@ navboxes:
 slug: bolohua
 ---
 # Bolohua
-**
+*The Primordial Deep*
 
 {{short_overview}}
 

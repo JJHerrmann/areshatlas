@@ -1,5 +1,5 @@
 ---
-type: deity
+type: Moons
 name: "Leyala"
 epithet: "The Mistress of Moons"
 title: "Leyala"
