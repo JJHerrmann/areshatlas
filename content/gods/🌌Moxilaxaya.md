@@ -1,9 +1,8 @@
-
 ---
 type: deity
 name: ""
-epithet: ""
-title: ""
+epithet: "The Matron of Order"
+title: "Moxilaxaya"
 pantheon: ""
 divine_rank: ""
 gender: Female
@@ -43,9 +42,13 @@ taboos: []
 tags:
   - deity
   - religion
+navboxes:
+  - yekatlan
+  - dieties-of-areshnaat
+slug: Moxilaxaya
 ---
-# {{name}}
-*{{epithet}}*
+# Moxilaxaya
+*The Matron of Order*
 
 {{short_overview}}
 

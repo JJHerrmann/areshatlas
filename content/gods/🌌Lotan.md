@@ -44,9 +44,9 @@ tags:
   - religion
 primary_topic: Dieties of Areshnaat
 navboxes:
-  - ramtilim
+  - yekatlan
   - dieties-of-areshnaat
-slug: lotan
+slug:Lotan
 ---
 # Lotan
 *The Sky Serpant*

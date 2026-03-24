@@ -1,0 +1,22 @@
+{
+  "type": "deity",
+  "title": "Moxilaxaya",
+  "subtitle": "The Matron of Order",
+  "source_relative_path": "gods/🌌Moxilaxaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Gender",
+          "Female"
+        ]
+      ]
+    }
+  ]
+}

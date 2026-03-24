@@ -44,7 +44,7 @@ tags:
 type: deity
 primary_topic: Dieties of Areshnaat
 navboxes:
-  - ramtilim
+  - yekatlan
   - dieties-of-areshnaat
 slug: yatbara
 title: Yatbara

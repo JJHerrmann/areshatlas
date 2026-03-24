@@ -42,8 +42,12 @@ taboos: []
 tags:
   - deity
   - religion
+navboxes:
+  - yekatlan
+  - dieties-of-areshnaat
+slug:niwara
 ---
-# {{name}}
+# Niwara
 *{{epithet}}*
 
 {{short_overview}}

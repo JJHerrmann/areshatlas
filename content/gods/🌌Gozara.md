@@ -42,9 +42,13 @@ taboos: []
 tags:
   - deity
   - religion
+navboxes:
+  - yekatlan
+  - dieties-of-areshnaat
+slug:gozara
 ---
-# {{name}}
-*{{epithet}}*
+# Gozara
+*The Mensor of Days*
 
 {{short_overview}}
 

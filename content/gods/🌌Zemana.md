@@ -42,6 +42,10 @@ taboos: []
 tags:
   - deity
   - religion
+navboxes:
+  - yekatlan
+  - dieties-of-areshnaat
+slug:zemana
 ---
 # {{name}}
 *{{epithet}}*

@@ -1,8 +1,8 @@
 ---
 type: deity
-name: ""
-epithet: ""
-title: ""
+name: "Leyala"
+epithet: "The Mistress of Moons"
+title: "Leyala"
 pantheon: ""
 divine_rank: ""
 gender: ""
@@ -42,9 +42,13 @@ taboos: []
 tags:
   - deity
   - religion
+navboxes:
+  - yekatlan
+  - dieties-of-areshnaat
+slug:leyala
 ---
-# {{name}}
-*{{epithet}}*
+# Leyala
+*The Mistress of Moons*
 
 {{short_overview}}
 

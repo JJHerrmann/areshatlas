@@ -42,9 +42,13 @@ taboos: []
 tags:
   - deity
   - religion
+navboxes:
+  - yekatlan
+  - dieties-of-areshnaat
+slug: bolohua
 ---
-# {{name}}
-*{{epithet}}*
+# Bolohua
+**
 
 {{short_overview}}
 
