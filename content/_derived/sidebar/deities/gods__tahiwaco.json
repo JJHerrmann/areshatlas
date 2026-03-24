@@ -10,11 +10,41 @@
   },
   "sections": [
     {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Consort(s)",
+          [
+            "[[🌌Moxilaxaya]]"
+          ]
+        ]
+      ]
+    },
+    {
       "title": "Spiritual Info",
       "rows": [
         [
           "Major Influence",
           "Chaos"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Siblings",
+          [
+            "[[🌌Bolohua]]",
+            "[[🌌Moxilaxaya]]",
+            "[[🌌Yekala]]"
+          ]
+        ],
+        [
+          "Offspring",
+          [
+            "[[🌌Yatbara]]"
+          ]
         ]
       ]
     }

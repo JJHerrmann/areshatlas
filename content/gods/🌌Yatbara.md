@@ -14,7 +14,8 @@ avatars: []
 parents: []
 siblings: []
 offspring: []
-consorts: []
+consorts:
+  - "[[🌌Yekala]]"
 allies: []
 foes: []
 dwelling_place: ""

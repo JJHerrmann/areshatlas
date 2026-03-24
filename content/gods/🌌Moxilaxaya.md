@@ -16,7 +16,8 @@ avatars: []
 parents: []
 siblings: []
 offspring: []
-consorts: []
+consorts:
+  - "[[🌌Tahiwaco]]"
 allies: []
 foes: []
 dwelling_place: ""

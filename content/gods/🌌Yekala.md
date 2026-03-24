@@ -19,7 +19,9 @@ minor_influences:
 spheres: []
 avatars: []
 parents: []
-siblings: []
+siblings:
+  - "[[🌌Moxilaxaya]]"
+  - "[[🌌Bolohua]]"
 offspring: []
 consorts: []
 allies: []

@@ -18,6 +18,7 @@ siblings:
 offspring:
   - "[[🌌Lotan]]"
 consorts: []
+paramour: "[[🌌Tahiwaco]]"
 allies: []
 foes: []
 dwelling_place: ""

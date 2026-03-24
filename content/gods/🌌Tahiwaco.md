@@ -13,9 +13,17 @@ minor_influences: []
 spheres: []
 avatars: []
 parents: []
-siblings: []
-offspring: []
-consorts: []
+siblings:
+  - "[[🌌Bolohua]]"
+  - "[[🌌Moxilaxaya]]"
+  - "[[🌌Yekala]]"
+offspring:
+  - "[[🌌Yatbara]]"
+consorts:
+  - "[[🌌Moxilaxaya]]"
+mistresses:
+  - "[[🌌Yekala]]"
+  - "[[🌌Bolohua]]"
 allies: []
 foes: []
 dwelling_place: ""
