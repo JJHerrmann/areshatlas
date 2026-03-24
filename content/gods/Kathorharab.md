@@ -1,7 +1,7 @@
 ---
 type: deity
 name: Kathorharab
-epithet: The God of Craft and War, The Wailing Hammer
+epithet: The God of Craft and War
 title: Kathorharab
 pantheon: Areshnaati
 divine_rank: Major
