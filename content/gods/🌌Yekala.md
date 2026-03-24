@@ -48,7 +48,7 @@ navboxes:
 slug: yekala
 ---
 # Yekela
-*The Matroness of Possibility*
+*The Lady of Possibility*
 
 {{short_overview}}
 
