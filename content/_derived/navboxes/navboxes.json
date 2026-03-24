@@ -109,7 +109,8 @@
         "title": "Yaradaat",
         "href": "/pantheon/yaradaat"
       }
-    ]
+    ],
+    "groups": []
   },
   {
     "id": "dieties-of-areshnaat",
@@ -221,7 +222,8 @@
         "title": "Yaradaat",
         "href": "/pantheon/yaradaat"
       }
-    ]
+    ],
+    "groups": []
   },
   {
     "id": "ramtilim",
@@ -283,7 +285,8 @@
         "title": "Yaradaat",
         "href": "/pantheon/yaradaat"
       }
-    ]
+    ],
+    "groups": []
   },
   {
     "id": "yekatlan",
@@ -340,6 +343,7 @@
         "title": "Zemana",
         "href": "/pantheon/zemana"
       }
-    ]
+    ],
+    "groups": []
   }
 ]
