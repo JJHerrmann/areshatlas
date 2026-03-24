@@ -50,7 +50,7 @@ navboxes:
 slug: niwara
 ---
 # Niwara
-*{{epithet}}*
+*The Sun Catcher*
 
 {{short_overview}}
 
