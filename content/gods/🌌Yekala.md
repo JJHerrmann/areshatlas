@@ -1,15 +1,21 @@
 ---
 type: deity
 name: ""
-epithet: ""
+epithet: The Lady of Loaded Dice
 title: ""
 pantheon: ""
 divine_rank: ""
-gender: ""
+gender: Female
 nature: ""
 ethos: ""
 major_influence: Possibility
-minor_influences: []
+minor_influences:
+  - Hope
+  - Potential
+  - Becoming
+  - Choice
+  - Luck/Fortune
+  - Gambling
 spheres: []
 avatars: []
 parents: []
@@ -25,7 +31,8 @@ sacred_number:
 sacred_colors: []
 forbidden_colors: []
 sacred_stones: []
-sacred_objects: []
+sacred_objects:
+  - Dice with her symbol on the highest face, Playing Cards, Two-Headed Gold Pieces
 sacred_weapons: []
 church_name: ""
 central_authority: ""
@@ -48,7 +55,7 @@ navboxes:
 slug: yekala
 ---
 # Yekela
-*The Lady of Possibility*
+*The Lady of Loaded Dice*
 
 {{short_overview}}
 

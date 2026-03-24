@@ -1,7 +1,7 @@
 {
   "type": "deity",
   "title": "🌌Yekala",
-  "subtitle": null,
+  "subtitle": "The Lady of Loaded Dice",
   "source_relative_path": "gods/🌌Yekala.md",
   "images": {
     "banner": null,
@@ -10,11 +10,42 @@
   },
   "sections": [
     {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Gender",
+          "Female"
+        ]
+      ]
+    },
+    {
       "title": "Spiritual Info",
       "rows": [
         [
           "Major Influence",
           "Possibility"
+        ],
+        [
+          "Minor Influence(s)",
+          [
+            "Hope",
+            "Potential",
+            "Becoming",
+            "Choice",
+            "Luck/Fortune",
+            "Gambling"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Symbols and Regalia",
+      "rows": [
+        [
+          "Sacred Objects",
+          [
+            "Dice with her symbol on the highest face, Playing Cards, Two-Headed Gold Pieces"
+          ]
         ]
       ]
     }
