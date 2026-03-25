@@ -5,7 +5,7 @@ title: Marmoqed
 pantheon: ""
 divine_rank: ""
 gender: ""
-nature: ""
+nature: lawful
 ethos: ""
 major_influence: ""
 minor_influences: []

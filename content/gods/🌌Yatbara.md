@@ -11,8 +11,12 @@ major_influence: Creation
 minor_influences: []
 spheres: []
 avatars: []
-parents: []
-siblings: []
+parents:
+  - "[[🌌Yekala]]"
+  - "[[🌌Moxilaxaya]]"
+  - "[[🌌Tahiwaco]]"
+siblings:
+  - "[[🌌Niwara]]"
 offspring: []
 consorts:
   - "[[🌌Yekala]]"

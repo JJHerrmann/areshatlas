@@ -37,17 +37,45 @@
         ],
         [
           "Nature",
-          "chaotic, generative"
+          "Unbound"
         ],
         [
           "Ethos",
-          "lawful"
+          "Distant"
+        ],
+        [
+          "Major Influence",
+          "War"
+        ],
+        [
+          "Minor Influence(s)",
+          [
+            "Forge",
+            "War",
+            "Weaponcraft",
+            "Armorcraft",
+            "Leatherwork",
+            "Martial Training",
+            "Sword Arts"
+          ]
         ],
         [
           "Spheres",
           [
             "Forge",
             "War"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Parents",
+          [
+            "[[🌌Yekala]]",
+            "[[🌌Moxilaxaya]]"
           ]
         ]
       ]

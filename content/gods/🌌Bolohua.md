@@ -6,7 +6,7 @@ title: Bolohua
 pantheon: Yekatlan
 divine_rank: Major
 gender: Fluid
-nature: ""
+nature: Lawful
 ethos: ""
 major_influence: Abyss
 minor_influences: []

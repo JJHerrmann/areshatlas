@@ -8,11 +8,13 @@ divine_rank: ""
 gender: ""
 nature: ""
 ethos: ""
-major_influence: Night
+major_influence: Moon
 minor_influences: []
 spheres: []
 avatars: []
-parents: []
+parents:
+  - "[[🌌Yekala]]"
+  - "[[🌌Niwara]]"
 siblings: []
 offspring: []
 consorts: []

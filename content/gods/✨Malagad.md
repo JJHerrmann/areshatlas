@@ -6,7 +6,7 @@ title: Malagad
 pantheon: ""
 divine_rank: ""
 gender: ""
-nature: ""
+nature: neutral
 ethos: ""
 major_influence: ""
 minor_influences: []

@@ -14,8 +14,11 @@ minor_influences:
   - Day
 spheres: []
 avatars: []
-parents: []
-siblings: []
+parents:
+  - "[[🌌Moxilaxaya]]"
+  - "[[🌌Tahiwaco]]"
+siblings:
+  - "[[🌌Yatbara]]"
 offspring: []
 consorts: []
 allies: []

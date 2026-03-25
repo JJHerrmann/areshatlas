@@ -6,15 +6,24 @@ title: Kathorharab
 pantheon: Areshnaati
 divine_rank: Major
 gender: Male
-nature: chaotic, generative
-ethos: lawful
-major_influence: ""
-minor_influences: []
+nature: Unbound
+ethos: Distant
+major_influence: War
+minor_influences:
+  - Forge
+  - War
+  - Weaponcraft
+  - Armorcraft
+  - Leatherwork
+  - Martial Training
+  - Sword Arts
 spheres:
   - Forge
   - War
 avatars: []
-parents: []
+parents:
+  - "[[🌌Yekala]]"
+  - "[[🌌Moxilaxaya]]"
 siblings: []
 offspring: []
 consorts:
@@ -50,6 +59,7 @@ navboxes:
   - ramtilim
   - dieties-of-areshnaat
 slug: kathorharab
+root:
 ---
 # Kathorharab
 *The Wailing Hammer* - The God of Craft and War

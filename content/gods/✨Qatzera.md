@@ -6,7 +6,7 @@ pantheon: ""
 divine_rank: ""
 gender: ""
 nature: ""
-ethos: ""
+ethos: lawful
 major_influence: ""
 minor_influences: []
 spheres: []
