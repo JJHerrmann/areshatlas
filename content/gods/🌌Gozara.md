@@ -59,10 +59,10 @@ navboxes:
   - yekatlan
   - dieties-of-areshnaat
 slug: gozara
+image_avatar: "![[/_images/Pasted image 20260326180824.png]]"
 ---
 # Gozara
 *The Mensor of Days*
-
 Gozara is the fate-mistress of the primordial pantheon, styled as a younger woman in her maiden days, as is typical of primordial depictions in art. She carries with her the plumb bob and plumb line, a measuring device favored by builders, whom she is also a patron of. She measures the sacred geometry of the universe, and divines what is fated to be by the angles of the stars, the mapped events on her temple walls, and the distance of the lines of fate.
 ## Depictions
 
