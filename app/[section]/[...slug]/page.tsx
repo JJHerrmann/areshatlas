@@ -65,6 +65,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
                     title={entry.title}
                     domain={entry.domain}
                     summary={entry.summary}
+                    imageSrc={entry.imageSrc}
                     href={entry.href}
                     kind={entry.kind}
                   />
@@ -174,6 +175,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
                   title={entry.title}
                   domain={entry.domain}
                   summary={entry.summary}
+                  imageSrc={entry.imageSrc}
                   href={entry.href}
                   kind={entry.kind}
                 />

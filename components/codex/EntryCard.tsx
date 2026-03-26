@@ -4,6 +4,7 @@ type EntryCardProps = {
   title: string;
   domain: string;
   summary: string;
+  imageSrc?: string;
   href?: string;
   kind?: "folder" | "file";
 };
@@ -21,14 +22,31 @@ function renderInlineSummary(summary: string) {
   });
 }
 
-export default function EntryCard({ title, domain, summary, href, kind = "file" }: EntryCardProps) {
+export default function EntryCard({ title, domain, summary, imageSrc, href, kind = "file" }: EntryCardProps) {
   const body = (
-    <article className="border border-stone-300 bg-amber-50/70 p-4">
-      <p className="text-[10px] uppercase tracking-[0.2em] text-stone-600">
+    <article
+      className="relative overflow-hidden border border-stone-300 bg-amber-50/70 p-4"
+      style={{
+        backgroundImage: imageSrc
+          ? `linear-gradient(rgba(252, 247, 236, 0.82), rgba(245, 235, 214, 0.82)), url("${imageSrc}")`
+          : undefined,
+        backgroundSize: imageSrc ? "cover" : undefined,
+        backgroundPosition: imageSrc ? "center" : undefined,
+      }}
+    >
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(120,93,50,0.06) 100%)",
+          opacity: imageSrc ? 1 : 0,
+        }}
+      />
+      <p className="relative text-[10px] uppercase tracking-[0.2em] text-stone-600">
         {kind === "folder" ? "Survey Division" : "Recorded Entry"} | {domain}
       </p>
-      <h4 className="mt-2 font-display text-lg text-stone-900">{title}</h4>
-      <p className="mt-2 text-sm leading-6 text-stone-800/85">{renderInlineSummary(summary)}</p>
+      <h4 className="relative mt-2 font-display text-lg text-stone-900">{title}</h4>
+      <p className="relative mt-2 text-sm leading-6 text-stone-800/85">{renderInlineSummary(summary)}</p>
     </article>
   );
 

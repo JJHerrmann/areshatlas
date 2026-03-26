@@ -21,6 +21,7 @@ export type ContentEntry = {
   href?: string;
   domain: string;
   summary: string;
+  imageSrc?: string;
   kind: "folder" | "file";
 };
 
@@ -107,7 +108,9 @@ const DERIVED_ROOT = path.join(CONTENT_ROOT, "_derived", "sidebar");
 const NAVBOX_DERIVED_ROOT = path.join(CONTENT_ROOT, "_derived", "navboxes");
 const ALLOWED_ENTRY_EXTENSIONS = new Set([".md", ".markdown", ".csv"]);
 const MARKDOWN_EXTENSIONS = new Set([".md", ".markdown"]);
+const IMAGE_EXTENSIONS = new Set([".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif", ".avif"]);
 let markdownPathIndex: Array<{ relativePath: string; title: string; slugTitle: string }> | null = null;
+let assetPathIndex: Array<{ relativePath: string; fileName: string }> | null = null;
 let derivedArticleIndex: DerivedArticle[] | null = null;
 let derivedNavboxIndex: DerivedNavbox[] | null = null;
 
@@ -307,6 +310,23 @@ function listMarkdownFiles(rootDir: string) {
   return out;
 }
 
+function listAssetFiles(rootDir: string) {
+  const out: string[] = [];
+  function visit(dirPath: string) {
+    for (const item of fs.readdirSync(dirPath, { withFileTypes: true })) {
+      if (item.name === "_derived" || item.name === "_registry" || item.name === ".gitkeep") continue;
+      const nextPath = path.join(dirPath, item.name);
+      if (item.isDirectory()) {
+        visit(nextPath);
+        continue;
+      }
+      if (IMAGE_EXTENSIONS.has(path.extname(item.name).toLowerCase())) out.push(nextPath);
+    }
+  }
+  if (fs.existsSync(rootDir)) visit(rootDir);
+  return out;
+}
+
 function getMarkdownPathIndex() {
   if (markdownPathIndex) return markdownPathIndex;
   markdownPathIndex = listMarkdownFiles(CONTENT_ROOT).map((filePath) => {
@@ -319,6 +339,79 @@ function getMarkdownPathIndex() {
     };
   });
   return markdownPathIndex;
+}
+
+function getAssetPathIndex() {
+  if (assetPathIndex) return assetPathIndex;
+  assetPathIndex = listAssetFiles(CONTENT_ROOT).map((filePath) => {
+    const relativePath = path.relative(CONTENT_ROOT, filePath).replace(/\\/g, "/");
+    return {
+      relativePath,
+      fileName: path.posix.basename(relativePath),
+    };
+  });
+  return assetPathIndex;
+}
+
+function buildContentAssetHref(relativePath: string) {
+  return `/content-assets/${relativePath.split("/").map(encodeURIComponent).join("/")}`;
+}
+
+function parseObsidianImageEmbed(value: string) {
+  const match = String(value).trim().match(/^!\[\[([^|\]]+)(?:\|([^\]]+))?\]\]$/);
+  if (!match) return null;
+  return {
+    target: match[1].trim(),
+    caption: match[2]?.trim() || null,
+  };
+}
+
+function resolveContentImage(rawValue: unknown, sourceRelativePath: string) {
+  if (typeof rawValue !== "string") return null;
+  const trimmed = rawValue.trim();
+  if (!trimmed) return null;
+  if (trimmed.startsWith("/")) return trimmed;
+
+  const embed = parseObsidianImageEmbed(trimmed);
+  if (!embed) return null;
+
+  const targetName = embed.target.replace(/\\/g, "/").split("/").pop();
+  if (!targetName) return null;
+
+  const sourceDir = path.posix.dirname(sourceRelativePath.replace(/\\/g, "/"));
+  const assetIndex = getAssetPathIndex();
+  const siblingMatch = assetIndex.find(
+    (entry) => path.posix.dirname(entry.relativePath) === sourceDir && entry.fileName === targetName,
+  );
+  const sharedImageMatch = siblingMatch
+    ? null
+    : assetIndex.find((entry) => entry.relativePath.startsWith("_images/") && entry.fileName === targetName);
+  const globalMatch = siblingMatch || sharedImageMatch || assetIndex.find((entry) => entry.fileName === targetName);
+  return globalMatch ? buildContentAssetHref(globalMatch.relativePath) : null;
+}
+
+function readEntryImage(filePath: string) {
+  const ext = path.extname(filePath).toLowerCase();
+  if (!MARKDOWN_EXTENSIONS.has(ext)) return undefined;
+  const raw = fs.readFileSync(filePath, "utf8");
+  const parsed = parseMatterSafe(raw);
+  const relativePath = path.relative(CONTENT_ROOT, filePath).replace(/\\/g, "/");
+  const imageFields = [
+    "image_card",
+    "image_banner",
+    "image_avatar",
+    "image_heraldry",
+    "image",
+    "arms_image",
+    "image_map",
+  ] as const;
+
+  for (const field of imageFields) {
+    const resolved = resolveContentImage(parsed.data[field], relativePath);
+    if (resolved) return resolved;
+  }
+
+  return undefined;
 }
 
 function readDerivedJson<T>(fileName: string): T[] {
@@ -410,6 +503,7 @@ function createFileEntry(
     href: ext === ".csv" ? undefined : getFileRoute(section, slugParts, filePath),
     domain,
     summary: readSummary(filePath, `Mirrored source entry in ${domain}.`),
+    imageSrc: readEntryImage(filePath),
     kind: "file",
   };
 }
@@ -433,6 +527,7 @@ function createFolderEntry(
     summary: indexFile
       ? readSummary(indexFile, `Folder in ${domain} containing mirrored codex material.`)
       : `Folder in ${domain} containing mirrored codex material.`,
+    imageSrc: indexFile ? readEntryImage(indexFile) : undefined,
     kind: "folder",
   };
 }
