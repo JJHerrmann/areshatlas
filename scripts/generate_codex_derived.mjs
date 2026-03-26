@@ -8,6 +8,7 @@ const derivedRoot = path.join(contentRoot, "_derived", "sidebar");
 const navboxRegistryRoot = path.join(repoRoot, "codex_registry", "navboxes");
 const navboxDerivedRoot = path.join(contentRoot, "_derived", "navboxes");
 const IMAGE_EXTENSIONS = new Set([".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif", ".avif"]);
+const deriveWarnings = [];
 const sections = [
   { slug: "pantheon", folder: "gods" },
   { slug: "regions", folder: "regions" },
@@ -327,7 +328,10 @@ function resolveImageSource(rawValue, sourceRelativePath, assetIndex) {
       (entry) => path.posix.dirname(entry.relativePath) === sourceDir && path.posix.basename(entry.relativePath) === targetName,
     );
     const globalMatch = siblingMatch || assetIndex.find((entry) => path.posix.basename(entry.relativePath) === targetName);
-    if (!globalMatch) return null;
+    if (!globalMatch) {
+      deriveWarnings.push(`[codex-derived] missing image asset "${targetName}" referenced by ${sourceRelativePath}`);
+      return null;
+    }
     return {
       src: buildContentAssetHref(globalMatch.relativePath),
       caption: embed.caption,
@@ -601,6 +605,11 @@ function main() {
   fs.writeFileSync(path.join(navboxDerivedRoot, "navboxes.json"), `${JSON.stringify(navboxData.navboxes, null, 2)}\n`, "utf8");
 
   process.stdout.write(`[codex-derived] generated ${writtenFiles.size} sidebar json file(s) and ${navboxData.navboxes.length} navbox definition(s)\n`);
+  if (deriveWarnings.length) {
+    for (const warning of [...new Set(deriveWarnings)].sort()) {
+      process.stdout.write(`${warning}\n`);
+    }
+  }
   if (skippedFiles.length) {
     for (const skipped of skippedFiles) {
       process.stdout.write(`[codex-derived] skipped ${skipped.relativePath}: ${skipped.reason}\n`);
