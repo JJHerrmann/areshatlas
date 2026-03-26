@@ -53,15 +53,15 @@ image_avatar: "![[/_images/Pasted image 20260324085654.png]]"
 ---
 # Moxilaxaya
 *The Matron of Order*
-![[Pasted image 20260324085654.png]]
-{{short_overview}}
+Moxilaxaya is considered to be one of the first of the gods of the Areshnaati Pantheon. She is the Goddess and Mistress of Order, Civilization, and Procession. She is the wife of [[🌌Tahiwaco]], and the mother of his sons [[🌌Yatbara]] and [[🌌Niwara]]. 
+Moxilaxaya is considered by the humans of [[Drakharpan]] as the mother of their race. All humans trace their "lineage" back through, to varying degrees of success, to the mythic, most ending at Moxilaxaya the Patron Mother. 
 
 ## Divine Profile
 
-**Title:** {{title}}  
-**Pantheon:** {{pantheon}}  
-**Rank:** {{divine_rank}}  
-**Gender:** {{gender}}  
+**Title:** Primodial of Order, Mother of Civilization (Humans), First Matron (Humans) 
+**Pantheon:** [[Ramtilim]]  
+**Rank:** Major Primordial 
+**Gender:** Female
 **Nature:** {{nature}}  
 **Ethos:** {{ethos}}  
 **Major Influence:** {{major_influence}}  
