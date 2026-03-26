@@ -8,12 +8,31 @@ Each file should be JSON with:
 - `id`
 - `title`
 - `mode`
-- `items`
+- either `items` or `derive`
 
-Example:
+Explicit item example:
+
 {
   "id": "example-navbox",
   "title": "Example Navbox",
   "mode": "footer",
   "items": ["some-slug", "other-slug"]
 }
+
+Derived membership example:
+{
+  "id": "ramtilim",
+  "title": "Ramtilim",
+  "mode": "footer",
+  "derive": {
+    "type": "deity",
+    "field": "pantheon",
+    "equals": "Ramtilim"
+  }
+}
+
+Supported derive filters:
+- `type`
+- `section`
+- `field` + `equals`
+- `pathPrefix`

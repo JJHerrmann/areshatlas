@@ -2,27 +2,8 @@
   "id": "dieties-of-areshnaat",
   "title": "Deities of Areshnaat",
   "mode": "footer",
-  "items": [
-    "bolohua",
-    "gozara",
-    "leyala",
-    "lotan",
-    "moxilaxaya",
-    "niwara",
-    "tahiwaco",
-    "yatbara",
-    "yekala",
-    "zemana",
-    "ba-al-sheol",
-    "harbaal",
-    "kathorharab",
-    "machul",
-    "malagad",
-    "marmoqed",
-    "qatzera",
-    "raavvah",
-    "tsayidrah",
-    "yamnahar",
-    "yaradaat"
-  ]
+  "derive": {
+    "field": "pantheon",
+    "equals": "Areshnaati"
+  }
 }

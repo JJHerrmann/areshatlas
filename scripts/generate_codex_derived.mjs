@@ -137,7 +137,36 @@ function buildArticleRecord(frontmatter, relativePath) {
     source_relative_path: normalizedRelativePath,
     aliases,
     navboxes,
+    entry_type: String(frontmatter.type || "").trim().toLowerCase(),
+    frontmatter,
   };
+}
+
+function sortNavboxItems(items) {
+  return [...items].sort((a, b) => a.title.localeCompare(b.title) || a.slug.localeCompare(b.slug));
+}
+
+function articleMatchesDeriveRule(article, derive) {
+  if (!derive || typeof derive !== "object") return false;
+
+  const requiredType = String(derive.type || "").trim().toLowerCase();
+  if (requiredType && article.entry_type !== requiredType) return false;
+
+  const requiredSection = String(derive.section || "").trim().toLowerCase();
+  if (requiredSection && String(article.section || "").trim().toLowerCase() !== requiredSection) return false;
+
+  const pathPrefix = String(derive.pathPrefix || derive.path_prefix || "").trim().replace(/\\/g, "/").toLowerCase();
+  if (pathPrefix && !article.source_relative_path.toLowerCase().startsWith(pathPrefix.replace(/^\/+/, ""))) return false;
+
+  const field = String(derive.field || "").trim();
+  if (!field) return true;
+
+  const requiredValue = toSlugPart(derive.equals ?? derive.value ?? "");
+  if (!requiredValue) return false;
+
+  const rawFieldValue = article.frontmatter?.[field];
+  const values = normalizeStringArray(rawFieldValue).map(toSlugPart);
+  return values.includes(requiredValue);
 }
 
 function listJsonFiles(rootDir) {
@@ -208,13 +237,22 @@ function buildNavboxData(markdownFiles) {
         href: article.href,
       };
     });
-    const items = resolveNavboxItems(parsed.items);
+    const derivedItems = parsed.derive
+      ? articles
+          .filter((article) => article.href && articleMatchesDeriveRule(article, parsed.derive))
+          .map((article) => ({
+            slug: article.slug,
+            title: article.title,
+            href: article.href,
+          }))
+      : [];
+    const items = sortNavboxItems(derivedItems.length ? derivedItems : resolveNavboxItems(parsed.items));
     const groups = Array.isArray(parsed.groups)
       ? parsed.groups.map((group, index) => {
           const label = String(group?.label || group?.title || `Group ${index + 1}`).trim();
           return {
             label,
-            items: resolveNavboxItems(group?.items),
+            items: sortNavboxItems(resolveNavboxItems(group?.items)),
           };
         }).filter((group) => group.items.length > 0)
       : [];
@@ -225,26 +263,40 @@ function buildNavboxData(markdownFiles) {
       mode,
       items,
       groups,
+      derived_from_rule: Boolean(parsed.derive),
     };
   });
 
   const navboxById = new Map(navboxRegistry.map((navbox) => [navbox.id, navbox]));
 
   for (const article of articles) {
-    for (const navboxId of article.navboxes) {
+    const inferredNavboxes = navboxRegistry
+      .filter((navbox) => navbox.items.some((item) => item.slug === article.slug))
+      .map((navbox) => navbox.id);
+    article.navboxes = [...new Set([...article.navboxes, ...inferredNavboxes])]
+      .filter((navboxId) => {
+        const navbox = navboxById.get(navboxId);
+        return navbox ? navbox.items.some((item) => item.slug === article.slug) : false;
+      })
+      .sort();
+  }
+
+  for (const article of articles) {
+    const declaredNavboxes = normalizeStringArray(article.frontmatter?.navboxes).map(toSlugPart);
+    for (const navboxId of declaredNavboxes) {
       const navbox = navboxById.get(navboxId);
       if (!navbox) {
         throw new Error(`Article "${article.source_relative_path}" references unknown navbox "${navboxId}"`);
       }
-      if (!navbox.items.some((item) => item.slug === article.slug)) {
+      if (!navbox.items.some((item) => item.slug === article.slug) && !navbox.derived_from_rule) {
         throw new Error(`Article "${article.source_relative_path}" declares navbox "${navboxId}" but is not listed in that navbox registry`);
       }
     }
   }
 
   return {
-    articles: articles.sort((a, b) => a.slug.localeCompare(b.slug)),
-    navboxes: navboxRegistry.sort((a, b) => a.id.localeCompare(b.id)),
+    articles: articles.map(({ frontmatter, entry_type, ...article }) => article).sort((a, b) => a.slug.localeCompare(b.slug)),
+    navboxes: navboxRegistry.map(({ derived_from_rule, ...navbox }) => navbox).sort((a, b) => a.id.localeCompare(b.id)),
   };
 }
 

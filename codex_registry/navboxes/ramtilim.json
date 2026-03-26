@@ -2,17 +2,8 @@
   "id": "ramtilim",
   "title": "Ramtilim",
   "mode": "footer",
-  "items": [
-    "ba-al-sheol",
-    "harbaal",
-    "kathorharab",
-    "machul",
-    "malagad",
-    "marmoqed",
-    "qatzera",
-    "raavvah",
-    "tsayidrah",
-    "yamnahar",
-    "yaradaat"
-  ]
+  "derive": {
+    "field": "pantheon",
+    "equals": "Ramtilim"
+  }
 }
