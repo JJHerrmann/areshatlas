@@ -1,7 +1,7 @@
 {
   "type": "deity",
-  "title": "🌌Niwara",
-  "subtitle": null,
+  "title": "Niwara",
+  "subtitle": "The Sun Catcher",
   "source_relative_path": "gods/🌌Niwara.md",
   "images": {
     "banner": null,
@@ -17,12 +17,20 @@
           [
             "[[Ramtilim]]"
           ]
+        ],
+        [
+          "Title",
+          "The Lord of Fire"
         ]
       ]
     },
     {
       "title": "Spiritual Info",
       "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
         [
           "Major Influence",
           "Sun"

@@ -1,11 +1,11 @@
 ---
 type: deity
-name: ""
-epithet: ""
-title: ""
+name: Niwara
+epithet: The Sun Catcher
+title: The Lord of Fire
 pantheon:
   - "[[Ramtilim]]"
-divine_rank: ""
+divine_rank: Major
 gender: ""
 nature: ""
 ethos: ""

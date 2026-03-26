@@ -1,7 +1,7 @@
 ---
 type: deity
-name: ""
-epithet: ""
+name: Tahiwaco
+epithet: The High-lord of Chaos
 title: ""
 pantheon:
   - "[[Yekatlan]]"

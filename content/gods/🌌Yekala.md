@@ -1,6 +1,6 @@
 ---
 type: deity
-name: ""
+name: Yekala
 epithet: The Lady of Loaded Dice
 title: ""
 pantheon:

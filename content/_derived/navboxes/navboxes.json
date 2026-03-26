@@ -5,21 +5,6 @@
     "mode": "footer",
     "items": [
       {
-        "slug": "niwara",
-        "title": "🌌Niwara",
-        "href": "/pantheon/niwara"
-      },
-      {
-        "slug": "tahiwaco",
-        "title": "🌌Tahiwaco",
-        "href": "/pantheon/tahiwaco"
-      },
-      {
-        "slug": "yekala",
-        "title": "🌌Yekala",
-        "href": "/pantheon/yekala"
-      },
-      {
         "slug": "ba-al-sheol",
         "title": "Ba'al Sheol",
         "href": "/pantheon/ba-al-sheol"
@@ -85,6 +70,16 @@
         "href": "/pantheon/raavvah"
       },
       {
+        "slug": "tahiwaco",
+        "title": "Tahiwaco",
+        "href": "/pantheon/tahiwaco"
+      },
+      {
+        "slug": "niwara",
+        "title": "The Lord of Fire",
+        "href": "/pantheon/niwara"
+      },
+      {
         "slug": "tsayidrah",
         "title": "Tsayidrah",
         "href": "/pantheon/tsayidrah"
@@ -103,6 +98,11 @@
         "slug": "yatbara",
         "title": "Yatbara",
         "href": "/pantheon/yatbara"
+      },
+      {
+        "slug": "yekala",
+        "title": "Yekala",
+        "href": "/pantheon/yekala"
       },
       {
         "slug": "zemana",
@@ -199,16 +199,6 @@
     "mode": "footer",
     "items": [
       {
-        "slug": "niwara",
-        "title": "🌌Niwara",
-        "href": "/pantheon/niwara"
-      },
-      {
-        "slug": "yekala",
-        "title": "🌌Yekala",
-        "href": "/pantheon/yekala"
-      },
-      {
         "slug": "kathorharab",
         "title": "Kathorharab",
         "href": "/pantheon/kathorharab"
@@ -239,6 +229,11 @@
         "href": "/pantheon/raavvah"
       },
       {
+        "slug": "niwara",
+        "title": "The Lord of Fire",
+        "href": "/pantheon/niwara"
+      },
+      {
         "slug": "tsayidrah",
         "title": "Tsayidrah",
         "href": "/pantheon/tsayidrah"
@@ -257,6 +252,11 @@
         "slug": "yatbara",
         "title": "Yatbara",
         "href": "/pantheon/yatbara"
+      },
+      {
+        "slug": "yekala",
+        "title": "Yekala",
+        "href": "/pantheon/yekala"
       }
     ],
     "groups": []
@@ -266,16 +266,6 @@
     "title": "Yekatlan",
     "mode": "footer",
     "items": [
-      {
-        "slug": "tahiwaco",
-        "title": "🌌Tahiwaco",
-        "href": "/pantheon/tahiwaco"
-      },
-      {
-        "slug": "yekala",
-        "title": "🌌Yekala",
-        "href": "/pantheon/yekala"
-      },
       {
         "slug": "bolohua",
         "title": "Bolohua",
@@ -302,9 +292,19 @@
         "href": "/pantheon/moxilaxaya"
       },
       {
+        "slug": "tahiwaco",
+        "title": "Tahiwaco",
+        "href": "/pantheon/tahiwaco"
+      },
+      {
         "slug": "yatbara",
         "title": "Yatbara",
         "href": "/pantheon/yatbara"
+      },
+      {
+        "slug": "yekala",
+        "title": "Yekala",
+        "href": "/pantheon/yekala"
       },
       {
         "slug": "zemana",
