@@ -327,7 +327,13 @@ function resolveImageSource(rawValue, sourceRelativePath, assetIndex) {
     const siblingMatch = assetIndex.find(
       (entry) => path.posix.dirname(entry.relativePath) === sourceDir && path.posix.basename(entry.relativePath) === targetName,
     );
-    const globalMatch = siblingMatch || assetIndex.find((entry) => path.posix.basename(entry.relativePath) === targetName);
+    const sharedImageMatch = siblingMatch
+      ? null
+      : assetIndex.find(
+          (entry) => entry.relativePath.startsWith("_images/") && path.posix.basename(entry.relativePath) === targetName,
+        );
+    const globalMatch =
+      siblingMatch || sharedImageMatch || assetIndex.find((entry) => path.posix.basename(entry.relativePath) === targetName);
     if (!globalMatch) {
       deriveWarnings.push(`[codex-derived] missing image asset "${targetName}" referenced by ${sourceRelativePath}`);
       return null;
