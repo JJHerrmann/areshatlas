@@ -3,7 +3,9 @@ type: deity
 name: Harbaal
 epithet: The God of Mountains
 title: Harbal
-pantheon: ""
+pantheon:
+  - Areshnaati
+  - Ramtilim
 divine_rank: ""
 gender: ""
 nature: ""

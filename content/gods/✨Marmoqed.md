@@ -2,7 +2,9 @@
 name: Marmoqed
 epithet: The God of Hearth and Medicine
 title: Marmoqed
-pantheon: ""
+pantheon:
+  - Areshnaati
+  - Ramtilim
 divine_rank: ""
 gender: ""
 nature: lawful

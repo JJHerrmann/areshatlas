@@ -10,6 +10,18 @@
   },
   "sections": [
     {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "Yekatlan",
+            "Areshnaati"
+          ]
+        ]
+      ]
+    },
+    {
       "title": "Spiritual Info",
       "rows": [
         [

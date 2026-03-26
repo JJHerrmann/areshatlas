@@ -3,7 +3,9 @@ type: deity
 name: Malagad
 epithet: The God of Messages and Fortunes
 title: Malagad
-pantheon: ""
+pantheon:
+  - Areshnaati
+  - Ramtilim
 divine_rank: ""
 gender: ""
 nature: neutral

@@ -14,7 +14,11 @@
       "rows": [
         [
           "Pantheon",
-          "Areshnaati"
+          [
+            "Areshnaati",
+            "Yekatlan",
+            "Ramtilim"
+          ]
         ],
         [
           "Honorific Title",

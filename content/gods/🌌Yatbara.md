@@ -2,7 +2,10 @@
 name: Yatbara
 epithet: The God of Creation
 honorific_title: The Formless One
-pantheon: Areshnaati
+pantheon:
+  - Areshnaati
+  - Yekatlan
+  - Ramtilim
 divine_rank: ""
 gender: ""
 nature: ""

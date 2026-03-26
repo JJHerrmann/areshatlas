@@ -3,7 +3,9 @@ type: deity
 name: ""
 epithet: ""
 title: ""
-pantheon: ""
+pantheon:
+  - Areshnaati
+  - Yekatlan
 divine_rank: ""
 gender: ""
 nature: ""

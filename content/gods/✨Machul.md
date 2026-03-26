@@ -2,7 +2,9 @@
 name: Machul
 epithet: The God of Dances and Storms
 title: Machul
-pantheon: ""
+pantheon:
+  - Areshnaati
+  - Ramtilim
 divine_rank: ""
 gender: ""
 nature: ""

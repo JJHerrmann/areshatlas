@@ -2,7 +2,9 @@
 name: Raavvah
 epithet: The God of Famines and Calamity
 title: Raavvah
-pantheon: ""
+pantheon:
+  - Areshnaati
+  - Ramtilim
 divine_rank: ""
 gender: ""
 nature: ""

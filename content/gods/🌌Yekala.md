@@ -3,7 +3,10 @@ type: deity
 name: ""
 epithet: The Lady of Loaded Dice
 title: ""
-pantheon: ""
+pantheon:
+  - Areshnaati
+  - Yekatlan
+  - Ramtilim
 divine_rank: ""
 gender: Female
 nature: ""

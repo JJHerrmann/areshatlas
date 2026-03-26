@@ -3,7 +3,9 @@ type: deity
 name: Ba'al Sheol
 epithet: The God of the Underworld
 title: Ba'al Sheol
-pantheon: Areshnaati
+pantheon:
+  - Areshnaati
+  - Ramtilim
 divine_rank: Major
 gender: Male
 nature:

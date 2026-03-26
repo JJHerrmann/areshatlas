@@ -3,7 +3,9 @@ type: deity
 name: ""
 epithet: ""
 title: ""
-pantheon: ""
+pantheon:
+  - Areshnaati
+  - Ramtilim
 divine_rank: ""
 gender: ""
 nature: ""

@@ -3,7 +3,9 @@ type: deity
 name: Zemana
 epithet: The Matron of Time
 title: ""
-pantheon: ""
+pantheon:
+  - Areshnaati
+  - Yekatlan
 divine_rank: ""
 gender: ""
 nature: ""

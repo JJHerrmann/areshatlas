@@ -3,7 +3,9 @@ type: deity
 name: Yaradaat
 epithet: The God of Knowledge and Law
 title: Yaradaat
-pantheon: ""
+pantheon:
+  - Areshnaati
+  - Ramtilim
 divine_rank: ""
 gender: ""
 nature: ""

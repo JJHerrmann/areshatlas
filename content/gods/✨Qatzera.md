@@ -2,7 +2,9 @@
 name: Qatzera
 epithet: The God of Harvest and Crops
 title: Qatzera
-pantheon: ""
+pantheon:
+  - Areshnaati
+  - Ramtilim
 divine_rank: ""
 gender: ""
 nature: ""

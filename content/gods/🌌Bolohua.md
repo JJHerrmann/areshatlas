@@ -3,7 +3,9 @@ type: deity
 name: Bolohua
 epithet: The Primordial Deep
 title: Bolohua
-pantheon: Yekatlan
+pantheon:
+  - Yekatlan
+  - Areshnaati
 divine_rank: Major
 gender: Fluid
 nature: Lawful

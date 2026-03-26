@@ -8,5 +8,18 @@
     "heraldry": null,
     "avatar": null
   },
-  "sections": []
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "Areshnaati",
+            "Ramtilim"
+          ]
+        ]
+      ]
+    }
+  ]
 }

@@ -3,7 +3,9 @@ type: deity
 name: Tsayidrah
 epithet: The God of Hunting and Fertility
 title: Tsayidrah
-pantheon: ""
+pantheon:
+  - Areshnaati
+  - Ramtilim
 divine_rank: ""
 gender: ""
 nature: ""

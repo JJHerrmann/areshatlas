@@ -3,7 +3,9 @@ type: deity
 name: Kathorharab
 epithet: The God of Craft and War
 title: Kathorharab
-pantheon: Areshnaati
+pantheon:
+  - Areshnaati
+  - Ramtilim
 divine_rank: Major
 gender: Male
 nature: Unbound
