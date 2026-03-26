@@ -49,8 +49,8 @@ navboxes:
   - dieties-of-areshnaat
 slug: zemana
 ---
-# {{name}}
-*{{epithet}}*
+# Zemana
+*The Matron of Time*
 
 {{short_overview}}
 
