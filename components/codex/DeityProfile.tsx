@@ -5,6 +5,7 @@ import SidebarValue from "@/components/codex/SidebarValue";
 type DeityProfileProps = {
   frontmatter: Record<string, unknown>;
   sourceRelativePath: string;
+  bodyHtml?: string;
 };
 
 function isFilled(value: unknown): boolean {
@@ -82,12 +83,18 @@ function section(title: string, body: ReactNode | null) {
   );
 }
 
-export default function DeityProfile({ frontmatter, sourceRelativePath }: DeityProfileProps) {
+export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml }: DeityProfileProps) {
   const summary = text(frontmatter.summary) || text(frontmatter.card_summary);
   const title = text(frontmatter.name) || "Deity";
   const epithet = text(frontmatter.epithet);
   const honorific = text(frontmatter.honorific_title);
   const subtitle = [epithet, honorific].filter(Boolean).join(" · ");
+  const leadHtml = bodyHtml
+    ? bodyHtml
+        .replace(/<h1[\s\S]*?<\/h1>/i, "")
+        .split(/<h2[\s>]/i)[0]
+        .trim()
+    : "";
 
   const manifestForms = [
     [text(frontmatter.form_1_name), frontmatter.form_1_description],
@@ -208,6 +215,13 @@ export default function DeityProfile({ frontmatter, sourceRelativePath }: DeityP
         <p className="codex-page-summary">
           <InlineCodexText text={summary} sourceRelativePath={sourceRelativePath} />
         </p>
+      ) : null}
+
+      {!summary && leadHtml ? (
+        <div
+          className="codex-prose mb-8"
+          dangerouslySetInnerHTML={{ __html: leadHtml }}
+        />
       ) : null}
 
       {tabs.length ? (

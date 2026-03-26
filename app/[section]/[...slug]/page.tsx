@@ -119,7 +119,11 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
 
           <div className={`codex-entry-layout mt-10${hasSidebar ? " with-sidebar" : ""}`}>
             {isDeity ? (
-              <DeityProfile frontmatter={document.frontmatter} sourceRelativePath={document.sourcePath} />
+              <DeityProfile
+                frontmatter={document.frontmatter}
+                sourceRelativePath={document.sourcePath}
+                bodyHtml={document.html}
+              />
             ) : (
               <article
                 className="codex-entry-body codex-prose"
