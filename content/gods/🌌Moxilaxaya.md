@@ -49,7 +49,7 @@ navboxes:
   - yekatlan
   - dieties-of-areshnaat
 slug: Moxilaxaya
-image_avatar: "![[Pasted image 20260324085654.png]]"
+image_avatar: "![[/_images/Pasted image 20260324085654.png]]"
 ---
 # Moxilaxaya
 *The Matron of Order*
