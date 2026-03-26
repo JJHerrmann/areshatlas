@@ -5,7 +5,7 @@ epithet: The Matron of Time
 title: ""
 pantheon:
   - Areshnaati
-  - Yekatlan
+  - "[[Yekatlan]]"
 divine_rank: ""
 gender: ""
 nature: ""

@@ -5,7 +5,7 @@ epithet: The God of the Underworld
 title: Ba'al Sheol
 pantheon:
   - Areshnaati
-  - Xoluatl
+  - "[[Xoluatl]]"
 divine_rank: Major
 gender: Male
 nature:
