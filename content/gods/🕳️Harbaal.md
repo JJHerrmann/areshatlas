@@ -5,7 +5,7 @@ epithet: The God of Mountains
 title: Harbal
 pantheon:
   - Areshnaati
-  - Xoluatl
+  - "[[Xoluatl]]"
 divine_rank: ""
 gender: ""
 nature: ""

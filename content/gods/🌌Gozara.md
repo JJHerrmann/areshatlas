@@ -4,8 +4,7 @@ name: Gozara
 epithet: The Mensor of Days
 title: Gozara
 pantheon:
-  - Yekatlan
-  - Areshnaati
+  - "[[Yekatlan]]"
 divine_rank: Major
 gender: Female
 nature: ""

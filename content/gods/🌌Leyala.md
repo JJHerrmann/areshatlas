@@ -4,8 +4,7 @@ name: Leyala
 epithet: The Mistress of Moons
 title: Leyala
 pantheon:
-  - Areshnaati
-  - Yekatlan
+  - "[[Yekatlan]]"
 divine_rank: ""
 gender: ""
 nature: ""

@@ -4,8 +4,7 @@ name: ""
 epithet: ""
 title: ""
 pantheon:
-  - Areshnaati
-  - Ramtilim
+  - "[[Ramtilim]]"
 divine_rank: ""
 gender: ""
 nature: ""

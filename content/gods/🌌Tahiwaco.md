@@ -4,8 +4,8 @@ name: ""
 epithet: ""
 title: ""
 pantheon:
-  - Areshnaati
-  - Yekatlan
+  - "[[Yekatlan]]"
+  - "[[Yekatlan]]"
 divine_rank: ""
 gender: ""
 nature: ""

@@ -118,29 +118,9 @@
     "mode": "footer",
     "items": [
       {
-        "slug": "niwara",
-        "title": "🌌Niwara",
-        "href": "/pantheon/niwara"
-      },
-      {
-        "slug": "tahiwaco",
-        "title": "🌌Tahiwaco",
-        "href": "/pantheon/tahiwaco"
-      },
-      {
         "slug": "ba-al-sheol",
         "title": "Ba'al Sheol",
         "href": "/pantheon/ba-al-sheol"
-      },
-      {
-        "slug": "bolohua",
-        "title": "Bolohua",
-        "href": "/pantheon/bolohua"
-      },
-      {
-        "slug": "gozara",
-        "title": "Gozara",
-        "href": "/pantheon/gozara"
       },
       {
         "slug": "harbaal",
@@ -151,16 +131,6 @@
         "slug": "kathorharab",
         "title": "Kathorharab",
         "href": "/pantheon/kathorharab"
-      },
-      {
-        "slug": "leyala",
-        "title": "Leyala",
-        "href": "/pantheon/leyala"
-      },
-      {
-        "slug": "lotan",
-        "title": "Lotan",
-        "href": "/pantheon/lotan"
       },
       {
         "slug": "machul",
@@ -176,11 +146,6 @@
         "slug": "marmoqed",
         "title": "Marmoqed",
         "href": "/pantheon/marmoqed"
-      },
-      {
-        "slug": "moxilaxaya",
-        "title": "Moxilaxaya",
-        "href": "/pantheon/moxilaxaya"
       },
       {
         "slug": "qatzera",
@@ -206,11 +171,6 @@
         "slug": "yaradaat",
         "title": "Yaradaat",
         "href": "/pantheon/yaradaat"
-      },
-      {
-        "slug": "yatbara",
-        "title": "Yatbara",
-        "href": "/pantheon/yatbara"
       },
       {
         "slug": "zemana",

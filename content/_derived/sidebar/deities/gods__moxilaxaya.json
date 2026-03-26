@@ -6,7 +6,11 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null
+    "avatar": {
+      "src": "/content-assets/images/Pasted%20image%2020260324085654.png",
+      "alt": "Moxilaxaya",
+      "caption": null
+    }
   },
   "sections": [
     {
@@ -15,8 +19,7 @@
         [
           "Pantheon",
           [
-            "Yekatlan",
-            "Areshnaati"
+            "[[Yekatlan]]"
           ]
         ],
         [

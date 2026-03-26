@@ -47,7 +47,6 @@
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
-      "dieties-of-areshnaat",
       "yekatlan"
     ]
   },
@@ -96,7 +95,6 @@
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
-      "dieties-of-areshnaat",
       "yekatlan"
     ]
   },
@@ -162,6 +160,15 @@
     ]
   },
   {
+    "slug": "kiviraud-istekoda",
+    "title": "Kiviraud Istekoda",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/kiviraud-istekoda",
+    "source_relative_path": "regions/Drakharpan/nations/Kiviraud Istekoda.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "kutnylev-gnomish",
     "title": "Kutnylev (Gnomish)",
     "section": "languages",
@@ -197,7 +204,6 @@
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
-      "dieties-of-areshnaat",
       "yekatlan"
     ]
   },
@@ -210,7 +216,6 @@
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
-      "dieties-of-areshnaat",
       "yekatlan"
     ]
   },
@@ -273,7 +278,6 @@
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
-      "dieties-of-areshnaat",
       "yekatlan"
     ]
   },
@@ -295,7 +299,6 @@
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
-      "dieties-of-areshnaat",
       "ramtilim"
     ]
   },
@@ -335,7 +338,7 @@
     "title": "Rammskoda",
     "section": "regions",
     "href": "/regions/drakharpan/nations/raamskoda",
-    "source_relative_path": "regions/Drakharpan/nations/Raamskoda.md",
+    "source_relative_path": "regions/Drakharpan/nations/Raamskoda/Raamskoda.md",
     "aliases": [],
     "navboxes": []
   },
@@ -379,7 +382,6 @@
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
-      "dieties-of-areshnaat",
       "yekatlan"
     ]
   },
@@ -494,7 +496,6 @@
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
-      "dieties-of-areshnaat",
       "ramtilim",
       "yekatlan"
     ]

@@ -4,8 +4,7 @@ name: Moxilaxaya
 epithet: The Matron of Order
 title: Moxilaxaya
 pantheon:
-  - Yekatlan
-  - Areshnaati
+  - "[[Yekatlan]]"
 divine_rank: Major
 gender: Female
 nature: Lawful

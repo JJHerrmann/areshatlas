@@ -4,8 +4,7 @@ name: Lotan
 epithet: The Sky Serpent
 title: Lotan
 pantheon:
-  - Yekatlan
-  - Areshnaati
+  - "[[Yekatlan]]"
 divine_rank: ""
 gender: ""
 nature: ""
