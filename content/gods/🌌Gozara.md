@@ -1,7 +1,7 @@
 ---
 type: deity
 name: Gozara
-epithet: The Mensor of Days
+epithet: The Mensor of Dawns
 title: Gozara
 pantheon:
   - "[[Yekatlan]]"
@@ -62,11 +62,11 @@ slug: gozara
 image_avatar: "![[/_images/Pasted image 20260326180824.png]]"
 ---
 # Gozara
-*The Mensor of Days*
+*The Mensor of Dawns*
 Gozara is the fate-mistress of the primordial pantheon, styled as a younger woman in her maiden days, as is typical of primordial depictions in art. She carries with her the plumb bob and plumb line, a measuring device favored by builders, whom she is also a patron of. She measures the sacred geometry of the universe, and divines what is fated to be by the angles of the stars, the mapped events on her temple walls, and the distance of the lines of fate.
 ## Depictions
 
-{{physical_description}}
+Gozara is depicted as a young woman, with dark hair and dark navy robes. She is seen with her rope dart, that also serves as the plumb line for her diviner, that allows her to find the true vertical, drawing from it the geometries of fate. 
 
 ### Manifest Forms
 - **{{form_1_name}}:** {{form_1_description}}
@@ -75,7 +75,7 @@ Gozara is the fate-mistress of the primordial pantheon, styled as a younger woma
 
 ## Symbols
 
-**Primary Symbol:** {{symbols.primary}}  
+**Primary Symbol:** Plumb Line Weight  
 **Secondary Symbols:** {{symbols.secondary}}  
 **Sacred Number:** {{sacred_number}}  
 **Sacred Colors:** {{sacred_colors}}  
