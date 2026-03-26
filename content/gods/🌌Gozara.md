@@ -23,6 +23,7 @@ spheres:
   - lifespan
   - portion
   - decree
+  - dawn
 avatars: []
 parents: []
 siblings: []
@@ -62,28 +63,7 @@ slug: gozara
 # Gozara
 *The Mensor of Days*
 
-{{short_overview}}
-
-## Divine Profile
-
-**Title:** {{title}}  
-**Pantheon:** {{pantheon}}  
-**Rank:** {{divine_rank}}  
-**Gender:** {{gender}}  
-**Nature:** {{nature}}  
-**Ethos:** {{ethos}}  
-**Major Influence:** {{major_influence}}  
-**Minor Influences:** {{minor_influences}}  
-**Spheres:** {{spheres}}  
-
-**Avatar(s):** {{avatar_names}}  
-**Consort(s):** {{consorts}}  
-**Parents:** {{parents}}  
-**Siblings:** {{siblings}}  
-**Offspring:** {{offspring}}  
-**Allies:** {{allies}}  
-**Foes:** {{foes}}  
-
+Gozara is the fate-mistress of the primordial pantheon, styled as a younger woman in her maiden days, as is typical of primordial depictions in art. She carries with her the plumb bob and plumb line, a measuring device favored by builders, whom she is also a patron of. She measures the sacred geometry of the universe, and divines what is fated to be by the angles of the stars, the mapped events on her temple walls, and the distance of the lines of fate.
 ## Depictions
 
 {{physical_description}}
