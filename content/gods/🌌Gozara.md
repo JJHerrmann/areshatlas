@@ -68,8 +68,9 @@ sacred_weapons:
   - Rope Dart
   - Meteor Hammer
   - Corded Weight
-church_name: ""
-central_authority: ""
+church_name: The Mount of Portions
+primary_church_location: The House of the Solar Weight
+central_authority: The Mensors
 regional_titles: []
 temple_titles: []
 clergy_titles: []
@@ -103,9 +104,7 @@ Gozara is depicted as a young woman, with dark hair and dark navy robes. She is 
 - **{{form_3_name}}:** {{form_3_description}}
 
 ## Symbols
-
-{{symbolism_notes}}
-
+Gozara's officially recognized symbols are the Plumb Line, the Measuring Rod, The Sundial and knotted cord, all units of measurement. There has been a push in some areas to add the Seal Ring of the Mensor's guilds as well as the Tally Tablet as "holy symbols" for Gozara that the 
 ## Dwelling Place
 
 {{dwelling_place_description}}

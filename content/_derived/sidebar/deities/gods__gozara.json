@@ -111,7 +111,7 @@
             "items": [
               {
                 "label": "Electrum",
-                "swatch": null
+                "swatch": "linear-gradient(to right, #C7B66A, #DCCF93, #8F7C45)"
               },
               {
                 "label": "Ivory",
@@ -127,7 +127,7 @@
               },
               {
                 "label": "Bronze",
-                "swatch": null
+                "swatch": "linear-gradient(to right, #5A3924, #8A5A34, #D9A15C)"
               }
             ]
           }
@@ -157,6 +157,19 @@
             "Meteor Hammer",
             "Corded Weight"
           ]
+        ]
+      ]
+    },
+    {
+      "title": "Worship Info",
+      "rows": [
+        [
+          "Church Name",
+          "The Mount of Portions"
+        ],
+        [
+          "Central Authority",
+          "The Mensors"
         ]
       ]
     }

@@ -16,7 +16,9 @@ spheres: []
 avatars: []
 parents: []
 siblings: []
-offspring: []
+offspring:
+  - "[[🌌Yatbara]]"
+  - "[[🌌Niwara]]"
 consorts:
   - "[[🌌Tahiwaco]]"
 allies: []
@@ -66,16 +68,6 @@ Moxilaxaya is considered by the humans of [[Drakharpan]] as the mother of their 
 - **{{form_3_name}}:** {{form_3_description}}
 
 ## Symbols
-
-**Primary Symbol:** {{symbols.primary}}  
-**Secondary Symbols:** {{symbols.secondary}}  
-**Sacred Number:** {{sacred_number}}  
-**Sacred Colors:** {{sacred_colors}}  
-**Forbidden Colors:** {{forbidden_colors}}  
-**Sacred Stones:** {{sacred_stones}}  
-**Sacred Materials:** {{sacred_materials}}  
-**Sacred Weapons:** {{sacred_weapons}}  
-**Sacred Objects:** {{sacred_objects}}  
 
 {{symbolism_notes}}
 
