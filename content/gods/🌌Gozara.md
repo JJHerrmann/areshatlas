@@ -7,8 +7,8 @@ pantheon:
   - "[[Yekatlan]]"
 divine_rank: Major
 gender: Female
-nature: ""
-ethos: ""
+nature: Celestial
+ethos: Lawful
 major_influence: Fate
 minor_influences:
   - allotments
@@ -40,11 +40,27 @@ dwelling_place: ""
 primary_symbol: ""
 secondary_symbols: []
 sacred_number:
-sacred_colors: []
+sacred_colors:
+  - Electrum
+  - Ivory
+  - Indigo
+  - Lapis
+  - Bronze
 forbidden_colors: []
-sacred_stones: []
-sacred_objects: []
-sacred_weapons: []
+sacred_stones:
+  - Lapis Lazuli
+  - Carnelian
+sacred_objects:
+  - Plumb Line
+  - Measuring Rod
+  - Tally Tablet
+  - Seal Ring
+  - Sundial
+  - Knotted Cord
+sacred_weapons:
+  - Rope Dart
+  - Meteor Hammer
+  - Corded Weight
 church_name: ""
 central_authority: ""
 regional_titles: []

@@ -53,6 +53,14 @@
           "Major"
         ],
         [
+          "Nature",
+          "Celestial"
+        ],
+        [
+          "Ethos",
+          "Lawful"
+        ],
+        [
           "Major Influence",
           "Fate"
         ],
@@ -89,6 +97,47 @@
             "[[✨Yaradaat]]",
             "[[✨Malagad]]",
             "[[✨Kathorharab]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Symbols and Regalia",
+      "rows": [
+        [
+          "Sacred Colors",
+          [
+            "Electrum",
+            "Ivory",
+            "Indigo",
+            "Lapis",
+            "Bronze"
+          ]
+        ],
+        [
+          "Sacred Stones",
+          [
+            "Lapis Lazuli",
+            "Carnelian"
+          ]
+        ],
+        [
+          "Sacred Objects",
+          [
+            "Plumb Line",
+            "Measuring Rod",
+            "Tally Tablet",
+            "Seal Ring",
+            "Sundial",
+            "Knotted Cord"
+          ]
+        ],
+        [
+          "Sacred Weapons",
+          [
+            "Rope Dart",
+            "Meteor Hammer",
+            "Corded Weight"
           ]
         ]
       ]
