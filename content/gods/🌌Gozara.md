@@ -97,16 +97,6 @@ Gozara is depicted as a young woman, with dark hair and dark navy robes. She is 
 
 ## Symbols
 
-**Primary Symbol:** Plumb Line Weight  
-**Secondary Symbols:** {{symbols.secondary}}  
-**Sacred Number:** {{sacred_number}}  
-**Sacred Colors:** {{sacred_colors}}  
-**Forbidden Colors:** {{forbidden_colors}}  
-**Sacred Stones:** {{sacred_stones}}  
-**Sacred Materials:** {{sacred_materials}}  
-**Sacred Weapons:** {{sacred_weapons}}  
-**Sacred Objects:** {{sacred_objects}}  
-
 {{symbolism_notes}}
 
 ## Dwelling Place
