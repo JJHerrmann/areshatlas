@@ -99,6 +99,7 @@ export type DeitySidebar = {
     banner: { src: string; alt: string; caption: string | null } | null;
     heraldry: { src: string; alt: string; caption: string | null } | null;
     avatar: { src: string; alt: string; caption: string | null } | null;
+    symbol: { src: string; alt: string; caption: string | null } | null;
   };
   sections: SidebarSection[];
 };
