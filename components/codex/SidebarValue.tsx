@@ -25,7 +25,36 @@ function renderInlineText(value: string, sourceRelativePath: string) {
   });
 }
 
+function isColorSwatchValue(value: unknown): value is { kind: "color_swatches"; items: Array<{ label: string; swatch?: string | null }> } {
+  return Boolean(
+    value &&
+      typeof value === "object" &&
+      !Array.isArray(value) &&
+      (value as { kind?: string }).kind === "color_swatches" &&
+      Array.isArray((value as { items?: unknown[] }).items),
+  );
+}
+
 export default function SidebarValue({ value, sourceRelativePath }: SidebarValueProps) {
+  if (isColorSwatchValue(value)) {
+    return (
+      <ul className="codex-color-swatch-list">
+        {value.items.map((item, index) => (
+          <li key={`${item.label}-${index}`} className="codex-color-swatch-item">
+            {item.swatch ? (
+              <span
+                className="codex-color-swatch"
+                style={{ background: item.swatch }}
+                aria-hidden="true"
+              />
+            ) : null}
+            <span>{renderInlineText(item.label, sourceRelativePath)}</span>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   if (value && typeof value === "object" && !Array.isArray(value)) {
     return (
       <ul>

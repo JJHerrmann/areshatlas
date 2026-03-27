@@ -360,6 +360,42 @@ function optionalImage(frontmatter, field, title, sourceRelativePath, assetIndex
   };
 }
 
+function normalizeHexColorToken(value) {
+  const token = String(value || "").trim();
+  return /^#(?:[0-9a-fA-F]{3}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$/.test(token) ? token : null;
+}
+
+function buildColorSwatchCss(value) {
+  const tokens = String(value || "")
+    .split(",")
+    .map((item) => normalizeHexColorToken(item))
+    .filter(Boolean);
+  if (!tokens.length) return null;
+  if (tokens.length === 1) return tokens[0];
+  return `linear-gradient(to right, ${tokens.join(", ")})`;
+}
+
+function buildColorSwatchValue(names, swatches) {
+  const normalizedNames = normalizeStringArray(names);
+  const normalizedSwatches = normalizeStringArray(swatches);
+  if (!normalizedNames.length && !normalizedSwatches.length) return [];
+
+  const count = Math.max(normalizedNames.length, normalizedSwatches.length);
+  const items = Array.from({ length: count }, (_, index) => {
+    const label = normalizedNames[index] || normalizedSwatches[index] || `Color ${index + 1}`;
+    const swatch = buildColorSwatchCss(normalizedSwatches[index]);
+    return {
+      label,
+      swatch,
+    };
+  });
+
+  return {
+    kind: "color_swatches",
+    items,
+  };
+}
+
 function buildNationSidebar(frontmatter, relativePath, assetIndex) {
   const title = String(frontmatter.name || frontmatter.title || path.basename(relativePath, path.extname(relativePath)));
   return {
@@ -509,8 +545,8 @@ function buildDeitySidebar(frontmatter, relativePath, assetIndex) {
           ["Primary Symbol", frontmatter.primary_symbol],
           ["Secondary Symbols", optionalArray(frontmatter.secondary_symbols)],
           ["Sacred Number", frontmatter.sacred_number],
-          ["Sacred Colors", optionalArray(frontmatter.sacred_colors)],
-          ["Forbidden Colors", optionalArray(frontmatter.forbidden_colors)],
+          ["Sacred Colors", buildColorSwatchValue(frontmatter.sacred_colors, frontmatter.sacred_color_swatches)],
+          ["Forbidden Colors", buildColorSwatchValue(frontmatter.forbidden_colors, frontmatter.forbidden_color_swatches)],
           ["Sacred Stones", optionalArray(frontmatter.sacred_stones)],
           ["Sacred Objects", optionalArray(frontmatter.sacred_objects)],
           ["Sacred Weapons", optionalArray(frontmatter.sacred_weapons)],
