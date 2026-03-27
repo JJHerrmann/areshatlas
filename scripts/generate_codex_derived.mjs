@@ -467,6 +467,7 @@ function buildDeitySidebar(frontmatter, relativePath, assetIndex) {
       banner: optionalImage(frontmatter, "image_banner", title, relativePath, assetIndex),
       heraldry: optionalImage(frontmatter, "image_heraldry", title, relativePath, assetIndex),
       avatar: optionalImage(frontmatter, "image_avatar", title, relativePath, assetIndex),
+      symbol: optionalImage(frontmatter, "image_symbol", title, relativePath, assetIndex),
     },
     sections: [
       {

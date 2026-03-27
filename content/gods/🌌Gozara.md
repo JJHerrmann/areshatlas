@@ -28,7 +28,8 @@ avatars: []
 parents: []
 siblings: []
 offspring: []
-consorts: []
+consorts:
+  - "[[🌌Niwara]]"
 allies: []
 foes: []
 dwelling_place: ""
@@ -60,6 +61,7 @@ navboxes:
   - dieties-of-areshnaat
 slug: gozara
 image_avatar: "![[/_images/Pasted image 20260326180824.png]]"
+image_symbol: "![[Authorship/roleplaying/worlds/aresh/codex-content/_images/Artboard 2god_symbol.png]]"
 ---
 # Gozara
 *The Mensor of Dawns*

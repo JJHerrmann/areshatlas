@@ -10,6 +10,11 @@
       "src": "/content-assets/_images/Pasted%20image%2020260326180824.png",
       "alt": "Gozara",
       "caption": null
+    },
+    "symbol": {
+      "src": "/content-assets/_images/Artboard%202god_symbol.png",
+      "alt": "Gozara",
+      "caption": null
     }
   },
   "sections": [
@@ -25,6 +30,12 @@
         [
           "Gender",
           "Female"
+        ],
+        [
+          "Consort(s)",
+          [
+            "[[🌌Niwara]]"
+          ]
         ]
       ]
     },
