@@ -367,7 +367,7 @@ function normalizeHexColorToken(value) {
 
 function buildColorSwatchCss(value) {
   const tokens = String(value || "")
-    .split(",")
+    .split(/[\s,]+/)
     .map((item) => normalizeHexColorToken(item))
     .filter(Boolean);
   if (!tokens.length) return null;
@@ -546,7 +546,13 @@ function buildDeitySidebar(frontmatter, relativePath, assetIndex) {
           ["Secondary Symbols", optionalArray(frontmatter.secondary_symbols)],
           ["Sacred Number", frontmatter.sacred_number],
           ["Sacred Colors", buildColorSwatchValue(frontmatter.sacred_colors, frontmatter.sacred_color_swatches)],
-          ["Forbidden Colors", buildColorSwatchValue(frontmatter.forbidden_colors, frontmatter.forbidden_color_swatches)],
+          [
+            "Forbidden Colors",
+            buildColorSwatchValue(
+              frontmatter.forbidden_colors,
+              frontmatter.forbidden_color_swatches || frontmatter.forbidden_colors_swatches,
+            ),
+          ],
           ["Sacred Stones", optionalArray(frontmatter.sacred_stones)],
           ["Sacred Objects", optionalArray(frontmatter.sacred_objects)],
           ["Sacred Weapons", optionalArray(frontmatter.sacred_weapons)],
