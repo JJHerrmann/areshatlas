@@ -27,10 +27,14 @@ spheres:
 avatars: []
 parents: []
 siblings: []
-offspring: []
+offspring:
+  - "[[✨Yaradaat]]"
+  - "[[✨Malagad]]"
+  - "[[✨Kathorharab]]"
 consorts:
   - "[[🌌Niwara]]"
-allies: []
+allies:
+  - "[[🌌Niwara]]"
 foes: []
 dwelling_place: ""
 primary_symbol: ""
