@@ -106,13 +106,31 @@
       "rows": [
         [
           "Sacred Colors",
-          [
-            "Electrum",
-            "Ivory",
-            "Indigo",
-            "Lapis",
-            "Bronze"
-          ]
+          {
+            "kind": "color_swatches",
+            "items": [
+              {
+                "label": "Electrum",
+                "swatch": null
+              },
+              {
+                "label": "Ivory",
+                "swatch": "#E8DDBF"
+              },
+              {
+                "label": "Indigo",
+                "swatch": "#2E3F7F"
+              },
+              {
+                "label": "Lapis",
+                "swatch": "#2E6FB4"
+              },
+              {
+                "label": "Bronze",
+                "swatch": null
+              }
+            ]
+          }
         ],
         [
           "Sacred Stones",

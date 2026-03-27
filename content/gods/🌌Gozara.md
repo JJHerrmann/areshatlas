@@ -46,7 +46,14 @@ sacred_colors:
   - Indigo
   - Lapis
   - Bronze
+sacred_color_swatches:
+  - "#C7B66A #DCCF93 #8F7C45"
+  - "#E8DDBF"
+  - "#2E3F7F"
+  - "#2E6FB4"
+  - "#5A3924 #8A5A34 #D9A15C"
 forbidden_colors: []
+forbidden_colors_swatches:
 sacred_stones:
   - Lapis Lazuli
   - Carnelian
