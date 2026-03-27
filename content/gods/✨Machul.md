@@ -23,7 +23,10 @@ dwelling_place: ""
 primary_symbol: ""
 secondary_symbols: []
 sacred_number:
-sacred_colors: []
+sacred_colors:
+  - crimson
+  - sapphire
+  - gold
 forbidden_colors: []
 sacred_stones: []
 sacred_objects: []
@@ -49,6 +52,10 @@ navboxes:
   - ramtilim
   - dieties-of-areshnaat
 slug: machul
+sacred_color_swatches:
+  - "#990000"
+  - "#0F52BA"
+  - "#8C6A1C #C9A227 #F2D36B"
 ---
 # Machul
 *The God of Dance and Song*

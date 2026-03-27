@@ -30,6 +30,31 @@
           "chaotic"
         ]
       ]
+    },
+    {
+      "title": "Symbols and Regalia",
+      "rows": [
+        [
+          "Sacred Colors",
+          {
+            "kind": "color_swatches",
+            "items": [
+              {
+                "label": "crimson",
+                "swatch": "#990000"
+              },
+              {
+                "label": "sapphire",
+                "swatch": "#0F52BA"
+              },
+              {
+                "label": "gold",
+                "swatch": "linear-gradient(to right, #8C6A1C, #C9A227, #F2D36B)"
+              }
+            ]
+          }
+        ]
+      ]
     }
   ]
 }
