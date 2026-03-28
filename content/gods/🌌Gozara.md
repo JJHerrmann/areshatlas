@@ -194,7 +194,7 @@ Gozara's officially recognized symbols are the Plumb Line, the Measuring Rod, Th
 
 ## Religious Practices
 
-{{practices_overview}}
+One of the most common ceremonies throughout the human communities of [[Drakharpan]] is the [[Binding of Portions]]. Each person in the community has a tray on the wall of their village temple, and will ceremonially add "knots" or worked stones to their tray for major milestone events through their life. Birth, Passage of Adulthood, Marriage, Childbirth, Eldership, and Death. 
 
 ### Calendar
 

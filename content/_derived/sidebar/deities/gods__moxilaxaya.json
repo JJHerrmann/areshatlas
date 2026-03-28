@@ -6,11 +6,7 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": {
-      "src": "/content-assets/_images/Pasted%20image%2020260324085654.png",
-      "alt": "Moxilaxaya",
-      "caption": null
-    },
+    "avatar": null,
     "symbol": null
   },
   "sections": [
