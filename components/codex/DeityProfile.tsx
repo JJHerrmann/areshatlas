@@ -5,7 +5,7 @@ import InlineCodexText from "@/components/codex/InlineCodexText";
 import RelatedEntitiesCard from "@/components/codex/RelatedEntitiesCard";
 import SectionTabNav from "@/components/codex/SectionTabNav";
 import SidebarValue from "@/components/codex/SidebarValue";
-import { resolveObsidianInlineParts } from "@/lib/codexContent";
+import { getArticlePreviewByHref, resolveObsidianInlineParts } from "@/lib/codexContent";
 
 type DeityProfileProps = {
   frontmatter: Record<string, unknown>;
@@ -126,7 +126,7 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
   ].filter(([name, description]) => Boolean(name) && isFilled(description)) as Array<[string, unknown]>;
 
   const holyDays = Array.isArray(frontmatter.holy_days) ? frontmatter.holy_days.filter(isFilled) : [];
-  const relatedEntities = [
+  const relatedEntityLinks = [
     ...linkedItemsFromValue(frontmatter.parents, sourceRelativePath),
     ...linkedItemsFromValue(frontmatter.siblings, sourceRelativePath),
     ...linkedItemsFromValue(frontmatter.offspring, sourceRelativePath),
@@ -135,6 +135,15 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
     ...linkedItemsFromValue(frontmatter.foes, sourceRelativePath),
     ...linkedItemsFromValue(frontmatter.avatars, sourceRelativePath),
   ].filter((item, index, array) => array.findIndex((candidate) => candidate.href === item.href) === index);
+  const relatedEntities = relatedEntityLinks.map((item) => {
+    const preview = getArticlePreviewByHref(item.href);
+    return {
+      text: item.text,
+      href: item.href,
+      subtitle: preview?.subtitle ?? null,
+      imageSrc: preview?.imageSrc,
+    };
+  });
   const crossReferences = [
     ...linkedItemsFromValue(frontmatter.dwelling_place, sourceRelativePath),
     ...linkedItemsFromValue(frontmatter.religious_orders, sourceRelativePath),

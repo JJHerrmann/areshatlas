@@ -4,6 +4,7 @@ type RelatedEntity = {
   text: string;
   href: string;
   subtitle?: string | null;
+  imageSrc?: string;
 };
 
 type RelatedEntitiesCardProps = {
@@ -23,7 +24,15 @@ export default function RelatedEntitiesCard({
       <div className="codex-related-entities-list">
         {items.map((item) => (
           <Link key={`${item.href}-${item.text}`} href={item.href} className="codex-related-entities-item">
-            <span className="codex-related-entities-thumb" aria-hidden="true" />
+            {item.imageSrc ? (
+              <img
+                src={item.imageSrc}
+                alt=""
+                className="codex-related-entities-thumb codex-related-entities-thumb-image"
+              />
+            ) : (
+              <span className="codex-related-entities-thumb" aria-hidden="true" />
+            )}
             <span className="codex-related-entities-copy">
               <span className="codex-related-entities-item-title">{item.text}</span>
               {item.subtitle ? <span className="codex-related-entities-item-subtitle">{item.subtitle}</span> : null}

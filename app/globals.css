@@ -1521,6 +1521,11 @@ body {
   flex: 0 0 auto;
 }
 
+.codex-related-entities-thumb-image {
+  display: block;
+  object-fit: cover;
+}
+
 .codex-related-entities-copy {
   display: grid;
   gap: 0.15rem;

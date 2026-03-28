@@ -58,6 +58,13 @@ export type SearchableArticle = {
   aliases: string[];
 };
 
+export type RelatedArticlePreview = {
+  title: string;
+  href: string;
+  subtitle?: string | null;
+  imageSrc?: string;
+};
+
 export type DerivedNavboxItem = {
   slug: string;
   title: string;
@@ -719,6 +726,24 @@ export function getSearchableArticles(): SearchableArticle[] {
     section: article.section,
     aliases: article.aliases,
   }));
+}
+
+export function getArticlePreviewByHref(href: string): RelatedArticlePreview | null {
+  const article = getDerivedArticleIndex().find((entry) => entry.href === href);
+  if (!article?.href) return null;
+
+  const absolutePath = path.join(CONTENT_ROOT, article.source_relative_path);
+  const imageSrc = fs.existsSync(absolutePath) ? readEntryImage(absolutePath) : undefined;
+  const sourcePath = `content/${article.source_relative_path}`;
+  const deitySidebar = getDeitySidebar(sourcePath);
+  const nationSidebar = deitySidebar ? null : getNationSidebar(sourcePath);
+
+  return {
+    title: article.title,
+    href: article.href,
+    subtitle: deitySidebar?.subtitle ?? nationSidebar?.subtitle ?? null,
+    imageSrc,
+  };
 }
 
 export function getSectionEntries(section: SectionConfig, slugParts: string[] = []): ContentEntry[] {
