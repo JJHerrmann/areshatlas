@@ -1037,16 +1037,23 @@ body {
    Active theme below is the new dark codex pass. */
 
 :root {
-  --codex-bg: #121114;
-  --codex-panel: rgba(24, 22, 26, 0.94);
-  --codex-panel-soft: rgba(32, 28, 31, 0.88);
-  --codex-line: rgba(181, 143, 73, 0.28);
-  --codex-line-strong: rgba(205, 164, 90, 0.5);
-  --codex-gold: #d9bb7b;
-  --codex-gold-soft: #b89257;
-  --codex-ink-soft: #d7c9ae;
-  --codex-ink: #f1e1bf;
-  --codex-texture: url("/textures/black-paper.png");
+  --codex-bg: var(--token-color-semantic-bg-page);
+  --codex-panel: color-mix(in srgb, var(--token-color-semantic-bg-surface) 88%, black 12%);
+  --codex-panel-soft: color-mix(in srgb, var(--token-color-semantic-bg-surfaceRaised) 84%, black 16%);
+  --codex-line: var(--token-color-semantic-border-default);
+  --codex-line-strong: var(--token-color-semantic-border-strong);
+  --codex-gold: var(--token-color-primitive-gold-300);
+  --codex-gold-soft: var(--token-color-semantic-text-muted);
+  --codex-ink-soft: var(--token-color-semantic-text-primary);
+  --codex-ink: var(--token-color-semantic-text-strong);
+  --codex-texture: var(--theme-texture-image);
+  --codex-page-gradient: var(--theme-page-gradient);
+  --codex-cloud-gradient: var(--theme-cloud-gradient);
+  --codex-panel-gradient: var(--theme-panel-gradient);
+  --codex-panel-overlay: var(--theme-panel-overlay);
+  --codex-tab-active-gradient: var(--theme-tab-active-gradient);
+  --codex-divider-gradient: var(--theme-divider-gradient);
+  --codex-focus-ring: var(--token-color-semantic-focus-ring);
 }
 
 html {
@@ -1055,67 +1062,69 @@ html {
 
 body {
   background:
-    linear-gradient(rgba(9, 8, 10, 0.78), rgba(18, 17, 21, 0.84)),
+    linear-gradient(rgba(9, 8, 10, 0.72), rgba(18, 17, 21, 0.82)),
     var(--codex-texture),
-    radial-gradient(circle at 15% 0%, rgba(189, 140, 66, 0.09), transparent 34%),
-    radial-gradient(circle at 80% 12%, rgba(71, 87, 126, 0.12), transparent 28%),
-    linear-gradient(180deg, #0c0b0e 0%, #151316 58%, #111115 100%);
+    var(--codex-cloud-gradient),
+    var(--codex-page-gradient);
   color: var(--codex-ink-soft);
-  background-repeat: repeat, repeat, no-repeat, no-repeat, no-repeat;
-  background-size: auto, 420px 420px, auto, auto, auto;
-  background-attachment: fixed, fixed, fixed, fixed, fixed;
+  font-family: var(--token-font-family-body);
+  background-repeat: repeat, repeat, no-repeat, no-repeat;
+  background-size: auto, 420px 420px, cover, cover;
+  background-attachment: fixed, fixed, fixed, fixed;
 }
 
 .wiki-page-shell {
-  padding: 0.75rem 0 1.5rem;
+  padding: var(--token-layout-padding-page-mobile-y) 0 var(--token-layout-padding-page-desktop-y);
 }
 
 .wiki-page-frame {
-  width: min(1500px, calc(100% - 1rem));
+  width: min(var(--token-layout-max-width-page), calc(100% - 1rem));
   border: 1px solid var(--codex-line);
   background:
-    linear-gradient(rgba(24, 21, 25, 0.86), rgba(17, 16, 20, 0.9)),
+    var(--codex-panel-overlay),
     var(--codex-texture),
-    radial-gradient(circle at 30% 18%, rgba(255, 255, 255, 0.03), transparent 24%),
-    linear-gradient(180deg, rgba(29, 26, 30, 0.98), rgba(18, 17, 21, 0.98));
+    var(--codex-cloud-gradient),
+    var(--codex-panel-gradient);
   background-repeat: repeat, repeat, no-repeat, no-repeat;
-  background-size: auto, 320px 320px, auto, auto;
-  box-shadow: 0 18px 56px rgba(0, 0, 0, 0.48);
+  background-size: auto, 320px 320px, cover, cover;
+  box-shadow: var(--token-shadow-overlay);
 }
 
 .wiki-shell-layout {
-  grid-template-columns: 280px minmax(0, 1fr);
+  grid-template-columns: var(--token-layout-rails-sidebarDesktop) minmax(0, 1fr);
 }
 
 .wiki-sidebar {
-  padding: 1rem 1rem 1.2rem;
+  padding: var(--token-components-sidebarRail-padding);
   border-right: 1px solid var(--codex-line);
   background:
-    linear-gradient(rgba(24, 21, 24, 0.9), rgba(17, 15, 19, 0.92)),
+    var(--codex-panel-overlay),
     var(--codex-texture),
-    linear-gradient(180deg, rgba(26, 24, 27, 0.98), rgba(18, 16, 20, 0.98));
+    var(--codex-cloud-gradient),
+    var(--codex-panel-gradient);
   background-repeat: repeat, repeat, no-repeat;
-  background-size: auto, 260px 260px, auto;
+  background-size: auto, 260px 260px, cover, cover;
 }
 
 .wiki-sidebar-stack {
-  gap: 1.1rem;
+  gap: var(--token-components-sidebarRail-gap);
 }
 
 .wiki-box {
   border: 1px solid var(--codex-line);
   background:
-    linear-gradient(rgba(30, 27, 31, 0.8), rgba(23, 20, 24, 0.84)),
+    var(--codex-panel-overlay),
     var(--codex-texture),
-    linear-gradient(180deg, rgba(30, 27, 31, 0.88), rgba(23, 20, 24, 0.92));
+    var(--codex-cloud-gradient),
+    var(--codex-panel-gradient);
   background-repeat: repeat, repeat, no-repeat;
-  background-size: auto, 240px 240px, auto;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  background-size: auto, 240px 240px, cover, cover;
+  box-shadow: inset 0 1px 0 var(--token-color-primitive-alpha-white4);
 }
 
 .wiki-logo-image {
-  border: 1px solid rgba(215, 187, 123, 0.18);
-  background: rgba(255, 245, 220, 0.98);
+  border: 1px solid var(--token-color-semantic-decorative-line);
+  background: var(--token-color-primitive-parchment-50);
 }
 
 .wiki-systemline {
@@ -1132,42 +1141,47 @@ body {
 
 .wiki-nav-link {
   padding: 0.8rem 0.1rem;
-  border-bottom-color: rgba(181, 143, 73, 0.2);
+  border-bottom-color: var(--token-color-semantic-decorative-line);
   color: var(--codex-ink);
   font-size: 1rem;
 }
 
 .wiki-nav-link:hover {
-  color: #fff0ca;
+  color: var(--token-color-semantic-text-strong);
 }
 
 .wiki-persistent-footer {
   border-top-color: var(--codex-line);
   background:
-    linear-gradient(rgba(16, 15, 18, 0.88), rgba(16, 15, 18, 0.88)),
+    var(--codex-panel-overlay),
     var(--codex-texture),
-    rgba(17, 16, 19, 0.96);
-  background-size: auto, 260px 260px, auto;
+    var(--codex-cloud-gradient),
+    var(--codex-panel-gradient);
+  background-size: auto, 260px 260px, cover, cover;
 }
 
 .wiki-persistent-footer-banner {
-  background: linear-gradient(180deg, rgba(95, 77, 44, 0.88), rgba(66, 53, 31, 0.98));
-  color: #f4dfad;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--token-color-primitive-gold-700) 55%, var(--token-color-semantic-bg-surface)),
+    color-mix(in srgb, var(--token-color-primitive-gold-600) 35%, var(--token-color-semantic-bg-page))
+  );
+  color: var(--token-color-semantic-text-strong);
 }
 
 .wiki-persistent-footer-link {
   border-color: var(--codex-line);
-  background: rgba(34, 29, 33, 0.94);
+  background: color-mix(in srgb, var(--token-color-semantic-bg-surfaceRaised) 86%, black 14%);
   color: var(--codex-ink);
 }
 
 .wiki-persistent-footer-link:hover {
-  background: rgba(49, 40, 37, 0.98);
+  background: color-mix(in srgb, var(--token-color-semantic-bg-surfaceRaised) 72%, var(--token-color-primitive-gold-700) 28%);
   border-color: var(--codex-line-strong);
 }
 
 .wiki-persistent-footer-count {
-  color: rgba(217, 187, 123, 0.76);
+  color: color-mix(in srgb, var(--token-color-primitive-gold-300) 76%, transparent);
 }
 
 .codex-backlink,
@@ -1182,14 +1196,14 @@ body {
 
 .codex-breadcrumb-pill {
   border-color: var(--codex-line);
-  background: rgba(27, 24, 28, 0.86);
+  background: color-mix(in srgb, var(--token-color-semantic-bg-surface) 82%, black 18%);
   color: var(--codex-gold);
 }
 
 .codex-breadcrumb-pill:hover {
-  background: rgba(56, 43, 33, 0.88);
+  background: color-mix(in srgb, var(--token-color-semantic-bg-surfaceRaised) 72%, var(--token-color-primitive-gold-700) 28%);
   border-color: var(--codex-line-strong);
-  color: #f5e7c7;
+  color: var(--token-color-semantic-text-strong);
 }
 
 .codex-page-title,
@@ -1206,6 +1220,8 @@ body {
 .codex-page-title {
   font-size: clamp(2.9rem, 5vw, 4.6rem);
   letter-spacing: -0.035em;
+  font-family: var(--token-font-family-display);
+  font-weight: var(--token-typography-roles-articleTitle-fontWeight);
 }
 
 .codex-page-summary,
@@ -1218,6 +1234,7 @@ body {
 .wiki-subtitle,
 .wiki-logo-caption {
   color: var(--codex-ink-soft);
+  font-family: var(--token-font-family-body);
 }
 
 .codex-entry-layout.with-sidebar {
@@ -1242,10 +1259,11 @@ body {
   margin: 1.4rem 0 1.8rem;
   border: 1px solid var(--codex-line);
   background:
-    linear-gradient(rgba(19, 18, 21, 0.82), rgba(19, 18, 21, 0.82)),
+    var(--codex-panel-overlay),
     var(--codex-texture),
-    rgba(18, 17, 20, 0.82);
-  background-size: auto, 220px 220px, auto;
+    var(--codex-cloud-gradient),
+    var(--codex-panel-gradient);
+  background-size: auto, 220px 220px, cover, cover;
 }
 
 .codex-deity-tab {
@@ -1255,10 +1273,10 @@ body {
   min-height: 50px;
   padding: 0.85rem 1.35rem;
   border-right: 1px solid var(--codex-line);
-  color: rgba(226, 199, 144, 0.74);
+  color: color-mix(in srgb, var(--token-color-semantic-text-muted) 78%, transparent);
   font-size: 0.98rem;
   text-decoration: none;
-  transition: background-color 140ms ease, color 140ms ease;
+  transition: var(--token-interaction-transition-background), var(--token-interaction-transition-color);
 }
 
 .codex-deity-tab:last-child {
@@ -1267,8 +1285,8 @@ body {
 
 .codex-deity-tab:hover,
 .codex-deity-tab.is-active {
-  background: linear-gradient(180deg, rgba(86, 64, 39, 0.58), rgba(49, 37, 28, 0.78));
-  color: #fae2ad;
+  background: var(--codex-tab-active-gradient);
+  color: var(--token-color-semantic-text-strong);
 }
 
 .codex-deity-tab.is-active::after {
@@ -1280,7 +1298,7 @@ body {
   height: 12px;
   border-right: 1px solid var(--codex-line-strong);
   border-bottom: 1px solid var(--codex-line-strong);
-  background: rgba(73, 54, 34, 0.98);
+  background: color-mix(in srgb, var(--token-color-primitive-gold-700) 32%, var(--token-color-semantic-bg-surface) 68%);
   transform: translateX(-50%) rotate(45deg);
 }
 
@@ -1296,7 +1314,7 @@ body {
   content: "";
   height: 1px;
   flex: 1 1 auto;
-  background: linear-gradient(90deg, rgba(195, 158, 90, 0.55), rgba(195, 158, 90, 0.08));
+  background: var(--codex-divider-gradient);
 }
 
 .codex-frontmatter-panel,
@@ -1306,11 +1324,12 @@ body {
 .wiki-banner-box {
   border-color: var(--codex-line);
   background:
-    linear-gradient(rgba(28, 25, 30, 0.84), rgba(22, 20, 24, 0.88)),
+    var(--codex-panel-overlay),
     var(--codex-texture),
-    linear-gradient(180deg, rgba(29, 26, 31, 0.92), rgba(22, 20, 24, 0.92));
+    var(--codex-cloud-gradient),
+    var(--codex-panel-gradient);
   background-repeat: repeat, repeat, no-repeat;
-  background-size: auto, 240px 240px, auto;
+  background-size: auto, 240px 240px, cover, cover;
 }
 
 .codex-infobox {
@@ -1349,7 +1368,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  border: 1px solid rgba(223, 190, 125, 0.32);
+  border: 1px solid color-mix(in srgb, var(--token-color-primitive-gold-300) 32%, transparent);
   pointer-events: none;
 }
 
@@ -1359,11 +1378,11 @@ body {
 
 .codex-infobox-image {
   border: 0;
-  background: #0e0d12;
+  background: color-mix(in srgb, var(--token-color-semantic-bg-page) 88%, black 12%);
 }
 
 .codex-infobox-section {
-  border-top-color: rgba(181, 143, 73, 0.18);
+  border-top-color: var(--token-color-semantic-decorative-line);
   padding-top: 1rem;
 }
 
@@ -1378,7 +1397,7 @@ body {
 }
 
 .codex-field-icon {
-  color: #e0ba73;
+  color: var(--token-color-primitive-gold-300);
   font-size: 1rem;
   width: 1rem;
   text-align: center;
@@ -1396,13 +1415,13 @@ body {
 .codex-inline-link,
 .codex-infobox-link,
 .codex-prose a {
-  color: #e0bb75;
-  text-decoration-color: rgba(224, 187, 117, 0.34);
+  color: var(--token-color-semantic-text-link);
+  text-decoration-color: color-mix(in srgb, var(--token-color-primitive-gold-300) 34%, transparent);
 }
 
 .codex-color-swatch {
-  border-color: rgba(223, 190, 125, 0.38);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  border-color: color-mix(in srgb, var(--token-color-primitive-gold-300) 38%, transparent);
+  box-shadow: inset 0 0 0 1px var(--token-color-primitive-alpha-white10);
 }
 
 .wiki-banner-box {

@@ -5,10 +5,12 @@ import { Suspense } from "react";
 import StreamRefreshController from "@/components/codex/StreamRefreshController";
 import PersistentFooter from "@/components/codex/PersistentFooter";
 import WikiSidebar from "@/components/codex/WikiSidebar";
+import { getThemeCssVariables } from "@/src/theme/cssVariables";
 import "./globals.css";
 
 const publicRoot = path.join(process.cwd(), "public");
 const siteIcoPath = path.join(publicRoot, "site.ico");
+const themeCssVariables = getThemeCssVariables();
 
 export const metadata: Metadata = {
   title: "Aresh Codex",
@@ -25,6 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="stylesheet" href="/vendor/rpg-awesome/css/rpg-awesome.min.css" />
+        <style id="theme-tokens">{themeCssVariables}</style>
       </head>
       <body>
         <Suspense fallback={null}>
