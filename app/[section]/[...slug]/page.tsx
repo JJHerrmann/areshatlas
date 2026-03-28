@@ -1,15 +1,33 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import CoordinateRule from "@/components/codex/CoordinateRule";
+import ArticleHeader from "@/components/codex/ArticleHeader";
 import CornerOrnament from "@/components/codex/CornerOrnament";
 import DeityInfobox from "@/components/codex/DeityInfobox";
 import DeityProfile from "@/components/codex/DeityProfile";
 import EntryCard from "@/components/codex/EntryCard";
-import InlineCodexText from "@/components/codex/InlineCodexText";
 import NavboxFooter from "@/components/codex/NavboxFooter";
 import NationInfobox from "@/components/codex/NationInfobox";
-import PlateLabel from "@/components/codex/PlateLabel";
-import { getDeitySidebar, getDerivedArticle, getNavboxesForSourcePath, getNationSidebar, getRenderedDocument, getRenderedOverviewDocument, getSectionBySlug, getSectionView } from "@/lib/codexContent";
+import {
+  getDeitySidebar,
+  getDerivedArticle,
+  getNavboxesForSourcePath,
+  getNationSidebar,
+  getRenderedDocument,
+  getRenderedOverviewDocument,
+  getSearchableArticles,
+  getSectionBySlug,
+  getSectionView,
+} from "@/lib/codexContent";
+
+function getArticleDek(frontmatter: Record<string, unknown>, fallback: string) {
+  const type = typeof frontmatter.type === "string" ? frontmatter.type : "";
+  if (type === "deity") {
+    const epithet = typeof frontmatter.epithet === "string" ? frontmatter.epithet.trim() : "";
+    const honorific = typeof frontmatter.honorific_title === "string" ? frontmatter.honorific_title.trim() : "";
+    return [epithet, honorific].filter(Boolean).join(" · ") || fallback;
+  }
+  return fallback;
+}
 
 type NestedSectionPageProps = {
   params: Promise<{
@@ -22,6 +40,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
   const { section: sectionSlug, slug } = await params;
   const section = getSectionBySlug(sectionSlug);
   if (!section) notFound();
+  const searchItems = getSearchableArticles();
 
   const view = getSectionView(section, slug);
   const overviewDocument = view ? await getRenderedOverviewDocument(section, slug) : null;
@@ -30,29 +49,18 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
     const overviewNavboxes = getNavboxesForSourcePath(overviewDocument.sourcePath);
     return (
       <main className="min-h-screen px-6 py-12 text-stone-900 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <Link href="/" className="codex-backlink">
-            Return to Survey Archive
-          </Link>
-
-          <nav className="mt-6 flex flex-wrap gap-2">
-            {overviewDocument.breadcrumb.map((crumb) => (
-              <Link key={crumb.href} href={crumb.href} className="codex-breadcrumb-pill">
-                {crumb.title}
-              </Link>
-            ))}
-          </nav>
-
-          <div className="mt-6 max-w-3xl">
-            <PlateLabel>{section.label}</PlateLabel>
-            <h1 className="codex-page-title mt-4">
-              <InlineCodexText text={overviewDocument.title} />
-            </h1>
-            <CoordinateRule />
-          </div>
+        <div className="codex-page-inner">
+          <ArticleHeader
+            breadcrumbs={overviewDocument.breadcrumb}
+            label={section.label}
+            title={overviewDocument.title}
+            dek={overviewDocument.summary}
+            searchItems={searchItems}
+          />
 
           <article
             className="codex-entry-body codex-prose mt-10"
+            data-article-outline-root="true"
             dangerouslySetInnerHTML={{ __html: overviewDocument.html }}
           />
 
@@ -96,26 +104,15 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
     const isDeity = Boolean(deitySidebar) || document.frontmatter?.type === "deity";
     return (
       <main className="min-h-screen px-6 py-12 text-stone-900 lg:px-8">
-        <div className="mx-auto max-w-5xl">
-          <Link href={`/${section.slug}`} className="codex-backlink">
-            Return to {section.title}
-          </Link>
-
-          <nav className="mt-6 flex flex-wrap gap-2">
-            {document.breadcrumb.map((crumb) => (
-              <Link key={crumb.href} href={crumb.href} className="codex-breadcrumb-pill">
-                {crumb.title}
-              </Link>
-            ))}
-          </nav>
-
-          <div className="mt-6 max-w-3xl">
-            <PlateLabel>{section.label}</PlateLabel>
-            <h1 className="codex-page-title mt-4">
-              <InlineCodexText text={document.title} />
-            </h1>
-            <CoordinateRule />
-          </div>
+        <div className="codex-page-inner">
+          <ArticleHeader
+            breadcrumbs={document.breadcrumb}
+            label={section.label}
+            title={document.title}
+            dek={getArticleDek(document.frontmatter, document.summary)}
+            searchItems={searchItems}
+            sourceRelativePath={document.sourcePath}
+          />
 
           <div className={`codex-entry-layout mt-10${hasSidebar ? " with-sidebar" : ""}`}>
             {isDeity ? (
@@ -127,6 +124,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             ) : (
               <article
                 className="codex-entry-body codex-prose"
+                data-article-outline-root="true"
                 dangerouslySetInnerHTML={{ __html: document.html }}
               />
             )}
@@ -146,29 +144,15 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
 
   return (
     <main className="min-h-screen px-6 py-12 text-stone-900 lg:px-8">
-      <div className="mx-auto max-w-6xl">
-        <Link href="/" className="codex-backlink">
-          Return to Survey Archive
-        </Link>
-
-        <nav className="mt-6 flex flex-wrap gap-2">
-          {view.breadcrumb.map((crumb) => (
-            <Link key={crumb.href} href={crumb.href} className="codex-breadcrumb-pill">
-              {crumb.title}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="mt-6 max-w-3xl">
-          <PlateLabel>{section.label}</PlateLabel>
-          <h1 className="codex-page-title mt-4">
-            <InlineCodexText text={view.breadcrumb[view.breadcrumb.length - 1]?.title ?? section.title} />
-          </h1>
-          <p className="codex-source-note mt-3">
-            Mirrored Source Folder: {view.sourcePath}
-          </p>
-          <CoordinateRule />
-        </div>
+      <div className="codex-page-inner">
+        <ArticleHeader
+          breadcrumbs={view.breadcrumb}
+          label={section.label}
+          title={view.breadcrumb[view.breadcrumb.length - 1]?.title ?? section.title}
+          dek={section.summary}
+          sourceNote={`Mirrored Source Folder: ${view.sourcePath}`}
+          searchItems={searchItems}
+        />
 
         <section className="mt-10">
           {view.entries.length ? (

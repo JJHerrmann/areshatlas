@@ -1,5 +1,5 @@
 import type { NationSidebar } from "@/lib/codexContent";
-import SidebarValue from "@/components/codex/SidebarValue";
+import InfoCard from "@/components/codex/InfoCard";
 
 type NationInfoboxProps = { data: NationSidebar };
 
@@ -25,27 +25,12 @@ export default function NationInfobox({ data }: NationInfoboxProps) {
   if (!data.sections.length && !images.length) return null;
 
   return (
-    <aside className="codex-infobox">
-      {images.length ? <div className="codex-infobox-media-stack">{images}</div> : null}
-      <div className="codex-infobox-title">{data.title || "Nation"}</div>
-      {data.subtitle ? <p className="codex-infobox-subtitle">{data.subtitle}</p> : null}
-      <div className="codex-infobox-sections">
-        {data.sections.map((section) => (
-          <section key={section.title} className="codex-infobox-section">
-            <h3 className="codex-infobox-section-title">{section.title}</h3>
-            <dl className="codex-infobox-grid">
-              {section.rows.map(([label, value]) => (
-                <div key={label} className="codex-infobox-row">
-                  <dt>{label}</dt>
-                  <dd>
-                    <SidebarValue value={value} sourceRelativePath={data.source_relative_path} />
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </section>
-        ))}
-      </div>
-    </aside>
+    <InfoCard
+      title={data.title || "Nation"}
+      subtitle={data.subtitle}
+      sourceRelativePath={data.source_relative_path}
+      sections={data.sections}
+      topImages={images.length ? <>{images}</> : null}
+    />
   );
 }

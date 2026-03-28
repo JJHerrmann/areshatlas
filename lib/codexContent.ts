@@ -51,6 +51,13 @@ export type DerivedArticle = {
   navboxes: string[];
 };
 
+export type SearchableArticle = {
+  title: string;
+  href: string | null;
+  section: string;
+  aliases: string[];
+};
+
 export type DerivedNavboxItem = {
   slug: string;
   title: string;
@@ -265,6 +272,16 @@ function slugifySegment(value: string) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+function extractNodeText(node: unknown): string {
+  if (!node || typeof node !== "object") return "";
+  const cast = node as { type?: string; value?: string; children?: unknown[] };
+  if (cast.type === "text" && typeof cast.value === "string") return cast.value;
+  if (Array.isArray(cast.children)) {
+    return cast.children.map((child) => extractNodeText(child)).join("");
+  }
+  return "";
 }
 
 function buildEntrySlug(relativePath: string) {
@@ -650,15 +667,58 @@ function remarkCodexLinks() {
   };
 }
 
+function rehypeCodexHeadings() {
+  return (tree: object) => {
+    const usedIds = new Set<string>();
+
+    visit(tree as Parameters<typeof visit>[0], "element", (node: {
+      tagName?: string;
+      properties?: Record<string, unknown>;
+      children?: unknown[];
+    }) => {
+      if (!node.tagName || !/^h[2-4]$/.test(node.tagName)) return;
+
+      const text = extractNodeText(node).trim();
+      if (!text) return;
+
+      let id = slugifySegment(text) || "section";
+      let suffix = 2;
+      while (usedIds.has(id)) {
+        id = `${slugifySegment(text) || "section"}-${suffix}`;
+        suffix += 1;
+      }
+      usedIds.add(id);
+
+      node.properties = {
+        ...(node.properties || {}),
+        id,
+        "data-outline-target": "true",
+        "data-outline-level": node.tagName.replace("h", ""),
+        "data-outline-label": text,
+      };
+    });
+  };
+}
+
 async function renderMarkdown(markdown: string, sourceRelativePath?: string) {
   const processed = await unified()
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkCodexLinks)
     .use(remarkRehype)
+    .use(rehypeCodexHeadings)
     .use(rehypeStringify)
     .process(preprocessMarkdown(markdown, sourceRelativePath));
   return String(processed);
+}
+
+export function getSearchableArticles(): SearchableArticle[] {
+  return getDerivedArticleIndex().map((article) => ({
+    title: article.title,
+    href: article.href,
+    section: article.section,
+    aliases: article.aliases,
+  }));
 }
 
 export function getSectionEntries(section: SectionConfig, slugParts: string[] = []): ContentEntry[] {

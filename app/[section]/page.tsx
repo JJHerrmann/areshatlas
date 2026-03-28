@@ -1,11 +1,8 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import CoordinateRule from "@/components/codex/CoordinateRule";
+import ArticleHeader from "@/components/codex/ArticleHeader";
 import CornerOrnament from "@/components/codex/CornerOrnament";
 import EntryCard from "@/components/codex/EntryCard";
-import InlineCodexText from "@/components/codex/InlineCodexText";
-import PlateLabel from "@/components/codex/PlateLabel";
-import { getRenderedOverviewDocument, getSectionBySlug, getSectionView, sections } from "@/lib/codexContent";
+import { getRenderedOverviewDocument, getSearchableArticles, getSectionBySlug, getSectionView, sections } from "@/lib/codexContent";
 
 type SectionPageProps = {
   params: Promise<{
@@ -26,28 +23,25 @@ export default async function SectionPage({ params }: SectionPageProps) {
   if (!view) notFound();
   const overviewDocument = await getRenderedOverviewDocument(section, []);
   const entries = view.entries;
+  const searchItems = getSearchableArticles();
 
   return (
     <main className="min-h-screen px-6 py-12 text-stone-900 lg:px-8">
-      <div className="mx-auto max-w-6xl">
-        <Link href="/" className="codex-backlink">
-          Return to Survey Archive
-        </Link>
-        <div className="mt-6 max-w-3xl">
-          <PlateLabel>{section.label}</PlateLabel>
-          <h1 className="codex-page-title mt-4">
-            <InlineCodexText text={overviewDocument?.title ?? section.title} />
-          </h1>
-          <p className="codex-source-note mt-3">
-            Mirrored Source Folder: {view.sourcePath}
-          </p>
-          <CoordinateRule />
-        </div>
+      <div className="codex-page-inner">
+        <ArticleHeader
+          breadcrumbs={[{ title: section.title, href: `/${section.slug}` }]}
+          label={section.label}
+          title={overviewDocument?.title ?? section.title}
+          dek={overviewDocument?.summary ?? section.summary}
+          sourceNote={`Mirrored Source Folder: ${view.sourcePath}`}
+          searchItems={searchItems}
+        />
 
         {overviewDocument ? (
           <>
             <article
               className="codex-entry-body codex-prose mt-10"
+              data-article-outline-root="true"
               dangerouslySetInnerHTML={{ __html: overviewDocument.html }}
             />
           </>

@@ -1,6 +1,5 @@
 import type { DeitySidebar } from "@/lib/codexContent";
-import SidebarValue from "@/components/codex/SidebarValue";
-import DeityFieldIcon from "@/components/codex/DeityFieldIcon";
+import InfoCard from "@/components/codex/InfoCard";
 
 type DeityInfoboxProps = { data: DeitySidebar };
 
@@ -27,33 +26,14 @@ export default function DeityInfobox({ data }: DeityInfoboxProps) {
   if (!data.sections.length && !topImages.length && !symbolImage) return null;
 
   return (
-    <aside className="codex-infobox">
-      {topImages.length ? <div className="codex-infobox-media-stack">{topImages}</div> : null}
-      <div className="codex-infobox-title">{data.title || "Deity"}</div>
-      {data.subtitle ? <p className="codex-infobox-subtitle">{data.subtitle}</p> : null}
-      <div className="codex-infobox-sections">
-        {data.sections.map((section) => (
-          <section key={section.title} className="codex-infobox-section">
-            <h3 className="codex-infobox-section-title">{section.title}</h3>
-            <dl className="codex-infobox-grid">
-              {section.rows.map(([label, value]) => (
-                <div key={label} className="codex-infobox-row">
-                  <dt>
-                    <span className="codex-infobox-label-wrap">
-                      <DeityFieldIcon label={label} />
-                      <span>{label}</span>
-                    </span>
-                  </dt>
-                  <dd>
-                    <SidebarValue value={value} sourceRelativePath={data.source_relative_path} />
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </section>
-        ))}
-      </div>
-      {symbolImage ? <div className="codex-infobox-media-stack mt-4 border-t border-stone-300/70 pt-4">{symbolImage}</div> : null}
-    </aside>
+    <InfoCard
+      title={data.title || "Deity"}
+      subtitle={data.subtitle}
+      sourceRelativePath={data.source_relative_path}
+      sections={data.sections}
+      topImages={topImages.length ? <>{topImages}</> : null}
+      bottomImages={symbolImage}
+      withIcons
+    />
   );
 }

@@ -1,7 +1,11 @@
 import type { ReactNode } from "react";
-import DeityTabs from "@/components/codex/DeityTabs";
+import ArticleSection from "@/components/codex/ArticleSection";
+import CrossReferenceChips from "@/components/codex/CrossReferenceChips";
 import InlineCodexText from "@/components/codex/InlineCodexText";
+import RelatedEntitiesCard from "@/components/codex/RelatedEntitiesCard";
+import SectionTabNav from "@/components/codex/SectionTabNav";
 import SidebarValue from "@/components/codex/SidebarValue";
+import { resolveObsidianInlineParts } from "@/lib/codexContent";
 
 type DeityProfileProps = {
   frontmatter: Record<string, unknown>;
@@ -87,12 +91,27 @@ function createSection(title: string, body: ReactNode | null): DeitySection | nu
   return body ? { title, body } : null;
 }
 
+function linkedItemsFromValue(value: unknown, sourceRelativePath: string) {
+  const values = Array.isArray(value) ? value : typeof value === "string" ? [value] : [];
+  const seen = new Set<string>();
+  const out: Array<{ text: string; href: string }> = [];
+
+  for (const item of values) {
+    if (typeof item !== "string") continue;
+    for (const part of resolveObsidianInlineParts(item, sourceRelativePath)) {
+      if (part.type !== "link" || !part.href) continue;
+      const key = `${part.href}|${part.text}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      out.push({ text: part.text, href: part.href });
+    }
+  }
+
+  return out;
+}
+
 export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml }: DeityProfileProps) {
   const summary = text(frontmatter.summary) || text(frontmatter.card_summary);
-  const title = text(frontmatter.name) || "Deity";
-  const epithet = text(frontmatter.epithet);
-  const honorific = text(frontmatter.honorific_title);
-  const subtitle = [epithet, honorific].filter(Boolean).join(" · ");
   const leadHtml = bodyHtml
     ? bodyHtml
         .replace(/<h1[\s\S]*?<\/h1>/i, "")
@@ -107,6 +126,24 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
   ].filter(([name, description]) => Boolean(name) && isFilled(description)) as Array<[string, unknown]>;
 
   const holyDays = Array.isArray(frontmatter.holy_days) ? frontmatter.holy_days.filter(isFilled) : [];
+  const relatedEntities = [
+    ...linkedItemsFromValue(frontmatter.parents, sourceRelativePath),
+    ...linkedItemsFromValue(frontmatter.siblings, sourceRelativePath),
+    ...linkedItemsFromValue(frontmatter.offspring, sourceRelativePath),
+    ...linkedItemsFromValue(frontmatter.consorts, sourceRelativePath),
+    ...linkedItemsFromValue(frontmatter.allies, sourceRelativePath),
+    ...linkedItemsFromValue(frontmatter.foes, sourceRelativePath),
+    ...linkedItemsFromValue(frontmatter.avatars, sourceRelativePath),
+  ].filter((item, index, array) => array.findIndex((candidate) => candidate.href === item.href) === index);
+  const crossReferences = [
+    ...linkedItemsFromValue(frontmatter.dwelling_place, sourceRelativePath),
+    ...linkedItemsFromValue(frontmatter.religious_orders, sourceRelativePath),
+    ...linkedItemsFromValue(frontmatter.holy_texts, sourceRelativePath),
+    ...linkedItemsFromValue(frontmatter.apocrypha, sourceRelativePath),
+    ...linkedItemsFromValue(frontmatter.major_influence, sourceRelativePath),
+    ...linkedItemsFromValue(frontmatter.minor_influences, sourceRelativePath),
+    ...linkedItemsFromValue(frontmatter.spheres, sourceRelativePath),
+  ].filter((item, index, array) => array.findIndex((candidate) => candidate.href === item.href) === index);
 
   const sections = [
     createSection("Depictions", (
@@ -202,21 +239,9 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
   ].filter((section): section is DeitySection => Boolean(section));
 
   return (
-    <article className="codex-entry-body codex-prose">
-      <div className="mb-8 codex-deity-hero">
-        <div className="codex-kicker">Deity Profile</div>
-        <h2 className="codex-page-title mt-3">
-          <InlineCodexText text={title} sourceRelativePath={sourceRelativePath} />
-        </h2>
-        {subtitle ? (
-          <p className="codex-page-summary mt-4">
-            <InlineCodexText text={subtitle} sourceRelativePath={sourceRelativePath} />
-          </p>
-        ) : null}
-      </div>
-
+    <article className="codex-entry-body codex-prose" data-article-outline-root="true">
       {sections.length ? (
-        <DeityTabs
+        <SectionTabNav
           items={sections.map((section, index) => {
             const titleText = section.title || `Section ${index + 1}`;
             return {
@@ -240,12 +265,19 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
         />
       ) : null}
 
+      {crossReferences.length ? <CrossReferenceChips items={crossReferences} /> : null}
+
+      {relatedEntities.length ? (
+        <div className="codex-support-grid">
+          <RelatedEntitiesCard title="Related Deities" items={relatedEntities} />
+        </div>
+      ) : null}
+
       {sections.length ? (
         sections.map((section) => (
-          <section key={section.title} className="mt-12 codex-deity-section" id={toSectionId(section.title)}>
-            <h2 className="codex-deity-section-title">{section.title}</h2>
-            <div className="mt-4 space-y-4">{section.body}</div>
-          </section>
+          <ArticleSection key={section.title} id={toSectionId(section.title)} title={section.title}>
+            {section.body}
+          </ArticleSection>
         ))
       ) : (
         <div className="codex-empty-state mt-6 p-4 text-sm leading-6">

@@ -1,5 +1,6 @@
 import { getSectionEntryCount, sections } from "@/lib/codexContent";
 import { getFrontpageHero } from "@/lib/frontpageContent";
+import ArticleOutlineNav from "@/components/codex/ArticleOutlineNav";
 
 export default async function WikiSidebar() {
   const hero = await getFrontpageHero();
@@ -31,6 +32,8 @@ export default async function WikiSidebar() {
           <img src={hero.bannerPath} alt={hero.bannerAlt} className="wiki-banner-image" />
         </section>
       ) : null}
+
+      <ArticleOutlineNav />
     </div>
   );
 }
