@@ -262,15 +262,20 @@ body {
 .codex-color-swatch-list {
   display: grid;
   gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .codex-color-swatch-item {
   display: flex;
   align-items: center;
   gap: 0.55rem;
+  margin: 0;
 }
 
 .codex-color-swatch {
+  display: inline-block;
   width: 20px;
   height: 20px;
   flex: 0 0 20px;
@@ -1664,6 +1669,11 @@ body {
 .codex-infobox-row dd {
   font-size: 1rem;
   line-height: 1.45;
+}
+
+.codex-infobox-row dd .codex-color-swatch-list {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .codex-inline-link,
