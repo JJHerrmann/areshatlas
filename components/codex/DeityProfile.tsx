@@ -8,6 +8,11 @@ type DeityProfileProps = {
   bodyHtml?: string;
 };
 
+type DeitySection = {
+  title: string;
+  body: ReactNode;
+};
+
 function isFilled(value: unknown): boolean {
   if (value == null) return false;
   if (typeof value === "string") return value.trim().length > 0;
@@ -73,14 +78,12 @@ function renderFieldRows(
   );
 }
 
-function section(title: string, body: ReactNode | null) {
-  if (!body) return null;
-  return (
-    <section className="mt-10">
-      <h2>{title}</h2>
-      <div className="mt-4 space-y-4">{body}</div>
-    </section>
-  );
+function toSectionId(title: string) {
+  return title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
+
+function createSection(title: string, body: ReactNode | null): DeitySection | null {
+  return body ? { title, body } : null;
 }
 
 export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml }: DeityProfileProps) {
@@ -104,8 +107,8 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
 
   const holyDays = Array.isArray(frontmatter.holy_days) ? frontmatter.holy_days.filter(isFilled) : [];
 
-  const tabs = [
-    section("Depictions", (
+  const sections = [
+    createSection("Depictions", (
       <>
         {renderParagraphs(frontmatter.physical_description, sourceRelativePath)}
         {manifestForms.length ? (
@@ -122,7 +125,7 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
         ) : null}
       </>
     )),
-    section("Symbols", renderFieldRows(
+    createSection("Symbols", renderFieldRows(
       [
         ["Primary Symbol", frontmatter.primary_symbol],
         ["Secondary Symbols", frontmatter.secondary_symbols],
@@ -135,9 +138,9 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
       ],
       sourceRelativePath,
     )),
-    section("Dwelling Place", renderParagraphs(frontmatter.dwelling_place, sourceRelativePath)),
-    section("Servants", renderParagraphs(frontmatter.servants_description, sourceRelativePath)),
-    section(
+    createSection("Dwelling Place", renderParagraphs(frontmatter.dwelling_place, sourceRelativePath)),
+    createSection("Servants", renderParagraphs(frontmatter.servants_description, sourceRelativePath)),
+    createSection(
       "Worship",
       <>
         {renderFieldRows(
@@ -156,7 +159,7 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
         {renderParagraphs(frontmatter.doctrine_overview, sourceRelativePath)}
       </>,
     ),
-    section(
+    createSection(
       "Religious Practices",
       <>
         {renderParagraphs(frontmatter.practices_overview, sourceRelativePath)}
@@ -175,7 +178,7 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
         {renderList(frontmatter.taboos, sourceRelativePath)}
       </>,
     ),
-    section(
+    createSection(
       "Virtues and Vices",
       <>
         {renderFieldRows(
@@ -187,29 +190,42 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
         )}
       </>,
     ),
-    section(
+    createSection(
       "Mission",
       <>
         {renderParagraphs(frontmatter.theological_mission, sourceRelativePath)}
         {renderParagraphs(frontmatter.social_mission, sourceRelativePath)}
       </>,
     ),
-    section("Notes", renderParagraphs(frontmatter.notes, sourceRelativePath)),
-  ].filter(Boolean);
+    createSection("Notes", renderParagraphs(frontmatter.notes, sourceRelativePath)),
+  ].filter((section): section is DeitySection => Boolean(section));
 
   return (
     <article className="codex-entry-body codex-prose">
-      <div className="mb-6">
+      <div className="mb-8 codex-deity-hero">
         <div className="codex-kicker">Deity Profile</div>
-        <h2 className="codex-page-title mt-2">
+        <h2 className="codex-page-title mt-3">
           <InlineCodexText text={title} sourceRelativePath={sourceRelativePath} />
         </h2>
         {subtitle ? (
-          <p className="codex-page-summary mt-3">
+          <p className="codex-page-summary mt-4">
             <InlineCodexText text={subtitle} sourceRelativePath={sourceRelativePath} />
           </p>
         ) : null}
       </div>
+
+      {sections.length ? (
+        <nav className="codex-deity-tabs" aria-label="Deity sections">
+          {sections.map((section, index) => {
+            const titleText = section.title || `Section ${index + 1}`;
+            return (
+              <a key={titleText} href={`#${toSectionId(titleText)}`} className={`codex-deity-tab${index === 0 ? " is-active" : ""}`}>
+                {titleText}
+              </a>
+            );
+          })}
+        </nav>
+      ) : null}
 
       {summary ? (
         <p className="codex-page-summary">
@@ -224,8 +240,13 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
         />
       ) : null}
 
-      {tabs.length ? (
-        tabs
+      {sections.length ? (
+        sections.map((section) => (
+          <section key={section.title} className="mt-12 codex-deity-section" id={toSectionId(section.title)}>
+            <h2 className="codex-deity-section-title">{section.title}</h2>
+            <div className="mt-4 space-y-4">{section.body}</div>
+          </section>
+        ))
       ) : (
         <div className="codex-empty-state mt-6 p-4 text-sm leading-6">
           No structured deity sections have been populated in this record yet.

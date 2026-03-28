@@ -1,5 +1,6 @@
 import type { DeitySidebar } from "@/lib/codexContent";
 import SidebarValue from "@/components/codex/SidebarValue";
+import DeityFieldIcon from "@/components/codex/DeityFieldIcon";
 
 type DeityInfoboxProps = { data: DeitySidebar };
 
@@ -37,7 +38,12 @@ export default function DeityInfobox({ data }: DeityInfoboxProps) {
             <dl className="codex-infobox-grid">
               {section.rows.map(([label, value]) => (
                 <div key={label} className="codex-infobox-row">
-                  <dt>{label}</dt>
+                  <dt>
+                    <span className="codex-infobox-label-wrap">
+                      <DeityFieldIcon label={label} />
+                      <span>{label}</span>
+                    </span>
+                  </dt>
                   <dd>
                     <SidebarValue value={value} sourceRelativePath={data.source_relative_path} />
                   </dd>

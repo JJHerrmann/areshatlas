@@ -23,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="/vendor/rpg-awesome/css/rpg-awesome.min.css" />
+      </head>
       <body>
         <Suspense fallback={null}>
           <StreamRefreshController />

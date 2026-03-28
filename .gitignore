@@ -31,6 +31,7 @@ world_editor_data/
 # Local tooling and generated map assets not part of the site app
 tools/
 Fantasy-Map-Generator-master/
+Rpg-Awesome-master/
 *.kml
 *.png
 !public/**/*.png
