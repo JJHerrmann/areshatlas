@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import DeityTabs from "@/components/codex/DeityTabs";
 import InlineCodexText from "@/components/codex/InlineCodexText";
 import SidebarValue from "@/components/codex/SidebarValue";
 
@@ -215,16 +216,15 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
       </div>
 
       {sections.length ? (
-        <nav className="codex-deity-tabs" aria-label="Deity sections">
-          {sections.map((section, index) => {
+        <DeityTabs
+          items={sections.map((section, index) => {
             const titleText = section.title || `Section ${index + 1}`;
-            return (
-              <a key={titleText} href={`#${toSectionId(titleText)}`} className={`codex-deity-tab${index === 0 ? " is-active" : ""}`}>
-                {titleText}
-              </a>
-            );
+            return {
+              id: toSectionId(titleText),
+              title: titleText,
+            };
           })}
-        </nav>
+        />
       ) : null}
 
       {summary ? (
