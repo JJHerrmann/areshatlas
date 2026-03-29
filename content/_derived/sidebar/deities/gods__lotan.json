@@ -6,7 +6,11 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null,
+    "avatar": {
+      "src": "/content-assets/_images/lotan_main.png",
+      "alt": "Lotan",
+      "caption": null
+    },
     "symbol": null
   },
   "sections": [

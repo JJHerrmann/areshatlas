@@ -48,11 +48,11 @@ navboxes:
   - yekatlan
   - dieties-of-areshnaat
 slug: lotan
-image_avatar: "![[Pasted image 20260324092615.png]]"
+image_avatar: "![[lotan_main.png]]"
 ---
 # Lotan
 *The Sky Serpant*
-![[Pasted image 20260324092615.png]]
+
 ## Overview
 
 ## Depictions

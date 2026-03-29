@@ -6,7 +6,11 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null,
+    "avatar": {
+      "src": "/content-assets/_images/gozara_main.png",
+      "alt": "Gozara",
+      "caption": null
+    },
     "symbol": {
       "src": "/content-assets/_images/Artboard%202god_symbol.png",
       "alt": "Gozara",

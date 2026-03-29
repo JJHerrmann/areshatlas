@@ -88,10 +88,11 @@ navboxes:
   - yekatlan
   - dieties-of-areshnaat
 slug: gozara
-image_avatar: "![[/_images/Pasted image 20260326180824.png]]"
+image_avatar: "![[gozara_main.png]]"
 image_symbol: "![[Authorship/roleplaying/worlds/aresh/codex-content/_images/Artboard 2god_symbol.png]]"
 ---
 # Gozara
+
 *The Mensor of Dawns*
 Gozara is the fate-mistress of the primordial pantheon, styled as a younger woman in her maiden days, as is typical of primordial depictions in art. She carries with her the plumb bob and plumb line, a measuring device favored by builders, whom she is also a patron of. She measures the sacred geometry of the universe, and divines what is fated to be by the angles of the stars, the mapped events on her temple walls, and the distance of the lines of fate.
 ## Depictions
@@ -194,7 +195,7 @@ Gozara's officially recognized symbols are the Plumb Line, the Measuring Rod, Th
 
 ## Religious Practices
 
-One of the most common ceremonies throughout the human communities of [[Drakharpan]] is the [[Binding of Portions]]. Each person in the community has a tray on the wall of their village temple, and will ceremonially add "knots" or worked stones to their tray for major milestone events through their life. Birth, Passage of Adulthood, Marriage, Childbirth, Eldership, and Death. 
+
 
 ### Calendar
 
@@ -211,8 +212,8 @@ One of the most common ceremonies throughout the human communities of [[Drakharp
 ### Customs
 {{customs_description}}
 
-### Major Rite: {{rite_name}}
-{{rite_description}}
+### Major Rite: [[The Binding of Portions]]
+Each person in the community has a tray on the wall of their village temple, and will ceremonially add "knots" or worked stones to their tray for major milestone events through their life. Birth, Passage of Adulthood, Marriage, Childbirth, Eldership, and Death. 
 
 ## Taboos
 

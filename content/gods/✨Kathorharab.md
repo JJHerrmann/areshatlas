@@ -62,6 +62,7 @@ navboxes:
   - dieties-of-areshnaat
 slug: kathorharab
 root:
+image_avatar: /_images/kathorharab_main.png
 ---
 # Kathorharab
 *The Wailing Hammer* - The God of Craft and War

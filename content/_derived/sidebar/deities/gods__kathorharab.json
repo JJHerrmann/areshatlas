@@ -6,7 +6,11 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null,
+    "avatar": {
+      "src": "/_images/kathorharab_main.png",
+      "alt": "Kathorharab",
+      "caption": null
+    },
     "symbol": null
   },
   "sections": [
