@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import ArticleSection from "@/components/codex/ArticleSection";
 import CrossReferenceChips from "@/components/codex/CrossReferenceChips";
 import InlineCodexText from "@/components/codex/InlineCodexText";
 import RelatedEntitiesCard from "@/components/codex/RelatedEntitiesCard";
@@ -96,6 +95,31 @@ function createSection(title: string, body: ReactNode | null): DeitySection | nu
   return body ? { title, body } : null;
 }
 
+function extractBodySegments(bodyHtml?: string) {
+  if (!bodyHtml) {
+    return {
+      leadHtml: "",
+      sectionsHtml: "",
+      sectionTabs: [] as Array<{ id: string; title: string }>,
+    };
+  }
+
+  const withoutH1 = bodyHtml.replace(/<h1[\s\S]*?<\/h1>/i, "").trim();
+  const firstH2Match = withoutH1.match(/<h2\b[^>]*>/i);
+  const splitIndex = firstH2Match?.index ?? -1;
+  const leadHtml = splitIndex >= 0 ? withoutH1.slice(0, splitIndex).trim() : withoutH1;
+  const sectionsHtml = splitIndex >= 0 ? withoutH1.slice(splitIndex).trim() : "";
+
+  const sectionTabs = Array.from(
+    sectionsHtml.matchAll(/<h2\b[^>]*id="([^"]+)"[^>]*data-outline-label="([^"]+)"[^>]*>/gi),
+  ).map((match) => ({
+    id: match[1],
+    title: match[2],
+  }));
+
+  return { leadHtml, sectionsHtml, sectionTabs };
+}
+
 function linkedItemsFromValue(value: unknown, sourceRelativePath: string) {
   const values = Array.isArray(value) ? value : typeof value === "string" ? [value] : [];
   const seen = new Set<string>();
@@ -117,12 +141,7 @@ function linkedItemsFromValue(value: unknown, sourceRelativePath: string) {
 
 export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml }: DeityProfileProps) {
   const summary = text(frontmatter.summary) || text(frontmatter.card_summary);
-  const leadHtml = bodyHtml
-    ? bodyHtml
-        .replace(/<h1[\s\S]*?<\/h1>/i, "")
-        .split(/<h2[\s>]/i)[0]
-        .trim()
-    : "";
+  const { leadHtml, sectionsHtml, sectionTabs } = extractBodySegments(bodyHtml);
 
   const manifestForms = [
     [text(frontmatter.form_1_name), frontmatter.form_1_description],
@@ -258,10 +277,14 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
     ),
     createSection("Notes", renderParagraphs(frontmatter.notes, sourceRelativePath)),
   ].filter((section): section is DeitySection => Boolean(section));
+  const hasStructuredSections = sections.length > 0;
+  const hasBodySections = sectionTabs.length > 0 || Boolean(sectionsHtml);
 
   return (
     <article className="codex-entry-body codex-prose" data-article-outline-root="true">
-      {sections.length ? (
+      {hasBodySections ? (
+        <SectionTabNav items={sectionTabs} />
+      ) : sections.length ? (
         <SectionTabNav
           items={sections.map((section, index) => {
             const titleText = section.title || `Section ${index + 1}`;
@@ -308,11 +331,25 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
         )
       ) : null}
 
-      {sections.length ? (
+      {hasBodySections ? (
+        <div
+          className="codex-prose"
+          dangerouslySetInnerHTML={{ __html: sectionsHtml }}
+        />
+      ) : hasStructuredSections ? (
         sections.map((section) => (
-          <ArticleSection key={section.title} id={toSectionId(section.title)} title={section.title}>
-            {section.body}
-          </ArticleSection>
+          <section key={section.title} className="mt-12 codex-deity-section">
+            <h2
+              id={toSectionId(section.title)}
+              data-outline-target="true"
+              data-outline-level="2"
+              data-outline-label={section.title}
+              className="codex-deity-section-title"
+            >
+              {section.title}
+            </h2>
+            <div className="mt-4 space-y-4">{section.body}</div>
+          </section>
         ))
       ) : (
         <div className="codex-empty-state mt-6 p-4 text-sm leading-6">
