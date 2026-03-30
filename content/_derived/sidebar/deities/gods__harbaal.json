@@ -23,6 +23,24 @@
         [
           "Title",
           "Harbal"
+        ],
+        [
+          "Foes",
+          [
+            "[[Ba'al Sheol]]",
+            "[[Xefahua]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Siblings",
+          [
+            "[[Ba'al Sheol]]"
+          ]
         ]
       ]
     }

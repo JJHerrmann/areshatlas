@@ -9,5 +9,17 @@
     "avatar": null,
     "symbol": null
   },
-  "sections": []
+  "sections": [
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Offspring",
+          [
+            "[[Ba'al Sheol]]"
+          ]
+        ]
+      ]
+    }
+  ]
 }

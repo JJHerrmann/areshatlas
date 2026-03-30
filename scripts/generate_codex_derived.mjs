@@ -5,6 +5,7 @@ import matter from "gray-matter";
 const repoRoot = process.cwd();
 const contentRoot = path.join(repoRoot, "content");
 const derivedRoot = path.join(contentRoot, "_derived", "sidebar");
+const deityRelationsDerivedPath = path.join(derivedRoot, "deities", "_relations.json");
 const navboxRegistryRoot = path.join(repoRoot, "codex_registry", "navboxes");
 const navboxDerivedRoot = path.join(contentRoot, "_derived", "navboxes");
 const IMAGE_EXTENSIONS = new Set([".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif", ".avif"]);
@@ -88,6 +89,104 @@ function normalizeStringArray(value) {
       }
       return [];
     });
+}
+
+function parseObsidianLinkTarget(value) {
+  const trimmed = String(value || "").trim();
+  const match = trimmed.match(/^!?\[\[([^[\]|]+)(?:\|([^[\]]+))?\]\]$/);
+  if (!match) return null;
+  return match[1].trim();
+}
+
+function buildArticleLookup(articles) {
+  const articleBySlug = new Map();
+  const articleKeyToSlug = new Map();
+
+  for (const article of articles) {
+    if (articleBySlug.has(article.slug)) {
+      throw new Error(`Duplicate article slug "${article.slug}" found in ${article.source_relative_path}`);
+    }
+
+    articleBySlug.set(article.slug, article);
+
+    for (const key of [article.slug, toSlugPart(article.title), ...article.aliases]) {
+      if (!key) continue;
+      if (articleKeyToSlug.has(key) && articleKeyToSlug.get(key) !== article.slug) {
+        throw new Error(`Duplicate article slug/alias "${key}" found in ${article.source_relative_path}`);
+      }
+      articleKeyToSlug.set(key, article.slug);
+    }
+  }
+
+  return { articleBySlug, articleKeyToSlug };
+}
+
+function resolveArticleSlugFromReference(value, articleKeyToSlug) {
+  const raw = String(value || "").trim();
+  if (!raw) return null;
+
+  const linkTarget = parseObsidianLinkTarget(raw);
+  const candidates = [
+    linkTarget,
+    linkTarget ? linkTarget.split("/").pop() : null,
+    raw,
+  ]
+    .filter(Boolean)
+    .map((candidate) => toSlugPart(String(candidate).replace(/\.(md|markdown)$/i, "")));
+
+  for (const candidate of candidates) {
+    const resolved = articleKeyToSlug.get(candidate);
+    if (resolved) return resolved;
+  }
+
+  return null;
+}
+
+function buildDeityRelationshipIndex(articles) {
+  const deityArticles = articles.filter((article) => article.entry_type === "deity");
+  const { articleBySlug, articleKeyToSlug } = buildArticleLookup(deityArticles);
+  const relationIndex = new Map();
+  const reciprocalRules = [
+    ["allies", "allies"],
+    ["foes", "foes"],
+    ["consorts", "consorts"],
+    ["siblings", "siblings"],
+    ["parents", "offspring"],
+    ["offspring", "parents"],
+  ];
+
+  for (const article of deityArticles) {
+    for (const [sourceField, targetField] of reciprocalRules) {
+      for (const value of normalizeStringArray(article.frontmatter?.[sourceField])) {
+        const targetSlug = resolveArticleSlugFromReference(value, articleKeyToSlug);
+        if (!targetSlug || targetSlug === article.slug || !articleBySlug.has(targetSlug)) continue;
+
+        const targetRelations = relationIndex.get(targetSlug) || {};
+        const targetValues = new Set(normalizeStringArray(targetRelations[targetField]));
+        targetValues.add(`[[${article.title}]]`);
+        targetRelations[targetField] = [...targetValues].sort((a, b) => a.localeCompare(b));
+        relationIndex.set(targetSlug, targetRelations);
+      }
+    }
+  }
+
+  return Object.fromEntries([...relationIndex.entries()].sort(([a], [b]) => a.localeCompare(b)));
+}
+
+function mergeRelationValues(authored, inferred, articleKeyToSlug) {
+  const explicit = normalizeStringArray(authored);
+  const explicitSlugs = new Set(
+    explicit.map((value) => resolveArticleSlugFromReference(value, articleKeyToSlug)).filter(Boolean),
+  );
+  const merged = [...explicit];
+
+  for (const value of normalizeStringArray(inferred)) {
+    const inferredSlug = resolveArticleSlugFromReference(value, articleKeyToSlug);
+    if (inferredSlug && explicitSlugs.has(inferredSlug)) continue;
+    if (!merged.includes(value)) merged.push(value);
+  }
+
+  return merged;
 }
 
 function titleFromFileName(fileName) {
@@ -189,30 +288,20 @@ function listJsonFiles(rootDir) {
 
 function buildNavboxData(markdownFiles) {
   const articles = [];
-  const articleBySlug = new Map();
-  const articleKeyToSlug = new Map();
-
-  for (const filePath of markdownFiles) {
+  const parsedDocs = markdownFiles.map((filePath) => {
     const raw = fs.readFileSync(filePath, "utf8");
     const parsed = matter(raw);
     const relativePath = path.relative(contentRoot, filePath);
+    return { filePath, parsed, relativePath };
+  });
+
+  for (const { parsed, relativePath } of parsedDocs) {
     const article = buildArticleRecord(parsed.data || {}, relativePath);
     if (!article) continue;
-
-    if (articleBySlug.has(article.slug)) {
-      throw new Error(`Duplicate article slug "${article.slug}" found in ${article.source_relative_path}`);
-    }
-
-    for (const key of [article.slug, ...article.aliases]) {
-      if (articleKeyToSlug.has(key)) {
-        throw new Error(`Duplicate article slug/alias "${key}" found in ${article.source_relative_path}`);
-      }
-      articleKeyToSlug.set(key, article.slug);
-    }
-
-    articleBySlug.set(article.slug, article);
     articles.push(article);
   }
+
+  const { articleBySlug, articleKeyToSlug } = buildArticleLookup(articles);
 
   const navboxRegistryFiles = listJsonFiles(navboxRegistryRoot);
   const navboxRegistry = navboxRegistryFiles.map((filePath) => {
@@ -491,6 +580,12 @@ function buildNationSidebar(frontmatter, relativePath, assetIndex) {
 }
 
 function buildDeitySidebar(frontmatter, relativePath, assetIndex) {
+  const articleRecord = buildArticleRecord(frontmatter, relativePath);
+  const deityArticles = buildDeitySidebar.articleLookup?.deityArticles || [];
+  const articleKeyToSlug = buildDeitySidebar.articleLookup?.articleKeyToSlug || new Map();
+  const reciprocalRelations = articleRecord
+    ? buildDeitySidebar.articleLookup?.relationIndex?.[articleRecord.slug] || {}
+    : {};
   const title = String(frontmatter.name || frontmatter.title || path.basename(relativePath, path.extname(relativePath)));
   const displayTitle = frontmatter.title && String(frontmatter.title).trim() !== title ? frontmatter.title : null;
   const honorificTitle = frontmatter.honorific_title || null;
@@ -514,9 +609,9 @@ function buildDeitySidebar(frontmatter, relativePath, assetIndex) {
           ["Honorific Title", honorificTitle],
           ["Gender", frontmatter.gender],
           ["Avatar", optionalArray(frontmatter.avatars || frontmatter.avatar)],
-          ["Consort(s)", optionalArray(frontmatter.consorts || frontmatter.consort)],
-          ["Allies", optionalArray(frontmatter.allies)],
-          ["Foes", optionalArray(frontmatter.foes)],
+          ["Consort(s)", mergeRelationValues(frontmatter.consorts || frontmatter.consort, reciprocalRelations.consorts, articleKeyToSlug)],
+          ["Allies", mergeRelationValues(frontmatter.allies, reciprocalRelations.allies, articleKeyToSlug)],
+          ["Foes", mergeRelationValues(frontmatter.foes, reciprocalRelations.foes, articleKeyToSlug)],
         ],
       },
       {
@@ -533,9 +628,9 @@ function buildDeitySidebar(frontmatter, relativePath, assetIndex) {
       {
         title: "Divine Relations",
         rows: [
-          ["Parents", optionalArray(frontmatter.parents)],
-          ["Siblings", optionalArray(frontmatter.siblings)],
-          ["Offspring", optionalArray(frontmatter.offspring)],
+          ["Parents", mergeRelationValues(frontmatter.parents, reciprocalRelations.parents, articleKeyToSlug)],
+          ["Siblings", mergeRelationValues(frontmatter.siblings, reciprocalRelations.siblings, articleKeyToSlug)],
+          ["Offspring", mergeRelationValues(frontmatter.offspring, reciprocalRelations.offspring, articleKeyToSlug)],
           ["Dwelling Place", frontmatter.dwelling_place],
         ],
       },
@@ -603,6 +698,7 @@ function main() {
   }));
   const writtenFiles = new Set();
   const skippedFiles = [];
+  const parsedDocs = [];
 
   for (const filePath of markdownFiles) {
     const raw = fs.readFileSync(filePath, "utf8");
@@ -618,7 +714,22 @@ function main() {
     }
     const frontmatter = parsed.data || {};
     const relativePath = path.relative(contentRoot, filePath);
+    parsedDocs.push({ filePath, frontmatter, relativePath });
+  }
 
+  const articles = parsedDocs
+    .map(({ frontmatter, relativePath }) => buildArticleRecord(frontmatter, relativePath))
+    .filter(Boolean);
+  const deityArticles = articles.filter((article) => article.entry_type === "deity");
+  const deityArticleLookup = buildArticleLookup(deityArticles);
+  const deityRelationIndex = buildDeityRelationshipIndex(articles);
+  buildDeitySidebar.articleLookup = {
+    deityArticles,
+    articleKeyToSlug: deityArticleLookup.articleKeyToSlug,
+    relationIndex: deityRelationIndex,
+  };
+
+  for (const { frontmatter, relativePath } of parsedDocs) {
     let sidebarDir = null;
     let payload = null;
 
@@ -637,6 +748,10 @@ function main() {
     fs.writeFileSync(outPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
     writtenFiles.add(outPath);
   }
+
+  ensureDir(path.dirname(deityRelationsDerivedPath));
+  fs.writeFileSync(deityRelationsDerivedPath, `${JSON.stringify(deityRelationIndex, null, 2)}\n`, "utf8");
+  writtenFiles.add(deityRelationsDerivedPath);
 
   for (const folderName of ["nations", "deities"]) {
     const sidebarDir = path.join(derivedRoot, folderName);

@@ -5,7 +5,12 @@ import InlineCodexText from "@/components/codex/InlineCodexText";
 import RelatedEntitiesCard from "@/components/codex/RelatedEntitiesCard";
 import SectionTabNav from "@/components/codex/SectionTabNav";
 import SidebarValue from "@/components/codex/SidebarValue";
-import { getArticlePreviewByHref, resolveObsidianInlineParts } from "@/lib/codexContent";
+import {
+  getArticlePreviewByHref,
+  getDerivedDeityRelations,
+  mergeDerivedRelationValues,
+  resolveObsidianInlineParts,
+} from "@/lib/codexContent";
 
 type DeityProfileProps = {
   frontmatter: Record<string, unknown>;
@@ -126,13 +131,20 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
   ].filter(([name, description]) => Boolean(name) && isFilled(description)) as Array<[string, unknown]>;
 
   const holyDays = Array.isArray(frontmatter.holy_days) ? frontmatter.holy_days.filter(isFilled) : [];
+  const derivedRelations = getDerivedDeityRelations(sourceRelativePath);
+  const mergedConsorts = mergeDerivedRelationValues(frontmatter.consorts || frontmatter.consort, derivedRelations.consorts, sourceRelativePath);
+  const mergedAllies = mergeDerivedRelationValues(frontmatter.allies, derivedRelations.allies, sourceRelativePath);
+  const mergedFoes = mergeDerivedRelationValues(frontmatter.foes, derivedRelations.foes, sourceRelativePath);
+  const mergedParents = mergeDerivedRelationValues(frontmatter.parents, derivedRelations.parents, sourceRelativePath);
+  const mergedSiblings = mergeDerivedRelationValues(frontmatter.siblings, derivedRelations.siblings, sourceRelativePath);
+  const mergedOffspring = mergeDerivedRelationValues(frontmatter.offspring, derivedRelations.offspring, sourceRelativePath);
   const relatedEntityLinks = [
-    ...linkedItemsFromValue(frontmatter.parents, sourceRelativePath),
-    ...linkedItemsFromValue(frontmatter.siblings, sourceRelativePath),
-    ...linkedItemsFromValue(frontmatter.offspring, sourceRelativePath),
-    ...linkedItemsFromValue(frontmatter.consorts, sourceRelativePath),
-    ...linkedItemsFromValue(frontmatter.allies, sourceRelativePath),
-    ...linkedItemsFromValue(frontmatter.foes, sourceRelativePath),
+    ...linkedItemsFromValue(mergedParents, sourceRelativePath),
+    ...linkedItemsFromValue(mergedSiblings, sourceRelativePath),
+    ...linkedItemsFromValue(mergedOffspring, sourceRelativePath),
+    ...linkedItemsFromValue(mergedConsorts, sourceRelativePath),
+    ...linkedItemsFromValue(mergedAllies, sourceRelativePath),
+    ...linkedItemsFromValue(mergedFoes, sourceRelativePath),
     ...linkedItemsFromValue(frontmatter.avatars, sourceRelativePath),
   ].filter((item, index, array) => array.findIndex((candidate) => candidate.href === item.href) === index);
   const relatedEntities = relatedEntityLinks.map((item) => {
@@ -280,6 +292,20 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
         <div className="codex-support-grid">
           <RelatedEntitiesCard title="Related Deities" items={relatedEntities} />
         </div>
+      ) : null}
+
+      {(mergedParents.length || mergedSiblings.length || mergedOffspring.length || mergedConsorts.length || mergedAllies.length || mergedFoes.length) ? (
+        renderFieldRows(
+          [
+            ["Parents", mergedParents],
+            ["Siblings", mergedSiblings],
+            ["Offspring", mergedOffspring],
+            ["Consort(s)", mergedConsorts],
+            ["Allies", mergedAllies],
+            ["Foes", mergedFoes],
+          ],
+          sourceRelativePath,
+        )
       ) : null}
 
       {sections.length ? (

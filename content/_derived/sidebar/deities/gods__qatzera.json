@@ -19,6 +19,13 @@
             "Areshnaati",
             "Ramtilim"
           ]
+        ],
+        [
+          "Allies",
+          [
+            "[[Ba'al Sheol]]",
+            "[[Xefahua]]"
+          ]
         ]
       ]
     },
@@ -28,6 +35,17 @@
         [
           "Ethos",
           "lawful"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Offspring",
+          [
+            "[[Xefahua]]"
+          ]
         ]
       ]
     }

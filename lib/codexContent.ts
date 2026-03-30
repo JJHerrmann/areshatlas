@@ -84,6 +84,15 @@ export type DerivedNavbox = {
   groups?: DerivedNavboxGroup[];
 };
 
+export type DerivedDeityRelations = Partial<{
+  allies: string[];
+  foes: string[];
+  consorts: string[];
+  siblings: string[];
+  parents: string[];
+  offspring: string[];
+}>;
+
 export type SidebarSectionRow = [string, unknown];
 
 export type SidebarSection = {
@@ -128,6 +137,7 @@ let markdownPathIndex: Array<{ relativePath: string; title: string; slugTitle: s
 let assetPathIndex: Array<{ relativePath: string; fileName: string }> | null = null;
 let derivedArticleIndex: DerivedArticle[] | null = null;
 let derivedNavboxIndex: DerivedNavbox[] | null = null;
+let derivedDeityRelationIndex: Record<string, DerivedDeityRelations> | null = null;
 
 function parseMatterSafe(raw: string) {
   try {
@@ -279,6 +289,18 @@ function slugifySegment(value: string) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+function normalizeStringArray(value: unknown) {
+  if (value == null || value === "") return [];
+  const items = Array.isArray(value) ? value : [value];
+  return items.flatMap((item) => {
+    if (typeof item === "string" || typeof item === "number") {
+      const normalized = String(item).trim();
+      return normalized ? [normalized] : [];
+    }
+    return [];
+  });
 }
 
 function extractNodeText(node: unknown): string {
@@ -445,6 +467,12 @@ function readDerivedJson<T>(fileName: string): T[] {
   return JSON.parse(fs.readFileSync(filePath, "utf8")) as T[];
 }
 
+function readDerivedObject<T>(relativePath: string): T | null {
+  const filePath = path.join(CONTENT_ROOT, "_derived", relativePath);
+  if (!fs.existsSync(filePath) || !fs.statSync(filePath).isFile()) return null;
+  return JSON.parse(fs.readFileSync(filePath, "utf8")) as T;
+}
+
 function getDerivedArticleIndex() {
   if (derivedArticleIndex) return derivedArticleIndex;
   derivedArticleIndex = readDerivedJson<DerivedArticle>("articles.json");
@@ -455,6 +483,13 @@ function getDerivedNavboxIndex() {
   if (derivedNavboxIndex) return derivedNavboxIndex;
   derivedNavboxIndex = readDerivedJson<DerivedNavbox>("navboxes.json");
   return derivedNavboxIndex;
+}
+
+function getDerivedDeityRelationIndex() {
+  if (derivedDeityRelationIndex) return derivedDeityRelationIndex;
+  derivedDeityRelationIndex =
+    readDerivedObject<Record<string, DerivedDeityRelations>>("sidebar/deities/_relations.json") || {};
+  return derivedDeityRelationIndex;
 }
 
 function getSafeSectionPath(section: SectionConfig, slugParts: string[] = []) {
@@ -744,6 +779,38 @@ export function getArticlePreviewByHref(href: string): RelatedArticlePreview | n
     subtitle: deitySidebar?.subtitle ?? nationSidebar?.subtitle ?? null,
     imageSrc,
   };
+}
+
+export function getDerivedDeityRelations(sourcePath: string): DerivedDeityRelations {
+  const article = getDerivedArticle(sourcePath);
+  if (!article) return {};
+  return getDerivedDeityRelationIndex()[article.slug] || {};
+}
+
+export function mergeDerivedRelationValues(
+  authored: unknown,
+  inferred: string[] | undefined,
+  sourceRelativePath: string,
+) {
+  const getLinkedHrefs = (value: string) =>
+    resolveObsidianInlineParts(value, sourceRelativePath)
+      .filter(
+        (part): part is Extract<ObsidianInlinePart, { type: "link" }> =>
+          part.type === "link" && Boolean(part.href),
+      )
+      .map((part) => part.href as string);
+
+  const explicit = normalizeStringArray(authored);
+  const explicitHrefs = new Set(explicit.flatMap((value) => getLinkedHrefs(value)));
+
+  const merged = [...explicit];
+  for (const value of normalizeStringArray(inferred)) {
+    const inferredHrefs = getLinkedHrefs(value);
+    if (inferredHrefs.some((href) => explicitHrefs.has(href))) continue;
+    if (!merged.includes(value)) merged.push(value);
+  }
+
+  return merged;
 }
 
 export function getSectionEntries(section: SectionConfig, slugParts: string[] = []): ContentEntry[] {

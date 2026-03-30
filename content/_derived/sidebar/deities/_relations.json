@@ -1,0 +1,166 @@
+{
+  "ba-al-sheol": {
+    "allies": [
+      "[[Xefahua]]"
+    ],
+    "consorts": [
+      "[[Xefahua]]"
+    ]
+  },
+  "bolohua": {
+    "siblings": [
+      "[[Tahiwaco]]",
+      "[[Yekala]]"
+    ]
+  },
+  "gozara": {
+    "allies": [
+      "[[Ba'al Sheol]]",
+      "[[Xefahua]]"
+    ],
+    "consorts": [
+      "[[Niwara]]"
+    ]
+  },
+  "harbaal": {
+    "foes": [
+      "[[Ba'al Sheol]]",
+      "[[Xefahua]]"
+    ],
+    "siblings": [
+      "[[Ba'al Sheol]]"
+    ]
+  },
+  "kathorharab": {
+    "parents": [
+      "[[Gozara]]",
+      "[[Niwara]]"
+    ]
+  },
+  "lotan": {
+    "parents": [
+      "[[Bolohua]]"
+    ]
+  },
+  "malagad": {
+    "parents": [
+      "[[Gozara]]",
+      "[[Niwara]]"
+    ]
+  },
+  "moxilaxaya": {
+    "offspring": [
+      "[[Kathorharab]]",
+      "[[Niwara]]",
+      "[[Yatbara]]"
+    ],
+    "siblings": [
+      "[[Bolohua]]",
+      "[[Tahiwaco]]",
+      "[[Yekala]]"
+    ],
+    "consorts": [
+      "[[Tahiwaco]]"
+    ]
+  },
+  "niwara": {
+    "allies": [
+      "[[Gozara]]",
+      "[[Xefahua]]"
+    ],
+    "consorts": [
+      "[[Gozara]]"
+    ],
+    "parents": [
+      "[[Moxilaxaya]]"
+    ],
+    "siblings": [
+      "[[Yatbara]]"
+    ]
+  },
+  "qatzera": {
+    "allies": [
+      "[[Ba'al Sheol]]",
+      "[[Xefahua]]"
+    ],
+    "offspring": [
+      "[[Xefahua]]"
+    ]
+  },
+  "raavvah": {
+    "allies": [
+      "[[Ba'al Sheol]]",
+      "[[Xefahua]]"
+    ]
+  },
+  "tahiwaco": {
+    "siblings": [
+      "[[Bolohua]]"
+    ],
+    "consorts": [
+      "[[Moxilaxaya]]"
+    ],
+    "offspring": [
+      "[[Niwara]]",
+      "[[Yatbara]]"
+    ]
+  },
+  "the-primordial-of-finality": {
+    "offspring": [
+      "[[Ba'al Sheol]]"
+    ]
+  },
+  "tsayidrah": {
+    "allies": [
+      "[[Ba'al Sheol]]",
+      "[[Xefahua]]"
+    ],
+    "offspring": [
+      "[[Xefahua]]"
+    ]
+  },
+  "xefahua": {
+    "allies": [
+      "[[Ba'al Sheol]]"
+    ],
+    "consorts": [
+      "[[Ba'al Sheol]]"
+    ]
+  },
+  "yaradaat": {
+    "parents": [
+      "[[Gozara]]",
+      "[[Niwara]]"
+    ]
+  },
+  "yatbara": {
+    "parents": [
+      "[[Moxilaxaya]]",
+      "[[Tahiwaco]]"
+    ],
+    "siblings": [
+      "[[Niwara]]"
+    ]
+  },
+  "yekala": {
+    "offspring": [
+      "[[Kathorharab]]",
+      "[[Yatbara]]"
+    ],
+    "siblings": [
+      "[[Bolohua]]",
+      "[[Tahiwaco]]"
+    ],
+    "consorts": [
+      "[[Yatbara]]"
+    ]
+  },
+  "zemana": {
+    "allies": [
+      "[[Ba'al Sheol]]"
+    ],
+    "offspring": [
+      "[[Ba'al Sheol]]"
+    ]
+  }
+}

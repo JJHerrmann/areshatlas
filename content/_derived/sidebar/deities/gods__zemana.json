@@ -23,6 +23,12 @@
         [
           "Gender",
           "Female"
+        ],
+        [
+          "Allies",
+          [
+            "[[Ba'al Sheol]]"
+          ]
         ]
       ]
     },
@@ -32,6 +38,17 @@
         [
           "Major Influence",
           "Time"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Offspring",
+          [
+            "[[Ba'al Sheol]]"
+          ]
         ]
       ]
     }
