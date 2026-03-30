@@ -5,11 +5,6 @@
     "mode": "footer",
     "items": [
       {
-        "slug": "ba-al-sheol",
-        "title": "Ba'al Sheol",
-        "href": "/pantheon/ba-al-sheol"
-      },
-      {
         "slug": "bolohua",
         "title": "Bolohua",
         "href": "/pantheon/bolohua"
@@ -28,6 +23,11 @@
         "slug": "kathorharab",
         "title": "Kathorharab",
         "href": "/pantheon/kathorharab"
+      },
+      {
+        "slug": "ba-al-sheol",
+        "title": "Kvaritzin, Ba'al Sheol",
+        "href": "/pantheon/kvaritzin"
       },
       {
         "slug": "leyala",
@@ -118,11 +118,6 @@
     "mode": "footer",
     "items": [
       {
-        "slug": "ba-al-sheol",
-        "title": "Ba'al Sheol",
-        "href": "/pantheon/ba-al-sheol"
-      },
-      {
         "slug": "harbaal",
         "title": "Harbal",
         "href": "/pantheon/harbaal"
@@ -131,6 +126,11 @@
         "slug": "kathorharab",
         "title": "Kathorharab",
         "href": "/pantheon/kathorharab"
+      },
+      {
+        "slug": "ba-al-sheol",
+        "title": "Kvaritzin, Ba'al Sheol",
+        "href": "/pantheon/kvaritzin"
       },
       {
         "slug": "machul",

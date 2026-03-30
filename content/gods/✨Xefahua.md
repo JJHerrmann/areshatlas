@@ -24,14 +24,14 @@ parents:
 siblings: []
 offspring: []
 consorts:
-  - "[[🕳️Ba'al Sheol]]"
+  - "[[🕳️Kvaritzin]]"
 allies:
   - "[[✨Qatzera]]"
   - "[[✨Raavvah]]"
   - "[[✨Tsayidrah]]"
   - "[[🌌Gozara]]"
   - "[[🌌Niwara]]"
-  - "[[🕳️Ba'al Sheol]]"
+  - "[[🕳️Kvaritzin]]"
 foes:
   - "[[🕳️Harbaal]]"
 dwelling_place: ""

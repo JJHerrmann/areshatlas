@@ -1,14 +1,14 @@
 {
   "type": "deity",
-  "title": "Ba'al Sheol",
+  "title": "Kvaritzin",
   "subtitle": "The God of the Underworld",
-  "source_relative_path": "gods/🕳️Ba'al Sheol.md",
+  "source_relative_path": "gods/🕳️Kvaritzin.md",
   "images": {
     "banner": null,
     "heraldry": null,
     "avatar": {
       "src": "/content-assets/_images/baalsheol_main.png",
-      "alt": "Ba'al Sheol",
+      "alt": "Kvaritzin",
       "caption": null
     },
     "symbol": null
@@ -23,6 +23,10 @@
             "Areshnaati",
             "[[Xoluatl]]"
           ]
+        ],
+        [
+          "Title",
+          "Kvaritzin, Ba'al Sheol"
         ],
         [
           "Gender",

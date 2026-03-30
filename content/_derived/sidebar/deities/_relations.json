@@ -1,12 +1,4 @@
 {
-  "ba-al-sheol": {
-    "allies": [
-      "[[Xefahua]]"
-    ],
-    "consorts": [
-      "[[Xefahua]]"
-    ]
-  },
   "bolohua": {
     "siblings": [
       "[[Tahiwaco]]",
@@ -15,7 +7,7 @@
   },
   "gozara": {
     "allies": [
-      "[[Ba'al Sheol]]",
+      "[[Kvaritzin, Ba'al Sheol]]",
       "[[Xefahua]]"
     ],
     "consorts": [
@@ -24,11 +16,11 @@
   },
   "harbaal": {
     "foes": [
-      "[[Ba'al Sheol]]",
+      "[[Kvaritzin, Ba'al Sheol]]",
       "[[Xefahua]]"
     ],
     "siblings": [
-      "[[Ba'al Sheol]]"
+      "[[Kvaritzin, Ba'al Sheol]]"
     ]
   },
   "kathorharab": {
@@ -80,7 +72,7 @@
   },
   "qatzera": {
     "allies": [
-      "[[Ba'al Sheol]]",
+      "[[Kvaritzin, Ba'al Sheol]]",
       "[[Xefahua]]"
     ],
     "offspring": [
@@ -89,7 +81,7 @@
   },
   "raavvah": {
     "allies": [
-      "[[Ba'al Sheol]]",
+      "[[Kvaritzin, Ba'al Sheol]]",
       "[[Xefahua]]"
     ]
   },
@@ -107,12 +99,12 @@
   },
   "temaya": {
     "offspring": [
-      "[[Ba'al Sheol]]"
+      "[[Kvaritzin, Ba'al Sheol]]"
     ]
   },
   "tsayidrah": {
     "allies": [
-      "[[Ba'al Sheol]]",
+      "[[Kvaritzin, Ba'al Sheol]]",
       "[[Xefahua]]"
     ],
     "offspring": [
@@ -121,10 +113,10 @@
   },
   "xefahua": {
     "allies": [
-      "[[Ba'al Sheol]]"
+      "[[Kvaritzin, Ba'al Sheol]]"
     ],
     "consorts": [
-      "[[Ba'al Sheol]]"
+      "[[Kvaritzin, Ba'al Sheol]]"
     ]
   },
   "yaradaat": {
@@ -157,10 +149,10 @@
   },
   "zemana": {
     "allies": [
-      "[[Ba'al Sheol]]"
+      "[[Kvaritzin, Ba'al Sheol]]"
     ],
     "offspring": [
-      "[[Ba'al Sheol]]"
+      "[[Kvaritzin, Ba'al Sheol]]"
     ]
   }
 }

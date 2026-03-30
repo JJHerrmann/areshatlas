@@ -1,8 +1,8 @@
 ---
 type: deity
-name: Ba'al Sheol
+name: Kvaritzin
 epithet: The God of the Underworld
-title: Ba'al Sheol
+title: Kvaritzin, Ba'al Sheol
 pantheon:
   - Areshnaati
   - "[[Xoluatl]]"
