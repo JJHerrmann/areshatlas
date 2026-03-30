@@ -60,6 +60,11 @@
         "href": "/pantheon/moxilaxaya"
       },
       {
+        "slug": "niwara",
+        "title": "Niwara",
+        "href": "/pantheon/niwara"
+      },
+      {
         "slug": "qatzera",
         "title": "Qatzera",
         "href": "/pantheon/qatzera"
@@ -73,11 +78,6 @@
         "slug": "tahiwaco",
         "title": "Tahiwaco",
         "href": "/pantheon/tahiwaco"
-      },
-      {
-        "slug": "niwara",
-        "title": "The Lord of Fire",
-        "href": "/pantheon/niwara"
       },
       {
         "slug": "tsayidrah",
@@ -224,6 +224,11 @@
         "href": "/pantheon/marmoqed"
       },
       {
+        "slug": "niwara",
+        "title": "Niwara",
+        "href": "/pantheon/niwara"
+      },
+      {
         "slug": "qatzera",
         "title": "Qatzera",
         "href": "/pantheon/qatzera"
@@ -232,11 +237,6 @@
         "slug": "raavvah",
         "title": "Raavvah",
         "href": "/pantheon/raavvah"
-      },
-      {
-        "slug": "niwara",
-        "title": "The Lord of Fire",
-        "href": "/pantheon/niwara"
       },
       {
         "slug": "tsayidrah",

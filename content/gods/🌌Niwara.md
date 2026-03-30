@@ -2,13 +2,13 @@
 type: deity
 name: Niwara
 epithet: The Sun Catcher
-title: The Lord of Fire
+title: Niwara
 pantheon:
   - "[[Ramtilim]]"
 divine_rank: Major
-gender: ""
-nature: ""
-ethos: ""
+gender: Female
+nature: Unbound
+ethos: Distant
 major_influence: Sun
 minor_influences:
   - Light
