@@ -1,6 +1,6 @@
 ---
 name: Raavvah
-epithet: The God of Famines and Calamity
+epithet: The Goddess of Famines and Calamity
 title: Raavvah
 pantheon:
   - Areshnaati

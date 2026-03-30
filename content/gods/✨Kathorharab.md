@@ -7,7 +7,7 @@ pantheon:
   - Areshnaati
   - Ramtilim
 divine_rank: Major
-gender: Male
+gender: Female
 nature: Unbound
 ethos: Distant
 major_influence: War

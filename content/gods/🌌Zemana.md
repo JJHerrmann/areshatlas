@@ -7,7 +7,7 @@ pantheon:
   - Areshnaati
   - "[[Yekatlan]]"
 divine_rank: ""
-gender: ""
+gender: Female
 nature: ""
 ethos: ""
 major_influence: Time

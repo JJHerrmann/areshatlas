@@ -1,5 +1,14 @@
 [
   {
+    "slug": "abyroqa",
+    "title": "🌊Abyroqa",
+    "section": "pantheon",
+    "href": "/pantheon/abyroqa",
+    "source_relative_path": "gods/🌊Abyroqa.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "apusimi-orcish",
     "title": "Apusimi (Orcish)",
     "section": "languages",
@@ -386,11 +395,47 @@
     ]
   },
   {
+    "slug": "tehontecuhtli",
+    "title": "🌊Tehontecuhtli",
+    "section": "pantheon",
+    "href": "/pantheon/tehontecuhtli",
+    "source_relative_path": "gods/🌊Tehontecuhtli.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "the-binding-of-portions",
     "title": "The Binding of Portions",
     "section": "pantheon",
     "href": "/pantheon/the-binding-of-portions",
     "source_relative_path": "gods/The Binding of Portions.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "the-goddess-of-feasts-and-plenty",
+    "title": "✨The Goddess of Feasts and Plenty",
+    "section": "pantheon",
+    "href": "/pantheon/the-goddess-of-feasts-and-plenty",
+    "source_relative_path": "gods/✨The Goddess of Feasts and Plenty.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "the-primordial-of-finality",
+    "title": "🌌The Primordial of Finality",
+    "section": "pantheon",
+    "href": "/pantheon/the-primordial-of-finality",
+    "source_relative_path": "gods/🌌The Primordial of Finality.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "the-primordial-of-genesis",
+    "title": "🌌The Primordial of Genesis",
+    "section": "pantheon",
+    "href": "/pantheon/the-primordial-of-genesis",
+    "source_relative_path": "gods/🌌The Primordial of Genesis.md",
     "aliases": [],
     "navboxes": []
   },

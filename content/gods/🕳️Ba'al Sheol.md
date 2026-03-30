@@ -49,6 +49,7 @@ navboxes:
   - ramtilim
   - dieties-of-areshnaat
 slug: ba-al-sheol
+image_avatar: "![[baalsheol_main.png]]"
 ---
 
 # Ba'al Sheol

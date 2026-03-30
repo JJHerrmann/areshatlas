@@ -1,11 +1,9 @@
 ---
 type: deity
-name: Tsayidrah
-epithet: The Goddess of Hunting and Fertility
-title: Tsayidrah
-pantheon:
-  - Areshnaati
-  - Ramtilim
+name: ""
+epithet: The Goddess of Travels and Wayfairing
+title: ""
+pantheon: ""
 divine_rank: ""
 gender: ""
 nature: ""
@@ -44,14 +42,9 @@ taboos: []
 tags:
   - deity
   - religion
-primary_topic: Dieties of Areshnaat
-navboxes:
-  - ramtilim
-  - dieties-of-areshnaat
-slug: tsayidrah
 ---
-# Tsayidrah
-*The God of Hunting and Fertility*
+# {{name}}
+*{{epithet}}*
 
 {{short_overview}}
 
