@@ -11,8 +11,16 @@ gender: Female
 nature: Ordered
 ethos: Distant
 spheres:
-major_influence: ""
-minor_influences: []
+  - The Dead
+major_influence: The Dead
+minor_influences:
+  - Judgement
+  - Burial
+  - Ancestors
+  - Final Rest
+  - Ghosts
+  - Funerary Rites
+  - Rememberance
 avatars: []
 parents:
   - "[[🌌Temaya]]"
@@ -63,7 +71,7 @@ slug: ba-al-sheol
 image_avatar: "![[baalsheol_main.png]]"
 ---
 
-# Ba'al Sheol
+# Ba'al Xeol
 *The Destined Knot*
 ## Overview
 
@@ -73,6 +81,21 @@ image_avatar: "![[baalsheol_main.png]]"
 ### Notes
 Ba'al Sheol is the recent heir to the underworld, her father, [[🌌Temaya]] having ceded his Lordship over the underworld to his heir. His oldest being Ba'al Sheol, took up his vestiges and mantle, assuming control of the underworld with her wife [[✨Xefahua]]. 
 [[🕳️Harbaal]], the oldest son of [[🌌Temaya]], contests this ascension, creating his own faction of the deific underworld, under the command of the Mountain-Lord. This succession crisis has split the [[Ramtilim]] across allegiances, from those who recognize Ba'al Sheol's claim to those who back [[🕳️Harbaal]].
+### Subordinates
+#### The God of Ghosts
+_Main Article: [[The God of Ghosts]]_
+#### The Mistress of Tombs
+_Main Article: [[The Mistress of Tombs]]_
+#### Psychopomp 1
+_Main Article: [[Psychopomp 1]]_
+#### Psychopomp 2
+_Main Article: [[Psychopomp 2]]_
+#### The God of Tithe
+_Main Article: [[The God of Tithes]]_
+#### The Goddess of Graves
+_Main Article: [[The Goddess of Graves]]_
+#### The Goddess of Mourning
+_Main Article: [[The Goddess of Mourning]]_
 ## Worship
 
 ## Organization
