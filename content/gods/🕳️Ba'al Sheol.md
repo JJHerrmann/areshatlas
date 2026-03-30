@@ -7,9 +7,9 @@ pantheon:
   - Areshnaati
   - "[[Xoluatl]]"
 divine_rank: Major
-gender: Male
-nature:
-ethos: lawful
+gender: Female
+nature: Ordered
+ethos: Distant
 spheres:
 major_influence: ""
 minor_influences: []
