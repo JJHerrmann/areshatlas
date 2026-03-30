@@ -76,3 +76,5 @@ image_avatar: "![[baalsheol_main.png]]"
 ## Organization
 
 ## Notes
+Ba'al Sheol is the recent heir to the underworld, her father, [[🌌Temaya]] having ceded his Lordship over the underworld to his heir. His oldest being Ba'al Sheol, took up his vestiges and mantle, assuming control of the underworld with her wife [[✨Xefahua]]. 
+[[🕳️Harbaal]], the oldest son of [[🌌Temaya]], contests this ascension, creating his own faction of the deific underworld, under the command of the Mountain-Lord. This succession crisis has split the [[Ramtilim]] across allegiances, from those who recognize Ba'al Sheol's claim to those who back [[🕳️Harbaal]].
