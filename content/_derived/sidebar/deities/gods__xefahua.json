@@ -1,16 +1,12 @@
 {
   "type": "deity",
-  "title": "Ba'al Sheol",
-  "subtitle": "The God of the Underworld",
-  "source_relative_path": "gods/🕳️Ba'al Sheol.md",
+  "title": "Xefahua",
+  "subtitle": "The Goddess of Feasts and Plenty",
+  "source_relative_path": "gods/✨Xefahua.md",
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": {
-      "src": "/content-assets/_images/baalsheol_main.png",
-      "alt": "Ba'al Sheol",
-      "caption": null
-    },
+    "avatar": null,
     "symbol": null
   },
   "sections": [
@@ -20,8 +16,8 @@
         [
           "Pantheon",
           [
-            "Areshnaati",
-            "[[Xoluatl]]"
+            "[[Ramtilim]]",
+            "Areshnaati"
           ]
         ],
         [
@@ -31,18 +27,18 @@
         [
           "Consort(s)",
           [
-            "[[✨Xefahua]]"
+            "[[🕳️Ba'al Sheol]]"
           ]
         ],
         [
           "Allies",
           [
-            "[[✨Xefahua]]",
             "[[✨Qatzera]]",
-            "[[✨Tsayidrah]]",
             "[[✨Raavvah]]",
-            "[[🌌Zemana]]",
-            "[[🌌Gozara]]"
+            "[[✨Tsayidrah]]",
+            "[[🌌Gozara]]",
+            "[[🌌Niwara]]",
+            "[[🕳️Ba'al Sheol]]"
           ]
         ],
         [
@@ -58,7 +54,7 @@
       "rows": [
         [
           "Rank",
-          "Major"
+          "Minor"
         ],
         [
           "Nature",
@@ -66,7 +62,20 @@
         ],
         [
           "Ethos",
-          "Distant"
+          "Close"
+        ],
+        [
+          "Major Influence",
+          "Plenty"
+        ],
+        [
+          "Minor Influence(s)",
+          [
+            "Feasts",
+            "Celebrations",
+            "Wealth",
+            "Abundance"
+          ]
         ]
       ]
     },
@@ -76,14 +85,8 @@
         [
           "Parents",
           [
-            "[[🌌The Primordial of Finality]]",
-            "[[🌌Zemana]]"
-          ]
-        ],
-        [
-          "Siblings",
-          [
-            "[[🕳️Harbaal]]"
+            "[[✨Qatzera]]",
+            "[[✨Tsayidrah]]"
           ]
         ]
       ]

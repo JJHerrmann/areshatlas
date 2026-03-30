@@ -1,23 +1,39 @@
 ---
 type: deity
-name: ""
-epithet: ""
+name: Xefahua
+epithet: The Goddess of Feasts and Plenty
 title: ""
-pantheon: ""
-divine_rank: ""
-gender: ""
-nature: ""
-ethos: ""
-major_influence: ""
-minor_influences: []
+pantheon:
+  - "[[Ramtilim]]"
+  - Areshnaati
+divine_rank: Minor
+gender: Female
+nature: Ordered
+ethos: Close
+major_influence: Plenty
+minor_influences:
+  - Feasts
+  - Celebrations
+  - Wealth
+  - Abundance
 spheres: []
 avatars: []
-parents: []
+parents:
+  - "[[✨Qatzera]]"
+  - "[[✨Tsayidrah]]"
 siblings: []
 offspring: []
-consorts: []
-allies: []
-foes: []
+consorts:
+  - "[[🕳️Ba'al Sheol]]"
+allies:
+  - "[[✨Qatzera]]"
+  - "[[✨Raavvah]]"
+  - "[[✨Tsayidrah]]"
+  - "[[🌌Gozara]]"
+  - "[[🌌Niwara]]"
+  - "[[🕳️Ba'al Sheol]]"
+foes:
+  - "[[🕳️Harbaal]]"
 dwelling_place: ""
 primary_symbol: ""
 secondary_symbols: []

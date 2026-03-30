@@ -413,15 +413,6 @@
     "navboxes": []
   },
   {
-    "slug": "the-goddess-of-feasts-and-plenty",
-    "title": "✨The Goddess of Feasts and Plenty",
-    "section": "pantheon",
-    "href": "/pantheon/the-goddess-of-feasts-and-plenty",
-    "source_relative_path": "gods/✨The Goddess of Feasts and Plenty.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
     "slug": "the-primordial-of-finality",
     "title": "🌌The Primordial of Finality",
     "section": "pantheon",
@@ -487,6 +478,18 @@
     "source_relative_path": "cultures/language/Vardic (Central Human).md",
     "aliases": [],
     "navboxes": []
+  },
+  {
+    "slug": "xefahua",
+    "title": "Xefahua",
+    "section": "pantheon",
+    "href": "/pantheon/xefahua",
+    "source_relative_path": "gods/✨Xefahua.md",
+    "aliases": [],
+    "navboxes": [
+      "dieties-of-areshnaat",
+      "ramtilim"
+    ]
   },
   {
     "slug": "xibanal-elvish",

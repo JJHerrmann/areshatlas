@@ -21,9 +21,9 @@ siblings:
   - "[[🕳️Harbaal]]"
 offspring: []
 consorts:
-  - "[[✨The Goddess of Feasts and Plenty]]"
+  - "[[✨Xefahua]]"
 allies:
-  - "[[✨The Goddess of Feasts and Plenty]]"
+  - "[[✨Xefahua]]"
   - "[[✨Qatzera]]"
   - "[[✨Tsayidrah]]"
   - "[[✨Raavvah]]"
