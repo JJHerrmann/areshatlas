@@ -16,12 +16,19 @@ minor_influences: []
 avatars: []
 parents:
   - "[[🌌The Primordial of Finality]]"
+  - "[[🌌Zemana]]"
 siblings:
   - "[[🕳️Harbaal]]"
 offspring: []
 consorts:
   - "[[✨The Goddess of Feasts and Plenty]]"
-allies: []
+allies:
+  - "[[✨The Goddess of Feasts and Plenty]]"
+  - "[[✨Qatzera]]"
+  - "[[✨Tsayidrah]]"
+  - "[[✨Raavvah]]"
+  - "[[🌌Zemana]]"
+  - "[[🌌Gozara]]"
 foes:
   - "[[🕳️Harbaal]]"
 dwelling_place: ""
