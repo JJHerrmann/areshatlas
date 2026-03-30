@@ -20,8 +20,12 @@ parents:
   - "[[🌌Tahiwaco]]"
 siblings:
   - "[[🌌Yatbara]]"
-offspring: []
-consorts: []
+offspring:
+  - "[[✨Kathorharab]]"
+  - "[[✨Malagad]]"
+  - "[[✨Yaradaat]]"
+consorts:
+  - "[[🌌Gozara]]"
 allies: []
 foes: []
 dwelling_place: ""

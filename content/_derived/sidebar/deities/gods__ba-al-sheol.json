@@ -27,6 +27,18 @@
         [
           "Gender",
           "Female"
+        ],
+        [
+          "Consort(s)",
+          [
+            "[[✨The Goddess of Feasts and Plenty]]"
+          ]
+        ],
+        [
+          "Foes",
+          [
+            "[[🕳️Harbaal]]"
+          ]
         ]
       ]
     },
@@ -44,6 +56,23 @@
         [
           "Ethos",
           "Distant"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Parents",
+          [
+            "[[🌌The Primordial of Finality]]"
+          ]
+        ],
+        [
+          "Siblings",
+          [
+            "[[🕳️Harbaal]]"
+          ]
         ]
       ]
     }

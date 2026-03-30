@@ -14,12 +14,16 @@ spheres:
 major_influence: ""
 minor_influences: []
 avatars: []
-parents: []
-siblings: []
+parents:
+  - "[[🌌The Primordial of Finality]]"
+siblings:
+  - "[[🕳️Harbaal]]"
 offspring: []
-consorts: []
+consorts:
+  - "[[✨The Goddess of Feasts and Plenty]]"
 allies: []
-foes: []
+foes:
+  - "[[🕳️Harbaal]]"
 dwelling_place: ""
 primary_symbol: ""
 secondary_symbols: []
