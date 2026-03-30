@@ -15,7 +15,7 @@ major_influence: ""
 minor_influences: []
 avatars: []
 parents:
-  - "[[🌌The Primordial of Finality]]"
+  - "[[🌌Temaya]]"
   - "[[🌌Zemana]]"
 siblings:
   - "[[🕳️Harbaal]]"
