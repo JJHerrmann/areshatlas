@@ -7,7 +7,7 @@
   },
   "gozara": {
     "allies": [
-      "[[Kvaritzin, Ba'al Sheol]]",
+      "[[Kvaritzin, Baxeol]]",
       "[[Xefahua]]"
     ],
     "consorts": [
@@ -16,11 +16,11 @@
   },
   "harbaal": {
     "foes": [
-      "[[Kvaritzin, Ba'al Sheol]]",
+      "[[Kvaritzin, Baxeol]]",
       "[[Xefahua]]"
     ],
     "siblings": [
-      "[[Kvaritzin, Ba'al Sheol]]"
+      "[[Kvaritzin, Baxeol]]"
     ]
   },
   "kathorharab": {
@@ -72,7 +72,7 @@
   },
   "qatzera": {
     "allies": [
-      "[[Kvaritzin, Ba'al Sheol]]",
+      "[[Kvaritzin, Baxeol]]",
       "[[Xefahua]]"
     ],
     "offspring": [
@@ -81,7 +81,7 @@
   },
   "raavvah": {
     "allies": [
-      "[[Kvaritzin, Ba'al Sheol]]",
+      "[[Kvaritzin, Baxeol]]",
       "[[Xefahua]]"
     ]
   },
@@ -99,12 +99,12 @@
   },
   "temaya": {
     "offspring": [
-      "[[Kvaritzin, Ba'al Sheol]]"
+      "[[Kvaritzin, Baxeol]]"
     ]
   },
   "tsayidrah": {
     "allies": [
-      "[[Kvaritzin, Ba'al Sheol]]",
+      "[[Kvaritzin, Baxeol]]",
       "[[Xefahua]]"
     ],
     "offspring": [
@@ -113,10 +113,10 @@
   },
   "xefahua": {
     "allies": [
-      "[[Kvaritzin, Ba'al Sheol]]"
+      "[[Kvaritzin, Baxeol]]"
     ],
     "consorts": [
-      "[[Kvaritzin, Ba'al Sheol]]"
+      "[[Kvaritzin, Baxeol]]"
     ]
   },
   "yaradaat": {
@@ -149,10 +149,10 @@
   },
   "zemana": {
     "allies": [
-      "[[Kvaritzin, Ba'al Sheol]]"
+      "[[Kvaritzin, Baxeol]]"
     ],
     "offspring": [
-      "[[Kvaritzin, Ba'al Sheol]]"
+      "[[Kvaritzin, Baxeol]]"
     ]
   }
 }

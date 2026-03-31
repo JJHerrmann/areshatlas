@@ -1,11 +1,9 @@
 ---
 type: deity
-name: Yamnahar
-epithet: The God of Seas and Rivers
-title: Yamnahar
-pantheon:
-  - Areshnaati
-  - Ramtilim
+name: ""
+epithet: ""
+title: ""
+pantheon: ""
 divine_rank: ""
 gender: ""
 nature: ""
@@ -44,16 +42,31 @@ taboos: []
 tags:
   - deity
   - religion
-primary_topic: Dieties of Areshnaat
-navboxes:
-  - ramtilim
-  - dieties-of-areshnaat
-slug: yamnahar
 ---
-# Yamnahar
-*The God of Seas and Rivers*
+# {{name}}
+*{{epithet}}*
 
 {{short_overview}}
+
+## Divine Profile
+
+**Title:** {{title}}  
+**Pantheon:** {{pantheon}}  
+**Rank:** {{divine_rank}}  
+**Gender:** {{gender}}  
+**Nature:** {{nature}}  
+**Ethos:** {{ethos}}  
+**Major Influence:** {{major_influence}}  
+**Minor Influences:** {{minor_influences}}  
+**Spheres:** {{spheres}}  
+
+**Avatar(s):** {{avatar_names}}  
+**Consort(s):** {{consorts}}  
+**Parents:** {{parents}}  
+**Siblings:** {{siblings}}  
+**Offspring:** {{offspring}}  
+**Allies:** {{allies}}  
+**Foes:** {{foes}}  
 
 ## Depictions
 
@@ -88,25 +101,7 @@ slug: yamnahar
 
 ## Doctrine
 
-### Notes
-
-### Subordinates
-#### The God of Tides
-_Main Article: [[The God of Tides]]_
-#### The Mistress of Harbors
-Main Article: [[The Mistress of Harbors]]_
-#### The God of Deltas
-_Main Article: [[🕳️Maavacihuatl]]_
-#### The God of Sailors
-_Main Article: [[🕳️Derequi]]_
-#### The God of Serpents
-_Main Article: [[🕳️Masehua]]_
-#### The Goddess of Salts
-_Main Article: [[🕳️Kaxatzin]]_#### The Goddess of Mourning
-#### The God of Dark Waters
-_Main Article:[[🌊Tehontecuhtli]]_
-#### The Goddess of Travels and Navigation
-_Main Article:[[🌊Abyroqa]]_
+{{doctrine_overview}}
 
 ### Canonical Texts
 #### {{holy_text_1}}

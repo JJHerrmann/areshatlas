@@ -28,7 +28,7 @@
   },
   {
     "slug": "ba-al-sheol",
-    "title": "Kvaritzin, Ba'al Sheol",
+    "title": "Kvaritzin, Baxeol",
     "section": "pantheon",
     "href": "/pantheon/kvaritzin",
     "source_relative_path": "gods/🕳️Kvaritzin.md",
@@ -58,6 +58,15 @@
       "areshnaati-deities",
       "yekatlan"
     ]
+  },
+  {
+    "slug": "derequi",
+    "title": "🕳️Derequi",
+    "section": "pantheon",
+    "href": "/pantheon/derequi",
+    "source_relative_path": "gods/🕳️Derequi.md",
+    "aliases": [],
+    "navboxes": []
   },
   {
     "slug": "drakharpan",
@@ -169,6 +178,33 @@
     ]
   },
   {
+    "slug": "kaxatzin",
+    "title": "🕳️Kaxatzin",
+    "section": "pantheon",
+    "href": "/pantheon/kaxatzin",
+    "source_relative_path": "gods/🕳️Kaxatzin.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "kevarotzin",
+    "title": "🕳️Kevarotzin",
+    "section": "pantheon",
+    "href": "/pantheon/kevarotzin",
+    "source_relative_path": "gods/🕳️Kevarotzin.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "kinayotl",
+    "title": "🕳️Kinayotl",
+    "section": "pantheon",
+    "href": "/pantheon/kinayotl",
+    "source_relative_path": "gods/🕳️Kinayotl.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "kiviraud-istekoda",
     "title": "Kiviraud Istekoda",
     "section": "regions",
@@ -229,6 +265,15 @@
     ]
   },
   {
+    "slug": "maavacihuatl",
+    "title": "🕳️Maavacihuatl",
+    "section": "pantheon",
+    "href": "/pantheon/maavacihuatl",
+    "source_relative_path": "gods/🕳️Maavacihuatl.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "machul",
     "title": "Machul",
     "section": "pantheon",
@@ -277,6 +322,15 @@
       "dieties-of-areshnaat",
       "ramtilim"
     ]
+  },
+  {
+    "slug": "masehua",
+    "title": "🕳️Masehua",
+    "section": "pantheon",
+    "href": "/pantheon/masehua",
+    "source_relative_path": "gods/🕳️Masehua.md",
+    "aliases": [],
+    "navboxes": []
   },
   {
     "slug": "moxilaxaya",
@@ -363,6 +417,15 @@
       "dieties-of-areshnaat",
       "ramtilim"
     ]
+  },
+  {
+    "slug": "refapilli",
+    "title": "🕳️Refapilli",
+    "section": "pantheon",
+    "href": "/pantheon/refapilli",
+    "source_relative_path": "gods/🕳️Refapilli.md",
+    "aliases": [],
+    "navboxes": []
   },
   {
     "slug": "rexaya",
