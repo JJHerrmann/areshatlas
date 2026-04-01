@@ -1,0 +1,53 @@
+{
+  "type": "nation",
+  "title": "Kanchasuyu",
+  "subtitle": "Sultanate of Kanchasuyu",
+  "source_relative_path": "regions/Drakharpan/nations/Kanchasuyu.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "map": null
+  },
+  "sections": [
+    {
+      "title": "Identity",
+      "rows": [
+        [
+          "Name",
+          "Kanchasuyu"
+        ],
+        [
+          "Formal Name",
+          "Sultanate of Kanchasuyu"
+        ]
+      ]
+    },
+    {
+      "title": "Geographic Info",
+      "rows": [
+        [
+          "Continent",
+          "Drakharpan"
+        ]
+      ]
+    },
+    {
+      "title": "Government",
+      "rows": [
+        [
+          "Government Type",
+          "Monarchy"
+        ]
+      ]
+    },
+    {
+      "title": "Game Info",
+      "rows": [
+        [
+          "Map",
+          "Kanchasuyu"
+        ]
+      ]
+    }
+  ]
+}

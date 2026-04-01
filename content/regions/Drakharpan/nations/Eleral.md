@@ -1,7 +1,7 @@
 ---
 type: nation
-name: Kanchasuyu
-formal_name: "Sultanate of Kanchasuyu"
+name: Eleral
+formal_name: "Duchy of Eleral"
 continent: Drakharpan
 location: ""
 government_type: "Monarchy"
@@ -19,19 +19,19 @@ important_persons: []
 pantheon: ""
 patron: ""
 cultural_templates: []
-map: "Kanchasuyu"
-slug: kanchasuyu
-fmg_state_id: "22"
-fmg_cells: "660"
-fmg_burg_count: "129"
-fmg_full_name: "Sultanate of Kanchasuyu"
+map: "Eleral"
+slug: eleral
+fmg_state_id: "36"
+fmg_cells: "167"
+fmg_burg_count: "26"
+fmg_full_name: "Duchy of Eleral"
 navboxes: []
 ---
-# Kanchasuyu
+# Eleral
 
 ## Overview
 
-Kanchasuyu, formally Sultanate of Kanchasuyu, is a recorded state of [[Drakharpan]] derived from the current FMG authority map export.
+Eleral, formally Duchy of Eleral, is a recorded state of [[Drakharpan]] derived from the current FMG authority map export.
 
 ## Geography
 
@@ -39,37 +39,7 @@ Kanchasuyu, formally Sultanate of Kanchasuyu, is a recorded state of [[Drakharpa
 
 ## Regions
 
-- [[Ruyurein County]]
-- [[Laqtia County]]
-- [[Maria Barony]]
-- [[Ornanlpansu County]]
-- [[Markia Margrave]]
-- [[Borcunumia County]]
-- [[Fionlaqtia County]]
-- [[Tuarkalanco County]]
-- [[Qochruyu County]]
-- [[Saium County]]
-- [[Qocha County]]
-- [[Beranlaqia County]]
-- [[Sirgodulum County]]
-- [[Sumior Landgrave]]
-- [[Fionkancha County]]
-- [[Melia Margrave]]
-- [[Asisumarru County]]
-- [[Fioncorin County]]
-- [[Ausuyumi County]]
-- [[Binovium County]]
-- [[Marsu County]]
-- [[Ruyuyuionia County]]
-- [[Apaor County]]
-- [[Kancha County]]
-- [[Lorkaia County]]
-- [[Sornumia County]]
-- [[Orcan Territory]]
-- [[Fionsuyu Territory]]
-- [[Killatheonku Territory]]
-- [[Sasumiyuqtia Tribe]]
-- [[Tiernanpun Territory]]
+- [Principal region or province]
 
 ## History
 

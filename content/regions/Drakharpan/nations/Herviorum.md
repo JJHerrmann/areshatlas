@@ -1,10 +1,10 @@
 ---
 type: nation
-name: Kanchasuyu
-formal_name: "Sultanate of Kanchasuyu"
+name: Herviorum
+formal_name: "Herviorum City-state"
 continent: Drakharpan
 location: ""
-government_type: "Monarchy"
+government_type: "Republic"
 hierarchy: []
 ruler: ""
 capital: ""
@@ -19,19 +19,19 @@ important_persons: []
 pantheon: ""
 patron: ""
 cultural_templates: []
-map: "Kanchasuyu"
-slug: kanchasuyu
-fmg_state_id: "22"
-fmg_cells: "660"
-fmg_burg_count: "129"
-fmg_full_name: "Sultanate of Kanchasuyu"
+map: "Herviorum"
+slug: herviorum
+fmg_state_id: "30"
+fmg_cells: "57"
+fmg_burg_count: "6"
+fmg_full_name: "Herviorum City-state"
 navboxes: []
 ---
-# Kanchasuyu
+# Herviorum
 
 ## Overview
 
-Kanchasuyu, formally Sultanate of Kanchasuyu, is a recorded state of [[Drakharpan]] derived from the current FMG authority map export.
+Herviorum, formally Herviorum City-state, is a recorded state of [[Drakharpan]] derived from the current FMG authority map export.
 
 ## Geography
 
@@ -39,37 +39,8 @@ Kanchasuyu, formally Sultanate of Kanchasuyu, is a recorded state of [[Drakharpa
 
 ## Regions
 
-- [[Ruyurein County]]
-- [[Laqtia County]]
-- [[Maria Barony]]
-- [[Ornanlpansu County]]
-- [[Markia Margrave]]
-- [[Borcunumia County]]
-- [[Fionlaqtia County]]
-- [[Tuarkalanco County]]
-- [[Qochruyu County]]
-- [[Saium County]]
-- [[Qocha County]]
-- [[Beranlaqia County]]
-- [[Sirgodulum County]]
-- [[Sumior Landgrave]]
-- [[Fionkancha County]]
-- [[Melia Margrave]]
-- [[Asisumarru County]]
-- [[Fioncorin County]]
-- [[Ausuyumi County]]
-- [[Binovium County]]
-- [[Marsu County]]
-- [[Ruyuyuionia County]]
-- [[Apaor County]]
-- [[Kancha County]]
-- [[Lorkaia County]]
-- [[Sornumia County]]
-- [[Orcan Territory]]
-- [[Fionsuyu Territory]]
-- [[Killatheonku Territory]]
-- [[Sasumiyuqtia Tribe]]
-- [[Tiernanpun Territory]]
+- [[Theixus District]]
+- [[Vinium District]]
 
 ## History
 

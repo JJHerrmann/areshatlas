@@ -1,7 +1,7 @@
 ---
 type: nation
-name: Kanchasuyu
-formal_name: "Sultanate of Kanchasuyu"
+name: Naharcan
+formal_name: "Latocail Naharcan"
 continent: Drakharpan
 location: ""
 government_type: "Monarchy"
@@ -19,19 +19,19 @@ important_persons: []
 pantheon: ""
 patron: ""
 cultural_templates: []
-map: "Kanchasuyu"
-slug: kanchasuyu
-fmg_state_id: "22"
-fmg_cells: "660"
-fmg_burg_count: "129"
-fmg_full_name: "Sultanate of Kanchasuyu"
+map: "Naharcan"
+slug: naharcan
+fmg_state_id: "25"
+fmg_cells: "311"
+fmg_burg_count: "39"
+fmg_full_name: "Latocail Naharcan"
 navboxes: []
 ---
-# Kanchasuyu
+# Naharcan
 
 ## Overview
 
-Kanchasuyu, formally Sultanate of Kanchasuyu, is a recorded state of [[Drakharpan]] derived from the current FMG authority map export.
+Naharcan, formally Latocail Naharcan, is a recorded state of [[Drakharpan]] derived from the current FMG authority map export.
 
 ## Geography
 
@@ -39,37 +39,15 @@ Kanchasuyu, formally Sultanate of Kanchasuyu, is a recorded state of [[Drakharpa
 
 ## Regions
 
-- [[Ruyurein County]]
-- [[Laqtia County]]
-- [[Maria Barony]]
-- [[Ornanlpansu County]]
-- [[Markia Margrave]]
-- [[Borcunumia County]]
-- [[Fionlaqtia County]]
-- [[Tuarkalanco County]]
-- [[Qochruyu County]]
-- [[Saium County]]
-- [[Qocha County]]
-- [[Beranlaqia County]]
-- [[Sirgodulum County]]
-- [[Sumior Landgrave]]
-- [[Fionkancha County]]
-- [[Melia Margrave]]
-- [[Asisumarru County]]
-- [[Fioncorin County]]
-- [[Ausuyumi County]]
-- [[Binovium County]]
-- [[Marsu County]]
-- [[Ruyuyuionia County]]
-- [[Apaor County]]
-- [[Kancha County]]
-- [[Lorkaia County]]
-- [[Sornumia County]]
-- [[Orcan Territory]]
-- [[Fionsuyu Territory]]
-- [[Killatheonku Territory]]
-- [[Sasumiyuqtia Tribe]]
-- [[Tiernanpun Territory]]
+- [[Caidistlan County]]
+- [[Leabania County]]
+- [[Bretarpan County]]
+- [[Sarahacan Earldom]]
+- [[Cesontiana County]]
+- [[Breharcan County]]
+- [[Necarastlan Earldom]]
+- [[Florum Earldom]]
+- [[Balactlania Land]]
 
 ## History
 

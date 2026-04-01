@@ -1,0 +1,53 @@
+{
+  "type": "nation",
+  "title": "Herviorum",
+  "subtitle": "Herviorum City-state",
+  "source_relative_path": "regions/Drakharpan/nations/Herviorum.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "map": null
+  },
+  "sections": [
+    {
+      "title": "Identity",
+      "rows": [
+        [
+          "Name",
+          "Herviorum"
+        ],
+        [
+          "Formal Name",
+          "Herviorum City-state"
+        ]
+      ]
+    },
+    {
+      "title": "Geographic Info",
+      "rows": [
+        [
+          "Continent",
+          "Drakharpan"
+        ]
+      ]
+    },
+    {
+      "title": "Government",
+      "rows": [
+        [
+          "Government Type",
+          "Republic"
+        ]
+      ]
+    },
+    {
+      "title": "Game Info",
+      "rows": [
+        [
+          "Map",
+          "Herviorum"
+        ]
+      ]
+    }
+  ]
+}

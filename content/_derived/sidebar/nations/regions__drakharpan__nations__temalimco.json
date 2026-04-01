@@ -1,0 +1,53 @@
+{
+  "type": "nation",
+  "title": "Temalimco",
+  "subtitle": "Duchy of Temalimco",
+  "source_relative_path": "regions/Drakharpan/nations/Temalimco.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "map": null
+  },
+  "sections": [
+    {
+      "title": "Identity",
+      "rows": [
+        [
+          "Name",
+          "Temalimco"
+        ],
+        [
+          "Formal Name",
+          "Duchy of Temalimco"
+        ]
+      ]
+    },
+    {
+      "title": "Geographic Info",
+      "rows": [
+        [
+          "Continent",
+          "Drakharpan"
+        ]
+      ]
+    },
+    {
+      "title": "Government",
+      "rows": [
+        [
+          "Government Type",
+          "Monarchy"
+        ]
+      ]
+    },
+    {
+      "title": "Game Info",
+      "rows": [
+        [
+          "Map",
+          "Temalimco"
+        ]
+      ]
+    }
+  ]
+}
