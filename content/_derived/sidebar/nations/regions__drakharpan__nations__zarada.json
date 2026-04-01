@@ -1,0 +1,66 @@
+{
+  "type": "nation",
+  "title": "Zarada",
+  "subtitle": "Protectorate of Zarada",
+  "source_relative_path": "regions/Drakharpan/nations/Zarada.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "map": null
+  },
+  "sections": [
+    {
+      "title": "Identity",
+      "rows": [
+        [
+          "Name",
+          "Zarada"
+        ],
+        [
+          "Formal Name",
+          "Protectorate of Zarada"
+        ]
+      ]
+    },
+    {
+      "title": "Geographic Info",
+      "rows": [
+        [
+          "Continent",
+          "Drakharpan"
+        ]
+      ]
+    },
+    {
+      "title": "Government",
+      "rows": [
+        [
+          "Government Type",
+          "Protectorate"
+        ],
+        [
+          "Capital",
+          "Calivi"
+        ]
+      ]
+    },
+    {
+      "title": "Society",
+      "rows": [
+        [
+          "Population",
+          748275
+        ]
+      ]
+    },
+    {
+      "title": "Game Info",
+      "rows": [
+        [
+          "Map",
+          "Zarada"
+        ]
+      ]
+    }
+  ]
+}

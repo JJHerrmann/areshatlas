@@ -1,0 +1,66 @@
+{
+  "type": "nation",
+  "title": "Orvara",
+  "subtitle": "Kingdom of Orvara",
+  "source_relative_path": "regions/Drakharpan/nations/Orvara.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "map": null
+  },
+  "sections": [
+    {
+      "title": "Identity",
+      "rows": [
+        [
+          "Name",
+          "Orvara"
+        ],
+        [
+          "Formal Name",
+          "Kingdom of Orvara"
+        ]
+      ]
+    },
+    {
+      "title": "Geographic Info",
+      "rows": [
+        [
+          "Continent",
+          "Drakharpan"
+        ]
+      ]
+    },
+    {
+      "title": "Government",
+      "rows": [
+        [
+          "Government Type",
+          "Kingdom"
+        ],
+        [
+          "Capital",
+          "Nuorvi"
+        ]
+      ]
+    },
+    {
+      "title": "Society",
+      "rows": [
+        [
+          "Population",
+          2087979
+        ]
+      ]
+    },
+    {
+      "title": "Game Info",
+      "rows": [
+        [
+          "Map",
+          "Orvara"
+        ]
+      ]
+    }
+  ]
+}

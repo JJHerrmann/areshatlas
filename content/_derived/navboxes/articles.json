@@ -39,6 +39,33 @@
     ]
   },
   {
+    "slug": "barkhia",
+    "title": "Barkhia",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/barkhia",
+    "source_relative_path": "regions/Drakharpan/nations/Barkhia.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "belsahnia",
+    "title": "Belsahnia",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/belsahnia",
+    "source_relative_path": "regions/Drakharpan/nations/Belsahnia.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "benes",
+    "title": "Benes",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/benes",
+    "source_relative_path": "regions/Drakharpan/nations/Benes.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "biviai",
     "title": "Biviai",
     "section": "cultures",
@@ -74,15 +101,6 @@
     "section": "regions",
     "href": "/regions/drakharpan",
     "source_relative_path": "regions/Drakharpan/Drakharpan.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
-    "slug": "eleral",
-    "title": "Eleral",
-    "section": "regions",
-    "href": "/regions/drakharpan/nations/eleral",
-    "source_relative_path": "regions/Drakharpan/nations/Eleral.md",
     "aliases": [],
     "navboxes": []
   },
@@ -147,24 +165,6 @@
     ]
   },
   {
-    "slug": "herviorum",
-    "title": "Herviorum",
-    "section": "regions",
-    "href": "/regions/drakharpan/nations/herviorum",
-    "source_relative_path": "regions/Drakharpan/nations/Herviorum.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
-    "slug": "kanchasuyu",
-    "title": "Kanchasuyu",
-    "section": "regions",
-    "href": "/regions/drakharpan/nations/kanchasuyu",
-    "source_relative_path": "regions/Drakharpan/nations/Kanchasuyu.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
     "slug": "karakeel-dwarven",
     "title": "Karakeel (Dwarven)",
     "section": "languages",
@@ -179,6 +179,15 @@
     "section": "languages",
     "href": "/languages/karakeel-dwarven-expanded",
     "source_relative_path": "cultures/language/Karakeel (Dwarven) - Expanded.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "karia",
+    "title": "Karia",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/karia",
+    "source_relative_path": "regions/Drakharpan/nations/Karia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -214,6 +223,24 @@
     "navboxes": []
   },
   {
+    "slug": "khashgia",
+    "title": "Khashgia",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/khashgia",
+    "source_relative_path": "regions/Drakharpan/nations/Khashgia.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "khovia",
+    "title": "Khovia",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/khovia",
+    "source_relative_path": "regions/Drakharpan/nations/Khovia.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "kinayotl",
     "title": "🕳️Kinayotl",
     "section": "pantheon",
@@ -223,11 +250,11 @@
     "navboxes": []
   },
   {
-    "slug": "kiviraud-istekoda",
-    "title": "Kiviraud Istekoda",
+    "slug": "kotzia",
+    "title": "Kotzia",
     "section": "regions",
-    "href": "/regions/drakharpan/nations/kiviraud-istekoda",
-    "source_relative_path": "regions/Drakharpan/nations/Kiviraud Istekoda.md",
+    "href": "/regions/drakharpan/nations/kotzia",
+    "source_relative_path": "regions/Drakharpan/nations/Kotzia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -246,15 +273,6 @@
     "section": "languages",
     "href": "/languages/kutnylev-gnomish-expanded",
     "source_relative_path": "cultures/language/Kutnylev (Gnomish) - Expanded.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
-    "slug": "latocail-naharcan",
-    "title": "Latocail Naharcan",
-    "section": "regions",
-    "href": "/regions/drakharpan/nations/latocail-naharcan",
-    "source_relative_path": "regions/Drakharpan/nations/Latocail Naharcan.md",
     "aliases": [],
     "navboxes": []
   },
@@ -281,15 +299,6 @@
       "areshnaati-deities",
       "yekatlan"
     ]
-  },
-  {
-    "slug": "lugrancanta",
-    "title": "Lugrancanta",
-    "section": "regions",
-    "href": "/regions/drakharpan/nations/lugrancanta",
-    "source_relative_path": "regions/Drakharpan/nations/Lugrancanta.md",
-    "aliases": [],
-    "navboxes": []
   },
   {
     "slug": "maavacihuatl",
@@ -372,20 +381,29 @@
     ]
   },
   {
-    "slug": "naharcan",
-    "title": "Naharcan",
+    "slug": "nalelia",
+    "title": "Nalelia",
     "section": "regions",
-    "href": "/regions/drakharpan/nations/naharcan",
-    "source_relative_path": "regions/Drakharpan/nations/Naharcan.md",
+    "href": "/regions/drakharpan/nations/nalelia",
+    "source_relative_path": "regions/Drakharpan/nations/Nalelia.md",
     "aliases": [],
     "navboxes": []
   },
   {
-    "slug": "nekosdamkoda",
-    "title": "Nekosdamkoda",
+    "slug": "nazelia",
+    "title": "Nazelia",
     "section": "regions",
-    "href": "/regions/drakharpan/nations/nekosdamkoda",
-    "source_relative_path": "regions/Drakharpan/nations/Nekosdamkoda.md",
+    "href": "/regions/drakharpan/nations/nazelia",
+    "source_relative_path": "regions/Drakharpan/nations/Nazelia.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "nika",
+    "title": "Nika",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/nika",
+    "source_relative_path": "regions/Drakharpan/nations/Nika.md",
     "aliases": [],
     "navboxes": []
   },
@@ -402,20 +420,11 @@
     ]
   },
   {
-    "slug": "petlancia",
-    "title": "Petlancia",
+    "slug": "orvara",
+    "title": "Orvara",
     "section": "regions",
-    "href": "/regions/drakharpan/nations/petlancia",
-    "source_relative_path": "regions/Drakharpan/nations/Petlancia.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
-    "slug": "petrello",
-    "title": "Petrello",
-    "section": "regions",
-    "href": "/regions/drakharpan/nations/petrello",
-    "source_relative_path": "regions/Drakharpan/nations/Petrello.md",
+    "href": "/regions/drakharpan/nations/orvara",
+    "source_relative_path": "regions/Drakharpan/nations/Orvara.md",
     "aliases": [],
     "navboxes": []
   },
@@ -440,15 +449,6 @@
       "dieties-of-areshnaat",
       "ramtilim"
     ]
-  },
-  {
-    "slug": "quenolistes",
-    "title": "Quenolistes",
-    "section": "regions",
-    "href": "/regions/drakharpan/nations/quenolistes",
-    "source_relative_path": "regions/Drakharpan/nations/Quenolistes.md",
-    "aliases": [],
-    "navboxes": []
   },
   {
     "slug": "raamskoda",
@@ -491,29 +491,11 @@
     "navboxes": []
   },
   {
-    "slug": "riagan",
-    "title": "Riagan",
-    "section": "regions",
-    "href": "/regions/drakharpan/nations/riagan",
-    "source_relative_path": "regions/Drakharpan/nations/Riagan.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
     "slug": "runakay-northwestern-human",
     "title": "Runakay (Northwestern Human)",
     "section": "languages",
     "href": "/languages/runakay-northwestern-human",
     "source_relative_path": "cultures/language/Runakay (Northwestern Human).md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
-    "slug": "saheranahvaria",
-    "title": "Saheranahvaria",
-    "section": "regions",
-    "href": "/regions/drakharpan/nations/saheranahvaria",
-    "source_relative_path": "regions/Drakharpan/nations/Saheranahvaria.md",
     "aliases": [],
     "navboxes": []
   },
@@ -535,15 +517,6 @@
     "section": "pantheon",
     "href": "/pantheon/tehontecuhtli",
     "source_relative_path": "gods/🌊Tehontecuhtli.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
-    "slug": "temalimco",
-    "title": "Temalimco",
-    "section": "regions",
-    "href": "/regions/drakharpan/nations/temalimco",
-    "source_relative_path": "regions/Drakharpan/nations/Temalimco.md",
     "aliases": [],
     "navboxes": []
   },
@@ -606,6 +579,33 @@
     ]
   },
   {
+    "slug": "ulekh",
+    "title": "Ulekh",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/ulekh",
+    "source_relative_path": "regions/Drakharpan/nations/Ulekh.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "ulvasia",
+    "title": "Ulvasia",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/ulvasia",
+    "source_relative_path": "regions/Drakharpan/nations/Ulvasia.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "unaxia",
+    "title": "Unaxia",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/unaxia",
+    "source_relative_path": "regions/Drakharpan/nations/Unaxia.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "vardic-central-human",
     "title": "Vardic (Central Human)",
     "section": "languages",
@@ -615,11 +615,38 @@
     "navboxes": []
   },
   {
-    "slug": "witfordburia",
-    "title": "Witfordburia",
+    "slug": "varenia",
+    "title": "Varenia",
     "section": "regions",
-    "href": "/regions/drakharpan/nations/witfordburia",
-    "source_relative_path": "regions/Drakharpan/nations/Witfordburia.md",
+    "href": "/regions/drakharpan/nations/varenia",
+    "source_relative_path": "regions/Drakharpan/nations/Varenia.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "velia",
+    "title": "Velia",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/velia",
+    "source_relative_path": "regions/Drakharpan/nations/Velia.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "velnaidh",
+    "title": "Velnaidh",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/velnaidh",
+    "source_relative_path": "regions/Drakharpan/nations/Velnaidh.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "xatia",
+    "title": "Xatia",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/xatia",
+    "source_relative_path": "regions/Drakharpan/nations/Xatia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -654,20 +681,11 @@
     "navboxes": []
   },
   {
-    "slug": "xilhuan",
-    "title": "Xilhuan",
+    "slug": "xilza",
+    "title": "Xilza",
     "section": "regions",
-    "href": "/regions/drakharpan/nations/xilhuan",
-    "source_relative_path": "regions/Drakharpan/nations/Xilhuan.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
-    "slug": "xilhuan-altepetl",
-    "title": "Xilhuan Altepetl",
-    "section": "regions",
-    "href": "/regions/drakharpan/nations/xilhuan-altepetl",
-    "source_relative_path": "regions/Drakharpan/nations/Xilhuan Altepetl.md",
+    "href": "/regions/drakharpan/nations/xilza",
+    "source_relative_path": "regions/Drakharpan/nations/Xilza.md",
     "aliases": [],
     "navboxes": []
   },
@@ -729,6 +747,24 @@
     "section": "languages",
     "href": "/languages/yolca-halfling",
     "source_relative_path": "cultures/language/Yolca (Halfling).md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "zalia",
+    "title": "Zalia",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/zalia",
+    "source_relative_path": "regions/Drakharpan/nations/Zalia.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "zarada",
+    "title": "Zarada",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/zarada",
+    "source_relative_path": "regions/Drakharpan/nations/Zarada.md",
     "aliases": [],
     "navboxes": []
   },

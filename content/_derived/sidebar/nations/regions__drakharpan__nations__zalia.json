@@ -1,0 +1,66 @@
+{
+  "type": "nation",
+  "title": "Zalia",
+  "subtitle": "Republic of Zalia",
+  "source_relative_path": "regions/Drakharpan/nations/Zalia.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "map": null
+  },
+  "sections": [
+    {
+      "title": "Identity",
+      "rows": [
+        [
+          "Name",
+          "Zalia"
+        ],
+        [
+          "Formal Name",
+          "Republic of Zalia"
+        ]
+      ]
+    },
+    {
+      "title": "Geographic Info",
+      "rows": [
+        [
+          "Continent",
+          "Drakharpan"
+        ]
+      ]
+    },
+    {
+      "title": "Government",
+      "rows": [
+        [
+          "Government Type",
+          "Republic"
+        ],
+        [
+          "Capital",
+          "Wanshanho"
+        ]
+      ]
+    },
+    {
+      "title": "Society",
+      "rows": [
+        [
+          "Population",
+          970462
+        ]
+      ]
+    },
+    {
+      "title": "Game Info",
+      "rows": [
+        [
+          "Map",
+          "Zalia"
+        ]
+      ]
+    }
+  ]
+}

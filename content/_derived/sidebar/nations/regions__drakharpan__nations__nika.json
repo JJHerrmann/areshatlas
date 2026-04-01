@@ -1,0 +1,66 @@
+{
+  "type": "nation",
+  "title": "Nika",
+  "subtitle": "Grand Duchy of Nika",
+  "source_relative_path": "regions/Drakharpan/nations/Nika.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "map": null
+  },
+  "sections": [
+    {
+      "title": "Identity",
+      "rows": [
+        [
+          "Name",
+          "Nika"
+        ],
+        [
+          "Formal Name",
+          "Grand Duchy of Nika"
+        ]
+      ]
+    },
+    {
+      "title": "Geographic Info",
+      "rows": [
+        [
+          "Continent",
+          "Drakharpan"
+        ]
+      ]
+    },
+    {
+      "title": "Government",
+      "rows": [
+        [
+          "Government Type",
+          "Grand Duchy"
+        ],
+        [
+          "Capital",
+          "Nika"
+        ]
+      ]
+    },
+    {
+      "title": "Society",
+      "rows": [
+        [
+          "Population",
+          475312
+        ]
+      ]
+    },
+    {
+      "title": "Game Info",
+      "rows": [
+        [
+          "Map",
+          "Nika"
+        ]
+      ]
+    }
+  ]
+}

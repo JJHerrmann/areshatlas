@@ -1,0 +1,66 @@
+{
+  "type": "nation",
+  "title": "Belsahnia",
+  "subtitle": "Lugalmarka Belsahnia",
+  "source_relative_path": "regions/Drakharpan/nations/Belsahnia.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "map": null
+  },
+  "sections": [
+    {
+      "title": "Identity",
+      "rows": [
+        [
+          "Name",
+          "Belsahnia"
+        ],
+        [
+          "Formal Name",
+          "Lugalmarka Belsahnia"
+        ]
+      ]
+    },
+    {
+      "title": "Geographic Info",
+      "rows": [
+        [
+          "Continent",
+          "Drakharpan"
+        ]
+      ]
+    },
+    {
+      "title": "Government",
+      "rows": [
+        [
+          "Government Type",
+          "Sultanate"
+        ],
+        [
+          "Capital",
+          "Thethe"
+        ]
+      ]
+    },
+    {
+      "title": "Society",
+      "rows": [
+        [
+          "Population",
+          1198438
+        ]
+      ]
+    },
+    {
+      "title": "Game Info",
+      "rows": [
+        [
+          "Map",
+          "Belsahnia"
+        ]
+      ]
+    }
+  ]
+}

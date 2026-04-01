@@ -1,0 +1,66 @@
+{
+  "type": "nation",
+  "title": "Ulvasia",
+  "subtitle": "Principality of Ulvasia",
+  "source_relative_path": "regions/Drakharpan/nations/Ulvasia.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "map": null
+  },
+  "sections": [
+    {
+      "title": "Identity",
+      "rows": [
+        [
+          "Name",
+          "Ulvasia"
+        ],
+        [
+          "Formal Name",
+          "Principality of Ulvasia"
+        ]
+      ]
+    },
+    {
+      "title": "Geographic Info",
+      "rows": [
+        [
+          "Continent",
+          "Drakharpan"
+        ]
+      ]
+    },
+    {
+      "title": "Government",
+      "rows": [
+        [
+          "Government Type",
+          "Principality"
+        ],
+        [
+          "Capital",
+          "Khankhan"
+        ]
+      ]
+    },
+    {
+      "title": "Society",
+      "rows": [
+        [
+          "Population",
+          876851
+        ]
+      ]
+    },
+    {
+      "title": "Game Info",
+      "rows": [
+        [
+          "Map",
+          "Ulvasia"
+        ]
+      ]
+    }
+  ]
+}

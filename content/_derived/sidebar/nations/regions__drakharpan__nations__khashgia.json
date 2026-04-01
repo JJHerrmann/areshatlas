@@ -1,0 +1,66 @@
+{
+  "type": "nation",
+  "title": "Khashgia",
+  "subtitle": "Duchy of Khashgia",
+  "source_relative_path": "regions/Drakharpan/nations/Khashgia.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "map": null
+  },
+  "sections": [
+    {
+      "title": "Identity",
+      "rows": [
+        [
+          "Name",
+          "Khashgia"
+        ],
+        [
+          "Formal Name",
+          "Duchy of Khashgia"
+        ]
+      ]
+    },
+    {
+      "title": "Geographic Info",
+      "rows": [
+        [
+          "Continent",
+          "Drakharpan"
+        ]
+      ]
+    },
+    {
+      "title": "Government",
+      "rows": [
+        [
+          "Government Type",
+          "Duchy"
+        ],
+        [
+          "Capital",
+          "Qadrkhar"
+        ]
+      ]
+    },
+    {
+      "title": "Society",
+      "rows": [
+        [
+          "Population",
+          77572
+        ]
+      ]
+    },
+    {
+      "title": "Game Info",
+      "rows": [
+        [
+          "Map",
+          "Khashgia"
+        ]
+      ]
+    }
+  ]
+}
