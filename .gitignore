@@ -42,3 +42,6 @@ Rpg-Awesome-master/
 !content/**/*.svg
 *.ai
 *.psd
+
+# Local repo notes / operator instructions
+LOCAL_NOTES.md
