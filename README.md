@@ -79,6 +79,20 @@ Examples:
 - content model first
 - reusable codex primitives
 
+## Local FMG
+
+Fantasy Map Generator is treated as a separate local tool, not part of the deployed Next app.
+
+- local launcher script: `scripts/launch_fmg_local.ps1`
+- double-click wrapper: `launch_fmg_local.cmd`
+- expected local URL: `http://127.0.0.1:5173/`
+
+The launcher expects the local FMG checkout at:
+
+- `Fantasy-Map-Generator-master/Fantasy-Map-Generator-master`
+
+and it expects that checkout to already have its own `node_modules` installed.
+
 ## Development priorities
 
 1. establish layout and visual system
