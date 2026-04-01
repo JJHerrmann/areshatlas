@@ -1,8 +1,8 @@
 {
   "type": "nation",
-  "title": "Zalia",
-  "subtitle": "Republic of Zalia",
-  "source_relative_path": "regions/Drakharpan/nations/Zalia.md",
+  "title": "Khovia",
+  "subtitle": "Khovian Empire",
+  "source_relative_path": "regions/Drakharpan/nations/Khovia/Khovia.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -14,11 +14,11 @@
       "rows": [
         [
           "Name",
-          "Zalia"
+          "Khovia"
         ],
         [
           "Formal Name",
-          "Republic of Zalia"
+          "Khovian Empire"
         ]
       ]
     },
@@ -36,11 +36,11 @@
       "rows": [
         [
           "Government Type",
-          "Republic"
+          "Empire"
         ],
         [
           "Capital",
-          "Wanshanho"
+          "Khat"
         ]
       ]
     },
@@ -49,7 +49,7 @@
       "rows": [
         [
           "Population",
-          970462
+          1318903
         ]
       ]
     },
@@ -58,7 +58,7 @@
       "rows": [
         [
           "Map",
-          "Zalia"
+          "Khovia"
         ]
       ]
     }

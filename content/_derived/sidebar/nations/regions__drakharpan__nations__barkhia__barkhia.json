@@ -1,8 +1,8 @@
 {
   "type": "nation",
-  "title": "Unaxia",
-  "subtitle": "Principality of Unaxia",
-  "source_relative_path": "regions/Drakharpan/nations/Unaxia.md",
+  "title": "Barkhia",
+  "subtitle": "Principality of Barkhia",
+  "source_relative_path": "regions/Drakharpan/nations/Barkhia/Barkhia.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -14,11 +14,11 @@
       "rows": [
         [
           "Name",
-          "Unaxia"
+          "Barkhia"
         ],
         [
           "Formal Name",
-          "Principality of Unaxia"
+          "Principality of Barkhia"
         ]
       ]
     },
@@ -40,7 +40,7 @@
         ],
         [
           "Capital",
-          "Ngwamyue"
+          "Peria"
         ]
       ]
     },
@@ -49,7 +49,7 @@
       "rows": [
         [
           "Population",
-          1410415
+          1558491
         ]
       ]
     },
@@ -58,7 +58,7 @@
       "rows": [
         [
           "Map",
-          "Unaxia"
+          "Barkhia"
         ]
       ]
     }

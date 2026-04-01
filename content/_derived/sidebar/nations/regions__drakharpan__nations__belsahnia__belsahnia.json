@@ -1,8 +1,8 @@
 {
   "type": "nation",
-  "title": "Khovia",
-  "subtitle": "Khovian Empire",
-  "source_relative_path": "regions/Drakharpan/nations/Khovia.md",
+  "title": "Belsahnia",
+  "subtitle": "Lugalmarka Belsahnia",
+  "source_relative_path": "regions/Drakharpan/nations/Belsahnia/Belsahnia.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -14,11 +14,11 @@
       "rows": [
         [
           "Name",
-          "Khovia"
+          "Belsahnia"
         ],
         [
           "Formal Name",
-          "Khovian Empire"
+          "Lugalmarka Belsahnia"
         ]
       ]
     },
@@ -36,11 +36,11 @@
       "rows": [
         [
           "Government Type",
-          "Empire"
+          "Sultanate"
         ],
         [
           "Capital",
-          "Khat"
+          "Thethe"
         ]
       ]
     },
@@ -49,7 +49,7 @@
       "rows": [
         [
           "Population",
-          1318903
+          1198438
         ]
       ]
     },
@@ -58,7 +58,7 @@
       "rows": [
         [
           "Map",
-          "Khovia"
+          "Belsahnia"
         ]
       ]
     }

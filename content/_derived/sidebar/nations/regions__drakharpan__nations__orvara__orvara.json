@@ -1,8 +1,8 @@
 {
   "type": "nation",
-  "title": "Benes",
-  "subtitle": "Heptarchy of Benes",
-  "source_relative_path": "regions/Drakharpan/nations/Benes.md",
+  "title": "Orvara",
+  "subtitle": "Kingdom of Orvara",
+  "source_relative_path": "regions/Drakharpan/nations/Orvara/Orvara.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -14,11 +14,11 @@
       "rows": [
         [
           "Name",
-          "Benes"
+          "Orvara"
         ],
         [
           "Formal Name",
-          "Heptarchy of Benes"
+          "Kingdom of Orvara"
         ]
       ]
     },
@@ -36,11 +36,11 @@
       "rows": [
         [
           "Government Type",
-          "Heptarchy"
+          "Kingdom"
         ],
         [
           "Capital",
-          "Huatlan"
+          "Nuorvi"
         ]
       ]
     },
@@ -49,7 +49,7 @@
       "rows": [
         [
           "Population",
-          2269032
+          2087979
         ]
       ]
     },
@@ -58,7 +58,7 @@
       "rows": [
         [
           "Map",
-          "Benes"
+          "Orvara"
         ]
       ]
     }

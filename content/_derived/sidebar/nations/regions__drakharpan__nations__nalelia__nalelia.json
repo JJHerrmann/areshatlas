@@ -1,8 +1,8 @@
 {
   "type": "nation",
-  "title": "Khashgia",
-  "subtitle": "Duchy of Khashgia",
-  "source_relative_path": "regions/Drakharpan/nations/Khashgia.md",
+  "title": "Nalelia",
+  "subtitle": "Grand Duchy of Nalelia",
+  "source_relative_path": "regions/Drakharpan/nations/Nalelia/Nalelia.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -14,11 +14,11 @@
       "rows": [
         [
           "Name",
-          "Khashgia"
+          "Nalelia"
         ],
         [
           "Formal Name",
-          "Duchy of Khashgia"
+          "Grand Duchy of Nalelia"
         ]
       ]
     },
@@ -36,11 +36,11 @@
       "rows": [
         [
           "Government Type",
-          "Duchy"
+          "Grand Duchy"
         ],
         [
           "Capital",
-          "Qadrkhar"
+          "Sardansar"
         ]
       ]
     },
@@ -49,7 +49,7 @@
       "rows": [
         [
           "Population",
-          77572
+          581331
         ]
       ]
     },
@@ -58,7 +58,7 @@
       "rows": [
         [
           "Map",
-          "Khashgia"
+          "Nalelia"
         ]
       ]
     }

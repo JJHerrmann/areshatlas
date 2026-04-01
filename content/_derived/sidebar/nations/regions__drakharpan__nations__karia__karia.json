@@ -1,8 +1,8 @@
 {
   "type": "nation",
-  "title": "Ulekh",
-  "subtitle": "Grand Duchy of Ulekh",
-  "source_relative_path": "regions/Drakharpan/nations/Ulekh.md",
+  "title": "Karia",
+  "subtitle": "Karian Oligarchy",
+  "source_relative_path": "regions/Drakharpan/nations/Karia/Karia.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -14,11 +14,11 @@
       "rows": [
         [
           "Name",
-          "Ulekh"
+          "Karia"
         ],
         [
           "Formal Name",
-          "Grand Duchy of Ulekh"
+          "Karian Oligarchy"
         ]
       ]
     },
@@ -36,11 +36,11 @@
       "rows": [
         [
           "Government Type",
-          "Grand Duchy"
+          "Oligarchy"
         ],
         [
           "Capital",
-          "Ulekh"
+          "Khas"
         ]
       ]
     },
@@ -49,7 +49,7 @@
       "rows": [
         [
           "Population",
-          502052
+          1869137
         ]
       ]
     },
@@ -58,7 +58,7 @@
       "rows": [
         [
           "Map",
-          "Ulekh"
+          "Karia"
         ]
       ]
     }

@@ -1,8 +1,8 @@
 {
   "type": "nation",
-  "title": "Velnaidh",
-  "subtitle": "Duchy of Velnaidh",
-  "source_relative_path": "regions/Drakharpan/nations/Velnaidh.md",
+  "title": "Nazelia",
+  "subtitle": "Duchy of Nazelia",
+  "source_relative_path": "regions/Drakharpan/nations/Nazelia/Nazelia.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -14,11 +14,11 @@
       "rows": [
         [
           "Name",
-          "Velnaidh"
+          "Nazelia"
         ],
         [
           "Formal Name",
-          "Duchy of Velnaidh"
+          "Duchy of Nazelia"
         ]
       ]
     },
@@ -40,7 +40,7 @@
         ],
         [
           "Capital",
-          "Velnaidh"
+          "Longpun"
         ]
       ]
     },
@@ -49,7 +49,7 @@
       "rows": [
         [
           "Population",
-          205820
+          265296
         ]
       ]
     },
@@ -58,7 +58,7 @@
       "rows": [
         [
           "Map",
-          "Velnaidh"
+          "Nazelia"
         ]
       ]
     }

@@ -43,7 +43,7 @@
     "title": "Barkhia",
     "section": "regions",
     "href": "/regions/drakharpan/nations/barkhia",
-    "source_relative_path": "regions/Drakharpan/nations/Barkhia.md",
+    "source_relative_path": "regions/Drakharpan/nations/Barkhia/Barkhia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -52,7 +52,7 @@
     "title": "Belsahnia",
     "section": "regions",
     "href": "/regions/drakharpan/nations/belsahnia",
-    "source_relative_path": "regions/Drakharpan/nations/Belsahnia.md",
+    "source_relative_path": "regions/Drakharpan/nations/Belsahnia/Belsahnia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -61,7 +61,7 @@
     "title": "Benes",
     "section": "regions",
     "href": "/regions/drakharpan/nations/benes",
-    "source_relative_path": "regions/Drakharpan/nations/Benes.md",
+    "source_relative_path": "regions/Drakharpan/nations/Benes/Benes.md",
     "aliases": [],
     "navboxes": []
   },
@@ -187,7 +187,7 @@
     "title": "Karia",
     "section": "regions",
     "href": "/regions/drakharpan/nations/karia",
-    "source_relative_path": "regions/Drakharpan/nations/Karia.md",
+    "source_relative_path": "regions/Drakharpan/nations/Karia/Karia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -227,7 +227,7 @@
     "title": "Khashgia",
     "section": "regions",
     "href": "/regions/drakharpan/nations/khashgia",
-    "source_relative_path": "regions/Drakharpan/nations/Khashgia.md",
+    "source_relative_path": "regions/Drakharpan/nations/Khashgia/Khashgia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -236,7 +236,7 @@
     "title": "Khovia",
     "section": "regions",
     "href": "/regions/drakharpan/nations/khovia",
-    "source_relative_path": "regions/Drakharpan/nations/Khovia.md",
+    "source_relative_path": "regions/Drakharpan/nations/Khovia/Khovia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -254,7 +254,7 @@
     "title": "Kotzia",
     "section": "regions",
     "href": "/regions/drakharpan/nations/kotzia",
-    "source_relative_path": "regions/Drakharpan/nations/Kotzia.md",
+    "source_relative_path": "regions/Drakharpan/nations/Kotzia/Kotzia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -385,7 +385,7 @@
     "title": "Nalelia",
     "section": "regions",
     "href": "/regions/drakharpan/nations/nalelia",
-    "source_relative_path": "regions/Drakharpan/nations/Nalelia.md",
+    "source_relative_path": "regions/Drakharpan/nations/Nalelia/Nalelia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -394,7 +394,7 @@
     "title": "Nazelia",
     "section": "regions",
     "href": "/regions/drakharpan/nations/nazelia",
-    "source_relative_path": "regions/Drakharpan/nations/Nazelia.md",
+    "source_relative_path": "regions/Drakharpan/nations/Nazelia/Nazelia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -403,7 +403,7 @@
     "title": "Nika",
     "section": "regions",
     "href": "/regions/drakharpan/nations/nika",
-    "source_relative_path": "regions/Drakharpan/nations/Nika.md",
+    "source_relative_path": "regions/Drakharpan/nations/Nika/Nika.md",
     "aliases": [],
     "navboxes": []
   },
@@ -424,7 +424,7 @@
     "title": "Orvara",
     "section": "regions",
     "href": "/regions/drakharpan/nations/orvara",
-    "source_relative_path": "regions/Drakharpan/nations/Orvara.md",
+    "source_relative_path": "regions/Drakharpan/nations/Orvara/Orvara.md",
     "aliases": [],
     "navboxes": []
   },
@@ -583,7 +583,7 @@
     "title": "Ulekh",
     "section": "regions",
     "href": "/regions/drakharpan/nations/ulekh",
-    "source_relative_path": "regions/Drakharpan/nations/Ulekh.md",
+    "source_relative_path": "regions/Drakharpan/nations/Ulekh/Ulekh.md",
     "aliases": [],
     "navboxes": []
   },
@@ -592,7 +592,7 @@
     "title": "Ulvasia",
     "section": "regions",
     "href": "/regions/drakharpan/nations/ulvasia",
-    "source_relative_path": "regions/Drakharpan/nations/Ulvasia.md",
+    "source_relative_path": "regions/Drakharpan/nations/Ulvasia/Ulvasia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -601,7 +601,7 @@
     "title": "Unaxia",
     "section": "regions",
     "href": "/regions/drakharpan/nations/unaxia",
-    "source_relative_path": "regions/Drakharpan/nations/Unaxia.md",
+    "source_relative_path": "regions/Drakharpan/nations/Unaxia/Unaxia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -619,7 +619,7 @@
     "title": "Varenia",
     "section": "regions",
     "href": "/regions/drakharpan/nations/varenia",
-    "source_relative_path": "regions/Drakharpan/nations/Varenia.md",
+    "source_relative_path": "regions/Drakharpan/nations/Varenia/Varenia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -628,7 +628,7 @@
     "title": "Velia",
     "section": "regions",
     "href": "/regions/drakharpan/nations/velia",
-    "source_relative_path": "regions/Drakharpan/nations/Velia.md",
+    "source_relative_path": "regions/Drakharpan/nations/Velia/Velia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -637,7 +637,7 @@
     "title": "Velnaidh",
     "section": "regions",
     "href": "/regions/drakharpan/nations/velnaidh",
-    "source_relative_path": "regions/Drakharpan/nations/Velnaidh.md",
+    "source_relative_path": "regions/Drakharpan/nations/Velnaidh/Velnaidh.md",
     "aliases": [],
     "navboxes": []
   },
@@ -646,7 +646,7 @@
     "title": "Xatia",
     "section": "regions",
     "href": "/regions/drakharpan/nations/xatia",
-    "source_relative_path": "regions/Drakharpan/nations/Xatia.md",
+    "source_relative_path": "regions/Drakharpan/nations/Xatia/Xatia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -685,7 +685,7 @@
     "title": "Xilza",
     "section": "regions",
     "href": "/regions/drakharpan/nations/xilza",
-    "source_relative_path": "regions/Drakharpan/nations/Xilza.md",
+    "source_relative_path": "regions/Drakharpan/nations/Xilza/Xilza.md",
     "aliases": [],
     "navboxes": []
   },
@@ -755,7 +755,7 @@
     "title": "Zalia",
     "section": "regions",
     "href": "/regions/drakharpan/nations/zalia",
-    "source_relative_path": "regions/Drakharpan/nations/Zalia.md",
+    "source_relative_path": "regions/Drakharpan/nations/Zalia/Zalia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -764,7 +764,7 @@
     "title": "Zarada",
     "section": "regions",
     "href": "/regions/drakharpan/nations/zarada",
-    "source_relative_path": "regions/Drakharpan/nations/Zarada.md",
+    "source_relative_path": "regions/Drakharpan/nations/Zarada/Zarada.md",
     "aliases": [],
     "navboxes": []
   },

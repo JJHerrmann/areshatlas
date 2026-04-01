@@ -1,8 +1,8 @@
 {
   "type": "nation",
-  "title": "Xatia",
-  "subtitle": "Principality of Xatia",
-  "source_relative_path": "regions/Drakharpan/nations/Xatia.md",
+  "title": "Velnaidh",
+  "subtitle": "Duchy of Velnaidh",
+  "source_relative_path": "regions/Drakharpan/nations/Velnaidh/Velnaidh.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -14,11 +14,11 @@
       "rows": [
         [
           "Name",
-          "Xatia"
+          "Velnaidh"
         ],
         [
           "Formal Name",
-          "Principality of Xatia"
+          "Duchy of Velnaidh"
         ]
       ]
     },
@@ -36,11 +36,11 @@
       "rows": [
         [
           "Government Type",
-          "Principality"
+          "Duchy"
         ],
         [
           "Capital",
-          "Takhjavand"
+          "Velnaidh"
         ]
       ]
     },
@@ -49,7 +49,7 @@
       "rows": [
         [
           "Population",
-          1373890
+          205820
         ]
       ]
     },
@@ -58,7 +58,7 @@
       "rows": [
         [
           "Map",
-          "Xatia"
+          "Velnaidh"
         ]
       ]
     }
