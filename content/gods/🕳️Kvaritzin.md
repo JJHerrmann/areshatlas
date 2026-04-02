@@ -74,11 +74,17 @@ form_3_name: ""
 form_3_description: ""
 symbolism_notes: ""
 dwelling_place_description: ""
-servants_description: |-
-  - **The God of Ghosts:** _Main Article: [[🕳️Refapilli]]_
-  - **The Mistress of Tombs:** _Main Article: [[🕳️Kevarotzin]]_
-  -**The Psychopomp:** _Main Article: [[🕳️Maavacihuatl]]_
-  -
+servants_description: "- **The God of Ghosts:** _Main Article: [[Refapilli]]_\r
+
+  - **The Mistress of Tombs:** _Main Article: [[Kevarotzin]]_\r
+
+  - **The Lady of Souls:** _Main Article: [[Maavacihuatl]]_\r
+
+  - **The Lord of the Grey Walk:** _Main Article: [[Derequi]]_\r
+
+  - **The God of Tithe:** _Main Article: [[Masehua]]_\r
+
+  - **The Goddess of Mourning:** _Main Article: [[Kinayotl]]_"
 doctrine_overview: ""
 holy_text_1: ""
 holy_text_1_summary: ""
