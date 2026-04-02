@@ -63,6 +63,9 @@
     "consorts": [
       "[[Gozara]]"
     ],
+    "offspring": [
+      "[[Leyala]]"
+    ],
     "parents": [
       "[[Moxilaxaya]]"
     ],
@@ -137,6 +140,7 @@
   "yekala": {
     "offspring": [
       "[[Kathorharab]]",
+      "[[Leyala]]",
       "[[Yatbara]]"
     ],
     "siblings": [
