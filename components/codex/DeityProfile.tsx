@@ -50,22 +50,6 @@ function renderParagraphs(value: unknown, sourceRelativePath: string) {
   ));
 }
 
-function renderList(value: unknown, sourceRelativePath: string) {
-  if (!Array.isArray(value)) return null;
-  const items = value.filter(isFilled);
-  if (!items.length) return null;
-
-  return (
-    <ul>
-      {items.map((item, index) => (
-        <li key={`${String(index)}-${typeof item === "string" ? item : "item"}`}>
-          <SidebarValue value={item} sourceRelativePath={sourceRelativePath} />
-        </li>
-      ))}
-    </ul>
-  );
-}
-
 function renderFieldRows(
   rows: Array<[string, unknown]>,
   sourceRelativePath: string,
@@ -120,22 +104,6 @@ function extractBodySegments(bodyHtml?: string) {
   return { leadHtml, sectionsHtml, sectionTabs };
 }
 
-function hasMeaningfulHtmlSections(html: string) {
-  const normalized = html
-    .replace(/<!--[\s\S]*?-->/g, "")
-    .replace(/<h[1-6]\b[^>]*>[\s\S]*?<\/h[1-6]>/gi, "")
-    .replace(/<p>\s*<\/p>/gi, "")
-    .replace(/<li>\s*<\/li>/gi, "")
-    .replace(/<ul>\s*<\/ul>/gi, "")
-    .replace(/<ol>\s*<\/ol>/gi, "")
-    .replace(/<section\b[^>]*>[\s\S]*?<\/section>/gi, "")
-    .replace(/<[^>]+>/g, "")
-    .replace(/\{\{[^}]+\}\}/g, "")
-    .replace(/\s+/g, " ")
-    .trim();
-  return normalized.length > 0;
-}
-
 function linkedItemsFromValue(value: unknown, sourceRelativePath: string) {
   const values = Array.isArray(value) ? value : typeof value === "string" ? [value] : [];
   const seen = new Set<string>();
@@ -165,7 +133,6 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
     [text(frontmatter.form_3_name), frontmatter.form_3_description],
   ].filter(([name, description]) => Boolean(name) && isFilled(description)) as Array<[string, unknown]>;
 
-  const holyDays = Array.isArray(frontmatter.holy_days) ? frontmatter.holy_days.filter(isFilled) : [];
   const derivedRelations = getDerivedDeityRelations(sourceRelativePath);
   const mergedConsorts = mergeDerivedRelationValues(frontmatter.consorts || frontmatter.consort, derivedRelations.consorts, sourceRelativePath);
   const mergedAllies = mergeDerivedRelationValues(frontmatter.allies, derivedRelations.allies, sourceRelativePath);
@@ -219,69 +186,18 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
         ) : null}
       </>
     )),
-    createSection("Symbols", renderFieldRows(
-      [
-        ["Primary Symbol", frontmatter.primary_symbol],
-        ["Secondary Symbols", frontmatter.secondary_symbols],
-        ["Sacred Number", frontmatter.sacred_number],
-        ["Sacred Colors", frontmatter.sacred_colors],
-        ["Forbidden Colors", frontmatter.forbidden_colors],
-        ["Sacred Stones", frontmatter.sacred_stones],
-        ["Sacred Objects", frontmatter.sacred_objects],
-        ["Sacred Weapons", frontmatter.sacred_weapons],
-      ],
-      sourceRelativePath,
-    )),
-    createSection("Dwelling Place", renderParagraphs(frontmatter.dwelling_place, sourceRelativePath)),
-    createSection("Servants", renderParagraphs(frontmatter.servants_description, sourceRelativePath)),
     createSection(
-      "Worship",
-      <>
-        {renderFieldRows(
-          [
-            ["Church Name", frontmatter.church_name],
-            ["Central Authority", frontmatter.central_authority],
-            ["Regional Titles", frontmatter.regional_titles],
-            ["Temple Titles", frontmatter.temple_titles],
-            ["Clergy Titles", frontmatter.clergy_titles],
-            ["Religious Orders", frontmatter.religious_orders],
-            ["Holy Texts", frontmatter.holy_texts],
-            ["Apocrypha", frontmatter.apocrypha],
-          ],
-          sourceRelativePath,
-        )}
-        {renderParagraphs(frontmatter.doctrine_overview, sourceRelativePath)}
-      </>,
+      "Dwelling Place",
+      renderParagraphs(frontmatter.dwelling_place_description, sourceRelativePath),
     ),
+    createSection("Servants", renderParagraphs(frontmatter.servants_description, sourceRelativePath)),
+    createSection("Doctrine", renderParagraphs(frontmatter.doctrine_overview, sourceRelativePath)),
     createSection(
       "Religious Practices",
       <>
         {renderParagraphs(frontmatter.practices_overview, sourceRelativePath)}
-        {holyDays.length ? (
-          <div className="codex-frontmatter-panel mt-4 grid gap-3 p-4">
-            <div className="grid gap-1">
-              <dt className="codex-frontmatter-key">Holy Days</dt>
-              <dd className="codex-frontmatter-value">
-                <SidebarValue value={holyDays} sourceRelativePath={sourceRelativePath} />
-              </dd>
-            </div>
-          </div>
-        ) : null}
         {renderParagraphs(frontmatter.customs_description, sourceRelativePath)}
         {renderParagraphs(frontmatter.taboos_overview, sourceRelativePath)}
-        {renderList(frontmatter.taboos, sourceRelativePath)}
-      </>,
-    ),
-    createSection(
-      "Virtues and Vices",
-      <>
-        {renderFieldRows(
-          [
-            ["Virtues", frontmatter.virtues],
-            ["Vices", frontmatter.vices],
-          ],
-          sourceRelativePath,
-        )}
       </>,
     ),
     createSection(
@@ -294,7 +210,7 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
     createSection("Notes", renderParagraphs(frontmatter.notes, sourceRelativePath)),
   ].filter((section): section is DeitySection => Boolean(section));
   const hasStructuredSections = sections.length > 0;
-  const hasBodySections = hasMeaningfulHtmlSections(sectionsHtml) && (sectionTabs.length > 0 || Boolean(sectionsHtml));
+  const hasBodySections = false;
 
   return (
     <article className="codex-entry-body codex-prose" data-article-outline-root="true">
@@ -331,20 +247,6 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
         <div className="codex-support-grid">
           <RelatedEntitiesCard title="Related Deities" items={relatedEntities} />
         </div>
-      ) : null}
-
-      {(mergedParents.length || mergedSiblings.length || mergedOffspring.length || mergedConsorts.length || mergedAllies.length || mergedFoes.length) ? (
-        renderFieldRows(
-          [
-            ["Parents", mergedParents],
-            ["Siblings", mergedSiblings],
-            ["Offspring", mergedOffspring],
-            ["Consort(s)", mergedConsorts],
-            ["Allies", mergedAllies],
-            ["Foes", mergedFoes],
-          ],
-          sourceRelativePath,
-        )
       ) : null}
 
       {hasBodySections ? (
