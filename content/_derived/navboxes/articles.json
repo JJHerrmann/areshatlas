@@ -9,15 +9,6 @@
     "navboxes": []
   },
   {
-    "slug": "apusimi-orcish",
-    "title": "Apusimi (Orcish)",
-    "section": "languages",
-    "href": "/languages/apusimi-orcish",
-    "source_relative_path": "cultures/language/Apusimi (Orcish).md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
     "slug": "apusimi-orcish-expanded",
     "title": "Apusimi (Orcish) - Expanded",
     "section": "languages",
@@ -44,15 +35,6 @@
     "section": "regions",
     "href": "/regions/drakharpan/nations/barkhia",
     "source_relative_path": "regions/Drakharpan/nations/Barkhia/Barkhia.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
-    "slug": "belsahnia",
-    "title": "Belsahnia",
-    "section": "regions",
-    "href": "/regions/drakharpan/nations/belsahnia",
-    "source_relative_path": "regions/Drakharpan/nations/Belsahnia/Belsahnia.md",
     "aliases": [],
     "navboxes": []
   },
@@ -87,6 +69,15 @@
     ]
   },
   {
+    "slug": "dagatmayu-goblinoid",
+    "title": "Dagatmayu (Goblinoid)",
+    "section": "languages",
+    "href": "/languages/dagatmayu-goblinoid",
+    "source_relative_path": "cultures/language/Dagatmayu (Goblinoid).md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "derequi",
     "title": "🕳️Derequi",
     "section": "pantheon",
@@ -110,15 +101,6 @@
     "section": "regions",
     "href": "/regions/ereslim",
     "source_relative_path": "regions/Ereslim/ereslim.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
-    "slug": "goblinoid-tagalog-quechua",
-    "title": "Goblinoid (Tagalog-Quechua)",
-    "section": "languages",
-    "href": "/languages/goblinoid-tagalog-quechua",
-    "source_relative_path": "cultures/language/Goblinoid (Tagalog-Quechua).md",
     "aliases": [],
     "navboxes": []
   },
@@ -163,15 +145,6 @@
       "areshnaati-deities",
       "dieties-of-areshnaat"
     ]
-  },
-  {
-    "slug": "karakeel-dwarven",
-    "title": "Karakeel (Dwarven)",
-    "section": "languages",
-    "href": "/languages/karakeel-dwarven",
-    "source_relative_path": "cultures/language/Karakeel (Dwarven).md",
-    "aliases": [],
-    "navboxes": []
   },
   {
     "slug": "karakeel-dwarven-expanded",
@@ -255,15 +228,6 @@
     "section": "regions",
     "href": "/regions/drakharpan/nations/kotzia",
     "source_relative_path": "regions/Drakharpan/nations/Kotzia/Kotzia.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
-    "slug": "kutnylev-gnomish",
-    "title": "Kutnylev (Gnomish)",
-    "section": "languages",
-    "href": "/languages/kutnylev-gnomish",
-    "source_relative_path": "cultures/language/Kutnylev (Gnomish).md",
     "aliases": [],
     "navboxes": []
   },
@@ -381,6 +345,15 @@
     ]
   },
   {
+    "slug": "mushazir",
+    "title": "Mushazir",
+    "section": "regions",
+    "href": "/regions/drakharpan/nations/mushazir",
+    "source_relative_path": "regions/Drakharpan/nations/Mushazir/Mushazir.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "nalelia",
     "title": "Nalelia",
     "section": "regions",
@@ -400,10 +373,10 @@
   },
   {
     "slug": "nika",
-    "title": "Nika",
+    "title": "Raudskoda",
     "section": "regions",
-    "href": "/regions/drakharpan/nations/nika",
-    "source_relative_path": "regions/Drakharpan/nations/Nika/Nika.md",
+    "href": "/regions/drakharpan/nations/raudskoda",
+    "source_relative_path": "regions/Drakharpan/nations/Raudskoda/Raudskoda.md",
     "aliases": [],
     "navboxes": []
   },
@@ -663,15 +636,6 @@
     ]
   },
   {
-    "slug": "xibanal-elvish",
-    "title": "Xibanal (Elvish)",
-    "section": "languages",
-    "href": "/languages/xibanal-elvish",
-    "source_relative_path": "cultures/language/Xibanal (Elvish).md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
     "slug": "xibanal-elvish-expanded",
     "title": "Xibanal (Elvish) - Expanded",
     "section": "languages",
@@ -740,15 +704,6 @@
       "ramtilim",
       "yekatlan"
     ]
-  },
-  {
-    "slug": "yolca-halfling",
-    "title": "Yolca (Halfling)",
-    "section": "languages",
-    "href": "/languages/yolca-halfling",
-    "source_relative_path": "cultures/language/Yolca (Halfling).md",
-    "aliases": [],
-    "navboxes": []
   },
   {
     "slug": "zalia",

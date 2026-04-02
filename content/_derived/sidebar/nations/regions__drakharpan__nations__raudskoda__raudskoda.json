@@ -1,8 +1,8 @@
 {
   "type": "nation",
-  "title": "Belsahnia",
-  "subtitle": "Lugalmarka Belsahnia",
-  "source_relative_path": "regions/Drakharpan/nations/Belsahnia/Belsahnia.md",
+  "title": "Raudskoda",
+  "subtitle": "Grand Duchy of Raudskoda",
+  "source_relative_path": "regions/Drakharpan/nations/Raudskoda/Raudskoda.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -14,11 +14,11 @@
       "rows": [
         [
           "Name",
-          "Belsahnia"
+          "Raudskoda"
         ],
         [
           "Formal Name",
-          "Lugalmarka Belsahnia"
+          "Grand Duchy of Raudskoda"
         ]
       ]
     },
@@ -36,11 +36,11 @@
       "rows": [
         [
           "Government Type",
-          "Sultanate"
+          "Grand Duchy"
         ],
         [
           "Capital",
-          "Thethe"
+          "Raudhal"
         ]
       ]
     },
@@ -49,7 +49,7 @@
       "rows": [
         [
           "Population",
-          1198438
+          475312
         ]
       ]
     },
@@ -58,7 +58,7 @@
       "rows": [
         [
           "Map",
-          "Belsahnia"
+          "Nika"
         ]
       ]
     }

@@ -1,13 +1,13 @@
 ---
 type: nation
-name: Nika
-formal_name: "Grand Duchy of Nika"
+name: Raudskoda
+formal_name: Grand Duchy of Raudskoda
 continent: Drakharpan
 location: ""
-government_type: "Grand Duchy"
+government_type: Grand Duchy
 hierarchy: []
 ruler: ""
-capital: "Nika"
+capital: Raudhal
 capital_population:
 alliances: []
 hostilities: []
@@ -19,7 +19,7 @@ important_persons: []
 pantheon: ""
 patron: ""
 cultural_templates: []
-map: "Nika"
+map: Nika
 slug: nika
 fmg_state_id: "17"
 fmg_cells: "61"
@@ -27,9 +27,9 @@ fmg_burg_count: "9"
 fmg_area_mi2: "110952"
 fmg_rural_population: "422889"
 fmg_urban_population: "52423"
-fmg_full_name: "Grand Duchy of Nika"
-fmg_culture: "Nekorskoda"
-fmg_state_type: "Highland"
+fmg_full_name: Grand Duchy of Raudskoda
+fmg_culture: Rammskoda
+fmg_state_type: Highland
 fmg_color: "#9be979"
 fmg_expansionism: "1"
 navboxes: []
@@ -46,13 +46,13 @@ Nika, formally Grand Duchy of Nika, is a recorded state of [[Drakharpan]] derive
 
 ## Government and Power
 
-Nika is currently recorded in FMG as a Grand Duchy centered on [[Nika]].
+Nika is currently recorded in FMG as a Grand Duchy centered on [[Raudskoda]].
 
 [Describe succession, noble structures, councils, military chains of command, and how authority is actually exercised.]
 
 ## Demography and Settlements
 
-- Capital: [[Nika]]
+- Capital: [[Raudskoda]]
 - Recorded culture: Nekorskoda
 - FMG state type: Highland
 - Recorded burg count: 9
@@ -75,4 +75,4 @@ Nika is currently recorded in FMG as a Grand Duchy centered on [[Nika]].
 ## Related Pages
 
 - [[Drakharpan]]
-- [[Nika]]
+- [[Raudskoda]]

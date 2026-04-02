@@ -1,13 +1,13 @@
 ---
 type: nation
-name: Belsahnia
-formal_name: "Lugalmarka Belsahnia"
+name: Mushazir
+formal_name: Lugalmarka Mushazir
 continent: Drakharpan
 location: ""
-government_type: "Sultanate"
+government_type: Sultanate
 hierarchy: []
 ruler: ""
-capital: "Thethe"
+capital: Thethe
 capital_population:
 alliances: []
 hostilities: []
@@ -19,17 +19,17 @@ important_persons: []
 pantheon: ""
 patron: ""
 cultural_templates: []
-map: "Belsahnia"
-slug: belsahnia
+map: Mushazir
+slug: mushazir
 fmg_state_id: "22"
 fmg_cells: "368"
 fmg_burg_count: "39"
 fmg_area_mi2: "652704"
 fmg_rural_population: "1124850"
 fmg_urban_population: "73588"
-fmg_full_name: "Lugalmarka Belsahnia"
-fmg_culture: "Kancha"
-fmg_state_type: "Generic"
+fmg_full_name: Lugalmarka Mushazir
+fmg_culture: Kancha
+fmg_state_type: Generic
 fmg_color: "#2e98df"
 fmg_expansionism: "0.5"
 navboxes: []
@@ -42,13 +42,13 @@ Belsahnia, formally Lugalmarka Belsahnia, is a recorded state of [[Drakharpan]] 
 
 ## Geography
 
-[Describe where Belsahnia sits within [[Drakharpan]], what natural barriers or corridors define it, and how its terrain shapes travel, settlement, and war.]
+Describe where Belsahnia sits within [[Drakharpan]], what natural barriers or corridors define it, and how its terrain shapes travel, settlement, and war.]
 
 ## Government and Power
 
 Belsahnia is currently recorded in FMG as a Sultanate centered on [[Thethe]].
 
-[Describe succession, noble structures, councils, military chains of command, and how authority is actually exercised.]
+Describe succession, noble structures, councils, military chains of command, and how authority is actually exercised.
 
 ## Demography and Settlements
 
@@ -62,7 +62,7 @@ Belsahnia is currently recorded in FMG as a Sultanate centered on [[Thethe]].
 
 ## Economy
 
-[Describe resource extraction, trade, tax structures, strategic roads, ports, rivers, market towns, and any major economic bottlenecks.]
+Describe resource extraction, trade, tax structures, strategic roads, ports, rivers, market towns, and any major economic bottlenecks.
 
 ## Religion and Cosmology
 

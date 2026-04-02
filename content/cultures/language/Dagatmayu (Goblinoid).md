@@ -1,5 +1,5 @@
 # Goblinoid Naming Canon
-# Lungbayin
+# Dagatmayu
 
 A compact naming framework for goblinoid place names using:
 
