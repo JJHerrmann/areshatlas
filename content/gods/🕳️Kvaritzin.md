@@ -74,12 +74,16 @@ form_3_name: ""
 form_3_description: ""
 symbolism_notes: ""
 dwelling_place_description: ""
-servants_description: ""
+servants_description: |-
+  - **The God of Ghosts:** _Main Article: [[🕳️Refapilli]]_
+  - **The Mistress of Tombs:** _Main Article: [[🕳️Kevarotzin]]_
+  -**The Psychopomp:** _Main Article: [[🕳️Maavacihuatl]]_
+  -
 doctrine_overview: ""
-holy_text_1: "The God of Ghosts"
-holy_text_1_summary: "_Main Article: [[🕳️Refapilli]]"
-holy_text_2: "The Mistress of Tombs"
-holy_text_2_summary: "Main Article: [[🕳️Kevarotzin]]_"
+holy_text_1: ""
+holy_text_1_summary: ""
+holy_text_2: ""
+holy_text_2_summary: ""
 apocrypha_1: ""
 apocrypha_1_summary: ""
 apocrypha_2: ""
