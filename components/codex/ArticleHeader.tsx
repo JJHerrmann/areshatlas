@@ -17,6 +17,7 @@ type ArticleHeaderProps = {
   label: string;
   title: string;
   dek?: string | null;
+  statusBadge?: string | null;
   sourceNote?: string | null;
   sourceRelativePath?: string;
   searchItems: SearchItem[];
@@ -27,6 +28,7 @@ export default function ArticleHeader({
   label,
   title,
   dek,
+  statusBadge,
   sourceNote,
   sourceRelativePath,
   searchItems,
@@ -40,6 +42,7 @@ export default function ArticleHeader({
 
       <div className="codex-article-header-main">
         <PlateLabel>{label}</PlateLabel>
+        {statusBadge ? <div className="codex-status-badge">{statusBadge}</div> : null}
         <ArticleTitle title={title} sourceRelativePath={sourceRelativePath} />
         <ArticleDek text={dek} sourceRelativePath={sourceRelativePath} />
         {sourceNote ? <p className="codex-source-note">{sourceNote}</p> : null}

@@ -120,6 +120,22 @@ function extractBodySegments(bodyHtml?: string) {
   return { leadHtml, sectionsHtml, sectionTabs };
 }
 
+function hasMeaningfulHtmlSections(html: string) {
+  const normalized = html
+    .replace(/<!--[\s\S]*?-->/g, "")
+    .replace(/<h[1-6]\b[^>]*>[\s\S]*?<\/h[1-6]>/gi, "")
+    .replace(/<p>\s*<\/p>/gi, "")
+    .replace(/<li>\s*<\/li>/gi, "")
+    .replace(/<ul>\s*<\/ul>/gi, "")
+    .replace(/<ol>\s*<\/ol>/gi, "")
+    .replace(/<section\b[^>]*>[\s\S]*?<\/section>/gi, "")
+    .replace(/<[^>]+>/g, "")
+    .replace(/\{\{[^}]+\}\}/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  return normalized.length > 0;
+}
+
 function linkedItemsFromValue(value: unknown, sourceRelativePath: string) {
   const values = Array.isArray(value) ? value : typeof value === "string" ? [value] : [];
   const seen = new Set<string>();
@@ -278,7 +294,7 @@ export default function DeityProfile({ frontmatter, sourceRelativePath, bodyHtml
     createSection("Notes", renderParagraphs(frontmatter.notes, sourceRelativePath)),
   ].filter((section): section is DeitySection => Boolean(section));
   const hasStructuredSections = sections.length > 0;
-  const hasBodySections = sectionTabs.length > 0 || Boolean(sectionsHtml);
+  const hasBodySections = hasMeaningfulHtmlSections(sectionsHtml) && (sectionTabs.length > 0 || Boolean(sectionsHtml));
 
   return (
     <article className="codex-entry-body codex-prose" data-article-outline-root="true">

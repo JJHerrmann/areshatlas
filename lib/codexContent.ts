@@ -41,6 +41,13 @@ export type RenderedDocument = {
   frontmatter: Record<string, unknown>;
 };
 
+export type DeityCompletion = {
+  filled: number;
+  total: number;
+  ratio: number;
+  isStub: boolean;
+};
+
 export type DerivedArticle = {
   slug: string;
   title: string;
@@ -301,6 +308,200 @@ function normalizeStringArray(value: unknown) {
     }
     return [];
   });
+}
+
+function resolveFrontmatterValue(frontmatter: Record<string, unknown>, keyPath: string): unknown {
+  return keyPath.split(".").reduce<unknown>((current, segment) => {
+    if (!current || typeof current !== "object" || Array.isArray(current)) return undefined;
+    return (current as Record<string, unknown>)[segment];
+  }, frontmatter);
+}
+
+function stringifyFrontmatterValue(value: unknown, standalone: boolean): string {
+  if (value == null) return "";
+  if (Array.isArray(value)) {
+    const items = value
+      .flatMap((item) => {
+        if (item == null) return [];
+        if (typeof item === "string" || typeof item === "number" || typeof item === "boolean") {
+          const normalized = String(item).trim();
+          return normalized ? [normalized] : [];
+        }
+        return [];
+      });
+    if (items.length === 0) return "";
+    return standalone ? items.map((item) => `- ${item}`).join("\n") : items.join(", ");
+  }
+  if (typeof value === "string") return value.trim();
+  if (typeof value === "number" || typeof value === "boolean") return String(value);
+  return "";
+}
+
+function removeSourceMarkers(value: string) {
+  return value.replace(/\s*<!--\s*fm:[^>]+-->\s*/g, "");
+}
+
+function interpolateFrontmatterTokens(markdown: string, frontmatter: Record<string, unknown>) {
+  return markdown
+    .split(/\r?\n/)
+    .map((line) => {
+      const standaloneMatch = line.match(/^(\s*)\{\{\s*([A-Za-z0-9_.]+)\s*\}\}(\s*<!--.*-->)?\s*$/);
+      if (standaloneMatch) {
+        const [, indent, keyPath] = standaloneMatch;
+        const resolved = stringifyFrontmatterValue(resolveFrontmatterValue(frontmatter, keyPath), true);
+        if (!resolved) return "";
+        return resolved
+          .split("\n")
+          .map((entry) => `${indent}${entry}`)
+          .join("\n");
+      }
+
+      const replaced = line.replace(/\{\{\s*([A-Za-z0-9_.]+)\s*\}\}/g, (_match, keyPath: string) => {
+        const resolved = stringifyFrontmatterValue(resolveFrontmatterValue(frontmatter, keyPath), false);
+        return resolved;
+      });
+
+      const cleaned = removeSourceMarkers(replaced).trim();
+      if (!cleaned) return "";
+      if (/^(?:[-*]\s*)?\*\*[^*]+:\*\*$/.test(cleaned)) return "";
+      if (/^(?:[-*]\s*)?\*\*[^*]+:\*\*\s*$/.test(cleaned)) return "";
+      if (/^#{1,6}\s*$/.test(cleaned)) return "";
+      if (/^#{1,6}\s*[^#]+:\s*$/.test(cleaned)) return "";
+      if (/^[-*]\s*$/.test(cleaned)) return "";
+      return replaced;
+    })
+    .join("\n");
+}
+
+function cleanupInterpolatedMarkdown(markdown: string) {
+  return markdown
+    .replace(/[ \t]+$/gm, "")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+const DEITY_COMPLETION_KEYS = [
+  "summary",
+  "epithet",
+  "pantheon",
+  "divine_rank",
+  "gender",
+  "nature",
+  "ethos",
+  "major_influence",
+  "minor_influences",
+  "spheres",
+  "avatars",
+  "parents",
+  "siblings",
+  "offspring",
+  "consorts",
+  "allies",
+  "foes",
+  "dwelling_place",
+  "primary_symbol",
+  "secondary_symbols",
+  "sacred_number",
+  "sacred_colors",
+  "forbidden_colors",
+  "sacred_stones",
+  "sacred_materials",
+  "sacred_objects",
+  "sacred_weapons",
+  "church_name",
+  "central_authority",
+  "regional_titles",
+  "temple_titles",
+  "clergy_titles",
+  "religious_orders",
+  "holy_texts",
+  "apocrypha",
+  "virtues",
+  "vices",
+  "holy_days",
+  "taboos",
+  "physical_description",
+  "form_1_name",
+  "form_1_description",
+  "form_2_name",
+  "form_2_description",
+  "form_3_name",
+  "form_3_description",
+  "symbolism_notes",
+  "dwelling_place_description",
+  "servants_description",
+  "doctrine_overview",
+  "holy_text_1",
+  "holy_text_1_summary",
+  "holy_text_2",
+  "holy_text_2_summary",
+  "apocrypha_1",
+  "apocrypha_1_summary",
+  "apocrypha_2",
+  "apocrypha_2_summary",
+  "apocrypha_3",
+  "apocrypha_3_summary",
+  "virtue_1",
+  "virtue_1_description",
+  "virtue_2",
+  "virtue_2_description",
+  "virtue_3",
+  "virtue_3_description",
+  "vice_1",
+  "vice_1_description",
+  "vice_2",
+  "vice_2_description",
+  "vice_3",
+  "vice_3_description",
+  "theological_mission",
+  "social_mission",
+  "regional_authority_description",
+  "temple_hierarchy_description",
+  "priesthood_description",
+  "order_1",
+  "order_1_description",
+  "order_2",
+  "order_2_description",
+  "order_3",
+  "order_3_description",
+  "garments_overview",
+  "laity_garb",
+  "acolyte_garb",
+  "ordained_garb",
+  "senior_garb",
+  "special_order_garb",
+  "practices_overview",
+  "holy_day_1_name",
+  "holy_day_1_date",
+  "holy_day_1_observed_by",
+  "holy_day_1_description",
+  "holy_day_2_name",
+  "holy_day_2_date",
+  "holy_day_2_observed_by",
+  "holy_day_2_description",
+  "customs_description",
+  "rite_name",
+  "rite_description",
+  "taboo_1",
+  "taboo_2",
+  "taboo_3",
+  "notes",
+].filter(Boolean);
+
+function isFilledFrontmatterValue(value: unknown): boolean {
+  if (value == null) return false;
+  if (typeof value === "string") return value.trim().length > 0;
+  if (Array.isArray(value)) return value.some(isFilledFrontmatterValue);
+  if (typeof value === "object") return Object.values(value as Record<string, unknown>).some(isFilledFrontmatterValue);
+  return true;
+}
+
+export function getDeityCompletion(frontmatter: Record<string, unknown>): DeityCompletion | null {
+  if (String(frontmatter.type || "").trim().toLowerCase() !== "deity") return null;
+  const total = DEITY_COMPLETION_KEYS.length;
+  const filled = DEITY_COMPLETION_KEYS.reduce((count, key) => count + (isFilledFrontmatterValue(frontmatter[key]) ? 1 : 0), 0);
+  const ratio = total > 0 ? filled / total : 0;
+  return { filled, total, ratio, isStub: ratio < 0.5 };
 }
 
 function extractNodeText(node: unknown): string {
@@ -687,8 +888,10 @@ function resolveObsidianHref(target: string, sourceRelativePath?: string) {
   return null;
 }
 
-function preprocessMarkdown(markdown: string, sourceRelativePath?: string) {
-  return markdown
+function preprocessMarkdown(markdown: string, frontmatter: Record<string, unknown>, sourceRelativePath?: string) {
+  return cleanupInterpolatedMarkdown(
+    interpolateFrontmatterTokens(markdown, frontmatter)
+  )
     .replace(/```dataviewjs[\s\S]*?```/g, "")
     .replace(/(?<!!)\[\[([^[\]]+)\]\]/g, (_match, target: string) => {
       const [rawTarget, rawAlias] = String(target).split("|");
@@ -742,7 +945,11 @@ function rehypeCodexHeadings() {
   };
 }
 
-async function renderMarkdown(markdown: string, sourceRelativePath?: string) {
+async function renderMarkdown(
+  markdown: string,
+  frontmatter: Record<string, unknown>,
+  sourceRelativePath?: string,
+) {
   const processed = await unified()
     .use(remarkParse)
     .use(remarkGfm)
@@ -750,7 +957,7 @@ async function renderMarkdown(markdown: string, sourceRelativePath?: string) {
     .use(remarkRehype)
     .use(rehypeCodexHeadings)
     .use(rehypeStringify)
-    .process(preprocessMarkdown(markdown, sourceRelativePath));
+    .process(preprocessMarkdown(markdown, frontmatter, sourceRelativePath));
   return String(processed);
 }
 
@@ -921,7 +1128,7 @@ export async function getRenderedDocument(section: SectionConfig, slugParts: str
     readFirstNonEmptyLine(parsed.content) ||
     section.summary;
   const relativePath = path.relative(getSectionRoot(section), filePath).replace(/\\/g, "/");
-  const html = await renderMarkdown(parsed.content, `${section.folder}/${relativePath}`);
+  const html = await renderMarkdown(parsed.content, parsed.data as Record<string, unknown>, `${section.folder}/${relativePath}`);
 
   return {
     title,
@@ -948,7 +1155,7 @@ export async function getRenderedOverviewDocument(section: SectionConfig, slugPa
     readFirstNonEmptyLine(parsed.content) ||
     section.summary;
   const relativePath = path.relative(getSectionRoot(section), filePath).replace(/\\/g, "/");
-  const html = await renderMarkdown(parsed.content, `${section.folder}/${relativePath}`);
+  const html = await renderMarkdown(parsed.content, parsed.data as Record<string, unknown>, `${section.folder}/${relativePath}`);
 
   return {
     title,
