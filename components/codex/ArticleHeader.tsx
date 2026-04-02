@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import CoordinateRule from "@/components/codex/CoordinateRule";
 import ArticleDek from "@/components/codex/ArticleDek";
 import ArticleTitle from "@/components/codex/ArticleTitle";
@@ -17,7 +18,7 @@ type ArticleHeaderProps = {
   label: string;
   title: string;
   dek?: string | null;
-  statusBadge?: string | null;
+  statusNotice?: ReactNode;
   sourceNote?: string | null;
   sourceRelativePath?: string;
   searchItems: SearchItem[];
@@ -28,7 +29,7 @@ export default function ArticleHeader({
   label,
   title,
   dek,
-  statusBadge,
+  statusNotice,
   sourceNote,
   sourceRelativePath,
   searchItems,
@@ -42,7 +43,7 @@ export default function ArticleHeader({
 
       <div className="codex-article-header-main">
         <PlateLabel>{label}</PlateLabel>
-        {statusBadge ? <div className="codex-status-badge">{statusBadge}</div> : null}
+        {statusNotice ? <div className="codex-status-notice">{statusNotice}</div> : null}
         <ArticleTitle title={title} sourceRelativePath={sourceRelativePath} />
         <ArticleDek text={dek} sourceRelativePath={sourceRelativePath} />
         {sourceNote ? <p className="codex-source-note">{sourceNote}</p> : null}

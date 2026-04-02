@@ -1317,18 +1317,24 @@ body {
     var(--token-components-articleHeader-borderBottomColor);
 }
 
-.codex-status-badge {
-  width: fit-content;
-  border: 1px solid color-mix(in srgb, var(--token-color-primitive-gold-700) 52%, var(--codex-line) 48%);
-  background: color-mix(in srgb, var(--token-color-semantic-bg-surfaceRaised) 70%, var(--token-color-primitive-gold-700) 30%);
+.codex-status-notice {
+  display: grid;
+  gap: 0.45rem;
+  max-width: min(100%, 52rem);
+  padding: 0.9rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--codex-line) 65%, #90a7d6 35%);
+  background: color-mix(in srgb, white 55%, #dce7ff 45%);
   color: var(--token-color-semantic-text-strong);
-  padding: 0.28rem 0.72rem;
-  border-radius: 999px;
-  font-size: 0.72rem;
-  line-height: 1;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-weight: 700;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, white 70%, transparent 30%);
+}
+
+.codex-status-notice p {
+  margin: 0;
+}
+
+.codex-status-notice a {
+  color: var(--token-color-semantic-text-link);
+  text-decoration: underline;
 }
 
 .codex-article-dek {

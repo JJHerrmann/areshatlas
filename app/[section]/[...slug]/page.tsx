@@ -20,6 +20,8 @@ import {
   getSectionView,
 } from "@/lib/codexContent";
 
+const STUB_REQUEST_HREF = "https://github.com/JJHerrmann/areshatlas/issues/new";
+
 function getArticleDek(frontmatter: Record<string, unknown>, fallback: string) {
   const type = typeof frontmatter.type === "string" ? frontmatter.type : "";
   if (type === "deity") {
@@ -30,10 +32,32 @@ function getArticleDek(frontmatter: Record<string, unknown>, fallback: string) {
   return fallback;
 }
 
-function getArticleStatusBadge(frontmatter: Record<string, unknown>) {
+function getStubCategory(frontmatter: Record<string, unknown>, sectionTitle: string) {
+  const type = typeof frontmatter.type === "string" ? frontmatter.type.trim().toLowerCase() : "";
+  if (type) return type;
+  return sectionTitle.trim().toLowerCase();
+}
+
+function getArticleStatusNotice(frontmatter: Record<string, unknown>, sectionTitle: string) {
   const completion = getDeityCompletion(frontmatter);
   if (!completion?.isStub) return null;
-  return `Stub · ${Math.round(completion.ratio * 100)}% complete`;
+  const category = getStubCategory(frontmatter, sectionTitle);
+  return (
+    <>
+      <p>
+        This article is a stub relating to{" "}
+        <strong>{category}</strong>. You can help expand it by submitting a character
+        that uses the related information.
+      </p>
+      <p>
+        To request more information about this article, please{" "}
+        <a href={STUB_REQUEST_HREF} target="_blank" rel="noreferrer">
+          open a codex request
+        </a>
+        .
+      </p>
+    </>
+  );
 }
 
 type NestedSectionPageProps = {
@@ -117,7 +141,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             label={section.label}
             title={document.title}
             dek={getArticleDek(document.frontmatter, document.summary)}
-            statusBadge={getArticleStatusBadge(document.frontmatter)}
+            statusNotice={getArticleStatusNotice(document.frontmatter, section.title)}
             searchItems={searchItems}
             sourceRelativePath={document.sourcePath}
           />

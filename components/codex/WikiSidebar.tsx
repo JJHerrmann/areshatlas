@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getSectionEntryCount, sections } from "@/lib/codexContent";
 import { getFrontpageHero } from "@/lib/frontpageContent";
 import ArticleOutlineNav from "@/components/codex/ArticleOutlineNav";
@@ -9,10 +10,12 @@ export default async function WikiSidebar() {
     <div className="wiki-sidebar-stack">
       <section className="wiki-box wiki-brand-box">
         {hero.logoPath ? (
-          <figure className="wiki-logo">
-            <img src={hero.logoPath} alt={hero.logoAlt} className="wiki-logo-image" />
-            {hero.logoCaption ? <figcaption className="wiki-logo-caption">{hero.logoCaption}</figcaption> : null}
-          </figure>
+          <Link href="/" className="wiki-logo" aria-label="Go to home page">
+            <figure>
+              <img src={hero.logoPath} alt={hero.logoAlt} className="wiki-logo-image" />
+              {hero.logoCaption ? <figcaption className="wiki-logo-caption">{hero.logoCaption}</figcaption> : null}
+            </figure>
+          </Link>
         ) : (
           <div className="wiki-logo wiki-logo-placeholder" aria-hidden="true" />
         )}
