@@ -1317,6 +1317,20 @@ body {
     var(--token-components-articleHeader-borderBottomColor);
 }
 
+.codex-status-badge {
+  width: fit-content;
+  border: 1px solid color-mix(in srgb, var(--token-color-primitive-gold-700) 52%, var(--codex-line) 48%);
+  background: color-mix(in srgb, var(--token-color-semantic-bg-surfaceRaised) 70%, var(--token-color-primitive-gold-700) 30%);
+  color: var(--token-color-semantic-text-strong);
+  padding: 0.28rem 0.72rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .codex-article-dek {
   max-width: min(100%, var(--token-layout-max-width-prose));
   font-size: var(--token-typography-roles-articleDek-fontSize-desktop);

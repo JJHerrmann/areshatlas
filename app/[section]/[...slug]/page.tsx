@@ -8,6 +8,7 @@ import EntryCard from "@/components/codex/EntryCard";
 import NavboxFooter from "@/components/codex/NavboxFooter";
 import NationInfobox from "@/components/codex/NationInfobox";
 import {
+  getDeityCompletion,
   getDeitySidebar,
   getDerivedArticle,
   getNavboxesForSourcePath,
@@ -27,6 +28,12 @@ function getArticleDek(frontmatter: Record<string, unknown>, fallback: string) {
     return [epithet, honorific].filter(Boolean).join(" · ") || fallback;
   }
   return fallback;
+}
+
+function getArticleStatusBadge(frontmatter: Record<string, unknown>) {
+  const completion = getDeityCompletion(frontmatter);
+  if (!completion?.isStub) return null;
+  return `Stub · ${Math.round(completion.ratio * 100)}% complete`;
 }
 
 type NestedSectionPageProps = {
@@ -110,6 +117,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             label={section.label}
             title={document.title}
             dek={getArticleDek(document.frontmatter, document.summary)}
+            statusBadge={getArticleStatusBadge(document.frontmatter)}
             searchItems={searchItems}
             sourceRelativePath={document.sourcePath}
           />
