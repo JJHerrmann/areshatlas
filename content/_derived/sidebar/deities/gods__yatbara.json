@@ -6,7 +6,11 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null,
+    "avatar": {
+      "src": "/content-assets/_images/yatbara_main.png",
+      "alt": "Yatbara",
+      "caption": null
+    },
     "symbol": null
   },
   "sections": [

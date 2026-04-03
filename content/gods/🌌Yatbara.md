@@ -1,11 +1,11 @@
 ---
 type: deity
-name: "Yatbara"
-title: "Yatbara"
-slug: "yatbara"
+name: Yatbara
+title: Yatbara
+slug: yatbara
 section: pantheon
-epithet: "The God of Creation"
-honorific_title: "The Formless One"
+epithet: The God of Creation
+honorific_title: The Formless One
 pantheon:
   - "[[Yekatlan]]"
   - "[[Ramtilim]]"
@@ -13,7 +13,7 @@ divine_rank: ""
 gender: ""
 nature: ""
 ethos: ""
-major_influence: "Creation"
+major_influence: Creation
 minor_influences: []
 spheres: []
 avatars: []
@@ -127,7 +127,8 @@ navboxes:
 tags:
   - deity
   - religion
-primary_topic: "Dieties of Areshnaat"
+primary_topic: Dieties of Areshnaat
+image_avatar: "![[/_image/yatbara_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.
