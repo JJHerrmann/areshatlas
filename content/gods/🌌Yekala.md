@@ -131,6 +131,7 @@ navboxes:
 tags:
   - deity
   - religion
+image_avatar: "![[/_images/yekala_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.
