@@ -1,5 +1,6 @@
 {
 	"nodes":[
+		{"id":"b39b54abe8faa491","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/_images/moxi_main.png","zIndex":1,"x":-796,"y":-1069,"width":314,"height":400},
 		{"id":"7935cc60d5af0877","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/✨Malagad.md","x":-1140,"y":86,"width":200,"height":310,"color":"1"},
 		{"id":"c2276719b78295bf","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/✨Kathorharab.md","x":-927,"y":86,"width":238,"height":302,"color":"1"},
 		{"id":"ed1c7f210e2682b5","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/✨Yaradaat.md","x":-666,"y":86,"width":198,"height":314,"color":"1"},
@@ -11,14 +12,12 @@
 			"styleAttributes":{
 				"border":null
 			},
-			"x":-806,
+			"x":-860,
 			"y":-416,
-			"width":165,
+			"width":219,
 			"height":296,
 			"color":"4"
 		},
-		{"id":"9ed212ece9149474","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌌Niwara.md","x":-580,"y":-416,"width":172,"height":297,"color":"1"},
-		{"id":"ed991a680e084a2c","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌌Yatbara.md","x":-355,"y":-411,"width":171,"height":289,"color":"1"},
 		{
 			"id":"b575aad3d95b85ca",
 			"type":"text",
@@ -77,8 +76,8 @@
 		{"id":"e1be8785b38263c0","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/✨Machul.md","x":-71,"y":125,"width":278,"height":228,"color":"#4b7daa"},
 		{"id":"14d88abf93c80947","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌌Zemana.md","x":-1496,"y":-707,"width":193,"height":297,"color":"4"},
 		{"id":"b4917b079828cc74","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌌Leyala.md","x":-1244,"y":-416,"width":189,"height":307,"color":"1"},
-		{"id":"ecb74db6e6e25cd8","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/✨Xefahua.md","x":-2212,"y":432,"width":209,"height":193,"color":"2"},
-		{"id":"ef762bb72418b5da","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🕳️Kvaritzin.md","x":-1368,"y":380,"width":219,"height":301,"color":"#1c142e"},
+		{"id":"ecb74db6e6e25cd8","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/✨Xefahua.md","x":-2328,"y":151,"width":325,"height":330,"color":"2"},
+		{"id":"ef762bb72418b5da","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🕳️Kvaritzin.md","x":-1368,"y":205,"width":219,"height":476,"color":"#1c142e"},
 		{"id":"75128ababf5b720e","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🕳️Harbaal.md","x":-386,"y":378,"width":187,"height":305,"color":"#1f1627"},
 		{
 			"id":"62534f75c24302ec",
@@ -91,11 +90,8 @@
 			"height":60,
 			"color":"#1e1d1f"
 		},
-		{"id":"78d78c687d157ef9","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/✨Tsayidrah.md","x":-2143,"y":-228,"width":289,"height":281,"color":"2"},
-		{"id":"338ce7a777aeed53","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/✨Raavvah.md","x":-1808,"y":-475,"width":291,"height":252,"color":"3"},
-		{"id":"b70ac94c5bd01d63","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/✨Qatzera.md","x":-2418,"y":-484,"width":182,"height":271,"color":"2"},
+		{"id":"b70ac94c5bd01d63","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/✨Qatzera.md","x":-2647,"y":-514,"width":411,"height":301,"color":"2"},
 		{"id":"1ca3356f1a9fad11","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌌Temaya.md","x":-1460,"y":-1100,"width":387,"height":60},
-		{"id":"3a645beded0f3351","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌌Rexaya.md","x":-927,"y":-1104,"width":388,"height":60,"color":"#0e3b3f"},
 		{"id":"b49a443b62f65307","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌌Tahiwaco.md","x":-366,"y":-1008,"width":195,"height":310,"color":"5"},
 		{"id":"d7a5eb51c1146f72","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌌Moxilaxaya.md","x":-839,"y":-997,"width":222,"height":279,"color":"5"},
 		{"id":"e5b646ba32bf7243","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌌Bolohua.md","x":-1194,"y":-962,"width":185,"height":303,"color":"5"},
@@ -103,7 +99,13 @@
 		{"id":"1cc6733bb5c2191f","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌊Yamnahar.md","x":154,"y":-1167,"width":212,"height":298,"color":"6"},
 		{"id":"393eb6f093758188","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌊Abyroqa.md","x":490,"y":-1165,"width":297,"height":296,"color":"6"},
 		{"id":"dc1c8fc32a032aa3","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌊Tehontecuhtli.md","x":493,"y":100,"width":298,"height":226,"color":"6"},
-		{"id":"2e1406d194bde603","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/✨Marmoqed.md","x":196,"y":-239,"width":287,"height":301,"color":"1"}
+		{"id":"2e1406d194bde603","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/✨Marmoqed.md","x":196,"y":-239,"width":287,"height":301,"color":"1"},
+		{"id":"338ce7a777aeed53","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/✨Raavvah.md","x":-2000,"y":-644,"width":332,"height":344,"color":"3"},
+		{"id":"78d78c687d157ef9","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/✨Tsayidrah.md","x":-2184,"y":-220,"width":452,"height":289,"color":"2"},
+		{"id":"3a645beded0f3351","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌌Rexaya.md","x":-938,"y":-1225,"width":388,"height":60,"color":"#0e3b3f"},
+		{"id":"aa14662a3d84da90","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/_images/gozara_main.png","x":-788,"y":-463,"width":320,"height":400},
+		{"id":"ed991a680e084a2c","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌌Yatbara.md","x":-130,"y":-622,"width":171,"height":289,"color":"1"},
+		{"id":"9ed212ece9149474","type":"file","file":"Authorship/roleplaying/worlds/aresh/codex-content/gods/🌌Niwara.md","x":-401,"y":-429,"width":172,"height":297,"color":"1"}
 	],
 	"edges":[
 		{
