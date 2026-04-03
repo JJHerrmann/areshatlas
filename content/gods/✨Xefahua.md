@@ -38,8 +38,10 @@ allies:
 foes:
   - "[[🕳️Harbaal]]"
 dwelling_place: ""
-primary_symbol: ""
-secondary_symbols: []
+primary_symbol: Chalice
+secondary_symbols:
+  - Grape Bundle
+  - Bread Loaf
 sacred_number:
 sacred_colors: []
 forbidden_colors: []

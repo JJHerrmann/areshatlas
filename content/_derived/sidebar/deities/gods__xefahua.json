@@ -96,6 +96,22 @@
           ]
         ]
       ]
+    },
+    {
+      "title": "Symbols and Regalia",
+      "rows": [
+        [
+          "Primary Symbol",
+          "Chalice"
+        ],
+        [
+          "Secondary Symbols",
+          [
+            "Grape Bundle",
+            "Bread Loaf"
+          ]
+        ]
+      ]
     }
   ]
 }
