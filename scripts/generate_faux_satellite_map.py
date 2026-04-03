@@ -41,6 +41,8 @@ def main() -> None:
 
     biome_img = Image.open(BIOME_PATH).convert("RGB")
     biome = np.asarray(biome_img, dtype=np.float32) / 255.0
+    # Legacy biome export is north/south inverted relative to the corrected DEM stack.
+    biome = biome[::-1, :, :]
 
     if biome.shape[:2] != dem.shape:
       raise ValueError(f"Biome image {biome.shape[:2]} does not match DEM {dem.shape}")

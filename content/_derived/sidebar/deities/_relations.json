@@ -24,6 +24,9 @@
     ]
   },
   "kathorharab": {
+    "allies": [
+      "[[Gozara]]"
+    ],
     "parents": [
       "[[Gozara]]",
       "[[Niwara]]"
@@ -35,6 +38,9 @@
     ]
   },
   "malagad": {
+    "allies": [
+      "[[Gozara]]"
+    ],
     "parents": [
       "[[Gozara]]",
       "[[Niwara]]"
@@ -123,6 +129,9 @@
     ]
   },
   "yaradaat": {
+    "allies": [
+      "[[Gozara]]"
+    ],
     "parents": [
       "[[Gozara]]",
       "[[Niwara]]"

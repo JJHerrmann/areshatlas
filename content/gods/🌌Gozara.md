@@ -38,6 +38,10 @@ consorts:
   - "[[🌌Niwara]]"
 allies:
   - "[[🌌Niwara]]"
+  - "[[🕳️Kvaritzin]]"
+  - "[[✨Yaradaat]]"
+  - "[[✨Malagad]]"
+  - "[[✨Kathorharab]]"
 foes: []
 dwelling_place: ""
 primary_symbol: ""
@@ -77,16 +81,16 @@ virtues: []
 vices: []
 holy_days: []
 taboos: []
-summary: "Gozara is the fate-mistress of the primordial pantheon, styled as a younger woman in her maiden days, as is typical of primordial depictions in art. She carries with her the plumb bob and plumb line, a measuring device favored by builders, whom she is also a patron of. She measures the sacred geometry of the universe, and divines what is fated to be by the angles of the stars, the mapped events on her temple walls, and the distance of the lines of fate."
+summary: Gozara is the fate-mistress of the primordial pantheon, styled as a younger woman in her maiden days, as is typical of primordial depictions in art. She carries with her the plumb bob and plumb line, a measuring device favored by builders, whom she is also a patron of. She measures the sacred geometry of the universe, and divines what is fated to be by the angles of the stars, the mapped events on her temple walls, and the distance of the lines of fate.
 card_summary: ""
-physical_description: "Gozara is depicted as a young woman, with dark hair and dark navy robes. She is seen with her rope dart, that also serves as the plumb line for her diviner, that allows her to find the true vertical, drawing from it the geometries of fate."
+physical_description: Gozara is depicted as a young woman, with dark hair and dark navy robes. She is seen with her rope dart, that also serves as the plumb line for her diviner, that allows her to find the true vertical, drawing from it the geometries of fate.
 form_1_name: ""
 form_1_description: ""
 form_2_name: ""
 form_2_description: ""
 form_3_name: ""
 form_3_description: ""
-symbolism_notes: "Gozara's officially recognized symbols are the Plumb Line, the Measuring Rod, The Sundial and knotted cord, all units of measurement. There has been a push in some areas to add the Seal Ring of the Mensor's guilds as well as the Tally Tablet as \"holy symbols\" for Gozara that the"
+symbolism_notes: Gozara's officially recognized symbols are the Plumb Line, the Measuring Rod, The Sundial and knotted cord, all units of measurement. There has been a push in some areas to add the Seal Ring of the Mensor's guilds as well as the Tally Tablet as "holy symbols" for Gozara that the
 dwelling_place_description: ""
 servants_description: ""
 doctrine_overview: ""
@@ -140,7 +144,7 @@ holy_day_2_observed_by: ""
 holy_day_2_description: ""
 customs_description: ""
 rite_name: "[[The Binding of Portions]]"
-rite_description: "Each person in the community has a tray on the wall of their village temple, and will ceremonially add \"knots\" or worked stones to their tray for major milestone events through their life. Birth, Passage of Adulthood, Marriage, Childbirth, Eldership, and Death."
+rite_description: Each person in the community has a tray on the wall of their village temple, and will ceremonially add "knots" or worked stones to their tray for major milestone events through their life. Birth, Passage of Adulthood, Marriage, Childbirth, Eldership, and Death.
 taboo_1: ""
 taboo_2: ""
 taboo_3: ""

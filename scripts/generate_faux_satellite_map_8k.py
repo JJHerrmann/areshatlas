@@ -106,6 +106,8 @@ def main() -> None:
 
     working_height, working_width = dem.shape
     biome = resize_rgb(BIOME_PATH, (working_width, working_height))
+    # Legacy biome export is north/south inverted relative to the corrected DEM stack.
+    biome = biome[::-1, :, :]
     ocean = ~landmask
 
     lat_grid = np.repeat(lats[:, None], working_width, axis=1)
