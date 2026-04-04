@@ -118,6 +118,7 @@ navboxes: []
 tags:
   - deity
   - religion
+image_avatar:
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.
