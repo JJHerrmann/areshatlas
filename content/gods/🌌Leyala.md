@@ -1,10 +1,10 @@
 ---
 type: deity
-name: "Leyala"
-title: "Leyala"
-slug: "leyala"
+name: Leyala
+title: Leyala
+slug: leyala
 section: pantheon
-epithet: "The Mistress of Moons"
+epithet: The Shepard of Zodiacs
 honorific_title: ""
 pantheon:
   - "[[Yekatlan]]"
@@ -12,7 +12,7 @@ divine_rank: ""
 gender: ""
 nature: ""
 ethos: ""
-major_influence: "Moon"
+major_influence: Moon
 minor_influences: []
 spheres: []
 avatars: []
@@ -123,6 +123,7 @@ navboxes:
 tags:
   - deity
   - religion
+image_avatar: "![[/_image/leyala_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.
