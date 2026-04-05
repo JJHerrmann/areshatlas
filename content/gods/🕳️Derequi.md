@@ -1,10 +1,10 @@
 ---
 type: deity
-name: ""
-title: ""
+name: Derequi
+title: Derequi
 slug: ""
 section: pantheon
-epithet: ""
+epithet: The Lord of the Grey Walk
 honorific_title: ""
 pantheon: ""
 divine_rank: ""
@@ -16,7 +16,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/Derequi_main.png]]"
+image_avatar: ""
 parents: []
 siblings: []
 offspring: []

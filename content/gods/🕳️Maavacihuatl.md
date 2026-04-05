@@ -1,10 +1,10 @@
 ---
 type: deity
-name: ""
-title: ""
+name: Maavacihuatl
+title: Maavacihuatl
 slug: ""
 section: pantheon
-epithet: ""
+epithet: The Lady of Souls
 honorific_title: ""
 pantheon: ""
 divine_rank: ""
@@ -16,7 +16,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/Maavacihuatl_main.png]]"
+image_avatar: ""
 parents: []
 siblings: []
 offspring: []

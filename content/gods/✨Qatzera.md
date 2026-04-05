@@ -18,7 +18,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/Qatzera_main.png]]"
+image_avatar: "![[/_images/qatzera_main.png]]"
 parents: []
 siblings: []
 offspring: []

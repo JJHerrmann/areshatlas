@@ -1,10 +1,10 @@
 ---
 type: deity
-name: "Rexaya"
-title: "Rexaya"
+name: Rexaya
+title: Rexaya
 slug: ""
 section: pantheon
-epithet: "The God of Genesis"
+epithet: The God of Genesis
 honorific_title: ""
 pantheon: ""
 divine_rank: ""
@@ -16,7 +16,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/Rexaya_main.png]]"
+image_avatar: ""
 parents: []
 siblings: []
 offspring: []

@@ -1,10 +1,10 @@
 ---
 type: deity
-name: "Temaya"
-title: "Temaya"
+name: Temaya
+title: Temaya
 slug: ""
 section: pantheon
-epithet: "The God of Finalities"
+epithet: The God of Finalities
 honorific_title: ""
 pantheon: ""
 divine_rank: ""
@@ -16,7 +16,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/Temaya_main.png]]"
+image_avatar: ""
 parents: []
 siblings: []
 offspring: []

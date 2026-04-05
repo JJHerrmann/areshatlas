@@ -6,7 +6,11 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null,
+    "avatar": {
+      "src": "/content-assets/_images/tahiwaco_main.png",
+      "alt": "Tahiwaco",
+      "caption": null
+    },
     "symbol": null
   },
   "sections": [

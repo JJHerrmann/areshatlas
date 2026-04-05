@@ -6,7 +6,11 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null,
+    "avatar": {
+      "src": "/content-assets/_images/malagad_main.png",
+      "alt": "Malagad",
+      "caption": null
+    },
     "symbol": null
   },
   "sections": [

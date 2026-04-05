@@ -18,7 +18,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/Malagad_main.png]]"
+image_avatar: "![[/_images/malagad_main.png]]"
 parents: []
 siblings: []
 offspring: []

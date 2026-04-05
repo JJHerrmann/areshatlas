@@ -18,7 +18,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/Raavvah_main.png]]"
+image_avatar: "![[/_images/raavvah_main.png]]"
 parents: []
 siblings: []
 offspring: []

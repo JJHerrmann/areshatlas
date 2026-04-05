@@ -6,7 +6,11 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null,
+    "avatar": {
+      "src": "/content-assets/_images/qatzera_main.png",
+      "alt": "Qatzera",
+      "caption": null
+    },
     "symbol": null
   },
   "sections": [

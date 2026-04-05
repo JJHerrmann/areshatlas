@@ -1,10 +1,10 @@
 ---
 type: deity
-name: ""
-title: ""
+name: Refapilli
+title: Refapilli
 slug: ""
 section: pantheon
-epithet: ""
+epithet: The God of Ghosts
 honorific_title: ""
 pantheon: ""
 divine_rank: ""
@@ -16,7 +16,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/Refapilli_main.png]]"
+image_avatar: ""
 parents: []
 siblings: []
 offspring: []

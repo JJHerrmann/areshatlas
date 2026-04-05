@@ -16,7 +16,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/Kaxatzin_main.png]]"
+image_avatar: "![[/_images/kaxatzin_main.png]]"
 parents: []
 siblings: []
 offspring: []

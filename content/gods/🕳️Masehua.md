@@ -1,10 +1,10 @@
 ---
 type: deity
-name: ""
-title: ""
+name: Masehua
+title: Masehua
 slug: ""
 section: pantheon
-epithet: ""
+epithet: The God of Tithe
 honorific_title: ""
 pantheon: ""
 divine_rank: ""
@@ -16,7 +16,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/Masehua_main.png]]"
+image_avatar: ""
 parents: []
 siblings: []
 offspring: []

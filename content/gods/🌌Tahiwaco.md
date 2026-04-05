@@ -1,7 +1,7 @@
 ---
 type: deity
 name: Tahiwaco
-title: ""
+title: Tahiwaco
 slug: tahiwaco
 section: pantheon
 epithet: The High-lord of Chaos
@@ -18,7 +18,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/Tahiwaco_main.png]]"
+image_avatar: "![[/_images/tahiwaco_main.png]]"
 parents: []
 siblings:
   - "[[🌌Bolohua]]"
