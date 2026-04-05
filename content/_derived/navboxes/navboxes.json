@@ -20,6 +20,11 @@
         "href": "/pantheon/harbaal"
       },
       {
+        "slug": "machul",
+        "title": "Kadashar",
+        "href": "/pantheon/kadashar"
+      },
+      {
         "slug": "kathorharab",
         "title": "Kathorharab",
         "href": "/pantheon/kathorharab"
@@ -38,11 +43,6 @@
         "slug": "lotan",
         "title": "Lotan",
         "href": "/pantheon/lotan"
-      },
-      {
-        "slug": "machul",
-        "title": "Machul",
-        "href": "/pantheon/machul"
       },
       {
         "slug": "malagad",
@@ -123,6 +123,11 @@
         "href": "/pantheon/harbaal"
       },
       {
+        "slug": "machul",
+        "title": "Kadashar",
+        "href": "/pantheon/kadashar"
+      },
+      {
         "slug": "kathorharab",
         "title": "Kathorharab",
         "href": "/pantheon/kathorharab"
@@ -131,11 +136,6 @@
         "slug": "ba-al-sheol",
         "title": "Kvaritzin, Baxeol",
         "href": "/pantheon/kvaritzin"
-      },
-      {
-        "slug": "machul",
-        "title": "Machul",
-        "href": "/pantheon/machul"
       },
       {
         "slug": "malagad",
@@ -166,6 +166,11 @@
         "slug": "xefahua",
         "title": "Xefahua",
         "href": "/pantheon/xefahua"
+      },
+      {
+        "slug": "xochbaram",
+        "title": "Xochbaram",
+        "href": "/pantheon/xochbaram"
       },
       {
         "slug": "yamnahar",
@@ -204,14 +209,14 @@
     "mode": "footer",
     "items": [
       {
+        "slug": "machul",
+        "title": "Kadashar",
+        "href": "/pantheon/kadashar"
+      },
+      {
         "slug": "kathorharab",
         "title": "Kathorharab",
         "href": "/pantheon/kathorharab"
-      },
-      {
-        "slug": "machul",
-        "title": "Machul",
-        "href": "/pantheon/machul"
       },
       {
         "slug": "malagad",
@@ -247,6 +252,11 @@
         "slug": "xefahua",
         "title": "Xefahua",
         "href": "/pantheon/xefahua"
+      },
+      {
+        "slug": "xochbaram",
+        "title": "Xochbaram",
+        "href": "/pantheon/xochbaram"
       },
       {
         "slug": "yamnahar",

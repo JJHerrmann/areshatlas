@@ -275,10 +275,10 @@
   },
   {
     "slug": "machul",
-    "title": "Machul",
+    "title": "Kadashar",
     "section": "pantheon",
-    "href": "/pantheon/machul",
-    "source_relative_path": "gods/✨Machul.md",
+    "href": "/pantheon/kadashar",
+    "source_relative_path": "gods/✨Kadashar.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -652,6 +652,18 @@
     "source_relative_path": "regions/Drakharpan/nations/Xilza/Xilza.md",
     "aliases": [],
     "navboxes": []
+  },
+  {
+    "slug": "xochbaram",
+    "title": "Xochbaram",
+    "section": "pantheon",
+    "href": "/pantheon/xochbaram",
+    "source_relative_path": "gods/✨Xochbaram.md",
+    "aliases": [],
+    "navboxes": [
+      "dieties-of-areshnaat",
+      "ramtilim"
+    ]
   },
   {
     "slug": "yamnahar",

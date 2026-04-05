@@ -4,7 +4,7 @@ name: Kadashar
 title: Kadashar
 slug: machul
 section: pantheon
-epithet: The God of Dances and Storms
+epithet: The God of Duels and Rains
 honorific_title: ""
 pantheon:
   - Areshnaati

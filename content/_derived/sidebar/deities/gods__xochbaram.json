@@ -1,12 +1,16 @@
 {
   "type": "deity",
-  "title": "Machul",
-  "subtitle": "The God of Dances and Storms",
-  "source_relative_path": "gods/✨Machul.md",
+  "title": "Xochbaram",
+  "subtitle": "The God of Revels and Storms",
+  "source_relative_path": "gods/✨Xochbaram.md",
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null,
+    "avatar": {
+      "src": "/content-assets/_images/Xochbaram_main.png",
+      "alt": "Xochbaram",
+      "caption": null
+    },
     "symbol": null
   },
   "sections": [

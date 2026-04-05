@@ -2,9 +2,9 @@
 type: deity
 name: Xochbaram
 title: Xochbaram
-slug: machul
+slug: xochbaram
 section: pantheon
-epithet: The God of Dances and Storms
+epithet: The God of Revels and Storms
 honorific_title: ""
 pantheon:
   - Areshnaati
