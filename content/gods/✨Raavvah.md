@@ -17,6 +17,7 @@ major_influence: ""
 minor_influences: []
 spheres: []
 avatars: []
+avatar_image: ""
 parents: []
 siblings: []
 offspring: []
@@ -24,8 +25,11 @@ consorts: []
 allies: []
 foes: []
 dwelling_place: ""
+dwelling_place_image: ""
 primary_symbol: ""
+primary_symbol_image: ""
 secondary_symbols: []
+secondary_symbol_images: []
 sacred_number:
 sacred_colors: []
 forbidden_colors: []
@@ -49,10 +53,13 @@ summary: ""
 card_summary: ""
 physical_description: ""
 form_1_name: ""
+form_1_image: ""
 form_1_description: ""
 form_2_name: ""
+form_2_image: ""
 form_2_description: ""
 form_3_name: ""
+form_3_image: ""
 form_3_description: ""
 symbolism_notes: ""
 dwelling_place_description: ""

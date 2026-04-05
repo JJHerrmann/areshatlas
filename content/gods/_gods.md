@@ -1,14 +1,12 @@
 ---
 type: deity
-name: Harbaal
-title: Harbal
-slug: harbaal
+name: ""
+title: ""
+slug: ""
 section: pantheon
-epithet: The God of Mountains
+epithet: ""
 honorific_title: ""
-pantheon:
-  - Areshnaati
-  - "[[Xoluatl]]"
+pantheon: ""
 divine_rank: ""
 gender: ""
 nature: ""
@@ -17,7 +15,7 @@ major_influence: ""
 minor_influences: []
 spheres: []
 avatars: []
-avatar_image: "![[/_images/Harbaal_main.png]]"
+avatar_image: ""
 parents: []
 siblings: []
 offspring: []
@@ -30,7 +28,7 @@ primary_symbol: ""
 primary_symbol_image: ""
 secondary_symbols: []
 secondary_symbol_images: []
-sacred_number:
+sacred_number: ""
 sacred_colors: []
 forbidden_colors: []
 sacred_stones: []
@@ -123,24 +121,71 @@ notes: ""
 related_deity_1: ""
 related_deity_2: ""
 related_deity_3: ""
-navboxes:
-  - ramtilim
-  - dieties-of-areshnaat
+navboxes: []
 tags:
   - deity
   - religion
-primary_topic: Dieties of Areshnaat
 ---
-## Harbaal
-*The God of the Mountains*
-## Overview
+```dataviewjs
+const currentFile = dv.current().file.path;
+const currentFolder = dv.current().file.folder;
+const emojiStart = /^\p{Extended_Pictographic}/u;
 
-## Depictions
+const pages = dv.pages(`"${currentFolder}"`)
+  .where(p =>
+    p.file &&
+    p.file.path !== currentFile &&
+    p.file.path.endsWith(".md") &&
+    emojiStart.test(p.file.name)
+  )
+  .sort(p => p.file.name, "asc");
 
-## Doctrine
+const rows = pages.map(p => {
+  const row = { File: p.file.name };
+  for (const key of Object.keys(p)) {
+    if (key === "file") continue;
+    row[key] = p[key];
+  }
+  return row;
+});
 
-## Worship
+const columns = ["File"];
+for (const row of rows) {
+  for (const key of Object.keys(row)) {
+    if (!columns.includes(key)) columns.push(key);
+  }
+}
 
-## Organization
+function stringify(value) {
+  if (value == null) return "";
+  if (Array.isArray(value)) return value.map(stringify).join("; ");
+  if (typeof value === "object") {
+    if (value.path) return value.path;
+    return JSON.stringify(value);
+  }
+  return String(value);
+}
 
-## Notes
+function csvEscape(value) {
+  const s = stringify(value);
+  if (/[",\n]/.test(s)) return `"${s.replace(/"/g, '""')}"`;
+  return s;
+}
+
+const csv = [
+  columns.map(csvEscape).join(","),
+  ...rows.map(row => columns.map(col => csvEscape(row[col])).join(","))
+].join("\n");
+
+const container = dv.el("div", "");
+const textarea = container.createEl("textarea", {
+  text: csv
+});
+
+textarea.style.width = "100%";
+textarea.style.minHeight = "400px";
+textarea.style.whiteSpace = "pre";
+textarea.style.fontFamily = "monospace";
+textarea.style.fontSize = "0.9em";
+textarea.style.padding = "0.75em";
+```
