@@ -2,7 +2,7 @@
 type: deity
 name: ""
 title: ""
-slug: ""
+slug: _gods_index
 section: pantheon
 epithet: ""
 honorific_title: ""
