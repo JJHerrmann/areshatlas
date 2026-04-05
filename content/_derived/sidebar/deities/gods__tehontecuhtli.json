@@ -6,7 +6,11 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null,
+    "avatar": {
+      "src": "![[/_images//tehontecuhitli_main.png]",
+      "alt": "🌊Tehontecuhtli",
+      "caption": null
+    },
     "symbol": null
   },
   "sections": []

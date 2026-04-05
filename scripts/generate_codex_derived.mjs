@@ -51,6 +51,7 @@ function listMarkdownFiles(rootDir) {
         visit(nextPath);
         continue;
       }
+      if (item.name.startsWith("_")) continue;
       if (/\.(md|markdown)$/i.test(item.name)) out.push(nextPath);
     }
   }
@@ -78,6 +79,22 @@ function listAssetFiles(rootDir) {
 function optionalArray(value) {
   if (value == null || value === "") return [];
   return Array.isArray(value) ? value : [value];
+}
+
+function isTruthyFlag(value) {
+  if (typeof value === "boolean") return value;
+  if (typeof value === "number") return value !== 0;
+  if (typeof value === "string") {
+    const normalized = value.trim().toLowerCase();
+    return normalized === "true" || normalized === "yes" || normalized === "1";
+  }
+  return false;
+}
+
+function shouldIgnoreFrontmatter(frontmatter) {
+  return isTruthyFlag(frontmatter?.ignore)
+    || isTruthyFlag(frontmatter?.derive_ignore)
+    || isTruthyFlag(frontmatter?.codex_ignore);
 }
 
 function normalizeStringArray(value) {
@@ -218,6 +235,7 @@ function contentRelativePathToHref(relativePath) {
 }
 
 function buildArticleRecord(frontmatter, relativePath) {
+  if (shouldIgnoreFrontmatter(frontmatter)) return null;
   const normalizedRelativePath = relativePath.replace(/\\/g, "/");
   const section = getSectionForRelativePath(normalizedRelativePath);
   if (!section) return null;
@@ -714,6 +732,7 @@ function main() {
     }
     const frontmatter = parsed.data || {};
     const relativePath = path.relative(contentRoot, filePath);
+    if (shouldIgnoreFrontmatter(frontmatter)) continue;
     parsedDocs.push({ filePath, frontmatter, relativePath });
   }
 

@@ -125,7 +125,7 @@ navboxes: []
 tags:
   - deity
   - religion
-image_avatar: "![[/_images/Tehontecuhtli]]"
+image_avatar: "![[/_images//tehontecuhitli_main.png]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.
