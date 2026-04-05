@@ -1,16 +1,18 @@
 ---
 type: deity
-name: ""
-title: ""
-slug: ""
+name: Kadashar
+title: Kadashar
+slug: machul
 section: pantheon
-epithet: The God of Dark Waters
+epithet: The God of Dances and Storms
 honorific_title: ""
-pantheon: ""
+pantheon:
+  - Areshnaati
+  - Ramtilim
 divine_rank: ""
 gender: ""
 nature: ""
-ethos: ""
+ethos: chaotic
 major_influence: ""
 minor_influences: []
 spheres: []
@@ -25,7 +27,10 @@ dwelling_place: ""
 primary_symbol: ""
 secondary_symbols: []
 sacred_number:
-sacred_colors: []
+sacred_colors:
+  - crimson
+  - sapphire
+  - gold
 forbidden_colors: []
 sacred_stones: []
 sacred_materials: []
@@ -114,11 +119,18 @@ notes: ""
 related_deity_1: ""
 related_deity_2: ""
 related_deity_3: ""
-navboxes: []
+navboxes:
+  - ramtilim
+  - dieties-of-areshnaat
 tags:
   - deity
   - religion
-image_avatar: "![[/_images/Tehontecuhtli]]"
+primary_topic: Dieties of Areshnaat
+sacred_color_swatches:
+  - "#990000"
+  - "#0F52BA"
+  - "#8C6A1C #C9A227 #F2D36B"
+image_avatar: "![[/_image/Kadashar_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.
