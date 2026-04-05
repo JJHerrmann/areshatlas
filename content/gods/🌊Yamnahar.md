@@ -58,9 +58,9 @@ symbolism_notes: ""
 dwelling_place_description: ""
 servants_description: ""
 doctrine_overview: ""
-holy_text_1: "The God of Tides"
+holy_text_1: The God of Tides
 holy_text_1_summary: "_Main Article: [[🌊The God of Tides]]_"
-holy_text_2: "The Mistress of Harbors"
+holy_text_2: The Mistress of Harbors
 holy_text_2_summary: "Main Article: [[🌊The Mistress of Harbors]]_"
 apocrypha_1: ""
 apocrypha_1_summary: ""
@@ -123,6 +123,7 @@ tags:
   - deity
   - religion
 primary_topic: Dieties of Areshnaat
+image_avatar: "![[/_images/yamnahar_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.
