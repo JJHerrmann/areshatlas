@@ -6,7 +6,11 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null,
+    "avatar": {
+      "src": "/content-assets/_images/Tsayidrah_main.png",
+      "alt": "Tsayidrah",
+      "caption": null
+    },
     "symbol": null
   },
   "sections": [
