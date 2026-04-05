@@ -1,10 +1,10 @@
 ---
 type: deity
-name: "Kaxatzin"
-title: "Kaxatzin"
+name: Kaxatzin
+title: Kaxatzin
 slug: ""
 section: pantheon
-epithet: "The Goddess of Graves"
+epithet: The Goddess of Graves
 honorific_title: ""
 pantheon: ""
 divine_rank: ""
