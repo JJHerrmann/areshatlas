@@ -91,7 +91,9 @@ servants_description: "- **The God of Ghosts:** _Main Article: [[Refapilli]]_\r
 
   - **The God of Tithe:** _Main Article: [[Masehua]]_\r
 
-  - **The Goddess of Mourning:** _Main Article: [[Kinayotl]]_"
+  - **The Goddess of Mourning:** _Main Article: [[Kinayotl]]_
+
+  - **The Goddess of Graves:** _Main Article: [[Kaxatzin]]_"
 doctrine_overview: ""
 holy_text_1: ""
 holy_text_1_summary: ""

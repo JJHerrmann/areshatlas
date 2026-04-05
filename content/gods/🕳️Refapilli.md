@@ -16,6 +16,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
+image_avatar: "![[/_images/Refapilli_main.png]]"
 parents: []
 siblings: []
 offspring: []

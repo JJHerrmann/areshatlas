@@ -16,6 +16,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
+image_avatar: "![[/_images/Maavacihuatl_main.png]]"
 parents: []
 siblings: []
 offspring: []

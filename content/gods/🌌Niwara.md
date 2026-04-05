@@ -19,6 +19,7 @@ minor_influences:
 spheres: []
 avatars: []
 avatar_image: ""
+image_avatar: "![[/_images/Niwara_main.png]]"
 parents:
   - "[[🌌Moxilaxaya]]"
   - "[[🌌Tahiwaco]]"

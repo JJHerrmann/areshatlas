@@ -1,10 +1,10 @@
 ---
 type: deity
-name: ""
-title: ""
+name: "Kaxatzin"
+title: "Kaxatzin"
 slug: ""
 section: pantheon
-epithet: ""
+epithet: "The Goddess of Graves"
 honorific_title: ""
 pantheon: ""
 divine_rank: ""
@@ -16,6 +16,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
+image_avatar: "![[/_images/Kaxatzin_main.png]]"
 parents: []
 siblings: []
 offspring: []

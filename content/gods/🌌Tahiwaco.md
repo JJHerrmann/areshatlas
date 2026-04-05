@@ -18,6 +18,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
+image_avatar: "![[/_images/Tahiwaco_main.png]]"
 parents: []
 siblings:
   - "[[🌌Bolohua]]"
