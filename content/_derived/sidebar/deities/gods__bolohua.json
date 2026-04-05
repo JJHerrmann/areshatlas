@@ -6,7 +6,11 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null,
+    "avatar": {
+      "src": "/content-assets/_images/bolohua_main.png",
+      "alt": "Bolohua",
+      "caption": null
+    },
     "symbol": null
   },
   "sections": [

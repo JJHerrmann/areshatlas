@@ -137,7 +137,7 @@ sacred_color_swatches:
   - "#990000"
   - "#0F52BA"
   - "#8C6A1C #C9A227 #F2D36B"
-image_avatar: "![[/_image/Xochbaram_main.png]]"
+image_avatar: "![[/_images/Xochbaram_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

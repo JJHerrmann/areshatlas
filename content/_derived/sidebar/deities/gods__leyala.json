@@ -6,7 +6,11 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null,
+    "avatar": {
+      "src": "/content-assets/_images/Leyala_main.png",
+      "alt": "Leyala",
+      "caption": null
+    },
     "symbol": null
   },
   "sections": [

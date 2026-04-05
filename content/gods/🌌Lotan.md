@@ -129,7 +129,7 @@ tags:
   - deity
   - religion
 primary_topic: Dieties of Areshnaat
-image_avatar: "![[lotan_main.png]]"
+image_avatar: "![[/_images/lotan_main.png]]"
 ---
 # Lotan
 *The Sky Serpant*

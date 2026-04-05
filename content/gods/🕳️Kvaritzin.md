@@ -159,7 +159,7 @@ tags:
   - religion
 doctrine_subordinates:
 primary_topic: Dieties of Areshnaat
-image_avatar: "![[baalsheol_main.png]]"
+image_avatar: "![[/_images/baalsheol_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

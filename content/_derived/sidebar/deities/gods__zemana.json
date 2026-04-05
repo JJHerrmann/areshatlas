@@ -6,7 +6,11 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null,
+    "avatar": {
+      "src": "/content-assets/_images/zemara_main.png",
+      "alt": "Zemana",
+      "caption": null
+    },
     "symbol": null
   },
   "sections": [

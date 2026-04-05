@@ -135,7 +135,7 @@ tags:
   - deity
   - religion
 primary_topic: Dieties of Areshnaat
-image_avatar: "![[/_image/yatbara_main.png]]"
+image_avatar: "![[/_images/yatbara_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

@@ -130,7 +130,7 @@ tags:
   - deity
   - religion
 primary_topic: Dieties of Areshnaat
-image_avatar: "![[/_images/yamnahar_main.png]]"
+image_avatar: "![[/_images/Yamnahar_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

@@ -6,7 +6,11 @@
   "images": {
     "banner": null,
     "heraldry": null,
-    "avatar": null,
+    "avatar": {
+      "src": "/content-assets/_images/Yamnahar_main.png",
+      "alt": "Yamnahar",
+      "caption": null
+    },
     "symbol": null
   },
   "sections": [

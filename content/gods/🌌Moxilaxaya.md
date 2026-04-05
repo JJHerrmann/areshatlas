@@ -134,7 +134,7 @@ navboxes:
 tags:
   - deity
   - religion
-image_avatar: "![[moxi_main.png]]"
+image_avatar: "![[/_images/moxi_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

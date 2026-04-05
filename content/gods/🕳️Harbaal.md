@@ -18,6 +18,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: "![[/_images/Harbaal_main.png]]"
+image_avatar: "![[/_images/Harbaal_main.png]]"
 parents: []
 siblings: []
 offspring: []

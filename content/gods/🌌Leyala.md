@@ -130,7 +130,7 @@ navboxes:
 tags:
   - deity
   - religion
-image_avatar: "![[/_image/leyala_main.png]]"
+image_avatar: "![[/_images/Leyala_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

@@ -16,6 +16,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: "![[/_images/abyroqa_main.png]]"
+image_avatar: "![[/_images/abyroqa_main.png]]"
 parents: []
 siblings: []
 offspring: []
