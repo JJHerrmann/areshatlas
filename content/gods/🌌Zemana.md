@@ -1,7 +1,7 @@
 ---
 type: deity
 name: Zemana
-title: ""
+title: Zemana
 slug: zemana
 section: pantheon
 epithet: The Matron of Time

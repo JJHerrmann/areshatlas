@@ -2,7 +2,7 @@
 type: deity
 name: Rexaya
 title: Rexaya
-slug: ""
+slug: rexaya
 section: pantheon
 epithet: The God of Genesis
 honorific_title: ""

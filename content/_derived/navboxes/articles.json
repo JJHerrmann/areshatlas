@@ -1,19 +1,10 @@
 [
   {
     "slug": "abyroqa",
-    "title": "🌊Abyroqa",
+    "title": "Abyroqa",
     "section": "pantheon",
     "href": "/pantheon/abyroqa",
     "source_relative_path": "gods/🌊Abyroqa.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
-    "slug": "apusimi-orcish-expanded",
-    "title": "Apusimi (Orcish) - Expanded",
-    "section": "languages",
-    "href": "/languages/apusimi-orcish-expanded",
-    "source_relative_path": "cultures/language/Apusimi (Orcish) - Expanded.md",
     "aliases": [],
     "navboxes": []
   },
@@ -48,15 +39,6 @@
     "navboxes": []
   },
   {
-    "slug": "biviai",
-    "title": "Biviai",
-    "section": "cultures",
-    "href": "/cultures/biviai",
-    "source_relative_path": "cultures/Biviai.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
     "slug": "bolohua",
     "title": "Bolohua",
     "section": "pantheon",
@@ -67,15 +49,6 @@
       "areshnaati-deities",
       "yekatlan"
     ]
-  },
-  {
-    "slug": "dagatmayu-goblinoid",
-    "title": "Dagatmayu (Goblinoid)",
-    "section": "languages",
-    "href": "/languages/dagatmayu-goblinoid",
-    "source_relative_path": "cultures/language/Dagatmayu (Goblinoid).md",
-    "aliases": [],
-    "navboxes": []
   },
   {
     "slug": "derequi",
@@ -126,15 +99,6 @@
     ]
   },
   {
-    "slug": "halfling-japanese-nahuatl",
-    "title": "Halfling (Japanese-Nahuatl)",
-    "section": "languages",
-    "href": "/languages/halfling-japanese-nahuatl",
-    "source_relative_path": "cultures/language/Halfling (Japanese-Nahuatl).md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
     "slug": "harbaal",
     "title": "Harbal",
     "section": "pantheon",
@@ -145,15 +109,6 @@
       "areshnaati-deities",
       "dieties-of-areshnaat"
     ]
-  },
-  {
-    "slug": "karakeel-dwarven-expanded",
-    "title": "Karakeel (Dwarven) - Expanded",
-    "section": "languages",
-    "href": "/languages/karakeel-dwarven-expanded",
-    "source_relative_path": "cultures/language/Karakeel (Dwarven) - Expanded.md",
-    "aliases": [],
-    "navboxes": []
   },
   {
     "slug": "karia",
@@ -228,15 +183,6 @@
     "section": "regions",
     "href": "/regions/drakharpan/nations/kotzia",
     "source_relative_path": "regions/Drakharpan/nations/Kotzia/Kotzia.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
-    "slug": "kutnylev-gnomish-expanded",
-    "title": "Kutnylev (Gnomish) - Expanded",
-    "section": "languages",
-    "href": "/languages/kutnylev-gnomish-expanded",
-    "source_relative_path": "cultures/language/Kutnylev (Gnomish) - Expanded.md",
     "aliases": [],
     "navboxes": []
   },
@@ -402,15 +348,6 @@
     "navboxes": []
   },
   {
-    "slug": "punkari-goblinoid",
-    "title": "Punkari (Goblinoid)",
-    "section": "languages",
-    "href": "/languages/punkari-goblinoid",
-    "source_relative_path": "cultures/language/Punkari (Goblinoid).md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
     "slug": "qatzera",
     "title": "Qatzera",
     "section": "pantheon",
@@ -464,15 +401,6 @@
     "navboxes": []
   },
   {
-    "slug": "runakay-northwestern-human",
-    "title": "Runakay (Northwestern Human)",
-    "section": "languages",
-    "href": "/languages/runakay-northwestern-human",
-    "source_relative_path": "cultures/language/Runakay (Northwestern Human).md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
     "slug": "tahiwaco",
     "title": "Tahiwaco",
     "section": "pantheon",
@@ -486,7 +414,7 @@
   },
   {
     "slug": "tehontecuhtli",
-    "title": "🌊Tehontecuhtli",
+    "title": "Tehontecuhtli",
     "section": "pantheon",
     "href": "/pantheon/tehontecuhtli",
     "source_relative_path": "gods/🌊Tehontecuhtli.md",
@@ -503,11 +431,29 @@
     "navboxes": []
   },
   {
+    "slug": "the-binding-of-niawara",
+    "title": "The Binding of Niwara",
+    "section": "pantheon",
+    "href": "/pantheon/myths/the-binding-of-niwara",
+    "source_relative_path": "gods/myths/The Binding of Niwara.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "the-binding-of-portions",
     "title": "The Binding of Portions",
     "section": "pantheon",
     "href": "/pantheon/the-binding-of-portions",
     "source_relative_path": "gods/The Binding of Portions.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "the-goddess-of-lust",
+    "title": "goddess-of-lust",
+    "section": "pantheon",
+    "href": "/pantheon/the-goddess-of-lust",
+    "source_relative_path": "gods/The Goddess of Lust.md",
     "aliases": [],
     "navboxes": []
   },
@@ -579,11 +525,11 @@
     "navboxes": []
   },
   {
-    "slug": "vardic-central-human",
-    "title": "Vardic (Central Human)",
+    "slug": "vardic",
+    "title": "Vardic",
     "section": "languages",
-    "href": "/languages/vardic-central-human",
-    "source_relative_path": "cultures/language/Vardic (Central Human).md",
+    "href": "/languages/vardic",
+    "source_relative_path": "cultures/language/Vardic.md",
     "aliases": [],
     "navboxes": []
   },
@@ -634,15 +580,6 @@
       "dieties-of-areshnaat",
       "ramtilim"
     ]
-  },
-  {
-    "slug": "xibanal-elvish-expanded",
-    "title": "Xibanal (Elvish) - Expanded",
-    "section": "languages",
-    "href": "/languages/xibanal-elvish-expanded",
-    "source_relative_path": "cultures/language/Xibanal (Elvish) - Expanded.md",
-    "aliases": [],
-    "navboxes": []
   },
   {
     "slug": "xilza",

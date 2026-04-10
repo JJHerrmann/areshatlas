@@ -2,7 +2,7 @@
 type: deity
 name: Temaya
 title: Temaya
-slug: ""
+slug: temaya
 section: pantheon
 epithet: The God of Finalities
 honorific_title: ""

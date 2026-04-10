@@ -1,3 +1,12 @@
+---
+type: language
+name: Xibanal
+family: Central Human
+spoken_in: Xilhuan
+script: Etznal
+speakers: ~12 million
+status: developing
+---
 # High Elven Naming Canon
 # Xibanal
 

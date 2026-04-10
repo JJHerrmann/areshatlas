@@ -1,7 +1,7 @@
 ---
 type: deity
 name: Yekala
-title: ""
+title: Yekala
 slug: yekala
 section: pantheon
 epithet: The Lady of Loaded Dice

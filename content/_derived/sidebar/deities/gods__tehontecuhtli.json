@@ -1,6 +1,6 @@
 {
   "type": "deity",
-  "title": "🌊Tehontecuhtli",
+  "title": "Tehontecuhtli",
   "subtitle": "The God of Dark Waters",
   "source_relative_path": "gods/🌊Tehontecuhtli.md",
   "images": {
@@ -8,7 +8,7 @@
     "heraldry": null,
     "avatar": {
       "src": "/content-assets/_images/tehontecuhitli_main.png",
-      "alt": "🌊Tehontecuhtli",
+      "alt": "Tehontecuhtli",
       "caption": null
     },
     "symbol": null

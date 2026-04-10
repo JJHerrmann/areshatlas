@@ -1,7 +1,7 @@
 ---
 type: deity
-name: ""
-title: ""
+name: Tehontecuhtli
+title: Tehontecuhtli
 slug: ""
 section: pantheon
 epithet: The God of Dark Waters

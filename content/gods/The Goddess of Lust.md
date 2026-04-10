@@ -1,10 +1,10 @@
 ---
 type: deity
-name: Abyroqa
+name: goddess-of-lust
 title: ""
 slug: ""
 section: pantheon
-epithet: The Goddess of Travels and Wayfairing
+epithet: The Primal Chained
 honorific_title: ""
 pantheon: ""
 divine_rank: ""
@@ -15,8 +15,7 @@ major_influence: ""
 minor_influences: []
 spheres: []
 avatars: []
-avatar_image: "![[/_images/abyroqa_main.png]]"
-image_avatar: "![[/_images/abyroqa_main.png]]"
+avatar_image: ""
 parents: []
 siblings: []
 offspring: []
@@ -29,7 +28,7 @@ primary_symbol: ""
 primary_symbol_image: ""
 secondary_symbols: []
 secondary_symbol_images: []
-sacred_number:
+sacred_number: ""
 sacred_colors: []
 forbidden_colors: []
 sacred_stones: []
@@ -127,6 +126,7 @@ tags:
   - deity
   - religion
 ---
+
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.
 The inline HTML comments (`fm:key`) are source markers only and will not affect preview/autofill.
@@ -309,4 +309,3 @@ Keep lists as actual YAML lists and keep summary/card_summary short.
 ## Topic Indexing
 
 Use flat frontmatter only. Declare `navboxes` as a list of shared navbox ids, for example `navboxes: [twelve-olympians, olympian-deities]`. Shared navbox definitions live in the central registry, not in the article note.
-
