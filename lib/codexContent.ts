@@ -39,6 +39,12 @@ export type RenderedDocument = {
   sourcePath: string;
   breadcrumb: Array<{ title: string; href: string }>;
   frontmatter: Record<string, unknown>;
+  /** Which setting this document belongs to, e.g. "Areshnaat" or "Thaer". */
+  world: string;
+  /** Ordered label -> value rows for a generic infobox (Thaer-style frontmatter). */
+  infobox?: Record<string, string>;
+  /** Globe / hemisphere caption strings shown above the infobox rows. */
+  hemisphereViews?: string[];
 };
 
 export type DeityCompletion = {
@@ -297,6 +303,71 @@ function readFirstHeading(markdown: string) {
 
 function titleFromFileName(fileName: string) {
   return fileName.replace(/\.[^.]+$/, "");
+}
+
+const DEFAULT_WORLD = "Areshnaat";
+
+/** Resolve which setting a document belongs to from its frontmatter. */
+function readWorld(frontmatter: Record<string, unknown>): string {
+  const raw =
+    (typeof frontmatter.world === "string" && frontmatter.world.trim()) ||
+    (typeof frontmatter.property === "string" && frontmatter.property.trim()) ||
+    (typeof frontmatter.setting === "string" && frontmatter.setting.trim()) ||
+    "";
+  const key = raw.toLowerCase();
+  if (!key) return DEFAULT_WORLD;
+  if (key === "aresh" || key === "areshnaat" || key === "areshnaht") return "Areshnaat";
+  if (key === "thaer") return "Thaer";
+  return raw;
+}
+
+/** Ordered [frontmatter key, infobox label] pairs assembled for `subtype: character`. */
+const CHARACTER_INFOBOX_FIELDS: Array<[string, string]> = [
+  ["aliases", "Also known as"],
+  ["culture", "Culture"],
+  ["race", "Race"],
+  ["class", "Class"],
+  ["deity", "Deity"],
+  ["affiliation", "Affiliation"],
+];
+
+/**
+ * Read an infobox for a generic (non-deity, non-nation) document:
+ *  - an explicit ordered `infobox:` mapping (Thaer empire style), or
+ *  - assembled from typed character fields when `subtype: character`.
+ */
+function readInfobox(frontmatter: Record<string, unknown>): Record<string, string> | undefined {
+  const raw = frontmatter.infobox;
+  if (raw && typeof raw === "object" && !Array.isArray(raw)) {
+    const rows: Record<string, string> = {};
+    for (const [label, value] of Object.entries(raw as Record<string, unknown>)) {
+      if (value == null) continue;
+      rows[label] = normalizeObsidianText(String(value));
+    }
+    return Object.keys(rows).length ? rows : undefined;
+  }
+
+  if (frontmatter.subtype === "character") {
+    const rows: Record<string, string> = {};
+    for (const [key, label] of CHARACTER_INFOBOX_FIELDS) {
+      const value = frontmatter[key];
+      if (value == null) continue;
+      const text = Array.isArray(value)
+        ? value.map((v) => normalizeObsidianText(String(v))).filter(Boolean).join(", ")
+        : normalizeObsidianText(String(value));
+      if (text) rows[label] = text;
+    }
+    return Object.keys(rows).length ? rows : undefined;
+  }
+
+  return undefined;
+}
+
+function readHemisphereViews(frontmatter: Record<string, unknown>): string[] | undefined {
+  const raw = frontmatter.hemisphere_views ?? frontmatter.hemisphereViews;
+  if (!Array.isArray(raw)) return undefined;
+  const views = raw.map((v) => normalizeObsidianText(String(v))).filter(Boolean);
+  return views.length ? views : undefined;
 }
 
 function slugifySegment(value: string) {
@@ -1140,13 +1211,17 @@ export async function getRenderedDocument(section: SectionConfig, slugParts: str
   const relativePath = path.relative(getSectionRoot(section), filePath).replace(/\\/g, "/");
   const html = await renderMarkdown(parsed.content, parsed.data as Record<string, unknown>, `${section.folder}/${relativePath}`);
 
+  const frontmatter = parsed.data as Record<string, unknown>;
   return {
     title,
     summary,
     html,
     sourcePath: `content/${section.folder}/${relativePath}`,
     breadcrumb: buildBreadcrumb(section, slugParts),
-    frontmatter: parsed.data as Record<string, unknown>,
+    frontmatter,
+    world: readWorld(frontmatter),
+    infobox: readInfobox(frontmatter),
+    hemisphereViews: readHemisphereViews(frontmatter),
   };
 }
 
@@ -1169,13 +1244,17 @@ export async function getRenderedOverviewDocument(section: SectionConfig, slugPa
   const relativePath = path.relative(getSectionRoot(section), filePath).replace(/\\/g, "/");
   const html = await renderMarkdown(parsed.content, parsed.data as Record<string, unknown>, `${section.folder}/${relativePath}`);
 
+  const frontmatter = parsed.data as Record<string, unknown>;
   return {
     title,
     summary,
     html,
     sourcePath: `content/${section.folder}/${relativePath}`,
     breadcrumb: buildBreadcrumb(section, slugParts),
-    frontmatter: parsed.data as Record<string, unknown>,
+    frontmatter,
+    world: readWorld(frontmatter),
+    infobox: readInfobox(frontmatter),
+    hemisphereViews: readHemisphereViews(frontmatter),
   };
 }
 

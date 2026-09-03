@@ -6,6 +6,7 @@ import CornerOrnament from "@/components/codex/CornerOrnament";
 import DeityInfobox from "@/components/codex/DeityInfobox";
 import DeityProfile from "@/components/codex/DeityProfile";
 import EntryCard from "@/components/codex/EntryCard";
+import GenericInfobox from "@/components/codex/GenericInfobox";
 import NavboxFooter from "@/components/codex/NavboxFooter";
 import NationInfobox from "@/components/codex/NationInfobox";
 import {
@@ -176,7 +177,9 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
     const deitySidebar = getDeitySidebar(document.sourcePath);
     const article = getDerivedArticle(document.sourcePath);
     const navboxes = getNavboxesForSourcePath(document.sourcePath);
-    const hasSidebar = Boolean(nationSidebar) || Boolean(deitySidebar);
+    const genericInfobox =
+      !nationSidebar && !deitySidebar && document.infobox ? document.infobox : null;
+    const hasSidebar = Boolean(nationSidebar) || Boolean(deitySidebar) || Boolean(genericInfobox);
     const isDeity = Boolean(deitySidebar) || document.frontmatter?.type === "deity";
     return (
       <main className="min-h-screen px-6 py-12 text-stone-900 lg:px-8">
@@ -207,6 +210,15 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             )}
             {nationSidebar ? <NationInfobox data={nationSidebar} /> : null}
             {deitySidebar ? <DeityInfobox data={deitySidebar} /> : null}
+            {genericInfobox ? (
+              <GenericInfobox
+                title={document.title}
+                infobox={genericInfobox}
+                hemisphereViews={document.hemisphereViews}
+                world={document.world}
+                sourceRelativePath={document.sourcePath}
+              />
+            ) : null}
           </div>
 
           {article ? <NavboxFooter navboxes={navboxes} currentSlug={article.slug} /> : null}
