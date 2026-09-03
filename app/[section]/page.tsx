@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import ArticleHeader from "@/components/codex/ArticleHeader";
 import CornerOrnament from "@/components/codex/CornerOrnament";
 import EntryCard from "@/components/codex/EntryCard";
+import Provenance from "@/components/codex/Provenance";
 import {
   getRenderedOverviewDocument,
   getSearchableArticles,
@@ -90,6 +91,7 @@ export default async function SectionPage({ params }: SectionPageProps) {
                   imageSrc={entry.imageSrc}
                   href={entry.href}
                   kind={entry.kind}
+                  meta={entry.meta}
                 />
               ))}
             </div>
@@ -100,6 +102,8 @@ export default async function SectionPage({ params }: SectionPageProps) {
             </article>
           )}
         </section>
+
+        {overviewDocument ? <Provenance html={overviewDocument.provenance} /> : null}
       </div>
 
       <CornerOrnament position="bottom-right" />

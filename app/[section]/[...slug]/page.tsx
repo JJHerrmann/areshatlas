@@ -9,6 +9,7 @@ import EntryCard from "@/components/codex/EntryCard";
 import GenericInfobox from "@/components/codex/GenericInfobox";
 import NavboxFooter from "@/components/codex/NavboxFooter";
 import NationInfobox from "@/components/codex/NationInfobox";
+import Provenance from "@/components/codex/Provenance";
 import {
   getDeityCompletion,
   getDeitySidebar,
@@ -153,6 +154,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
                     imageSrc={entry.imageSrc}
                     href={entry.href}
                     kind={entry.kind}
+                    meta={entry.meta}
                   />
                 ))}
               </div>
@@ -164,6 +166,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
           </section>
 
           {overviewArticle ? <NavboxFooter navboxes={overviewNavboxes} currentSlug={overviewArticle.slug} /> : null}
+          <Provenance html={overviewDocument.provenance} />
         </div>
 
         <CornerOrnament position="bottom-right" />
@@ -222,6 +225,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
           </div>
 
           {article ? <NavboxFooter navboxes={navboxes} currentSlug={article.slug} /> : null}
+          <Provenance html={document.provenance} />
         </div>
 
         <CornerOrnament position="bottom-right" />
@@ -255,6 +259,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
                   imageSrc={entry.imageSrc}
                   href={entry.href}
                   kind={entry.kind}
+                  meta={entry.meta}
                 />
               ))}
             </div>
