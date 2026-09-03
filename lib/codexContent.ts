@@ -287,6 +287,14 @@ function readFirstNonEmptyLine(markdown: string) {
   return line ? normalizeObsidianText(line) : undefined;
 }
 
+function readFirstHeading(markdown: string) {
+  const line = markdown
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .find((line) => /^#{1,6}\s+\S/.test(line));
+  return line ? normalizeObsidianText(line.replace(/^#{1,6}\s+/, "")) : undefined;
+}
+
 function titleFromFileName(fileName: string) {
   return fileName.replace(/\.[^.]+$/, "");
 }
@@ -1121,6 +1129,8 @@ export async function getRenderedDocument(section: SectionConfig, slugParts: str
   const parsed = parseMatterSafe(raw);
   const title =
     normalizeObsidianDisplayText(String(parsed.data.title || "")) ||
+    normalizeObsidianDisplayText(String(parsed.data.name || "")) ||
+    normalizeObsidianDisplayText(readFirstHeading(parsed.content) || "") ||
     normalizeObsidianDisplayText(readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") || "") ||
     titleFromFileName(path.basename(filePath));
   const summary =
@@ -1148,6 +1158,8 @@ export async function getRenderedOverviewDocument(section: SectionConfig, slugPa
   const parsed = parseMatterSafe(raw);
   const title =
     normalizeObsidianDisplayText(String(parsed.data.title || "")) ||
+    normalizeObsidianDisplayText(String(parsed.data.name || "")) ||
+    normalizeObsidianDisplayText(readFirstHeading(parsed.content) || "") ||
     normalizeObsidianDisplayText(readFirstNonEmptyLine(parsed.content)?.replace(/^#+\s*/, "") || "") ||
     titleFromFileName(path.basename(filePath));
   const summary =
