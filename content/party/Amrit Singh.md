@@ -20,6 +20,11 @@ tags:
   - dwarf
   - sihk
   - fiction
+dates:
+  - label: "Born"
+    filed: "Bikrami 1901"
+    reckoning: "Vikram Samvat, Punjab"
+    pe: "139"
 ---
 
 > [!note] How this doc was built

@@ -17,6 +17,15 @@ sources:
   - "Branch · Paragon of the Horn - 2025-12-05.md"
   - "HeroForge figurine (physical/visual reference, user-supplied 2026-08-10)"
 reviewed: false
+dates:
+  - label: "Born"
+    filed: "A.H. 1256"
+    reckoning: "Hijri lunar, Damascus"
+    pe: "135"
+  - label: "Ordained"
+    filed: "A.D. 1862"
+    reckoning: "Anno Domini, Papal State"
+    pe: "157"
 ---
 
 > [!note] How this doc was built

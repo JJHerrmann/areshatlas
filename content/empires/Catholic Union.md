@@ -24,6 +24,11 @@ infobox:
   Constituent kingdoms: Censer of Vigils (Tuscany), Habsburg–Este (Modena), French Concessions (Parma, Two Sicilies, Netherlands), Papal States, Sardinia–Piedmont, France, Portugal
   Real colonial/native reach: Angola, Portuguese East Africa, Kingdom of Kongo, Goa, Philippines
 summary: The Catholic Union is the fusion of catholic dominated kingdoms from throughout Europe and their holdings across the known Afro-Eurasian world.
+dates:
+  - label: "Consolidated"
+    filed: "A.D. 1705"
+    reckoning: "Anno Domini"
+    pe: "0"
 ---
 
 > [!note] How this doc was built

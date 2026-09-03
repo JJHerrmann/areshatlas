@@ -13,6 +13,11 @@ sources:
   - "DnD Victorian SCP Campaign - 2023-07-23.md"
   - "Habsburgs 1705 Cadet Branch - 2023-07-22.md"
 reviewed: false
+dates:
+  - label: "Born"
+    filed: "A.D. 1830"
+    reckoning: "Anno Domini, the Hofburg, Vienna"
+    pe: "125"
 ---
 ![[franzjoseph.png]]
 > [!note] How this doc was built

@@ -6,6 +6,7 @@ import CornerOrnament from "@/components/codex/CornerOrnament";
 import DeityInfobox from "@/components/codex/DeityInfobox";
 import DeityProfile from "@/components/codex/DeityProfile";
 import EntryCard from "@/components/codex/EntryCard";
+import FiledDates from "@/components/codex/FiledDates";
 import GenericInfobox from "@/components/codex/GenericInfobox";
 import NavboxFooter from "@/components/codex/NavboxFooter";
 import NationInfobox from "@/components/codex/NationInfobox";
@@ -182,7 +183,11 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
     const navboxes = getNavboxesForSourcePath(document.sourcePath);
     const genericInfobox =
       !nationSidebar && !deitySidebar && document.infobox ? document.infobox : null;
-    const hasSidebar = Boolean(nationSidebar) || Boolean(deitySidebar) || Boolean(genericInfobox);
+    const hasSidebar =
+      Boolean(nationSidebar) ||
+      Boolean(deitySidebar) ||
+      Boolean(genericInfobox) ||
+      Boolean(document.filedDates?.length);
     const isDeity = Boolean(deitySidebar) || document.frontmatter?.type === "deity";
     return (
       <main className="min-h-screen px-6 py-12 text-stone-900 lg:px-8">
@@ -222,6 +227,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
                 sourceRelativePath={document.sourcePath}
               />
             ) : null}
+            <FiledDates dates={document.filedDates} />
           </div>
 
           {article ? <NavboxFooter navboxes={navboxes} currentSlug={article.slug} /> : null}

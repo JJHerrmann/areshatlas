@@ -17,6 +17,15 @@ infobox:
   Core: "Persia (Qajar dynasty)"
   "Real basis": "Twelver Shia state religion since the Safavids converted the country by force in the 16th century — genuinely, theologically distinct from its Sunni neighbors, not the same bloc"
   Neighbors: "Bordered by Ottoman Sunni Caliphate territory, Afghanistan, and the Russian Orthodox Empire — a real geographic hinge point between three theopires"
+dates:
+  - label: "Filed as bloc"
+    filed: "A.H. 1284"
+    reckoning: "Hijri lunar, Tehran"
+    pe: "162"
+  - label: "Confessional basis"
+    filed: "A.H. 907"
+    reckoning: "Safavid conversion by force, 1501"
+    pe: "-204"
 ---
 
 > [!note] How this doc was built

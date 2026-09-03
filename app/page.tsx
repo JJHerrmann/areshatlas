@@ -18,7 +18,7 @@ export default async function HomePage() {
       <div className="wiki-content">
         <article className="wiki-article">
           <div className="wiki-article-header">
-            <div className="wiki-kicker">{hero.eyebrow} — opened Anno Portarum 0</div>
+            <div className="wiki-kicker">{hero.eyebrow} — opened Post-Exile 0</div>
             <h1 className="wiki-title">{hero.title}</h1>
             <p className="wiki-subtitle">{hero.subtitle}</p>
           </div>
@@ -64,11 +64,13 @@ export default async function HomePage() {
           <div className="wiki-box wiki-module">
             <h2 className="wiki-box-title">The Reckoning</h2>
             <p className="wiki-copy">
-              All dates are given <em>Anno Portarum</em> — from the opening of the Portals.
+              All dates are given <em>Post-Exile</em> — from 1705, when Vienna&rsquo;s
+              exile began and the Portals opened. A date a bloc files in its own
+              reckoning is stamped to this count.
             </p>
             <p className="wiki-copy">
-              <strong>AP&nbsp;0</strong> &nbsp;·&nbsp; the Yawning, 1705<br />
-              <strong>AP&nbsp;162</strong> &nbsp;·&nbsp; the present year, 1867
+              <strong>P.E.&nbsp;0</strong> &nbsp;·&nbsp; the Yawning, 1705<br />
+              <strong>P.E.&nbsp;162</strong> &nbsp;·&nbsp; the present year, 1867
             </p>
           </div>
 

@@ -52,6 +52,19 @@ export type RenderedDocument = {
    * out of the body and rendered as a page-foot colophon instead of a banner.
    */
   provenance?: string;
+  /** Dated facts filed in a bloc's own reckoning, normalised to the house count. */
+  filedDates?: FiledDate[];
+};
+
+export type FiledDate = {
+  /** e.g. "Born", "Founded", "Ordained". */
+  label: string;
+  /** The date as the originating bureau filed it, e.g. "A.H. 1284". */
+  filed: string;
+  /** Optional note on the calendar / legation, e.g. "Hijri lunar, Tehran". */
+  reckoning?: string;
+  /** The Post-Exile equivalent (P.E. 0 = 1705). Author-supplied; may be negative. */
+  pe: string;
 };
 
 export type DeityCompletion = {
@@ -377,6 +390,27 @@ function readHemisphereViews(frontmatter: Record<string, unknown>): string[] | u
   if (!Array.isArray(raw)) return undefined;
   const views = raw.map((v) => normalizeObsidianText(String(v))).filter(Boolean);
   return views.length ? views : undefined;
+}
+
+/** Read a `dates:` frontmatter list of {label, filed, reckoning?, pe} rows. */
+function readFiledDates(frontmatter: Record<string, unknown>): FiledDate[] | undefined {
+  const raw = frontmatter.dates;
+  if (!Array.isArray(raw)) return undefined;
+  const rows: FiledDate[] = [];
+  for (const item of raw) {
+    if (!item || typeof item !== "object") continue;
+    const r = item as Record<string, unknown>;
+    const label = typeof r.label === "string" ? r.label.trim() : "";
+    const filed = typeof r.filed === "string" ? r.filed.trim() : "";
+    if (!label || !filed) continue;
+    rows.push({
+      label,
+      filed,
+      reckoning: typeof r.reckoning === "string" && r.reckoning.trim() ? r.reckoning.trim() : undefined,
+      pe: r.pe == null ? "" : String(r.pe).trim(),
+    });
+  }
+  return rows.length ? rows : undefined;
 }
 
 // Latin letters that carry no combining mark and so survive NFKD unchanged.
@@ -1318,6 +1352,7 @@ export async function getRenderedDocument(section: SectionConfig, slugParts: str
     world: readWorld(frontmatter),
     infobox: readInfobox(frontmatter),
     hemisphereViews: readHemisphereViews(frontmatter),
+    filedDates: readFiledDates(frontmatter),
     provenance,
   };
 }
@@ -1361,6 +1396,7 @@ export async function getRenderedOverviewDocument(section: SectionConfig, slugPa
     world: readWorld(frontmatter),
     infobox: readInfobox(frontmatter),
     hemisphereViews: readHemisphereViews(frontmatter),
+    filedDates: readFiledDates(frontmatter),
     provenance,
   };
 }
