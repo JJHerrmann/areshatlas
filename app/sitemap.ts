@@ -1,10 +1,26 @@
 import type { MetadataRoute } from "next";
 import fs from "node:fs";
 import path from "node:path";
-import { sections } from "@/lib/codexContent";
+import matter from "gray-matter";
+import { getSectionEntryCount, sections } from "@/lib/codexContent";
+import { isNoindexFrontmatter } from "@/lib/seo";
 
 const BASE_URL = "https://www.areshatlas.com";
 const CONTENT_ROOT = path.join(process.cwd(), "content");
+
+/** Sections with at least one published entry — empty buckets stay out of the sitemap. */
+const publishedSections = sections.filter((section) => getSectionEntryCount(section) > 0);
+
+/** True when an article's markdown frontmatter marks it draft / stub / placeholder. */
+function isDraftArticle(sourceRelativePath?: string) {
+  if (!sourceRelativePath) return false;
+  try {
+    const raw = fs.readFileSync(path.join(CONTENT_ROOT, sourceRelativePath), "utf8");
+    return isNoindexFrontmatter(matter(raw).data as Record<string, unknown>);
+  } catch {
+    return false;
+  }
+}
 
 type ArticleEntry = {
   slug: string;
@@ -129,14 +145,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: getModifiedDate(path.join(process.cwd(), "app", "page.tsx")),
       priority: 1.0,
     },
-    ...sections.map((section) => ({
+    ...publishedSections.map((section) => ({
       url: buildAbsoluteUrl(`/${section.slug}`),
       lastModified: getModifiedDate(path.join(CONTENT_ROOT, section.folder)),
       priority: 0.9,
     })),
-    ...sections.flatMap((section) => getDirectoryEntries(section)),
+    ...publishedSections.flatMap((section) => getDirectoryEntries(section)),
     ...articles
-      .filter((article) => Boolean(article.href))
+      .filter((article) => Boolean(article.href) && !isDraftArticle(article.source_relative_path))
       .map((article) => ({
         url: buildAbsoluteUrl(article.href),
         lastModified: article.source_relative_path

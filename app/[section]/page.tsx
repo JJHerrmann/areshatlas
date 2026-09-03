@@ -1,8 +1,17 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ArticleHeader from "@/components/codex/ArticleHeader";
 import CornerOrnament from "@/components/codex/CornerOrnament";
 import EntryCard from "@/components/codex/EntryCard";
-import { getRenderedOverviewDocument, getSearchableArticles, getSectionBySlug, getSectionView, sections } from "@/lib/codexContent";
+import {
+  getRenderedOverviewDocument,
+  getSearchableArticles,
+  getSectionBySlug,
+  getSectionEntryCount,
+  getSectionView,
+  sections,
+} from "@/lib/codexContent";
+import { canonicalPath, cleanDescription, demoteLeadingH1 } from "@/lib/seo";
 
 type SectionPageProps = {
   params: Promise<{
@@ -12,6 +21,28 @@ type SectionPageProps = {
 
 export function generateStaticParams() {
   return sections.map((section) => ({ section: section.slug }));
+}
+
+export async function generateMetadata({ params }: SectionPageProps): Promise<Metadata> {
+  const { section: sectionSlug } = await params;
+  const section = getSectionBySlug(sectionSlug);
+  if (!section) return {};
+
+  const overviewDocument = await getRenderedOverviewDocument(section, []);
+  const title = overviewDocument?.title ?? section.title;
+  const description = cleanDescription(overviewDocument?.summary ?? section.summary, section.summary);
+  const url = canonicalPath(section.slug);
+  const isEmpty = getSectionEntryCount(section) === 0;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { type: "website", title, description, url },
+    twitter: { title, description },
+    // Sections with no published entries yet are thin — keep them out of the index.
+    ...(isEmpty ? { robots: { index: false, follow: true } } : {}),
+  };
 }
 
 export default async function SectionPage({ params }: SectionPageProps) {
@@ -42,7 +73,7 @@ export default async function SectionPage({ params }: SectionPageProps) {
             <article
               className="codex-entry-body codex-prose mt-10"
               data-article-outline-root="true"
-              dangerouslySetInnerHTML={{ __html: overviewDocument.html }}
+              dangerouslySetInnerHTML={{ __html: demoteLeadingH1(overviewDocument.html) }}
             />
           </>
         ) : null}

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ArticleHeader from "@/components/codex/ArticleHeader";
@@ -19,6 +20,7 @@ import {
   getSectionBySlug,
   getSectionView,
 } from "@/lib/codexContent";
+import { canonicalPath, cleanDescription, demoteLeadingH1, isNoindexFrontmatter } from "@/lib/seo";
 
 const STUB_REQUEST_HREF = "https://github.com/JJHerrmann/areshatlas/issues/new";
 
@@ -67,6 +69,49 @@ type NestedSectionPageProps = {
   }>;
 };
 
+export async function generateMetadata({ params }: NestedSectionPageProps): Promise<Metadata> {
+  const { section: sectionSlug, slug } = await params;
+  const section = getSectionBySlug(sectionSlug);
+  if (!section) return {};
+
+  const url = canonicalPath(section.slug, ...slug);
+  const base = (title: string, description: string, noindex = false): Metadata => ({
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { type: "article", title, description, url },
+    twitter: { title, description },
+    ...(noindex ? { robots: { index: false, follow: true } } : {}),
+  });
+
+  const view = getSectionView(section, slug);
+  const overviewDocument = view ? await getRenderedOverviewDocument(section, slug) : null;
+  if (view && overviewDocument) {
+    return base(
+      overviewDocument.title,
+      cleanDescription(overviewDocument.summary, section.summary),
+      isNoindexFrontmatter(overviewDocument.frontmatter),
+    );
+  }
+
+  const document = await getRenderedDocument(section, slug);
+  if (document) {
+    const isStub = getDeityCompletion(document.frontmatter)?.isStub ?? false;
+    return base(
+      document.title,
+      cleanDescription(document.summary, section.summary),
+      isStub || isNoindexFrontmatter(document.frontmatter),
+    );
+  }
+
+  if (view) {
+    const title = view.breadcrumb[view.breadcrumb.length - 1]?.title ?? section.title;
+    return base(title, cleanDescription(section.summary, section.summary));
+  }
+
+  return {};
+}
+
 export default async function NestedSectionPage({ params }: NestedSectionPageProps) {
   const { section: sectionSlug, slug } = await params;
   const section = getSectionBySlug(sectionSlug);
@@ -92,7 +137,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
           <article
             className="codex-entry-body codex-prose mt-10"
             data-article-outline-root="true"
-            dangerouslySetInnerHTML={{ __html: overviewDocument.html }}
+            dangerouslySetInnerHTML={{ __html: demoteLeadingH1(overviewDocument.html) }}
           />
 
           <section className="mt-10">
@@ -157,7 +202,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
               <article
                 className="codex-entry-body codex-prose"
                 data-article-outline-root="true"
-                dangerouslySetInnerHTML={{ __html: document.html }}
+                dangerouslySetInnerHTML={{ __html: demoteLeadingH1(document.html) }}
               />
             )}
             {nationSidebar ? <NationInfobox data={nationSidebar} /> : null}
