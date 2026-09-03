@@ -1,9 +1,0 @@
-{
-  "id": "dieties-of-areshnaat",
-  "title": "Deities of Areshnaat",
-  "mode": "footer",
-  "derive": {
-    "field": "pantheon",
-    "equals": "Areshnaati"
-  }
-}

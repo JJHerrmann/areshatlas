@@ -22,7 +22,7 @@ import {
   getSectionBySlug,
   getSectionView,
 } from "@/lib/codexContent";
-import { canonicalPath, cleanDescription, demoteLeadingH1, isNoindexFrontmatter } from "@/lib/seo";
+import { canonicalPath, cleanDescription, demoteLeadingH1, isNoindexFrontmatter, explicitSummary } from "@/lib/seo";
 
 const STUB_REQUEST_HREF = "https://github.com/JJHerrmann/areshatlas/issues/new";
 
@@ -132,7 +132,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             breadcrumbs={overviewDocument.breadcrumb}
             label={section.label}
             title={overviewDocument.title}
-            dek={overviewDocument.summary}
+            dek={explicitSummary(overviewDocument.frontmatter) || undefined}
             searchItems={searchItems}
           />
 
@@ -191,7 +191,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
             breadcrumbs={document.breadcrumb}
             label={section.label}
             title={document.title}
-            dek={getArticleDek(document.frontmatter, document.summary)}
+            dek={getArticleDek(document.frontmatter, explicitSummary(document.frontmatter))}
             statusNotice={getArticleStatusNotice(document.frontmatter, section.title)}
             searchItems={searchItems}
             sourceRelativePath={document.sourcePath}

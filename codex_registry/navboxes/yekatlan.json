@@ -1,9 +1,0 @@
-{
-  "id": "yekatlan",
-  "title": "Yekatlan",
-  "mode": "footer",
-  "derive": {
-    "field": "pantheon",
-    "equals": "Yekatlan"
-  }
-}

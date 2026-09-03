@@ -1,9 +1,0 @@
-{
-  "id": "ramtilim",
-  "title": "Ramtilim",
-  "mode": "footer",
-  "derive": {
-    "field": "pantheon",
-    "equals": "Ramtilim"
-  }
-}

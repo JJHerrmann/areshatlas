@@ -4,13 +4,12 @@ import { getFrontpageHero } from "@/lib/frontpageContent";
 
 export default async function HomePage() {
   const hero = await getFrontpageHero();
-  const worldMapSrc = "/maps/areshnaat-faux-satellite.webp";
   const sectionCards = sections.map((section) => {
     const count = getSectionEntryCount(section);
     return {
       ...section,
       href: `/${section.slug}`,
-      countLabel: count ? `${count} entries` : "No entries",
+      countLabel: count ? `${count} on file` : "none on file",
     };
   });
 
@@ -19,7 +18,7 @@ export default async function HomePage() {
       <div className="wiki-content">
         <article className="wiki-article">
           <div className="wiki-article-header">
-            <div className="wiki-kicker">Main Page</div>
+            <div className="wiki-kicker">{hero.eyebrow} — opened Anno Portarum 0</div>
             <h1 className="wiki-title">{hero.title}</h1>
             <p className="wiki-subtitle">{hero.subtitle}</p>
           </div>
@@ -31,23 +30,8 @@ export default async function HomePage() {
         </article>
 
         <section className="wiki-module-grid">
-          <div className="wiki-box wiki-module wiki-module-full">
-            <h2 className="wiki-box-title">World Survey Map</h2>
-            <a href={worldMapSrc} className="wiki-map-link" target="_blank" rel="noreferrer">
-              <img
-                src={worldMapSrc}
-                alt="Faux-satellite survey map of Areshnaat"
-                className="wiki-world-map-image"
-              />
-            </a>
-            <p className="wiki-copy">
-              A faux-satellite render of the world surface derived from the rotated
-              terrain model, landmask, biome projection, and relief shading.
-            </p>
-          </div>
-
           <div className="wiki-box wiki-module wiki-module-wide">
-            <h2 className="wiki-box-title">Featured Divisions</h2>
+            <h2 className="wiki-box-title">Divisions of the Registry</h2>
             <div className="wiki-section-grid">
               {sectionCards.map((section) => (
                 <SectionCard
@@ -63,20 +47,34 @@ export default async function HomePage() {
           </div>
 
           <div className="wiki-box wiki-module">
-            <h2 className="wiki-box-title">About The Archive</h2>
+            <h2 className="wiki-box-title">On the Registry</h2>
             <p className="wiki-copy">
-              The codex is arranged as a browsable field archive: major divisions
-              lead to regions, peoples, divine records, and language material.
+              Each entry is drawn up as a file, not an article. It carries a registry
+              number, an originating bureau, a classification, and an endorsement — and
+              its history of revision is kept on the page, because the map of Thaer is a
+              live negotiation and not a settled record.
             </p>
             <p className="wiki-copy">
-              Section indexes behave like survey ledgers; individual notes render
-              as readable dossier pages with metadata and crosslinks.
+              Division indexes read as a clerk&rsquo;s ledger; individual files render
+              with their standing particulars in the left margin and their cross-references
+              set as clauses.
+            </p>
+          </div>
+
+          <div className="wiki-box wiki-module">
+            <h2 className="wiki-box-title">The Reckoning</h2>
+            <p className="wiki-copy">
+              All dates are given <em>Anno Portarum</em> — from the opening of the Portals.
+            </p>
+            <p className="wiki-copy">
+              <strong>AP&nbsp;0</strong> &nbsp;·&nbsp; the Yawning, 1705<br />
+              <strong>AP&nbsp;162</strong> &nbsp;·&nbsp; the present year, 1867
             </p>
           </div>
 
           <div className="wiki-box wiki-module">
             <h2 className="wiki-box-title">System Support</h2>
-            <p className="wiki-copy">{hero.systemLine}</p>
+            <p className="wiki-copy wiki-systemline-credit">{hero.systemLine}</p>
           </div>
         </section>
       </div>

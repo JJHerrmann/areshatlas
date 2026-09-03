@@ -171,55 +171,9 @@ function parseMatterSafe(raw: string) {
 }
 
 export const sections: SectionConfig[] = [
-  {
-    slug: "pantheon",
-    title: "Pantheon",
-    label: "Catalog of Divine Aspects",
-    summary: "Survey of gods, rites, symbols, and divine domains recorded across Aresh.",
-    folder: "gods",
-  },
-  {
-    slug: "regions",
-    title: "Regions",
-    label: "Geographic Surveys",
-    summary: "Mapped territories, settlements, routes, hazards, and ecological observations.",
-    folder: "regions",
-  },
-  {
-    slug: "cultures",
-    title: "Cultures",
-    label: "Ethnographic Records",
-    summary: "Peoples, languages, lineages, customs, and social memory of the known world.",
-    folder: "cultures",
-  },
-  {
-    slug: "languages",
-    title: "Languages",
-    label: "Linguistic Records",
-    summary: "Tongues, scripts, speech families, and language notes gathered across Areshnaat.",
-    folder: "cultures/language",
-  },
-  {
-    slug: "relics",
-    title: "Relics and Magic",
-    label: "Artifacts and Arcana",
-    summary: "Catalog of relics, magical traditions, rites, and notable materials.",
-    folder: "relics",
-  },
-  {
-    slug: "creatures",
-    title: "Creatures and Powers",
-    label: "Natural Observations",
-    summary: "Bestiary entries, supernatural entities, and expedition-derived accounts.",
-    folder: "creatures",
-  },
-  {
-    slug: "chronicles",
-    title: "Chronicles",
-    label: "Recorded Histories",
-    summary: "Events, conflicts, dynasties, migrations, and remembered cataclysms.",
-    folder: "chronicles",
-  },
+  { slug: "empires", title: "Empires", label: "Post-Yawning Blocs", summary: "The theological empires and blocs that consolidated after the Yawning of 1705.", folder: "empires" },
+  { slug: "figures", title: "Figures", label: "Persons of Record", summary: "Notable individuals of Thaer, historical and living.", folder: "figures" },
+  { slug: "party", title: "Party", label: "The Junior Warden Roster", summary: "The six-member Aegis of Equilibrium party.", folder: "party" },
 ];
 
 export function getSectionBySlug(slug: string) {
@@ -425,9 +379,18 @@ function readHemisphereViews(frontmatter: Record<string, unknown>): string[] | u
   return views.length ? views : undefined;
 }
 
+// Latin letters that carry no combining mark and so survive NFKD unchanged.
+const SLUG_TRANSLITERATE: Record<string, string> = {
+  "ø": "o", "æ": "ae", "œ": "oe", "ð": "d", "þ": "th",
+  "ł": "l", "đ": "d", "ħ": "h", "ı": "i", "ß": "ss", "ĸ": "k",
+};
+
 function slugifySegment(value: string) {
   return String(value)
+    .normalize("NFKD")
+    .replace(/[̀-ͯ]/g, "")
     .toLowerCase()
+    .replace(/[æøœðþłđħıßĸ]/g, (ch) => SLUG_TRANSLITERATE[ch] ?? "")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 }

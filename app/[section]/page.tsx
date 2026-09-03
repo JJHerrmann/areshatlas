@@ -12,7 +12,7 @@ import {
   getSectionView,
   sections,
 } from "@/lib/codexContent";
-import { canonicalPath, cleanDescription, demoteLeadingH1 } from "@/lib/seo";
+import { canonicalPath, cleanDescription, demoteLeadingH1, explicitSummary } from "@/lib/seo";
 
 type SectionPageProps = {
   params: Promise<{
@@ -64,7 +64,7 @@ export default async function SectionPage({ params }: SectionPageProps) {
           breadcrumbs={[{ title: section.title, href: `/${section.slug}` }]}
           label={section.label}
           title={overviewDocument?.title ?? section.title}
-          dek={overviewDocument?.summary ?? section.summary}
+          dek={(overviewDocument && explicitSummary(overviewDocument.frontmatter)) || section.summary}
           sourceNote={`Mirrored Source Folder: ${view.sourcePath}`}
           searchItems={searchItems}
         />

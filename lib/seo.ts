@@ -57,3 +57,18 @@ export function canonicalPath(...segments: Array<string | undefined | null>): st
     .join("/");
   return path ? `/${path}` : "/";
 }
+
+/**
+ * The document's dek/summary only when the author wrote one explicitly
+ * (frontmatter `summary` / `card_summary` / `dek`). Returns "" for files whose
+ * resolved summary is just the first body line — so the page can skip a dek that
+ * would only duplicate the opening paragraph.
+ */
+export function explicitSummary(frontmatter: Record<string, unknown> | null | undefined): string {
+  if (!frontmatter) return "";
+  for (const key of ["summary", "card_summary", "dek"]) {
+    const v = frontmatter[key];
+    if (typeof v === "string" && v.trim()) return v.trim();
+  }
+  return "";
+}

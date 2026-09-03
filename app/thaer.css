@@ -1,0 +1,291 @@
+/* ============================================================================
+   Thaer Registry — theme override on the Aresh codex engine (spike).
+   Redefines the semantic tokens the components consume, then re-skins the
+   handful of pieces whose form (not just colour) changes.
+   ========================================================================== */
+
+:root:root {
+  /* --- ground: cool ministry stock, not warm parchment ------------------ */
+  --token-color-semantic-bg-page: #12151b;
+  --token-color-semantic-bg-canvas: #13161c;
+  --token-color-semantic-bg-surface: #171b21;
+  --token-color-semantic-bg-surfaceRaised: #1b1f26;
+  --token-color-semantic-bg-overlay: rgba(18, 21, 27, 0.9);
+
+  --token-color-semantic-text-primary: #cfd0c7;
+  --token-color-semantic-text-strong: #e6e6dc;
+  --token-color-semantic-text-muted: #888e96;
+  --token-color-semantic-text-link: #e6e6dc;
+  --token-color-semantic-text-linkHover: #ce5a51;
+
+  --token-color-semantic-border-subtle: rgba(206, 90, 81, 0.14);
+  --token-color-semantic-border-default: #363b43;
+  --token-color-semantic-border-strong: #4b515a;
+  --token-color-semantic-border-active: #ce5a51;
+  --token-color-semantic-decorative-line: #4b515a;
+  --token-color-semantic-focus-ring: #ce5a51;
+
+  /* accent chain -> oxblood */
+  --token-color-primitive-gold-300: #d97a71;
+  --token-color-primitive-gold-400: #ce5a51;
+  --token-color-primitive-gold-500: #b8443c;
+  --token-color-primitive-gold-600: #9c2a24;
+  --token-color-primitive-gold-700: #7a211c;
+  --token-color-semantic-accent-primary: #ce5a51;
+  --token-color-semantic-accent-primaryHover: #d97a71;
+  --token-color-semantic-accent-secondary: #6f9a82;
+
+  /* the gold alphas used for hovers/rules -> oxblood alphas */
+  --token-color-primitive-alpha-gold12: rgba(206, 90, 81, 0.12);
+  --token-color-primitive-alpha-gold18: rgba(206, 90, 81, 0.18);
+  --token-color-primitive-alpha-gold28: rgba(206, 90, 81, 0.28);
+  --token-color-primitive-alpha-gold45: rgba(206, 90, 81, 0.42);
+  --token-color-primitive-alpha-gold60: rgba(206, 90, 81, 0.55);
+
+  --token-color-primitive-green-500: #6f9a82;
+  --token-color-primitive-green-600: #2c4436;
+
+  /* --- type: the record hand ------------------------------------------- */
+  --token-font-family-display: "Libre Caslon Text", "Times New Roman", Georgia, serif;
+  --token-font-family-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --token-font-family-mono: "Courier Prime", "Courier New", ui-monospace, monospace;
+
+  /* --- texture: kill the atlas cloud/paper, use ruled survey lines ----- */
+  --theme-texture-image: none;
+  --theme-cloud-gradient: none;
+  --theme-page-gradient: none;
+  --theme-panel-gradient: var(--token-color-semantic-bg-surface);
+  --theme-panel-overlay: none;
+  --theme-divider-gradient: linear-gradient(90deg, var(--token-color-semantic-border-strong), transparent);
+
+  /* re-derive the codex aliases */
+  --codex-line: #363b43;
+  --codex-line-strong: #4b515a;
+  --codex-ink: #e6e6dc;
+  --codex-ink-soft: #cfd0c7;
+  --codex-accent: #ce5a51;
+  --codex-seal: #6f9a82;
+  --codex-grid: rgba(207, 208, 199, 0.055);
+  --codex-deboss: inset 0 1px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* ---- page ground: ruled ledger stock -------------------------------------- */
+body,
+.wiki-page-shell,
+.wiki-page-frame {
+  background-color: var(--token-color-semantic-bg-page) !important;
+  background-image: repeating-linear-gradient(
+    to bottom, transparent 0 27px, var(--codex-grid) 27px 28px
+  ) !important;
+}
+.wiki-page-frame { border: 0 !important; box-shadow: none !important; }
+/* stop the ruled ground running on for a screenful below short pages */
+.wiki-page-shell,
+.wiki-shell-layout,
+.wiki-main,
+.wiki-main-page { min-height: 0 !important; }
+.wiki-page-frame { padding-bottom: 3rem !important; }
+
+/* ---- sidebar becomes a chancellery masthead ---------------------------- */
+.wiki-brand-box { border: 1px solid var(--codex-line) !important; background: var(--token-color-semantic-bg-surface) !important; }
+.wiki-banner-box { display: none !important; }
+.wiki-logo-image { display: none; }
+.wiki-logo::before {
+  content: "Thaer Registry";
+  display: block;
+  font-family: var(--token-font-family-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.15;
+  color: var(--codex-ink);
+}
+/* system-support credit line — kept verbatim, set as a Victorian title-page credit */
+.wiki-systemline,
+.wiki-systemline-credit {
+  font-family: var(--token-font-family-body) !important;
+  font-size: 0.72rem !important;
+  font-style: italic;
+  line-height: 1.7;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: none !important;
+  color: var(--codex-ink-soft) !important;
+  border-top: 1px solid var(--codex-line);
+  border-bottom: 3px double var(--codex-line-strong);
+  padding: 0.5rem 0.2rem 0.55rem !important;
+  margin: 0.6rem 0 0 !important;
+}
+.wiki-nav-link { font-family: var(--token-font-family-mono) !important; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.74rem !important; }
+
+/* ---- entry masthead --------------------------------------------------- */
+.codex-page-title {
+  font-family: var(--token-font-family-display) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+}
+/* plate label: no parchment fill, oxblood engraved caption */
+.codex-plate-label {
+  font-family: var(--token-font-family-mono) !important;
+  color: var(--codex-accent) !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: var(--codex-accent) !important;
+  letter-spacing: 0.16em !important;
+}
+
+/* the LAT/LONG rule is now the Anno Portarum datum (see CoordinateRule.tsx) */
+.codex-coordinate-rule { color: var(--codex-accent) !important; }
+
+/* ---- layout: registry rail on the LEFT ------------------------------- */
+.codex-entry-layout.with-sidebar {
+  grid-template-columns: 268px minmax(0, 1fr) !important;
+  gap: 0 3rem !important;
+}
+.codex-entry-layout.with-sidebar .codex-infobox { order: -1; }
+
+/* ---- the infobox -> a ruled ministry form ("Standing") -------------- */
+.codex-infobox {
+  border: 1px solid var(--codex-line-strong) !important;
+  border-radius: 0 !important;
+  background: var(--token-color-semantic-bg-surfaceRaised) !important;
+  box-shadow: var(--codex-deboss) !important;
+  padding: 0 !important;
+  position: sticky;
+  top: 1.5rem;
+}
+.codex-infobox-title {
+  font-family: var(--token-font-family-display) !important;
+  font-weight: 700 !important;
+  font-size: 1.15rem !important;
+  padding: 0.7rem 0.8rem 0.2rem !important;
+}
+.codex-infobox-subtitle {
+  font-family: var(--token-font-family-mono) !important;
+  font-size: 0.66rem !important;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--codex-seal) !important;
+  padding: 0 0.8rem !important;
+  margin: 0 !important;
+}
+.codex-infobox-caption {
+  font-family: var(--token-font-family-mono) !important;
+  font-size: 0.72rem !important;
+  color: var(--codex-ink-soft) !important;
+  padding: 0.1rem 0.8rem 0.4rem !important;
+}
+.codex-infobox-sections { border-top: 1px solid var(--codex-line-strong); }
+.codex-infobox-section { padding: 0 !important; border: 0 !important; }
+.codex-infobox-section-title { display: none; }
+.codex-infobox-grid { display: block !important; }
+.codex-infobox-row {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 0.05rem !important;
+  padding: 0.55rem 0.8rem !important;
+  border-bottom: 1px solid var(--codex-line) !important;
+}
+.codex-infobox-row:last-child { border-bottom: 0 !important; }
+.codex-infobox-row dt {
+  font-family: var(--token-font-family-body) !important;
+  font-size: 0.6rem !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: var(--codex-ink-soft) !important;
+}
+.codex-infobox-row dd {
+  font-family: var(--token-font-family-mono) !important;
+  font-size: 0.84rem !important;
+  line-height: 1.45 !important;
+}
+
+/* ---- cross-refs -> clause references -------------------------------- */
+.codex-prose a,
+.codex-inline-link {
+  font-family: var(--token-font-family-mono) !important;
+  font-size: 0.9em !important;
+  font-style: normal !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid var(--codex-accent) !important;
+  white-space: nowrap;
+}
+.codex-prose a::before,
+.codex-inline-link::before { content: "§\00202f"; color: var(--codex-accent); }
+
+/* ---- section headings inside prose --------------------------------- */
+.codex-prose h2,
+.codex-prose h3 {
+  font-family: var(--token-font-family-display) !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 1rem !important;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+.codex-prose h2::before,
+.codex-prose h3::before {
+  content: "§";
+  color: var(--codex-accent);
+  font-family: var(--token-font-family-mono);
+  font-size: 0.85rem;
+}
+.codex-prose h2::after,
+.codex-prose h3::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid var(--codex-line-strong);
+}
+
+/* first body paragraph gets a Caslon drop initial */
+.codex-entry-body.codex-prose > p:first-of-type::first-letter {
+  font-family: var(--token-font-family-display);
+  font-weight: 700;
+  font-size: 3em;
+  float: left;
+  line-height: 0.82;
+  padding: 0.05em 0.12em 0 0;
+  color: var(--codex-accent);
+}
+
+/* ---- provenance -> green endorsement stamp ------------------------- */
+.codex-provenance {
+  border: 2px solid var(--codex-seal) !important;
+  border-top: 2px solid var(--codex-seal) !important;
+  padding: 0.9rem 1.1rem !important;
+  max-width: 62ch;
+  transform: rotate(-0.6deg);
+  box-shadow: var(--codex-deboss);
+}
+.codex-provenance-label {
+  color: var(--codex-seal) !important;
+  font-family: var(--token-font-family-body) !important;
+  font-size: 0.66rem !important;
+  letter-spacing: 0.16em !important;
+}
+.codex-provenance-body { font-size: 0.86rem !important; }
+
+/* ---- callouts (any left inline) ---------------------------------- */
+.codex-prose .codex-callout {
+  border-left-color: var(--codex-accent) !important;
+  background: rgba(206, 90, 81, 0.06) !important;
+}
+
+/* ---- entry cards -> registry file cards -------------------------- */
+.codex-page-inner article.relative.overflow-hidden {
+  background: var(--token-color-semantic-bg-surfaceRaised) !important;
+  border: 1px solid var(--codex-line-strong) !important;
+  border-radius: 0 !important;
+  box-shadow: var(--codex-deboss);
+}
+.codex-page-inner article.relative.overflow-hidden * { color: var(--codex-ink) !important; }
+.codex-page-inner article.relative.overflow-hidden .text-amber-800\/80,
+.codex-page-inner article.relative.overflow-hidden p.text-\[10px\] {
+  color: var(--codex-accent) !important;
+  font-family: var(--token-font-family-mono) !important;
+}
+.codex-page-inner article.relative.overflow-hidden h4 {
+  font-family: var(--token-font-family-display) !important;
+}

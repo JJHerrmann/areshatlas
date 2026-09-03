@@ -1,9 +1,0 @@
-{
-  "id": "people-of-drakharpan",
-  "title": "People of Drakharpan",
-  "mode": "footer",
-  "derive": {
-    "type": "person",
-    "pathPrefix": "regions/Drakharpan/"
-  }
-}
