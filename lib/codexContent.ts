@@ -23,6 +23,8 @@ export type ContentEntry = {
   summary: string;
   imageSrc?: string;
   kind: "folder" | "file";
+  /** Short supplementary line for the card (e.g. "Thaer · The Ottoman Empire"). */
+  meta?: string;
 };
 
 export type SectionView = {
@@ -45,6 +47,11 @@ export type RenderedDocument = {
   infobox?: Record<string, string>;
   /** Globe / hemisphere caption strings shown above the infobox rows. */
   hemisphereViews?: string[];
+  /**
+   * A leading provenance callout (`> [!note] How this doc was built ...`) pulled
+   * out of the body and rendered as a page-foot colophon instead of a banner.
+   */
+  provenance?: string;
 };
 
 export type DeityCompletion = {
@@ -289,8 +296,56 @@ function readFirstNonEmptyLine(markdown: string) {
   const line = markdown
     .split(/\r?\n/)
     .map((line) => line.trim())
-    .find((line) => Boolean(line) && !line.startsWith("---") && !line.startsWith("#"));
+    .find(
+      (line) =>
+        Boolean(line) &&
+        !line.startsWith("---") &&
+        !line.startsWith("#") &&
+        !line.startsWith(">") &&
+        !/^!?\[\[[^\]]+\]\]$/.test(line) &&
+        !/^#\w[\w/-]*(\s+#\w[\w/-]*)*$/.test(line),
+    );
   return line ? normalizeObsidianText(line) : undefined;
+}
+
+/**
+ * Split a leading provenance callout off the top of a document body. Matches an
+ * opening blockquote whose first line is an Obsidian callout marker
+ * (`> [!note] How this doc was built`). Returns the callout as plain markdown
+ * (marker stripped) plus the remaining body.
+ */
+function splitProvenanceCallout(content: string): { provenance: string | null; body: string } {
+  const normalized = content.replace(/^﻿/, "");
+  // Consume any leading blank lines and image embeds (e.g. a portrait) that sit
+  // above the provenance callout; they belong at the top of the body.
+  const preambleMatch = normalized.match(/^(?:[ \t]*\r?\n|[ \t]*!\[[^\]]*\]\([^)]*\)[ \t]*\r?\n|[ \t]*!\[\[[^\]]*\]\][ \t]*\r?\n)*/);
+  const preamble = preambleMatch ? preambleMatch[0] : "";
+  const rest = normalized.slice(preamble.length);
+
+  const calloutMatch = rest.match(/^((?:>[^\n]*(?:\r?\n|$))+)/);
+  if (!calloutMatch) return { provenance: null, body: content };
+  const block = calloutMatch[1];
+  const lines = block.split(/\r?\n/).map((line) => line.replace(/^>\s?/, ""));
+  if (!/^\[![\w-]+\]/.test(lines[0])) return { provenance: null, body: content };
+
+  // The first line is `[!type] <rest>`. If <rest> is a short heading
+  // ("How this doc was built") drop it — the colophon component supplies its own
+  // heading. If it's already prose, keep it.
+  const firstRest = lines[0].replace(/^\[![\w-]+\]\s*/, "").trim();
+  const isHeading = firstRest.length > 0 && firstRest.length <= 60 && !/[.:!?]/.test(firstRest);
+  const provenanceLines = isHeading ? lines.slice(1) : [firstRest, ...lines.slice(1)];
+  const provenance = provenanceLines.join("\n").trim();
+  const body = (preamble + rest.slice(block.length)).replace(/^\s+/, "");
+  return { provenance: provenance || null, body };
+}
+
+/** Drop a leading `# Heading` line when it just repeats the resolved page title. */
+function stripRedundantLeadingHeading(body: string, title: string): string {
+  return body.replace(
+    /^((?:[ \t]*!?\[\[?[^\n\]]*\]\]?(?:\([^)]*\))?[ \t]*\r?\n+)?)#{1,3}[ \t]+(.+?)[ \t]*\r?\n+/,
+    (whole, lead: string, heading: string) =>
+      slugifySegment(normalizeObsidianDisplayText(heading)) === slugifySegment(title) ? lead : whole,
+  );
 }
 
 function readFirstHeading(markdown: string) {
@@ -845,7 +900,24 @@ function createFileEntry(
     summary: readSummary(filePath, `Mirrored source entry in ${domain}.`),
     imageSrc: readEntryImage(filePath),
     kind: "file",
+    meta: readEntryMeta(filePath),
   };
+}
+
+/** A short "world · primary fact" line for entry cards; undefined for plain Areshnaat entries. */
+function readEntryMeta(filePath: string): string | undefined {
+  if (!MARKDOWN_EXTENSIONS.has(path.extname(filePath).toLowerCase())) return undefined;
+  const frontmatter = parseMatterSafe(fs.readFileSync(filePath, "utf8")).data as Record<string, unknown>;
+  const bits: string[] = [];
+  const world = readWorld(frontmatter);
+  if (world && world !== DEFAULT_WORLD) bits.push(world);
+  const infobox = readInfobox(frontmatter);
+  if (infobox) {
+    const primary =
+      infobox.Core || infobox.Theopire || infobox.Class || infobox.Race || Object.values(infobox)[0];
+    if (primary) bits.push(primary);
+  }
+  return bits.length ? bits.join(" · ") : undefined;
 }
 
 function createFolderEntry(
@@ -972,6 +1044,20 @@ function preprocessMarkdown(markdown: string, frontmatter: Record<string, unknow
     interpolateFrontmatterTokens(markdown, frontmatter)
   )
     .replace(/```dataviewjs[\s\S]*?```/g, "")
+    // Drop a trailing line of bare Obsidian tags (e.g. "#thaer #fantasy #dnd").
+    .replace(/(?:\r?\n)#[\w/-]+(?:[ \t]+#[\w/-]+)*[ \t]*(?:\r?\n)*$/g, "")
+    // Obsidian embeds: ![[image.png|caption]] -> markdown image; ![[Note]] -> link.
+    .replace(/!\[\[([^|\]]+)(?:\|([^\]]+))?\]\]/g, (match, rawTarget: string, rawCaption?: string) => {
+      const target = String(rawTarget).trim();
+      const caption = rawCaption?.trim() || target.split("/").pop() || target;
+      const ext = path.extname(target).toLowerCase();
+      if (IMAGE_EXTENSIONS.has(ext)) {
+        const src = resolveContentImage(`![[${target}]]`, sourceRelativePath || "");
+        return src ? `![${caption}](${src})` : "";
+      }
+      const href = resolveObsidianHref(target.replace(/\.(md|markdown)$/i, ""), sourceRelativePath);
+      return href ? `[${caption}](${href})` : caption;
+    })
     .replace(/(?<!!)\[\[([^[\]]+)\]\]/g, (_match, target: string) => {
       const [rawTarget, rawAlias] = String(target).split("|");
       const cleanTarget = rawTarget.trim();
@@ -979,6 +1065,43 @@ function preprocessMarkdown(markdown: string, frontmatter: Record<string, unknow
       const href = resolveObsidianHref(cleanTarget, sourceRelativePath);
       return href ? `[${cleanAlias}](${href})` : `[${cleanAlias}](#)`;
     });
+}
+
+/**
+ * Rewrite Obsidian callout blockquotes (`> [!note] Title` ...) into styled
+ * `<aside class="codex-callout codex-callout-<type>">` blocks so they don't
+ * render as literal "[!note]" text.
+ */
+function remarkCallouts() {
+  return (tree: object) => {
+    visit(tree as Parameters<typeof visit>[0], "blockquote", (node: {
+      children?: Array<{ type?: string; children?: Array<{ type?: string; value?: string }>; data?: Record<string, unknown> }>;
+      data?: Record<string, unknown>;
+    }) => {
+      const firstPara = node.children?.[0];
+      const firstText = firstPara?.children?.[0];
+      if (!firstPara || firstPara.type !== "paragraph" || firstText?.type !== "text") return;
+      const marker = String(firstText.value).match(/^\[!([\w-]+)\][ \t]*(.*)$/s);
+      if (!marker) return;
+      const [, type, title] = marker;
+
+      node.data = {
+        ...(node.data || {}),
+        hName: "aside",
+        hProperties: { className: ["codex-callout", `codex-callout-${type.toLowerCase()}`] },
+      };
+
+      if (title.trim()) {
+        firstText.value = title.trim();
+        firstPara.data = {
+          ...(firstPara.data || {}),
+          hProperties: { className: ["codex-callout-title"] },
+        };
+      } else {
+        node.children?.shift();
+      }
+    });
+  };
 }
 
 function remarkCodexLinks() {
@@ -1032,6 +1155,7 @@ async function renderMarkdown(
   const processed = await unified()
     .use(remarkParse)
     .use(remarkGfm)
+    .use(remarkCallouts)
     .use(remarkCodexLinks)
     .use(remarkRehype)
     .use(rehypeCodexHeadings)
@@ -1209,9 +1333,18 @@ export async function getRenderedDocument(section: SectionConfig, slugParts: str
     readFirstNonEmptyLine(parsed.content) ||
     section.summary;
   const relativePath = path.relative(getSectionRoot(section), filePath).replace(/\\/g, "/");
-  const html = await renderMarkdown(parsed.content, parsed.data as Record<string, unknown>, `${section.folder}/${relativePath}`);
-
   const frontmatter = parsed.data as Record<string, unknown>;
+  const assetPath = `${section.folder}/${relativePath}`;
+  const { provenance: provenanceMarkdown, body: bodyMarkdown } = splitProvenanceCallout(parsed.content);
+  const html = await renderMarkdown(
+    stripRedundantLeadingHeading(bodyMarkdown, title),
+    frontmatter,
+    assetPath,
+  );
+  const provenance = provenanceMarkdown
+    ? await renderMarkdown(provenanceMarkdown, frontmatter, assetPath)
+    : undefined;
+
   return {
     title,
     summary,
@@ -1222,6 +1355,7 @@ export async function getRenderedDocument(section: SectionConfig, slugParts: str
     world: readWorld(frontmatter),
     infobox: readInfobox(frontmatter),
     hemisphereViews: readHemisphereViews(frontmatter),
+    provenance,
   };
 }
 
@@ -1242,9 +1376,18 @@ export async function getRenderedOverviewDocument(section: SectionConfig, slugPa
     readFirstNonEmptyLine(parsed.content) ||
     section.summary;
   const relativePath = path.relative(getSectionRoot(section), filePath).replace(/\\/g, "/");
-  const html = await renderMarkdown(parsed.content, parsed.data as Record<string, unknown>, `${section.folder}/${relativePath}`);
-
   const frontmatter = parsed.data as Record<string, unknown>;
+  const assetPath = `${section.folder}/${relativePath}`;
+  const { provenance: provenanceMarkdown, body: bodyMarkdown } = splitProvenanceCallout(parsed.content);
+  const html = await renderMarkdown(
+    stripRedundantLeadingHeading(bodyMarkdown, title),
+    frontmatter,
+    assetPath,
+  );
+  const provenance = provenanceMarkdown
+    ? await renderMarkdown(provenanceMarkdown, frontmatter, assetPath)
+    : undefined;
+
   return {
     title,
     summary,
@@ -1255,6 +1398,7 @@ export async function getRenderedOverviewDocument(section: SectionConfig, slugPa
     world: readWorld(frontmatter),
     infobox: readInfobox(frontmatter),
     hemisphereViews: readHemisphereViews(frontmatter),
+    provenance,
   };
 }
 
