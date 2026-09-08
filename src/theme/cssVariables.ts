@@ -58,7 +58,7 @@ export function getThemeCssVariables(): string {
   entriesToCssVars("token-interaction-states", tokens.interaction.states, lines);
   entriesToCssVars("token-components", tokens.components, lines);
 
-  lines.push('  --theme-texture-image: url("/textures/black-paper.png");');
+  lines.push('  --theme-texture-image: url("/textures/black-paper.avif");');
   lines.push(
     "  --theme-cloud-gradient: radial-gradient(circle at 16% 12%, var(--token-color-primitive-gold-500) 0%, transparent 28%), radial-gradient(circle at 82% 18%, var(--token-color-primitive-blue-500) 0%, transparent 26%), radial-gradient(circle at 58% 72%, var(--token-color-primitive-red-600) 0%, transparent 32%);",
   );

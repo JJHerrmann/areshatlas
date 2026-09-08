@@ -12,7 +12,14 @@ export default async function WikiSidebar() {
         {hero.logoPath ? (
           <Link href="/" className="wiki-logo" aria-label="Go to home page">
             <figure>
-              <img src={hero.logoPath} alt={hero.logoAlt} className="wiki-logo-image" />
+              <img
+                src="/branding/wiki-logo-320.webp"
+                alt={hero.logoAlt}
+                className="wiki-logo-image"
+                width={320}
+                height={320}
+                fetchPriority="high"
+              />
               {hero.logoCaption ? <figcaption className="wiki-logo-caption">{hero.logoCaption}</figcaption> : null}
             </figure>
           </Link>
@@ -32,7 +39,13 @@ export default async function WikiSidebar() {
 
       {hero.bannerPath ? (
         <section className="wiki-box wiki-banner-box">
-          <img src={hero.bannerPath} alt={hero.bannerAlt} className="wiki-banner-image" />
+          <img
+            src={hero.bannerPath}
+            alt={hero.bannerAlt}
+            className="wiki-banner-image"
+            width={240}
+            height={760}
+          />
         </section>
       ) : null}
 

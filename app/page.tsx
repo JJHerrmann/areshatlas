@@ -4,7 +4,7 @@ import { getFrontpageHero } from "@/lib/frontpageContent";
 
 export default async function HomePage() {
   const hero = await getFrontpageHero();
-  const worldMapSrc = "/maps/areshnaat-faux-satellite.webp";
+  const worldMapSrc = "/maps/areshnaat-faux-satellite-960.webp";
   const sectionCards = sections.map((section) => {
     const count = getSectionEntryCount(section);
     return {
@@ -36,8 +36,12 @@ export default async function HomePage() {
             <a href={worldMapSrc} className="wiki-map-link" target="_blank" rel="noreferrer">
               <img
                 src={worldMapSrc}
+                srcSet="/maps/areshnaat-faux-satellite-640.webp 640w, /maps/areshnaat-faux-satellite-960.webp 960w"
                 alt="Faux-satellite survey map of Areshnaat"
                 className="wiki-world-map-image"
+                width={960}
+                height={480}
+                sizes="(max-width: 980px) calc(100vw - 2rem), 760px"
               />
             </a>
             <p className="wiki-copy">
