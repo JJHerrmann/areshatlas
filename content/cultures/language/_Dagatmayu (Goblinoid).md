@@ -1,10 +1,7 @@
 ---
 type: language
 name: Dagatmayu
-family: Central Human
-spoken_in: Varenia, Kotzia, Benes
-script: Vardic Script
-speakers: ~12 million
+family: Goblinoid
 status: developing
 ---
 # Goblinoid Naming Canon

@@ -1,10 +1,7 @@
 ---
 type: language
 name: Kutnylev
-family: Central Human
-spoken_in: Varenia, Kotzia, Benes
-script: Vardic Script
-speakers: ~12 million
+family: Gnomish
 status: developing
 ---
 # Gnomish Naming Canon

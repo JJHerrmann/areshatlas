@@ -96,15 +96,6 @@
     "navboxes": []
   },
   {
-    "slug": "ereslim",
-    "title": "ereslim",
-    "section": "regions",
-    "href": "/regions/ereslim",
-    "source_relative_path": "regions/Ereslim/ereslim.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
     "slug": "glossary",
     "title": "Glossary",
     "section": "chronicles",
@@ -183,6 +174,15 @@
     "section": "pantheon",
     "href": "/pantheon/kaxatzin",
     "source_relative_path": "gods/🕳️Kaxatzin.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "kedantlan",
+    "title": "Kedantlan",
+    "section": "regions",
+    "href": "/regions/kedantlan",
+    "source_relative_path": "regions/Kedantlan.md",
     "aliases": [],
     "navboxes": []
   },
@@ -615,15 +615,6 @@
     "section": "regions",
     "href": "/regions/drakharpan/nations/unaxia",
     "source_relative_path": "regions/Drakharpan/nations/Unaxia/Unaxia.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
-    "slug": "vardic",
-    "title": "Vardic",
-    "section": "languages",
-    "href": "/languages/vardic",
-    "source_relative_path": "cultures/language/Vardic.md",
     "aliases": [],
     "navboxes": []
   },

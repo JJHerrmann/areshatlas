@@ -1,10 +1,7 @@
 ---
 type: language
 name: Kancha
-family: Central Human
-spoken_in: Varenia, Kotzia, Benes
-script: Vardic Script
-speakers: ~12 million
+family: Orcish
 status: developing
 ---
 # Orcish Naming Canon

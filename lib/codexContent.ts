@@ -139,6 +139,20 @@ const DERIVED_ROOT = path.join(CONTENT_ROOT, "_derived", "sidebar");
 const NAVBOX_DERIVED_ROOT = path.join(CONTENT_ROOT, "_derived", "navboxes");
 const ALLOWED_ENTRY_EXTENSIONS = new Set([".md", ".markdown", ".csv"]);
 const MARKDOWN_EXTENSIONS = new Set([".md", ".markdown"]);
+
+/**
+ * A note with no bytes in it has nothing to render: it publishes as a live URL
+ * with no heading and a title built from the raw filename. Treat empty files as
+ * absent everywhere content is enumerated, so they drop out of routes, section
+ * listings, sidebar counts and the sitemap together.
+ */
+function hasContent(filePath: string) {
+  try {
+    return fs.statSync(filePath).size > 0;
+  } catch {
+    return false;
+  }
+}
 const IMAGE_EXTENSIONS = new Set([".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif", ".avif"]);
 let markdownPathIndex: Array<{ relativePath: string; title: string; slugTitle: string }> | null = null;
 let assetPathIndex: Array<{ relativePath: string; fileName: string }> | null = null;
@@ -559,7 +573,8 @@ function listMarkdownFiles(rootDir: string) {
         visit(nextPath);
         continue;
       }
-      if (MARKDOWN_EXTENSIONS.has(path.extname(item.name).toLowerCase())) out.push(nextPath);
+      if (MARKDOWN_EXTENSIONS.has(path.extname(item.name).toLowerCase()) && hasContent(nextPath))
+        out.push(nextPath);
     }
   }
   if (fs.existsSync(rootDir)) visit(rootDir);
@@ -843,6 +858,7 @@ function findMarkdownFile(section: SectionConfig, slugParts: string[]) {
     if (!item.isFile()) return false;
     const ext = path.extname(item.name).toLowerCase();
     if (!MARKDOWN_EXTENSIONS.has(ext)) return false;
+    if (!hasContent(path.join(dirPath, item.name))) return false;
     return slugifySegment(titleFromFileName(item.name)) === fileStem;
   });
   return match ? path.join(dirPath, match.name) : null;
@@ -1049,6 +1065,7 @@ export function getSectionEntries(section: SectionConfig, slugParts: string[] = 
     }
     const ext = path.extname(item.name).toLowerCase();
     if (!ALLOWED_ENTRY_EXTENSIONS.has(ext)) continue;
+    if (MARKDOWN_EXTENSIONS.has(ext) && !hasContent(itemPath)) continue;
     const title = titleFromFileName(item.name);
     if (folderNames.has(title)) continue;
     if (slugifySegment(title) === slugifySegment(currentFolderName)) continue;
@@ -1075,6 +1092,7 @@ export function getSectionOverview(section: SectionConfig, slugParts: string[] =
     .find(
       (candidate) =>
         MARKDOWN_EXTENSIONS.has(path.extname(candidate).toLowerCase()) &&
+        hasContent(candidate) &&
         slugifySegment(titleFromFileName(path.basename(candidate))) === slugifySegment(folderName),
     );
   if (!indexFile) return null;
@@ -1097,6 +1115,7 @@ function findOverviewMarkdownFile(section: SectionConfig, slugParts: string[]) {
       .find(
         (candidate) =>
           MARKDOWN_EXTENSIONS.has(path.extname(candidate).toLowerCase()) &&
+          hasContent(candidate) &&
           slugifySegment(titleFromFileName(path.basename(candidate))) === slugifySegment(folderName),
       ) || null
   );

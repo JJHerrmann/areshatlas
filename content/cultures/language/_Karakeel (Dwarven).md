@@ -1,10 +1,8 @@
 ---
 type: language
 name: Karakeel
-family: Central Human
-spoken_in: Varenia, Kotzia, Benes
-script: Vardic Script
-speakers: ~12 million
+family: Dwarven
+spoken_in: the Mountainholms, the range of the five Kords
 status: developing
 ---
 # Dwarven Naming Canon
