@@ -1795,6 +1795,7 @@ body {
 
 .codex-provenance-body p:last-child {
   margin-bottom: 0;
+}
 
 /* Interactive survey-map header on the front page. The component injects its own
    styles for the canvas and controls; these only place it in the page. */

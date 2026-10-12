@@ -356,7 +356,10 @@ function splitProvenanceCallout(content: string): { provenance: string | null; b
 /** Drop a leading `# Heading` line when it just repeats the resolved page title. */
 function stripRedundantLeadingHeading(body: string, title: string): string {
   return body.replace(
-    /^((?:[ \t]*!?\[\[?[^\n\]]*\]\]?(?:\([^)]*\))?[ \t]*\r?\n+)?)#{1,3}[ \t]+(.+?)[ \t]*\r?\n+/,
+    // The lead group absorbs any blank lines left between the frontmatter and the
+    // heading, which is what Obsidian writes; without them the anchor never matches
+    // and the title renders twice.
+    /^((?:[ \t]*\r?\n)*(?:[ \t]*!?\[\[?[^\n\]]*\]\]?(?:\([^)]*\))?[ \t]*\r?\n+)?)#{1,3}[ \t]+(.+?)[ \t]*\r?\n+/,
     (whole, lead: string, heading: string) =>
       slugifySegment(normalizeObsidianDisplayText(heading)) === slugifySegment(title) ? lead : whole,
   );
