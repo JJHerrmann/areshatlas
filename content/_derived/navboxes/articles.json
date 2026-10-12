@@ -39,6 +39,15 @@
     "navboxes": []
   },
   {
+    "slug": "bocafalante",
+    "title": "Bocafalante",
+    "section": "languages",
+    "href": "/languages/bocafalante",
+    "source_relative_path": "cultures/language/Bocafalante.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "bolohua",
     "title": "Bolohua",
     "section": "pantheon",
@@ -69,11 +78,38 @@
     "navboxes": []
   },
   {
+    "slug": "dwarven-kingdoms",
+    "title": "The Dwarven Kingdoms",
+    "section": "regions",
+    "href": "/regions/dwarven-kingdoms",
+    "source_relative_path": "regions/Dwarven Kingdoms.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "dwarves-and-duergar",
+    "title": "Dwarves and Duergar",
+    "section": "cultures",
+    "href": "/cultures/dwarves-and-duergar",
+    "source_relative_path": "cultures/Dwarves and Duergar.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "ereslim",
     "title": "ereslim",
     "section": "regions",
     "href": "/regions/ereslim",
     "source_relative_path": "regions/Ereslim/ereslim.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "glossary",
+    "title": "Glossary",
+    "section": "chronicles",
+    "href": "/chronicles/glossary",
+    "source_relative_path": "chronicles/Glossary.md",
     "aliases": [],
     "navboxes": []
   },
@@ -116,6 +152,15 @@
     "section": "regions",
     "href": "/regions/drakharpan/nations/karia",
     "source_relative_path": "regions/Drakharpan/nations/Karia/Karia.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "kasbahya",
+    "title": "Kasbahya",
+    "section": "regions",
+    "href": "/regions/kasbahya",
+    "source_relative_path": "regions/Kasbahya.md",
     "aliases": [],
     "navboxes": []
   },
@@ -300,6 +345,15 @@
     "navboxes": []
   },
   {
+    "slug": "najmii-empire",
+    "title": "Najmii Empire",
+    "section": "regions",
+    "href": "/regions/najmii-empire",
+    "source_relative_path": "regions/Najmii Empire.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "nalelia",
     "title": "Nalelia",
     "section": "regions",
@@ -344,6 +398,24 @@
     "section": "regions",
     "href": "/regions/drakharpan/nations/orvara",
     "source_relative_path": "regions/Drakharpan/nations/Orvara/Orvara.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "orystria",
+    "title": "Orystria",
+    "section": "pantheon",
+    "href": "/pantheon/orystria",
+    "source_relative_path": "gods/Orystria.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "paktonyelv",
+    "title": "Paktonyelv",
+    "section": "languages",
+    "href": "/languages/paktonyelv",
+    "source_relative_path": "cultures/language/Paktonyelv.md",
     "aliases": [],
     "navboxes": []
   },
@@ -401,6 +473,15 @@
     "navboxes": []
   },
   {
+    "slug": "sil-k-uhlam-empire",
+    "title": "Sil'K'uhlam Empire",
+    "section": "regions",
+    "href": "/regions/sil-k-uhlam-empire",
+    "source_relative_path": "regions/Sil'K'uhlam Empire.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "tahiwaco",
     "title": "Tahiwaco",
     "section": "pantheon",
@@ -428,6 +509,19 @@
     "href": "/pantheon/temaya",
     "source_relative_path": "gods/🌌Temaya.md",
     "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "the-age-of-poking-things",
+    "title": "The Age of Poking Things",
+    "section": "chronicles",
+    "href": "/chronicles/the-age-of-poking-things",
+    "source_relative_path": "chronicles/The Age of Poking Things.md",
+    "aliases": [
+      "origin-of-the-sapient-races",
+      "the-feywild-experiments",
+      "the-befouling"
+    ],
     "navboxes": []
   },
   {
