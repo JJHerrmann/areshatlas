@@ -2,6 +2,7 @@
 type: language
 name: Karakeel
 family: Dwarven
+script: Dwarven hand, draft 3 (Farsi-leaning)
 spoken_in: the Mountainholms, the range of the five Kords
 status: developing
 ---
@@ -22,7 +23,7 @@ The dwarven hand, and the alphabet drafted for it, are recorded in [[One Root, F
 - **[canon]** Tense lives in the stroke: present is the baseline, past is thicker, future leans about 5 degrees, timeless takes a curled cap, and verbs are always capped.
 - **[canon]** Refugees add helper marks in daily writing, for both vowel and tense.
 - **[proposed]** The hand is the elf column turned 90 degrees clockwise: top-to-bottom becomes right-to-left, the spine becomes the baseline, the side ticks fold into marks above and below.
-- **[open]** The drafted alphabet has 18 consonants and no letter for `dz` or `š`, so it cannot spell `dza` or Šohdzakoda. See [[Dwarves and Duergar]]. Needs a draft 3.
+- **[canon]** The hand is settled: draft 3, Farsi-leaning, 20 letters including the `dz` ligature and the dotted s for `š`, so Sahdzakoda and Šohdzakoda are both spellable. See [[One Root, Five Hands]].
 
 ## Usage Pattern
 

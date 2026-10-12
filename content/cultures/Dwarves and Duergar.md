@@ -67,7 +67,7 @@ Tags: **canon** = the author decided it, **proposed** = a suggestion awaiting a 
 | Tahmelek | In-language form of Underking: tachat (under) plus melekh (king). | proposed |
 
 ### Writing
-- **[canon]** The dwarven hand, and how it descends from the elf script, is recorded in [[One Root, Five Hands]]. The alphabet exists only in draft, and as drafted it cannot spell `dza` or `Š`.
+- **[canon]** The dwarven hand, and how it descends from the elf script, is recorded in [[One Root, Five Hands]]. The alphabet is settled: draft 3, Farsi-leaning, 20 letters, and it spells both Sahdzakoda and Šohdzakoda.
 
 ## The five Kords
 - **[canon]** Five beards: Gold, Platinum, Copper, Slate and Onyx. Their working names before the metals were Pahir, Sahsa, Red, Brown and Black.

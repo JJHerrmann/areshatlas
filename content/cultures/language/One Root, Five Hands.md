@@ -23,6 +23,20 @@ awaiting a yes, **open** = undecided.
 | Halfling and gnome | Not set | Thaana-like, short hooks, vowel marks | Spine broken into hooks, ticks kept as marks | canon |
 | Human | Left to right (proposed) | Latinized Thaana, fewer accents | Small-folk marks promoted back to letters | canon |
 
+## Figures
+
+![[elf-hand.svg]]
+*The root hand, and the 90 degree rotation that yields the dwarven one.*
+
+![[elf-scripts.svg]]
+*Three candidate elf hands.*
+
+![[dwarven-script-draft3.svg]]
+*Dwarven script, draft 3: the chosen hand. 20 letters, including the dz ligature and the dotted s.*
+
+![[inscription.svg]]
+*A Rainbow-beard inscription.*
+
 ## Who writes with which hand
 
 Five hands, more than five peoples. A people can borrow a hand without being
@@ -66,26 +80,32 @@ descended from it.
 - **[proposed]** Halflings write loose and casual. Gnomes over-annotate, adding extra marks.
 - **[proposed]** Real-world analogy: Syriac led to Sogdian, then Uyghur, which was turned on its side to become vertical Mongolian. This is a fact about real scripts, offered as precedent, not as canon.
 
-## The dwarven alphabet, in draft
+## The dwarven alphabet
 
-Two drafts exist, both of the same alphabet. Only the letterforms differ: draft 1
-is Cyrillic-leaning and blocky, draft 2 leans Farsi and flows. Draft 2 is the one
-that matches the canon line above.
+Three drafts were made of the same alphabet. Draft 1 was Cyrillic-leaning and
+blocky, draft 2 leaned Farsi, and draft 3 keeps the Farsi lean and adds the two
+letters the earlier drafts were missing. **Rook chose the Farsi-leaning hand, and
+draft 3 is the one in use.**
 
-- **[canon]** 18 consonants, written right to left, joined along a baseline. Consonants only; the vowels are carried by the refugee helper marks.
-- **[proposed]** The inventory as drafted: b, p, t, n, y, h, kh, r, z, d, g, s, ts, k, l, m, w, and a glottal stop.
-- **[proposed]** The arch carries b, p, t, n, y by dot count and position. The hook carries h and kh. The tail carries r and z. The bar and hook carry d and g. Teeth carry s and ts.
-- **[proposed]** Helper marks for vowels sit above the line for the deep class and below for the forward class: a is one stroke above, o a ring above, u two strokes above, e one stroke below, i two strokes below. Tense takes its own sign at the start of the word.
-- **[open]** **The drafted alphabet cannot spell dwarven.** There is no letter for `dz` and none for `š`, but `dza` appears in every Kord name and is explicitly the Latvian affricate, and the Onyx Kord is canon as Šohdzakoda, where the hacek exists to keep it apart from s. See [[Dwarves and Duergar]]. The sheet already distinguishes shared shapes by dot count, so a dotted s and a joined d-z ligature would be idiomatic. Needs a draft 3.
-- **[open]** Which draft is canon, 1 or 2.
+- **[canon]** 20 letters, written right to left, joined along a baseline. Consonants only; the vowels are carried by the refugee helper marks.
+- **[canon]** The inventory: b, p, t, n, y, h, kh, r, z, d, g, s, sh, ts, k, l, m, w, dz, and a glottal stop.
+- **[canon]** `dz` is a ligature: a d stem rising from the baseline, with the z tail and its dot beside it. It is the letter every Kord seat leans on, since the blood marker `dza` appears in all of them.
+- **[canon]** `sh` is the hacek letter, drawn as a dotted s. Three teeth carry s, sh and ts, and a dot above the teeth makes the hacek, keeping sh apart from s.
+- **[canon]** The tooth carries b, p, t, n, y by dot count and position. The hanging bowl carries h and kh. The tail carries r and z. The hooked stroke carries d and g.
+- **[canon]** Helper marks for vowels sit above the line for the deep class and below for the forward class: a is one stroke above, o a ring above, u two strokes above, e one stroke below, i two strokes below. Tense takes its own sign at the start of the word.
+- **[canon]** Both Kord names that the earlier drafts could not write are now spellable, and draft 3 renders them: **Sahdzakoda** (Gold, from zahav, sa-h-dza-ko-da) and **Šohdzakoda** (Onyx, with the dotted s). See [[Dwarves and Duergar]].
 
 ## Open questions
 
+- **[open]** Does anyone in the world know the dwarf hand descends from the elf script? The dwarves would deny it.
+- **[open]** What script do the duergar use, and does it break a rule the surface dwarves keep?
+- **[open]** Are the refugee helper marks new symbols, or extensions of the Kord marks?
+- **[open]** Which direction do the small folk write, and do goblinoids read in rows or columns?
 - **[open]** Reading direction for the goblinoid and the halfling-gnome hands is unset.
-- **[open]** The elf script redraw with corrected ticks, and the five-hand family tree drawing, have not been produced.
+- **[open]** The five-hand family tree drawing has not been produced. The elf hand redraw has arrived, as `elf-hand.svg`, with three candidates in `elf-scripts.svg`.
 - **[open]** Whether the vowel shaping that separates dwarven, halfling and gnome speech shows up in their hands as well, or only in the sound.
 
 ## Source provenance
 
 > **Source:** the "One root, five hands" section of the Areshnaat Dwarves artifact, read 2026-10-12.
-> The dwarven alphabet material is read from two drawn script sheets of the same date, held outside the vault.
+> The alphabet and the figures come from the script handoff delivered 2026-10-11, filed into `_images/`.
