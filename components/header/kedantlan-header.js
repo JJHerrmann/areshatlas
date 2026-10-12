@@ -88,7 +88,10 @@ export function mountKedantlanHeader(root, opts = {}) {
   let cw = 0, ch = 0, dpr = 1, k = 0.3, cx = W / 2, cy = 1300, k0 = 0.3, raf = 0, active = false, dead = false;
 
   function fit() {
-    k0 = cw / (W * 1.06);
+    // Fit the map to the full canvas width. A margin here leaves backdrop down
+    // each side, invisible on the left where dark ocean meets the dark backdrop
+    // but obvious on the right where bright land does.
+    k0 = cw / W;
     return k0;
   }
   function clampView() {
