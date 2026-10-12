@@ -1,0 +1,46 @@
+{
+  "_comment": "Allowlist for vault -> content/ sync. Lives outside content/ because content/ is mirrored and app-owned files inside it can be deleted by sync. Only paths listed here are ever published; everything else in the vault (drafts, meta notes, .obsidian/) stays private.",
+  "source_default": "~/Documents/Areshnaat",
+  "sections": [
+    "gods",
+    "regions",
+    "cultures",
+    "relics",
+    "creatures",
+    "chronicles",
+    "empires",
+    "figures",
+    "party",
+    "frontpage"
+  ],
+  "assets": [
+    "_images"
+  ],
+  "root_file_globs": [
+    "*.png",
+    "*.jpg",
+    "*.jpeg",
+    "*.webp",
+    "*.svg",
+    "*.avif",
+    "*.map"
+  ],
+  "never_publish": [
+    ".obsidian/",
+    ".trash/",
+    ".stfolder/",
+    ".stignore",
+    "_meta/",
+    "_derived/",
+    "SEO_Findings.md",
+    "*.canvas",
+    "*.tmp",
+    "Thumbs.db"
+  ],
+  "private_callout_types": [
+    "dm",
+    "secret",
+    "spoiler"
+  ],
+  "_private_notes": "Vault-only material is stripped from the published copy by scripts/scrub_private.mjs at sync time (not render time, so it does not depend on the checked-out branch). Mark it either as a callout whose type is listed in private_callout_types or whose title starts with 'DM', or with a <!-- dm:start --> / <!-- dm:end --> fence for whole sections. Both stay readable in Obsidian. publish_from_vault.sh runs --check and refuses to build if any private block survives."
+}

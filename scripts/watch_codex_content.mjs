@@ -4,10 +4,32 @@ import path from "node:path";
 import process from "node:process";
 
 const repoRoot = process.cwd();
-const sourceDir =
-  process.env.ARESH_CODEX_SOURCE ||
-  "R:\\RookVault\\01_Active\\Mindpalace\\Authorship\\roleplaying\\worlds\\aresh\\codex-content";
-const syncScript = path.join(repoRoot, "scripts", "sync_codex_content.ps1");
+const isWindows = process.platform === "win32";
+
+/** Default vault location per platform; the POSIX default comes from the publish registry. */
+function defaultSourceDir() {
+  if (isWindows) {
+    return "R:\\RookVault\\01_Active\\Mindpalace\\Authorship\\roleplaying\\worlds\\aresh\\codex-content";
+  }
+  try {
+    const registry = JSON.parse(
+      fs.readFileSync(path.join(repoRoot, "codex_registry", "publish.json"), "utf8"),
+    );
+    const configured = String(registry.source_default || "");
+    return configured.startsWith("~")
+      ? path.join(process.env.HOME || "", configured.slice(1))
+      : configured;
+  } catch {
+    return path.join(process.env.HOME || "", "Documents", "Areshnaat");
+  }
+}
+
+const sourceDir = process.env.ARESH_CODEX_SOURCE || defaultSourceDir();
+const syncScript = path.join(
+  repoRoot,
+  "scripts",
+  isWindows ? "sync_codex_content.ps1" : "sync_codex_content.sh",
+);
 
 let syncRunning = false;
 let syncQueued = false;
@@ -37,9 +59,13 @@ function runSync(reason) {
   syncRunning = true;
   log(`sync start (${reason})`);
 
+  const [command, args] = isWindows
+    ? ["powershell", ["-ExecutionPolicy", "Bypass", "-File", syncScript, "-Source", sourceDir]]
+    : ["bash", [syncScript]];
+
   const child = spawn(
-    "powershell",
-    ["-ExecutionPolicy", "Bypass", "-File", syncScript, "-Source", sourceDir],
+    command,
+    args,
     {
       cwd: repoRoot,
       stdio: "inherit",

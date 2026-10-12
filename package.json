@@ -29,8 +29,12 @@
     "map:assign": "python ./scripts/generate_voronoi_assignments.py",
     "derive:codex": "node ./scripts/generate_codex_derived.mjs",
     "sync:codex": "powershell -ExecutionPolicy Bypass -File ./scripts/sync_codex_content.ps1",
+    "sync:codex:posix": "bash ./scripts/sync_codex_content.sh",
+    "sync:codex:mirror": "bash ./scripts/sync_codex_content.sh --mirror",
+    "sync:codex:check": "bash ./scripts/sync_codex_content.sh --dry-run",
     "watch:codex": "node ./scripts/watch_codex_content.mjs",
-    "stream:codex": "node ./scripts/stream_codex_publish.mjs"
+    "stream:codex": "node ./scripts/stream_codex_publish.mjs",
+    "publish:codex:posix": "bash ./scripts/publish_from_vault.sh"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
