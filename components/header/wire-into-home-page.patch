@@ -1,0 +1,68 @@
+diff --git i/app/globals.css w/app/globals.css
+index 3df9651..be3668c 100644
+--- i/app/globals.css
++++ w/app/globals.css
+@@ -1745,3 +1745,27 @@ body {
+     border-bottom: 1px solid var(--codex-line);
+   }
+ }
++
++/* Interactive survey-map header on the front page. The component injects its own
++   styles for the canvas and controls; these only place it in the page. */
++.wiki-header-map {
++  margin: 0 0 1.25rem;
++  border: 1px solid var(--wiki-border, #c8c8c8);
++  border-radius: 4px;
++  overflow: hidden;
++  background: rgb(10, 16, 22);
++}
++.wiki-header-map-poster {
++  display: block;
++  width: 100%;
++  height: auto;
++}
++.wiki-header-map-caption {
++  margin: 0;
++  padding: 6px 10px;
++  font-size: 12.5px;
++  line-height: 1.35;
++  color: #4a4a4a;
++  background: #f6f5f1;
++  border-top: 1px solid var(--wiki-border, #c8c8c8);
++}
+diff --git i/app/page.tsx w/app/page.tsx
+index 851e407..068e86b 100644
+--- i/app/page.tsx
++++ w/app/page.tsx
+@@ -1,3 +1,4 @@
++import KedantlanHeader from "@/components/header/KedantlanHeader";
+ import SectionCard from "@/components/codex/SectionCard";
+ import { getSectionEntryCount, sections } from "@/lib/codexContent";
+ import { getFrontpageHero } from "@/lib/frontpageContent";
+@@ -17,6 +18,26 @@ export default async function HomePage() {
+   return (
+     <main className="wiki-main-page text-stone-900">
+       <div className="wiki-content">
++        {/* Interactive survey map. Client-rendered canvas over a tile pyramid; the
++            sidebar keeps a plain <img> banner, so the page still ships an image in
++            server-rendered HTML. */}
++        <figure className="wiki-header-map">
++          <KedantlanHeader
++            atlasHref="/regions"
++            atlasLabel="Open the regions index"
++          />
++          <noscript>
++            <img
++              src="/kedantlan-header/tiles/sat_L3_0_0.webp"
++              alt="Survey map of Kedantlan and the surrounding lands; the rest of the world lies in fog."
++              className="wiki-header-map-poster"
++            />
++          </noscript>
++          <figcaption className="wiki-header-map-caption">
++            Kedantlan and the surveyed lands. Press &ldquo;Explore the map&rdquo; to pan and zoom.
++          </figcaption>
++        </figure>
++
+         <article className="wiki-article">
+           <div className="wiki-article-header">
+             <div className="wiki-kicker">Main Page</div>

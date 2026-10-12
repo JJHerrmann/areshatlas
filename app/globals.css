@@ -1745,3 +1745,27 @@ body {
     border-bottom: 1px solid var(--codex-line);
   }
 }
+
+/* Interactive survey-map header on the front page. The component injects its own
+   styles for the canvas and controls; these only place it in the page. */
+.wiki-header-map {
+  margin: 0 0 1.25rem;
+  border: 1px solid var(--wiki-border, #c8c8c8);
+  border-radius: 4px;
+  overflow: hidden;
+  background: rgb(10, 16, 22);
+}
+.wiki-header-map-poster {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.wiki-header-map-caption {
+  margin: 0;
+  padding: 6px 10px;
+  font-size: 12.5px;
+  line-height: 1.35;
+  color: #4a4a4a;
+  background: #f6f5f1;
+  border-top: 1px solid var(--wiki-border, #c8c8c8);
+}

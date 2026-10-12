@@ -1,3 +1,4 @@
+import KedantlanHeader from "@/components/header/KedantlanHeader";
 import SectionCard from "@/components/codex/SectionCard";
 import { getSectionEntryCount, sections } from "@/lib/codexContent";
 import { getFrontpageHero } from "@/lib/frontpageContent";
@@ -17,6 +18,26 @@ export default async function HomePage() {
   return (
     <main className="wiki-main-page text-stone-900">
       <div className="wiki-content">
+        {/* Interactive survey map. Client-rendered canvas over a tile pyramid; the
+            sidebar keeps a plain <img> banner, so the page still ships an image in
+            server-rendered HTML. */}
+        <figure className="wiki-header-map">
+          <KedantlanHeader
+            atlasHref="/regions"
+            atlasLabel="Open the regions index"
+          />
+          <noscript>
+            <img
+              src="/kedantlan-header/tiles/sat_L3_0_0.webp"
+              alt="Survey map of Kedantlan and the surrounding lands; the rest of the world lies in fog."
+              className="wiki-header-map-poster"
+            />
+          </noscript>
+          <figcaption className="wiki-header-map-caption">
+            Kedantlan and the surveyed lands. Press &ldquo;Explore the map&rdquo; to pan and zoom.
+          </figcaption>
+        </figure>
+
         <article className="wiki-article">
           <div className="wiki-article-header">
             <div className="wiki-kicker">Main Page</div>
