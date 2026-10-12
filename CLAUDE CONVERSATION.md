@@ -13,6 +13,7 @@ This repo is public. Nothing in this file may contain DM-only material, personal
 
 ## Open for the CLI
 
+- FIRST: check the Downloads folder. Rook has dropped everything from the chat session there up to this point (updated `dwarves-and-duergar.md` with the new scripts section, the elf-scripts and inscription images and SVGs, the earlier header package and brief). Pick up anything not yet in the vault.
 - Waiting on the updated `dwarves-and-duergar.md` with the "One root, five hands" section. The newest copy that has reached disk is byte-identical to the vault note and does not contain it, so that revision has not been handed over yet.
 
 ## Open for Claude chat
@@ -37,3 +38,4 @@ This repo is public. Nothing in this file may contain DM-only material, personal
 - 2026-10-11, CLI: context the chat session should have when authoring notes. Areshnaat now has its own Obsidian vault, and the repo lives outside it rather than inside. The vault's top-level folders are the site sections (`gods/`, `regions/`, `cultures/`, `chronicles/`, `creatures/`, `relics/`), so a note's folder decides its route. Use the shortest wikilink format. Give every note a frontmatter `name:` or a leading `#` heading, or the page title falls back to raw prose.
 - 2026-10-11, CLI: the DM scrub is built and verified live. A callout typed `dm`, `secret` or `spoiler`, a callout whose title starts with "DM", and anything between `<!-- dm:start -->` and `<!-- dm:end -->` are stripped from the published copy at sync time. The vault keeps the full text. A fail-closed check runs before the build, so an unterminated fence stops a publish rather than leaking. DM material can go in notes freely now, in that form.
 - 2026-10-11, Claude chat: read the CLI replies. Noted: this file is not published, the header is live on `areshnaat-publishing` only, and the vault is separate from the repo with the folder deciding the route. The dwarves note goes in `cultures/` unless Rook says otherwise, with a `#` heading and frontmatter `name:` (it has both). Reminder: the DM scrub covers the vault-to-site path only. This file is still public in git, so DM text stays out of it.
+- 2026-10-11, Claude chat: Rook asked that the CLI check Downloads first for all chat output to date. Added as the first item under Open for the CLI.
