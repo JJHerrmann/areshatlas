@@ -26,6 +26,8 @@ This repo is public. Nothing in this file may contain DM-only material, personal
 
 ## Open for Claude chat
 
+- **Pantheon artifact, new and the main thing.** Rook wants to be walked through `gods/` visually and make the calls. The full audit is in "Pantheon audit" below: all 36 deity notes, both genealogy sources, ten contradictions and the eight rulings he needs to give. Build it as an artifact and walk him through it. Do not resolve any of the contradictions yourself — show both readings and let him pick.
+
 - `handoff/` is picked up and can be deleted whenever you like. All four figures are filed in the vault at `_images/` and embedded in the note; the alphabet, the 20-letter inventory and both Kord spellings are recorded; your four open questions are merged. One small thing: the note describes the figures as `.png`, but the files are `.svg`. They work either way, the filenames in that line are just wrong.
 - The revised dwarves note held back as a chat attachment is not needed. The vault copy already carries the DM callout, the scrub strips it on the way to the site, and the published page has been verified clean. Hand DM material over in the repo inside a `> [!dm]` or `> [!danger]-` callout and it will never reach the site. The only thing that must stay out of git is this file, which is not scrubbed.
 - `One Root, Five Hands` is live at /languages/one-root-five-hands with all four figures rendering.
@@ -70,6 +72,202 @@ Checked and consistent, no action: the PDF "One tongue, three layers" table matc
 - Goblinoids: futhark-like. Halflings and gnomes: shared Thaana-like script. Humans: Latinized Thaana, fewer accents.
 - Everything about how one script derives from another (rotation, broken spine, promoted vowels) is proposed, not decided.
 
+
+## Pantheon audit, for the chat session to turn into an artifact
+
+Rook wants a visual walkthrough of the pantheon he can click through and make decisions in. Everything below is measured from `gods/` in the vault on 2026-10-12 — 36 deity notes plus `Family Tree.canvas`. Nothing is inferred and nothing has been changed.
+
+**The state of it in one line:** 34 of the 36 notes have no prose at all. Their bodies are still the unfilled template, so the only text in them is the template's own authoring guidance. Only Lotan (two sentences) and Orystria have real body text. Epithets are the one layer that is complete; everything else is partial.
+
+Fill rates across the 36: `epithet` 35, `pantheon` 23, `avatar` 26, `major_influence` 13, `divine_rank` 7, `gender` 9, `nature` 9, `ethos` 9, `summary` 2.
+
+### What the artifact should do
+
+Walk Rook through the decisions, not the data. The data below is the input; the output should let him look at the pantheon and answer the eight questions in "Rulings needed" at the end. A tier-by-tier roster he can scan, the family tree drawn with its conflicts highlighted rather than silently resolved, and the naming strata shown side by side would each carry their weight. He asked for visual, so lean on the tree and the two name-layer groupings over more tables.
+
+One hard constraint: **do not resolve any conflict by picking a side.** Every contradiction below is Rook's to rule on. Show both readings.
+
+### The roster, as the vault has it
+
+`rank`, `gender`, `nature`, `ethos` and `domain` are blank where the note leaves them blank. Nothing here is inferred.
+
+| Tier | Name | Epithet | Rank | Domain | Gender | Nature / ethos | `pantheon:` |
+|---|---|---|---|---|---|---|---|
+| 🌌 | Bolohua | The Primordial Deep | Major | Abyss | Fluid | Lawful | Yekatlan |
+| 🌌 | Gozara | The Mensor of Dawns | Major | Fate | Female | Celestial / Lawful | Yekatlan |
+| 🌌 | Leyala | The Shepard of Zodiacs | — | Moon | — | — | Yekatlan |
+| 🌌 | Lotan | The Sky Serpent | — | Night | — | — | Yekatlan |
+| 🌌 | Moxilaxaya | The Matron of Order | Major | Order | Female | Ordered / Distant | Yekatlan |
+| 🌌 | Niwara | The Sun Catcher | Major | Sun | Female | Unbound / Distant | Ramtilim |
+| 🌌 | Rexaya | The God of Genesis | — | — | — | — | — |
+| 🌌 | Tahiwaco | The High-lord of Chaos | — | Chaos | — | — | Yekatlan, Yekatlan |
+| 🌌 | Temaya | The God of Finalities | — | — | — | — | — |
+| 🌌 | Yatbara | The God of Creation | — | Creation | — | — | Yekatlan, Ramtilim |
+| 🌌 | Yekala | The Lady of Loaded Dice | — | Possibility | Female | — | Yekatlan, Ramtilim |
+| 🌌 | Zemana | The Matron of Time | — | Time | Female | — | Areshnaati, Yekatlan |
+| ✨ | Kadashar | The God of Duels and Rains | — | — | — | chaotic | Areshnaati, Ramtilim |
+| ✨ | Kathorharab | The God of Craft and War | Major | War | Female | Unbound / Distant | Areshnaati, Ramtilim |
+| ✨ | Malagad | The God of Messages and Fortunes | — | — | — | neutral | Areshnaati, Ramtilim |
+| ✨ | Marmoqed | The God of Hearth and Medicine | — | — | — | lawful | Areshnaati, Ramtilim |
+| ✨ | Qatzera | The God of Harvest and Crops | — | — | — | lawful | Areshnaati, Ramtilim |
+| ✨ | Raavvah | The Goddess of Famines and Calamity | — | — | — | — | Areshnaati, Ramtilim |
+| ✨ | Tsayidrah | The Goddess of Hunting and Fertility | — | — | — | — | Areshnaati, Ramtilim |
+| ✨ | Xefahua | The Goddess of Feasts and Plenty | Minor | Plenty | Female | Ordered / Close | Ramtilim, Areshnaati |
+| ✨ | Xochbaram | The God of Revels and Storms | — | — | — | chaotic | Areshnaati, Ramtilim |
+| ✨ | Yaradaat | The God of Knowledge and Law | — | — | — | — | Areshnaati, Ramtilim |
+| 🕳 | Derequi | The Lord of the Grey Walk | — | — | — | — | — |
+| 🕳 | Harbaal | The God of Mountains | — | — | — | — | Areshnaati, Xoluatl |
+| 🕳 | Kaxatzin | The Goddess of Graves | — | — | — | — | — |
+| 🕳 | Kevarotzin | The Mistress of Tombs | — | — | — | — | — |
+| 🕳 | Kinayotl | The Goddess of Mourning | — | — | — | — | — |
+| 🕳 | Kvaritzin | The God of the Underworld | Major | The Dead, Graves | Female | Ordered / Distant | Areshnaati, Xoluatl |
+| 🕳 | Maavacihuatl | The Lady of Souls | — | — | — | — | — |
+| 🕳 | Masehua | The God of Tithe | — | — | — | — | — |
+| 🕳 | Refapilli | The God of Ghosts | — | — | — | — | — |
+| 🌊 | Abyroqa | The Goddess of Travels and Wayfairing | — | — | — | — | — |
+| 🌊 | Tehontecuhtli | The God of Dark Waters | — | — | — | — | — |
+| 🌊 | Yamnahar | The God of Seas and Rivers | — | — | — | — | Areshnaati, Ramtilim |
+| — | Orystria | — | — | — | — | — | — |
+| — | The Goddess of Lust | The Primal Chained | — | — | — | — | — |
+
+Minor influences, where set:
+
+- **Gozara** — allotments, omens, fairness, lifespans
+- **Moxilaxaya** — Processions, Ethos, Civilization, Leadership
+- **Niwara** — Light, Day
+- **Yekala** — Hope, Potential, Becoming, Choice, Luck/Fortune, Gambling
+- **Kathorharab** — Forge, War, Weaponcraft, Armorcraft, Leatherwork, Martial Training, Sword Arts
+- **Xefahua** — Feasts, Celebrations, Wealth, Abundance
+- **Kvaritzin** — Judgement, Burial, Ancestors, Final Rest, Ghosts, Funerary Rites, Rememberance
+
+### Genealogy as the frontmatter has it
+
+- **Bolohua** — paramour: 🌌Tahiwaco · siblings: 🌌Moxilaxaya, 🌌Yekala, 🌌Tahiwaco · offspring: 🌌Lotan
+- **Gozara** — consorts: 🌌Niwara · offspring: ✨Yaradaat, ✨Malagad, ✨Kathorharab
+- **Leyala** — parents: 🌌Yekala, 🌌Niwara
+- **Moxilaxaya** — consorts: 🌌Tahiwaco · offspring: 🌌Yatbara, 🌌Niwara
+- **Niwara** — parents: 🌌Moxilaxaya, 🌌Tahiwaco · consorts: 🌌Gozara · siblings: 🌌Yatbara · offspring: ✨Kathorharab, ✨Malagad, ✨Yaradaat
+- **Tahiwaco** — consorts: 🌌Moxilaxaya · siblings: 🌌Bolohua, 🌌Moxilaxaya, 🌌Yekala · offspring: 🌌Yatbara
+- **Yatbara** — parents: 🌌Yekala, 🌌Moxilaxaya, 🌌Tahiwaco · consorts: 🌌Yekala · siblings: 🌌Niwara
+- **Yekala** — siblings: 🌌Moxilaxaya, 🌌Bolohua
+- **Kathorharab** — parents: 🌌Yekala, 🌌Moxilaxaya
+- **Xefahua** — parents: ✨Qatzera, ✨Tsayidrah · consorts: 🕳️Kvaritzin
+- **Kvaritzin** — parents: 🌌Temaya, 🌌Zemana · consorts: ✨Xefahua · siblings: 🕳️Harbaal
+
+### Genealogy as `Family Tree.canvas` has it
+
+The canvas is the richer source — 39 edges against the frontmatter's handful — but it is half-finished, and it disagrees with the frontmatter in several places.
+
+**🧬 bloodline** — 16 edges
+
+- Abyroqa → Tehontecuhtli  *(drawn on the image file, not the note)*
+- Bolohua → Leyala  *(drawn on the image file, not the note)*
+- Bolohua → Lotan  *(drawn on the image file, not the note)*
+- Moxilaxaya → Leyala  *(drawn on the image file, not the note)*
+- Moxilaxaya → Niwara  *(drawn on the image file, not the note)*
+- Tahiwaco → Kadashar  *(drawn on the image file, not the note)*
+- Tahiwaco → Lotan  *(drawn on the image file, not the note)*
+- Tahiwaco → Niwara
+- Tahiwaco → Yatbara  *(drawn on the image file, not the note)*
+- Temaya → Kvaritzin  *(drawn on the image file, not the note)*
+- Yamnahar → Kadashar  *(drawn on the image file, not the note)*
+- Yamnahar → Tehontecuhtli  *(drawn on the image file, not the note)*
+- Yekala → Harbaal  *(drawn on the image file, not the note)*
+- Yekala → Marmoqed  *(drawn on the image file, not the note)*
+- Yekala → Yatbara  *(drawn on the image file, not the note)*
+- Zemana → Kvaritzin  *(drawn on the image file, not the note)*
+
+**💍 marriage** — 6 edges
+
+- Harbaal → Kadashar  *(drawn on the image file, not the note)*
+- Qatzera → Tsayidrah
+- Raavvah → Qatzera
+- Tsayidrah → Raavvah
+- Xefahua → Kvaritzin  *(drawn on the image file, not the note)*
+- Yatbara → Yekala  *(drawn on the image file, not the note)*
+
+**⚠️ enmity** — 2 edges
+
+- Kadashar → Tehontecuhtli  *(drawn on the image file, not the note)*
+- Kvaritzin → Harbaal  *(drawn on the image file, not the note)*
+
+**unlabelled** — 15 edges
+
+- Gozara → Kathorharab  *(drawn on the image file, not the note)*
+- Gozara → Malagad
+- Gozara → Marmoqed
+- Gozara → Yaradaat
+- Moxilaxaya → Yatbara  *(drawn on the image file, not the note)*
+- Niwara → Gozara
+- Niwara → Kathorharab  *(drawn on the image file, not the note)*
+- Niwara → Malagad
+- Niwara → Yaradaat
+- Qatzera → Xefahua  *(drawn on the image file, not the note)*
+- Tahiwaco → Xochbaram  *(drawn on the image file, not the note)*
+- Temaya → Harbaal  *(drawn on the image file, not the note)*
+- Tsayidrah → Xefahua  *(drawn on the image file, not the note)*
+- Yamnahar → Abyroqa  *(drawn on the image file, not the note)*
+- Yamnahar → Xochbaram  *(drawn on the image file, not the note)*
+
+### The canvas's own problems
+
+- **17 of its 34 nodes are `*_main.png` image files, not the god notes.** So over half the tree produces no backlink and no graph edge, and the notes do not know they are in it. Every line above marked *(drawn on the image file)* is one of these.
+- **Gozara appears twice** — once as the note, once as `gozara_main.png`.
+- **15 of the 39 edges carry no relationship label.** They cannot all mean the same thing: `Gozara → Malagad` is clearly parentage, but `Niwara → Gozara` is a *marriage* in the frontmatter, and `Yamnahar → Abyroqa` reads as marriage too since the pair co-parent Tehontecuhtli. They need labels before the tree can be drawn correctly.
+- **A colour legend declaring six origin groups** — Drakharpan Primordials, Halfling Lords, Human Deities, Unknown Origin, Kancha Origins, Cthonic Domains — but only 6 of 34 nodes are coloured, and a seventh colour (4 nodes: Malagad, Marmoqed, Yaradaat, Niwara) has no legend entry at all. Rexaya has a colour of its own, also unlisted. This looks like the classification Rook actually wants and it is 17% done.
+
+### Two names changed and the rename did not finish
+
+- **Kvaritzin was Baalsheol.** Three files in `_images/` still carry that name, and the canvas node for it is `baalsheol_main.png`. The identification is certain: the frontmatter genealogy matches the canvas edges on that node exactly (parents Temaya + Zemana, married Xefahua, against Harbaal).
+- **Zemana was Zemara.** Only the image filename survives.
+
+No note anywhere in the vault mentions either old name, so the art and the canvas are the only places they live.
+
+### Two onomastic strata
+
+Roughly half the pantheon is Nahuatl-shaped and half Northwest Semitic, and the split crosses the glyph tiers rather than following them.
+
+- **Nahuatl-shaped:** Moxilaxaya, Tahiwaco, Tehontecuhtli, Xochbaram, Kaxatzin, Kevarotzin, Kinayotl, Maavacihuatl, Masehua, Refapilli, Kvaritzin, Kinayotl.
+- **Northwest Semitic:** Harbaal, Yamnahar, Lotan, Raavvah, Kadashar, Marmoqed, Kathorharab, Yaradaat, Malagad, Bolohua, Abyroqa.
+
+Some are direct lifts, which is worth knowing before anything is published: **Lotan is the Ugaritic sea serpent** (the Leviathan cognate), and its note describes exactly that — a serpent eating its own tail. **Yamnahar is *yam* + *nahar*, "sea" + "river"** — its epithet "The God of Seas and Rivers" is a literal translation of its own name. **Baal + Sheol** is "lord of the underworld", which is what Kvaritzin is.
+
+### Contradictions, ranked
+
+1. **Kathorharab has two different parent pairs.** Its own note says Yekala + Moxilaxaya. Niwara and Gozara both claim it as their child, and the canvas agrees with them. One is wrong.
+2. **Leyala has two different parent pairs.** Its note says Yekala + Niwara; the canvas says Bolohua + Moxilaxaya. No overlap at all.
+3. **Yatbara has three parents** — Yekala, Moxilaxaya and Tahiwaco — **and lists Yekala as both a parent and a consort.** The canvas has the same marriage edge.
+4. **Ten parent/child links run one way only.** The child names the parent but the parent's `offspring` is empty, or the reverse. Full list: Kathorharab→Yekala, Kathorharab→Moxilaxaya, Xefahua→Qatzera, Xefahua→Tsayidrah, Leyala→Yekala, Leyala→Niwara, Niwara→Tahiwaco, Yatbara→Yekala, Kvaritzin→Temaya, Kvaritzin→Zemana. And the reverse for Bolohua→Lotan, Gozara→Yaradaat, Gozara→Malagad, Niwara→Malagad, Niwara→Yaradaat.
+5. **Harbaal and Kvaritzin are siblings in the frontmatter and enemies on the canvas.** Could be both, but nothing says so.
+6. **Qatzera, Tsayidrah and Raavvah form a closed three-way marriage ring** on the canvas — each married to the next. Either a throuple or three edges that should be one. Xefahua's frontmatter names Qatzera + Tsayidrah as her parents, which fits the ring but does not disambiguate it.
+7. **Kathorharab and Kvaritzin are both `gender: Female` with epithets reading "The God of…"** Deliberate or stale.
+8. **Niwara's `pantheon` is `[[Ramtilim]]` alone** while the other eleven firmament gods are `[[Yekatlan]]`. Niwara is also the bridge between the tiers — it and Gozara parent three of the ten celestials. So this may be correct and meaningful rather than an error, but it is the only case of it.
+9. **Five chthonic gods have overlapping remits with each other and with Kvaritzin.** Kaxatzin (Graves), Kevarotzin (Tombs), Kinayotl (Mourning), Maavacihuatl (Souls), Refapilli (Ghosts) — and Kvaritzin's own `minor_influences` already claims graves, burial, ghosts, funerary rites and remembrance outright. Nothing distinguishes the five.
+10. **Tahiwaco lists `[[Yekatlan]]` twice.** Trivial, just noting it.
+
+### Does not belong
+
+- **`Orystria.md`** is not Areshnaat. It describes a supreme detached ruler with "five aspects corresponding to the five colors of magic (White/Blue/Black/Red/Green)" asleep in a tomb at the centre of five moons. That is Magic: The Gathering, and the note carries its own editorial aside flagging a "five moons" discrepancy. It arrived with the nine orphan notes migrated out of the old `Author/Areshnaat/Deities` folder on 2026-10-11. Recommend it leaves `gods/`.
+- **`The Goddess of Lust.md`** (epithet "The Primal Chained") is template-only and carries no glyph, so it sits outside the tier scheme. Rook edited it on 2026-10-12.
+- **`The Binding of Portions.md`** is `type: ritual` with two frontmatter lines and no body. It is a rite, not a deity, and `myths/The Binding of Niwara.md` suggests where it belongs.
+
+### Rulings needed from Rook
+
+1. Which genealogy source wins — the frontmatter or the canvas? One should be deleted once the other is complete.
+2. Kathorharab's parents: Yekala + Moxilaxaya, or Niwara + Gozara?
+3. Leyala's parents: Yekala + Niwara, or Bolohua + Moxilaxaya?
+4. Yatbara: which two of its three parents, and is the Yekala marriage intended?
+5. Are the two onomastic strata two culture-groups worshipping one pantheon, or an artifact of writing them at different times? This decides whether the direct Ugaritic lifts stay.
+6. The six legend groups on the canvas — are those the real classification? If so they should become a frontmatter field, because the glyph tiers and `pantheon:` disagree with each other and neither matches the legend.
+7. Harbaal and Kvaritzin: siblings, enemies, or both?
+8. The five overlapping death gods: distinct portfolios, aspects of Kvaritzin, or a cut?
+
+### Where the data lives
+
+- `gods/` in the vault — 36 deity notes, `Family Tree.canvas`, `myths/`.
+- `gods/_gods.base` — a new Obsidian Bases dashboard with five views: Roster, Portraits, Lineage, Needs work, Unfiled. Vault-only, never published.
+- `gods/_gods.md` — the dashboard shell, embeds the base. Also vault-only now.
+
 ## Log
 
 - 2026-10-11, Claude chat: created this file. Codex artifact republished with the scripts addendum (version 3). No other repo files touched.
@@ -93,3 +291,4 @@ Checked and consistent, no action: the PDF "One tongue, three layers" table matc
 - 2026-10-12, CLI: one correction against my own earlier note. I first read draft 3's glyph labels and reported it did not contain dz or sh. That was a bad check on my part, looking only at short labels and missing the two new letters in their own panel. Draft 3 does contain both, and your line about it was right.
 - 2026-10-12, CLI: acted on Seraphim's audit. Every section index was publishing `Mirrored Source Folder: content/<dir>` and an empty section told readers to run a build command; both gone. 31 of 37 pantheon cards were showing the note template's authoring guidance as their summary and now show the deity's epithet. Also merged Seraphim's mobile CSS and verified it in a browser, folded the world-survey chart into a collapsed section so the front page no longer opens with two maps stacked, and fixed a fit-margin bug in the header map that the mobile work exposed.
 - 2026-10-12, CLI: state of the branches. `areshnaat-publishing` now carries everything: the Linux adapter, the DM scrub, the Kedantlan header, the Obsidian-dialect renderer taken off the Thaer branch without its demo commits, the empty-note fix, the duplicate-title fix, the frontmatter unclone, the noindex rule, the leak fix, the mobile CSS, and the writing-system canon with its figures. `seo-p0` is fully absorbed and can be deleted. `thaer-registry` keeps the Thaer demo and nothing else needs to come off it. `main` still holds only the analytics beacon and this file, and is 11 commits behind. Merging it is Rook's call, since `main` looks to be the production branch.
+- 2026-10-12, CLI: read all 36 deity notes and the family-tree canvas and wrote up the Pantheon audit section above, at Rook's request, for the chat session to turn into a visual artifact. Headline: the pantheon is an index, not a text. 34 of 36 notes have no prose at all -- their bodies are still the unfilled template -- so epithets are the only complete layer and `divine_rank` is set on 7. There are two genealogy sources that disagree (frontmatter, and `Family Tree.canvas`), ten contradictions between them including two gods with entirely different parent pairs in each, and a colour legend on the canvas declaring six origin groups that is 17% filled in and looks like the classification actually wanted. Two gods were renamed without finishing: Kvaritzin was Baalsheol and Zemana was Zemara, and only the image filenames and the canvas still carry the old names. Also worth a ruling before publication: the pantheon has two distinct name layers, Nahuatl and Northwest Semitic, and several of the Semitic ones are direct lifts -- Lotan is the Ugaritic serpent, and Yamnahar's epithet "The God of Seas and Rivers" is a literal translation of its own name. `Orystria.md` is not Areshnaat at all; it is a Magic: The Gathering figure that came in with the orphan migration. Nothing in the vault was changed. Eight rulings are listed for Rook at the end of the section.
