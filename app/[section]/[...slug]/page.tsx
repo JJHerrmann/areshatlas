@@ -244,7 +244,6 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
           label={section.label}
           title={view.breadcrumb[view.breadcrumb.length - 1]?.title ?? section.title}
           dek={section.summary}
-          sourceNote={`Mirrored Source Folder: ${view.sourcePath}`}
           searchItems={searchItems}
         />
 

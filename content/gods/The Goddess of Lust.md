@@ -1,6 +1,6 @@
 ---
 type: deity
-name: goddess-of-lust
+name: The Goddess of Lust
 title: ""
 slug: ""
 section: pantheon

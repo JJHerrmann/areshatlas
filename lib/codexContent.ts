@@ -307,7 +307,11 @@ export function normalizeObsidianDisplayText(value: string) {
 }
 
 function readFirstNonEmptyLine(markdown: string) {
+  // Strip HTML comments first. The gods notes still carry a template body that
+  // opens with "<!-- Recorded Entry | gods ... -->", and without this the card
+  // summary became that comment, cut off mid-tag, on 31 pantheon cards.
   const line = markdown
+    .replace(/<!--[\s\S]*?-->/g, "")
     .split(/\r?\n/)
     .map((line) => line.trim())
     .find(
@@ -317,7 +321,10 @@ function readFirstNonEmptyLine(markdown: string) {
         !line.startsWith("#") &&
         !line.startsWith(">") &&
         !/^!?\[\[[^\]]+\]\]$/.test(line) &&
-        !/^#\w[\w/-]*(\s+#\w[\w/-]*)*$/.test(line),
+        !/^#\w[\w/-]*(\s+#\w[\w/-]*)*$/.test(line) &&
+        // An unfilled {{token}} from the note template is not a summary.
+        !/\{\{[^}]*\}\}/.test(line) &&
+        !line.startsWith("<!--"),
     );
   return line ? normalizeObsidianText(line) : undefined;
 }
@@ -889,6 +896,19 @@ function readSummary(filePath: string, fallback: string) {
   const summary = typeof parsed.data.summary === "string" ? normalizeObsidianText(parsed.data.summary) : "";
   if (summary) return summary;
 
+  // An unfilled note template has no summary to give. Its body is {{tokens}}
+  // and authoring guidance, and falling through to the first line of prose
+  // published that guidance as the card summary on 31 pantheon entries.
+  if (/\{\{[^}]*\}\}/.test(parsed.content)) {
+    // `title` is usually the epithet and makes a good card line, but on many
+    // notes it just repeats the name, which reads as a stutter on the card.
+    const name = normalizeObsidianText(String(parsed.data.name || ""));
+    const titleLine = normalizeObsidianText(String(parsed.data.title || ""));
+    const epithet = normalizeObsidianText(String(parsed.data.epithet || ""));
+    const candidate = titleLine && titleLine !== name ? titleLine : epithet;
+    return candidate && candidate !== name ? candidate : fallback;
+  }
+
   return readFirstNonEmptyLine(parsed.content) || normalizeObsidianText(String(parsed.data.title || fallback));
 }
 
@@ -917,7 +937,7 @@ function createFileEntry(
     title: readEntryTitle(filePath, fallbackTitle),
     href: ext === ".csv" ? undefined : getFileRoute(section, slugParts, filePath),
     domain,
-    summary: readSummary(filePath, `Mirrored source entry in ${domain}.`),
+    summary: readSummary(filePath, `An entry in ${domain}.`),
     imageSrc: readEntryImage(filePath),
     kind: "file",
     meta: readEntryMeta(filePath),
@@ -957,8 +977,8 @@ function createFolderEntry(
     href: `/${section.slug}/${childParts.map(slugifySegment).map(encodeURIComponent).join("/")}`,
     domain,
     summary: indexFile
-      ? readSummary(indexFile, `Folder in ${domain} containing mirrored codex material.`)
-      : `Folder in ${domain} containing mirrored codex material.`,
+      ? readSummary(indexFile, `A collection within ${domain}.`)
+      : `A collection within ${domain}.`,
     imageSrc: indexFile ? readEntryImage(indexFile) : undefined,
     kind: "folder",
   };

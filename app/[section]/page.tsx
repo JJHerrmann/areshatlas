@@ -65,7 +65,6 @@ export default async function SectionPage({ params }: SectionPageProps) {
           label={section.label}
           title={overviewDocument?.title ?? section.title}
           dek={overviewDocument?.summary ?? section.summary}
-          sourceNote={`Mirrored Source Folder: ${view.sourcePath}`}
           searchItems={searchItems}
         />
 
@@ -97,8 +96,7 @@ export default async function SectionPage({ params }: SectionPageProps) {
             </div>
           ) : (
             <article className="codex-empty-state p-6 text-sm leading-6">
-              No mirrored entries are present in this folder yet. Run `npm run sync:codex`
-              after adding content to the vault source.
+              Nothing has been filed here yet.
             </article>
           )}
         </section>
