@@ -1859,3 +1859,54 @@ body {
   background: #f6f5f1;
   border-top: 1px solid var(--wiki-border, #c8c8c8);
 }
+
+/* --- Folded world-survey chart on the front page ---------------------------
+   The interactive Kedantlan header already carries a map above it, so the
+   whole-world chart is collapsed by default and opens on demand. */
+.wiki-world-map-fold > summary.wiki-world-map-summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.75rem;
+}
+
+.wiki-world-map-fold > summary.wiki-world-map-summary::-webkit-details-marker {
+  display: none;
+}
+
+/* A caret the reader can see, rotating when the section opens. */
+.wiki-world-map-fold > summary.wiki-world-map-summary::after {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  opacity: 0.7;
+  transition: transform 0.15s ease;
+}
+
+.wiki-world-map-fold[open] > summary.wiki-world-map-summary::after {
+  transform: rotate(45deg);
+}
+
+.wiki-world-map-fold > summary.wiki-world-map-summary:focus-visible {
+  outline: 2px solid var(--codex-accent, #8a6a24);
+  outline-offset: 3px;
+}
+
+.wiki-world-map-hint {
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  opacity: 0.72;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wiki-world-map-fold > summary.wiki-world-map-summary::after {
+    transition: none;
+  }
+}

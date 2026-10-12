@@ -52,20 +52,27 @@ export default async function HomePage() {
         </article>
 
         <section className="wiki-module-grid">
-          <div className="wiki-box wiki-module wiki-module-full">
-            <h2 className="wiki-box-title">World Survey Map</h2>
+          {/* The interactive Kedantlan header already carries a map at the top of
+              this page. The whole-world chart stays available, but folded away,
+              so the front page does not open with two maps stacked. */}
+          <details className="wiki-box wiki-module wiki-module-full wiki-world-map-fold">
+            <summary className="wiki-box-title wiki-world-map-summary">
+              World Survey Map
+              <span className="wiki-world-map-hint">the whole world, beyond the surveyed lands</span>
+            </summary>
             <a href={worldMapSrc} className="wiki-map-link" target="_blank" rel="noreferrer">
               <img
                 src={worldMapSrc}
                 alt="Faux-satellite survey map of Areshnaat"
                 className="wiki-world-map-image"
+                loading="lazy"
               />
             </a>
             <p className="wiki-copy">
               A faux-satellite render of the world surface derived from the rotated
               terrain model, landmask, biome projection, and relief shading.
             </p>
-          </div>
+          </details>
 
           <div className="wiki-box wiki-module wiki-module-wide">
             <h2 className="wiki-box-title">Featured Divisions</h2>
