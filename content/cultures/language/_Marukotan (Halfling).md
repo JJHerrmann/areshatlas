@@ -13,6 +13,16 @@ A compact naming framework for halfling place names using:
 - Nahuatl-style suffixes for place, people, and regional forms
 - Greek and Latin-style prestige affixes for marcher, civic, ceremonial, and noble names
 
+## Writing
+
+Halflings and gnomes share one hand. Full account in [[One Root, Five Hands]].
+
+- **[canon]** Thaana-like: short hooks with vowel marks, shared with [[_Kutnylev (Gnomish)]].
+- **[proposed]** The small folk kept the elf ticks as vowel marks and broke the spine into short, separate hooks.
+- **[proposed]** Halflings write loose and casual, where gnomes over-annotate.
+- **[proposed]** The small folk write left to right, so they read as distinct from the dwarves at a glance. If right to left, they keep unjoined letters instead.
+- **[open]** Reading direction is not settled.
+
 ## Usage Pattern
 
 Base pattern:

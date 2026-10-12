@@ -13,6 +13,15 @@ A compact naming framework for gnomish place names using:
 - Hungarian-style suffixes for place, people, and civic forms
 - Greek and Latin-style prestige affixes for imperial, ceremonial, and institutional names
 
+## Writing
+
+Gnomes and halflings share one hand. Full account in [[One Root, Five Hands]].
+
+- **[canon]** Thaana-like: short hooks with vowel marks, shared with [[_Marukotan (Halfling)]].
+- **[proposed]** The small folk kept the elf ticks as vowel marks and broke the spine into short, separate hooks.
+- **[proposed]** Gnomes over-annotate, adding extra marks, where halflings write loose and casual.
+- **[open]** Reading direction is not settled.
+
 ## Usage Pattern
 
 Base pattern:

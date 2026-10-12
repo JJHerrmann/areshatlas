@@ -13,6 +13,14 @@ A compact naming framework for goblinoid place names using:
 - Quechua-style suffixes for place, people, and regional forms
 - Greek and Latin-style prestige affixes for colonial, naval, dynastic, and sacred names
 
+## Writing
+
+The goblinoid hand descends from the elf script. Full account in [[One Root, Five Hands]].
+
+- **[canon]** Futhark-like: straight staves, no curves.
+- **[proposed]** It is the elf spine and ticks with the spine broken into separate staves and every curve straightened for carving.
+- **[open]** Reading direction is not set.
+
 ## Usage Pattern
 
 Base pattern:

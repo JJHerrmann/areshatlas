@@ -14,6 +14,16 @@ A compact naming framework for dwarven place names using:
 - Estonian-style suffixes and endings for locality, terrain, and people forms
 - Greek and Latin prestige affixes for imperial, ceremonial, or ancient state names
 
+## Writing
+
+The dwarven hand, and the alphabet drafted for it, are recorded in [[One Root, Five Hands]].
+
+- **[canon]** Right to left, joined along a baseline, leaning toward Farsi in flow. Carving a flowing hand into stone is a flex expected of dwarven craftsmen.
+- **[canon]** Tense lives in the stroke: present is the baseline, past is thicker, future leans about 5 degrees, timeless takes a curled cap, and verbs are always capped.
+- **[canon]** Refugees add helper marks in daily writing, for both vowel and tense.
+- **[proposed]** The hand is the elf column turned 90 degrees clockwise: top-to-bottom becomes right-to-left, the spine becomes the baseline, the side ticks fold into marks above and below.
+- **[open]** The drafted alphabet has 18 consonants and no letter for `dz` or `š`, so it cannot spell `dza` or Šohdzakoda. See [[Dwarves and Duergar]]. Needs a draft 3.
+
 ## Usage Pattern
 
 Base pattern:

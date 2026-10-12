@@ -15,6 +15,16 @@ A compact naming framework for elven place names using:
 - Nahuatl-style suffixes for place and people forms
 - Greek and Latin-style prestige affixes for imperial, civic, and ceremonial names
 
+## Writing
+
+The elf hand is the root of every script in Areshnaat. Full account in [[One Root, Five Hands]].
+
+- **[canon]** The elves wrote first. Every other people's script descends from this hand.
+- **[canon]** Vertical, in the Mongolian manner: a spine running top to bottom with ticks and loops off either side, columns read left to right.
+- **[canon]** Elves write vowels as full letters. Every other hand demotes them to marks, except the human one, which promotes them back.
+- **[proposed]** Corrected ticks: left of the spine for the deep vowels (a, o, u), right for the forward vowels (e, i). Turned clockwise this becomes the above/below split the dwarven refugee marks use, so that split would be inherited from here.
+- **[open]** The redraw with corrected ticks, and the five-hand family tree, have not been produced.
+
 ## Usage Pattern
 
 Base pattern:
