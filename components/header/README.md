@@ -35,8 +35,8 @@ Files are already in place:
   `.gitignore` ignores `*.png` globally but has no `*.webp` rule, so these are fine.
 - `components/header/` — `kedantlan-header.js`, `.d.ts`, `KedantlanHeader.tsx`.
 
-**The page wiring is NOT applied.** The checkout is on `thaer-registry`, whose home page is
-Thaer copy ("Post-Exile", "Vienna's exile"); a Kedantlan header does not belong there. Apply
+**The page wiring IS applied** on `areshnaat-publishing`, where the home page is Areshnaat.
+The patch below is kept for reference, and for any other checkout. Apply
 `wire-into-home-page.patch` on an Areshnaat branch instead:
 
 ```bash

@@ -386,7 +386,9 @@ function readWorld(frontmatter: Record<string, unknown>): string {
   const key = raw.toLowerCase();
   if (!key) return DEFAULT_WORLD;
   if (key === "aresh" || key === "areshnaat" || key === "areshnaht") return "Areshnaat";
-  if (key === "thaer") return "Thaer";
+  // Other settings keep whatever label they declare. This repo publishes
+  // Areshnaat; a second setting belongs in its own checkout, not as a special
+  // case here.
   return raw;
 }
 
