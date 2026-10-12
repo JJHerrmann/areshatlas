@@ -29,6 +29,19 @@ export function cleanDescription(input: string | null | undefined, fallback: str
  * Draft / stub / placeholder entries should not be indexed until they carry
  * real content. Checked against markdown frontmatter.
  */
+/**
+ * A leading underscore on a note's filename is the vault's "not ready" marker.
+ * The derived article index already skips these, which keeps them out of the
+ * sitemap — but a sitemap only invites crawling, it does not forbid it, and
+ * these pages are linked from the sidebar and from each other. Emit a real
+ * noindex so the convention is enforced rather than merely implied.
+ */
+export function isUnderscoreDraft(sourcePath: string | null | undefined): boolean {
+  if (!sourcePath) return false;
+  const base = sourcePath.replace(/\\/g, "/").split("/").pop() ?? "";
+  return base.startsWith("_");
+}
+
 export function isNoindexFrontmatter(frontmatter: Record<string, unknown> | null | undefined): boolean {
   if (!frontmatter) return false;
   if (frontmatter.draft === true || frontmatter.noindex === true) return true;

@@ -23,15 +23,36 @@ awaiting a yes, **open** = undecided.
 | Halfling and gnome | Not set | Thaana-like, short hooks, vowel marks | Spine broken into hooks, ticks kept as marks | canon |
 | Human | Left to right (proposed) | Latinized Thaana, fewer accents | Small-folk marks promoted back to letters | canon |
 
+## Who writes with which hand
+
+Five hands, more than five peoples. A people can borrow a hand without being
+descended from it.
+
+| People | Hand used | Note | Status |
+|---|---|---|---|
+| Elves | Elf | The root hand | canon |
+| Sea elves, wood elves | Elf | The same elvish script, unchanged | canon |
+| Drow | **Dwarf** | Elvish words written in the dwarven hand, with adjustments for spelling | canon |
+| Dwarves | Dwarf | — | canon |
+| Goblinoids | Goblinoid | Futhark-like runes | canon |
+| Orcs | Goblinoid | The same runes | canon |
+| Halflings, gnomes | Halfling and gnome | One shared hand | canon |
+| Humans | Human | A Latin script | canon |
+
+- **[canon]** The drow are the exception to the whole descent tree. They are elf-lineage but write with the dwarven hand, carrying elvish words in it with spelling adjustments. Every other people uses the hand it inherited.
+- **[open]** How the drow came to take a dwarven hand, and when. Nothing fixes it, and it is the most interesting unexplained thing in the writing canon.
+- **[open]** Whether the drow adjustments amount to a sixth hand in practice, or stay a spelling convention inside the dwarven one.
+
 ## What is decided
 
+- **[canon]** Sea elves and wood elves write the same elvish script, unchanged.
 - **[canon]** The elves wrote first. Every other people's script descends from the elf hand, a vertical script in the Mongolian manner: a spine running top to bottom, with ticks and loops off either side, columns read left to right.
 - **[canon]** Elves write vowels as full letters.
 - **[canon]** Dwarves write tense in the stroke of the hand: present is the baseline, past is thicker, future leans at a cant of about 5 degrees, timeless gets a curled cap, and verbs are always capped. The dwarf hand leans toward Farsi in flow, and carving a flowing hand into stone is a flex expected of dwarven craftsmen.
 - **[canon]** Refugees have added helper marks in daily writing, for both vowel and tense.
-- **[canon]** Goblinoids use something in the manner of futhark.
+- **[canon]** Goblinoids use something in the manner of futhark. Orcs use the same runes.
 - **[canon]** Halflings and gnomes share a Thaana-style script.
-- **[canon]** Humans use a Latinized Thaana, with Latin-leaning letterforms and fewer accents.
+- **[canon]** Humans use a Latin script. It is described elsewhere as a Latinized Thaana, with Latin-leaning letterforms and fewer accents.
 
 ## How one hand becomes another
 
@@ -41,7 +62,7 @@ awaiting a yes, **open** = undecided.
 - **[proposed]** The small folk keep the ticks as vowel marks and break the spine into short, separate hooks.
 - **[proposed]** The small folk write left to right, so they look distinct from the dwarves at a glance. If right to left, they keep unjoined letters instead.
 - **[proposed]** Humans took the script from their halfling and gnome neighbours, promoted the marks back into full vowel letters, and write left to right. The precedent is real: the Greeks turned spare Phoenician consonant signs into vowels.
-- **[proposed]** Humans keep a few unmistakably Thaana-derived consonant shapes, so Common does not read as English in a funny font.
+- **[open]** Whether humans keep a few unmistakably Thaana-derived consonant shapes, so Common does not read as English in a funny font. This was proposed, but "a Latin script" may mean the Thaana inheritance is not visible on the page. The two readings differ and the difference is worth settling.
 - **[proposed]** Halflings write loose and casual. Gnomes over-annotate, adding extra marks.
 - **[proposed]** Real-world analogy: Syriac led to Sogdian, then Uyghur, which was turned on its side to become vertical Mongolian. This is a fact about real scripts, offered as precedent, not as canon.
 

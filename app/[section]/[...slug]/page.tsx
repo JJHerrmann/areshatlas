@@ -22,7 +22,7 @@ import {
   getSectionBySlug,
   getSectionView,
 } from "@/lib/codexContent";
-import { canonicalPath, cleanDescription, demoteLeadingH1, isNoindexFrontmatter } from "@/lib/seo";
+import { canonicalPath, cleanDescription, demoteLeadingH1, isNoindexFrontmatter, isUnderscoreDraft } from "@/lib/seo";
 
 const STUB_REQUEST_HREF = "https://github.com/JJHerrmann/areshatlas/issues/new";
 
@@ -92,7 +92,8 @@ export async function generateMetadata({ params }: NestedSectionPageProps): Prom
     return base(
       overviewDocument.title,
       cleanDescription(overviewDocument.summary, section.summary),
-      isNoindexFrontmatter(overviewDocument.frontmatter),
+      isNoindexFrontmatter(overviewDocument.frontmatter) ||
+        isUnderscoreDraft(overviewDocument.sourcePath),
     );
   }
 
@@ -102,7 +103,7 @@ export async function generateMetadata({ params }: NestedSectionPageProps): Prom
     return base(
       document.title,
       cleanDescription(document.summary, section.summary),
-      isStub || isNoindexFrontmatter(document.frontmatter),
+      isStub || isNoindexFrontmatter(document.frontmatter) || isUnderscoreDraft(document.sourcePath),
     );
   }
 

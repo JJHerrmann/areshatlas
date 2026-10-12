@@ -13,6 +13,14 @@ A compact naming framework for orcish place names using:
 - Quechua-style suffixes for place, people, and regional forms
 - Greek and Latin-style prestige affixes for imperial, ceremonial, dynastic, and sacred names
 
+## Writing
+
+Orcs write with the goblinoid runes. Full account in [[One Root, Five Hands]].
+
+- **[canon]** The same futhark-like runes the goblinoids use, shared rather than separately derived. See [[_Dagatmayu (Goblinoid)]].
+- **[proposed]** The runes are the elf spine and ticks with the spine broken into separate staves and every curve straightened for carving.
+- **[open]** Reading direction is not set for either people.
+
 ## Usage Pattern
 
 Base pattern:
