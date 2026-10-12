@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import path from "node:path";
 import { Suspense } from "react";
 import StreamRefreshController from "@/components/codex/StreamRefreshController";
@@ -64,6 +65,13 @@ export default function RootLayout({
             <PersistentFooter />
           </div>
         </div>
+        {/* Cloudflare Web Analytics */}
+        <Script
+          type="module"
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token":"6d4093b8f9b24860903f42fec0290f49"}'
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
