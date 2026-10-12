@@ -66,7 +66,13 @@ Tags: **canon** = the author decided it, **proposed** = a suggestion awaiting a 
 | -la | Place ending for sept settlements, as in the Finnic Rapla and Kohila. | proposed |
 | Tahmelek | In-language form of Underking: tachat (under) plus melekh (king). | proposed |
 
+### Writing
+- **[canon]** The dwarven hand, and how it descends from the elf script, is recorded in [[One Root, Five Hands]]. The alphabet exists only in draft, and as drafted it cannot spell `dza` or `Š`.
+
 ## The five Kords
+- **[canon]** Five beards: Gold, Platinum, Copper, Slate and Onyx. Their working names before the metals were Pahir, Sahsa, Red, Brown and Black.
+- **[proposed]** Names for Copper, Slate and Onyx, and every seat on the map, are proposals. Gold and Platinum follow the set recipe.
+
 ### Gold: Sahdzakoda (SAH-dza-KO-da)
 - **[canon]** Root: zahav (Z-H-V). Clip: Sah + dza + koda. Say: SAH-dza-KO-da
 - Working name before the metals: Sahsa.
