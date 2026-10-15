@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Link from "next/link";
 import CoordinateRule from "@/components/codex/CoordinateRule";
 import ArticleDek from "@/components/codex/ArticleDek";
 import ArticleTitle from "@/components/codex/ArticleTitle";
@@ -21,6 +22,8 @@ type ArticleHeaderProps = {
   statusNotice?: ReactNode;
   sourceNote?: string | null;
   sourceRelativePath?: string;
+  /** Link to this article's revision history, when any is recorded. */
+  historyHref?: string | null;
   searchItems: SearchItem[];
 };
 
@@ -32,13 +35,21 @@ export default function ArticleHeader({
   statusNotice,
   sourceNote,
   sourceRelativePath,
+  historyHref,
   searchItems,
 }: ArticleHeaderProps) {
   return (
     <header className="codex-article-header">
       <div className="codex-top-utility-bar">
         <Breadcrumbs items={breadcrumbs} />
-        <GlobalSearch items={searchItems} />
+        <div className="codex-top-utility-actions">
+          {historyHref ? (
+            <Link href={historyHref} className="codex-history-tab">
+              History
+            </Link>
+          ) : null}
+          <GlobalSearch items={searchItems} />
+        </div>
       </div>
 
       <div className="codex-article-header-main">

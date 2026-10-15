@@ -56,6 +56,11 @@ bash "$repo_root/scripts/sync_codex_content.sh" "${sync_args[@]}"
 echo "[codex-publish] checking for vault-only material in content/..."
 node "$repo_root/scripts/scrub_private.mjs" --check
 
+# The history store is permanent once published, so it is checked too: every
+# stored revision must be present on disk and free of private material.
+echo "[codex-publish] verifying page history store..."
+node "$repo_root/scripts/build_history.mjs" --verify
+
 if [ "$do_build" = 1 ]; then
   echo "[codex-publish] building..."
   npm run build

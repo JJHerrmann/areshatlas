@@ -12,6 +12,9 @@
 #   ./scripts/sync_codex_content.sh --mirror --yes   # mirror, no prompt (CI)
 #   ./scripts/sync_codex_content.sh --dry-run        # show, change nothing
 #   ARESH_CODEX_SOURCE=/path/to/vault ./scripts/sync_codex_content.sh
+#
+# Notes with `publish: false` in their frontmatter are held back regardless of
+# mode; see scripts/publish_gate.mjs.
 
 set -euo pipefail
 
@@ -77,6 +80,17 @@ rsync_base+=(--filter 'protect _derived/***')
 rsync_base+=(--min-size=1)
 [ "$dry_run" = 1 ] && rsync_base+=(--dry-run)
 
+# --- per-note publish gate ----------------------------------------------------
+# The allowlist above is path-based; this is the per-note switch. A note with
+# `publish: false` in its frontmatter (a checkbox in Obsidian's Properties
+# panel) never enters content/, so it is not in the public repo either.
+gate_list="$(mktemp)"
+gate_section="$(mktemp)"
+trap 'rm -f "$gate_list" "$gate_section"' EXIT
+node "$script_root/scripts/publish_gate.mjs" --root "$repo_root" --source "$source_dir" --list > "$gate_list"
+gate_held=$(wc -l < "$gate_list")
+[ "$gate_held" -gt 0 ] && printf '[codex-sync]   gate: %s note(s) held back by publish: false\n' "$gate_held"
+
 # --- mirror confirmation ------------------------------------------------------
 if [ "$mirror" = 1 ] && [ "$assume_yes" != 1 ] && [ "$dry_run" != 1 ]; then
   echo
@@ -109,7 +123,10 @@ for d in "${sections[@]}" "${assets[@]}"; do
   fi
   mkdir -p "$dest/$d"
   printf '[codex-sync]   sync %s\n' "$d"
-  "${rsync_base[@]}" "$source_dir/$d/" "$dest/$d/" | sed 's/^/    /'
+  # Anchored with a leading / so each pattern resolves against this section
+  # rather than matching the same basename anywhere in the tree.
+  sed -n "s|^$d/|/|p" "$gate_list" > "$gate_section"
+  "${rsync_base[@]}" --exclude-from="$gate_section" "$source_dir/$d/" "$dest/$d/" | sed 's/^/    /'
 done
 
 # --- loose root assets (never with --delete: content/ root holds other files) --
@@ -123,6 +140,15 @@ if [ "${#globs[@]}" -gt 0 ]; then
   "${root_cmd[@]}" "$source_dir/" "$dest/" | sed 's/^/    /'
 fi
 
+# --- unpublish notes whose box was unticked after they went live --------------
+# Additive sync never deletes, so a note flipped to `publish: false` would keep
+# its stale copy in content/ (and on the site) forever.
+if [ "$dry_run" = 1 ]; then
+  node "$script_root/scripts/publish_gate.mjs" --root "$repo_root" --source "$source_dir" --prune --dry-run | sed 's/^/    /'
+else
+  node "$script_root/scripts/publish_gate.mjs" --root "$repo_root" --source "$source_dir" --prune | sed 's/^/    /'
+fi
+
 # --- scrub vault-only material ------------------------------------------------
 # The vault keeps DM/private blocks; the published copy must not. This runs
 # BEFORE derive so the derived json never indexes private text either.
@@ -131,6 +157,16 @@ if [ "$dry_run" = 1 ]; then
   node "$script_root/scripts/scrub_private.mjs" --root "$repo_root" --dry-run | sed 's/^/    /'
 else
   node "$script_root/scripts/scrub_private.mjs" --root "$repo_root" | sed 's/^/    /'
+fi
+
+# --- record page history ------------------------------------------------------
+# After the scrub, so a stored revision can never hold DM material, and before
+# derive, which only reads the current text. The previous entry in the store is
+# the file this sync replaced.
+if [ "$dry_run" = 1 ]; then
+  node "$script_root/scripts/build_history.mjs" --root "$repo_root" --capture --dry-run | sed 's/^/    /'
+else
+  node "$script_root/scripts/build_history.mjs" --root "$repo_root" --capture | sed 's/^/    /'
 fi
 
 # --- derive -------------------------------------------------------------------

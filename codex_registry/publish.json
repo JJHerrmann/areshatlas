@@ -40,6 +40,9 @@
     "*.bak",
     "Thumbs.db"
   ],
+  "publish_field": "publish",
+  "publish_default": true,
+  "_publish_gate_notes": "Per-note switch on top of the folder allowlist, applied by scripts/publish_gate.mjs at sync time. Add a boolean `publish` property in the vault (Obsidian's Properties panel renders it as a checkbox); unchecked keeps the note out of content/ entirely, so it never reaches the public repo. publish_default: true means a note WITHOUT the field still publishes - set it to false to make the gate opt-in, but every note then needs `publish: true` before it goes live. Flipping a published note to false also removes the stale copy from content/, which the additive sync would otherwise leave behind.",
   "private_callout_types": [
     "dm",
     "secret",

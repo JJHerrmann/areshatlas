@@ -45,7 +45,7 @@ function listMarkdownFiles(rootDir) {
   const out = [];
   function visit(dirPath) {
     for (const item of fs.readdirSync(dirPath, { withFileTypes: true })) {
-      if (item.name === "_derived" || item.name === "_registry" || item.name === ".gitkeep") continue;
+      if (item.name === "_derived" || item.name === "_history" || item.name === "_registry" || item.name === ".gitkeep") continue;
       const nextPath = path.join(dirPath, item.name);
       if (item.isDirectory()) {
         visit(nextPath);
@@ -63,7 +63,7 @@ function listAssetFiles(rootDir) {
   const out = [];
   function visit(dirPath) {
     for (const item of fs.readdirSync(dirPath, { withFileTypes: true })) {
-      if (item.name === "_derived" || item.name === "_registry" || item.name === ".gitkeep") continue;
+      if (item.name === "_derived" || item.name === "_history" || item.name === "_registry" || item.name === ".gitkeep") continue;
       const nextPath = path.join(dirPath, item.name);
       if (item.isDirectory()) {
         visit(nextPath);

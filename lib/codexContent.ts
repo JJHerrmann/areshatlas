@@ -705,7 +705,7 @@ function listMarkdownFiles(rootDir: string) {
   const out: string[] = [];
   function visit(dirPath: string) {
     for (const item of fs.readdirSync(dirPath, { withFileTypes: true })) {
-      if (item.name === "_derived" || item.name === "_registry" || item.name === ".gitkeep") continue;
+      if (item.name === "_derived" || item.name === "_history" || item.name === "_registry" || item.name === ".gitkeep") continue;
       const nextPath = path.join(dirPath, item.name);
       if (item.isDirectory()) {
         visit(nextPath);
@@ -723,7 +723,7 @@ function listAssetFiles(rootDir: string) {
   const out: string[] = [];
   function visit(dirPath: string) {
     for (const item of fs.readdirSync(dirPath, { withFileTypes: true })) {
-      if (item.name === "_derived" || item.name === "_registry" || item.name === ".gitkeep") continue;
+      if (item.name === "_derived" || item.name === "_history" || item.name === "_registry" || item.name === ".gitkeep") continue;
       const nextPath = path.join(dirPath, item.name);
       if (item.isDirectory()) {
         visit(nextPath);
@@ -1345,6 +1345,37 @@ export function getSectionEntryCount(section: SectionConfig) {
   return getSectionEntries(section).length;
 }
 
+/**
+ * Every `[section]/[...slug]` path the codex serves, walked with the same
+ * resolver the routes themselves use so the two cannot drift. Feeds
+ * generateStaticParams, which is what prerenders articles at build time
+ * instead of rendering each one per request.
+ *
+ * Revision routes (`.../history`) are deliberately absent: they are noindex,
+ * they read a query string, and dynamicParams still serves them on demand.
+ */
+export function getAllArticleParams(): { section: string; slug: string[] }[] {
+  const params: { section: string; slug: string[] }[] = [];
+  const seen = new Set<string>();
+
+  function visit(section: SectionConfig, slugParts: string[]) {
+    for (const entry of getSectionEntries(section, slugParts)) {
+      if (!entry.href) continue;
+      // href is `/<section>/<a>/<b>`; keep the tail, decoded, as route params.
+      const parts = entry.href.split("/").filter(Boolean).slice(1).map(decodeURIComponent);
+      if (!parts.length) continue;
+      const key = parts.join("/");
+      if (seen.has(`${section.slug}/${key}`)) continue;
+      seen.add(`${section.slug}/${key}`);
+      params.push({ section: section.slug, slug: parts });
+      if (entry.kind === "folder") visit(section, parts);
+    }
+  }
+
+  for (const section of sections) visit(section, []);
+  return params;
+}
+
 export function getSectionView(section: SectionConfig, slugParts: string[] = []): SectionView | null {
   const dirPath = resolveDirectoryPath(section, slugParts);
   if (!dirPath || !fs.existsSync(dirPath) || !fs.statSync(dirPath).isDirectory()) {
@@ -1363,8 +1394,31 @@ export function getSectionView(section: SectionConfig, slugParts: string[] = [])
 export async function getRenderedDocument(section: SectionConfig, slugParts: string[]): Promise<RenderedDocument | null> {
   const filePath = findMarkdownFile(section, slugParts);
   if (!filePath) return null;
+  return renderDocumentSource(section, slugParts, filePath, fs.readFileSync(filePath, "utf8"));
+}
 
-  const raw = fs.readFileSync(filePath, "utf8");
+/**
+ * Render arbitrary source text as if it were the document at `slugParts`.
+ * Page history uses this to put an old revision through the same pipeline as
+ * the live article, so a historical version renders with the same wikilink
+ * resolution, callouts and asset paths it had when it was current.
+ */
+export async function getRenderedRevision(
+  section: SectionConfig,
+  slugParts: string[],
+  raw: string,
+): Promise<RenderedDocument | null> {
+  const filePath = findMarkdownFile(section, slugParts);
+  if (!filePath) return null;
+  return renderDocumentSource(section, slugParts, filePath, raw);
+}
+
+async function renderDocumentSource(
+  section: SectionConfig,
+  slugParts: string[],
+  filePath: string,
+  raw: string,
+): Promise<RenderedDocument | null> {
   const parsed = parseMatterSafe(raw);
   const title =
     normalizeObsidianDisplayText(String(parsed.data.title || "")) ||

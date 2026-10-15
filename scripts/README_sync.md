@@ -53,6 +53,45 @@ them. So:
   there are published, so vault-only notes (drafts, `SEO_Findings.md`,
   `.obsidian/`) can never leak into the site.
 
+## The publish checkbox
+
+The allowlist decides which **folders** publish. The per-note switch is a
+boolean `publish` property in the vault, which Obsidian's Properties panel
+renders as a checkbox:
+
+```yaml
+---
+title: Dwarven Calendar
+publish: false
+---
+```
+
+- **Unchecked** (`false`/`no`/`off`/`0`) holds the note back. It never enters
+  `content/`, so it is not in the public GitHub repo either — same layer as the
+  DM scrub, and for the same reason.
+- **Missing field publishes.** `publish_default` in `codex_registry/publish.json`
+  is `true`, so none of the existing notes needed backfilling. Flip it to `false`
+  to make the gate opt-in, but then every note needs `publish: true` to go live.
+- **Unticking a note that already published removes it from `content/`.** The
+  additive sync never deletes, so without this a note taken off the site would
+  keep its stale copy forever. The removal shows up in the git diff.
+- Only the top-level key counts: a `publish:` nested under another property is
+  ignored. An unrecognized value warns and falls through to the default rather
+  than silently guessing.
+- An **empty note never publishes** regardless — rsync runs with `--min-size=1`,
+  because a zero-byte note would land as a live URL with no heading and a title
+  built from the raw filename.
+
+Inspect the gate without syncing:
+
+```bash
+node scripts/publish_gate.mjs                 # list what is held back
+node scripts/publish_gate.mjs --prune --dry-run   # and what would leave content/
+```
+
+`publish_from_vault.sh` inherits all of this, since it calls the sync script.
+The PowerShell adapter does **not** have the gate.
+
 ## Vault conventions that the renderer depends on
 
 - **Folder layout = section layout.** The vault's top-level folders are the
