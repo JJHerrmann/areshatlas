@@ -23,12 +23,13 @@ minor_influences:
   - Processions, Ethos, Civilization, Leadership
 spheres: []
 avatars: []
-avatar_image: "![[/_images/moxi_main.png]]"
+avatar_image: "![[moxi_main.png]]"
 parents: []
 siblings: []
 offspring:
   - "[[Yatbara]]"
   - "[[Niwara]]"
+  - "[[Leyala]]"
 consorts:
   - "[[Tahiwaco]]"
 allies: []
@@ -59,7 +60,7 @@ vices: []
 holy_days: []
 taboos: []
 summary: |-
-  Moxilaxaya is considered to be one of the first of the gods of the Areshnaati Pantheon. She is the Goddess and Mistress of Order, Civilization, and Procession. She is the wife of [[🌌Tahiwaco]], and the mother of his sons [[🌌Yatbara]] and [[🌌Niwara]].
+  Moxilaxaya is considered to be one of the first of the gods of the Areshnaati Pantheon. She is the Goddess and Mistress of Order, Civilization, and Procession. She is the wife of [[Tahiwaco]], and the mother of his sons [[Yatbara]] and [[Niwara]].
   Moxilaxaya is considered by the humans of [[Drakharpan]] as the mother of their race. All humans trace their "lineage" back through, to varying degrees of success, to the mythic, most ending at Moxilaxaya the Patron Mother.
 card_summary: ""
 physical_description: ""
@@ -140,7 +141,7 @@ navboxes:
 tags:
   - deity
   - religion
-image_avatar: "![[/_images/moxi_main.png]]"
+image_avatar: "![[moxi_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

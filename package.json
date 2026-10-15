@@ -37,7 +37,8 @@
     "sync:codex:check": "bash ./scripts/sync_codex_content.sh --dry-run",
     "watch:codex": "node ./scripts/watch_codex_content.mjs",
     "stream:codex": "node ./scripts/stream_codex_publish.mjs",
-    "publish:codex:posix": "bash ./scripts/publish_from_vault.sh"
+    "publish:codex:posix": "bash ./scripts/publish_from_vault.sh",
+    "links:audit": "node ./scripts/link_audit.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

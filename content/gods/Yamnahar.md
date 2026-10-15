@@ -23,7 +23,7 @@ major_influence: ""
 minor_influences: []
 spheres: []
 avatars: []
-avatar_image: "![[/_images/Yamnahar_main.png]]"
+avatar_image: "![[Yamnahar_main.png]]"
 parents: []
 siblings: []
 offspring: []
@@ -72,9 +72,9 @@ dwelling_place_description: ""
 servants_description: ""
 doctrine_overview: ""
 holy_text_1: The God of Tides
-holy_text_1_summary: "_Main Article: [[🌊The God of Tides]]_"
+holy_text_1_summary: "_Main Article: [[The God of Tides]]_"
 holy_text_2: The Mistress of Harbors
-holy_text_2_summary: "Main Article: [[🌊The Mistress of Harbors]]_"
+holy_text_2_summary: "Main Article: [[The Mistress of Harbors]]_"
 apocrypha_1: ""
 apocrypha_1_summary: ""
 apocrypha_2: ""
@@ -136,7 +136,7 @@ tags:
   - deity
   - religion
 primary_topic: Dieties of Areshnaat
-image_avatar: "![[/_images/Yamnahar_main.png]]"
+image_avatar: "![[Yamnahar_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

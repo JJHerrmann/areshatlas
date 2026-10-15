@@ -5,10 +5,7 @@ import { Suspense } from "react";
 import StreamRefreshController from "@/components/codex/StreamRefreshController";
 import PersistentFooter from "@/components/codex/PersistentFooter";
 import WikiSidebar from "@/components/codex/WikiSidebar";
-import { getThemeCssVariables } from "@/src/theme/cssVariables";
 import "./globals.css";
-
-const themeCssVariables = getThemeCssVariables();
 
 const SITE_NAME = "Aresh Codex";
 const SITE_DESCRIPTION =
@@ -45,16 +42,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="parchment">
+    <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
-        />
         <link rel="stylesheet" href="/vendor/rpg-awesome/css/rpg-awesome.min.css" />
-        <style id="theme-tokens">{themeCssVariables}</style>
       </head>
       <body>
         <Suspense fallback={null}>

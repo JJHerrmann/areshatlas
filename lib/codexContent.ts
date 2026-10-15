@@ -1109,6 +1109,14 @@ function preprocessMarkdown(markdown: string, frontmatter: Record<string, unknow
     .replace(/(?<!!)\[\[([^[\]]+)\]\]/g, (_match, target: string) => {
       const [rawTarget, rawAlias] = String(target).split("|");
       const cleanTarget = rawTarget.trim();
+      // `[[{{related_deity_1}}]]` and friends are unfilled template placeholders,
+      // not links to a page anyone intends to write. 34 deity notes still carry
+      // the template body, which is 102 of these. Rendering them as red links
+      // would drown the real missing targets in residue, so they stay as plain
+      // text: the note is visibly unfilled without claiming a page is missing.
+      if (/^\{\{.*\}\}$/.test(cleanTarget)) {
+        return rawAlias?.trim() || cleanTarget;
+      }
       const cleanAlias = rawAlias?.trim() || cleanTarget.split("/").pop()?.replace(/\.(md|markdown)$/i, "") || cleanTarget;
       const href = resolveObsidianHref(cleanTarget, sourceRelativePath);
       return href ? `[${cleanAlias}](${href})` : `[${cleanAlias}](#)`;
