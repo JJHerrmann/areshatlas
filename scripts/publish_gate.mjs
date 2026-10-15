@@ -62,6 +62,25 @@ const sourceDir = path.resolve(
 );
 
 const FALSEY = new Set(["false", "no", "off", "0"]);
+
+/**
+ * Notes that declare themselves private never reach content/, whatever the
+ * publish field says. This exists because a `type: dm-notes` note carrying
+ * `visibility: dm-only` -- and the words "Never publish to the public repo" in
+ * its own body -- synced into the public repo anyway: the scrubber only strips
+ * `> [!dm]` callout BLOCKS, the underscore filename prefix only sets noindex,
+ * and publish_default publishes a note that omits the field. A whole-note
+ * marker had no guard at all. Keys and values come from publish.json so a new
+ * convention can be added without touching this file.
+ */
+const PRIVATE_MARKERS = (() => {
+  const raw = registry.private_note_markers || { visibility: ["dm-only", "dm", "private", "secret"], type: ["dm-notes"] };
+  const out = new Map();
+  for (const [key, values] of Object.entries(raw)) {
+    out.set(String(key).toLowerCase(), new Set((values || []).map((v) => String(v).toLowerCase())));
+  }
+  return out;
+})();
 const TRUTHY = new Set(["true", "yes", "on", "1"]);
 
 /**
@@ -72,6 +91,22 @@ const TRUTHY = new Set(["true", "yes", "on", "1"]);
 export function readGate(markdown) {
   const lines = markdown.split(/\r?\n/);
   if (lines[0]?.trim() !== "---") return { published: DEFAULT_PUBLISH, reason: "no frontmatter" };
+
+  // First pass: a whole-note private marker overrides everything, including an
+  // explicit `publish: true`. Fail closed.
+  for (let i = 1; i < lines.length; i += 1) {
+    const line = lines[i];
+    if (line.trim() === "---") break;
+    if (/^\s/.test(line)) continue;
+    const m = line.match(/^([A-Za-z0-9_-]+)\s*:\s*(.*)$/);
+    if (!m) continue;
+    const allowed = PRIVATE_MARKERS.get(m[1].toLowerCase());
+    if (!allowed) continue;
+    const value = m[2].replace(/\s+#.*$/, "").trim().replace(/^["']|["']$/g, "").toLowerCase();
+    if (allowed.has(value)) {
+      return { published: false, raw: value, reason: `private note (${m[1]}: ${value})`, private: true };
+    }
+  }
 
   for (let i = 1; i < lines.length; i += 1) {
     const line = lines[i];

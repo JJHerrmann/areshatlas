@@ -38,7 +38,9 @@
     "*.base",
     "*.tmp",
     "*.bak",
-    "Thumbs.db"
+    "Thumbs.db",
+    "_dm-*",
+    "*_dm-notes.md"
   ],
   "publish_field": "publish",
   "publish_default": true,
@@ -48,5 +50,17 @@
     "secret",
     "spoiler"
   ],
-  "_private_notes": "Vault-only material is stripped from the published copy by scripts/scrub_private.mjs at sync time (not render time, so it does not depend on the checked-out branch). Mark it either as a callout whose type is listed in private_callout_types or whose title starts with 'DM', or with a <!-- dm:start --> / <!-- dm:end --> fence for whole sections. Both stay readable in Obsidian. publish_from_vault.sh runs --check and refuses to build if any private block survives."
+  "_private_notes": "Vault-only material is stripped from the published copy by scripts/scrub_private.mjs at sync time (not render time, so it does not depend on the checked-out branch). Mark it either as a callout whose type is listed in private_callout_types or whose title starts with 'DM', or with a <!-- dm:start --> / <!-- dm:end --> fence for whole sections. Both stay readable in Obsidian. publish_from_vault.sh runs --check and refuses to build if any private block survives.",
+  "private_note_markers": {
+    "visibility": [
+      "dm-only",
+      "dm",
+      "private",
+      "secret"
+    ],
+    "type": [
+      "dm-notes"
+    ]
+  },
+  "_private_note_markers_notes": "Whole-note private markers. A note whose frontmatter carries any of these key: value pairs never syncs to content/, overriding publish: true. Added after a note marked type: dm-notes / visibility: dm-only reached the public repo: scrub_private.mjs only strips > [!dm] callout BLOCKS, the leading-underscore filename only sets noindex, and publish_default publishes a note that omits the publish field, so a whole private note had no guard. Enforced by scripts/publish_gate.mjs; the never_publish globs are a second, filename-level net."
 }
