@@ -1156,7 +1156,19 @@ function remarkCodexLinks() {
   return (tree: object) => {
     visit(tree as Parameters<typeof visit>[0], "link", (node: { url?: string; data?: Record<string, unknown> }) => {
       if (node.url === "#") {
-        node.data = { ...(node.data || {}), hProperties: { className: "codex-inline-link" } };
+        // A wikilink whose target does not exist yet. It is deliberately NOT
+        // styled like a working link: the vault is published while large parts
+        // of it are still unwritten, so an unresolved link is information --
+        // it says the subject is real and the page is not written yet. Marking
+        // them lets a reader tell the two apart, and reading a page tells you
+        // what is missing. (Red links, per the Codex Skin canvas.)
+        node.data = {
+          ...(node.data || {}),
+          hProperties: {
+            className: ["codex-inline-link", "codex-redlink"],
+            title: "Not written yet",
+          },
+        };
       }
     });
   };

@@ -1,29 +1,90 @@
 ---
 type: location
-name: "The Dwarven Kingdoms"
+name: The Dwarven Kingdoms
 status: established
-location_under: "Areshnaat — far northern Egunjain"
-tags: [Areshnaat, polities, fiction]
+location_under: "[[Drakharpan]]"
+tags:
+  - Areshnaat
+  - polities
+  - fiction
+title: The Dwarven Kingdoms
 ---
+# Kords and Halls
+The bulk of Dwarven culture is set around a myriad of mountainous halls around the planet, and five primary families (Kords in Karakeel), and the clans that are under those Kords. 
+# The Six Kords
 
-# The Dwarven Kingdoms
+A Kord is a beard braid: one founding line and its strands. Each Kord has a hall (_-koda_, the seat and its government), a realm (_-maa_, the country) and an allotted range (_Hepel_, the scriptural and legal term for the range measured out at the translocation). Daughter halls take the pattern noun + _s_ + _koda_.
 
-## Overview
-Three dwarven realms in the far northern corner of **Egunjain** (a region, not a world-name — see [[Author/Areshnaat/00_Versioning_and_Provenance]]), each with a distinct gemstone focus and its own sovereign, all three subordinate to a supreme **Emperor of Gems**.
+## The Beards of Rust, the Heldza
+Main Article: [[Helmaa]]
+### Hall: Heldzakoda
+### Realm: Helmaa
+### Allotted range: the Hepel of Heldza
+### Daughter halls
+---
+## The Beards of Platinum: Pahdza
+*Main Article: [[Pahmaa]]*
+### Hall: Pahdzakoda
 
-## The three kingdoms
-| Kingdom | Gem/Color | Ruler title | Culture (Najmii-read endonym) |
-|---|---|---|---|
-| Mountain Clans | Garnet (red) | Jarl of Garnet | *Taşdağlı* |
-| Hill Dwarves | Emerald (green) | King of the Hill Dwarves | *Kayaçiftçi* |
-| Duergar | Onyx (black) | King of the Duergar | *Taş-İlk* |
+### Realm: Pahmaa
+### Allotted range: the Hepel of Pahdza
+### Daughter halls
 
-Ottoman/Turkish-coded fashion, armor, and naming conventions throughout.
+- Rammskoda (Hall of Strength). Drakharpan. 
+---
+## The Beards of Copper: Nehdza
+*Main Article: [[Nehmaa]]*
+### Hall: Nehdzakoda
+### Realm: Nehmaa
+### Allotted range: the Hepel of Nehdza
 
+### Daughter halls
+
+---
+## The Beards of Gold: Sahdza
+Main Article: [[Sahmaa]]
+### Hall: Sahdzakoda
+
+### Realm: Sahmaa
+### Allotted range: the Hepel of Sahdza
+### Daughter halls
+
+---
+## The Beards of Slate: Luhdza
+*Main Article: [[Luhmaa]]:* 
+### Hall: Luhdzakoda
+### Realm: Luhmaa
+
+### Allotted range: the Hepel of Luhdza
+
+### Daughter halls
+
+---
+## The Beards of Onyx: Šohdza
+*Main Article: [[Sohmaa]]*
+### Hall: Šohdzakoda
+### Realm: Šohmaa
+
+### Allotted range: the Hepel of Šohdza
+
+### Daughter halls
+
+- Raudskoda (Iron Hall). Drakharpan, at the end of the chain.
+
+# Apostates
+## The Gemstone Sars
+Three dwarven realms in the far northern corner of **[[region/Egunjain | Egunjain]]**, each with a distinct gemstone focus and its own sovereign, under an elected [[Rossor]], or Sar of Sars. These halls are breakaways from the Primary bearded Kords of Areshnaat, and considered to be apostate states by the [[Koldzakond]].
+
+### The Gemstone Sar of Sars
+Current Holder: [[Hatsep Yakser]]
+#### The Sar of Garnet
+Current Holder: [[Kararapa Pareser]] 
+#### The Sar of Emerald
+Current Holder: [[Hooršamar Tsemser]]
+#### The Sar of Sapphire
+Current Holder: [[Dawihuya Gasser]]
+
+## The Gaselkise
+The followers of the Gaselkise have long been labeled as Apostates by the [[Koldzakond]] since the Mines were blocked in the year 500IR/0DW, signalling the start of the second age of dwarves, the period of the Diamond Wall. It is said that the Gaselkise were only able to rebel against the Kords through pacts with an Ice demon, whom allowed them to stopper the pathways to the lower mines across all the Kodas at once with a thick Ice plug, that prevented even the most sturdy pick from making a gouge.
 ## Language
-**Karakeel** — per author clarification, most likely specifically the dwarven language by the time the setting reaches its Areshnaat era, rather than a kingdom or polity name (an earlier survey pass had mis-read it as an "empire"). Not yet directly tied to material from this 2023 pass — worth confirming with a targeted read of later (2025–2026) Areshnaat-era sessions.
-
-## Source provenance
-> **Source:** `Dwarf Warrior Ottoman-Inspired Image - 2023-10-17.md` · `2023-Q4` (political structure, Jarl of Garnet/Emperor of Gems)
-> `Najmii Empire Naming - 2023-04-21.md` · `2023-Q2` (original three-culture endonyms)
-> `Fantasy World Cultures Exploration - 2023-10-18.md` · `2023-Q4` (formal Emerald/Garnet/Onyx Kingdom names, Egunjain location confirmed)
+**Karakeel** 
