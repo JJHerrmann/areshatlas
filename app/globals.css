@@ -2302,3 +2302,81 @@ html[data-theme] .codex-status-notice {
 html[data-theme] .codex-status-notice a {
   color: var(--cx-link);
 }
+
+/* ---------------------------------------------------------------------------
+   Section index (components/codex/EntryIndex.tsx)
+   A MediaWiki category-page listing: divisions, then entries, as an
+   alphabetical multi-column list of links with a short gloss. Replaces the
+   card grid, which ignored the theme, rendered half its tiles over cover art
+   and half not, and went ragged because every tile was as tall as its own
+   summary. Plain, themed, and legible at any width.
+   --------------------------------------------------------------------------- */
+
+html[data-theme] .codex-index-group + .codex-index-group {
+  margin-top: 2.5rem;
+}
+
+html[data-theme] .codex-index-heading {
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--cx-rule-strong);
+  font-family: var(--token-font-family-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--cx-ink);
+}
+
+html[data-theme] .codex-index-count {
+  font-family: var(--token-font-family-body);
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--cx-ink-soft);
+}
+
+html[data-theme] .codex-index-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  columns: 1;
+  column-gap: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  html[data-theme] .codex-index-list {
+    columns: 2;
+  }
+}
+
+@media (min-width: 1100px) {
+  html[data-theme] .codex-index-list {
+    columns: 3;
+  }
+}
+
+html[data-theme] .codex-index-item {
+  /* A row must not be split across two columns, or a gloss ends up orphaned
+     under a different name than the one it belongs to. */
+  break-inside: avoid;
+  page-break-inside: avoid;
+  display: flow-root;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--cx-rule) 40%, transparent);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+html[data-theme] .codex-index-link {
+  color: var(--cx-link);
+  text-decoration: none;
+}
+
+html[data-theme] a.codex-index-link:hover {
+  text-decoration: underline;
+}
+
+html[data-theme] .codex-index-gloss {
+  display: block;
+  color: var(--cx-ink-soft);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}

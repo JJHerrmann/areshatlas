@@ -10,7 +10,7 @@ tags:
 title: The Dwarven Kingdoms
 ---
 # Kords and Halls
-The bulk of Dwarven culture is set around a myriad of mountainous halls around the planet, and five primary families (Kords in Karakeel), and the clans that are under those Kords. 
+The bulk of Dwarven culture is set around a myriad of mountainous halls around the planet, and six primary families (Kords in Karakeel), and the clans that are under those Kords. 
 # The Six Kords
 
 A Kord is a beard braid: one founding line and its strands. Each Kord has a hall (_-koda_, the seat and its government), a realm (_-maa_, the country) and an allotted range (_Hepel_, the scriptural and legal term for the range measured out at the translocation). Daughter halls take the pattern noun + _s_ + _koda_.
@@ -61,7 +61,7 @@ Main Article: [[Sahmaa]]
 
 ---
 ## The Beards of Onyx: Šohdza
-*Main Article: [[Sohmaa]]*
+*Main Article: [[Šohmaa]]*
 ### Hall: Šohdzakoda
 ### Realm: Šohmaa
 

@@ -5,7 +5,7 @@ import ArticleHeader from "@/components/codex/ArticleHeader";
 import CornerOrnament from "@/components/codex/CornerOrnament";
 import DeityInfobox from "@/components/codex/DeityInfobox";
 import DeityProfile from "@/components/codex/DeityProfile";
-import EntryCard from "@/components/codex/EntryCard";
+import EntryIndex from "@/components/codex/EntryIndex";
 import GenericInfobox from "@/components/codex/GenericInfobox";
 import NavboxFooter from "@/components/codex/NavboxFooter";
 import NationInfobox from "@/components/codex/NationInfobox";
@@ -211,20 +211,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
 
           <section className="mt-10">
             {view.entries.length ? (
-              <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                {view.entries.map((entry) => (
-                  <EntryCard
-                    key={`${entry.domain}:${entry.title}`}
-                    title={entry.title}
-                    domain={entry.domain}
-                    summary={entry.summary}
-                    imageSrc={entry.imageSrc}
-                    href={entry.href}
-                    kind={entry.kind}
-                    meta={entry.meta}
-                  />
-                ))}
-              </div>
+              <EntryIndex entries={view.entries} />
             ) : (
               <article className="codex-empty-state p-6 text-sm leading-6">
                 No immediate entries are present at this level of the codex tree yet.
@@ -316,20 +303,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
 
         <section className="mt-10">
           {view.entries.length ? (
-            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {view.entries.map((entry) => (
-                <EntryCard
-                  key={`${entry.domain}:${entry.title}`}
-                  title={entry.title}
-                  domain={entry.domain}
-                  summary={entry.summary}
-                  imageSrc={entry.imageSrc}
-                  href={entry.href}
-                  kind={entry.kind}
-                  meta={entry.meta}
-                />
-              ))}
-            </div>
+            <EntryIndex entries={view.entries} />
           ) : (
             <article className="codex-empty-state p-6 text-sm leading-6">
               No immediate entries are present at this level of the codex tree yet.

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ArticleHeader from "@/components/codex/ArticleHeader";
 import CornerOrnament from "@/components/codex/CornerOrnament";
-import EntryCard from "@/components/codex/EntryCard";
+import EntryIndex from "@/components/codex/EntryIndex";
 import Provenance from "@/components/codex/Provenance";
 import {
   getRenderedOverviewDocument,
@@ -80,20 +80,7 @@ export default async function SectionPage({ params }: SectionPageProps) {
 
         <section className="mt-10">
           {entries.length ? (
-            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {entries.map((entry) => (
-                <EntryCard
-                  key={`${entry.domain}:${entry.title}`}
-                  title={entry.title}
-                  domain={entry.domain}
-                  summary={entry.summary}
-                  imageSrc={entry.imageSrc}
-                  href={entry.href}
-                  kind={entry.kind}
-                  meta={entry.meta}
-                />
-              ))}
-            </div>
+            <EntryIndex entries={entries} />
           ) : (
             <article className="codex-empty-state p-6 text-sm leading-6">
               Nothing has been filed here yet.
