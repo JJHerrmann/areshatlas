@@ -194,13 +194,7 @@
     "id": "people-of-drakharpan",
     "title": "People of Drakharpan",
     "mode": "footer",
-    "items": [
-      {
-        "slug": "makbar-raamskord",
-        "title": "Makbar Raamskord",
-        "href": "/regions/drakharpan/nations/people/makbar-raamskord"
-      }
-    ],
+    "items": [],
     "groups": []
   },
   {

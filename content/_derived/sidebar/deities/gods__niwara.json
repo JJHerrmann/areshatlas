@@ -2,7 +2,7 @@
   "type": "deity",
   "title": "Niwara",
   "subtitle": "The Sun Catcher",
-  "source_relative_path": "gods/🌌Niwara.md",
+  "source_relative_path": "gods/Niwara.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -21,12 +21,12 @@
         ],
         [
           "Gender",
-          "Female"
+          "Male"
         ],
         [
           "Consort(s)",
           [
-            "[[🌌Gozara]]"
+            "[[Gozara]]"
           ]
         ],
         [
@@ -55,7 +55,7 @@
         ],
         [
           "Major Influence",
-          "Sun"
+          "Sun, Fire"
         ],
         [
           "Minor Influence(s)",
@@ -72,22 +72,22 @@
         [
           "Parents",
           [
-            "[[🌌Moxilaxaya]]",
-            "[[🌌Tahiwaco]]"
+            "[[Moxilaxaya]]",
+            "[[Tahiwaco]]"
           ]
         ],
         [
           "Siblings",
           [
-            "[[🌌Yatbara]]"
+            "[[Yatbara]]"
           ]
         ],
         [
           "Offspring",
           [
-            "[[✨Kathorharab]]",
-            "[[✨Malagad]]",
-            "[[✨Yaradaat]]",
+            "[[Kathorharab]]",
+            "[[Malagad]]",
+            "[[Yaradaat]]",
             "[[Leyala]]"
           ]
         ]

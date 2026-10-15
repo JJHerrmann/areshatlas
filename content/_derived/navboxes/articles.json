@@ -4,8 +4,19 @@
     "title": "Abyroqa",
     "section": "pantheon",
     "href": "/pantheon/abyroqa",
-    "source_relative_path": "gods/🌊Abyroqa.md",
+    "source_relative_path": "gods/Abyroqa.md",
     "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "agamcan",
+    "title": "Agamcan",
+    "section": "regions",
+    "href": "/regions/kedantlan/agamcan",
+    "source_relative_path": "regions/Kedantlan/agamcan.md",
+    "aliases": [
+      "aagancan"
+    ],
     "navboxes": []
   },
   {
@@ -13,7 +24,7 @@
     "title": "Kvaritzin, Baxeol",
     "section": "pantheon",
     "href": "/pantheon/kvaritzin",
-    "source_relative_path": "gods/🕳️Kvaritzin.md",
+    "source_relative_path": "gods/Kvaritzin.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -52,7 +63,7 @@
     "title": "Bolohua",
     "section": "pantheon",
     "href": "/pantheon/bolohua",
-    "source_relative_path": "gods/🌌Bolohua.md",
+    "source_relative_path": "gods/Bolohua.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -60,11 +71,22 @@
     ]
   },
   {
+    "slug": "dagonco",
+    "title": "Dagonco",
+    "section": "regions",
+    "href": "/regions/kedantlan/dagonco",
+    "source_relative_path": "regions/Kedantlan/dagonco.md",
+    "aliases": [
+      "daaguhco"
+    ],
+    "navboxes": []
+  },
+  {
     "slug": "derequi",
     "title": "Derequi",
     "section": "pantheon",
     "href": "/pantheon/derequi",
-    "source_relative_path": "gods/🕳️Derequi.md",
+    "source_relative_path": "gods/Derequi.md",
     "aliases": [],
     "navboxes": []
   },
@@ -74,6 +96,15 @@
     "section": "regions",
     "href": "/regions/drakharpan",
     "source_relative_path": "regions/Drakharpan/Drakharpan.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "dwarven-calendar",
+    "title": "Dwarven Calendar",
+    "section": "cultures",
+    "href": "/cultures/calendar/dwarven-calendar",
+    "source_relative_path": "cultures/calendar/Dwarven Calendar.md",
     "aliases": [],
     "navboxes": []
   },
@@ -118,7 +149,7 @@
     "title": "Gozara",
     "section": "pantheon",
     "href": "/pantheon/gozara",
-    "source_relative_path": "gods/🌌Gozara.md",
+    "source_relative_path": "gods/Gozara.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -130,12 +161,41 @@
     "title": "Harbal",
     "section": "pantheon",
     "href": "/pantheon/harbaal",
-    "source_relative_path": "gods/🕳️Harbaal.md",
+    "source_relative_path": "gods/Harbaal.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
       "dieties-of-areshnaat"
     ]
+  },
+  {
+    "slug": "hekalpetra",
+    "title": "Hekalpetra",
+    "section": "regions",
+    "href": "/regions/kedantlan/hekalpetra",
+    "source_relative_path": "regions/Kedantlan/hekalpetra.md",
+    "aliases": [
+      "haakaltepec"
+    ],
+    "navboxes": []
+  },
+  {
+    "slug": "index",
+    "title": "Kedantlan sites",
+    "section": "regions",
+    "href": "/regions/kedantlan/index",
+    "source_relative_path": "regions/Kedantlan/index.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "ivahaya",
+    "title": "The Goddess of Lust",
+    "section": "pantheon",
+    "href": "/pantheon/ivahaya",
+    "source_relative_path": "gods/Ivahaya.md",
+    "aliases": [],
+    "navboxes": []
   },
   {
     "slug": "karia",
@@ -160,7 +220,7 @@
     "title": "Kathorharab",
     "section": "pantheon",
     "href": "/pantheon/kathorharab",
-    "source_relative_path": "gods/✨Kathorharab.md",
+    "source_relative_path": "gods/Kathorharab.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -173,7 +233,7 @@
     "title": "Kaxatzin",
     "section": "pantheon",
     "href": "/pantheon/kaxatzin",
-    "source_relative_path": "gods/🕳️Kaxatzin.md",
+    "source_relative_path": "gods/Kaxatzin.md",
     "aliases": [],
     "navboxes": []
   },
@@ -191,7 +251,7 @@
     "title": "Kevarotzin",
     "section": "pantheon",
     "href": "/pantheon/kevarotzin",
-    "source_relative_path": "gods/🕳️Kevarotzin.md",
+    "source_relative_path": "gods/Kevarotzin.md",
     "aliases": [],
     "navboxes": []
   },
@@ -218,7 +278,7 @@
     "title": "Kinayotl",
     "section": "pantheon",
     "href": "/pantheon/kinayotl",
-    "source_relative_path": "gods/🕳️Kinayotl.md",
+    "source_relative_path": "gods/Kinayotl.md",
     "aliases": [],
     "navboxes": []
   },
@@ -236,7 +296,7 @@
     "title": "Leyala",
     "section": "pantheon",
     "href": "/pantheon/leyala",
-    "source_relative_path": "gods/🌌Leyala.md",
+    "source_relative_path": "gods/Leyala.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -248,7 +308,7 @@
     "title": "Lotan",
     "section": "pantheon",
     "href": "/pantheon/lotan",
-    "source_relative_path": "gods/🌌Lotan.md",
+    "source_relative_path": "gods/Lotan.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -260,7 +320,7 @@
     "title": "Maavacihuatl",
     "section": "pantheon",
     "href": "/pantheon/maavacihuatl",
-    "source_relative_path": "gods/🕳️Maavacihuatl.md",
+    "source_relative_path": "gods/Maavacihuatl.md",
     "aliases": [],
     "navboxes": []
   },
@@ -269,23 +329,12 @@
     "title": "Kadashar",
     "section": "pantheon",
     "href": "/pantheon/kadashar",
-    "source_relative_path": "gods/✨Kadashar.md",
+    "source_relative_path": "gods/Kadashar.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
       "dieties-of-areshnaat",
       "ramtilim"
-    ]
-  },
-  {
-    "slug": "makbar-raamskord",
-    "title": "Makbar Raamskord",
-    "section": "regions",
-    "href": "/regions/drakharpan/nations/people/makbar-raamskord",
-    "source_relative_path": "regions/Drakharpan/nations/people/Makbar Raamskord.md",
-    "aliases": [],
-    "navboxes": [
-      "people-of-drakharpan"
     ]
   },
   {
@@ -293,7 +342,7 @@
     "title": "Malagad",
     "section": "pantheon",
     "href": "/pantheon/malagad",
-    "source_relative_path": "gods/✨Malagad.md",
+    "source_relative_path": "gods/Malagad.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -302,11 +351,22 @@
     ]
   },
   {
+    "slug": "mapalco",
+    "title": "Mapalco",
+    "section": "regions",
+    "href": "/regions/kedantlan/mapalco",
+    "source_relative_path": "regions/Kedantlan/mapalco.md",
+    "aliases": [
+      "nipalco"
+    ],
+    "navboxes": []
+  },
+  {
     "slug": "marmoqed",
     "title": "Marmoqed",
     "section": "pantheon",
     "href": "/pantheon/marmoqed",
-    "source_relative_path": "gods/✨Marmoqed.md",
+    "source_relative_path": "gods/Marmoqed.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -319,8 +379,19 @@
     "title": "Masehua",
     "section": "pantheon",
     "href": "/pantheon/masehua",
-    "source_relative_path": "gods/🕳️Masehua.md",
+    "source_relative_path": "gods/Masehua.md",
     "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "metsadtepec",
+    "title": "Metsadtepec",
+    "section": "regions",
+    "href": "/regions/kedantlan/metsadtepec",
+    "source_relative_path": "regions/Kedantlan/metsadtepec.md",
+    "aliases": [
+      "tzivadtepec"
+    ],
     "navboxes": []
   },
   {
@@ -328,7 +399,7 @@
     "title": "Moxilaxaya",
     "section": "pantheon",
     "href": "/pantheon/moxilaxaya",
-    "source_relative_path": "gods/🌌Moxilaxaya.md",
+    "source_relative_path": "gods/Moxilaxaya.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -342,6 +413,17 @@
     "href": "/regions/drakharpan/nations/mushazir",
     "source_relative_path": "regions/Drakharpan/nations/Mushazir/Mushazir.md",
     "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "naharapan",
+    "title": "Naharapan",
+    "section": "regions",
+    "href": "/regions/kedantlan/naharapan",
+    "source_relative_path": "regions/Kedantlan/naharapan.md",
+    "aliases": [
+      "naharpan"
+    ],
     "navboxes": []
   },
   {
@@ -360,6 +442,17 @@
     "href": "/regions/drakharpan/nations/nalelia",
     "source_relative_path": "regions/Drakharpan/nations/Nalelia/Nalelia.md",
     "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "namalco",
+    "title": "Namalco",
+    "section": "regions",
+    "href": "/regions/kedantlan/namalco",
+    "source_relative_path": "regions/Kedantlan/namalco.md",
+    "aliases": [
+      "nimalco"
+    ],
     "navboxes": []
   },
   {
@@ -385,7 +478,7 @@
     "title": "Niwara",
     "section": "pantheon",
     "href": "/pantheon/niwara",
-    "source_relative_path": "gods/🌌Niwara.md",
+    "source_relative_path": "gods/Niwara.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -429,11 +522,22 @@
     "navboxes": []
   },
   {
+    "slug": "qadoshtepec",
+    "title": "Qadoshtepec",
+    "section": "regions",
+    "href": "/regions/kedantlan/qadoshtepec",
+    "source_relative_path": "regions/Kedantlan/qadoshtepec.md",
+    "aliases": [
+      "qoodaxtepec"
+    ],
+    "navboxes": []
+  },
+  {
     "slug": "qatzera",
     "title": "Qatzera",
     "section": "pantheon",
     "href": "/pantheon/qatzera",
-    "source_relative_path": "gods/✨Qatzera.md",
+    "source_relative_path": "gods/Qatzera.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -455,7 +559,7 @@
     "title": "Raavvah",
     "section": "pantheon",
     "href": "/pantheon/raavvah",
-    "source_relative_path": "gods/✨Raavvah.md",
+    "source_relative_path": "gods/Raavvah.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -464,11 +568,22 @@
     ]
   },
   {
+    "slug": "ragazpan",
+    "title": "Ragazpan",
+    "section": "regions",
+    "href": "/regions/kedantlan/ragazpan",
+    "source_relative_path": "regions/Kedantlan/ragazpan.md",
+    "aliases": [
+      "raagazpan"
+    ],
+    "navboxes": []
+  },
+  {
     "slug": "refapilli",
     "title": "Refapilli",
     "section": "pantheon",
     "href": "/pantheon/refapilli",
-    "source_relative_path": "gods/🕳️Refapilli.md",
+    "source_relative_path": "gods/Refapilli.md",
     "aliases": [],
     "navboxes": []
   },
@@ -477,8 +592,30 @@
     "title": "Rexaya",
     "section": "pantheon",
     "href": "/pantheon/rexaya",
-    "source_relative_path": "gods/🌌Rexaya.md",
+    "source_relative_path": "gods/Rexaya.md",
     "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "selapan",
+    "title": "Selapan",
+    "section": "regions",
+    "href": "/regions/kedantlan/selapan",
+    "source_relative_path": "regions/Kedantlan/selapan.md",
+    "aliases": [
+      "saalatepec"
+    ],
+    "navboxes": []
+  },
+  {
+    "slug": "shnaymapan",
+    "title": "Shnaymapan",
+    "section": "regions",
+    "href": "/regions/kedantlan/shnaymapan",
+    "source_relative_path": "regions/Kedantlan/shnaymapan.md",
+    "aliases": [
+      "xoonaymaayanco"
+    ],
     "navboxes": []
   },
   {
@@ -495,7 +632,7 @@
     "title": "Tahiwaco",
     "section": "pantheon",
     "href": "/pantheon/tahiwaco",
-    "source_relative_path": "gods/🌌Tahiwaco.md",
+    "source_relative_path": "gods/Tahiwaco.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -507,7 +644,7 @@
     "title": "Tehontecuhtli",
     "section": "pantheon",
     "href": "/pantheon/tehontecuhtli",
-    "source_relative_path": "gods/🌊Tehontecuhtli.md",
+    "source_relative_path": "gods/Tehontecuhtli.md",
     "aliases": [],
     "navboxes": []
   },
@@ -516,7 +653,7 @@
     "title": "Temaya",
     "section": "pantheon",
     "href": "/pantheon/temaya",
-    "source_relative_path": "gods/🌌Temaya.md",
+    "source_relative_path": "gods/Temaya.md",
     "aliases": [],
     "navboxes": []
   },
@@ -546,17 +683,8 @@
     "slug": "the-binding-of-portions",
     "title": "The Binding of Portions",
     "section": "pantheon",
-    "href": "/pantheon/the-binding-of-portions",
-    "source_relative_path": "gods/The Binding of Portions.md",
-    "aliases": [],
-    "navboxes": []
-  },
-  {
-    "slug": "the-goddess-of-lust",
-    "title": "The Goddess of Lust",
-    "section": "pantheon",
-    "href": "/pantheon/the-goddess-of-lust",
-    "source_relative_path": "gods/The Goddess of Lust.md",
+    "href": "/pantheon/rituals/the-binding-of-portions",
+    "source_relative_path": "gods/Rituals/The Binding of Portions.md",
     "aliases": [],
     "navboxes": []
   },
@@ -592,7 +720,7 @@
     "title": "Tsayidrah",
     "section": "pantheon",
     "href": "/pantheon/tsayidrah",
-    "source_relative_path": "gods/✨Tsayidrah.md",
+    "source_relative_path": "gods/Tsayidrah.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -668,7 +796,7 @@
     "title": "Xefahua",
     "section": "pantheon",
     "href": "/pantheon/xefahua",
-    "source_relative_path": "gods/✨Xefahua.md",
+    "source_relative_path": "gods/Xefahua.md",
     "aliases": [],
     "navboxes": [
       "dieties-of-areshnaat",
@@ -689,7 +817,7 @@
     "title": "Xochbaram",
     "section": "pantheon",
     "href": "/pantheon/xochbaram",
-    "source_relative_path": "gods/✨Xochbaram.md",
+    "source_relative_path": "gods/Xochbaram.md",
     "aliases": [],
     "navboxes": [
       "dieties-of-areshnaat",
@@ -697,11 +825,22 @@
     ]
   },
   {
+    "slug": "yamatlan",
+    "title": "Yamatlan",
+    "section": "regions",
+    "href": "/regions/kedantlan/yamatlan",
+    "source_relative_path": "regions/Kedantlan/yamatlan.md",
+    "aliases": [
+      "aagantlan"
+    ],
+    "navboxes": []
+  },
+  {
     "slug": "yamnahar",
     "title": "Yamnahar",
     "section": "pantheon",
     "href": "/pantheon/yamnahar",
-    "source_relative_path": "gods/🌊Yamnahar.md",
+    "source_relative_path": "gods/Yamnahar.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -714,7 +853,7 @@
     "title": "Yaradaat",
     "section": "pantheon",
     "href": "/pantheon/yaradaat",
-    "source_relative_path": "gods/✨Yaradaat.md",
+    "source_relative_path": "gods/Yaradaat.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -727,7 +866,7 @@
     "title": "Yatbara",
     "section": "pantheon",
     "href": "/pantheon/yatbara",
-    "source_relative_path": "gods/🌌Yatbara.md",
+    "source_relative_path": "gods/Yatbara.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -740,7 +879,7 @@
     "title": "Yekala",
     "section": "pantheon",
     "href": "/pantheon/yekala",
-    "source_relative_path": "gods/🌌Yekala.md",
+    "source_relative_path": "gods/Yekala.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",
@@ -771,7 +910,7 @@
     "title": "Zemana",
     "section": "pantheon",
     "href": "/pantheon/zemana",
-    "source_relative_path": "gods/🌌Zemana.md",
+    "source_relative_path": "gods/Zemana.md",
     "aliases": [],
     "navboxes": [
       "areshnaati-deities",

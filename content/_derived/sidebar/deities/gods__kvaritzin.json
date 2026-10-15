@@ -2,7 +2,7 @@
   "type": "deity",
   "title": "Kvaritzin",
   "subtitle": "The God of the Underworld",
-  "source_relative_path": "gods/🕳️Kvaritzin.md",
+  "source_relative_path": "gods/Kvaritzin.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -35,24 +35,24 @@
         [
           "Consort(s)",
           [
-            "[[✨Xefahua]]"
+            "[[Xefahua]]"
           ]
         ],
         [
           "Allies",
           [
-            "[[✨Xefahua]]",
-            "[[✨Qatzera]]",
-            "[[✨Tsayidrah]]",
-            "[[✨Raavvah]]",
-            "[[🌌Zemana]]",
-            "[[🌌Gozara]]"
+            "[[Xefahua]]",
+            "[[Qatzera]]",
+            "[[Tsayidrah]]",
+            "[[Raavvah]]",
+            "[[Zemana]]",
+            "[[Gozara]]"
           ]
         ],
         [
           "Foes",
           [
-            "[[🕳️Harbaal]]"
+            "[[Harbaal]]"
           ]
         ]
       ]
@@ -96,14 +96,14 @@
         [
           "Parents",
           [
-            "[[🌌Temaya]]",
-            "[[🌌Zemana]]"
+            "[[Temaya]]",
+            "[[Zemana]]"
           ]
         ],
         [
           "Siblings",
           [
-            "[[🕳️Harbaal]]"
+            "[[Harbaal]]"
           ]
         ]
       ]

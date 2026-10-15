@@ -1,11 +1,13 @@
 ---
 type: deity
+tier: "Unfiled"
+icon: LiBadgeQuestionMark
 name: "Orystria"
 status: established
 domain: "Supreme/detached god; all five colors of magic"
 tags: [Areshnaat, pantheon, fiction]
 ---
-
+Orystria is a prime primordial. Inactive as far as personification, but the wellmouth of magic in general in Areshnaat. If you have unexplained divine power, spells, paladin powers from concepts, etc, it's Orystria's power that flows through you. The god or patron that asks for nothing, but to live.
 # Orystria
 
 ## Overview

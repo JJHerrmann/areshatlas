@@ -2,7 +2,7 @@
   "type": "deity",
   "title": "Gozara",
   "subtitle": "The Mensor of Dawns",
-  "source_relative_path": "gods/🌌Gozara.md",
+  "source_relative_path": "gods/Gozara.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -34,17 +34,17 @@
         [
           "Consort(s)",
           [
-            "[[🌌Niwara]]"
+            "[[Niwara]]"
           ]
         ],
         [
           "Allies",
           [
-            "[[🌌Niwara]]",
-            "[[🕳️Kvaritzin]]",
-            "[[✨Yaradaat]]",
-            "[[✨Malagad]]",
-            "[[✨Kathorharab]]",
+            "[[Niwara]]",
+            "[[Kvaritzin]]",
+            "[[Yaradaat]]",
+            "[[Malagad]]",
+            "[[Kathorharab]]",
             "[[Kvaritzin, Baxeol]]",
             "[[Xefahua]]"
           ]
@@ -100,9 +100,9 @@
         [
           "Offspring",
           [
-            "[[✨Yaradaat]]",
-            "[[✨Malagad]]",
-            "[[✨Kathorharab]]"
+            "[[Yaradaat]]",
+            "[[Malagad]]",
+            "[[Kathorharab]]"
           ]
         ]
       ]

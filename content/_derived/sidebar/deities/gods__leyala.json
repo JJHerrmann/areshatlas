@@ -2,7 +2,7 @@
   "type": "deity",
   "title": "Leyala",
   "subtitle": "The Shepard of Zodiacs",
-  "source_relative_path": "gods/🌌Leyala.md",
+  "source_relative_path": "gods/Leyala.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -40,8 +40,8 @@
         [
           "Parents",
           [
-            "[[🌌Yekala]]",
-            "[[🌌Niwara]]"
+            "[[Yekala]]",
+            "[[Niwara]]"
           ]
         ]
       ]

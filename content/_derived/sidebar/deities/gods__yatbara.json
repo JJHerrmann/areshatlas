@@ -2,7 +2,7 @@
   "type": "deity",
   "title": "Yatbara",
   "subtitle": "The God of Creation",
-  "source_relative_path": "gods/🌌Yatbara.md",
+  "source_relative_path": "gods/Yatbara.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -29,9 +29,13 @@
           "The Formless One"
         ],
         [
+          "Gender",
+          "Male"
+        ],
+        [
           "Consort(s)",
           [
-            "[[🌌Yekala]]"
+            "[[Yekala]]"
           ]
         ]
       ]
@@ -51,15 +55,15 @@
         [
           "Parents",
           [
-            "[[🌌Yekala]]",
-            "[[🌌Moxilaxaya]]",
-            "[[🌌Tahiwaco]]"
+            "[[Yekala]]",
+            "[[Moxilaxaya]]",
+            "[[Tahiwaco]]"
           ]
         ],
         [
           "Siblings",
           [
-            "[[🌌Niwara]]"
+            "[[Niwara]]"
           ]
         ]
       ]

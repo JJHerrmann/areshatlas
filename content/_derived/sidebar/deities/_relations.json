@@ -47,15 +47,15 @@
     ]
   },
   "moxilaxaya": {
-    "offspring": [
-      "[[Kathorharab]]",
-      "[[Niwara]]",
-      "[[Yatbara]]"
-    ],
     "siblings": [
       "[[Bolohua]]",
       "[[Tahiwaco]]",
       "[[Yekala]]"
+    ],
+    "offspring": [
+      "[[Kathorharab]]",
+      "[[Niwara]]",
+      "[[Yatbara]]"
     ],
     "consorts": [
       "[[Tahiwaco]]"
@@ -147,14 +147,14 @@
     ]
   },
   "yekala": {
+    "siblings": [
+      "[[Bolohua]]",
+      "[[Tahiwaco]]"
+    ],
     "offspring": [
       "[[Kathorharab]]",
       "[[Leyala]]",
       "[[Yatbara]]"
-    ],
-    "siblings": [
-      "[[Bolohua]]",
-      "[[Tahiwaco]]"
     ],
     "consorts": [
       "[[Yatbara]]"

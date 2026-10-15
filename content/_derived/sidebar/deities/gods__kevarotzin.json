@@ -2,12 +2,22 @@
   "type": "deity",
   "title": "Kevarotzin",
   "subtitle": "The Mistress of Tombs",
-  "source_relative_path": "gods/🕳️Kevarotzin.md",
+  "source_relative_path": "gods/Kevarotzin.md",
   "images": {
     "banner": null,
     "heraldry": null,
     "avatar": null,
     "symbol": null
   },
-  "sections": []
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Gender",
+          "Female"
+        ]
+      ]
+    }
+  ]
 }

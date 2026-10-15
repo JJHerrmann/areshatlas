@@ -2,7 +2,7 @@
   "type": "deity",
   "title": "Kaxatzin",
   "subtitle": "The Goddess of Graves",
-  "source_relative_path": "gods/🕳️Kaxatzin.md",
+  "source_relative_path": "gods/Kaxatzin.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -13,5 +13,15 @@
     },
     "symbol": null
   },
-  "sections": []
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Gender",
+          "Female"
+        ]
+      ]
+    }
+  ]
 }

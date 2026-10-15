@@ -2,7 +2,7 @@
   "type": "deity",
   "title": "Raavvah",
   "subtitle": "The Goddess of Famines and Calamity",
-  "source_relative_path": "gods/✨Raavvah.md",
+  "source_relative_path": "gods/Raavvah.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -23,6 +23,10 @@
             "Areshnaati",
             "Ramtilim"
           ]
+        ],
+        [
+          "Gender",
+          "Female"
         ],
         [
           "Allies",

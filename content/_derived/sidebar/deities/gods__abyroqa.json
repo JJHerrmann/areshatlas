@@ -2,7 +2,7 @@
   "type": "deity",
   "title": "Abyroqa",
   "subtitle": "The Goddess of Travels and Wayfairing",
-  "source_relative_path": "gods/🌊Abyroqa.md",
+  "source_relative_path": "gods/Abyroqa.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -13,5 +13,15 @@
     },
     "symbol": null
   },
-  "sections": []
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Gender",
+          "Female"
+        ]
+      ]
+    }
+  ]
 }

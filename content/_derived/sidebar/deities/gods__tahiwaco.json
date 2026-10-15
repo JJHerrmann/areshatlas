@@ -2,7 +2,7 @@
   "type": "deity",
   "title": "Tahiwaco",
   "subtitle": "The High-lord of Chaos",
-  "source_relative_path": "gods/🌌Tahiwaco.md",
+  "source_relative_path": "gods/Tahiwaco.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -25,9 +25,13 @@
           ]
         ],
         [
+          "Gender",
+          "Male"
+        ],
+        [
           "Consort(s)",
           [
-            "[[🌌Moxilaxaya]]"
+            "[[Moxilaxaya]]"
           ]
         ]
       ]
@@ -47,15 +51,15 @@
         [
           "Siblings",
           [
-            "[[🌌Bolohua]]",
-            "[[🌌Moxilaxaya]]",
-            "[[🌌Yekala]]"
+            "[[Bolohua]]",
+            "[[Moxilaxaya]]",
+            "[[Yekala]]"
           ]
         ],
         [
           "Offspring",
           [
-            "[[🌌Yatbara]]",
+            "[[Yatbara]]",
             "[[Niwara]]"
           ]
         ]

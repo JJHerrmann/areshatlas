@@ -2,7 +2,7 @@
   "type": "deity",
   "title": "Bolohua",
   "subtitle": "The Primordial Deep",
-  "source_relative_path": "gods/🌌Bolohua.md",
+  "source_relative_path": "gods/Bolohua.md",
   "images": {
     "banner": null,
     "heraldry": null,
@@ -52,15 +52,15 @@
         [
           "Siblings",
           [
-            "[[🌌Moxilaxaya]]",
-            "[[🌌Yekala]]",
-            "[[🌌Tahiwaco]]"
+            "[[Moxilaxaya]]",
+            "[[Yekala]]",
+            "[[Tahiwaco]]"
           ]
         ],
         [
           "Offspring",
           [
-            "[[🌌Lotan]]"
+            "[[Lotan]]"
           ]
         ]
       ]
