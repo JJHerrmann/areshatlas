@@ -14,7 +14,7 @@ export const tokens = {
   },
 
   fontFamilies: {
-    display: '"Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif',
+    display: '"EB Garamond", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif',
     body: '"Proza Libre", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
     mono: '"SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace',
   },
@@ -240,7 +240,7 @@ export const tokens = {
   typography: {
     roles: {
       articleTitle: {
-        fontFamily: '"Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif',
+        fontFamily: '"EB Garamond", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif',
         fontSize: {
           desktop: "56px",
           tablet: "48px",
@@ -266,7 +266,7 @@ export const tokens = {
       },
 
       sectionHeading: {
-        fontFamily: '"Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif',
+        fontFamily: '"EB Garamond", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif',
         fontSize: {
           desktop: "36px",
           tablet: "32px",
@@ -279,7 +279,7 @@ export const tokens = {
       },
 
       cardTitle: {
-        fontFamily: '"Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif',
+        fontFamily: '"EB Garamond", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif',
         fontSize: {
           desktop: "20px",
           tablet: "20px",

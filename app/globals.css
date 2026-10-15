@@ -2099,3 +2099,206 @@ body {
     width: 2.2rem;
   }
 }
+
+/* ===========================================================================
+   Codex Skin crossover
+   ---------------------------------------------------------------------------
+   Ports the "Areshnaat Codex Skin" design canvas (design-audit-00b78c6b,
+   2026-10-13) into the site. The canvas carries a 12-colour palette in two
+   themes -- parchment (default) and `ink` -- and the canvas's ink values are
+   the same hexes this site's dark pass already used, so the two reconcile
+   without a repaint.
+
+   This block is the crossover seam. It redefines the SEMANTIC token layer and
+   the `--codex-*` aliases per theme, so every rule above inherits the theme
+   without being touched. Components reference no colour tokens directly
+   (verified: 0 hits under components/), so nothing downstream changes.
+
+   Supersedes the "new dark codex pass" comment above, which dates from
+   2026-03-28 and predates the canvas by six months.
+
+   NOT ported: the canvas's Player/GM toggle. It hides GM text with CSS only,
+   so the text still ships in page source -- that contradicts the fail-closed
+   scrub in scripts/publish_gate.mjs. A GM view has to be a separate private
+   build, not a stylesheet state. See cross-chat.md open conflict 3.
+   =========================================================================== */
+
+/* Canvas palette, verbatim from the canvas's [data-theme] blocks. */
+html[data-theme="parchment"] {
+  --cx-ground: #e9dcbc;
+  --cx-rail: #efe4c9;
+  --cx-paper: #f8f2e8;
+  --cx-plate: #f1e6cb;
+  --cx-ink: #1b2531;
+  --cx-ink-soft: #44505e;
+  --cx-rule: #cdbb8f;
+  --cx-rule-strong: #9b7337;
+  --cx-gold: #7d5b2b;
+  --cx-link: #2f5273;
+  --cx-red: #8c3a2b;
+  --cx-sel: #e6d6ae;
+}
+
+html[data-theme="ink"] {
+  --cx-ground: #0b1118;
+  --cx-rail: #101823;
+  --cx-paper: #151f2a;
+  --cx-plate: #1b2531;
+  --cx-ink: #ead8b8;
+  --cx-ink-soft: #b9ad93;
+  --cx-rule: #243140;
+  --cx-rule-strong: #b78b43;
+  --cx-gold: #d7b879;
+  --cx-link: #8fb0ce;
+  --cx-red: #e09a87;
+  --cx-sel: #243140;
+}
+
+/* Re-point the generated semantic tokens at the palette. These are what the
+   ~50 direct var(--token-color-semantic-*) references above resolve through. */
+html[data-theme] {
+  --token-color-semantic-bg-page: var(--cx-ground);
+  --token-color-semantic-bg-canvas: var(--cx-rail);
+  --token-color-semantic-bg-surface: var(--cx-paper);
+  --token-color-semantic-bg-surfaceRaised: var(--cx-plate);
+
+  --token-color-semantic-text-primary: var(--cx-ink);
+  --token-color-semantic-text-strong: var(--cx-ink);
+  --token-color-semantic-text-muted: var(--cx-ink-soft);
+  --token-color-semantic-text-link: var(--cx-link);
+  --token-color-semantic-text-linkHover: var(--cx-gold);
+
+  --token-color-semantic-border-subtle: color-mix(in srgb, var(--cx-rule) 45%, transparent);
+  --token-color-semantic-border-default: var(--cx-rule);
+  --token-color-semantic-border-strong: var(--cx-rule-strong);
+  --token-color-semantic-border-active: var(--cx-rule-strong);
+
+  --token-color-semantic-accent-primary: var(--cx-rule-strong);
+  --token-color-semantic-accent-primaryHover: var(--cx-gold);
+  --token-color-semantic-decorative-line: color-mix(in srgb, var(--cx-rule) 70%, transparent);
+  --token-color-semantic-focus-ring: 0 0 0 2px color-mix(in srgb, var(--cx-gold) 45%, transparent);
+
+  /* Background layers. The dark pass hardcoded a near-black scrim into `body`;
+     it is a variable now so parchment is not dimmed by it. */
+  --codex-page-scrim: linear-gradient(
+    color-mix(in srgb, var(--cx-ground) 82%, transparent),
+    color-mix(in srgb, var(--cx-rail) 88%, transparent)
+  );
+  --theme-page-gradient: linear-gradient(180deg, var(--cx-ground) 0%, var(--cx-rail) 55%, var(--cx-paper) 100%);
+  --theme-panel-gradient: linear-gradient(180deg, var(--cx-paper), var(--cx-plate));
+  --theme-panel-overlay: linear-gradient(
+    color-mix(in srgb, var(--cx-paper) 88%, transparent),
+    color-mix(in srgb, var(--cx-paper) 94%, transparent)
+  );
+  --theme-tab-active-gradient: linear-gradient(180deg, var(--cx-sel), var(--cx-plate));
+  --theme-divider-gradient: linear-gradient(90deg, var(--cx-rule-strong), transparent);
+  --theme-cloud-gradient: radial-gradient(circle at 16% 12%, color-mix(in srgb, var(--cx-gold) 14%, transparent) 0%, transparent 30%),
+    radial-gradient(circle at 82% 18%, color-mix(in srgb, var(--cx-rule-strong) 10%, transparent) 0%, transparent 28%);
+
+  /* The `--codex-*` alias layer every rule above consumes. */
+  --codex-bg: var(--cx-ground);
+  --codex-panel: var(--cx-paper);
+  --codex-panel-soft: var(--cx-plate);
+  --codex-line: var(--cx-rule);
+  --codex-line-strong: var(--cx-rule-strong);
+  --codex-gold: var(--cx-gold);
+  --codex-gold-soft: var(--cx-ink-soft);
+  --codex-ink: var(--cx-ink);
+  --codex-ink-soft: var(--cx-ink);
+  --codex-accent: var(--cx-rule-strong);
+  --codex-rail: var(--cx-rail);
+  --codex-sel: var(--cx-sel);
+  --codex-red: var(--cx-red);
+  --codex-focus-ring: var(--token-color-semantic-focus-ring);
+}
+
+/* The ink theme keeps the original paper texture; parchment gets none, because
+   black-paper.avif reads as grime over a light ground. */
+html[data-theme="parchment"] {
+  --theme-texture-image: none;
+  --codex-texture: none;
+}
+
+html[data-theme="ink"] {
+  --theme-texture-image: url("/textures/black-paper.avif");
+  --codex-texture: url("/textures/black-paper.avif");
+}
+
+html[data-theme="parchment"] {
+  color-scheme: light;
+}
+
+html[data-theme="ink"] {
+  color-scheme: dark;
+}
+
+/* Replaces the hardcoded dark scrim in the `body` rule above. */
+html[data-theme] body {
+  background:
+    var(--codex-page-scrim),
+    var(--codex-texture),
+    var(--codex-cloud-gradient),
+    var(--codex-page-gradient);
+  color: var(--codex-ink);
+}
+
+/* Canvas link treatment: body links in --link, red links for targets that do
+   not exist yet, dotted so they read as absent rather than broken. */
+html[data-theme] a.codex-redlink,
+html[data-theme] .codex-redlink {
+  color: var(--cx-red);
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+}
+
+html[data-theme] a:focus-visible,
+html[data-theme] input:focus-visible,
+html[data-theme] button:focus-visible {
+  outline: 2px solid var(--cx-gold);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--cx-sel);
+  color: var(--cx-ink);
+}
+
+/* ---------------------------------------------------------------------------
+   Crossover, component reconciliation.
+   Three rules above paint colour literally rather than through a token, so the
+   theme cannot reach them. Each is restated here on the canvas's own spec.
+   --------------------------------------------------------------------------- */
+
+/* Canvas `.search`: a ruled box on the paper ground, not a dark well. The rule
+   above layers a near-black scrim over the field, which survives any palette. */
+html[data-theme] .codex-global-search-input {
+  background: var(--cx-paper);
+  border-color: var(--cx-rule-strong);
+  color: var(--cx-ink);
+}
+
+html[data-theme] .codex-global-search-input::placeholder {
+  color: var(--cx-ink-soft);
+}
+
+html[data-theme] .codex-global-search-button {
+  background: var(--cx-plate);
+  border-color: var(--cx-rule-strong);
+  color: var(--cx-ink);
+}
+
+html[data-theme] .codex-global-search-button:hover {
+  background: var(--cx-sel);
+}
+
+/* Canvas `.notice`: plate ground inside a rule. The rule above mixes a cold
+   blue (#dce7ff) that reads as a browser chrome panel against parchment. */
+html[data-theme] .codex-status-notice {
+  border-color: var(--cx-rule);
+  background: var(--cx-plate);
+  color: var(--cx-ink);
+}
+
+html[data-theme] .codex-status-notice a {
+  color: var(--cx-link);
+}
