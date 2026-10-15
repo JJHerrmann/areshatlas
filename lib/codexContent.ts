@@ -234,6 +234,13 @@ export const sections: SectionConfig[] = [
     summary: "Events, conflicts, dynasties, migrations, and remembered cataclysms.",
     folder: "chronicles",
   },
+  {
+    slug: "figures",
+    title: "Figures",
+    label: "Biographical Records",
+    summary: "Named persons: rulers, founders, and witnesses, with the houses and lineages they belong to.",
+    folder: "figures",
+  },
 ];
 
 export function getSectionBySlug(slug: string) {
