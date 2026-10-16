@@ -1039,7 +1039,7 @@ function findMarkdownFile(section: SectionConfig, slugParts: string[]) {
   return match ? path.join(dirPath, match.name) : null;
 }
 
-function contentRelativePathToHref(relativePath: string) {
+export function contentRelativePathToHref(relativePath: string) {
   const normalized = relativePath.replace(/\\/g, "/").replace(/\.(md|markdown)$/i, "");
   const section = [...sections]
     .sort((a, b) => b.folder.length - a.folder.length)
@@ -1058,7 +1058,7 @@ function contentRelativePathToHref(relativePath: string) {
   return routeTail ? `/${section.slug}/${routeTail}` : `/${section.slug}`;
 }
 
-function resolveObsidianHref(target: string, sourceRelativePath?: string) {
+export function resolveObsidianHref(target: string, sourceRelativePath?: string) {
   const normalizedTarget = target.trim().replace(/\\/g, "/");
   if (!normalizedTarget) return null;
 
@@ -1230,6 +1230,22 @@ async function renderMarkdown(
     .use(rehypeStringify)
     .process(preprocessMarkdown(markdown, frontmatter, sourceRelativePath));
   return String(processed);
+}
+
+/**
+ * Every published note, with its raw markdown. Shares listMarkdownFiles, so it
+ * honours the same exclusions the rest of the site uses: no _history, no
+ * _derived, no empty notes.
+ */
+let contentNoteSources: { relativePath: string; markdown: string }[] | null = null;
+
+export function getContentNoteSources() {
+  if (contentNoteSources) return contentNoteSources;
+  contentNoteSources = listMarkdownFiles(CONTENT_ROOT).map((filePath) => ({
+    relativePath: path.relative(CONTENT_ROOT, filePath).replace(/\\/g, "/"),
+    markdown: fs.readFileSync(filePath, "utf8"),
+  }));
+  return contentNoteSources;
 }
 
 export function getSearchableArticles(): SearchableArticle[] {

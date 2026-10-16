@@ -10,6 +10,8 @@ import GenericInfobox from "@/components/codex/GenericInfobox";
 import NavboxFooter from "@/components/codex/NavboxFooter";
 import NationInfobox from "@/components/codex/NationInfobox";
 import Provenance from "@/components/codex/Provenance";
+import WhatLinksHere from "@/components/codex/WhatLinksHere";
+import { getBacklinksForSourcePath } from "@/lib/codexLinks";
 import HistoryDiff from "@/components/codex/HistoryDiff";
 import HistoryList from "@/components/codex/HistoryList";
 import {
@@ -220,6 +222,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
           </section>
 
           {overviewArticle ? <NavboxFooter navboxes={overviewNavboxes} currentSlug={overviewArticle.slug} /> : null}
+          <WhatLinksHere backlinks={getBacklinksForSourcePath(overviewDocument.sourcePath)} />
           <Provenance html={overviewDocument.provenance} />
         </div>
 
@@ -280,6 +283,7 @@ export default async function NestedSectionPage({ params }: NestedSectionPagePro
           </div>
 
           {article ? <NavboxFooter navboxes={navboxes} currentSlug={article.slug} /> : null}
+          <WhatLinksHere backlinks={getBacklinksForSourcePath(document.sourcePath)} />
           <Provenance html={document.provenance} />
         </div>
 

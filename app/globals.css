@@ -660,3 +660,59 @@ hr {
 .codex-ornament.codex-ornament {
   display: none;
 }
+
+/* --- What links here ------------------------------------------------------
+   MediaWiki keeps this in the toolbox; here it sits at the foot of the article.
+   On a vault where most note bodies are still empty templates, the inbound
+   links are often the only thing on the page that says what the subject is
+   connected to. --------------------------------------------------------- */
+
+.codex-backlinks {
+  margin-top: 2em;
+  padding-top: 0.6em;
+  border-top: 1px solid var(--mw-border-light);
+}
+
+.codex-backlinks-heading {
+  margin: 0 0 0.4em;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.codex-backlinks-count {
+  color: var(--mw-text-muted);
+  font-size: 0.75em;
+}
+
+.codex-backlinks-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  columns: 1;
+  column-gap: 2em;
+}
+
+@media (min-width: 640px) {
+  .codex-backlinks-list {
+    columns: 2;
+  }
+}
+
+@media (min-width: 1100px) {
+  .codex-backlinks-list {
+    columns: 3;
+  }
+}
+
+.codex-backlinks-item {
+  break-inside: avoid;
+  padding: 0.1em 0;
+  font-size: 0.95em;
+}
+
+.codex-special-note {
+  margin: 0 0 0.6em;
+  color: var(--mw-text-muted);
+  font-size: 0.9em;
+}
