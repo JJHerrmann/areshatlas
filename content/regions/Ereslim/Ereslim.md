@@ -36,10 +36,3 @@ whole of where they are.
 light of her husband [[Niwara]] and uses it as part of her predictions. It is
 to this temple that [[Yatbara]] came to speak with her, fearing what she would
 lose, in [[The Binding of Niwara]].
-
-## Open questions
-
-- Where Ereslim sits against the mapped east, and whether any charted coast
-  claims to face it.
-- Whether mortals can reach it at all, or whether the crossing is the barrier.
-- What else stands there besides Gozara's temple.

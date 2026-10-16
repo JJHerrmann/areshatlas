@@ -78,9 +78,3 @@ trade.
 Earth's moon against the same sun, so when it crosses, it covers — total
 eclipses are the common kind here, and the ring of fire is the rarity.
 
-## Open questions
-
-- Which moon, if any, the elvish reckoning actually counts; the 13x28 fits
-  White exactly, but nothing says the elves chose White.
-- Whether Red, Green and Blue are named in any language, or only coloured.
-- What the leftover day is called, and who keeps it.

@@ -64,14 +64,6 @@ obeys — and the house that issues the week issues the terms.
 The leftover day sits outside every month and every week. Contracts reckoned in
 tide-weeks do not run on it, debts reckoned in months do not accrue, and a
 charter that ends on the last day of the thirteenth month has not yet begun the
-next. What is done with that day — kept as a holiday, used as a loophole, or
-quietly owned — is not settled.
-
-## Open questions
-
-- What the tide-week's days are called, and in which language first.
-- Whether the elvish reckoning (`Xilbian Calendar`, still unwritten) counts
-  White's months directly or counts tide-weeks and multiplies.
-- Whether [[Yamnahar]] is owed anything on the turn of the week, and what the
-  unwritten *God of Tides* has to say about it.
-- Who keeps the leftover day.
+next. What is done with it differs from port to port. Some keep it as a holiday,
+some treat it as a day on which anything may be agreed and nothing enforced,
+and in the Companhia's harbours it is not spoken of as free at all.
