@@ -26,4 +26,4 @@ Quick lookup of recurring terms and names. Full development history for each is 
 | **Eladrin** | Former Fae-army soldiers, left behind in the material plane when the Fae were exiled to the Feywild after losing an ancient war against Giants and a "Dragonhorde." Conflicts with [[The Age of Poking Things]]'s later origin myth — unresolved, see that page. |
 | **High Elves** | Japanese Edo-period-coded elf culture; source of the setting's four-moon calendar. Per [[The Age of Poking Things]] (2026), uplifted from Australopithecus-like proto-hominids by a reckless Summer Eladrin naturalist — the "Year of the Apology" scene. |
 | **[[Maktaba Fahm Hikma]]** | "Library of Understanding/Wisdom" — the in-world scholarly institution behind the formal sapient-species taxonomy. |
-| **The Four Moons** | White, Red, Green, Blue — White matching Earth's own moon exactly. |
+| **[[The Four Moons]]** | White, Red, Green, Blue. Red, Green and Blue run locked in the near sky; White is near-identical to Earth's own moon, a little closer in, and keeps the months at 28 days full to full. |
