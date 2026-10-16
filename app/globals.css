@@ -257,9 +257,35 @@ a.codex-redlink:visited {
 .codex-prose ul,
 .codex-prose ol,
 .codex-entry-body ul,
-.codex-entry-body ol {
+.codex-entry-body ol,
+.wiki-prose ul,
+.wiki-prose ol,
+.wiki-copy ul,
+.wiki-copy ol {
+  /* Tailwind's preflight sets `list-style: none` on every list, so prose lists
+     render as unmarked indented lines until it is put back. */
   margin: 0.4em 0 0.4em 1.6em;
   padding: 0;
+  list-style: disc outside;
+}
+
+.codex-prose ol,
+.codex-entry-body ol,
+.wiki-prose ol,
+.wiki-copy ol {
+  list-style: decimal outside;
+}
+
+.codex-prose li,
+.codex-entry-body li,
+.wiki-prose li,
+.wiki-copy li {
+  margin: 0.15em 0;
+}
+
+.codex-prose ul ul,
+.codex-entry-body ul ul {
+  list-style: circle outside;
 }
 
 .codex-prose img,
