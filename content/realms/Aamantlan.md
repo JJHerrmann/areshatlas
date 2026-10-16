@@ -37,9 +37,13 @@ elvish account of who lives there.
 
 ## Open questions
 
-- Whether the Pale moon, where [[Yatbara]] and [[Zemana]] propose to bind
-  Niwara in [[The Binding of Niwara]], is reckoned part of Aamantlan or a
-  station apart from it.
+- ~~Whether the Pale moon is reckoned part of Aamantlan~~ — **ruled: it is
+  not.** The Pale moon belongs to the physical cosmos, so binding Niwara there
+  in [[The Binding of Niwara]] puts him somewhere real and far, not somewhere
+  divine. The Skyhome and the heavens are different kinds of thing.
+- Which of the Four Moons the Pale moon is. `chronicles/Glossary.md` gives
+  White, Red, Green and Blue, with White "matching Earth's own moon exactly";
+  Pale reads as White, but nothing says so outright.
 - Whether Aamantlan is a dwelling only, or also the substance the gods are made
   of.
 - Who, besides the gods, is permitted there.
