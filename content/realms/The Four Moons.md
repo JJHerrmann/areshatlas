@@ -70,7 +70,7 @@ and then the whole pattern begins again precisely. Seven days is the tide-week,
 four tide-weeks make White's month, and fifty-two make the year.
 
 So the seas are violent and perfectly knowable at the same time, which is a
-rarer thing than either. The seas off [[Ereslim]] are dangerously swift — fast
+rarer thing than either. The seven days are counted as [[The Tide-Week]]. The seas off [[Ereslim]] are dangerously swift — fast
 water, not unreadable water, and the difference is the whole of a pilot's
 trade.
 
