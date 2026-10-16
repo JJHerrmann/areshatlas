@@ -10,29 +10,6 @@ tags: [Areshnaat, pantheon, fiction]
 Orystria is a prime primordial. Inactive as far as personification, but the wellmouth of magic in general in Areshnaat. If you have unexplained divine power, spells, paladin powers from concepts, etc, it's Orystria's power that flows through you. The god or patron that asks for nothing, but to live.
 # Orystria
 
-## Overview
-Supreme deity and detached ruler of the pantheon, with five aspects corresponding to the five colors of magic (White/Blue/Black/Red/Green). Has not been seen or heard from in generations; rests in a tomb at the center of the orbits of the setting's five... (per source: "five moons" — reconcile against the confirmed **four**-moon count from `Calendar for 4-Moon Planet - 2023-04-10`, a minor inconsistency worth resolving) until his return.
-
-## The pantheon structure
-Built explicitly on Magic: The Gathering's five-color (WUBRG) system:
-- **Single-color gods** — the Five Mothers (see below) and their Right-Hand Sons
-- **Two-color demigods** — allied pairs (Aemestra, Ophindris, Vexthra, Talanor, Elendrial) and enemy pairs (Ulthora, Thaelis, Vorenth, and others)
-- **Three-color demigods** — combine three colors of magic, serve a primary color god with presence in at least two other courts
-- **Four-color divine champions** — combine four colors, represent a specific color and serve in a specific court
-
-## The Five Mothers and their Right-Hand Sons
-| Mother | Color | Domain | Right-Hand Son | Domain |
-|---|---|---|---|---|
-| Alarisse | White | Unity, Order, Protection | Seraphiel | Enforcer of justice, commander of celestial armies |
-| Luminara | Blue | Knowledge, Manipulation, Illusion | Maelstrix | Keeper of secrets, master of illusions |
-| Noctyra | Black | Ambition, Death, Undeath | Xantheros | Reaper of souls, guide to the afterlife |
-| Ignissa | Red | Chaos, Destruction, Emotion | Ragnaros | Bringer of calamities, embodiment of wrath |
-| Sylvanna | Green | Nature, Growth, Life | Cernunys | Guardian of the wilds, lord of the hunt |
-
-## Two-color demigods (partial roster)
-**Allied pairs:** Aemestra (WU, wisdom/strategy/harmony), Ophindris (UB, secrets/intrigue/knowledge), Vexthra (BR, ambition/passion/destruction), Talanor (RG, freedom/nature/change), Elendrial (GW, growth/healing/compassion).
-**Enemy pairs:** Ulthora (WB, order/morality/ambition), Thaelis (UR, ingenuity/adaptation/emotion), Vorenth (BG, decay/rebirth) — roster incomplete, only partially surveyed so far.
-
 ## Liturgical structure
 Each deity in the pantheon is given, per the founding session: a portfolio, a holy day/cause of celebration, a description of how followers celebrate, and a death ritual for followers. Example (Alarisse): celebrated on the "Harmonious Solstice" (equal day/night length); followers process in white and gold, perform acts of service; the dead are wrapped in white linen and interred in a sacred crypt.
 
