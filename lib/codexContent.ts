@@ -200,6 +200,13 @@ export const sections: SectionConfig[] = [
     folder: "regions",
   },
   {
+    slug: "realms",
+    title: "Realms",
+    label: "Cosmographic Surveys",
+    summary: "Dwellings and stations beyond the mortal map: the Skyhome, the moons, and what the gods are said to keep.",
+    folder: "realms",
+  },
+  {
     slug: "cultures",
     title: "Cultures",
     label: "Ethnographic Records",
