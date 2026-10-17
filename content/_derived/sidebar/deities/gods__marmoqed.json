@@ -26,8 +26,16 @@
       "title": "Spiritual Info",
       "rows": [
         [
+          "Rank",
+          "Major"
+        ],
+        [
           "Nature",
           "lawful"
+        ],
+        [
+          "Major Influence",
+          "Hearth"
         ]
       ]
     }

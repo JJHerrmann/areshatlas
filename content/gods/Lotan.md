@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Firmament"
+tier: Firmament
 icon: LiMoonStar
-xibanal_name: "Noochaxaya"
-xibanal_title: "Ooluh Noochaxaya"
-xibanal_principle: "Noochaxyotl"
-etymology: "n-ch-sh, serpent (nachash)"
+xibanal_name: Noochaxaya
+xibanal_title: Ooluh Noochaxaya
+xibanal_principle: Noochaxyotl
+etymology: n-ch-sh, serpent (nachash)
 name: Lotan
 title: Lotan
 slug: lotan
@@ -14,7 +14,7 @@ epithet: The Sky Serpent
 honorific_title: ""
 pantheon:
   - "[[Yekatlan]]"
-divine_rank: ""
+divine_rank: Major
 gender: ""
 nature: ""
 ethos: ""
@@ -22,7 +22,7 @@ major_influence: Night
 minor_influences: []
 spheres: []
 avatars: []
-avatar_image: "![[/_images/lotan_main.png]]"
+avatar_image: "![[lotan_main.png]]"
 parents: []
 siblings: []
 offspring: []
@@ -135,7 +135,7 @@ tags:
   - deity
   - religion
 primary_topic: Dieties of Areshnaat
-image_avatar: "![[/_images/lotan_main.png]]"
+image_avatar: "![[lotan_main.png]]"
 ---
 # Lotan
 *The Sky Serpant*

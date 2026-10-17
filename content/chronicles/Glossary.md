@@ -13,7 +13,7 @@ Quick lookup of recurring terms and names. Full development history for each is 
 | **Eoferan** | The setting's earliest working name (Jan 2023) — same WUBRG pantheon structure as later Perimoria, but entirely different nation names. |
 | **Perimoria** | The setting's second working name (Apr 2023 onward) — where the current continent, conlangs, and deity roster were locked in. |
 | **Egunjain** | A region, not a world-name — the Dwarven Kingdoms' far-northern homeland. |
-| **[[Orystria]]** | Supreme/detached god of the pantheon; unseen for generations, entombed at the center of the orbits of the five moons. |
+| **[[Ooxapyotl]]** | Supreme/detached god of the pantheon; unseen for generations, entombed at the center of the orbits of the five moons. |
 | **The Five Mothers** | Alarisse (White), Luminara (Blue), Noctyra (Black), Ignissa (Red), Sylvanna (Green) — the five goddesses beneath Orystria, each with a Right-Hand Son. |
 | **[[Najmii Empire]]** | Arabic/Moorish/Latin-coded empire anchoring the setting's ~17-polity continent. |
 | **[[Sil'K'uhlam Empire]]** | MesoLatin (Maya/Aztec/Roman)-coded empire in the Tezcalar region, druidic practices. |

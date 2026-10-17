@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Firmament"
+tier: Firmament
 icon: LiMoonStar
-xibanal_name: "Zimanaya"
-xibanal_title: "Iluh Zimanaya"
-xibanal_principle: "Zoomayyotl"
-etymology: "z-m-n, time (zman)"
+xibanal_name: Zimanaya
+xibanal_title: Iluh Zimanaya
+xibanal_principle: Zoomayyotl
+etymology: z-m-n, time (zman)
 name: Zemana
 title: Zemana
 slug: zemana
@@ -15,7 +15,7 @@ honorific_title: ""
 pantheon:
   - Areshnaati
   - "[[Yekatlan]]"
-divine_rank: ""
+divine_rank: Major
 gender: Female
 nature: ""
 ethos: ""
@@ -23,8 +23,8 @@ major_influence: Time
 minor_influences: []
 spheres: []
 avatars: []
-avatar_image: "![[/_images/zemara_main.png]]"
-image_avatar: "![[/_images/zemara_main.png]]"
+avatar_image: "![[zemara_main.png]]"
+image_avatar: "![[zemara_main.png]]"
 parents: []
 siblings: []
 offspring: []

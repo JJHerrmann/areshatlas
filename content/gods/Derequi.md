@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Chthonic"
+tier: Chthonic
 icon: FasMountain
-xibanal_name: "Daarakaya"
-xibanal_title: "Aaluh Daarakaya"
-xibanal_principle: "Doorakyotl"
-etymology: "d-r-k, way, road (derekh)"
+xibanal_name: Daarakaya
+xibanal_title: Aaluh Daarakaya
+xibanal_principle: Doorakyotl
+etymology: d-r-k, way, road (derekh)
 name: Derequi
 title: Derequi
 slug: ""
@@ -13,8 +13,8 @@ section: pantheon
 epithet: The Lord of the Grey Walk
 honorific_title: ""
 pantheon: ""
-divine_rank: ""
-gender: "Male"
+divine_rank: Major
+gender: Male
 nature: ""
 ethos: ""
 major_influence: ""

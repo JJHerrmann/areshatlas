@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Celestial"
+tier: Celestial
 icon: LiStars
-xibanal_name: "Gooxamaya"
-xibanal_title: "Ooluh Gooxamaya"
-xibanal_principle: "Gooxanyotl"
-etymology: "g-sh-m, rain (geshem); duels not covered"
+xibanal_name: Gooxamaya
+xibanal_title: Ooluh Gooxamaya
+xibanal_principle: Gooxanyotl
+etymology: g-sh-m, rain (geshem); duels not covered
 name: Kadashar
 title: Kadashar
 slug: machul
@@ -15,15 +15,15 @@ honorific_title: ""
 pantheon:
   - Areshnaati
   - Ramtilim
-divine_rank: ""
+divine_rank: Major
 gender: ""
 nature: ""
 ethos: chaotic
-major_influence: ""
+major_influence: Duels
 minor_influences: []
 spheres: []
 avatars: []
-avatar_image: "![[/_images/Kadashar_main.png]]"
+avatar_image: "![[Kadashar_main.png]]"
 parents: []
 siblings: []
 offspring: []
@@ -143,7 +143,7 @@ sacred_color_swatches:
   - "#990000"
   - "#0F52BA"
   - "#8C6A1C #C9A227 #F2D36B"
-image_avatar: "![[/_images/Kadashar_main.png]]"
+image_avatar: "![[Kadashar_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

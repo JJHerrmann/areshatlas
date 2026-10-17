@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T07:37:37.462Z",
+  "generated": "2026-10-17T05:01:07.685Z",
   "notes": {
     "chronicles/Glossary.md": [
       {
@@ -8,6 +8,13 @@
         "message": "sync: publish latest codex content",
         "sha": "7ba98a2e18f1d4060d04fd1c184ce64140f66d68",
         "bytes": 2783
+      },
+      {
+        "id": "20261017T050107Z-sync000",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 2897
       }
     ],
     "chronicles/The Age of Poking Things.md": [
@@ -81,6 +88,13 @@
         "message": "sync: publish latest codex content",
         "sha": "7ba98a2e18f1d4060d04fd1c184ce64140f66d68",
         "bytes": 1426
+      },
+      {
+        "id": "20261017T050107Z-sync003",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 1427
       }
     ],
     "cultures/language/_Ahvesil (Sea Elves).md": [
@@ -317,6 +331,13 @@
         "message": "content: draft 3 settles the dwarven alphabet, and the figures land",
         "sha": "aab4cd8a08aea2f039b4e88a1cead90606440225",
         "bytes": 9140
+      },
+      {
+        "id": "20261017T050107Z-sync004",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 12744
       }
     ],
     "cultures/language/_Kutnylev (Gnomish).md": [
@@ -604,6 +625,13 @@
         "message": "feat: page history, per-note publish gate, and prerendered articles",
         "sha": null,
         "bytes": 4260
+      },
+      {
+        "id": "20261017T050107Z-sync029",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 2131
       }
     ],
     "gods/The Binding of Portions.md": [
@@ -841,9 +869,16 @@
         "message": "sync: publish latest codex content",
         "sha": "e27117357998713dccabd62981ca176043545450",
         "bytes": 7105
+      },
+      {
+        "id": "20261017T050107Z-sync045",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 2190
       }
     ],
-    "gods/\u2728Kadashar.md": [
+    "gods/✨Kadashar.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -957,7 +992,7 @@
         "bytes": 8747
       }
     ],
-    "gods/\u2728Kathorharab.md": [
+    "gods/✨Kathorharab.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -1155,7 +1190,7 @@
         "bytes": 8847
       }
     ],
-    "gods/\u2728Malagad.md": [
+    "gods/✨Malagad.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -1255,7 +1290,7 @@
         "bytes": 8608
       }
     ],
-    "gods/\u2728Marmoqed.md": [
+    "gods/✨Marmoqed.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -1362,7 +1397,7 @@
         "bytes": 8609
       }
     ],
-    "gods/\u2728Qatzera.md": [
+    "gods/✨Qatzera.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -1469,7 +1504,7 @@
         "bytes": 8603
       }
     ],
-    "gods/\u2728Raavvah.md": [
+    "gods/✨Raavvah.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -1576,7 +1611,7 @@
         "bytes": 8606
       }
     ],
-    "gods/\u2728Tsayidrah.md": [
+    "gods/✨Tsayidrah.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -1676,7 +1711,7 @@
         "bytes": 8615
       }
     ],
-    "gods/\u2728Xefahua.md": [
+    "gods/✨Xefahua.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -1846,7 +1881,7 @@
         "bytes": 8879
       }
     ],
-    "gods/\u2728Xochbaram.md": [
+    "gods/✨Xochbaram.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -1960,7 +1995,7 @@
         "bytes": 8756
       }
     ],
-    "gods/\u2728Yaradaat.md": [
+    "gods/✨Yaradaat.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -2046,7 +2081,7 @@
         "bytes": 8603
       }
     ],
-    "gods/\ud83c\udf0aAbyroqa.md": [
+    "gods/🌊Abyroqa.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -2188,7 +2223,7 @@
         "bytes": 8532
       }
     ],
-    "gods/\ud83c\udf0aTehontecuhtli.md": [
+    "gods/🌊Tehontecuhtli.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -2351,7 +2386,7 @@
         "bytes": 8548
       }
     ],
-    "gods/\ud83c\udf0aYamnahar.md": [
+    "gods/🌊Yamnahar.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -2444,7 +2479,7 @@
         "bytes": 8753
       }
     ],
-    "gods/\ud83c\udf0cBolohua.md": [
+    "gods/🌌Bolohua.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -2579,7 +2614,7 @@
         "bytes": 8700
       }
     ],
-    "gods/\ud83c\udf0cGozara.md": [
+    "gods/🌌Gozara.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -2777,7 +2812,7 @@
         "bytes": 10732
       }
     ],
-    "gods/\ud83c\udf0cLeyala.md": [
+    "gods/🌌Leyala.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -2905,7 +2940,7 @@
         "bytes": 8616
       }
     ],
-    "gods/\ud83c\udf0cLotan.md": [
+    "gods/🌌Lotan.md": [
       {
         "id": "20260313T023038Z-e1d6942",
         "date": "2026-03-13T02:30:38-04:00",
@@ -3019,7 +3054,7 @@
         "bytes": 2756
       }
     ],
-    "gods/\ud83c\udf0cMoxilaxaya.md": [
+    "gods/🌌Moxilaxaya.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -3189,7 +3224,7 @@
         "bytes": 9195
       }
     ],
-    "gods/\ud83c\udf0cNiwara.md": [
+    "gods/🌌Niwara.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -3338,7 +3373,7 @@
         "bytes": 8717
       }
     ],
-    "gods/\ud83c\udf0cRexaya.md": [
+    "gods/🌌Rexaya.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -3487,7 +3522,7 @@
         "bytes": 8460
       }
     ],
-    "gods/\ud83c\udf0cTahiwaco.md": [
+    "gods/🌌Tahiwaco.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -3622,7 +3657,7 @@
         "bytes": 8735
       }
     ],
-    "gods/\ud83c\udf0cTemaya.md": [
+    "gods/🌌Temaya.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -3771,7 +3806,7 @@
         "bytes": 8463
       }
     ],
-    "gods/\ud83c\udf0cYatbara.md": [
+    "gods/🌌Yatbara.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -3906,7 +3941,7 @@
         "bytes": 8754
       }
     ],
-    "gods/\ud83c\udf0cYekala.md": [
+    "gods/🌌Yekala.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -4069,7 +4104,7 @@
         "bytes": 8805
       }
     ],
-    "gods/\ud83c\udf0cZemana.md": [
+    "gods/🌌Zemana.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -4211,7 +4246,7 @@
         "bytes": 8590
       }
     ],
-    "gods/\ud83d\udd73\ufe0fDerequi.md": [
+    "gods/🕳️Derequi.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -4353,7 +4388,7 @@
         "bytes": 8465
       }
     ],
-    "gods/\ud83d\udd73\ufe0fHarbaal.md": [
+    "gods/🕳️Harbaal.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -4439,7 +4474,7 @@
         "bytes": 2611
       }
     ],
-    "gods/\ud83d\udd73\ufe0fKaxatzin.md": [
+    "gods/🕳️Kaxatzin.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -4588,7 +4623,7 @@
         "bytes": 8494
       }
     ],
-    "gods/\ud83d\udd73\ufe0fKevarotzin.md": [
+    "gods/🕳️Kevarotzin.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -4730,7 +4765,7 @@
         "bytes": 8467
       }
     ],
-    "gods/\ud83d\udd73\ufe0fKinayotl.md": [
+    "gods/🕳️Kinayotl.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -4872,7 +4907,7 @@
         "bytes": 8465
       }
     ],
-    "gods/\ud83d\udd73\ufe0fKvaritzin.md": [
+    "gods/🕳️Kvaritzin.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -5070,7 +5105,7 @@
         "bytes": 9457
       }
     ],
-    "gods/\ud83d\udd73\ufe0fMaavacihuatl.md": [
+    "gods/🕳️Maavacihuatl.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -5212,7 +5247,7 @@
         "bytes": 8467
       }
     ],
-    "gods/\ud83d\udd73\ufe0fMasehua.md": [
+    "gods/🕳️Masehua.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -5354,7 +5389,7 @@
         "bytes": 8456
       }
     ],
-    "gods/\ud83d\udd73\ufe0fRefapilli.md": [
+    "gods/🕳️Refapilli.md": [
       {
         "id": "20260312T111214Z-dfb2952",
         "date": "2026-03-12T11:12:14-04:00",
@@ -5811,6 +5846,13 @@
         "message": "feat: page history, per-note publish gate, and prerendered articles",
         "sha": null,
         "bytes": 3141
+      },
+      {
+        "id": "20261017T050107Z-sync048",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 3141
       }
     ],
     "regions/Drakharpan/nations/Raudskoda/Raudskoda.md": [
@@ -6040,6 +6082,13 @@
         "message": "sync: publish latest codex content",
         "sha": "7ba98a2e18f1d4060d04fd1c184ce64140f66d68",
         "bytes": 1637
+      },
+      {
+        "id": "20261017T050107Z-sync049",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 2944
       }
     ],
     "regions/Kasbahya.md": [
@@ -6049,6 +6098,13 @@
         "message": "sync: publish latest codex content",
         "sha": "7ba98a2e18f1d4060d04fd1c184ce64140f66d68",
         "bytes": 1031
+      },
+      {
+        "id": "20261017T050107Z-sync051",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 1032
       }
     ],
     "regions/Kedantlan.md": [
@@ -6094,6 +6150,13 @@
         "message": "created",
         "sha": null,
         "bytes": 1077
+      },
+      {
+        "id": "20261017T050107Z-sync005",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 1075
       }
     ],
     "gods/Abyroqa.md": [
@@ -6103,6 +6166,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8695
+      },
+      {
+        "id": "20261017T050107Z-sync008",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8668
       }
     ],
     "gods/Bolohua.md": [
@@ -6112,6 +6182,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8830
+      },
+      {
+        "id": "20261017T050107Z-sync009",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8829
       }
     ],
     "gods/Derequi.md": [
@@ -6121,6 +6198,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8634
+      },
+      {
+        "id": "20261017T050107Z-sync010",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8625
       }
     ],
     "gods/Gozara.md": [
@@ -6130,6 +6214,13 @@
         "message": "created",
         "sha": null,
         "bytes": 10861
+      },
+      {
+        "id": "20261017T050107Z-sync011",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 10785
       }
     ],
     "gods/Harbaal.md": [
@@ -6139,6 +6230,13 @@
         "message": "created",
         "sha": null,
         "bytes": 2770
+      },
+      {
+        "id": "20261017T050107Z-sync012",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 2745
       }
     ],
     "gods/Ivahaya.md": [
@@ -6148,6 +6246,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8617
+      },
+      {
+        "id": "20261017T050107Z-sync013",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8620
       }
     ],
     "gods/Kadashar.md": [
@@ -6157,6 +6262,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8924
+      },
+      {
+        "id": "20261017T050107Z-sync014",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8902
       }
     ],
     "gods/Kathorharab.md": [
@@ -6166,6 +6278,13 @@
         "message": "created",
         "sha": null,
         "bytes": 9005
+      },
+      {
+        "id": "20261017T050107Z-sync015",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8983
       }
     ],
     "gods/Kaxatzin.md": [
@@ -6175,6 +6294,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8669
+      },
+      {
+        "id": "20261017T050107Z-sync016",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8651
       }
     ],
     "gods/Kevarotzin.md": [
@@ -6184,6 +6310,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8636
+      },
+      {
+        "id": "20261017T050107Z-sync017",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8627
       }
     ],
     "gods/Kinayotl.md": [
@@ -6193,6 +6326,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8624
+      },
+      {
+        "id": "20261017T050107Z-sync018",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8615
       }
     ],
     "gods/Kvaritzin.md": [
@@ -6202,6 +6342,13 @@
         "message": "created",
         "sha": null,
         "bytes": 9555
+      },
+      {
+        "id": "20261017T050107Z-sync019",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 9537
       }
     ],
     "gods/Leyala.md": [
@@ -6211,6 +6358,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8763
+      },
+      {
+        "id": "20261017T050107Z-sync020",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8753
       }
     ],
     "gods/Lotan.md": [
@@ -6220,6 +6374,13 @@
         "message": "created",
         "sha": null,
         "bytes": 2925
+      },
+      {
+        "id": "20261017T050107Z-sync021",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 2900
       }
     ],
     "gods/Maavacihuatl.md": [
@@ -6229,6 +6390,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8631
+      },
+      {
+        "id": "20261017T050107Z-sync022",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8622
       }
     ],
     "gods/Malagad.md": [
@@ -6238,6 +6406,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8791
+      },
+      {
+        "id": "20261017T050107Z-sync023",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8781
       }
     ],
     "gods/Marmoqed.md": [
@@ -6247,6 +6422,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8760
+      },
+      {
+        "id": "20261017T050107Z-sync024",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8748
       }
     ],
     "gods/Masehua.md": [
@@ -6256,6 +6438,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8618
+      },
+      {
+        "id": "20261017T050107Z-sync025",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8611
       }
     ],
     "gods/Moxilaxaya.md": [
@@ -6265,6 +6454,13 @@
         "message": "created",
         "sha": null,
         "bytes": 9330
+      },
+      {
+        "id": "20261017T050107Z-sync026",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 9317
       }
     ],
     "gods/Niwara.md": [
@@ -6274,6 +6470,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8840
+      },
+      {
+        "id": "20261017T050107Z-sync027",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8831
       }
     ],
     "gods/Qatzera.md": [
@@ -6283,6 +6486,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8773
+      },
+      {
+        "id": "20261017T050107Z-sync030",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8757
       }
     ],
     "gods/Raavvah.md": [
@@ -6292,6 +6502,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8761
+      },
+      {
+        "id": "20261017T050107Z-sync031",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8743
       }
     ],
     "gods/Refapilli.md": [
@@ -6301,6 +6518,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8623
+      },
+      {
+        "id": "20261017T050107Z-sync032",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8616
       }
     ],
     "gods/Rexaya.md": [
@@ -6310,6 +6534,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8632
+      },
+      {
+        "id": "20261017T050107Z-sync033",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8633
       }
     ],
     "gods/Rituals/The Binding of Portions.md": [
@@ -6328,6 +6559,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8864
+      },
+      {
+        "id": "20261017T050107Z-sync034",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8858
       }
     ],
     "gods/Tehontecuhtli.md": [
@@ -6337,6 +6575,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8723
+      },
+      {
+        "id": "20261017T050107Z-sync035",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8698
       }
     ],
     "gods/Temaya.md": [
@@ -6346,6 +6591,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8642
+      },
+      {
+        "id": "20261017T050107Z-sync036",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8644
       }
     ],
     "gods/Tsayidrah.md": [
@@ -6355,6 +6607,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8800
+      },
+      {
+        "id": "20261017T050107Z-sync037",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8782
       }
     ],
     "gods/Xefahua.md": [
@@ -6364,6 +6623,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8979
+      },
+      {
+        "id": "20261017T050107Z-sync038",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8961
       }
     ],
     "gods/Xochbaram.md": [
@@ -6373,6 +6639,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8927
+      },
+      {
+        "id": "20261017T050107Z-sync039",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8902
       }
     ],
     "gods/Yamnahar.md": [
@@ -6382,6 +6655,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8911
+      },
+      {
+        "id": "20261017T050107Z-sync040",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8878
       }
     ],
     "gods/Yaradaat.md": [
@@ -6391,6 +6671,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8753
+      },
+      {
+        "id": "20261017T050107Z-sync041",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8737
       }
     ],
     "gods/Yatbara.md": [
@@ -6400,6 +6687,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8881
+      },
+      {
+        "id": "20261017T050107Z-sync042",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8866
       }
     ],
     "gods/Yekala.md": [
@@ -6409,6 +6703,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8952
+      },
+      {
+        "id": "20261017T050107Z-sync043",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8937
       }
     ],
     "gods/Zemana.md": [
@@ -6418,6 +6719,13 @@
         "message": "created",
         "sha": null,
         "bytes": 8745
+      },
+      {
+        "id": "20261017T050107Z-sync044",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8720
       }
     ],
     "regions/Kedantlan/agamcan.md": [
@@ -6535,6 +6843,78 @@
         "message": "created",
         "sha": null,
         "bytes": 1114
+      }
+    ],
+    "chronicles/The History of Areshnaat.md": [
+      {
+        "id": "20261017T050107Z-sync001",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 855
+      }
+    ],
+    "cultures/calendar/The Tide-Week.md": [
+      {
+        "id": "20261017T050107Z-sync002",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 2877
+      }
+    ],
+    "figures/Salme Brighthar.md": [
+      {
+        "id": "20261017T050107Z-sync006",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 491
+      }
+    ],
+    "figures/Uku Raamskord.md": [
+      {
+        "id": "20261017T050107Z-sync007",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 485
+      }
+    ],
+    "gods/Ooxapyotl.md": [
+      {
+        "id": "20261017T050107Z-sync028",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 2199
+      }
+    ],
+    "realms/Aamantlan.md": [
+      {
+        "id": "20261017T050107Z-sync046",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 1268
+      }
+    ],
+    "realms/The Four Moons.md": [
+      {
+        "id": "20261017T050107Z-sync047",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 3364
+      }
+    ],
+    "regions/Ereslim/Ereslim.md": [
+      {
+        "id": "20261017T050107Z-sync050",
+        "date": "2026-10-17T05:01:07.649Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 1395
       }
     ]
   }

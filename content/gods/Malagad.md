@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Celestial"
+tier: Celestial
 icon: LiStars
-xibanal_name: "Lookaya"
-xibanal_title: "Ooluh Lookaya"
-xibanal_principle: "Lookyotl"
-etymology: "l-a-k, send, messenger (la'ak); fortunes not covered"
+xibanal_name: Lookaya
+xibanal_title: Ooluh Lookaya
+xibanal_principle: Lookyotl
+etymology: l-a-k, send, messenger (la'ak); fortunes not covered
 name: Malagad
 title: Malagad
 slug: malagad
@@ -15,16 +15,16 @@ honorific_title: ""
 pantheon:
   - Areshnaati
   - Ramtilim
-divine_rank: ""
+divine_rank: Major
 gender: ""
 nature: neutral
 ethos: ""
-major_influence: ""
+major_influence: Messages
 minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/malagad_main.png]]"
+image_avatar: "![[malagad_main.png]]"
 parents: []
 siblings: []
 offspring: []

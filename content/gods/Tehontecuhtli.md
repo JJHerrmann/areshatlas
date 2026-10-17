@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Waters"
+tier: Waters
 icon: LiWavesHorizontal
-xibanal_name: "Chooxakaya"
-xibanal_title: "Ooluh Chooxakaya"
-xibanal_principle: "Chooxakyotl"
-etymology: "ch-sh-k, darkness (choshekh)"
+xibanal_name: Chooxakaya
+xibanal_title: Ooluh Chooxakaya
+xibanal_principle: Chooxakyotl
+etymology: ch-sh-k, darkness (choshekh)
 name: Tehontecuhtli
 title: Tehontecuhtli
 slug: ""
@@ -13,7 +13,7 @@ section: pantheon
 epithet: The God of Dark Waters
 honorific_title: ""
 pantheon: ""
-divine_rank: ""
+divine_rank: Major
 gender: ""
 nature: ""
 ethos: ""
@@ -21,7 +21,7 @@ major_influence: ""
 minor_influences: []
 spheres: []
 avatars: []
-avatar_image: "![[/_images/tehontecuhitli_main.png]]"
+avatar_image: "![[tehontecuhitli_main.png]]"
 parents: []
 siblings: []
 offspring: []
@@ -131,7 +131,7 @@ navboxes: []
 tags:
   - deity
   - religion
-image_avatar: "![[/_images/tehontecuhitli_main.png]]"
+image_avatar: "![[tehontecuhitli_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Waters"
+tier: Waters
 icon: LiWavesHorizontal
-xibanal_name: "Nisaya"
-xibanal_title: "Iluh Nisaya"
-xibanal_principle: "Noosayotl"
-etymology: "n-s-e, journey (nasa)"
+xibanal_name: Nisaya
+xibanal_title: Iluh Nisaya
+xibanal_principle: Noosayotl
+etymology: n-s-e, journey (nasa)
 name: Abyroqa
 title: ""
 slug: ""
@@ -13,16 +13,16 @@ section: pantheon
 epithet: The Goddess of Travels and Wayfairing
 honorific_title: ""
 pantheon: ""
-divine_rank: ""
-gender: "Female"
+divine_rank: Minor
+gender: Female
 nature: ""
 ethos: ""
 major_influence: ""
 minor_influences: []
 spheres: []
 avatars: []
-avatar_image: "![[/_images/abyroqa_main.png]]"
-image_avatar: "![[/_images/abyroqa_main.png]]"
+avatar_image: "![[abyroqa_main.png]]"
+image_avatar: "![[abyroqa_main.png]]"
 parents: []
 siblings: []
 offspring: []

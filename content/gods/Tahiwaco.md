@@ -15,7 +15,7 @@ honorific_title: ""
 pantheon:
   - "[[Yekatlan]]"
   - "[[Yekatlan]]"
-divine_rank: ""
+divine_rank: Major
 gender: Male
 nature: ""
 ethos: ""
@@ -24,7 +24,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/tahiwaco_main.png]]"
+image_avatar: "![[tahiwaco_main.png]]"
 parents: []
 siblings:
   - "[[Bolohua]]"

@@ -18,6 +18,15 @@
           "Male"
         ]
       ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ]
+      ]
     }
   ]
 }

@@ -13,5 +13,15 @@
     },
     "symbol": null
   },
-  "sections": []
+  "sections": [
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ]
+      ]
+    }
+  ]
 }

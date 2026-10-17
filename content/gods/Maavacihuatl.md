@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Chthonic"
+tier: Chthonic
 icon: FasMountain
-xibanal_name: "Nipaxaya"
-xibanal_title: "Iluh Nipaxaya"
-xibanal_principle: "Noopaxyotl"
-etymology: "n-p-sh, soul (nefesh)"
+xibanal_name: Nipaxaya
+xibanal_title: Iluh Nipaxaya
+xibanal_principle: Noopaxyotl
+etymology: n-p-sh, soul (nefesh)
 name: Maavacihuatl
 title: Maavacihuatl
 slug: ""
@@ -13,8 +13,8 @@ section: pantheon
 epithet: The Lady of Souls
 honorific_title: ""
 pantheon: ""
-divine_rank: ""
-gender: "Female"
+divine_rank: Major
+gender: Female
 nature: ""
 ethos: ""
 major_influence: ""

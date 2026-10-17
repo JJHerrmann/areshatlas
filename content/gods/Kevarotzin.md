@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Chthonic"
+tier: Chthonic
 icon: FasMountain
-xibanal_name: "Qibaraya"
-xibanal_title: "Iluh Qibaraya"
-xibanal_principle: "Qoobaryotl"
-etymology: "q-b-r, grave, tomb (qever)"
+xibanal_name: Qibaraya
+xibanal_title: Iluh Qibaraya
+xibanal_principle: Qoobaryotl
+etymology: q-b-r, grave, tomb (qever)
 name: Kevarotzin
 title: Kevarotzin
 slug: ""
@@ -13,8 +13,8 @@ section: pantheon
 epithet: The Mistress of Tombs
 honorific_title: ""
 pantheon: ""
-divine_rank: ""
-gender: "Female"
+divine_rank: Major
+gender: Female
 nature: ""
 ethos: ""
 major_influence: ""

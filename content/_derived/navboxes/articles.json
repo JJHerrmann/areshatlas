@@ -127,6 +127,15 @@
     "navboxes": []
   },
   {
+    "slug": "ereslim",
+    "title": "Ereslim",
+    "section": "regions",
+    "href": "/regions/ereslim",
+    "source_relative_path": "regions/Ereslim/Ereslim.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "glossary",
     "title": "Glossary",
     "section": "chronicles",
@@ -495,6 +504,15 @@
     "navboxes": []
   },
   {
+    "slug": "ooxapyotl",
+    "title": "Ooxapyotl",
+    "section": "pantheon",
+    "href": "/pantheon/ooxapyotl",
+    "source_relative_path": "gods/Ooxapyotl.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "orvara",
     "title": "Orvara",
     "section": "regions",
@@ -671,7 +689,7 @@
     "navboxes": []
   },
   {
-    "slug": "the-binding-of-niawara",
+    "slug": "the-binding-of-niwara",
     "title": "The Binding of Niwara",
     "section": "pantheon",
     "href": "/pantheon/myths/the-binding-of-niwara",
@@ -689,11 +707,29 @@
     "navboxes": []
   },
   {
+    "slug": "the-history-of-areshnaat",
+    "title": "The History of Areshnaat",
+    "section": "chronicles",
+    "href": "/chronicles/the-history-of-areshnaat",
+    "source_relative_path": "chronicles/The History of Areshnaat.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
     "slug": "the-seamire",
     "title": "The Seamire",
     "section": "regions",
     "href": "/regions/drakharpan/features/the-seamire",
     "source_relative_path": "regions/Drakharpan/features/The Seamire.md",
+    "aliases": [],
+    "navboxes": []
+  },
+  {
+    "slug": "the-tide-week",
+    "title": "The Tide-Week",
+    "section": "cultures",
+    "href": "/cultures/calendar/the-tide-week",
+    "source_relative_path": "cultures/calendar/The Tide-Week.md",
     "aliases": [],
     "navboxes": []
   },

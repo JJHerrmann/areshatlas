@@ -9,5 +9,19 @@
     "avatar": null,
     "symbol": null
   },
-  "sections": []
+  "sections": [
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Primarch"
+        ],
+        [
+          "Major Influence",
+          "Genesis"
+        ]
+      ]
+    }
+  ]
 }

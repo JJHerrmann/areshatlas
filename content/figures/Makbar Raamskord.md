@@ -4,7 +4,7 @@ image: "![[makab.png]]"
 name: Makbar Raamskord
 title: Makbar Raamskord
 slug: makbar-raamskord
-sort_key: "Raamskord, Makbar"
+sort_key: Raamskord, Makbar
 aliases:
 summary: ""
 publish: true

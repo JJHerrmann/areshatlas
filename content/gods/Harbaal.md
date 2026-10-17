@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Chthonic"
+tier: Chthonic
 icon: FasMountain
-xibanal_name: "Hoorhuaya"
-xibanal_title: "Ooluh Hoorhuaya"
-xibanal_principle: "Hooruhyotl"
-etymology: "h-r, mountain (har)"
+xibanal_name: Hoorhuaya
+xibanal_title: Ooluh Hoorhuaya
+xibanal_principle: Hooruhyotl
+etymology: h-r, mountain (har)
 name: Harbaal
 title: Harbal
 slug: harbaal
@@ -15,7 +15,7 @@ honorific_title: ""
 pantheon:
   - Areshnaati
   - "[[Xoluatl]]"
-divine_rank: ""
+divine_rank: Major
 gender: ""
 nature: ""
 ethos: ""
@@ -23,8 +23,8 @@ major_influence: ""
 minor_influences: []
 spheres: []
 avatars: []
-avatar_image: "![[/_images/Harbaal_main.png]]"
-image_avatar: "![[/_images/Harbaal_main.png]]"
+avatar_image: "![[Harbaal_main.png]]"
+image_avatar: "![[Harbaal_main.png]]"
 parents: []
 siblings: []
 offspring: []

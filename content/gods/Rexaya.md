@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Alpha and Omega"
+tier: Alpha and Omega
 icon: LiInfinity
-xibanal_name: "Rooxaya"
-xibanal_title: "Ooluh Rooxaya"
-xibanal_principle: "Rooxyotl"
-etymology: "r-a-sh, head, beginning (reshit)"
+xibanal_name: Rooxaya
+xibanal_title: Ooluh Rooxaya
+xibanal_principle: Rooxyotl
+etymology: r-a-sh, head, beginning (reshit)
 name: Rexaya
 title: Rexaya
 slug: rexaya
@@ -13,11 +13,11 @@ section: pantheon
 epithet: The God of Genesis
 honorific_title: ""
 pantheon: ""
-divine_rank: ""
+divine_rank: Primarch
 gender: ""
 nature: ""
 ethos: ""
-major_influence: ""
+major_influence: Genesis
 minor_influences: []
 spheres: []
 avatars: []

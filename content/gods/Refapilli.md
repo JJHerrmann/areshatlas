@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Chthonic"
+tier: Chthonic
 icon: FasMountain
-xibanal_name: "Oovabaya"
-xibanal_title: "Ooluh Oovabaya"
-xibanal_principle: "Oovabyotl"
-etymology: "a-v-b, spirit, ghost (ov)"
+xibanal_name: Oovabaya
+xibanal_title: Ooluh Oovabaya
+xibanal_principle: Oovabyotl
+etymology: a-v-b, spirit, ghost (ov)
 name: Refapilli
 title: Refapilli
 slug: ""
@@ -13,7 +13,7 @@ section: pantheon
 epithet: The God of Ghosts
 honorific_title: ""
 pantheon: ""
-divine_rank: ""
+divine_rank: Major
 gender: ""
 nature: ""
 ethos: ""

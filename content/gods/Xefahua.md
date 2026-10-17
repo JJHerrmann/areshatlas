@@ -27,7 +27,7 @@ minor_influences:
   - Abundance
 spheres: []
 avatars: []
-avatar_image: "![[/_images/xefahua_main.png]]"
+avatar_image: "![[xefahua_main.png]]"
 parents:
   - "[[Qatzera]]"
   - "[[Tsayidrah]]"
@@ -149,7 +149,7 @@ navboxes: []
 tags:
   - deity
   - religion
-image_avatar: "![[/_images/xefahua_main.png]]"
+image_avatar: "![[xefahua_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

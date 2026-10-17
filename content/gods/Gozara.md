@@ -34,7 +34,7 @@ spheres:
   - decree
   - dawn
 avatars: []
-avatar_image: "![[/_images/gozara_main.png]]"
+avatar_image: "![[gozara_main.png]]"
 parents: []
 siblings: []
 offspring:
@@ -179,8 +179,8 @@ sacred_color_swatches:
   - "#5A3924 #8A5A34 #D9A15C"
 forbidden_colors_swatches:
 primary_church_location: The House of the Solar Weight
-image_avatar: "![[/_images/gozara_main.png]]"
-image_symbol: "![[Authorship/roleplaying/worlds/aresh/codex-content/_images/Artboard 2god_symbol.png]]"
+image_avatar: "![[gozara_main.png]]"
+image_symbol: "![[Artboard 2god_symbol.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

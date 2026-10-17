@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Chthonic"
+tier: Chthonic
 icon: FasMountain
-xibanal_name: "Ibalaya"
-xibanal_title: "Iluh Ibalaya"
-xibanal_principle: "Ooballotl"
-etymology: "a-b-l, mourn (aval)"
+xibanal_name: Ibalaya
+xibanal_title: Iluh Ibalaya
+xibanal_principle: Ooballotl
+etymology: a-b-l, mourn (aval)
 name: Kinayotl
 title: Kinayotl
 slug: ""
@@ -13,8 +13,8 @@ section: pantheon
 epithet: The Goddess of Mourning
 honorific_title: ""
 pantheon: ""
-divine_rank: ""
-gender: "Female"
+divine_rank: Major
+gender: Female
 nature: ""
 ethos: ""
 major_influence: ""

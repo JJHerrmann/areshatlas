@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Celestial"
+tier: Celestial
 icon: LiStars
-xibanal_name: "Yoodaya"
-xibanal_title: "Ooluh Yoodaya"
-xibanal_principle: "Yoodayotl"
-etymology: "y-d-e, know (yada)"
+xibanal_name: Yoodaya
+xibanal_title: Ooluh Yoodaya
+xibanal_principle: Yoodayotl
+etymology: y-d-e, know (yada)
 name: Yaradaat
 title: Yaradaat
 slug: yaradaat
@@ -15,7 +15,7 @@ honorific_title: ""
 pantheon:
   - Areshnaati
   - Ramtilim
-divine_rank: ""
+divine_rank: Major
 gender: ""
 nature: ""
 ethos: ""
@@ -24,7 +24,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/Yaradaat_main.png]]"
+image_avatar: "![[Yaradaat_main.png]]"
 parents: []
 siblings: []
 offspring: []

@@ -29,6 +29,10 @@
       "title": "Spiritual Info",
       "rows": [
         [
+          "Rank",
+          "Major"
+        ],
+        [
           "Major Influence",
           "Night"
         ]

@@ -15,7 +15,7 @@ honorific_title: The Formless One
 pantheon:
   - "[[Yekatlan]]"
   - "[[Ramtilim]]"
-divine_rank: ""
+divine_rank: Major
 gender: Male
 nature: ""
 ethos: ""
@@ -23,7 +23,7 @@ major_influence: Creation
 minor_influences: []
 spheres: []
 avatars: []
-avatar_image: "![[/_images/yatbara_main.png]]"
+avatar_image: "![[yatbara_main.png]]"
 parents:
   - "[[Yekala]]"
   - "[[Moxilaxaya]]"
@@ -141,7 +141,7 @@ tags:
   - deity
   - religion
 primary_topic: Dieties of Areshnaat
-image_avatar: "![[/_images/yatbara_main.png]]"
+image_avatar: "![[yatbara_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

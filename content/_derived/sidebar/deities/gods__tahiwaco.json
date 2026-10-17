@@ -40,6 +40,10 @@
       "title": "Spiritual Info",
       "rows": [
         [
+          "Rank",
+          "Major"
+        ],
+        [
           "Major Influence",
           "Chaos"
         ]

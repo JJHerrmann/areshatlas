@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Celestial"
+tier: Celestial
 icon: LiStars
-xibanal_name: "Roopaya"
-xibanal_title: "Ooluh Roopaya"
-xibanal_principle: "Roopayotl"
-etymology: "r-p-a, heal (rapha)"
+xibanal_name: Roopaya
+xibanal_title: Ooluh Roopaya
+xibanal_principle: Roopayotl
+etymology: r-p-a, heal (rapha)
 name: Marmoqed
 title: Marmoqed
 slug: marmoqed
@@ -15,16 +15,16 @@ honorific_title: ""
 pantheon:
   - Areshnaati
   - Ramtilim
-divine_rank: ""
+divine_rank: Major
 gender: ""
 nature: lawful
 ethos: ""
-major_influence: ""
+major_influence: Hearth
 minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/Marmoqed_main.png]]"
+image_avatar: "![[Marmoqed_main.png]]"
 parents: []
 siblings: []
 offspring: []

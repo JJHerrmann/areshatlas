@@ -37,6 +37,10 @@
       "title": "Spiritual Info",
       "rows": [
         [
+          "Rank",
+          "Major"
+        ],
+        [
           "Ethos",
           "lawful"
         ]

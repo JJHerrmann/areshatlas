@@ -29,6 +29,10 @@
       "title": "Spiritual Info",
       "rows": [
         [
+          "Rank",
+          "Major"
+        ],
+        [
           "Major Influence",
           "Moon"
         ]
@@ -40,8 +44,8 @@
         [
           "Parents",
           [
-            "[[Yekala]]",
-            "[[Niwara]]"
+            "[[Bolohua]]",
+            "[[Moxilaxaya]]"
           ]
         ]
       ]

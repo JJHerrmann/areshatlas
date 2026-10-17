@@ -11,6 +11,19 @@
   },
   "sections": [
     {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Primarch"
+        ],
+        [
+          "Major Influence",
+          "Finality"
+        ]
+      ]
+    },
+    {
       "title": "Divine Relations",
       "rows": [
         [

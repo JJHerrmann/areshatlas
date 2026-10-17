@@ -25,6 +25,15 @@
           ]
         ]
       ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Minor"
+        ]
+      ]
     }
   ]
 }

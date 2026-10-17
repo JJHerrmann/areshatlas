@@ -1,0 +1,23 @@
+{
+  "type": "deity",
+  "title": "Ooxapyotl",
+  "subtitle": "The God of Magic and Mysteries",
+  "source_relative_path": "gods/Ooxapyotl.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": null,
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Primarch"
+        ]
+      ]
+    }
+  ]
+}

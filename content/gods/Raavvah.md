@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Celestial"
+tier: Celestial
 icon: LiStars
-xibanal_name: "Ribaya"
-xibanal_title: "Iluh Ribaya"
-xibanal_principle: "Roobyotl"
-etymology: "r-e-b, famine (ra'av)"
+xibanal_name: Ribaya
+xibanal_title: Iluh Ribaya
+xibanal_principle: Roobyotl
+etymology: r-e-b, famine (ra'av)
 name: Raavvah
 title: Raavvah
 slug: raavvah
@@ -15,8 +15,8 @@ honorific_title: ""
 pantheon:
   - Areshnaati
   - Ramtilim
-divine_rank: ""
-gender: "Female"
+divine_rank: Major
+gender: Female
 nature: ""
 ethos: ""
 major_influence: ""
@@ -24,7 +24,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/raavvah_main.png]]"
+image_avatar: "![[raavvah_main.png]]"
 parents: []
 siblings: []
 offspring: []

@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Chthonic"
+tier: Chthonic
 icon: FasMountain
-xibanal_name: "Ooxaraya"
-xibanal_title: "Ooluh Ooxaraya"
-xibanal_principle: "Ooxaryotl"
-etymology: "e-sh-r, ten, tithe (asar)"
+xibanal_name: Ooxaraya
+xibanal_title: Ooluh Ooxaraya
+xibanal_principle: Ooxaryotl
+etymology: e-sh-r, ten, tithe (asar)
 name: Masehua
 title: Masehua
 slug: ""
@@ -13,7 +13,7 @@ section: pantheon
 epithet: The God of Tithe
 honorific_title: ""
 pantheon: ""
-divine_rank: ""
+divine_rank: Major
 gender: ""
 nature: ""
 ethos: ""

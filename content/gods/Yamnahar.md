@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Waters"
+tier: Waters
 icon: LiWavesHorizontal
-xibanal_name: "Yoonhuaya"
-xibanal_title: "Ooluh Yoonhuaya"
-xibanal_principle: "Yoomuhyotl"
-etymology: "y-m, sea (yam)"
+xibanal_name: Yoonhuaya
+xibanal_title: Ooluh Yoonhuaya
+xibanal_principle: Yoomuhyotl
+etymology: y-m, sea (yam)
 name: Yamnahar
 title: Yamnahar
 slug: yamnahar
@@ -15,7 +15,7 @@ honorific_title: ""
 pantheon:
   - Areshnaati
   - Ramtilim
-divine_rank: ""
+divine_rank: Minor
 gender: ""
 nature: ""
 ethos: ""

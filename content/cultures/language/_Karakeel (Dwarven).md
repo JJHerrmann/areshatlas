@@ -257,3 +257,104 @@ Estonian-inspired texture can lean on forms like:
 - Prefer repeated family patterns within a region so names feel historically related.
 - Dwarven names should feel heavier, tighter, and more practical than elven ones.
 - Prestige prefixes should read like inscriptions, dynastic propaganda, or liturgical fossil forms rather than daily speech.
+---
+
+tags:
+
+- language
+- karakeel status: working list
+
+---
+
+# Karakeel Lexicon (working list)
+
+Netzhar (Hebrew) roots, Balto-Finnic affixes, Estonian vowel shaping. Sound rules used: b > p, q > k, ch > h, z > s (dz kept for the beard marker), tz > ts, sh written š, v written w, ayin drops, initial aleph carries its vowel, first-syllable stress.
+
+Status: **C** canon, **S** stated by Rook, **P** proposed. Everything not marked C or S is P.
+
+## Qualities (adjectives and descriptors)
+
+|Karakeel|Root|Meaning|Status|
+|---|---|---|---|
+|Pah-|b-h-r (bahir)|bright|C (Platinum epithet)|
+|Raam-|r-w-m|high, exalted|P|
+|Yak-|y-q-r (yaqar)|precious|P|
+|Gipor|g-b-r|mighty, warrior|P|
+|Hasak|ch-z-q|strong|P|
+|Amits|a-m-tz|brave|P|
+|Yašar|y-sh-r|upright|P|
+|Hakam|ch-k-m|wise|P|
+|Parak|b-r-k|blessed|P|
+|Dawit|d-w-d|beloved|P|
+|Šalom|sh-l-m|whole, at peace|P|
+|Katul (orc-shaped)|g-d-l|great|P|
+|Odem|a-d-m|red, ruddy|P|
+|Riš-|r-a-sh (rishon)|first|P|
+|Kol-|k-l (kol) / q-w-l (qol)|all / voice|P|
+
+## Hair (for -ser clan names)
+
+|Karakeel|Root|Meaning|Note|
+|---|---|---|---|
+|-ser|s-'-r (se'ar)|hair|Apostate clan marker, in place of -dza (beard). P|
+|Pera-|p-r-'|loose, unshorn hair|The Nazirite's uncut hair, a vow (Numbers 6:5). P|
+|Tal-|t-l-l (taltalim)|curled, wavy locks|Song of Songs 5:11. P|
+|Tsem-|tz-m-r (tzemer)|wool, woolly|Daniel 7:9, hair like pure wool. P|
+|Gas-|g-z-z|shorn|P|
+|Yak-|y-q-r|precious (jewel)|Yakser, Jewelhair. S|
+
+## Peoples and polity
+
+|Karakeel|Meaning|Status|
+|---|---|---|
+|Kara; karalane, karalased|the dwarves (k-r-h dig / q-r-a call out); one dwarf; dwarves|P|
+|Kord|a beard braid: founding line and its strands|C (braid sense S)|
+|-dza|beard, blood (zaqan)|C|
+|Koda|hall; the seat and its government|C|
+|patkoda, patkojad|daughter hall(s) (b-t daughter)|P|
+|noun + s + koda|daughter hall named for its work (Raudskoda, Raamskoda)|P|
+|-la|sept settlement|P (codex)|
+|-maa|realm, country (Estonian maa)|P|
+|Hepel|allotted range, scriptural or legal (chevel)|P|
+|Koldza; Koldzakond|the Rainbow-beard; the order as a body|P (R6)|
+|Riškol|the First Voice|P|
+|Sar|jarl, lord under a sovereign (s-r-r)|P|
+|Saride Sar|Sar of Sars (Daniel 8:25)|P|
+|Rossor|elected head of the Sars (rosh + sar)|S|
+|Hošen|the breastplate (choshen)|P|
+|Naddzarah|wanderers of the blood|C|
+|Tahmelek|Underking (tachat + melekh)|P (codex)|
+|gerlane|freed outsider thralls, gith analog (ger)|P|
+
+## Time
+
+|Karakeel|Meaning|Status|
+|---|---|---|
+|-aeg|age, era (Estonian aeg)|P|
+|Riškolaeg|the Age of the First Voice (Age of Myth)|S (name), P (form)|
+|Kordade aeg|the Age of Kords|S (name), P (form)|
+|-kuu|month (Estonian kuu, moon)|P|
+|the Lighting / the Darkest Night|New Year, south / north|S|
+
+## Months (breastplate order from the Lighting)
+
+|#|Month|Stone (Hebrew)|
+|---|---|---|
+|1|Odekuu|odem, carnelian (red)|
+|2|Pitdakuu|pitdah, peridot or topaz|
+|3|Parekuu|bareqet, emerald|
+|4|Nopekuu|nofekh, turquoise or garnet|
+|5|Sappikuu|sappir, lapis or sapphire|
+|6|Yahakuu|yahalom|
+|7|Lešekuu|leshem, jacinth or amber|
+|8|Šewokuu|shevo, agate|
+|9|Ahlakuu|achlamah, amethyst|
+|10|Taršikuu|tarshish, chrysolite or beryl|
+|11|Šohakuu|shoham, onyx|
+|12|Yašpekuu|yashfeh, jasper|
+
+All P.
+
+## Personal names (male)
+
+Craft: Haraš (smith), Pitah (engraver), Hatsep (stonecutter, S as the Rossor's name), Pana (builder), Epen (stone), Tsur (rock), Parsel (iron). Virtue: Gipor, Hasak, Amits, Šamar (guardian), Yašar, Hakam, Eser (help). Blessing: Natan (gave), Parak, Dawit, Šalom, Rapa (healer), Šapat (judge). Devout forms add Korb front or back (Korbnatan, Natankorb). Apostates drop it.

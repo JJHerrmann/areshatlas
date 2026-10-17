@@ -1,11 +1,17 @@
 {
   "bolohua": {
+    "offspring": [
+      "[[Leyala]]"
+    ],
     "siblings": [
       "[[Tahiwaco]]",
       "[[Yekala]]"
     ]
   },
   "gozara": {
+    "offspring": [
+      "[[Kathorharab]]"
+    ],
     "allies": [
       "[[Kvaritzin, Baxeol]]",
       "[[Xefahua]]"
@@ -32,6 +38,12 @@
       "[[Niwara]]"
     ]
   },
+  "leyala": {
+    "parents": [
+      "[[Bolohua]]",
+      "[[Moxilaxaya]]"
+    ]
+  },
   "lotan": {
     "parents": [
       "[[Bolohua]]"
@@ -53,7 +65,7 @@
       "[[Yekala]]"
     ],
     "offspring": [
-      "[[Kathorharab]]",
+      "[[Leyala]]",
       "[[Niwara]]",
       "[[Yatbara]]"
     ],
@@ -70,7 +82,7 @@
       "[[Gozara]]"
     ],
     "offspring": [
-      "[[Leyala]]"
+      "[[Kathorharab]]"
     ],
     "parents": [
       "[[Moxilaxaya]]"
@@ -151,12 +163,10 @@
       "[[Bolohua]]",
       "[[Tahiwaco]]"
     ],
-    "offspring": [
-      "[[Kathorharab]]",
-      "[[Leyala]]",
+    "consorts": [
       "[[Yatbara]]"
     ],
-    "consorts": [
+    "offspring": [
       "[[Yatbara]]"
     ]
   },

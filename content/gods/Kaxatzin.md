@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Chthonic"
+tier: Chthonic
 icon: FasMountain
-xibanal_name: "Xichataya"
-xibanal_title: "Iluh Xichataya"
-xibanal_principle: "Xoochatyotl"
-etymology: "sh-ch-t, pit, grave (shachat)"
+xibanal_name: Xichataya
+xibanal_title: Iluh Xichataya
+xibanal_principle: Xoochatyotl
+etymology: sh-ch-t, pit, grave (shachat)
 name: Kaxatzin
 title: Kaxatzin
 slug: ""
@@ -13,8 +13,8 @@ section: pantheon
 epithet: The Goddess of Graves
 honorific_title: ""
 pantheon: ""
-divine_rank: ""
-gender: "Female"
+divine_rank: Major
+gender: Female
 nature: ""
 ethos: ""
 major_influence: ""
@@ -22,7 +22,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/kaxatzin_main.png]]"
+image_avatar: "![[kaxatzin_main.png]]"
 parents: []
 siblings: []
 offspring: []

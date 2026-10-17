@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Celestial"
+tier: Celestial
 icon: LiStars
-xibanal_name: "Qootzaraya"
-xibanal_title: "Ooluh Qootzaraya"
-xibanal_principle: "Qootzaryotl"
-etymology: "q-tz-r, reap, harvest (qatzar)"
+xibanal_name: Qootzaraya
+xibanal_title: Ooluh Qootzaraya
+xibanal_principle: Qootzaryotl
+etymology: q-tz-r, reap, harvest (qatzar)
 name: Qatzera
 title: Qatzera
 slug: qatzera
@@ -15,7 +15,7 @@ honorific_title: ""
 pantheon:
   - Areshnaati
   - Ramtilim
-divine_rank: ""
+divine_rank: Major
 gender: ""
 nature: ""
 ethos: lawful
@@ -24,7 +24,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/qatzera_main.png]]"
+image_avatar: "![[qatzera_main.png]]"
 parents: []
 siblings: []
 offspring: []

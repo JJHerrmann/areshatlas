@@ -22,8 +22,8 @@ major_influence: Abyss
 minor_influences: []
 spheres: []
 avatars: []
-avatar_image: "![[/_images/bolohua_main.png]]"
-image_avatar: "![[/_images/bolohua_main.png]]"
+avatar_image: "![[bolohua_main.png]]"
+image_avatar: "![[bolohua_main.png]]"
 parents: []
 siblings:
   - "[[Moxilaxaya]]"
@@ -31,6 +31,7 @@ siblings:
   - "[[Tahiwaco]]"
 offspring:
   - "[[Lotan]]"
+  - "[[Leyala]]"
 consorts: []
 allies: []
 foes: []

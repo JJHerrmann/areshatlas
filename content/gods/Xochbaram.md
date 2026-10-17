@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Celestial"
+tier: Celestial
 icon: LiStars
-xibanal_name: "Sooraya"
-xibanal_title: "Ooluh Sooraya"
-xibanal_principle: "Sooryotl"
-etymology: "s-e-r, storm (sa'ar); revels not covered"
+xibanal_name: Sooraya
+xibanal_title: Ooluh Sooraya
+xibanal_principle: Sooryotl
+etymology: s-e-r, storm (sa'ar); revels not covered
 name: Xochbaram
 title: Xochbaram
 slug: xochbaram
@@ -15,7 +15,7 @@ honorific_title: ""
 pantheon:
   - Areshnaati
   - Ramtilim
-divine_rank: ""
+divine_rank: Major
 gender: ""
 nature: ""
 ethos: chaotic
@@ -23,7 +23,7 @@ major_influence: ""
 minor_influences: []
 spheres: []
 avatars: []
-avatar_image: "![[/_images/Xochbaram_main.png]]"
+avatar_image: "![[Xochbaram_main.png]]"
 parents: []
 siblings: []
 offspring: []
@@ -143,7 +143,7 @@ sacred_color_swatches:
   - "#990000"
   - "#0F52BA"
   - "#8C6A1C #C9A227 #F2D36B"
-image_avatar: "![[/_images/Xochbaram_main.png]]"
+image_avatar: "![[Xochbaram_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

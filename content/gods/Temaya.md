@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Alpha and Omega"
+tier: Alpha and Omega
 icon: LiInfinity
-xibanal_name: "Toomamaya"
-xibanal_title: "Ooluh Toomamaya"
-xibanal_principle: "Toomanyotl"
-etymology: "t-m-m, complete, finished (tamam)"
+xibanal_name: Toomamaya
+xibanal_title: Ooluh Toomamaya
+xibanal_principle: Toomanyotl
+etymology: t-m-m, complete, finished (tamam)
 name: Temaya
 title: Temaya
 slug: temaya
@@ -13,11 +13,11 @@ section: pantheon
 epithet: The God of Finalities
 honorific_title: ""
 pantheon: ""
-divine_rank: ""
+divine_rank: Primarch
 gender: ""
 nature: ""
 ethos: ""
-major_influence: ""
+major_influence: Finality
 minor_influences: []
 spheres: []
 avatars: []

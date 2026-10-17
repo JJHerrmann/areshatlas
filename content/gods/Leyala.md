@@ -14,7 +14,7 @@ epithet: The Shepard of Zodiacs
 honorific_title: ""
 pantheon:
   - "[[Yekatlan]]"
-divine_rank: ""
+divine_rank: Major
 gender: ""
 nature: ""
 ethos: ""
@@ -22,10 +22,10 @@ major_influence: Moon
 minor_influences: []
 spheres: []
 avatars: []
-avatar_image: "![[/_images/Leyala_main.png]]"
+avatar_image: "![[Leyala_main.png]]"
 parents:
-  - "[[Yekala]]"
-  - "[[Niwara]]"
+  - "[[Bolohua]]"
+  - "[[Moxilaxaya]]"
 siblings: []
 offspring: []
 consorts: []
@@ -136,7 +136,7 @@ navboxes:
 tags:
   - deity
   - religion
-image_avatar: "![[/_images/Leyala_main.png]]"
+image_avatar: "![[Leyala_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

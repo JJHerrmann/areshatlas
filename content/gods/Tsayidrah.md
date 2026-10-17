@@ -1,11 +1,11 @@
 ---
 type: deity
-tier: "Celestial"
+tier: Celestial
 icon: LiStars
-xibanal_name: "Tzivadaya"
-xibanal_title: "Iluh Tzivadaya"
-xibanal_principle: "Tzoovadyotl"
-etymology: "tz-v-d, hunt (tzud); fertility not covered"
+xibanal_name: Tzivadaya
+xibanal_title: Iluh Tzivadaya
+xibanal_principle: Tzoovadyotl
+etymology: tz-v-d, hunt (tzud); fertility not covered
 name: Tsayidrah
 title: Tsayidrah
 slug: tsayidrah
@@ -15,8 +15,8 @@ honorific_title: ""
 pantheon:
   - Areshnaati
   - Ramtilim
-divine_rank: ""
-gender: "Female"
+divine_rank: Major
+gender: Female
 nature: ""
 ethos: ""
 major_influence: ""
@@ -24,7 +24,7 @@ minor_influences: []
 spheres: []
 avatars: []
 avatar_image: ""
-image_avatar: "![[/_images/Tsayidrah_main.png]]"
+image_avatar: "![[Tsayidrah_main.png]]"
 parents: []
 siblings: []
 offspring: []

@@ -13,7 +13,7 @@ section: pantheon
 epithet: The Primal Chained
 honorific_title: ""
 pantheon: ""
-divine_rank: ""
+divine_rank: Major
 gender: Female
 nature: ""
 ethos: ""

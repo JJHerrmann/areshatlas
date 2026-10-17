@@ -32,10 +32,10 @@ spheres:
   - Forge
   - War
 avatars: []
-avatar_image: "![[/_images/kathorharab_main.png]]"
+avatar_image: "![[kathorharab_main.png]]"
 parents:
-  - "[[Yekala]]"
-  - "[[Moxilaxaya]]"
+  - "[[Gozara]]"
+  - "[[Niwara]]"
 siblings: []
 offspring: []
 consorts:
@@ -149,7 +149,7 @@ tags:
   - religion
 primary_topic: Dieties of Areshnaat
 root:
-image_avatar: "![[/_images/kathorharab_main.png]]"
+image_avatar: "![[kathorharab_main.png]]"
 ---
 <!--
 Populate frontmatter first. Every placeholder below matches a frontmatter key exactly.

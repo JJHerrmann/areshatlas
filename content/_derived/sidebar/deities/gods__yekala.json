@@ -40,6 +40,10 @@
       "title": "Spiritual Info",
       "rows": [
         [
+          "Rank",
+          "Major"
+        ],
+        [
           "Major Influence",
           "Possibility"
         ],
@@ -70,8 +74,6 @@
         [
           "Offspring",
           [
-            "[[Kathorharab]]",
-            "[[Leyala]]",
             "[[Yatbara]]"
           ]
         ]
