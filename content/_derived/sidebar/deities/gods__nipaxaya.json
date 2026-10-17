@@ -1,0 +1,32 @@
+{
+  "type": "deity",
+  "title": "Nipaxaya",
+  "subtitle": "The Lady of Souls",
+  "source_relative_path": "gods/Nipaxaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": null,
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Gender",
+          "Female"
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ]
+      ]
+    }
+  ]
+}

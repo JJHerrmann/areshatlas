@@ -1,0 +1,96 @@
+{
+  "type": "deity",
+  "title": "Aavaraya",
+  "subtitle": "The Sun Catcher",
+  "source_relative_path": "gods/Aavaraya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": null,
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "[[Ramtilim]]"
+          ]
+        ],
+        [
+          "Gender",
+          "Male"
+        ],
+        [
+          "Consort(s)",
+          [
+            "[[Giralaya]]"
+          ]
+        ],
+        [
+          "Allies",
+          [
+            "[[Giralaya]]",
+            "[[Xipaya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Nature",
+          "Unbound"
+        ],
+        [
+          "Ethos",
+          "Distant"
+        ],
+        [
+          "Major Influence",
+          "Sun, Fire"
+        ],
+        [
+          "Minor Influence(s)",
+          [
+            "Light",
+            "Day"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Parents",
+          [
+            "[[Sidaraya]]",
+            "[[Tahavaya]]"
+          ]
+        ],
+        [
+          "Siblings",
+          [
+            "[[Baaraya]]"
+          ]
+        ],
+        [
+          "Offspring",
+          [
+            "[[Lichamaya]]",
+            "[[Lookaya]]",
+            "[[Yoodaya]]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

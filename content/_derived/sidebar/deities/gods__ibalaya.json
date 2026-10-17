@@ -1,0 +1,32 @@
+{
+  "type": "deity",
+  "title": "Ibalaya",
+  "subtitle": "The Goddess of Mourning",
+  "source_relative_path": "gods/Ibalaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": null,
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Gender",
+          "Female"
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ]
+      ]
+    }
+  ]
+}

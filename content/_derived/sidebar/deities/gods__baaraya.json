@@ -1,0 +1,76 @@
+{
+  "type": "deity",
+  "title": "Baaraya",
+  "subtitle": "The God of Creation",
+  "source_relative_path": "gods/Baaraya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/baaraya_main.png",
+      "alt": "Baaraya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "[[Yekatlan]]",
+            "[[Ramtilim]]"
+          ]
+        ],
+        [
+          "Honorific Title",
+          "The Formless One"
+        ],
+        [
+          "Gender",
+          "Male"
+        ],
+        [
+          "Consort(s)",
+          [
+            "[[Mizalaya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Major Influence",
+          "Creation"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Parents",
+          [
+            "[[Mizalaya]]",
+            "[[Sidaraya]]",
+            "[[Tahavaya]]"
+          ]
+        ],
+        [
+          "Siblings",
+          [
+            "[[Aavaraya]]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

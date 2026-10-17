@@ -1,0 +1,27 @@
+{
+  "type": "deity",
+  "title": "Rooxaya",
+  "subtitle": "The God of Genesis",
+  "source_relative_path": "gods/Rooxaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": null,
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Primarch"
+        ],
+        [
+          "Major Influence",
+          "Genesis"
+        ]
+      ]
+    }
+  ]
+}

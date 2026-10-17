@@ -1,0 +1,50 @@
+{
+  "type": "deity",
+  "title": "Ribaya",
+  "subtitle": "The Goddess of Famines and Calamity",
+  "source_relative_path": "gods/Ribaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/ribaya_main.png",
+      "alt": "Ribaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "Areshnaati",
+            "Ramtilim"
+          ]
+        ],
+        [
+          "Gender",
+          "Female"
+        ],
+        [
+          "Allies",
+          [
+            "[[Xilaya, Baxeol]]",
+            "[[Xipaya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ]
+      ]
+    }
+  ]
+}

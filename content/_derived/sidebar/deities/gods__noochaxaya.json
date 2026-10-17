@@ -1,0 +1,53 @@
+{
+  "type": "deity",
+  "title": "Noochaxaya",
+  "subtitle": "The Sky Serpent",
+  "source_relative_path": "gods/Noochaxaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/noochaxaya_main.png",
+      "alt": "Noochaxaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "[[Yekatlan]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Major Influence",
+          "Night"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Parents",
+          [
+            "[[Tohamaya]]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

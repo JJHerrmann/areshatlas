@@ -21,8 +21,8 @@ place on any chart. Mortals do not go there, and the few reports of it are
 inferences from the sky rather than accounts of arrival.
 
 It has a light of its own. That light is the measure the pantheon is described
-against: [[Niwara]] is called so bright that even the light of Aamantlan does
-not shine through him, which is a statement about Niwara and, incidentally, the
+against: [[Aavaraya]] is called so bright that even the light of Aamantlan does
+not shine through him, which is a statement about Aavaraya and, incidentally, the
 plainest thing anyone has recorded about the Skyhome.
 
 The gods are not confined to it. They keep there, but they come down, and when

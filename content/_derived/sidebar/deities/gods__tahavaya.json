@@ -1,0 +1,73 @@
+{
+  "type": "deity",
+  "title": "Tahavaya",
+  "subtitle": "The High-lord of Chaos",
+  "source_relative_path": "gods/Tahavaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/tahavaya_main.png",
+      "alt": "Tahavaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "[[Yekatlan]]",
+            "[[Yekatlan]]"
+          ]
+        ],
+        [
+          "Gender",
+          "Male"
+        ],
+        [
+          "Consort(s)",
+          [
+            "[[Sidaraya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Major Influence",
+          "Chaos"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Siblings",
+          [
+            "[[Tohamaya]]",
+            "[[Sidaraya]]",
+            "[[Mizalaya]]"
+          ]
+        ],
+        [
+          "Offspring",
+          [
+            "[[Baaraya]]",
+            "[[Aavaraya]]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

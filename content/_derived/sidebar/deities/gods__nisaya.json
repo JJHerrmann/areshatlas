@@ -1,0 +1,36 @@
+{
+  "type": "deity",
+  "title": "Nisaya",
+  "subtitle": "The Goddess of Travels and Wayfairing",
+  "source_relative_path": "gods/Nisaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/nisaya_main.png",
+      "alt": "Nisaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Gender",
+          "Female"
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Minor"
+        ]
+      ]
+    }
+  ]
+}

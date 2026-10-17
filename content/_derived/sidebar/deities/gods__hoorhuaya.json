@@ -1,0 +1,61 @@
+{
+  "type": "deity",
+  "title": "Hoorhuaya",
+  "subtitle": "The God of Mountains",
+  "source_relative_path": "gods/Hoorhuaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/Hoorhuaya_main.png",
+      "alt": "Hoorhuaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "Areshnaati",
+            "[[Xoluatl]]"
+          ]
+        ],
+        [
+          "Title",
+          "Harbal"
+        ],
+        [
+          "Foes",
+          [
+            "[[Xilaya, Baxeol]]",
+            "[[Xipaya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Siblings",
+          [
+            "[[Xilaya, Baxeol]]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

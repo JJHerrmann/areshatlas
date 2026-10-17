@@ -1,0 +1,38 @@
+{
+  "type": "deity",
+  "title": "Toomamaya",
+  "subtitle": "The God of Finalities",
+  "source_relative_path": "gods/Toomamaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": null,
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Primarch"
+        ],
+        [
+          "Major Influence",
+          "Finality"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Offspring",
+          [
+            "[[Xilaya, Baxeol]]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

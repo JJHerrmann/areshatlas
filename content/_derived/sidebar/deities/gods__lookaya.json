@@ -1,0 +1,65 @@
+{
+  "type": "deity",
+  "title": "Lookaya",
+  "subtitle": "The God of Messages and Fortunes",
+  "source_relative_path": "gods/Lookaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/lookaya_main.png",
+      "alt": "Lookaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "Areshnaati",
+            "Ramtilim"
+          ]
+        ],
+        [
+          "Allies",
+          [
+            "[[Giralaya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Nature",
+          "neutral"
+        ],
+        [
+          "Major Influence",
+          "Messages"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Parents",
+          [
+            "[[Aavaraya]]",
+            "[[Giralaya]]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

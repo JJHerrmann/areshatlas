@@ -1,0 +1,115 @@
+{
+  "type": "deity",
+  "title": "Xipaya",
+  "subtitle": "The Goddess of Feasts and Plenty",
+  "source_relative_path": "gods/Xipaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/xipaya_main.png",
+      "alt": "Xipaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "[[Ramtilim]]",
+            "Areshnaati"
+          ]
+        ],
+        [
+          "Gender",
+          "Female"
+        ],
+        [
+          "Consort(s)",
+          [
+            "[[Xilaya]]"
+          ]
+        ],
+        [
+          "Allies",
+          [
+            "[[Qootzaraya]]",
+            "[[Ribaya]]",
+            "[[Tzivadaya]]",
+            "[[Giralaya]]",
+            "[[Aavaraya]]",
+            "[[Xilaya]]"
+          ]
+        ],
+        [
+          "Foes",
+          [
+            "[[Hoorhuaya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Minor"
+        ],
+        [
+          "Nature",
+          "Ordered"
+        ],
+        [
+          "Ethos",
+          "Close"
+        ],
+        [
+          "Major Influence",
+          "Plenty"
+        ],
+        [
+          "Minor Influence(s)",
+          [
+            "Feasts",
+            "Celebrations",
+            "Wealth",
+            "Abundance"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Parents",
+          [
+            "[[Qootzaraya]]",
+            "[[Tzivadaya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Symbols and Regalia",
+      "rows": [
+        [
+          "Primary Symbol",
+          "Chalice"
+        ],
+        [
+          "Secondary Symbols",
+          [
+            "Grape Bundle",
+            "Bread Loaf"
+          ]
+        ]
+      ]
+    }
+  ]
+}

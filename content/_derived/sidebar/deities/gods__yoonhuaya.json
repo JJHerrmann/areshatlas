@@ -1,0 +1,39 @@
+{
+  "type": "deity",
+  "title": "Yoonhuaya",
+  "subtitle": "The God of Seas and Rivers",
+  "source_relative_path": "gods/Yoonhuaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/Yoonhuaya_main.png",
+      "alt": "Yoonhuaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "Areshnaati",
+            "Ramtilim"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Minor"
+        ]
+      ]
+    }
+  ]
+}

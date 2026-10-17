@@ -1,0 +1,112 @@
+{
+  "type": "deity",
+  "title": "Xilaya",
+  "subtitle": "The God of the Underworld",
+  "source_relative_path": "gods/Xilaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/xilaya_main.png",
+      "alt": "Xilaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "Areshnaati",
+            "[[Xoluatl]]"
+          ]
+        ],
+        [
+          "Title",
+          "Xilaya, Baxeol"
+        ],
+        [
+          "Gender",
+          "Female"
+        ],
+        [
+          "Consort(s)",
+          [
+            "[[Xipaya]]"
+          ]
+        ],
+        [
+          "Allies",
+          [
+            "[[Xipaya]]",
+            "[[Qootzaraya]]",
+            "[[Tzivadaya]]",
+            "[[Ribaya]]",
+            "[[Zimanaya]]",
+            "[[Giralaya]]"
+          ]
+        ],
+        [
+          "Foes",
+          [
+            "[[Hoorhuaya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Nature",
+          "Ordered"
+        ],
+        [
+          "Ethos",
+          "Distant"
+        ],
+        [
+          "Major Influence",
+          "The Dead, Graves"
+        ],
+        [
+          "Minor Influence(s)",
+          [
+            "Judgement",
+            "Burial",
+            "Ancestors",
+            "Final Rest",
+            "Ghosts",
+            "Funerary Rites",
+            "Rememberance"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Parents",
+          [
+            "[[Toomamaya]]",
+            "[[Zimanaya]]"
+          ]
+        ],
+        [
+          "Siblings",
+          [
+            "[[Hoorhuaya]]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

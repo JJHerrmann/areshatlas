@@ -1,0 +1,32 @@
+{
+  "type": "deity",
+  "title": "Daarakaya",
+  "subtitle": "The Lord of the Grey Walk",
+  "source_relative_path": "gods/Daarakaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": null,
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Gender",
+          "Male"
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ]
+      ]
+    }
+  ]
+}

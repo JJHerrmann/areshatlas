@@ -1,0 +1,36 @@
+{
+  "type": "deity",
+  "title": "Xichataya",
+  "subtitle": "The Goddess of Graves",
+  "source_relative_path": "gods/Xichataya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/xichataya_main.png",
+      "alt": "Xichataya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Gender",
+          "Female"
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ]
+      ]
+    }
+  ]
+}

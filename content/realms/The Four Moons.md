@@ -5,7 +5,7 @@ title: The Four Moons
 slug: the-four-moons
 publish: true
 section: realms
-summary: Red, Green and Blue run locked together in the near sky; White keeps the months, and holds Niwara.
+summary: Red, Green and Blue run locked together in the near sky; White keeps the months, and holds Aavaraya.
 aliases:
   - The Four Moons
   - The Pale moon
@@ -57,7 +57,7 @@ and a single day over.
 
 That leftover day belongs to no month.
 
-White is also where [[Niwara]] is held, in [[The Binding of Niwara]] — and the
+White is also where [[Aavaraya]] is held, in [[The Binding of Aavaraya]] — and the
 Pale moon is of the physical cosmos, not of [[Aamantlan]]. He was put somewhere
 real and far, which is the whole point of the binding.
 

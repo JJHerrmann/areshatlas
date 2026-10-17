@@ -32,7 +32,7 @@ whole of where they are.
 
 ## The divination temple
 
-[[Gozara]] keeps a divination temple here, a massive pyramid that catches the
-light of her husband [[Niwara]] and uses it as part of her predictions. It is
-to this temple that [[Yatbara]] came to speak with her, fearing what she would
-lose, in [[The Binding of Niwara]].
+[[Giralaya]] keeps a divination temple here, a massive pyramid that catches the
+light of her husband [[Aavaraya]] and uses it as part of her predictions. It is
+to this temple that [[Baaraya]] came to speak with her, fearing what she would
+lose, in [[The Binding of Aavaraya]].

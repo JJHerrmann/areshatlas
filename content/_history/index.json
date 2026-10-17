@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-17T05:01:07.685Z",
+  "generated": "2026-10-17T15:47:13.808Z",
   "notes": {
     "chronicles/Glossary.md": [
       {
@@ -5853,6 +5853,34 @@
         "message": "content: take the design-doc commentary out of the codex notes",
         "sha": null,
         "bytes": 3141
+      },
+      {
+        "id": "20261017T153726Z-sync043",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 3141
+      },
+      {
+        "id": "20261017T153854Z-sync011",
+        "date": "2026-10-17T15:38:54.703Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 3141
+      },
+      {
+        "id": "20261017T154521Z-sync006",
+        "date": "2026-10-17T15:45:21.176Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 3141
+      },
+      {
+        "id": "20261017T154713Z-sync006",
+        "date": "2026-10-17T15:47:13.799Z",
+        "message": "registry: point the deities navbox at the Xibanal slugs",
+        "sha": null,
+        "bytes": 3141
       }
     ],
     "regions/Drakharpan/nations/Raudskoda/Raudskoda.md": [
@@ -6157,6 +6185,34 @@
         "message": "content: take the design-doc commentary out of the codex notes",
         "sha": null,
         "bytes": 1075
+      },
+      {
+        "id": "20261017T153726Z-sync000",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 1075
+      },
+      {
+        "id": "20261017T153854Z-sync000",
+        "date": "2026-10-17T15:38:54.703Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 1075
+      },
+      {
+        "id": "20261017T154521Z-sync000",
+        "date": "2026-10-17T15:45:21.176Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 1075
+      },
+      {
+        "id": "20261017T154713Z-sync000",
+        "date": "2026-10-17T15:47:13.799Z",
+        "message": "registry: point the deities navbox at the Xibanal slugs",
+        "sha": null,
+        "bytes": 1075
       }
     ],
     "gods/Abyroqa.md": [
@@ -6429,6 +6485,20 @@
         "message": "content: take the design-doc commentary out of the codex notes",
         "sha": null,
         "bytes": 8748
+      },
+      {
+        "id": "20261017T153726Z-sync011",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8748
+      },
+      {
+        "id": "20261017T153854Z-sync001",
+        "date": "2026-10-17T15:38:54.703Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8748
       }
     ],
     "gods/Masehua.md": [
@@ -6491,6 +6561,20 @@
         "id": "20261017T050107Z-sync030",
         "date": "2026-10-17T05:01:07.649Z",
         "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8757
+      },
+      {
+        "id": "20261017T153726Z-sync018",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8757
+      },
+      {
+        "id": "20261017T153854Z-sync002",
+        "date": "2026-10-17T15:38:54.703Z",
+        "message": "sync: publish latest codex content",
         "sha": null,
         "bytes": 8757
       }
@@ -6614,6 +6698,20 @@
         "message": "content: take the design-doc commentary out of the codex notes",
         "sha": null,
         "bytes": 8782
+      },
+      {
+        "id": "20261017T153726Z-sync029",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8782
+      },
+      {
+        "id": "20261017T153854Z-sync005",
+        "date": "2026-10-17T15:38:54.703Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8782
       }
     ],
     "gods/Xefahua.md": [
@@ -6628,6 +6726,20 @@
         "id": "20261017T050107Z-sync038",
         "date": "2026-10-17T05:01:07.649Z",
         "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8961
+      },
+      {
+        "id": "20261017T153726Z-sync031",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8961
+      },
+      {
+        "id": "20261017T153854Z-sync007",
+        "date": "2026-10-17T15:38:54.703Z",
+        "message": "sync: publish latest codex content",
         "sha": null,
         "bytes": 8961
       }
@@ -6676,6 +6788,20 @@
         "id": "20261017T050107Z-sync041",
         "date": "2026-10-17T05:01:07.649Z",
         "message": "content: take the design-doc commentary out of the codex notes",
+        "sha": null,
+        "bytes": 8737
+      },
+      {
+        "id": "20261017T153726Z-sync035",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8737
+      },
+      {
+        "id": "20261017T153854Z-sync009",
+        "date": "2026-10-17T15:38:54.703Z",
+        "message": "sync: publish latest codex content",
         "sha": null,
         "bytes": 8737
       }
@@ -6897,6 +7023,13 @@
         "message": "created",
         "sha": null,
         "bytes": 1268
+      },
+      {
+        "id": "20261017T153726Z-sync041",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 1272
       }
     ],
     "realms/The Four Moons.md": [
@@ -6906,6 +7039,13 @@
         "message": "created",
         "sha": null,
         "bytes": 3364
+      },
+      {
+        "id": "20261017T153726Z-sync042",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 3370
       }
     ],
     "regions/Ereslim/Ereslim.md": [
@@ -6915,6 +7055,433 @@
         "message": "created",
         "sha": null,
         "bytes": 1395
+      },
+      {
+        "id": "20261017T153726Z-sync044",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 1401
+      }
+    ],
+    "gods/Aavaraya.md": [
+      {
+        "id": "20261017T153726Z-sync001",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8856
+      }
+    ],
+    "gods/Baaraya.md": [
+      {
+        "id": "20261017T153726Z-sync002",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8891
+      }
+    ],
+    "gods/Chooxakaya.md": [
+      {
+        "id": "20261017T153726Z-sync003",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8719
+      }
+    ],
+    "gods/Daarakaya.md": [
+      {
+        "id": "20261017T153726Z-sync004",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8657
+      }
+    ],
+    "gods/Giralaya.md": [
+      {
+        "id": "20261017T153726Z-sync005",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 10818
+      }
+    ],
+    "gods/Gooxamaya.md": [
+      {
+        "id": "20261017T153726Z-sync006",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8931
+      }
+    ],
+    "gods/Hoorhuaya.md": [
+      {
+        "id": "20261017T153726Z-sync007",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 2776
+      }
+    ],
+    "gods/Ibalaya.md": [
+      {
+        "id": "20261017T153726Z-sync008",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8640
+      }
+    ],
+    "gods/Lichamaya.md": [
+      {
+        "id": "20261017T153726Z-sync009",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 9002
+      }
+    ],
+    "gods/Lookaya.md": [
+      {
+        "id": "20261017T153726Z-sync010",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8802
+      }
+    ],
+    "gods/Mizalaya.md": [
+      {
+        "id": "20261017T153726Z-sync012",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8966
+      }
+    ],
+    "gods/Nipaxaya.md": [
+      {
+        "id": "20261017T153726Z-sync013",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8646
+      }
+    ],
+    "gods/Nisaya.md": [
+      {
+        "id": "20261017T153726Z-sync014",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8690
+      }
+    ],
+    "gods/Noochaxaya.md": [
+      {
+        "id": "20261017T153726Z-sync015",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 2949
+      }
+    ],
+    "gods/Oovabaya.md": [
+      {
+        "id": "20261017T153726Z-sync016",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8643
+      }
+    ],
+    "gods/Ooxaraya.md": [
+      {
+        "id": "20261017T153726Z-sync017",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8640
+      }
+    ],
+    "gods/Qibaraya.md": [
+      {
+        "id": "20261017T153726Z-sync019",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8653
+      }
+    ],
+    "gods/Qootzaraya.md": [
+      {
+        "id": "20261017T153726Z-sync020",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8790
+      },
+      {
+        "id": "20261017T153854Z-sync003",
+        "date": "2026-10-17T15:38:54.703Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8790
+      },
+      {
+        "id": "20261017T154521Z-sync001",
+        "date": "2026-10-17T15:45:21.176Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8790
+      },
+      {
+        "id": "20261017T154713Z-sync001",
+        "date": "2026-10-17T15:47:13.799Z",
+        "message": "registry: point the deities navbox at the Xibanal slugs",
+        "sha": null,
+        "bytes": 8790
+      }
+    ],
+    "gods/Ribaya.md": [
+      {
+        "id": "20261017T153726Z-sync021",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8760
+      }
+    ],
+    "gods/Roopaya.md": [
+      {
+        "id": "20261017T153726Z-sync022",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8766
+      },
+      {
+        "id": "20261017T153854Z-sync004",
+        "date": "2026-10-17T15:38:54.703Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8766
+      },
+      {
+        "id": "20261017T154521Z-sync002",
+        "date": "2026-10-17T15:45:21.176Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8766
+      },
+      {
+        "id": "20261017T154713Z-sync002",
+        "date": "2026-10-17T15:47:13.799Z",
+        "message": "registry: point the deities navbox at the Xibanal slugs",
+        "sha": null,
+        "bytes": 8766
+      }
+    ],
+    "gods/Rooxaya.md": [
+      {
+        "id": "20261017T153726Z-sync023",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8656
+      }
+    ],
+    "gods/Sidaraya.md": [
+      {
+        "id": "20261017T153726Z-sync024",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 9337
+      }
+    ],
+    "gods/Sooraya.md": [
+      {
+        "id": "20261017T153726Z-sync025",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8915
+      }
+    ],
+    "gods/Tahavaya.md": [
+      {
+        "id": "20261017T153726Z-sync026",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8882
+      }
+    ],
+    "gods/Tohamaya.md": [
+      {
+        "id": "20261017T153726Z-sync027",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8864
+      }
+    ],
+    "gods/Toomamaya.md": [
+      {
+        "id": "20261017T153726Z-sync028",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8673
+      }
+    ],
+    "gods/Tzivadaya.md": [
+      {
+        "id": "20261017T153726Z-sync030",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8805
+      },
+      {
+        "id": "20261017T153854Z-sync006",
+        "date": "2026-10-17T15:38:54.703Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8805
+      },
+      {
+        "id": "20261017T154521Z-sync003",
+        "date": "2026-10-17T15:45:21.176Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8805
+      },
+      {
+        "id": "20261017T154713Z-sync003",
+        "date": "2026-10-17T15:47:13.799Z",
+        "message": "registry: point the deities navbox at the Xibanal slugs",
+        "sha": null,
+        "bytes": 8805
+      }
+    ],
+    "gods/Xichataya.md": [
+      {
+        "id": "20261017T153726Z-sync032",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8683
+      }
+    ],
+    "gods/Xilaya.md": [
+      {
+        "id": "20261017T153726Z-sync033",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 9552
+      }
+    ],
+    "gods/Xipaya.md": [
+      {
+        "id": "20261017T153726Z-sync034",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8988
+      },
+      {
+        "id": "20261017T153854Z-sync008",
+        "date": "2026-10-17T15:38:54.703Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8988
+      },
+      {
+        "id": "20261017T154521Z-sync004",
+        "date": "2026-10-17T15:45:21.176Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8988
+      },
+      {
+        "id": "20261017T154713Z-sync004",
+        "date": "2026-10-17T15:47:13.799Z",
+        "message": "registry: point the deities navbox at the Xibanal slugs",
+        "sha": null,
+        "bytes": 8988
+      }
+    ],
+    "gods/Yoodaya.md": [
+      {
+        "id": "20261017T153726Z-sync036",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8755
+      },
+      {
+        "id": "20261017T153854Z-sync010",
+        "date": "2026-10-17T15:38:54.703Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8755
+      },
+      {
+        "id": "20261017T154521Z-sync005",
+        "date": "2026-10-17T15:45:21.176Z",
+        "message": "sync: publish latest codex content",
+        "sha": null,
+        "bytes": 8755
+      },
+      {
+        "id": "20261017T154713Z-sync005",
+        "date": "2026-10-17T15:47:13.799Z",
+        "message": "registry: point the deities navbox at the Xibanal slugs",
+        "sha": null,
+        "bytes": 8755
+      }
+    ],
+    "gods/Yoonhuaya.md": [
+      {
+        "id": "20261017T153726Z-sync037",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8905
+      }
+    ],
+    "gods/Yoorachaya.md": [
+      {
+        "id": "20261017T153726Z-sync038",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8792
+      }
+    ],
+    "gods/Zimanaya.md": [
+      {
+        "id": "20261017T153726Z-sync039",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 8750
+      }
+    ],
+    "gods/myths/The Binding of Aavaraya.md": [
+      {
+        "id": "20261017T153726Z-sync040",
+        "date": "2026-10-17T15:37:26.036Z",
+        "message": "created",
+        "sha": null,
+        "bytes": 2230
       }
     ]
   }

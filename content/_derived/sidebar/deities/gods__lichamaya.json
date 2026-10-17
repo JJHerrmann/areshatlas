@@ -1,0 +1,102 @@
+{
+  "type": "deity",
+  "title": "Lichamaya",
+  "subtitle": "The God of Craft and War",
+  "source_relative_path": "gods/Lichamaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/lichamaya_main.png",
+      "alt": "Lichamaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "Areshnaati",
+            "Ramtilim"
+          ]
+        ],
+        [
+          "Honorific Title",
+          "The Wailing Hammer"
+        ],
+        [
+          "Gender",
+          "Female"
+        ],
+        [
+          "Consort(s)",
+          [
+            "None"
+          ]
+        ],
+        [
+          "Allies",
+          [
+            "[[Giralaya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Nature",
+          "Unbound"
+        ],
+        [
+          "Ethos",
+          "Distant"
+        ],
+        [
+          "Major Influence",
+          "War"
+        ],
+        [
+          "Minor Influence(s)",
+          [
+            "Forge",
+            "War",
+            "Weaponcraft",
+            "Armorcraft",
+            "Leatherwork",
+            "Martial Training",
+            "Sword Arts"
+          ]
+        ],
+        [
+          "Spheres",
+          [
+            "Forge",
+            "War"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Parents",
+          [
+            "[[Giralaya]]",
+            "[[Aavaraya]]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

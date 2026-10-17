@@ -1,0 +1,27 @@
+{
+  "type": "deity",
+  "title": "Chooxakaya",
+  "subtitle": "The God of Dark Waters",
+  "source_relative_path": "gods/Chooxakaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/chooxakaya_main.png",
+      "alt": "Chooxakaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ]
+      ]
+    }
+  ]
+}

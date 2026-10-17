@@ -1,0 +1,64 @@
+{
+  "type": "deity",
+  "title": "Zimanaya",
+  "subtitle": "The Matron of Time",
+  "source_relative_path": "gods/Zimanaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/zimanaya_main.png",
+      "alt": "Zimanaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "Areshnaati",
+            "[[Yekatlan]]"
+          ]
+        ],
+        [
+          "Gender",
+          "Female"
+        ],
+        [
+          "Allies",
+          [
+            "[[Xilaya, Baxeol]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Major Influence",
+          "Time"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Offspring",
+          [
+            "[[Xilaya, Baxeol]]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

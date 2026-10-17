@@ -1,0 +1,54 @@
+{
+  "type": "deity",
+  "title": "Yoorachaya",
+  "subtitle": "The Shepard of Zodiacs",
+  "source_relative_path": "gods/Yoorachaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/Yoorachaya_main.png",
+      "alt": "Yoorachaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "[[Yekatlan]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Major Influence",
+          "Moon"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Parents",
+          [
+            "[[Tohamaya]]",
+            "[[Sidaraya]]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

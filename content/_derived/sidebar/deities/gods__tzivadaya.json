@@ -1,0 +1,61 @@
+{
+  "type": "deity",
+  "title": "Tzivadaya",
+  "subtitle": "The Goddess of Hunting and Fertility",
+  "source_relative_path": "gods/Tzivadaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/Tzivadaya_main.png",
+      "alt": "Tzivadaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "Areshnaati",
+            "Ramtilim"
+          ]
+        ],
+        [
+          "Gender",
+          "Female"
+        ],
+        [
+          "Allies",
+          [
+            "[[Xilaya, Baxeol]]",
+            "[[Xipaya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Offspring",
+          [
+            "[[Xipaya]]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

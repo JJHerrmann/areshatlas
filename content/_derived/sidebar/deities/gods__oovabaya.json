@@ -1,0 +1,23 @@
+{
+  "type": "deity",
+  "title": "Oovabaya",
+  "subtitle": "The God of Ghosts",
+  "source_relative_path": "gods/Oovabaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": null,
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ]
+      ]
+    }
+  ]
+}

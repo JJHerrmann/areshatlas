@@ -1,181 +1,190 @@
 {
-  "bolohua": {
-    "offspring": [
-      "[[Leyala]]"
-    ],
+  "aavaraya": {
     "siblings": [
-      "[[Tahiwaco]]",
-      "[[Yekala]]"
-    ]
-  },
-  "gozara": {
-    "offspring": [
-      "[[Kathorharab]]"
+      "[[Baaraya]]"
     ],
     "allies": [
-      "[[Kvaritzin, Baxeol]]",
-      "[[Xefahua]]"
+      "[[Giralaya]]",
+      "[[Xipaya]]"
     ],
     "consorts": [
-      "[[Niwara]]"
+      "[[Giralaya]]"
+    ],
+    "offspring": [
+      "[[Lichamaya]]"
+    ],
+    "parents": [
+      "[[Sidaraya]]"
     ]
   },
-  "harbaal": {
+  "baaraya": {
+    "siblings": [
+      "[[Aavaraya]]"
+    ],
+    "parents": [
+      "[[Sidaraya]]",
+      "[[Tahavaya]]"
+    ]
+  },
+  "giralaya": {
+    "consorts": [
+      "[[Aavaraya]]"
+    ],
+    "offspring": [
+      "[[Lichamaya]]"
+    ],
+    "allies": [
+      "[[Xilaya, Baxeol]]",
+      "[[Xipaya]]"
+    ]
+  },
+  "hoorhuaya": {
     "foes": [
-      "[[Kvaritzin, Baxeol]]",
-      "[[Xefahua]]"
+      "[[Xilaya, Baxeol]]",
+      "[[Xipaya]]"
     ],
     "siblings": [
-      "[[Kvaritzin, Baxeol]]"
+      "[[Xilaya, Baxeol]]"
     ]
   },
-  "kathorharab": {
-    "allies": [
-      "[[Gozara]]"
+  "lichamaya": {
+    "parents": [
+      "[[Aavaraya]]",
+      "[[Giralaya]]"
     ],
-    "parents": [
-      "[[Gozara]]",
-      "[[Niwara]]"
-    ]
-  },
-  "leyala": {
-    "parents": [
-      "[[Bolohua]]",
-      "[[Moxilaxaya]]"
-    ]
-  },
-  "lotan": {
-    "parents": [
-      "[[Bolohua]]"
-    ]
-  },
-  "malagad": {
     "allies": [
-      "[[Gozara]]"
-    ],
-    "parents": [
-      "[[Gozara]]",
-      "[[Niwara]]"
+      "[[Giralaya]]"
     ]
   },
-  "moxilaxaya": {
-    "siblings": [
-      "[[Bolohua]]",
-      "[[Tahiwaco]]",
-      "[[Yekala]]"
+  "lookaya": {
+    "parents": [
+      "[[Aavaraya]]",
+      "[[Giralaya]]"
+    ],
+    "allies": [
+      "[[Giralaya]]"
+    ]
+  },
+  "mizalaya": {
+    "consorts": [
+      "[[Baaraya]]"
     ],
     "offspring": [
-      "[[Leyala]]",
-      "[[Niwara]]",
-      "[[Yatbara]]"
+      "[[Baaraya]]"
+    ],
+    "siblings": [
+      "[[Tahavaya]]",
+      "[[Tohamaya]]"
+    ]
+  },
+  "noochaxaya": {
+    "parents": [
+      "[[Tohamaya]]"
+    ]
+  },
+  "qootzaraya": {
+    "allies": [
+      "[[Xilaya, Baxeol]]",
+      "[[Xipaya]]"
+    ],
+    "offspring": [
+      "[[Xipaya]]"
+    ]
+  },
+  "ribaya": {
+    "allies": [
+      "[[Xilaya, Baxeol]]",
+      "[[Xipaya]]"
+    ]
+  },
+  "sidaraya": {
+    "offspring": [
+      "[[Aavaraya]]",
+      "[[Baaraya]]",
+      "[[Yoorachaya]]"
+    ],
+    "siblings": [
+      "[[Mizalaya]]",
+      "[[Tahavaya]]",
+      "[[Tohamaya]]"
     ],
     "consorts": [
-      "[[Tahiwaco]]"
+      "[[Tahavaya]]"
     ]
   },
-  "niwara": {
-    "allies": [
-      "[[Gozara]]",
-      "[[Xefahua]]"
+  "tahavaya": {
+    "offspring": [
+      "[[Aavaraya]]",
+      "[[Baaraya]]"
     ],
     "consorts": [
-      "[[Gozara]]"
+      "[[Sidaraya]]"
+    ],
+    "siblings": [
+      "[[Tohamaya]]"
+    ]
+  },
+  "tohamaya": {
+    "siblings": [
+      "[[Mizalaya]]",
+      "[[Tahavaya]]"
     ],
     "offspring": [
-      "[[Kathorharab]]"
+      "[[Yoorachaya]]"
+    ]
+  },
+  "toomamaya": {
+    "offspring": [
+      "[[Xilaya, Baxeol]]"
+    ]
+  },
+  "tzivadaya": {
+    "allies": [
+      "[[Xilaya, Baxeol]]",
+      "[[Xipaya]]"
     ],
+    "offspring": [
+      "[[Xipaya]]"
+    ]
+  },
+  "xilaya": {
+    "allies": [
+      "[[Giralaya]]",
+      "[[Xipaya]]"
+    ],
+    "consorts": [
+      "[[Xipaya]]"
+    ]
+  },
+  "xipaya": {
+    "allies": [
+      "[[Xilaya, Baxeol]]"
+    ],
+    "consorts": [
+      "[[Xilaya, Baxeol]]"
+    ]
+  },
+  "yoodaya": {
     "parents": [
-      "[[Moxilaxaya]]"
+      "[[Aavaraya]]",
+      "[[Giralaya]]"
     ],
-    "siblings": [
-      "[[Yatbara]]"
-    ]
-  },
-  "qatzera": {
     "allies": [
-      "[[Kvaritzin, Baxeol]]",
-      "[[Xefahua]]"
-    ],
-    "offspring": [
-      "[[Xefahua]]"
+      "[[Giralaya]]"
     ]
   },
-  "raavvah": {
-    "allies": [
-      "[[Kvaritzin, Baxeol]]",
-      "[[Xefahua]]"
-    ]
-  },
-  "tahiwaco": {
-    "siblings": [
-      "[[Bolohua]]"
-    ],
-    "consorts": [
-      "[[Moxilaxaya]]"
-    ],
-    "offspring": [
-      "[[Niwara]]",
-      "[[Yatbara]]"
-    ]
-  },
-  "temaya": {
-    "offspring": [
-      "[[Kvaritzin, Baxeol]]"
-    ]
-  },
-  "tsayidrah": {
-    "allies": [
-      "[[Kvaritzin, Baxeol]]",
-      "[[Xefahua]]"
-    ],
-    "offspring": [
-      "[[Xefahua]]"
-    ]
-  },
-  "xefahua": {
-    "allies": [
-      "[[Kvaritzin, Baxeol]]"
-    ],
-    "consorts": [
-      "[[Kvaritzin, Baxeol]]"
-    ]
-  },
-  "yaradaat": {
-    "allies": [
-      "[[Gozara]]"
-    ],
+  "yoorachaya": {
     "parents": [
-      "[[Gozara]]",
-      "[[Niwara]]"
+      "[[Sidaraya]]",
+      "[[Tohamaya]]"
     ]
   },
-  "yatbara": {
-    "parents": [
-      "[[Moxilaxaya]]",
-      "[[Tahiwaco]]"
-    ],
-    "siblings": [
-      "[[Niwara]]"
-    ]
-  },
-  "yekala": {
-    "siblings": [
-      "[[Bolohua]]",
-      "[[Tahiwaco]]"
-    ],
-    "consorts": [
-      "[[Yatbara]]"
-    ],
-    "offspring": [
-      "[[Yatbara]]"
-    ]
-  },
-  "zemana": {
+  "zimanaya": {
     "allies": [
-      "[[Kvaritzin, Baxeol]]"
+      "[[Xilaya, Baxeol]]"
     ],
     "offspring": [
-      "[[Kvaritzin, Baxeol]]"
+      "[[Xilaya, Baxeol]]"
     ]
   }
 }

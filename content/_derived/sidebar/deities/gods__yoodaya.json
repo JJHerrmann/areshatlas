@@ -1,0 +1,53 @@
+{
+  "type": "deity",
+  "title": "Yoodaya",
+  "subtitle": "The God of Knowledge and Law",
+  "source_relative_path": "gods/Yoodaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": null,
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "Areshnaati",
+            "Ramtilim"
+          ]
+        ],
+        [
+          "Allies",
+          [
+            "[[Giralaya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Parents",
+          [
+            "[[Aavaraya]]",
+            "[[Giralaya]]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

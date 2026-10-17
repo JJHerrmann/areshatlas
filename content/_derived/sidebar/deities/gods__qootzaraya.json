@@ -1,0 +1,61 @@
+{
+  "type": "deity",
+  "title": "Qootzaraya",
+  "subtitle": "The God of Harvest and Crops",
+  "source_relative_path": "gods/Qootzaraya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/qootzaraya_main.png",
+      "alt": "Qootzaraya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "Areshnaati",
+            "Ramtilim"
+          ]
+        ],
+        [
+          "Allies",
+          [
+            "[[Xilaya, Baxeol]]",
+            "[[Xipaya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Ethos",
+          "lawful"
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Offspring",
+          [
+            "[[Xipaya]]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

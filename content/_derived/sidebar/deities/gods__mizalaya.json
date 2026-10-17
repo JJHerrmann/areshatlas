@@ -1,0 +1,94 @@
+{
+  "type": "deity",
+  "title": "Mizalaya",
+  "subtitle": "The Lady of Loaded Dice",
+  "source_relative_path": "gods/Mizalaya.md",
+  "images": {
+    "banner": null,
+    "heraldry": null,
+    "avatar": {
+      "src": "/content-assets/_images/mizalaya_main.png",
+      "alt": "Mizalaya",
+      "caption": null
+    },
+    "symbol": null
+  },
+  "sections": [
+    {
+      "title": "Descriptive Info",
+      "rows": [
+        [
+          "Pantheon",
+          [
+            "[[Yekatlan]]",
+            "[[Ramtilim]]"
+          ]
+        ],
+        [
+          "Gender",
+          "Female"
+        ],
+        [
+          "Consort(s)",
+          [
+            "[[Baaraya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Spiritual Info",
+      "rows": [
+        [
+          "Rank",
+          "Major"
+        ],
+        [
+          "Major Influence",
+          "Possibility"
+        ],
+        [
+          "Minor Influence(s)",
+          [
+            "Hope",
+            "Potential",
+            "Becoming",
+            "Choice",
+            "Luck/Fortune",
+            "Gambling"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Divine Relations",
+      "rows": [
+        [
+          "Siblings",
+          [
+            "[[Sidaraya]]",
+            "[[Tohamaya]]",
+            "[[Tahavaya]]"
+          ]
+        ],
+        [
+          "Offspring",
+          [
+            "[[Baaraya]]"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Symbols and Regalia",
+      "rows": [
+        [
+          "Sacred Objects",
+          [
+            "Dice with her symbol on the highest face, Playing Cards, Two-Headed Gold Pieces"
+          ]
+        ]
+      ]
+    }
+  ]
+}
